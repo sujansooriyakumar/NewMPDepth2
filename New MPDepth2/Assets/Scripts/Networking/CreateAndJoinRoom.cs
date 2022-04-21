@@ -25,6 +25,7 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
         Debug.Log("Joined room: " + PhotonNetwork.CurrentRoom.Name);
         Debug.Log("Player count: " + PhotonNetwork.CurrentRoom.PlayerCount);
         networkManager.SetIsConnected(true);
+        FindObjectOfType<Spawner>().Spawn();
         isConnected = true;
     }
 
