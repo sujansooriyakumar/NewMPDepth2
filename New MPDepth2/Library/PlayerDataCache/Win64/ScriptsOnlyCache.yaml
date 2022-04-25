@@ -18,21 +18,12 @@ ScriptsOnlyBuild:
     - MPDepthCore.Calibration.Screen.DetachedScreenCalibrator
     - MPDepthCore.TrackingSystem
     - MPDepthCore.TrackingSystemsManager
-    - MotiveRawTrackingSource
-    - MotiveScreenCalibrationProvider
-    - MotiveScreenCalibrator
-    - MotiveTrackingCalibration
-    - MotiveTrackingProvider
-    - MotiveTrackingStreamer.MotiveStreamTrackingCalibrator
-    - MotiveTrackingStreamer.MotiveStreamTrackingProvider
     - NetworkManager
     - OffAxisCamera.OffAxisCameraRig
     - OffAxisCamera.ProjectionPlane
     - OffAxisCamera.ProjectionPlaneCamera
     - OffAxisCamera.SetAsMainCamera
     - OffAxisCamera.TrackingReceiver
-    - OptitrackRigidBody
-    - OptitrackStreamingClient
     - PointersController
     - ProximityVoiceTrigger
     - ReceiveBlendshapes
@@ -74,6 +65,8 @@ ScriptsOnlyBuild:
     PhotonVoice.dll:
     - Photon.Voice.Unity.Recorder
     - Photon.Voice.Unity.Speaker
+    UniHumanoid.dll:
+    - UniHumanoid.HumanPoseClip
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.XR.ARFoundation.dll:
@@ -85,8 +78,6 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.ARFoundation.ARPoseDriver
     - UnityEngine.XR.ARFoundation.ARSession
     - UnityEngine.XR.ARFoundation.ARSessionOrigin
-    Unity.XR.ARKit.Editor.dll:
-    - UnityEditor.XR.ARKit.ARKitSettings
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
     Unity.XR.Management.dll:
@@ -132,7 +123,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
@@ -163,175 +158,159 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1544}
     - Class: 114
-      Script: {instanceID: 2922}
+      Script: {instanceID: 1662}
     - Class: 114
-      Script: {instanceID: 2938}
+      Script: {instanceID: 1678}
     - Class: 114
-      Script: {instanceID: 2948}
+      Script: {instanceID: 1688}
     - Class: 114
-      Script: {instanceID: 2972}
+      Script: {instanceID: 1762}
     - Class: 114
-      Script: {instanceID: 3022}
+      Script: {instanceID: 1806}
     - Class: 114
-      Script: {instanceID: 3066}
+      Script: {instanceID: 1880}
     - Class: 114
-      Script: {instanceID: 3134}
+      Script: {instanceID: 1908}
     - Class: 114
-      Script: {instanceID: 3138}
+      Script: {instanceID: 1912}
     - Class: 114
-      Script: {instanceID: 3162}
+      Script: {instanceID: 1916}
     - Class: 114
-      Script: {instanceID: 3166}
+      Script: {instanceID: 1932}
     - Class: 114
-      Script: {instanceID: 3182}
+      Script: {instanceID: 2008}
     - Class: 114
-      Script: {instanceID: 3258}
+      Script: {instanceID: 2054}
     - Class: 114
-      Script: {instanceID: 3302}
+      Script: {instanceID: 2202}
     - Class: 114
-      Script: {instanceID: 3450}
+      Script: {instanceID: 2256}
     - Class: 114
-      Script: {instanceID: 3502}
+      Script: {instanceID: 2274}
     - Class: 114
-      Script: {instanceID: 3520}
+      Script: {instanceID: 2316}
     - Class: 114
-      Script: {instanceID: 3560}
+      Script: {instanceID: 2534}
     - Class: 114
-      Script: {instanceID: 3734}
+      Script: {instanceID: 2602}
     - Class: 114
-      Script: {instanceID: 3776}
+      Script: {instanceID: 2850}
     - Class: 114
-      Script: {instanceID: 3842}
+      Script: {instanceID: 2858}
     - Class: 114
-      Script: {instanceID: 3998}
+      Script: {instanceID: 2890}
     - Class: 114
-      Script: {instanceID: 4004}
+      Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 4082}
+      Script: {instanceID: 2916}
     - Class: 114
-      Script: {instanceID: 4090}
+      Script: {instanceID: 2946}
     - Class: 114
-      Script: {instanceID: 4122}
+      Script: {instanceID: 3012}
     - Class: 114
-      Script: {instanceID: 4138}
+      Script: {instanceID: 3288}
     - Class: 114
-      Script: {instanceID: 4148}
+      Script: {instanceID: 3314}
     - Class: 114
-      Script: {instanceID: 4178}
+      Script: {instanceID: 3324}
     - Class: 114
-      Script: {instanceID: 4240}
+      Script: {instanceID: 3354}
     - Class: 114
-      Script: {instanceID: 4504}
+      Script: {instanceID: 3554}
     - Class: 114
-      Script: {instanceID: 4530}
+      Script: {instanceID: 3564}
     - Class: 114
-      Script: {instanceID: 4540}
+      Script: {instanceID: 3572}
     - Class: 114
-      Script: {instanceID: 4570}
+      Script: {instanceID: 3574}
     - Class: 114
-      Script: {instanceID: 4768}
+      Script: {instanceID: 3702}
     - Class: 114
-      Script: {instanceID: 4778}
+      Script: {instanceID: 3732}
+    - Class: 114
+      Script: {instanceID: 3920}
+    - Class: 114
+      Script: {instanceID: 3936}
+    - Class: 114
+      Script: {instanceID: 3938}
+    - Class: 114
+      Script: {instanceID: 3942}
+    - Class: 114
+      Script: {instanceID: 3946}
+    - Class: 114
+      Script: {instanceID: 3968}
+    - Class: 114
+      Script: {instanceID: 4092}
+    - Class: 114
+      Script: {instanceID: 4098}
+    - Class: 114
+      Script: {instanceID: 4104}
+    - Class: 114
+      Script: {instanceID: 4252}
+    - Class: 114
+      Script: {instanceID: 4332}
+    - Class: 114
+      Script: {instanceID: 4338}
+    - Class: 114
+      Script: {instanceID: 4378}
+    - Class: 114
+      Script: {instanceID: 4596}
+    - Class: 114
+      Script: {instanceID: 4600}
+    - Class: 114
+      Script: {instanceID: 4624}
+    - Class: 114
+      Script: {instanceID: 4710}
     - Class: 114
       Script: {instanceID: 4786}
     - Class: 114
-      Script: {instanceID: 4788}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 4906}
+      Script: {instanceID: 4858}
     - Class: 114
-      Script: {instanceID: 4912}
+      Script: {instanceID: 4970}
     - Class: 114
-      Script: {instanceID: 4942}
+      Script: {instanceID: 4982}
     - Class: 114
-      Script: {instanceID: 5024}
+      Script: {instanceID: 5006}
     - Class: 114
-      Script: {instanceID: 5128}
+      Script: {instanceID: 5036}
     - Class: 114
-      Script: {instanceID: 5144}
+      Script: {instanceID: 5090}
     - Class: 114
-      Script: {instanceID: 5146}
+      Script: {instanceID: 5094}
     - Class: 114
-      Script: {instanceID: 5150}
+      Script: {instanceID: 5100}
     - Class: 114
-      Script: {instanceID: 5154}
+      Script: {instanceID: 5242}
     - Class: 114
-      Script: {instanceID: 5176}
+      Script: {instanceID: 5274}
     - Class: 114
-      Script: {instanceID: 5296}
-    - Class: 114
-      Script: {instanceID: 5302}
-    - Class: 114
-      Script: {instanceID: 5308}
-    - Class: 114
-      Script: {instanceID: 5328}
-    - Class: 114
-      Script: {instanceID: 5454}
-    - Class: 114
-      Script: {instanceID: 5534}
+      Script: {instanceID: 5286}
     - Class: 114
       Script: {instanceID: 5540}
     - Class: 114
-      Script: {instanceID: 5576}
+      Script: {instanceID: 5600}
     - Class: 114
-      Script: {instanceID: 5784}
+      Script: {instanceID: 5624}
     - Class: 114
-      Script: {instanceID: 5788}
+      Script: {instanceID: 5632}
+    - Class: 114
+      Script: {instanceID: 5738}
     - Class: 114
       Script: {instanceID: 5800}
     - Class: 114
-      Script: {instanceID: 5808}
+      Script: {instanceID: 5806}
     - Class: 114
-      Script: {instanceID: 5890}
+      Script: {instanceID: 5868}
     - Class: 114
-      Script: {instanceID: 5966}
+      Script: {instanceID: 6130}
     - Class: 114
-      Script: {instanceID: 5972}
+      Script: {instanceID: 6136}
     - Class: 114
-      Script: {instanceID: 6034}
+      Script: {instanceID: 6226}
     - Class: 114
-      Script: {instanceID: 6142}
-    - Class: 114
-      Script: {instanceID: 6154}
-    - Class: 114
-      Script: {instanceID: 6178}
-    - Class: 114
-      Script: {instanceID: 6206}
-    - Class: 114
-      Script: {instanceID: 6260}
-    - Class: 114
-      Script: {instanceID: 6264}
-    - Class: 114
-      Script: {instanceID: 6270}
-    - Class: 114
-      Script: {instanceID: 6410}
-    - Class: 114
-      Script: {instanceID: 6442}
-    - Class: 114
-      Script: {instanceID: 6454}
-    - Class: 114
-      Script: {instanceID: 6708}
-    - Class: 114
-      Script: {instanceID: 6768}
-    - Class: 114
-      Script: {instanceID: 6790}
-    - Class: 114
-      Script: {instanceID: 6798}
-    - Class: 114
-      Script: {instanceID: 6902}
-    - Class: 114
-      Script: {instanceID: 6960}
-    - Class: 114
-      Script: {instanceID: 6966}
-    - Class: 114
-      Script: {instanceID: 7026}
-    - Class: 114
-      Script: {instanceID: 7280}
-    - Class: 114
-      Script: {instanceID: 7286}
-    - Class: 114
-      Script: {instanceID: 7374}
-    - Class: 114
-      Script: {instanceID: 46966}
+      Script: {instanceID: 113722}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -353,6 +332,8 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    - Class: 208
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -607,6 +588,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 83e769eee07fc231384c812eedbb8224
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Spawner
   - hash:
       serializedVersion: 2
       Hash: c2a435d94f56ab15b20fed8f446ce58a
@@ -1039,6 +1026,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: ConnectAndJoinRandom
+  - hash:
+      serializedVersion: 2
+      Hash: cdc504759d64aae7eed4463cbaec87db
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Readme
   - hash:
       serializedVersion: 2
       Hash: 760787567e1b60d64a3e421ab83ee14a
@@ -1509,7 +1502,7 @@ ScriptsOnlyBuild:
     className: SidebarToggle
   - hash:
       serializedVersion: 2
-      Hash: 16baf21c482a64839301c34919c701fc
+      Hash: 03e3067b02e1649b27edf2bae057bde4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ReceiveBlendshapes
@@ -1527,7 +1520,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: f65a203501c0c6a79a7b1835ed574052
+      Hash: 46edc92b8e6b85b401b8ddb0b3c4a7fe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NetworkManager
@@ -2415,6 +2408,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: 6c37cd28dca39b740b7515d3ee5565d4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VoiceManagement
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: MPDepthCore.Calibration.Camera
@@ -2505,17 +2504,227 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   - hash:
       serializedVersion: 2
-      Hash: 6c37cd28dca39b740b7515d3ee5565d4
+      Hash: 62a109b2fcf9cae59e51c5f7b0e53e36
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: VoiceManagement
+    namespaceName: UniHumanoid
+    className: RuntimeBvhLoader
   - hash:
       serializedVersion: 2
-      Hash: 83e769eee07fc231384c812eedbb8224
+      Hash: 9812910a4f6439866e7faf415f733f1b
+    assemblyName: UniHumanoid.dll
+    namespaceName: UniHumanoid
+    className: HumanPoseClip
+  - hash:
+      serializedVersion: 2
+      Hash: 6f853657aba43dadc86d987f07a2f6f6
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: VRMMeta
+  - hash:
+      serializedVersion: 2
+      Hash: 1b973647c81b4820b29b6b8b1e888375
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: VRMLookAtHead
+  - hash:
+      serializedVersion: 2
+      Hash: 7f40e1d8c3d4a2c401a1e097e8b6d206
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: VRMFirstPerson
+  - hash:
+      serializedVersion: 2
+      Hash: 46423d0acbadeeea334e049a0ebf7192
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: VRMSpringBoneColliderGroup
+  - hash:
+      serializedVersion: 2
+      Hash: bf6e08d7a549afe897b2d26fa3b318e5
+    assemblyName: UniHumanoid.dll
+    namespaceName: UniHumanoid
+    className: Humanoid
+  - hash:
+      serializedVersion: 2
+      Hash: 9b5e42b9de3006868c18997aa1ab430c
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: VRMLookAt
+  - hash:
+      serializedVersion: 2
+      Hash: 439d341b65cc00e70d6347614262f251
+    assemblyName: FastSpringBone.dll
+    namespaceName: VRM.FastSpringBones.Components
+    className: FastSpringBoneScheduler
+  - hash:
+      serializedVersion: 2
+      Hash: fd4d123d72421e39ae332b50aa5518e9
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: BlendShapeAvatar
+  - hash:
+      serializedVersion: 2
+      Hash: 60136d49ba40101cb556a9cdc1250a94
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: LookAtTargetSwitcher
+  - hash:
+      serializedVersion: 2
+      Hash: 716ea3711c7025e741cb6ba1725825d3
+    assemblyName: UniGLTF.Samples.ScreenSpace.dll
+    namespaceName: UniGLTF.Samples
+    className: ScaleOffset
+  - hash:
+      serializedVersion: 2
+      Hash: 609c325d56a37b5a43c40c622c20a6be
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: LookTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniGLTF.dll
+    namespaceName: UniGLTF
+    className: RuntimeGltfInstance
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: FastSpringBoneService
+  - hash:
+      serializedVersion: 2
+      Hash: 6cfea30aed32bca77d9c90eaa0d8d3b0
+    assemblyName: UniHumanoid.dll
+    namespaceName: UniHumanoid
+    className: MuscleDebug
+  - hash:
+      serializedVersion: 2
+      Hash: 443bf42d461c43901754562c8bfa9afe
+    assemblyName: UniHumanoid.dll
+    namespaceName: UniHumanoid
+    className: BoneGizmoDrawer
+  - hash:
+      serializedVersion: 2
+      Hash: 7e1bf90f6308bbfb449a007040014977
+    assemblyName: UniHumanoid.dll
+    namespaceName: UniHumanoid
+    className: HandRig
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UniHumanoid.dll
+    namespaceName: UniHumanoid
+    className: MuscleInspector
+  - hash:
+      serializedVersion: 2
+      Hash: c05422aef6550ce907e9e85c8aa420bb
+    assemblyName: UniGLTF.dll
+    namespaceName: UniGLTF.MeshUtility
+    className: BindposeGizmo
+  - hash:
+      serializedVersion: 2
+      Hash: 048356e4113de171ca9e4c50b99bba2b
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: VRMHumanoidDescription
+  - hash:
+      serializedVersion: 2
+      Hash: d36ff1dd384f0b18c29c7d4f5d0cff11
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: VRMSpringBone
+  - hash:
+      serializedVersion: 2
+      Hash: f3474e841ac79781312776231c7e324b
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: VRMLookAtBlendShapeApplyer
+  - hash:
+      serializedVersion: 2
+      Hash: 086f32e12317e8f6587fa7d928738129
+    assemblyName: UniHumanoid.dll
+    namespaceName: UniHumanoid
+    className: BoneMapping
+  - hash:
+      serializedVersion: 2
+      Hash: 9d7b4251b8fc451e1321afa530fd131b
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: BlendShapeClip
+  - hash:
+      serializedVersion: 2
+      Hash: c0ad9b0b7e6c97d3fb6e80eae43eafa4
+    assemblyName: UniHumanoid.dll
+    namespaceName: UniHumanoid
+    className: HumanPoseTransfer
+  - hash:
+      serializedVersion: 2
+      Hash: 2e1d953babb020af3e7725c0c0357d31
+    assemblyName: UniHumanoid.dll
+    namespaceName: UniHumanoid
+    className: AvatarDescription
+  - hash:
+      serializedVersion: 2
+      Hash: 699532fbb2f543eafc5e96235db54b81
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: VRMBlendShapeProxy
+  - hash:
+      serializedVersion: 2
+      Hash: d2632dc626f77085ad3557c8dfb8ff98
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: VRMMetaInformation
+  - hash:
+      serializedVersion: 2
+      Hash: 5a1fc96602feaee381b8a72a65cfa7c7
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: VRMMetaObject
+  - hash:
+      serializedVersion: 2
+      Hash: 897fc7f9d4e09cdd1e624df46834d320
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Spawner
+    namespaceName: UniHumanoid
+    className: HumanBuilderTest
+  - hash:
+      serializedVersion: 2
+      Hash: c93509e26acf5cbf0daaeb3b8085a3c4
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: Blinker
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: FastSpringBoneDisposer
+  - hash:
+      serializedVersion: 2
+      Hash: 5bfa35d304d2d594985c54620d5d62a9
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: VRMLookAtBoneApplyer
+  - hash:
+      serializedVersion: 2
+      Hash: 33e276e75be8076a7906cdebd1938dc8
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: VRMFirstPersonCameraManager
+  - hash:
+      serializedVersion: 2
+      Hash: 0cf7f8dab3a48e92a1a8ad660ac635a8
+    assemblyName: VRM.dll
+    namespaceName: VRM
+    className: PreviewSceneManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: FastSpringBone.dll
+    namespaceName: VRM.FastSpringBones.Components
+    className: FastSpringBoneColliderGroup
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/siava/Desktop/NewMPDepth2Build/New MPDepth2.exe
+  playerPath: C:/Users/sujan/Desktop/NewMPDepth2_Build/New MPDepth2.exe

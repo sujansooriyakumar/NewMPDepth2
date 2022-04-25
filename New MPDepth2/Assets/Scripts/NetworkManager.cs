@@ -12,19 +12,24 @@ public class NetworkManager : MonoBehaviour
     [SerializeField] Vector3 position;
     [SerializeField] Vector3 eulers;
     [SerializeField] float[] blendshapes;
+    [SerializeField] bool isOtherPlayerTracking;
     private bool isConnected;
     PhotonView view;
 
     private void Start()
     {
         view = GetComponent<PhotonView>();
+        isOtherPlayerTracking = false;
     }
     private void Update()
     {
+
         trackingData = trackingSystemsManager.CurrentCalibratedTrackingData;
         if (isConnected)
         {
+            view.RPC("SetIsOtherPlayerTracking", RpcTarget.Others);
             view.RPC("SetOtherPlayerData", RpcTarget.Others, trackingData.CameraTrackingData.Position, trackingData.CameraTrackingData.Eulers, trackingData.BlendshapeTrackingData.Blendshapes);
+            
         }
     }
 
@@ -55,5 +60,15 @@ public class NetworkManager : MonoBehaviour
     {
         return eulers;
     }
+
+    [PunRPC]
+    public void SetIsOtherPlayerTracking()
+    {
+        isOtherPlayerTracking = trackingSystemsManager.CurrentCalibratedTrackingData.IsTracking;
+    }
     
+    public bool GetIsOtherPlayerTracking()
+    {
+        return isOtherPlayerTracking;
+    }
 }
