@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0563999b0677842a28013ed362f23bf1, type: 3}
+  m_Name: Female Character
+  m_EditorClassIdentifier: 
+  Gender: Female
+  characterPrefab: {fileID: 7062425155910179952, guid: 41ede3544862d4874a9ba93f208224c9, type: 3}
+  scenePrefab: {fileID: 5285044163958390187, guid: 2db10b03034914df59b592942d3a1610, type: 3}
+  isReadyPlayer: 1

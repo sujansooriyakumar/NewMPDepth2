@@ -1,4 +1,5 @@
 using MPDepthCore;
+using MPDepthCore.Calibration.Camera;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,35 +8,35 @@ public class ReceiveBlendshapes : MonoBehaviour
 {
     [SerializeField] NetworkManager networkManager;
     [SerializeField] SkinnedMeshRenderer skinnedMeshRenderer;
+   
     [SerializeField] bool isReadyPlayerAvatar;
     [SerializeField] TrackingSystemsManager trackingSystemsManager;
+    [SerializeField] Transform headBone;
     private void Start()
     {
+        networkManager = FindObjectOfType<NetworkManager>();
+        trackingSystemsManager = TrackingSystemsManager.instance;
     }
     private void Update()
     {
         //float[] blendshapes = trackingSystemsManager.CurrentCalibratedTrackingData.BlendshapeTrackingData.Blendshapes;
         //transform.position = networkManager.GetPosition();
-        transform.rotation = Quaternion.Euler(networkManager.GetEulers().x * -1, networkManager.GetEulers().y, networkManager.GetEulers().z);
+        //transform.rotation = Quaternion.Euler(networkManager.GetEulers().x * -1, networkManager.GetEulers().y, networkManager.GetEulers().z);
+        //headBone.rotation = Quaternion.Euler(networkManager.GetEulers().x * -1 + 18.725f, networkManager.GetEulers().y + 3.48f, networkManager.GetEulers().z);
+        headBone.rotation = Quaternion.Euler((trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Eulers.x * -1), trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Eulers.y,
+            trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Eulers.z);
 
-       
-
-        
-            float[] blendshapes = networkManager.GetBlendshapes();
-
-            if (isReadyPlayerAvatar)
-            {
-
-                SetReadyPlayerAvatarBlendshapes(blendshapes);
-
-            }
-            else
-            {
+        //float[] blendshapes = networkManager.GetBlendshapes();
+        float[] blendshapes = trackingSystemsManager.CurrentCalibratedTrackingData.BlendshapeTrackingData.Blendshapes;  
+            
                 for (int i = 0; i < blendshapes.Length; i++)
                 {
                     skinnedMeshRenderer.SetBlendShapeWeight(i, blendshapes[i]);
+                    //leftEye.SetBlendShapeWeight(i, blendshapes[i]);
+                    //rightEye.SetBlendShapeWeight(i, blendshapes[i]);
+                    //teeth.SetBlendShapeWeight(i, blendshapes[i]);
                 }
-            }
+            
         
     }
 
@@ -62,11 +63,13 @@ public class ReceiveBlendshapes : MonoBehaviour
         skinnedMeshRenderer.SetBlendShapeWeight(32, blendshapes[5]);
         skinnedMeshRenderer.SetBlendShapeWeight(33, blendshapes[12]);
 
+
         // jaw
         skinnedMeshRenderer.SetBlendShapeWeight(34, blendshapes[13]);
         skinnedMeshRenderer.SetBlendShapeWeight(35, blendshapes[14]);
         skinnedMeshRenderer.SetBlendShapeWeight(36, blendshapes[16]);
         skinnedMeshRenderer.SetBlendShapeWeight(37, blendshapes[15]);
+
 
         // mouth
         skinnedMeshRenderer.SetBlendShapeWeight(38, blendshapes[19]);

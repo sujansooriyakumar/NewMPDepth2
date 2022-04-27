@@ -1,0 +1,628 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.Void Microsoft.CodeAnalysis.EmbeddedAttribute::.ctor()
+extern void EmbeddedAttribute__ctor_mA7C4E58BA795A335E9D66BFBDB8EF481D453E4F1 (void);
+// 0x00000002 System.Void System.Runtime.CompilerServices.IsReadOnlyAttribute::.ctor()
+extern void IsReadOnlyAttribute__ctor_m9C56430DF3C08000C827354D968A209A4657B329 (void);
+// 0x00000003 System.Void System.Runtime.CompilerServices.IsUnmanagedAttribute::.ctor()
+extern void IsUnmanagedAttribute__ctor_m9729656A56F0C93E6F8AAB9E41545099BB19B134 (void);
+// 0x00000004 System.Collections.Generic.IReadOnlyList`1<VRM.FastSpringBones.NativeWrappers.NativeTransform> VRM.FastSpringBones.Schedulers.PullTransformJobScheduler::get_Targets()
+extern void PullTransformJobScheduler_get_Targets_mA1D192A28B18CEBBE4C6DE86B878EB66818512B5 (void);
+// 0x00000005 System.Void VRM.FastSpringBones.Schedulers.PullTransformJobScheduler::.ctor(VRM.FastSpringBones.Registries.TransformRegistry)
+extern void PullTransformJobScheduler__ctor_m6A4A71CBF8593E1CC0BCFE51744597AC8B68ABB9 (void);
+// 0x00000006 System.Void VRM.FastSpringBones.Schedulers.PullTransformJobScheduler::OnTransformChanged()
+extern void PullTransformJobScheduler_OnTransformChanged_mCB6FE8AF1E5842F57F8D856AF61DC175341BB121 (void);
+// 0x00000007 Unity.Jobs.JobHandle VRM.FastSpringBones.Schedulers.PullTransformJobScheduler::Schedule(Unity.Jobs.JobHandle)
+extern void PullTransformJobScheduler_Schedule_m8320273DB84A5C98E131EBA647C94F6E5751D75D (void);
+// 0x00000008 System.Void VRM.FastSpringBones.Schedulers.PullTransformJobScheduler::ReconstructBuffers()
+extern void PullTransformJobScheduler_ReconstructBuffers_m0FF35D635048B444B8019EF1D5B41A45CBBF3B0B (void);
+// 0x00000009 System.Void VRM.FastSpringBones.Schedulers.PullTransformJobScheduler::Dispose()
+extern void PullTransformJobScheduler_Dispose_mAD3B8D444EA8FE50A0AF1743E97989031B2C880E (void);
+// 0x0000000A System.Void VRM.FastSpringBones.Schedulers.PullTransformJobScheduler::ReleaseBuffers()
+extern void PullTransformJobScheduler_ReleaseBuffers_mEFB07EC24A81B87449517E6468FD917DAF1A7833 (void);
+// 0x0000000B System.Void VRM.FastSpringBones.Schedulers.PullTransformJobScheduler/Job::Execute(System.Int32,UnityEngine.Jobs.TransformAccess)
+extern void Job_Execute_m77D64450B2CD6DDF9BC4B519B760358A0B3D3DB6 (void);
+// 0x0000000C System.Collections.Generic.IReadOnlyList`1<VRM.FastSpringBones.NativeWrappers.NativeTransform> VRM.FastSpringBones.Schedulers.PushTransformJobScheduler::get_Targets()
+extern void PushTransformJobScheduler_get_Targets_m0764576E0C51D6287C59D3A63D8D466A4AF46169 (void);
+// 0x0000000D System.Void VRM.FastSpringBones.Schedulers.PushTransformJobScheduler::.ctor(VRM.FastSpringBones.Registries.TransformRegistry)
+extern void PushTransformJobScheduler__ctor_mC29016A625AF618529D40AED57B21D828B5CDEFB (void);
+// 0x0000000E System.Void VRM.FastSpringBones.Schedulers.PushTransformJobScheduler::OnTransformChanged()
+extern void PushTransformJobScheduler_OnTransformChanged_mC327169CFB2B3446ABE4A98C14F4F3AEC1550963 (void);
+// 0x0000000F Unity.Jobs.JobHandle VRM.FastSpringBones.Schedulers.PushTransformJobScheduler::Schedule(Unity.Jobs.JobHandle)
+extern void PushTransformJobScheduler_Schedule_mB1ADC56FAFDE65A7767E853886C6B3680F433BC5 (void);
+// 0x00000010 System.Void VRM.FastSpringBones.Schedulers.PushTransformJobScheduler::ReconstructBuffers()
+extern void PushTransformJobScheduler_ReconstructBuffers_m7E801FD09E6B54A4AD740B22597B54E4B91E1B1E (void);
+// 0x00000011 System.Void VRM.FastSpringBones.Schedulers.PushTransformJobScheduler::Dispose()
+extern void PushTransformJobScheduler_Dispose_mD63F7F73B0047896FFE383F9EE221A6058FED70D (void);
+// 0x00000012 System.Void VRM.FastSpringBones.Schedulers.PushTransformJobScheduler::ReleaseBuffers()
+extern void PushTransformJobScheduler_ReleaseBuffers_m2B476D2D55D66B0E427E46993871FF8314AD03E8 (void);
+// 0x00000013 System.Void VRM.FastSpringBones.Schedulers.PushTransformJobScheduler/Job::Execute(System.Int32,UnityEngine.Jobs.TransformAccess)
+extern void Job_Execute_m3988EED99AD5679B285824200C72C4AE87624456 (void);
+// 0x00000014 System.Collections.Generic.IReadOnlyList`1<VRM.FastSpringBones.NativeWrappers.NativePointer`1<VRM.FastSpringBones.Blittables.BlittableRootBone>> VRM.FastSpringBones.Schedulers.UpdateSpringBoneJobScheduler::get_Targets()
+extern void UpdateSpringBoneJobScheduler_get_Targets_mD7360B190D91983008FD803872B569ADE415841F (void);
+// 0x00000015 System.Void VRM.FastSpringBones.Schedulers.UpdateSpringBoneJobScheduler::.ctor(VRM.FastSpringBones.Registries.RootBoneRegistry)
+extern void UpdateSpringBoneJobScheduler__ctor_mD9558513F826C00BE8E9ED3FEC827132A19E858C (void);
+// 0x00000016 System.Void VRM.FastSpringBones.Schedulers.UpdateSpringBoneJobScheduler::Dispose()
+extern void UpdateSpringBoneJobScheduler_Dispose_mBD305D394475D00A5C263B3BD853E895CEC203EA (void);
+// 0x00000017 System.Void VRM.FastSpringBones.Schedulers.UpdateSpringBoneJobScheduler::OnRootBoneChanged()
+extern void UpdateSpringBoneJobScheduler_OnRootBoneChanged_m9BA12E16FB065106596909AD25D46F52EC826654 (void);
+// 0x00000018 Unity.Jobs.JobHandle VRM.FastSpringBones.Schedulers.UpdateSpringBoneJobScheduler::Schedule(Unity.Jobs.JobHandle)
+extern void UpdateSpringBoneJobScheduler_Schedule_mFD182F937447357A2593863541268E930730B64C (void);
+// 0x00000019 System.Void VRM.FastSpringBones.Schedulers.UpdateSpringBoneJobScheduler::ReconstructBuffers()
+extern void UpdateSpringBoneJobScheduler_ReconstructBuffers_m335641D1D92F11A803F1F081B090CD40D9CC2895 (void);
+// 0x0000001A System.Void VRM.FastSpringBones.Schedulers.UpdateSpringBoneJobScheduler::ReleaseBuffer()
+extern void UpdateSpringBoneJobScheduler_ReleaseBuffer_mF45127C94CAFC6A09B26ECB09C6C576A69C5DB27 (void);
+// 0x0000001B System.Void VRM.FastSpringBones.Schedulers.UpdateSpringBoneJobScheduler/Job::Execute(System.Int32)
+extern void Job_Execute_m9F25DE906BE88F857FD073732697D3BC8880ACBD (void);
+// 0x0000001C System.Void VRM.FastSpringBones.Registries.ColliderGroupRegistry::.ctor()
+extern void ColliderGroupRegistry__ctor_m5A1C12EF9EC6D609330A565EE1499F4EBE0CEB3E (void);
+// 0x0000001D System.Collections.Generic.IReadOnlyList`1<T> VRM.FastSpringBones.Registries.Registry`1::get_Items()
+// 0x0000001E System.Void VRM.FastSpringBones.Registries.Registry`1::Register(T)
+// 0x0000001F System.Void VRM.FastSpringBones.Registries.Registry`1::Unregister(T)
+// 0x00000020 System.Void VRM.FastSpringBones.Registries.Registry`1::SubscribeOnValueChanged(System.Action)
+// 0x00000021 System.Void VRM.FastSpringBones.Registries.Registry`1::UnSubscribeOnValueChanged(System.Action)
+// 0x00000022 System.Void VRM.FastSpringBones.Registries.Registry`1::.ctor()
+// 0x00000023 System.Void VRM.FastSpringBones.Registries.RootBoneRegistry::.ctor()
+extern void RootBoneRegistry__ctor_m950C2DB7C748476CDBE3A2D87A6ABE4CEBA5F4E4 (void);
+// 0x00000024 System.Collections.Generic.IReadOnlyList`1<VRM.FastSpringBones.NativeWrappers.NativeTransform> VRM.FastSpringBones.Registries.TransformRegistry::get_Transforms()
+extern void TransformRegistry_get_Transforms_m5DF4D591771444773BA2251B02A6A27D9F28C2F6 (void);
+// 0x00000025 System.Collections.Generic.IReadOnlyList`1<VRM.FastSpringBones.NativeWrappers.NativeTransform> VRM.FastSpringBones.Registries.TransformRegistry::get_PullTargets()
+extern void TransformRegistry_get_PullTargets_mB25BB3C0A2531F84AC0A54F2A7C5F06735AE18B3 (void);
+// 0x00000026 System.Collections.Generic.IReadOnlyList`1<VRM.FastSpringBones.NativeWrappers.NativeTransform> VRM.FastSpringBones.Registries.TransformRegistry::get_PushTargets()
+extern void TransformRegistry_get_PushTargets_m4B78A179B0F6EDFE4B6BB6F562808A6B811F2D15 (void);
+// 0x00000027 System.Void VRM.FastSpringBones.Registries.TransformRegistry::SubscribeOnValueChanged(System.Action)
+extern void TransformRegistry_SubscribeOnValueChanged_m37D9611588F7A19F7A68A25C60B40ACA4E3F7DDC (void);
+// 0x00000028 System.Void VRM.FastSpringBones.Registries.TransformRegistry::UnSubscribeOnValueChanged(System.Action)
+extern void TransformRegistry_UnSubscribeOnValueChanged_m4330B63E60A12355CF53FA15CB73982A92506D26 (void);
+// 0x00000029 System.Void VRM.FastSpringBones.Registries.TransformRegistry::Register(VRM.FastSpringBones.NativeWrappers.NativeTransform,VRM.FastSpringBones.Registries.TransformSynchronizationType)
+extern void TransformRegistry_Register_m6F14A3133E0DE4EC7DF21C10CF846738C5146D3B (void);
+// 0x0000002A System.Void VRM.FastSpringBones.Registries.TransformRegistry::Unregister(VRM.FastSpringBones.NativeWrappers.NativeTransform)
+extern void TransformRegistry_Unregister_mD2AC06492F1CC0A2B64FA068BA74F0F18F54D36E (void);
+// 0x0000002B System.Void VRM.FastSpringBones.Registries.TransformRegistry::.ctor()
+extern void TransformRegistry__ctor_mB107E2E2976C99F68CD7AC3C55B342B7950FF3EA (void);
+// 0x0000002C Unity.Collections.NativeArray`1<VRM.FastSpringBones.Blittables.BlittableCollider> VRM.FastSpringBones.NativeWrappers.NativeColliderGroup::get_Colliders()
+extern void NativeColliderGroup_get_Colliders_m771DBEE4EFD0768B02440F77D49DC3C9846D6109 (void);
+// 0x0000002D VRM.FastSpringBones.Blittables.BlittableColliderGroup* VRM.FastSpringBones.NativeWrappers.NativeColliderGroup::GetUnsafePtr()
+extern void NativeColliderGroup_GetUnsafePtr_m135F8F3523979BD5B9D8BEE4E4C8163F50B45D4F (void);
+// 0x0000002E System.Void VRM.FastSpringBones.NativeWrappers.NativeColliderGroup::.ctor(VRM.FastSpringBones.Blittables.BlittableCollider[],VRM.FastSpringBones.NativeWrappers.NativeTransform)
+extern void NativeColliderGroup__ctor_m64105BE9A90D5C6552A01D281BA9DCEB4226718C (void);
+// 0x0000002F System.Void VRM.FastSpringBones.NativeWrappers.NativeColliderGroup::Dispose()
+extern void NativeColliderGroup_Dispose_m5C4695E82B9AEA44D7A96329C9D54519E0267860 (void);
+// 0x00000030 VRM.FastSpringBones.Blittables.BlittableColliderGroups* VRM.FastSpringBones.NativeWrappers.NativeColliderGroups::GetUnsafePtr()
+extern void NativeColliderGroups_GetUnsafePtr_m35233F667FE8B51823F44013CB32A7A979BAF6C5 (void);
+// 0x00000031 System.Void VRM.FastSpringBones.NativeWrappers.NativeColliderGroups::DrawGizmos()
+extern void NativeColliderGroups_DrawGizmos_m1A9B1DF801D699123F5DEE4A4664D5CE16137C47 (void);
+// 0x00000032 System.Collections.Generic.IReadOnlyList`1<VRM.FastSpringBones.Components.FastSpringBoneColliderGroup> VRM.FastSpringBones.NativeWrappers.NativeColliderGroups::get_ColliderGroups()
+extern void NativeColliderGroups_get_ColliderGroups_m3B73743E3A75C21A8BD8D424F11CB6CDCBDDDDB2 (void);
+// 0x00000033 System.Void VRM.FastSpringBones.NativeWrappers.NativeColliderGroups::set_ColliderGroups(System.Collections.Generic.IReadOnlyList`1<VRM.FastSpringBones.Components.FastSpringBoneColliderGroup>)
+extern void NativeColliderGroups_set_ColliderGroups_m42195BCDF7FD8612A86936300C8EDDCAE9D3B6D9 (void);
+// 0x00000034 System.Void VRM.FastSpringBones.NativeWrappers.NativeColliderGroups::UpdateColliderGroups()
+extern void NativeColliderGroups_UpdateColliderGroups_m211E6C16ACE1EE2251E993C4994DF60D0C66FE83 (void);
+// 0x00000035 System.Void VRM.FastSpringBones.NativeWrappers.NativeColliderGroups::.ctor(System.Collections.Generic.IReadOnlyList`1<VRM.FastSpringBones.Components.FastSpringBoneColliderGroup>)
+extern void NativeColliderGroups__ctor_m1A85F5340E5C4DCCF8D84F0B6EB14FD6CBD4B603 (void);
+// 0x00000036 System.Void VRM.FastSpringBones.NativeWrappers.NativeColliderGroups::Dispose()
+extern void NativeColliderGroups_Dispose_mF53752CDE16818114CC04E8BAEA79BA2C031B1D2 (void);
+// 0x00000037 System.Void VRM.FastSpringBones.NativeWrappers.NativeColliderGroups::CreateColliderGroupArray(System.Collections.Generic.IReadOnlyList`1<VRM.FastSpringBones.Components.FastSpringBoneColliderGroup>)
+extern void NativeColliderGroups_CreateColliderGroupArray_m681BD9E2A5B3DA90690C3597C5FC4252C9F57327 (void);
+// 0x00000038 System.Void VRM.FastSpringBones.NativeWrappers.NativeColliderGroups::UpdateData()
+extern void NativeColliderGroups_UpdateData_m4F8A762E3016242A5AA49B6C214B739AFC10D25D (void);
+// 0x00000039 T* VRM.FastSpringBones.NativeWrappers.NativePointer`1::GetUnsafePtr()
+// 0x0000003A T VRM.FastSpringBones.NativeWrappers.NativePointer`1::get_Value()
+// 0x0000003B System.Void VRM.FastSpringBones.NativeWrappers.NativePointer`1::set_Value(T)
+// 0x0000003C System.Void VRM.FastSpringBones.NativeWrappers.NativePointer`1::.ctor()
+// 0x0000003D System.Void VRM.FastSpringBones.NativeWrappers.NativePointer`1::.ctor(T)
+// 0x0000003E System.Void VRM.FastSpringBones.NativeWrappers.NativePointer`1::Dispose()
+// 0x0000003F VRM.FastSpringBones.Blittables.BlittablePoints* VRM.FastSpringBones.NativeWrappers.NativePoints::GetUnsafePtr()
+extern void NativePoints_GetUnsafePtr_mE51A68572188AB50541AE29AF8FE2B8A3D32D088 (void);
+// 0x00000040 System.Void VRM.FastSpringBones.NativeWrappers.NativePoints::.ctor(System.Collections.Generic.IList`1<VRM.FastSpringBones.NativeWrappers.NativePointer`1<VRM.FastSpringBones.Blittables.BlittablePoint>>)
+extern void NativePoints__ctor_mBCE418348D1330DAF2DE1E8E9D097F0AB7FB21B0 (void);
+// 0x00000041 System.Void VRM.FastSpringBones.NativeWrappers.NativePoints::Dispose()
+extern void NativePoints_Dispose_m7EA4DC62343AF4B557065DC3148367B7F67CCB88 (void);
+// 0x00000042 UnityEngine.Transform VRM.FastSpringBones.NativeWrappers.NativeTransform::get_Transform()
+extern void NativeTransform_get_Transform_mD31EB4E9767FA389DF327511DE7B7271129A8D20 (void);
+// 0x00000043 VRM.FastSpringBones.Blittables.BlittableTransform* VRM.FastSpringBones.NativeWrappers.NativeTransform::GetUnsafePtr()
+extern void NativeTransform_GetUnsafePtr_m6E9BA2A811A7B72CF5635CD75F335C45E51C7041 (void);
+// 0x00000044 VRM.FastSpringBones.Blittables.BlittableTransform VRM.FastSpringBones.NativeWrappers.NativeTransform::get_Value()
+extern void NativeTransform_get_Value_m51E9DE59FC4CDA623326330C4FC4E2C6F01A607C (void);
+// 0x00000045 System.Void VRM.FastSpringBones.NativeWrappers.NativeTransform::.ctor(VRM.FastSpringBones.Registries.TransformRegistry,VRM.FastSpringBones.Registries.TransformSynchronizationType,UnityEngine.Transform,VRM.FastSpringBones.NativeWrappers.NativeTransform)
+extern void NativeTransform__ctor_m5622E3BE7F5ED43E5B37BD4447A8E34A41AC276F (void);
+// 0x00000046 System.Void VRM.FastSpringBones.NativeWrappers.NativeTransform::Dispose()
+extern void NativeTransform_Dispose_m0A492076F13E995F79D526F28004826EB3D6017E (void);
+// 0x00000047 VRM.FastSpringBones.Blittables.BlittableColliderGroup* VRM.FastSpringBones.Components.FastSpringBoneColliderGroup::get_ColliderGroupPtr()
+extern void FastSpringBoneColliderGroup_get_ColliderGroupPtr_m5CFFCD3555FF59D6084F8E59D9EC038F44F9FBD6 (void);
+// 0x00000048 System.Void VRM.FastSpringBones.Components.FastSpringBoneColliderGroup::Initialize(VRM.FastSpringBones.Registries.TransformRegistry,VRM.FastSpringBones.Blittables.BlittableCollider[])
+extern void FastSpringBoneColliderGroup_Initialize_m666A1A57AE7694F6FF85481C5262178AED6CB313 (void);
+// 0x00000049 System.Void VRM.FastSpringBones.Components.FastSpringBoneColliderGroup::OnDestroy()
+extern void FastSpringBoneColliderGroup_OnDestroy_m40CDC539ED169DC227B30E09B46A034793314755 (void);
+// 0x0000004A System.Void VRM.FastSpringBones.Components.FastSpringBoneColliderGroup::.ctor()
+extern void FastSpringBoneColliderGroup__ctor_m25E9B33C42594901AA72C570CA70B4B446D2B937 (void);
+// 0x0000004B System.Boolean VRM.FastSpringBones.Components.FastSpringBoneScheduler::get_ShowGizmos()
+extern void FastSpringBoneScheduler_get_ShowGizmos_m2C4B0C14D15BDB241870FC138754E019379B0DF7 (void);
+// 0x0000004C System.Void VRM.FastSpringBones.Components.FastSpringBoneScheduler::set_ShowGizmos(System.Boolean)
+extern void FastSpringBoneScheduler_set_ShowGizmos_m3A3C305D1476B710AF540AB98934AD7C55EA5BDF (void);
+// 0x0000004D System.Void VRM.FastSpringBones.Components.FastSpringBoneScheduler::Initialize(VRM.FastSpringBones.Registries.RootBoneRegistry,VRM.FastSpringBones.Registries.TransformRegistry,VRM.FastSpringBones.Registries.ColliderGroupRegistry)
+extern void FastSpringBoneScheduler_Initialize_mA771C39FC4E60EF6D3C0C3A0B7624DBBDC4F931A (void);
+// 0x0000004E System.Void VRM.FastSpringBones.Components.FastSpringBoneScheduler::OnDestroy()
+extern void FastSpringBoneScheduler_OnDestroy_mC02A6A45F8B300C6385509B7CD1F44C5052F3A21 (void);
+// 0x0000004F System.Void VRM.FastSpringBones.Components.FastSpringBoneScheduler::OnRootBoneChanged()
+extern void FastSpringBoneScheduler_OnRootBoneChanged_m4381C13CD8FCEAA03C5DAF3E7751E7449F007CBF (void);
+// 0x00000050 System.Void VRM.FastSpringBones.Components.FastSpringBoneScheduler::LateUpdate()
+extern void FastSpringBoneScheduler_LateUpdate_mB76D89EEE6CA985F4A174B8B0768BF89E3DFFA69 (void);
+// 0x00000051 System.Void VRM.FastSpringBones.Components.FastSpringBoneScheduler::.ctor()
+extern void FastSpringBoneScheduler__ctor_mD6BAE1815BD92EF3CB5BAA155C1822793D45133F (void);
+// 0x00000052 System.Void VRM.FastSpringBones.Components.FastSpringRootBone::.ctor(VRM.FastSpringBones.Registries.TransformRegistry,UnityEngine.Transform,VRM.FastSpringBones.Registries.RootBoneRegistry,VRM.FastSpringBones.Registries.ColliderGroupRegistry)
+extern void FastSpringRootBone__ctor_mA718FB4D5460E5DA1417DFCCDBE776D7F8EBA609 (void);
+// 0x00000053 System.Collections.Generic.IReadOnlyList`1<VRM.FastSpringBones.Components.FastSpringBoneColliderGroup> VRM.FastSpringBones.Components.FastSpringRootBone::get_ColliderGroups()
+extern void FastSpringRootBone_get_ColliderGroups_m2DD1757B33DAD20BC8360480E0B3C775B2F18AF2 (void);
+// 0x00000054 System.Void VRM.FastSpringBones.Components.FastSpringRootBone::set_ColliderGroups(System.Collections.Generic.IReadOnlyList`1<VRM.FastSpringBones.Components.FastSpringBoneColliderGroup>)
+extern void FastSpringRootBone_set_ColliderGroups_mC046D0D80BFCF32B228B814C1EE4C4EDD40A7B22 (void);
+// 0x00000055 System.Void VRM.FastSpringBones.Components.FastSpringRootBone::Initialize(System.Single,UnityEngine.Vector3,System.Single,System.Single,System.Collections.Generic.IReadOnlyList`1<VRM.FastSpringBones.Components.FastSpringBoneColliderGroup>,System.Single,UnityEngine.Transform)
+extern void FastSpringRootBone_Initialize_mA78EF57A10748C1E83EC2E037511585C5C934637 (void);
+// 0x00000056 System.Void VRM.FastSpringBones.Components.FastSpringRootBone::Dispose()
+extern void FastSpringRootBone_Dispose_mB9D06799158CDCB0BECCD0581CE87FB020F30ED3 (void);
+// 0x00000057 System.Void VRM.FastSpringBones.Components.FastSpringRootBone::SetupRecursive(UnityEngine.Transform,VRM.FastSpringBones.NativeWrappers.NativeTransform)
+extern void FastSpringRootBone_SetupRecursive_m0D4BDBEBBCCD73FC2831ECBC2A3947EB1027B6F0 (void);
+// 0x00000058 UnityEngine.Vector3 VRM.FastSpringBones.Blittables.BlittableCollider::get_Offset()
+extern void BlittableCollider_get_Offset_m4B695A7965BC52B6E961C41F4EE4BA499D65C943 (void);
+// 0x00000059 System.Single VRM.FastSpringBones.Blittables.BlittableCollider::get_Radius()
+extern void BlittableCollider_get_Radius_m2B59ACF75F8211B871414B3F53A55BFE007A18AC (void);
+// 0x0000005A System.Void VRM.FastSpringBones.Blittables.BlittableCollider::.ctor(UnityEngine.Vector3,System.Single)
+extern void BlittableCollider__ctor_mCA56CC588B7186FDA8618D3144D7B55646150A8A (void);
+// 0x0000005B VRM.FastSpringBones.Blittables.BlittableColliders VRM.FastSpringBones.Blittables.BlittableColliderGroup::get_Colliders()
+extern void BlittableColliderGroup_get_Colliders_m77764EDD28DF21494344677FD9E815FACC7CDFB4 (void);
+// 0x0000005C VRM.FastSpringBones.Blittables.BlittableTransform* VRM.FastSpringBones.Blittables.BlittableColliderGroup::get_Transform()
+extern void BlittableColliderGroup_get_Transform_m7FD69C9BFD454A91E6E236AA736415C6088CBDB4 (void);
+// 0x0000005D System.Void VRM.FastSpringBones.Blittables.BlittableColliderGroup::.ctor(Unity.Collections.NativeArray`1<VRM.FastSpringBones.Blittables.BlittableCollider>,VRM.FastSpringBones.Blittables.BlittableTransform*)
+extern void BlittableColliderGroup__ctor_m89AB32EC4CB097AB42DFE1F63D97213A62CAE88E (void);
+// 0x0000005E System.Int32 VRM.FastSpringBones.Blittables.BlittableColliderGroups::get_Length()
+extern void BlittableColliderGroups_get_Length_m63C73D34AF5DE3A69C02849442BAACEEA8654FE5 (void);
+// 0x0000005F VRM.FastSpringBones.Blittables.BlittableColliderGroup VRM.FastSpringBones.Blittables.BlittableColliderGroups::get_Item(System.Int32)
+extern void BlittableColliderGroups_get_Item_mC4ECE0AE1F8B6276909E98509B46264FC573AFE5 (void);
+// 0x00000060 System.Void VRM.FastSpringBones.Blittables.BlittableColliderGroups::DrawGizmos()
+extern void BlittableColliderGroups_DrawGizmos_m6596EEDA377DB60BF240E1A1B9AB9184E0551733 (void);
+// 0x00000061 System.Void VRM.FastSpringBones.Blittables.BlittableColliderGroups::.ctor(VRM.FastSpringBones.Blittables.BlittableColliderGroup*,System.Int32)
+extern void BlittableColliderGroups__ctor_m932226D6B38F9CB4503894244D68C2BEE07C42D4 (void);
+// 0x00000062 System.Int32 VRM.FastSpringBones.Blittables.BlittableColliders::get_Count()
+extern void BlittableColliders_get_Count_m501185A413889E631E4934DA8C36FD5B83A7164E (void);
+// 0x00000063 VRM.FastSpringBones.Blittables.BlittableCollider VRM.FastSpringBones.Blittables.BlittableColliders::get_Item(System.Int32)
+extern void BlittableColliders_get_Item_m59E5177890806A728537844E7C732C73DCB5D795 (void);
+// 0x00000064 System.Void VRM.FastSpringBones.Blittables.BlittableColliders::.ctor(VRM.FastSpringBones.Blittables.BlittableCollider*,System.Int32)
+extern void BlittableColliders__ctor_mA75D891A81D3B09FD3ADC0C1034A0C3012F0A232 (void);
+// 0x00000065 UnityEngine.Vector3 VRM.FastSpringBones.Blittables.BlittablePoint::get_CurrentPosition()
+extern void BlittablePoint_get_CurrentPosition_mA3FC21A18552A6B92543D023C0B927A188B3CE39 (void);
+// 0x00000066 System.Void VRM.FastSpringBones.Blittables.BlittablePoint::set_CurrentPosition(UnityEngine.Vector3)
+extern void BlittablePoint_set_CurrentPosition_mD212ECEE996FB2BE7A0E4973C8D59D73484B6CA5 (void);
+// 0x00000067 System.Void VRM.FastSpringBones.Blittables.BlittablePoint::.ctor(UnityEngine.Transform,System.Single,VRM.FastSpringBones.Blittables.BlittableTransform*,VRM.FastSpringBones.Blittables.BlittableColliderGroups*,VRM.FastSpringBones.Blittables.BlittableTransform*)
+extern void BlittablePoint__ctor_mAD71864DDC5EA8ABCF6AE97DC73ECDDAD5331DA8 (void);
+// 0x00000068 System.Void VRM.FastSpringBones.Blittables.BlittablePoint::Update(System.Single,System.Single,UnityEngine.Vector3)
+extern void BlittablePoint_Update_mEF6058E16F85C907467E3383776A373F278404C5 (void);
+// 0x00000069 UnityEngine.Vector3 VRM.FastSpringBones.Blittables.BlittablePoint::Collision(UnityEngine.Vector3,UnityEngine.Vector3)
+extern void BlittablePoint_Collision_mE340D013B529FA1EEAFF70EFC562D494F2AC716D (void);
+// 0x0000006A UnityEngine.Quaternion VRM.FastSpringBones.Blittables.BlittablePoint::FromToRotation(UnityEngine.Vector3,UnityEngine.Vector3)
+extern void BlittablePoint_FromToRotation_m58DF5300E4F2EF6B0C30F07670BDAB9CBECBE512 (void);
+// 0x0000006B UnityEngine.Quaternion VRM.FastSpringBones.Blittables.BlittablePoint::ApplyRotation(UnityEngine.Vector3)
+extern void BlittablePoint_ApplyRotation_mFB43D4F17F88459EE31443604A634335BAA65033 (void);
+// 0x0000006C System.Int32 VRM.FastSpringBones.Blittables.BlittablePoints::get_Count()
+extern void BlittablePoints_get_Count_m35946661A8F2267C8F4CB4B8557FECC28675BF1C (void);
+// 0x0000006D VRM.FastSpringBones.Blittables.BlittablePoint VRM.FastSpringBones.Blittables.BlittablePoints::get_Item(System.Int32)
+extern void BlittablePoints_get_Item_m27D0445E1139DE0869DD1771003B34F3A9D53CAC (void);
+// 0x0000006E System.Void VRM.FastSpringBones.Blittables.BlittablePoints::set_Item(System.Int32,VRM.FastSpringBones.Blittables.BlittablePoint)
+extern void BlittablePoints_set_Item_mBB03422C0617F284B260C5DB3F916FEC791E2790 (void);
+// 0x0000006F System.Void VRM.FastSpringBones.Blittables.BlittablePoints::.ctor(VRM.FastSpringBones.Blittables.BlittablePoint*,System.Int32)
+extern void BlittablePoints__ctor_mE4C1DB08BE53D2914BD5C8965135BEB2A9203E9E (void);
+// 0x00000070 System.Void VRM.FastSpringBones.Blittables.BlittableRootBone::DrawGizmos()
+extern void BlittableRootBone_DrawGizmos_m081264BB9806E60D87A36B06465174594E381245 (void);
+// 0x00000071 System.Void VRM.FastSpringBones.Blittables.BlittableRootBone::.ctor(System.Single,UnityEngine.Vector3,System.Single,System.Single,VRM.FastSpringBones.Blittables.BlittablePoints*)
+extern void BlittableRootBone__ctor_m7E6536F9C4BAB18919678F06C8C69BB0BEC1FAF5 (void);
+// 0x00000072 System.Void VRM.FastSpringBones.Blittables.BlittableRootBone::Update(System.Single)
+extern void BlittableRootBone_Update_mD7798AEFCD43AAAACE805DCE65A7CEDB4B303EA3 (void);
+// 0x00000073 UnityEngine.Vector3 VRM.FastSpringBones.Blittables.BlittableTransform::get_WorldPosition()
+extern void BlittableTransform_get_WorldPosition_m6ABCC50FC25950578AA54380B03ACDE0C39BD8F0 (void);
+// 0x00000074 System.Void VRM.FastSpringBones.Blittables.BlittableTransform::set_WorldPosition(UnityEngine.Vector3)
+extern void BlittableTransform_set_WorldPosition_mFA291B3B2F5C2AEFEF9269A1B19A2C20E60FC442 (void);
+// 0x00000075 System.Void VRM.FastSpringBones.Blittables.BlittableTransform::SetWorldRotation(UnityEngine.Quaternion)
+extern void BlittableTransform_SetWorldRotation_m1F5FF43623DC8582E1178A70C7372CFEACF81C58 (void);
+// 0x00000076 UnityEngine.Matrix4x4 VRM.FastSpringBones.Blittables.BlittableTransform::get_LocalToWorld()
+extern void BlittableTransform_get_LocalToWorld_mC58E83F111E24534359AE7A9EA2BAD043249D9E8 (void);
+// 0x00000077 UnityEngine.Matrix4x4 VRM.FastSpringBones.Blittables.BlittableTransform::get_LocalTransform()
+extern void BlittableTransform_get_LocalTransform_mFA9798BD51D9659DD95EFF864ED0291F066371AF (void);
+// 0x00000078 UnityEngine.Quaternion VRM.FastSpringBones.Blittables.BlittableTransform::get_ParentWorldRotation()
+extern void BlittableTransform_get_ParentWorldRotation_m23E0A4589206DC30E665C6C3DAA5966B9DF18EE7 (void);
+// 0x00000079 System.Void VRM.FastSpringBones.Blittables.BlittableTransform::.ctor(VRM.FastSpringBones.Blittables.BlittableTransform*,UnityEngine.Transform)
+extern void BlittableTransform__ctor_m5041ABB388BF0F162ABD3E02812ABD1DB390383A (void);
+// 0x0000007A System.Void VRM.FastSpringBones.Blittables.BlittableTransform::PullFrom(UnityEngine.Jobs.TransformAccess)
+extern void BlittableTransform_PullFrom_m60EB3B51DF17177636F8D8873DE94789396CE651 (void);
+// 0x0000007B System.Void VRM.FastSpringBones.Blittables.BlittableTransform::PushTo(UnityEngine.Jobs.TransformAccess)
+extern void BlittableTransform_PushTo_m765BC4F6315ECB4278A3EFC9FE5AC8F894542D72 (void);
+// 0x0000007C UnityEngine.Vector3 VRM.FastSpringBones.Blittables.BlittableTransform::TransformPoint(UnityEngine.Vector3)
+extern void BlittableTransform_TransformPoint_m6FB950DB66259085E1D76FC96601CEC2AA373D16 (void);
+// 0x0000007D System.Void VRM.FastSpringBones.Blittables.BlittableTransform::UpdateLocalToWorldMatrix()
+extern void BlittableTransform_UpdateLocalToWorldMatrix_m7B4DC6DA83BF57E0F4C443867AA9FCE5F0609964 (void);
+static Il2CppMethodPointer s_methodPointers[125] = 
+{
+	EmbeddedAttribute__ctor_mA7C4E58BA795A335E9D66BFBDB8EF481D453E4F1,
+	IsReadOnlyAttribute__ctor_m9C56430DF3C08000C827354D968A209A4657B329,
+	IsUnmanagedAttribute__ctor_m9729656A56F0C93E6F8AAB9E41545099BB19B134,
+	PullTransformJobScheduler_get_Targets_mA1D192A28B18CEBBE4C6DE86B878EB66818512B5,
+	PullTransformJobScheduler__ctor_m6A4A71CBF8593E1CC0BCFE51744597AC8B68ABB9,
+	PullTransformJobScheduler_OnTransformChanged_mCB6FE8AF1E5842F57F8D856AF61DC175341BB121,
+	PullTransformJobScheduler_Schedule_m8320273DB84A5C98E131EBA647C94F6E5751D75D,
+	PullTransformJobScheduler_ReconstructBuffers_m0FF35D635048B444B8019EF1D5B41A45CBBF3B0B,
+	PullTransformJobScheduler_Dispose_mAD3B8D444EA8FE50A0AF1743E97989031B2C880E,
+	PullTransformJobScheduler_ReleaseBuffers_mEFB07EC24A81B87449517E6468FD917DAF1A7833,
+	Job_Execute_m77D64450B2CD6DDF9BC4B519B760358A0B3D3DB6,
+	PushTransformJobScheduler_get_Targets_m0764576E0C51D6287C59D3A63D8D466A4AF46169,
+	PushTransformJobScheduler__ctor_mC29016A625AF618529D40AED57B21D828B5CDEFB,
+	PushTransformJobScheduler_OnTransformChanged_mC327169CFB2B3446ABE4A98C14F4F3AEC1550963,
+	PushTransformJobScheduler_Schedule_mB1ADC56FAFDE65A7767E853886C6B3680F433BC5,
+	PushTransformJobScheduler_ReconstructBuffers_m7E801FD09E6B54A4AD740B22597B54E4B91E1B1E,
+	PushTransformJobScheduler_Dispose_mD63F7F73B0047896FFE383F9EE221A6058FED70D,
+	PushTransformJobScheduler_ReleaseBuffers_m2B476D2D55D66B0E427E46993871FF8314AD03E8,
+	Job_Execute_m3988EED99AD5679B285824200C72C4AE87624456,
+	UpdateSpringBoneJobScheduler_get_Targets_mD7360B190D91983008FD803872B569ADE415841F,
+	UpdateSpringBoneJobScheduler__ctor_mD9558513F826C00BE8E9ED3FEC827132A19E858C,
+	UpdateSpringBoneJobScheduler_Dispose_mBD305D394475D00A5C263B3BD853E895CEC203EA,
+	UpdateSpringBoneJobScheduler_OnRootBoneChanged_m9BA12E16FB065106596909AD25D46F52EC826654,
+	UpdateSpringBoneJobScheduler_Schedule_mFD182F937447357A2593863541268E930730B64C,
+	UpdateSpringBoneJobScheduler_ReconstructBuffers_m335641D1D92F11A803F1F081B090CD40D9CC2895,
+	UpdateSpringBoneJobScheduler_ReleaseBuffer_mF45127C94CAFC6A09B26ECB09C6C576A69C5DB27,
+	Job_Execute_m9F25DE906BE88F857FD073732697D3BC8880ACBD,
+	ColliderGroupRegistry__ctor_m5A1C12EF9EC6D609330A565EE1499F4EBE0CEB3E,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	RootBoneRegistry__ctor_m950C2DB7C748476CDBE3A2D87A6ABE4CEBA5F4E4,
+	TransformRegistry_get_Transforms_m5DF4D591771444773BA2251B02A6A27D9F28C2F6,
+	TransformRegistry_get_PullTargets_mB25BB3C0A2531F84AC0A54F2A7C5F06735AE18B3,
+	TransformRegistry_get_PushTargets_m4B78A179B0F6EDFE4B6BB6F562808A6B811F2D15,
+	TransformRegistry_SubscribeOnValueChanged_m37D9611588F7A19F7A68A25C60B40ACA4E3F7DDC,
+	TransformRegistry_UnSubscribeOnValueChanged_m4330B63E60A12355CF53FA15CB73982A92506D26,
+	TransformRegistry_Register_m6F14A3133E0DE4EC7DF21C10CF846738C5146D3B,
+	TransformRegistry_Unregister_mD2AC06492F1CC0A2B64FA068BA74F0F18F54D36E,
+	TransformRegistry__ctor_mB107E2E2976C99F68CD7AC3C55B342B7950FF3EA,
+	NativeColliderGroup_get_Colliders_m771DBEE4EFD0768B02440F77D49DC3C9846D6109,
+	NativeColliderGroup_GetUnsafePtr_m135F8F3523979BD5B9D8BEE4E4C8163F50B45D4F,
+	NativeColliderGroup__ctor_m64105BE9A90D5C6552A01D281BA9DCEB4226718C,
+	NativeColliderGroup_Dispose_m5C4695E82B9AEA44D7A96329C9D54519E0267860,
+	NativeColliderGroups_GetUnsafePtr_m35233F667FE8B51823F44013CB32A7A979BAF6C5,
+	NativeColliderGroups_DrawGizmos_m1A9B1DF801D699123F5DEE4A4664D5CE16137C47,
+	NativeColliderGroups_get_ColliderGroups_m3B73743E3A75C21A8BD8D424F11CB6CDCBDDDDB2,
+	NativeColliderGroups_set_ColliderGroups_m42195BCDF7FD8612A86936300C8EDDCAE9D3B6D9,
+	NativeColliderGroups_UpdateColliderGroups_m211E6C16ACE1EE2251E993C4994DF60D0C66FE83,
+	NativeColliderGroups__ctor_m1A85F5340E5C4DCCF8D84F0B6EB14FD6CBD4B603,
+	NativeColliderGroups_Dispose_mF53752CDE16818114CC04E8BAEA79BA2C031B1D2,
+	NativeColliderGroups_CreateColliderGroupArray_m681BD9E2A5B3DA90690C3597C5FC4252C9F57327,
+	NativeColliderGroups_UpdateData_m4F8A762E3016242A5AA49B6C214B739AFC10D25D,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NativePoints_GetUnsafePtr_mE51A68572188AB50541AE29AF8FE2B8A3D32D088,
+	NativePoints__ctor_mBCE418348D1330DAF2DE1E8E9D097F0AB7FB21B0,
+	NativePoints_Dispose_m7EA4DC62343AF4B557065DC3148367B7F67CCB88,
+	NativeTransform_get_Transform_mD31EB4E9767FA389DF327511DE7B7271129A8D20,
+	NativeTransform_GetUnsafePtr_m6E9BA2A811A7B72CF5635CD75F335C45E51C7041,
+	NativeTransform_get_Value_m51E9DE59FC4CDA623326330C4FC4E2C6F01A607C,
+	NativeTransform__ctor_m5622E3BE7F5ED43E5B37BD4447A8E34A41AC276F,
+	NativeTransform_Dispose_m0A492076F13E995F79D526F28004826EB3D6017E,
+	FastSpringBoneColliderGroup_get_ColliderGroupPtr_m5CFFCD3555FF59D6084F8E59D9EC038F44F9FBD6,
+	FastSpringBoneColliderGroup_Initialize_m666A1A57AE7694F6FF85481C5262178AED6CB313,
+	FastSpringBoneColliderGroup_OnDestroy_m40CDC539ED169DC227B30E09B46A034793314755,
+	FastSpringBoneColliderGroup__ctor_m25E9B33C42594901AA72C570CA70B4B446D2B937,
+	FastSpringBoneScheduler_get_ShowGizmos_m2C4B0C14D15BDB241870FC138754E019379B0DF7,
+	FastSpringBoneScheduler_set_ShowGizmos_m3A3C305D1476B710AF540AB98934AD7C55EA5BDF,
+	FastSpringBoneScheduler_Initialize_mA771C39FC4E60EF6D3C0C3A0B7624DBBDC4F931A,
+	FastSpringBoneScheduler_OnDestroy_mC02A6A45F8B300C6385509B7CD1F44C5052F3A21,
+	FastSpringBoneScheduler_OnRootBoneChanged_m4381C13CD8FCEAA03C5DAF3E7751E7449F007CBF,
+	FastSpringBoneScheduler_LateUpdate_mB76D89EEE6CA985F4A174B8B0768BF89E3DFFA69,
+	FastSpringBoneScheduler__ctor_mD6BAE1815BD92EF3CB5BAA155C1822793D45133F,
+	FastSpringRootBone__ctor_mA718FB4D5460E5DA1417DFCCDBE776D7F8EBA609,
+	FastSpringRootBone_get_ColliderGroups_m2DD1757B33DAD20BC8360480E0B3C775B2F18AF2,
+	FastSpringRootBone_set_ColliderGroups_mC046D0D80BFCF32B228B814C1EE4C4EDD40A7B22,
+	FastSpringRootBone_Initialize_mA78EF57A10748C1E83EC2E037511585C5C934637,
+	FastSpringRootBone_Dispose_mB9D06799158CDCB0BECCD0581CE87FB020F30ED3,
+	FastSpringRootBone_SetupRecursive_m0D4BDBEBBCCD73FC2831ECBC2A3947EB1027B6F0,
+	BlittableCollider_get_Offset_m4B695A7965BC52B6E961C41F4EE4BA499D65C943,
+	BlittableCollider_get_Radius_m2B59ACF75F8211B871414B3F53A55BFE007A18AC,
+	BlittableCollider__ctor_mCA56CC588B7186FDA8618D3144D7B55646150A8A,
+	BlittableColliderGroup_get_Colliders_m77764EDD28DF21494344677FD9E815FACC7CDFB4,
+	BlittableColliderGroup_get_Transform_m7FD69C9BFD454A91E6E236AA736415C6088CBDB4,
+	BlittableColliderGroup__ctor_m89AB32EC4CB097AB42DFE1F63D97213A62CAE88E,
+	BlittableColliderGroups_get_Length_m63C73D34AF5DE3A69C02849442BAACEEA8654FE5,
+	BlittableColliderGroups_get_Item_mC4ECE0AE1F8B6276909E98509B46264FC573AFE5,
+	BlittableColliderGroups_DrawGizmos_m6596EEDA377DB60BF240E1A1B9AB9184E0551733,
+	BlittableColliderGroups__ctor_m932226D6B38F9CB4503894244D68C2BEE07C42D4,
+	BlittableColliders_get_Count_m501185A413889E631E4934DA8C36FD5B83A7164E,
+	BlittableColliders_get_Item_m59E5177890806A728537844E7C732C73DCB5D795,
+	BlittableColliders__ctor_mA75D891A81D3B09FD3ADC0C1034A0C3012F0A232,
+	BlittablePoint_get_CurrentPosition_mA3FC21A18552A6B92543D023C0B927A188B3CE39,
+	BlittablePoint_set_CurrentPosition_mD212ECEE996FB2BE7A0E4973C8D59D73484B6CA5,
+	BlittablePoint__ctor_mAD71864DDC5EA8ABCF6AE97DC73ECDDAD5331DA8,
+	BlittablePoint_Update_mEF6058E16F85C907467E3383776A373F278404C5,
+	BlittablePoint_Collision_mE340D013B529FA1EEAFF70EFC562D494F2AC716D,
+	BlittablePoint_FromToRotation_m58DF5300E4F2EF6B0C30F07670BDAB9CBECBE512,
+	BlittablePoint_ApplyRotation_mFB43D4F17F88459EE31443604A634335BAA65033,
+	BlittablePoints_get_Count_m35946661A8F2267C8F4CB4B8557FECC28675BF1C,
+	BlittablePoints_get_Item_m27D0445E1139DE0869DD1771003B34F3A9D53CAC,
+	BlittablePoints_set_Item_mBB03422C0617F284B260C5DB3F916FEC791E2790,
+	BlittablePoints__ctor_mE4C1DB08BE53D2914BD5C8965135BEB2A9203E9E,
+	BlittableRootBone_DrawGizmos_m081264BB9806E60D87A36B06465174594E381245,
+	BlittableRootBone__ctor_m7E6536F9C4BAB18919678F06C8C69BB0BEC1FAF5,
+	BlittableRootBone_Update_mD7798AEFCD43AAAACE805DCE65A7CEDB4B303EA3,
+	BlittableTransform_get_WorldPosition_m6ABCC50FC25950578AA54380B03ACDE0C39BD8F0,
+	BlittableTransform_set_WorldPosition_mFA291B3B2F5C2AEFEF9269A1B19A2C20E60FC442,
+	BlittableTransform_SetWorldRotation_m1F5FF43623DC8582E1178A70C7372CFEACF81C58,
+	BlittableTransform_get_LocalToWorld_mC58E83F111E24534359AE7A9EA2BAD043249D9E8,
+	BlittableTransform_get_LocalTransform_mFA9798BD51D9659DD95EFF864ED0291F066371AF,
+	BlittableTransform_get_ParentWorldRotation_m23E0A4589206DC30E665C6C3DAA5966B9DF18EE7,
+	BlittableTransform__ctor_m5041ABB388BF0F162ABD3E02812ABD1DB390383A,
+	BlittableTransform_PullFrom_m60EB3B51DF17177636F8D8873DE94789396CE651,
+	BlittableTransform_PushTo_m765BC4F6315ECB4278A3EFC9FE5AC8F894542D72,
+	BlittableTransform_TransformPoint_m6FB950DB66259085E1D76FC96601CEC2AA373D16,
+	BlittableTransform_UpdateLocalToWorldMatrix_m7B4DC6DA83BF57E0F4C443867AA9FCE5F0609964,
+};
+extern void Job_Execute_m77D64450B2CD6DDF9BC4B519B760358A0B3D3DB6_AdjustorThunk (void);
+extern void Job_Execute_m3988EED99AD5679B285824200C72C4AE87624456_AdjustorThunk (void);
+extern void Job_Execute_m9F25DE906BE88F857FD073732697D3BC8880ACBD_AdjustorThunk (void);
+extern void BlittableCollider_get_Offset_m4B695A7965BC52B6E961C41F4EE4BA499D65C943_AdjustorThunk (void);
+extern void BlittableCollider_get_Radius_m2B59ACF75F8211B871414B3F53A55BFE007A18AC_AdjustorThunk (void);
+extern void BlittableCollider__ctor_mCA56CC588B7186FDA8618D3144D7B55646150A8A_AdjustorThunk (void);
+extern void BlittableColliderGroup_get_Colliders_m77764EDD28DF21494344677FD9E815FACC7CDFB4_AdjustorThunk (void);
+extern void BlittableColliderGroup_get_Transform_m7FD69C9BFD454A91E6E236AA736415C6088CBDB4_AdjustorThunk (void);
+extern void BlittableColliderGroup__ctor_m89AB32EC4CB097AB42DFE1F63D97213A62CAE88E_AdjustorThunk (void);
+extern void BlittableColliderGroups_get_Length_m63C73D34AF5DE3A69C02849442BAACEEA8654FE5_AdjustorThunk (void);
+extern void BlittableColliderGroups_get_Item_mC4ECE0AE1F8B6276909E98509B46264FC573AFE5_AdjustorThunk (void);
+extern void BlittableColliderGroups_DrawGizmos_m6596EEDA377DB60BF240E1A1B9AB9184E0551733_AdjustorThunk (void);
+extern void BlittableColliderGroups__ctor_m932226D6B38F9CB4503894244D68C2BEE07C42D4_AdjustorThunk (void);
+extern void BlittableColliders_get_Count_m501185A413889E631E4934DA8C36FD5B83A7164E_AdjustorThunk (void);
+extern void BlittableColliders_get_Item_m59E5177890806A728537844E7C732C73DCB5D795_AdjustorThunk (void);
+extern void BlittableColliders__ctor_mA75D891A81D3B09FD3ADC0C1034A0C3012F0A232_AdjustorThunk (void);
+extern void BlittablePoint_get_CurrentPosition_mA3FC21A18552A6B92543D023C0B927A188B3CE39_AdjustorThunk (void);
+extern void BlittablePoint_set_CurrentPosition_mD212ECEE996FB2BE7A0E4973C8D59D73484B6CA5_AdjustorThunk (void);
+extern void BlittablePoint__ctor_mAD71864DDC5EA8ABCF6AE97DC73ECDDAD5331DA8_AdjustorThunk (void);
+extern void BlittablePoint_Update_mEF6058E16F85C907467E3383776A373F278404C5_AdjustorThunk (void);
+extern void BlittablePoint_Collision_mE340D013B529FA1EEAFF70EFC562D494F2AC716D_AdjustorThunk (void);
+extern void BlittablePoint_ApplyRotation_mFB43D4F17F88459EE31443604A634335BAA65033_AdjustorThunk (void);
+extern void BlittablePoints_get_Count_m35946661A8F2267C8F4CB4B8557FECC28675BF1C_AdjustorThunk (void);
+extern void BlittablePoints_get_Item_m27D0445E1139DE0869DD1771003B34F3A9D53CAC_AdjustorThunk (void);
+extern void BlittablePoints_set_Item_mBB03422C0617F284B260C5DB3F916FEC791E2790_AdjustorThunk (void);
+extern void BlittablePoints__ctor_mE4C1DB08BE53D2914BD5C8965135BEB2A9203E9E_AdjustorThunk (void);
+extern void BlittableRootBone_DrawGizmos_m081264BB9806E60D87A36B06465174594E381245_AdjustorThunk (void);
+extern void BlittableRootBone__ctor_m7E6536F9C4BAB18919678F06C8C69BB0BEC1FAF5_AdjustorThunk (void);
+extern void BlittableRootBone_Update_mD7798AEFCD43AAAACE805DCE65A7CEDB4B303EA3_AdjustorThunk (void);
+extern void BlittableTransform_get_WorldPosition_m6ABCC50FC25950578AA54380B03ACDE0C39BD8F0_AdjustorThunk (void);
+extern void BlittableTransform_set_WorldPosition_mFA291B3B2F5C2AEFEF9269A1B19A2C20E60FC442_AdjustorThunk (void);
+extern void BlittableTransform_SetWorldRotation_m1F5FF43623DC8582E1178A70C7372CFEACF81C58_AdjustorThunk (void);
+extern void BlittableTransform_get_LocalToWorld_mC58E83F111E24534359AE7A9EA2BAD043249D9E8_AdjustorThunk (void);
+extern void BlittableTransform_get_LocalTransform_mFA9798BD51D9659DD95EFF864ED0291F066371AF_AdjustorThunk (void);
+extern void BlittableTransform_get_ParentWorldRotation_m23E0A4589206DC30E665C6C3DAA5966B9DF18EE7_AdjustorThunk (void);
+extern void BlittableTransform__ctor_m5041ABB388BF0F162ABD3E02812ABD1DB390383A_AdjustorThunk (void);
+extern void BlittableTransform_PullFrom_m60EB3B51DF17177636F8D8873DE94789396CE651_AdjustorThunk (void);
+extern void BlittableTransform_PushTo_m765BC4F6315ECB4278A3EFC9FE5AC8F894542D72_AdjustorThunk (void);
+extern void BlittableTransform_TransformPoint_m6FB950DB66259085E1D76FC96601CEC2AA373D16_AdjustorThunk (void);
+extern void BlittableTransform_UpdateLocalToWorldMatrix_m7B4DC6DA83BF57E0F4C443867AA9FCE5F0609964_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[40] = 
+{
+	{ 0x0600000B, Job_Execute_m77D64450B2CD6DDF9BC4B519B760358A0B3D3DB6_AdjustorThunk },
+	{ 0x06000013, Job_Execute_m3988EED99AD5679B285824200C72C4AE87624456_AdjustorThunk },
+	{ 0x0600001B, Job_Execute_m9F25DE906BE88F857FD073732697D3BC8880ACBD_AdjustorThunk },
+	{ 0x06000058, BlittableCollider_get_Offset_m4B695A7965BC52B6E961C41F4EE4BA499D65C943_AdjustorThunk },
+	{ 0x06000059, BlittableCollider_get_Radius_m2B59ACF75F8211B871414B3F53A55BFE007A18AC_AdjustorThunk },
+	{ 0x0600005A, BlittableCollider__ctor_mCA56CC588B7186FDA8618D3144D7B55646150A8A_AdjustorThunk },
+	{ 0x0600005B, BlittableColliderGroup_get_Colliders_m77764EDD28DF21494344677FD9E815FACC7CDFB4_AdjustorThunk },
+	{ 0x0600005C, BlittableColliderGroup_get_Transform_m7FD69C9BFD454A91E6E236AA736415C6088CBDB4_AdjustorThunk },
+	{ 0x0600005D, BlittableColliderGroup__ctor_m89AB32EC4CB097AB42DFE1F63D97213A62CAE88E_AdjustorThunk },
+	{ 0x0600005E, BlittableColliderGroups_get_Length_m63C73D34AF5DE3A69C02849442BAACEEA8654FE5_AdjustorThunk },
+	{ 0x0600005F, BlittableColliderGroups_get_Item_mC4ECE0AE1F8B6276909E98509B46264FC573AFE5_AdjustorThunk },
+	{ 0x06000060, BlittableColliderGroups_DrawGizmos_m6596EEDA377DB60BF240E1A1B9AB9184E0551733_AdjustorThunk },
+	{ 0x06000061, BlittableColliderGroups__ctor_m932226D6B38F9CB4503894244D68C2BEE07C42D4_AdjustorThunk },
+	{ 0x06000062, BlittableColliders_get_Count_m501185A413889E631E4934DA8C36FD5B83A7164E_AdjustorThunk },
+	{ 0x06000063, BlittableColliders_get_Item_m59E5177890806A728537844E7C732C73DCB5D795_AdjustorThunk },
+	{ 0x06000064, BlittableColliders__ctor_mA75D891A81D3B09FD3ADC0C1034A0C3012F0A232_AdjustorThunk },
+	{ 0x06000065, BlittablePoint_get_CurrentPosition_mA3FC21A18552A6B92543D023C0B927A188B3CE39_AdjustorThunk },
+	{ 0x06000066, BlittablePoint_set_CurrentPosition_mD212ECEE996FB2BE7A0E4973C8D59D73484B6CA5_AdjustorThunk },
+	{ 0x06000067, BlittablePoint__ctor_mAD71864DDC5EA8ABCF6AE97DC73ECDDAD5331DA8_AdjustorThunk },
+	{ 0x06000068, BlittablePoint_Update_mEF6058E16F85C907467E3383776A373F278404C5_AdjustorThunk },
+	{ 0x06000069, BlittablePoint_Collision_mE340D013B529FA1EEAFF70EFC562D494F2AC716D_AdjustorThunk },
+	{ 0x0600006B, BlittablePoint_ApplyRotation_mFB43D4F17F88459EE31443604A634335BAA65033_AdjustorThunk },
+	{ 0x0600006C, BlittablePoints_get_Count_m35946661A8F2267C8F4CB4B8557FECC28675BF1C_AdjustorThunk },
+	{ 0x0600006D, BlittablePoints_get_Item_m27D0445E1139DE0869DD1771003B34F3A9D53CAC_AdjustorThunk },
+	{ 0x0600006E, BlittablePoints_set_Item_mBB03422C0617F284B260C5DB3F916FEC791E2790_AdjustorThunk },
+	{ 0x0600006F, BlittablePoints__ctor_mE4C1DB08BE53D2914BD5C8965135BEB2A9203E9E_AdjustorThunk },
+	{ 0x06000070, BlittableRootBone_DrawGizmos_m081264BB9806E60D87A36B06465174594E381245_AdjustorThunk },
+	{ 0x06000071, BlittableRootBone__ctor_m7E6536F9C4BAB18919678F06C8C69BB0BEC1FAF5_AdjustorThunk },
+	{ 0x06000072, BlittableRootBone_Update_mD7798AEFCD43AAAACE805DCE65A7CEDB4B303EA3_AdjustorThunk },
+	{ 0x06000073, BlittableTransform_get_WorldPosition_m6ABCC50FC25950578AA54380B03ACDE0C39BD8F0_AdjustorThunk },
+	{ 0x06000074, BlittableTransform_set_WorldPosition_mFA291B3B2F5C2AEFEF9269A1B19A2C20E60FC442_AdjustorThunk },
+	{ 0x06000075, BlittableTransform_SetWorldRotation_m1F5FF43623DC8582E1178A70C7372CFEACF81C58_AdjustorThunk },
+	{ 0x06000076, BlittableTransform_get_LocalToWorld_mC58E83F111E24534359AE7A9EA2BAD043249D9E8_AdjustorThunk },
+	{ 0x06000077, BlittableTransform_get_LocalTransform_mFA9798BD51D9659DD95EFF864ED0291F066371AF_AdjustorThunk },
+	{ 0x06000078, BlittableTransform_get_ParentWorldRotation_m23E0A4589206DC30E665C6C3DAA5966B9DF18EE7_AdjustorThunk },
+	{ 0x06000079, BlittableTransform__ctor_m5041ABB388BF0F162ABD3E02812ABD1DB390383A_AdjustorThunk },
+	{ 0x0600007A, BlittableTransform_PullFrom_m60EB3B51DF17177636F8D8873DE94789396CE651_AdjustorThunk },
+	{ 0x0600007B, BlittableTransform_PushTo_m765BC4F6315ECB4278A3EFC9FE5AC8F894542D72_AdjustorThunk },
+	{ 0x0600007C, BlittableTransform_TransformPoint_m6FB950DB66259085E1D76FC96601CEC2AA373D16_AdjustorThunk },
+	{ 0x0600007D, BlittableTransform_UpdateLocalToWorldMatrix_m7B4DC6DA83BF57E0F4C443867AA9FCE5F0609964_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[125] = 
+{
+	4867,
+	4867,
+	4867,
+	4798,
+	3962,
+	4867,
+	2882,
+	4867,
+	4867,
+	4867,
+	2024,
+	4798,
+	3962,
+	4867,
+	2882,
+	4867,
+	4867,
+	4867,
+	2024,
+	4798,
+	3962,
+	4867,
+	4867,
+	2882,
+	4867,
+	4867,
+	3940,
+	4867,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	4867,
+	4798,
+	4798,
+	4798,
+	3962,
+	3962,
+	2130,
+	3962,
+	4867,
+	4599,
+	4705,
+	2134,
+	4867,
+	4705,
+	4867,
+	4798,
+	3962,
+	4867,
+	3962,
+	4867,
+	3962,
+	4867,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	4705,
+	3962,
+	4867,
+	4798,
+	4705,
+	4724,
+	772,
+	4867,
+	4705,
+	2134,
+	4867,
+	4867,
+	4823,
+	3986,
+	1190,
+	4867,
+	4867,
+	4867,
+	4867,
+	789,
+	4798,
+	3962,
+	123,
+	4867,
+	2134,
+	4862,
+	4827,
+	2187,
+	4720,
+	4705,
+	1722,
+	4773,
+	2465,
+	4867,
+	1767,
+	4773,
+	2458,
+	1767,
+	4862,
+	4023,
+	360,
+	1230,
+	1714,
+	6457,
+	2985,
+	4773,
+	2466,
+	1935,
+	1767,
+	4867,
+	371,
+	3989,
+	4862,
+	4023,
+	3974,
+	4790,
+	4790,
+	4807,
+	1769,
+	4011,
+	4011,
+	3626,
+	4867,
+};
+static const Il2CppTokenRangePair s_rgctxIndices[2] = 
+{
+	{ 0x0200000C, { 0, 4 } },
+	{ 0x02000012, { 4, 2 } },
+};
+static const Il2CppRGCTXDefinition s_rgctxValues[6] = 
+{
+	{ (Il2CppRGCTXDataType)3, 19542 },
+	{ (Il2CppRGCTXDataType)3, 19543 },
+	{ (Il2CppRGCTXDataType)2, 3862 },
+	{ (Il2CppRGCTXDataType)3, 19541 },
+	{ (Il2CppRGCTXDataType)2, 540 },
+	{ (Il2CppRGCTXDataType)3, 25631 },
+};
+extern const CustomAttributesCacheGenerator g_FastSpringBone_AttributeGenerators[];
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_FastSpringBone_CodeGenModule;
+const Il2CppCodeGenModule g_FastSpringBone_CodeGenModule = 
+{
+	"FastSpringBone.dll",
+	125,
+	s_methodPointers,
+	40,
+	s_adjustorThunks,
+	s_InvokerIndices,
+	0,
+	NULL,
+	2,
+	s_rgctxIndices,
+	6,
+	s_rgctxValues,
+	NULL,
+	g_FastSpringBone_AttributeGenerators,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

@@ -11,7 +11,7 @@ public class ARTracking : MPDepthTrackingSource
 
     [SerializeField] FaceTracker faceTracker = default;
     [PublicAPI]
-    [SerializeField] RawTrackingData trackingData;
+    [SerializeField] public RawTrackingData trackingData;
 
     public override void TurnOn()
     {

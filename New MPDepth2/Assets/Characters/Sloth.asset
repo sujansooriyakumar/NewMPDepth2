@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0563999b0677842a28013ed362f23bf1, type: 3}
+  m_Name: Sloth
+  m_EditorClassIdentifier: 
+  Gender: Male
+  characterPrefab: {fileID: 1217920764520308, guid: a5e76df5cbfd54a06abdaf52046adbc0, type: 3}
+  scenePrefab: {fileID: 6268248578496156577, guid: f7eaad119c9234ff2bc32b29f3c6bcd3, type: 3}
+  isReadyPlayer: 0
