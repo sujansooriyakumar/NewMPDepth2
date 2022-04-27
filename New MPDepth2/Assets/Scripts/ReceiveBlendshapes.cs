@@ -12,29 +12,47 @@ public class ReceiveBlendshapes : MonoBehaviour
     [SerializeField] bool isReadyPlayerAvatar;
     [SerializeField] TrackingSystemsManager trackingSystemsManager;
     [SerializeField] Transform headBone;
+
+    private Vector3 position;
+    private Vector3 rotation;
+    private float[] blendshapes;
     private void Start()
     {
-        networkManager = FindObjectOfType<NetworkManager>();
+        networkManager = NetworkManager.instance;
         trackingSystemsManager = TrackingSystemsManager.instance;
     }
     private void Update()
     {
-        //float[] blendshapes = trackingSystemsManager.CurrentCalibratedTrackingData.BlendshapeTrackingData.Blendshapes;
-        //transform.position = networkManager.GetPosition();
-        //transform.rotation = Quaternion.Euler(networkManager.GetEulers().x * -1, networkManager.GetEulers().y, networkManager.GetEulers().z);
-        //headBone.rotation = Quaternion.Euler(networkManager.GetEulers().x * -1 + 18.725f, networkManager.GetEulers().y + 3.48f, networkManager.GetEulers().z);
-        headBone.rotation = Quaternion.Euler((trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Eulers.x * -1), trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Eulers.y,
-            trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Eulers.z);
+        if (!networkManager.isConnected)
+        {
+            position = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Position;
+            rotation = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Eulers;
+            blendshapes = trackingSystemsManager.CurrentCalibratedTrackingData.BlendshapeTrackingData.Blendshapes;
 
-        //float[] blendshapes = networkManager.GetBlendshapes();
-        float[] blendshapes = trackingSystemsManager.CurrentCalibratedTrackingData.BlendshapeTrackingData.Blendshapes;  
+    
+        }
+        else
+        {
+            position = networkManager.GetPosition();
+            rotation = networkManager.GetEulers();
+            blendshapes = networkManager.GetBlendshapes();
+
+        }
+
+        if (trackingSystemsManager.CurrentCalibratedTrackingData.IsTracking || networkManager.GetIsOtherPlayerTracking())
+        {
+            headBone.rotation = Quaternion.Euler(rotation.x * -1, rotation.y, rotation.z);
+
+        }
+
+      
+
+
             
                 for (int i = 0; i < blendshapes.Length; i++)
                 {
                     skinnedMeshRenderer.SetBlendShapeWeight(i, blendshapes[i]);
-                    //leftEye.SetBlendShapeWeight(i, blendshapes[i]);
-                    //rightEye.SetBlendShapeWeight(i, blendshapes[i]);
-                    //teeth.SetBlendShapeWeight(i, blendshapes[i]);
+               
                 }
             
         

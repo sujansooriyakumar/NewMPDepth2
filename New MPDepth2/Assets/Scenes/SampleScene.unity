@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18154515, g: 0.22718747, b: 0.3074045, a: 1}
+  m_IndirectSpecularColor: {r: 0.18154591, g: 0.22718865, b: 0.30740604, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -854,6 +854,7 @@ MonoBehaviour:
   faceManager: {fileID: 2345412281872402242}
   temp: {fileID: 8816964577658289033, guid: 5e10bb0d4bd664caf81915bfa21fed31, type: 3}
   currentAvatar: {fileID: 1114040688}
+  networkManager: {fileID: 0}
 --- !u!4 &493941303
 Transform:
   m_ObjectHideFlags: 0
@@ -917,6 +918,7 @@ MonoBehaviour:
   eulers: {x: 0, y: 0, z: 0}
   blendshapes: []
   isOtherPlayerTracking: 0
+  otherPlayerAvatarID: 0
 --- !u!114 &503642486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13791,7 +13793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trackingSource: {fileID: 4709815319646429471}
   trackingCalibrationProvider: {fileID: 4709815319732945058}
-  offsetTransform: {fileID: 0}
+  offsetTransform: {fileID: 2345412281137102038}
   rawTrackingData:
     IsTracking: 0
     CameraTrackingData:
@@ -14179,8 +14181,8 @@ MonoBehaviour:
   trackingCalibrationProvider: {fileID: 4709815319732945058}
   screenCalibrationProvider: {fileID: 9158384484801933253}
   mainUI: {fileID: 0}
-  offAxisCameraRig: {fileID: 0}
-  offAxisCamera: {fileID: 0}
+  offAxisCameraRig: {fileID: 2345412281996839972}
+  offAxisCamera: {fileID: 2345412282431365494}
 --- !u!4 &4709815320202142335
 Transform:
   m_ObjectHideFlags: 0

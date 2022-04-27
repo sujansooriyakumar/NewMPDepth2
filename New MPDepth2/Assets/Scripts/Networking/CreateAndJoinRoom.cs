@@ -24,7 +24,7 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
     {
         Debug.Log("Joined room: " + PhotonNetwork.CurrentRoom.Name);
         Debug.Log("Player count: " + PhotonNetwork.CurrentRoom.PlayerCount);
-        networkManager.SetIsConnected(true);
+        networkManager.GetView().RPC("SetIsConnected", RpcTarget.OthersBuffered, true);
         FindObjectOfType<Spawner>().Spawn();
         isConnected = true;
     }
@@ -33,5 +33,7 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
     {
         return isConnected;
     }
+
+   
 
 }

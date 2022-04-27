@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
-using UnityEngine.XR.ARKit;
 using UnityEngine.XR.ARSubsystems;
 
 /// <summary>

@@ -39,7 +39,6 @@ namespace MPDepthCore
             foreach (TrackingSystem trackingSystem in trackingSystems)
             {
                 trackingSystem.TurnOff();
-                Debug.Log(trackingSystem.name);
                 trackingSystemsDropdown.options.Add(new Dropdown.OptionData(trackingSystem.name));
             }
             instance = this;

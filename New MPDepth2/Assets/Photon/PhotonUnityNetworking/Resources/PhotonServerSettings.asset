@@ -44,6 +44,8 @@ MonoBehaviour:
   - ChangeColour
   - HeresWhy
   - SetIsOtherPlayerTracking
+  - SetAvatarID
+  - SetIsConnected
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

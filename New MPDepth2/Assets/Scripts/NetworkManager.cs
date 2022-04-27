@@ -4,17 +4,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using System;
 
 public class NetworkManager : MonoBehaviour
 {
+    public static NetworkManager instance;
     [SerializeField] MPDepthTrackingData trackingData;
     [SerializeField] TrackingSystemsManager trackingSystemsManager;
     [SerializeField] Vector3 position;
     [SerializeField] Vector3 eulers;
     [SerializeField] float[] blendshapes;
     [SerializeField] bool isOtherPlayerTracking;
-    private bool isConnected;
+    public bool isConnected;
     PhotonView view;
+    [SerializeField] Int32 otherPlayerAvatarID;
+    private void Awake()
+    {
+        instance = this;
+
+    }
 
     private void Start()
     {
@@ -41,6 +49,7 @@ public class NetworkManager : MonoBehaviour
         blendshapes = blendshapes_;
     }
 
+    [PunRPC]
     public void SetIsConnected(bool val)
     {
         isConnected = val;
@@ -70,5 +79,17 @@ public class NetworkManager : MonoBehaviour
     public bool GetIsOtherPlayerTracking()
     {
         return isOtherPlayerTracking;
+    }
+
+    public PhotonView GetView()
+    {
+        return view;
+    }
+
+    [PunRPC]
+    public void SetAvatarID(Int32 val)
+    {
+        otherPlayerAvatarID = val;
+        CharacterSelector.instance.UpdateAvatar(otherPlayerAvatarID);
     }
 }
