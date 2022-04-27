@@ -92,4 +92,9 @@ public class NetworkManager : MonoBehaviour
         otherPlayerAvatarID = val;
         CharacterSelector.instance.UpdateAvatar(otherPlayerAvatarID);
     }
+
+    public void UpdateAvatar()
+    {
+        if(otherPlayerAvatarID > 0) CharacterSelector.instance.UpdateAvatar(otherPlayerAvatarID);
+    }
 }

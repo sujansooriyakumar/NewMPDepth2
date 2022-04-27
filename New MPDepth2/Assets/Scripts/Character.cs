@@ -19,4 +19,6 @@ public class Character : ScriptableObject
     {
         return scenePrefab;
     }
+
+  
 }
