@@ -9,6 +9,8 @@ public class CharacterSelector : MonoBehaviour
     [SerializeField] Character[] characters;
     [SerializeField] ARFaceManager faceManager;
     [SerializeField] GameObject currentAvatar;
+    [SerializeField] Vector3 slothPosition;
+    [SerializeField] Vector3 readyPlayerPosition;
     public int index;
     public NetworkManager networkManager;
     public static CharacterSelector instance;
@@ -49,9 +51,20 @@ public class CharacterSelector : MonoBehaviour
 
     public void UpdateAvatar(Int32 index)
     {
-        Vector3 position = currentAvatar.transform.position;
+        Vector3 position = Vector3.zero;
+        if (characters[index].GetIsReadyPlayer())
+        {
+            position = readyPlayerPosition;
+        }
+
+        else
+        {
+            position = slothPosition;
+        }
         Destroy(currentAvatar);
         currentAvatar = Instantiate(characters[index].GetScenePrefab(), position, Quaternion.Euler(0, 180 ,0));
+        characters[index].GetPrefab().GetComponent<ARKitBlendShapeVisualizer>().CreateFeatureBlendMapping();
         faceManager.facePrefab = characters[index].GetPrefab();
+        
     }
 }

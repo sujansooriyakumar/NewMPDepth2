@@ -20,5 +20,9 @@ public class Character : ScriptableObject
         return scenePrefab;
     }
 
+    public bool GetIsReadyPlayer()
+    {
+        return isReadyPlayer;
+    }
   
 }

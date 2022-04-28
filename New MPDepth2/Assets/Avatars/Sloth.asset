@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gender: Male
   characterPrefab: {fileID: 1217920764520308, guid: a5e76df5cbfd54a06abdaf52046adbc0, type: 3}
-  scenePrefab: {fileID: 6268248578496156577, guid: f7eaad119c9234ff2bc32b29f3c6bcd3, type: 3}
+  scenePrefab: {fileID: 1356497232950298070, guid: 600480d727c5a9e449f5906c27d3448b, type: 3}
   isReadyPlayer: 0

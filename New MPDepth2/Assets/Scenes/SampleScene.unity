@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18154515, g: 0.22718747, b: 0.3074045, a: 1}
+  m_IndirectSpecularColor: {r: 0.18154591, g: 0.22718865, b: 0.30740604, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -853,6 +853,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3ae4671ce57634f2dae64de60aa74e99, type: 2}
   faceManager: {fileID: 2345412281872402242}
   currentAvatar: {fileID: 1735116262}
+  slothPosition: {x: 4.162, y: 1.277, z: -1.253}
+  readyPlayerPosition: {x: 4.162, y: 0.64, z: -1.253}
   index: 1
   networkManager: {fileID: 0}
 --- !u!4 &493941303
@@ -2076,7 +2078,7 @@ MonoBehaviour:
   voiceDetectionThreshold: 0.01
   voiceDetectionDelayMs: 500
   unityMicrophoneDevice: 
-  photonMicrophoneDeviceId: -1
+  photonMicrophoneDeviceId: 0
   interestGroup: 0
   debugEchoMode: 0
   reliableMode: 0

@@ -57,7 +57,7 @@ public class ARKitBlendShapeVisualizer : MonoBehaviour
         CreateFeatureBlendMapping();
     }
 
-    void CreateFeatureBlendMapping()
+    public void CreateFeatureBlendMapping()
     {
         if (skinnedMeshRenderer == null || skinnedMeshRenderer.sharedMesh == null)
         {
