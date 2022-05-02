@@ -1,0 +1,16 @@
+{
+    "name": "Voice",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b59fae9c7ebc1574e8690f2570b29d6f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

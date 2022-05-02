@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using MPDepthCore.Calibration.Camera;
 using MPDepthCore.TrackingSources;
+using MPDepthCore;
 using UnityEngine;
 
 public class MotiveRawTrackingSource : MPDepthTrackingSource

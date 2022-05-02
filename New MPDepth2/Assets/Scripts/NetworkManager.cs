@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using System;
+using ReadyPlayerMe;
 
 public class NetworkManager : MonoBehaviour
 {
@@ -97,4 +98,12 @@ public class NetworkManager : MonoBehaviour
     {
         if(otherPlayerAvatarID > 0) CharacterSelector.instance.UpdateAvatar(otherPlayerAvatarID);
     }
+
+    [PunRPC]
+
+    public void LoadAvatar(string url)
+    {
+        ReadyPlayerLoader.instance.BeginLoadCharacter(url);
+    }
+   
 }

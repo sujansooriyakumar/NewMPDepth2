@@ -1,0 +1,19 @@
+{
+    "name": "StreamTracking",
+    "rootNamespace": "",
+    "references": [
+        "GUID:fcff2691fd070a042b0e1881a52fe601",
+        "GUID:a936ce53cd0b1634f8fcd867d9ee1575",
+        "GUID:267249694e256834f89888d3d7c09b9a",
+        "GUID:69407e2965e9992469f8c8df74008bdf"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

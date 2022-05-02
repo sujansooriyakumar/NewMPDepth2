@@ -1,0 +1,19 @@
+{
+    "name": "Motive",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a936ce53cd0b1634f8fcd867d9ee1575",
+        "GUID:267249694e256834f89888d3d7c09b9a",
+        "GUID:478a2357cc57436488a56e564b08d223",
+        "GUID:6c9134ad8872e0b42b559216df328527"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

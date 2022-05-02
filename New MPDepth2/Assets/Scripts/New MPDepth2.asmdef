@@ -1,0 +1,27 @@
+{
+    "name": "NewMPDepth2",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a936ce53cd0b1634f8fcd867d9ee1575",
+        "GUID:267249694e256834f89888d3d7c09b9a",
+        "GUID:e5dd78652aee03e41abcda7c9d3b86a8",
+        "GUID:a9420e37d7990b54abdef6688edbe313",
+        "GUID:69ab3f10cf42d0b42a6cd1353c374377",
+        "GUID:57c32fc907df0f54e8e6e8f0d2488336",
+        "GUID:dfd0ce20189d48e5b22bb4134b558f5a",
+        "GUID:6a539ac6c932246bd946aa409b684bb2",
+        "GUID:92703082f92b41ba80f0d6912de66115",
+        "GUID:fcff2691fd070a042b0e1881a52fe601",
+        "GUID:831409e8f9d13b5479a3baef9822ad34",
+        "GUID:69407e2965e9992469f8c8df74008bdf"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

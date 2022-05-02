@@ -24,5 +24,10 @@ public class Character : ScriptableObject
     {
         return isReadyPlayer;
     }
+
+    public void SetPrefab(GameObject go)
+    {
+        characterPrefab = go;
+    }
   
 }

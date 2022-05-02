@@ -21,6 +21,15 @@ public class ReceiveBlendshapes : MonoBehaviour
     {
         networkManager = NetworkManager.instance;
         trackingSystemsManager = TrackingSystemsManager.instance;
+        skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
+        Transform[] children = transform.GetComponentsInChildren<Transform>();
+        foreach(Transform child in children)
+        {
+            if(child.gameObject.name == "Head")
+            {
+                headBone = child;
+            }
+        }
     }
     private void Update()
     {
@@ -44,13 +53,14 @@ public class ReceiveBlendshapes : MonoBehaviour
 
 
 
+        if (blendshapes.Length > 0)
+        {
+            for (int i = 0; i < blendshapes.Length; i++)
+            {
+                skinnedMeshRenderer.SetBlendShapeWeight(i, blendshapes[i]);
 
-        for (int i = 0; i < blendshapes.Length; i++)
-                {
-                    skinnedMeshRenderer.SetBlendShapeWeight(i, blendshapes[i]);
-               
-                }
-            
+            }
+        }
         
     }
 
