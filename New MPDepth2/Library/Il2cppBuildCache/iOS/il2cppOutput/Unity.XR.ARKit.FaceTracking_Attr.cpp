@@ -349,7 +349,7 @@ static void Unity_XR_ARKit_FaceTracking_CustomAttributesCacheGenerator(CustomAtt
 	}
 	{
 		DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * tmp = (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B *)cache->attributes[2];
-		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 2LL, NULL);
+		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 263LL, NULL);
 	}
 	{
 		AlwaysLinkAssemblyAttribute_t1FF5118B2537571E3B8C038B2F382113F5385715 * tmp = (AlwaysLinkAssemblyAttribute_t1FF5118B2537571E3B8C038B2F382113F5385715 *)cache->attributes[3];

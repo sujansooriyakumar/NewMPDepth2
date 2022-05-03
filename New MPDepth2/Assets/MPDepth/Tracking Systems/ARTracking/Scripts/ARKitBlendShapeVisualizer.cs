@@ -19,7 +19,6 @@ public class ARKitBlendShapeVisualizer : MonoBehaviour
     [SerializeField] bool isReadyPlayer;
     [SerializeField]
     float m_CoefficientScale = 100.0f;
-    
 
     public float coefficientScale
     {
@@ -46,7 +45,7 @@ public class ARKitBlendShapeVisualizer : MonoBehaviour
 #if UNITY_IOS && !UNITY_EDITOR
     ARKitFaceSubsystem m_ARKitFaceSubsystem;
 
-    Dictionary<ARKitBlendShapeLocation, int> m_FaceArkitBlendShapeIndexMap;
+    public Dictionary<ARKitBlendShapeLocation, int> m_FaceArkitBlendShapeIndexMap;
 #endif
 
     ARFace m_Face;
@@ -57,12 +56,14 @@ public class ARKitBlendShapeVisualizer : MonoBehaviour
         CreateFeatureBlendMapping();
     }
 
+    
     public void CreateFeatureBlendMapping()
     {
         if (skinnedMeshRenderer == null || skinnedMeshRenderer.sharedMesh == null)
         {
             return;
         }
+        Debug.Log(skinnedMeshRenderer.name);
 
 #if UNITY_IOS && !UNITY_EDITOR
         const string strPrefix = "blendShape2.";
@@ -122,7 +123,7 @@ public class ARKitBlendShapeVisualizer : MonoBehaviour
             m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.NoseSneerRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("noseSneerRight");
             m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.TongueOut] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("tongueOut");
         }
-        else
+        else if (!isReadyPlayer)
         {
             m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.BrowDownLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "browDown_L");
             m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.BrowDownRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "browDown_R");

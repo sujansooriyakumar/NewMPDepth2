@@ -9,7 +9,6 @@ using UnityEngine;
 public class RotatableDeviceTrackingCalibrationProvider : TrackingCalibrationProvider
 {
     DeviceOrientation lastOrientation = DeviceOrientation.LandscapeLeft;
-    [SerializeField] GameObject calibrationUI;
     [SerializeField]
     SavedRotatableDeviceCalibration currentCalibration;
 
@@ -92,21 +91,8 @@ public class RotatableDeviceTrackingCalibrationProvider : TrackingCalibrationPro
         calibrationTransform.position = Vector3.zero;
         calibrationTransform.rotation = Quaternion.Euler(Vector3.zero);
         DeviceOrientation orientation = CurrentOrientation;
-        switch (orientation)
-        {
-            case DeviceOrientation.Portrait:
-                calibrationTransform.position = PortraitOffset;
-                break;
-            case DeviceOrientation.LandscapeLeft:
-                calibrationTransform.position = LandscapeLeftOffset;
-                break;
-            case DeviceOrientation.LandscapeRight:
-                calibrationTransform.position = LandscapeRightOffset;
-                break;
-            default:
-                throw new ArgumentException($"unspported orientation {orientation}");
-
-        }
+        calibrationTransform.position = OffsetPosition;
+        
         //calibrationTransform.position = currentCalibration.portraitOffset;
 
     }

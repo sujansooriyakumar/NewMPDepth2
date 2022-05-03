@@ -62,9 +62,9 @@ public class CharacterSelector : MonoBehaviour
             position = slothPosition;
         }
         Destroy(currentAvatar);
-        currentAvatar = Instantiate(characters[index].GetScenePrefab(), position, Quaternion.Euler(0, 180 ,0));
-        characters[index].GetPrefab().GetComponent<ARKitBlendShapeVisualizer>().CreateFeatureBlendMapping();
+        currentAvatar = Instantiate(characters[index].GetScenePrefab(), position, Quaternion.Euler(0, 0 ,0));
+        //characters[index].GetPrefab().GetComponent<ARKitBlendShapeVisualizer>().CreateFeatureBlendMapping();
         faceManager.facePrefab = characters[index].GetPrefab();
-        
+      
     }
 }

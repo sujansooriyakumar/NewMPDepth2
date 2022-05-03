@@ -23170,7 +23170,7 @@ IL_0017:
 		Type_t * L_5 = ___type0;
 		NullCheck(L_5);
 		MethodInfoU5BU5D_t86AA7E1AF11D62BAE3189F25907B252596FA627E* L_6;
-		L_6 = VirtFuncInvoker1< MethodInfoU5BU5D_t86AA7E1AF11D62BAE3189F25907B252596FA627E*, int32_t >::Invoke(41 /* System.Reflection.MethodInfo[] System.Type::GetMethods(System.Reflection.BindingFlags) */, L_5, ((int32_t)52));
+		L_6 = VirtFuncInvoker1< MethodInfoU5BU5D_t86AA7E1AF11D62BAE3189F25907B252596FA627E*, int32_t >::Invoke(43 /* System.Reflection.MethodInfo[] System.Type::GetMethods(System.Reflection.BindingFlags) */, L_5, ((int32_t)52));
 		V_1 = L_6;
 		MethodInfoU5BU5D_t86AA7E1AF11D62BAE3189F25907B252596FA627E* L_7 = V_1;
 		V_4 = L_7;
@@ -23200,7 +23200,7 @@ IL_0029:
 		Type_t * L_15 = ___attribute1;
 		NullCheck(L_14);
 		bool L_16;
-		L_16 = VirtFuncInvoker2< bool, Type_t *, bool >::Invoke(12 /* System.Boolean System.Reflection.MemberInfo::IsDefined(System.Type,System.Boolean) */, L_14, L_15, (bool)0);
+		L_16 = VirtFuncInvoker2< bool, Type_t *, bool >::Invoke(13 /* System.Boolean System.Reflection.MemberInfo::IsDefined(System.Type,System.Boolean) */, L_14, L_15, (bool)0);
 		G_B6_0 = ((int32_t)(L_16));
 		goto IL_0046;
 	}
@@ -23866,14 +23866,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SupportClass_WriteStackTrace_mAF579C6CC9
 		String_t* L_4;
 		L_4 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_3);
 		NullCheck(L_2);
-		VirtActionInvoker1< String_t* >::Invoke(18 /* System.Void System.IO.TextWriter::WriteLine(System.String) */, L_2, L_4);
+		VirtActionInvoker1< String_t* >::Invoke(20 /* System.Void System.IO.TextWriter::WriteLine(System.String) */, L_2, L_4);
 		TextWriter_t4CB195237F3B6CADD850FBC3604A049C7C564643 * L_5 = ___stream1;
 		Exception_t * L_6 = ___throwable0;
 		NullCheck(L_6);
 		String_t* L_7;
 		L_7 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Exception::get_StackTrace() */, L_6);
 		NullCheck(L_5);
-		VirtActionInvoker1< String_t* >::Invoke(18 /* System.Void System.IO.TextWriter::WriteLine(System.String) */, L_5, L_7);
+		VirtActionInvoker1< String_t* >::Invoke(20 /* System.Void System.IO.TextWriter::WriteLine(System.String) */, L_5, L_7);
 		TextWriter_t4CB195237F3B6CADD850FBC3604A049C7C564643 * L_8 = ___stream1;
 		NullCheck(L_8);
 		VirtActionInvoker0::Invoke(10 /* System.Void System.IO.TextWriter::Flush() */, L_8);
@@ -24297,7 +24297,7 @@ IL_01ce:
 			L_89 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_88, /*hidden argument*/NULL);
 			NullCheck(L_89);
 			String_t* L_90;
-			L_90 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_89);
+			L_90 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_89);
 			NullCheck(L_87);
 			ArrayElementTypeCheck (L_87, L_90);
 			(L_87)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_90);
@@ -24310,7 +24310,7 @@ IL_01ce:
 			Type_t * L_94 = V_1;
 			NullCheck(L_94);
 			String_t* L_95;
-			L_95 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_94);
+			L_95 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_94);
 			NullCheck(L_93);
 			ArrayElementTypeCheck (L_93, L_95);
 			(L_93)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)L_95);
@@ -24802,7 +24802,7 @@ IL_01d7:
 			L_92 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(L_91, /*hidden argument*/NULL);
 			NullCheck(L_92);
 			String_t* L_93;
-			L_93 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_92);
+			L_93 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_92);
 			NullCheck(L_88);
 			ArrayElementTypeCheck (L_88, L_93);
 			(L_88)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_93);
@@ -24817,7 +24817,7 @@ IL_01d7:
 			Type_t * L_99 = V_1;
 			NullCheck(L_99);
 			String_t* L_100;
-			L_100 = VirtFuncInvoker0< String_t* >::Invoke(7 /* System.String System.Reflection.MemberInfo::get_Name() */, L_99);
+			L_100 = VirtFuncInvoker0< String_t* >::Invoke(8 /* System.String System.Reflection.MemberInfo::get_Name() */, L_99);
 			NullCheck(L_98);
 			ArrayElementTypeCheck (L_98, L_100);
 			(L_98)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject *)L_100);

@@ -316,6 +316,6 @@ MonoBehaviour:
   playbackOnlyWhenEnabled: 0
   playDelayMs: -1
   playbackDelaySettings:
-    MinDelaySoft: 200
-    MaxDelaySoft: 400
-    MaxDelayHard: 1000
+    MinDelaySoft: 0
+    MaxDelaySoft: 0
+    MaxDelayHard: 0

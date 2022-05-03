@@ -36,7 +36,7 @@ public class NetworkManager : MonoBehaviour
         trackingData = trackingSystemsManager.CurrentCalibratedTrackingData;
         if (isConnected)
         {
-            view.RPC("SetIsOtherPlayerTracking", RpcTarget.Others);
+            view.RPC("SetIsOtherPlayerTracking", RpcTarget.OthersBuffered, TrackingSystemsManager.instance.CurrentCalibratedTrackingData.IsTracking);
             view.RPC("SetOtherPlayerData", RpcTarget.Others, trackingData.CameraTrackingData.Position, trackingData.CameraTrackingData.Eulers, trackingData.BlendshapeTrackingData.Blendshapes);
             
         }
@@ -45,7 +45,7 @@ public class NetworkManager : MonoBehaviour
     [PunRPC]
     private void SetOtherPlayerData(Vector3 position_, Vector3 rotation_, float[] blendshapes_)
     {
-        position = position_;
+        position = new Vector3(position_.x, -position_.y, position_.z);
         eulers = rotation_;
         blendshapes = blendshapes_;
     }
@@ -72,9 +72,11 @@ public class NetworkManager : MonoBehaviour
     }
 
     [PunRPC]
-    public void SetIsOtherPlayerTracking()
+    public void SetIsOtherPlayerTracking(bool val)
     {
-        isOtherPlayerTracking = trackingSystemsManager.CurrentCalibratedTrackingData.IsTracking;
+        isOtherPlayerTracking = val;
+        GameObject avatar = FindObjectOfType<ReceiveBlendshapes>().gameObject;
+        avatar.transform.localScale = new Vector3(-1, 1, 1);
     }
     
     public bool GetIsOtherPlayerTracking()

@@ -27,8 +27,10 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
         networkManager.GetView().RPC("SetIsConnected", RpcTarget.OthersBuffered, true);
         FindObjectOfType<Spawner>().Spawn();
         isConnected = true;
+        networkManager.isConnected = true;
         networkManager.UpdateAvatar();
         networkManager.GetView().RPC("SetAvatarID", RpcTarget.OthersBuffered, CharacterSelector.instance.index);
+        
     }
 
     public bool GetIsConnected()

@@ -49,8 +49,15 @@ public class ReceiveBlendshapes : MonoBehaviour
 
         }
 
-        headBone.rotation = Quaternion.Euler((rotation.x) * -1, rotation.y, rotation.z);
+        if (networkManager.isConnected)
+        {
+            headBone.rotation = Quaternion.Euler((rotation.x), -(180 - rotation.y), rotation.z);
 
+        }
+        else
+        {
+            headBone.rotation = Quaternion.Euler((rotation.x), (180 - rotation.y), rotation.z);
+        }
 
 
         if (blendshapes.Length > 0)

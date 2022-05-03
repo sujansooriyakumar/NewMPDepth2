@@ -1,0 +1,238 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.Void OptitrackRigidBody::Start()
+extern void OptitrackRigidBody_Start_mAAE7E9CDDDFC8B1C616CA67E8AA3F6959BF3E8A5 (void);
+// 0x00000002 System.Void OptitrackRigidBody::OnEnable()
+extern void OptitrackRigidBody_OnEnable_m357663315FFA8842C82A767C380D2D4BE60725B2 (void);
+// 0x00000003 System.Void OptitrackRigidBody::OnDisable()
+extern void OptitrackRigidBody_OnDisable_mBE1FFEE87D2FAC9B2C40E6341FC8F62B163D2A4F (void);
+// 0x00000004 System.Void OptitrackRigidBody::OnBeforeRender()
+extern void OptitrackRigidBody_OnBeforeRender_m5A262204114EF5AC38AB3B65D21A0ADCCDAA542B (void);
+// 0x00000005 System.Void OptitrackRigidBody::Update()
+extern void OptitrackRigidBody_Update_m3A118805ACC85D7C8D43546FCBD6D4D081EEDDB8 (void);
+// 0x00000006 System.Void OptitrackRigidBody::UpdatePose()
+extern void OptitrackRigidBody_UpdatePose_m58AE9BAF76BC4A27C7E69D339F632CE2FCDE92A2 (void);
+// 0x00000007 System.Void OptitrackRigidBody::.ctor()
+extern void OptitrackRigidBody__ctor_m537CC3EAA072B3A503ECD066421EAC7A56FCE628 (void);
+// 0x00000008 System.Void OptitrackSkeletonAnimator::Start()
+extern void OptitrackSkeletonAnimator_Start_m563F944051C3A4575E2186F75FAC0A2F4DB50195 (void);
+// 0x00000009 System.Void OptitrackSkeletonAnimator::Update()
+extern void OptitrackSkeletonAnimator_Update_mD2BA5534DE8456864D421DB658FDEE0C95B8CD04 (void);
+// 0x0000000A System.Void OptitrackSkeletonAnimator::MecanimSetup(System.String)
+extern void OptitrackSkeletonAnimator_MecanimSetup_mA23B998A149B4588DBA213F44CC6DA0811BACB0A (void);
+// 0x0000000B System.Void OptitrackSkeletonAnimator::CacheBoneNameMap(OptitrackBoneNameConvention,System.String)
+extern void OptitrackSkeletonAnimator_CacheBoneNameMap_m9B3DA032E10175C5415682E2A6E989B95780D4E3 (void);
+// 0x0000000C System.Void OptitrackSkeletonAnimator::.ctor()
+extern void OptitrackSkeletonAnimator__ctor_m7DCACDC3F02A7FFABA7A887EE586F5B896D871A1 (void);
+// 0x0000000D System.Void OptitrackPose::.ctor()
+extern void OptitrackPose__ctor_mE4E98088FD923B0D288CB4F1C913920BC6AED0F4 (void);
+// 0x0000000E System.Void OptitrackMarkerState::.ctor()
+extern void OptitrackMarkerState__ctor_mDDE7A2392C9545DDC9B3F28EDB437469AD2BC068 (void);
+// 0x0000000F System.Void OptitrackRigidBodyState::.ctor()
+extern void OptitrackRigidBodyState__ctor_m1956FDC4397C307E3D3407FEBA8A981D237EB7CD (void);
+// 0x00000010 System.Void OptitrackSkeletonState::.ctor()
+extern void OptitrackSkeletonState__ctor_mB7FFC333DB86EA4C6281E8950CF0CA0377D8E380 (void);
+// 0x00000011 System.Void OptitrackRigidBodyDefinition::.ctor()
+extern void OptitrackRigidBodyDefinition__ctor_m0651B93CB23A0FCBE73E964E3D63D992356DCCFF (void);
+// 0x00000012 System.Void OptitrackRigidBodyDefinition/MarkerDefinition::.ctor()
+extern void MarkerDefinition__ctor_mCA9BAD8EA21497A9199C20204354E294193FC42C (void);
+// 0x00000013 System.Void OptitrackSkeletonDefinition::.ctor()
+extern void OptitrackSkeletonDefinition__ctor_mA390EAB3D3F3A2E5CE09438821A0A511B98C26BA (void);
+// 0x00000014 System.Void OptitrackSkeletonDefinition/BoneDefinition::.ctor()
+extern void BoneDefinition__ctor_mCC00AFF1B2DA5F57D725B2D276F5002A5F249E46 (void);
+// 0x00000015 OptitrackHiResTimer/Timestamp OptitrackHiResTimer::Now()
+extern void OptitrackHiResTimer_Now_m62AEE66055527B0C0D830501FEC5B14B93F6C04F (void);
+// 0x00000016 System.Single OptitrackHiResTimer/Timestamp::get_AgeSeconds()
+extern void Timestamp_get_AgeSeconds_mAA817418021723863A81F45053F627635924DD7B (void);
+// 0x00000017 System.Single OptitrackHiResTimer/Timestamp::SecondsSince(OptitrackHiResTimer/Timestamp)
+extern void Timestamp_SecondsSince_m1E0586F880396ECDA0FCBED6A5CF4DBA5190B6E1 (void);
+// 0x00000018 System.Void OptitrackStreamingClient::Update()
+extern void OptitrackStreamingClient_Update_mC610F856C763481ED0B30648785EFC2B6103F3FF (void);
+// 0x00000019 OptitrackStreamingClient OptitrackStreamingClient::FindDefaultClient()
+extern void OptitrackStreamingClient_FindDefaultClient_m65BF74F5C714284066F97EC721EC21D2AB07E318 (void);
+// 0x0000001A OptitrackRigidBodyState OptitrackStreamingClient::GetLatestRigidBodyState(System.Int32)
+extern void OptitrackStreamingClient_GetLatestRigidBodyState_m1AE4B3223DB90486E529A3276694A86330CE4FB4 (void);
+// 0x0000001B OptitrackSkeletonState OptitrackStreamingClient::GetLatestSkeletonState(System.Int32)
+extern void OptitrackStreamingClient_GetLatestSkeletonState_m78E1E55B4C7E268F43C23FAAABB06A4369103AEB (void);
+// 0x0000001C System.Collections.Generic.List`1<OptitrackMarkerState> OptitrackStreamingClient::GetLatestMarkerStates()
+extern void OptitrackStreamingClient_GetLatestMarkerStates_m92B35BCDA92C02927E9097609DDDFEFAE9C2980B (void);
+// 0x0000001D OptitrackRigidBodyDefinition OptitrackStreamingClient::GetRigidBodyDefinitionById(System.Int32)
+extern void OptitrackStreamingClient_GetRigidBodyDefinitionById_m93C5B803A07D6E8CA77CCF294BFB1373D58F1ADD (void);
+// 0x0000001E OptitrackSkeletonDefinition OptitrackStreamingClient::GetSkeletonDefinitionByName(System.String)
+extern void OptitrackStreamingClient_GetSkeletonDefinitionByName_mB7ED187ED96B2593617DE5F01C1AE7FB8E610733 (void);
+// 0x0000001F System.Void OptitrackStreamingClient::UpdateDefinitions()
+extern void OptitrackStreamingClient_UpdateDefinitions_mD9CA25BFD89FD520EE4CC48F6AFEB61CB733812B (void);
+// 0x00000020 System.Void OptitrackStreamingClient::OnEnable()
+extern void OptitrackStreamingClient_OnEnable_m4002B0CC217DD565ACB58C893A953386BA05F651 (void);
+// 0x00000021 System.Void OptitrackStreamingClient::OnDisable()
+extern void OptitrackStreamingClient_OnDisable_m5F0C4450CAE022D97E659990AD5C7CA063DC0CA9 (void);
+// 0x00000022 System.Collections.IEnumerator OptitrackStreamingClient::CheckConnectionHealth()
+extern void OptitrackStreamingClient_CheckConnectionHealth_mFF8B0131C4F6A697F21E3B79313DE95750F485BA (void);
+// 0x00000023 System.Void OptitrackStreamingClient::OnNatNetFrameReceived(System.Object,NaturalPoint.NatNetLib.NatNetClient/NativeFrameReceivedEventArgs)
+extern void OptitrackStreamingClient_OnNatNetFrameReceived_mD98D77422A77BAD11F4E5489D8B54F1BD8BAB2F3 (void);
+// 0x00000024 OptitrackRigidBodyState OptitrackStreamingClient::GetOrCreateRigidBodyState(System.Int32)
+extern void OptitrackStreamingClient_GetOrCreateRigidBodyState_mF4B205BDE33AF6F82133357C1BB11EB04BC375AA (void);
+// 0x00000025 OptitrackSkeletonState OptitrackStreamingClient::GetOrCreateSkeletonState(System.Int32)
+extern void OptitrackStreamingClient_GetOrCreateSkeletonState_m5F18EF7289012162629BC2304484B1EA285F5334 (void);
+// 0x00000026 OptitrackMarkerState OptitrackStreamingClient::GetOrCreateMarkerState(System.Int32)
+extern void OptitrackStreamingClient_GetOrCreateMarkerState_m89737E9453F062EE72ABBE4EA417417E9172592E (void);
+// 0x00000027 System.Void OptitrackStreamingClient::_EnterFrameDataUpdateLock()
+extern void OptitrackStreamingClient__EnterFrameDataUpdateLock_m5DF2C1EA5DC680E9FB8176CBBEABBD80ACFD4A61 (void);
+// 0x00000028 System.Void OptitrackStreamingClient::_ExitFrameDataUpdateLock()
+extern void OptitrackStreamingClient__ExitFrameDataUpdateLock_mE06711C53B35E157B2103F249993310190143C28 (void);
+// 0x00000029 System.Void OptitrackStreamingClient::.ctor()
+extern void OptitrackStreamingClient__ctor_m22B0A2F47B53033958BA708F8C804871BC33A97A (void);
+// 0x0000002A System.Void OptitrackStreamingClient/<CheckConnectionHealth>d__30::.ctor(System.Int32)
+extern void U3CCheckConnectionHealthU3Ed__30__ctor_m37CB1DE39FE47334637FA1D9E0A802D14F355F69 (void);
+// 0x0000002B System.Void OptitrackStreamingClient/<CheckConnectionHealth>d__30::System.IDisposable.Dispose()
+extern void U3CCheckConnectionHealthU3Ed__30_System_IDisposable_Dispose_mED2E5F0354272141876A77230329A285FAC4C42A (void);
+// 0x0000002C System.Boolean OptitrackStreamingClient/<CheckConnectionHealth>d__30::MoveNext()
+extern void U3CCheckConnectionHealthU3Ed__30_MoveNext_m2BC098F43C33B87BB632E4CCB5D19CCB8FAFADAF (void);
+// 0x0000002D System.Object OptitrackStreamingClient/<CheckConnectionHealth>d__30::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CCheckConnectionHealthU3Ed__30_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mACF976F568A2734EC4E816B6E3D0BC5A27283142 (void);
+// 0x0000002E System.Void OptitrackStreamingClient/<CheckConnectionHealth>d__30::System.Collections.IEnumerator.Reset()
+extern void U3CCheckConnectionHealthU3Ed__30_System_Collections_IEnumerator_Reset_m160919E293447A17662AA645835AEDC30E753E90 (void);
+// 0x0000002F System.Object OptitrackStreamingClient/<CheckConnectionHealth>d__30::System.Collections.IEnumerator.get_Current()
+extern void U3CCheckConnectionHealthU3Ed__30_System_Collections_IEnumerator_get_Current_m609190A3A594556D4BFA66F96931BAA4ED6C1D57 (void);
+static Il2CppMethodPointer s_methodPointers[47] = 
+{
+	OptitrackRigidBody_Start_mAAE7E9CDDDFC8B1C616CA67E8AA3F6959BF3E8A5,
+	OptitrackRigidBody_OnEnable_m357663315FFA8842C82A767C380D2D4BE60725B2,
+	OptitrackRigidBody_OnDisable_mBE1FFEE87D2FAC9B2C40E6341FC8F62B163D2A4F,
+	OptitrackRigidBody_OnBeforeRender_m5A262204114EF5AC38AB3B65D21A0ADCCDAA542B,
+	OptitrackRigidBody_Update_m3A118805ACC85D7C8D43546FCBD6D4D081EEDDB8,
+	OptitrackRigidBody_UpdatePose_m58AE9BAF76BC4A27C7E69D339F632CE2FCDE92A2,
+	OptitrackRigidBody__ctor_m537CC3EAA072B3A503ECD066421EAC7A56FCE628,
+	OptitrackSkeletonAnimator_Start_m563F944051C3A4575E2186F75FAC0A2F4DB50195,
+	OptitrackSkeletonAnimator_Update_mD2BA5534DE8456864D421DB658FDEE0C95B8CD04,
+	OptitrackSkeletonAnimator_MecanimSetup_mA23B998A149B4588DBA213F44CC6DA0811BACB0A,
+	OptitrackSkeletonAnimator_CacheBoneNameMap_m9B3DA032E10175C5415682E2A6E989B95780D4E3,
+	OptitrackSkeletonAnimator__ctor_m7DCACDC3F02A7FFABA7A887EE586F5B896D871A1,
+	OptitrackPose__ctor_mE4E98088FD923B0D288CB4F1C913920BC6AED0F4,
+	OptitrackMarkerState__ctor_mDDE7A2392C9545DDC9B3F28EDB437469AD2BC068,
+	OptitrackRigidBodyState__ctor_m1956FDC4397C307E3D3407FEBA8A981D237EB7CD,
+	OptitrackSkeletonState__ctor_mB7FFC333DB86EA4C6281E8950CF0CA0377D8E380,
+	OptitrackRigidBodyDefinition__ctor_m0651B93CB23A0FCBE73E964E3D63D992356DCCFF,
+	MarkerDefinition__ctor_mCA9BAD8EA21497A9199C20204354E294193FC42C,
+	OptitrackSkeletonDefinition__ctor_mA390EAB3D3F3A2E5CE09438821A0A511B98C26BA,
+	BoneDefinition__ctor_mCC00AFF1B2DA5F57D725B2D276F5002A5F249E46,
+	OptitrackHiResTimer_Now_m62AEE66055527B0C0D830501FEC5B14B93F6C04F,
+	Timestamp_get_AgeSeconds_mAA817418021723863A81F45053F627635924DD7B,
+	Timestamp_SecondsSince_m1E0586F880396ECDA0FCBED6A5CF4DBA5190B6E1,
+	OptitrackStreamingClient_Update_mC610F856C763481ED0B30648785EFC2B6103F3FF,
+	OptitrackStreamingClient_FindDefaultClient_m65BF74F5C714284066F97EC721EC21D2AB07E318,
+	OptitrackStreamingClient_GetLatestRigidBodyState_m1AE4B3223DB90486E529A3276694A86330CE4FB4,
+	OptitrackStreamingClient_GetLatestSkeletonState_m78E1E55B4C7E268F43C23FAAABB06A4369103AEB,
+	OptitrackStreamingClient_GetLatestMarkerStates_m92B35BCDA92C02927E9097609DDDFEFAE9C2980B,
+	OptitrackStreamingClient_GetRigidBodyDefinitionById_m93C5B803A07D6E8CA77CCF294BFB1373D58F1ADD,
+	OptitrackStreamingClient_GetSkeletonDefinitionByName_mB7ED187ED96B2593617DE5F01C1AE7FB8E610733,
+	OptitrackStreamingClient_UpdateDefinitions_mD9CA25BFD89FD520EE4CC48F6AFEB61CB733812B,
+	OptitrackStreamingClient_OnEnable_m4002B0CC217DD565ACB58C893A953386BA05F651,
+	OptitrackStreamingClient_OnDisable_m5F0C4450CAE022D97E659990AD5C7CA063DC0CA9,
+	OptitrackStreamingClient_CheckConnectionHealth_mFF8B0131C4F6A697F21E3B79313DE95750F485BA,
+	OptitrackStreamingClient_OnNatNetFrameReceived_mD98D77422A77BAD11F4E5489D8B54F1BD8BAB2F3,
+	OptitrackStreamingClient_GetOrCreateRigidBodyState_mF4B205BDE33AF6F82133357C1BB11EB04BC375AA,
+	OptitrackStreamingClient_GetOrCreateSkeletonState_m5F18EF7289012162629BC2304484B1EA285F5334,
+	OptitrackStreamingClient_GetOrCreateMarkerState_m89737E9453F062EE72ABBE4EA417417E9172592E,
+	OptitrackStreamingClient__EnterFrameDataUpdateLock_m5DF2C1EA5DC680E9FB8176CBBEABBD80ACFD4A61,
+	OptitrackStreamingClient__ExitFrameDataUpdateLock_mE06711C53B35E157B2103F249993310190143C28,
+	OptitrackStreamingClient__ctor_m22B0A2F47B53033958BA708F8C804871BC33A97A,
+	U3CCheckConnectionHealthU3Ed__30__ctor_m37CB1DE39FE47334637FA1D9E0A802D14F355F69,
+	U3CCheckConnectionHealthU3Ed__30_System_IDisposable_Dispose_mED2E5F0354272141876A77230329A285FAC4C42A,
+	U3CCheckConnectionHealthU3Ed__30_MoveNext_m2BC098F43C33B87BB632E4CCB5D19CCB8FAFADAF,
+	U3CCheckConnectionHealthU3Ed__30_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mACF976F568A2734EC4E816B6E3D0BC5A27283142,
+	U3CCheckConnectionHealthU3Ed__30_System_Collections_IEnumerator_Reset_m160919E293447A17662AA645835AEDC30E753E90,
+	U3CCheckConnectionHealthU3Ed__30_System_Collections_IEnumerator_get_Current_m609190A3A594556D4BFA66F96931BAA4ED6C1D57,
+};
+extern void Timestamp_get_AgeSeconds_mAA817418021723863A81F45053F627635924DD7B_AdjustorThunk (void);
+extern void Timestamp_SecondsSince_m1E0586F880396ECDA0FCBED6A5CF4DBA5190B6E1_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] = 
+{
+	{ 0x06000016, Timestamp_get_AgeSeconds_mAA817418021723863A81F45053F627635924DD7B_AdjustorThunk },
+	{ 0x06000017, Timestamp_SecondsSince_m1E0586F880396ECDA0FCBED6A5CF4DBA5190B6E1_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[47] = 
+{
+	4332,
+	4332,
+	4332,
+	4332,
+	4332,
+	4332,
+	4332,
+	4332,
+	4332,
+	3537,
+	1861,
+	4332,
+	4332,
+	4332,
+	4332,
+	4332,
+	4332,
+	4332,
+	4332,
+	4332,
+	6636,
+	4291,
+	3198,
+	4332,
+	6600,
+	2652,
+	2652,
+	4262,
+	2652,
+	2655,
+	4332,
+	4332,
+	4332,
+	4262,
+	2012,
+	2652,
+	2652,
+	2652,
+	4332,
+	4332,
+	4332,
+	3517,
+	4332,
+	4288,
+	4262,
+	4332,
+	4262,
+};
+extern const CustomAttributesCacheGenerator g_Optitrack_AttributeGenerators[];
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Optitrack_CodeGenModule;
+const Il2CppCodeGenModule g_Optitrack_CodeGenModule = 
+{
+	"Optitrack.dll",
+	47,
+	s_methodPointers,
+	2,
+	s_adjustorThunks,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	g_Optitrack_AttributeGenerators,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

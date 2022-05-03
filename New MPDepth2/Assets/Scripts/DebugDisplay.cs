@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using MPDepthCore.Calibration.Camera;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.ARFoundation;
 
 public class DebugDisplay : MonoBehaviour
 {
     Text t;
-    [SerializeField] TrackingCalibrationManager trackingCalibrationManager;
-    [SerializeField] ARTracking arTracking;
+    [SerializeField] ARFaceManager faceManager;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +19,5 @@ public class DebugDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        t.text = "" + arTracking.trackingData.BlendshapeTrackingData.Blendshapes[0];
     }
 }
