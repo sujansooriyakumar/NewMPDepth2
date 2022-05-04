@@ -9,8 +9,8 @@ public class CharacterSelector : MonoBehaviour
     [SerializeField] Character[] characters;
     [SerializeField] ARFaceManager faceManager;
     [SerializeField] GameObject currentAvatar;
-    [SerializeField] Vector3 slothPosition;
-    [SerializeField] Vector3 readyPlayerPosition;
+    [SerializeField] Transform avatarParent;
+    [SerializeField] Transform slothParent;
     public int index;
     public NetworkManager networkManager;
     public static CharacterSelector instance;
@@ -34,7 +34,7 @@ public class CharacterSelector : MonoBehaviour
         Destroy(currentAvatar);
         currentAvatar = Instantiate(characters[index].GetScenePrefab(), position, Quaternion.Euler(0, 180 ,0));
         faceManager.facePrefab = characters[index].GetPrefab();*/
-        networkManager.GetView().RPC("SetAvatarID", Photon.Pun.RpcTarget.OthersBuffered, index);
+        if(networkManager.isConnected) networkManager.GetView().RPC("SetAvatarID", Photon.Pun.RpcTarget.OthersBuffered, index);
 
         if (!networkManager.isConnected)
         {
@@ -51,20 +51,37 @@ public class CharacterSelector : MonoBehaviour
 
     public void UpdateAvatar(Int32 index)
     {
-        Vector3 position = Vector3.zero;
-        if (characters[index].GetIsReadyPlayer())
-        {
-            position = readyPlayerPosition;
-        }
-
-        else
-        {
-            position = slothPosition;
-        }
+       
         Destroy(currentAvatar);
-        currentAvatar = Instantiate(characters[index].GetScenePrefab(), position, Quaternion.Euler(0, 0 ,0));
+        currentAvatar = Instantiate(characters[index].GetScenePrefab(), Vector3.zero, Quaternion.Euler(0, 0 ,0));
+        currentAvatar.transform.parent = avatarParent;
         //characters[index].GetPrefab().GetComponent<ARKitBlendShapeVisualizer>().CreateFeatureBlendMapping();
         faceManager.facePrefab = characters[index].GetPrefab();
-      
+
+        if (characters[index].GetIsReadyPlayer())
+        {
+            currentAvatar.transform.parent = avatarParent;
+        }
+        else
+        {
+            currentAvatar.transform.parent = slothParent;
+        }
+        currentAvatar.transform.localPosition = Vector3.zero;
+
+    }
+
+    public void SetCurrentAvatar(GameObject go)
+    {
+        currentAvatar = go;
+    }
+
+    public GameObject GetCurrentAvatar()
+    {
+        return currentAvatar;
+    }
+
+    public void DestroyCurrentAvatar()
+    {
+        Destroy(currentAvatar);
     }
 }

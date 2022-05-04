@@ -11,6 +11,7 @@ namespace ReadyPlayerMe
         [SerializeField] private GameObject loadingLabel = null;
         [SerializeField] private Button displayButton = null;
         [SerializeField] private Button closeButton = null;
+        [SerializeField] GameObject currentAvatar;
 
         private void Start()
         {

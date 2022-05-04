@@ -5,6 +5,7 @@ using Photon.Pun;
 
 public class ConnectToServer : MonoBehaviourPunCallbacks
 {
+    [SerializeField] CreateAndJoinRoom roomCreator;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
 
     public override void OnJoinedLobby()
     {
+        roomCreator.CreateRoom();
         Debug.Log("Joined Lobby");
     }
 }

@@ -19,9 +19,11 @@ public class NetworkManager : MonoBehaviour
     public bool isConnected;
     PhotonView view;
     [SerializeField] Int32 otherPlayerAvatarID;
+    public string currentAvatarURL;
     private void Awake()
     {
         instance = this;
+        currentAvatarURL = "";
 
     }
 
@@ -105,7 +107,19 @@ public class NetworkManager : MonoBehaviour
 
     public void LoadAvatar(string url)
     {
+        Debug.Log("LoadAvatar Call");
         ReadyPlayerLoader.instance.BeginLoadCharacter(url);
+    }
+
+    public void SetURL(string url)
+    {
+        currentAvatarURL = url;
+        view.RPC("LoadAvatar", RpcTarget.OthersBuffered, url);
+    }
+
+    public string GetURL()
+    {
+        return currentAvatarURL;
     }
    
 }

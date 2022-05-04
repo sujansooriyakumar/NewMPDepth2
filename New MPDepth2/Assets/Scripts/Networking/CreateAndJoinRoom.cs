@@ -12,12 +12,20 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
 
     public void CreateRoom()
     {
-        PhotonNetwork.CreateRoom(lobbyName.text);
+        if(PhotonNetwork.CountOfRooms == 0)
+        {
+            PhotonNetwork.CreateRoom("Test");
+        }
+
+        else
+        {
+            JoinRoom();
+        }
     }
 
     public void JoinRoom()
     {
-        PhotonNetwork.JoinRoom(lobbyName.text);
+        PhotonNetwork.JoinRoom("Test");
     }
 
     public override void OnJoinedRoom()
@@ -29,7 +37,11 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
         isConnected = true;
         networkManager.isConnected = true;
         networkManager.UpdateAvatar();
-        networkManager.GetView().RPC("SetAvatarID", RpcTarget.OthersBuffered, CharacterSelector.instance.index);
+        if(networkManager.GetURL() == "") networkManager.GetView().RPC("SetAvatarID", RpcTarget.OthersBuffered, CharacterSelector.instance.index);
+        else
+        {
+            networkManager.GetView().RPC("LoadAvatar", RpcTarget.OthersBuffered, networkManager.GetURL());
+        }
         
     }
 

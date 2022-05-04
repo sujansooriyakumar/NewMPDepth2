@@ -26,11 +26,15 @@ namespace MPDepthCore {
 
         public ScreenCalibrationProvider ScreenCalibrationProvider => screenCalibrationProvider;
 
+        Transform calibrationTransform;
+
         void OnEnable() {
             if (trackingSource == null) return;
             trackingSource.TrackingDataUpdated += TrackingDataWasUpdated;
             trackingCalibrationProvider.SelectCalibration(0);
             screenCalibrationProvider.SelectCalibration(0);
+            calibrationTransform = TrackingSystemsManager.instance.GetCalibrationTransform();
+            trackingCalibrationProvider.SetCalibrationTransform(calibrationTransform);
             
         }
 
@@ -38,7 +42,10 @@ namespace MPDepthCore {
             TrackingDataUpdated?.Invoke(data);
         }
 
-       
+       public Transform GetCalibrationTransform()
+        {
+            return calibrationTransform;
+        }
 
        
 

@@ -14,7 +14,7 @@ namespace ReadyPlayerMe
         [SerializeField] Text urlInput;
         [SerializeField] GameObject urlCanvas;
         [SerializeField] URLParse urlParser;
-        [SerializeField] GameObject currentAvatar;
+        [SerializeField] Transform avatarParent;
 
         private void Awake()
         {
@@ -34,8 +34,10 @@ namespace ReadyPlayerMe
         {
 
             Debug.Log("Avatar loaded!");
-            avatar.transform.position = position;
-            Destroy(currentAvatar);
+            avatar.transform.parent = avatarParent;
+            CharacterSelector.instance.DestroyCurrentAvatar();
+            CharacterSelector.instance.SetCurrentAvatar(avatar);
+            avatar.transform.localPosition = Vector3.zero;
             Transform[] children = avatar.transform.GetComponentsInChildren<Transform>();
             foreach(Transform child in children)
             {
@@ -45,7 +47,6 @@ namespace ReadyPlayerMe
                 }
             }
             avatar.AddComponent<ReceiveBlendshapes>();
-            currentAvatar = avatar;
             /*Character temp = ScriptableObject.CreateInstance<Character>();
             temp.name = "Temp";
             temp.SetPrefab(avatar);
@@ -57,15 +58,14 @@ namespace ReadyPlayerMe
      
         public void BeginLoadCharacter(string url)
         {
-
             avatarLoader = new AvatarLoader();
-            Debug.Log(urlParser.GetURL());
+            Debug.Log(url);
             if(NetworkManager.instance.isConnected == false) avatarLoader.LoadAvatar(urlParser.GetURL(), AvatarImportedCallback, AvatarLoadedCallback);
             else
             {
-                NetworkManager.instance.GetView().RPC("LoadAvatar", Photon.Pun.RpcTarget.OthersBuffered, urlParser.GetURL());
+                avatarLoader.LoadAvatar(url, AvatarImportedCallback, AvatarLoadedCallback);
             }
-            urlCanvas.SetActive(false);
+            //urlCanvas.SetActive(false);
 
         }
 

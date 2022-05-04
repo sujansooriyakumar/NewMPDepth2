@@ -1,5 +1,6 @@
 using MPDepthCore;
 using MPDepthCore.Calibration.Camera;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,7 @@ public class ReceiveBlendshapes : MonoBehaviour
     [SerializeField] NetworkManager networkManager;
     [SerializeField] SkinnedMeshRenderer skinnedMeshRenderer;
    
-    [SerializeField] bool isReadyPlayerAvatar;
+    [SerializeField] bool isSloth;
     [SerializeField] TrackingSystemsManager trackingSystemsManager;
     [SerializeField] Transform headBone;
 
@@ -46,30 +47,38 @@ public class ReceiveBlendshapes : MonoBehaviour
             position = networkManager.GetPosition();
             rotation = networkManager.GetEulers();
             blendshapes = networkManager.GetBlendshapes();
+            //if(networkManager.GetIsOtherPlayerTracking()) transform.localPosition = position;
 
         }
-
-        if (networkManager.isConnected)
+        if (rotation.magnitude > 0)
         {
-            headBone.rotation = Quaternion.Euler((rotation.x), -(180 - rotation.y), rotation.z);
-
-        }
-        else
-        {
-            headBone.rotation = Quaternion.Euler((rotation.x), (180 - rotation.y), rotation.z);
-        }
-
-
-        if (blendshapes.Length > 0)
-        {
-            for (int i = 0; i < blendshapes.Length; i++)
+            if (networkManager.isConnected)
             {
-                skinnedMeshRenderer.SetBlendShapeWeight(i, blendshapes[i]);
+                headBone.rotation = Quaternion.Euler((rotation.x), -(180 - rotation.y), rotation.z);
+                if (position.magnitude > 0) transform.localPosition = -position;
+
+            }
+            else
+            {
+                headBone.rotation = Quaternion.Euler((rotation.x), (180 - rotation.y), -rotation.z);
 
             }
         }
+       
+            if (blendshapes.Length > 0)
+            {
+                for (int i = 0; i < blendshapes.Length; i++)
+                {
+                    skinnedMeshRenderer.SetBlendShapeWeight(i, blendshapes[i]);
+
+                }
+            }
+        
         
     }
 
-
+    private void UpdateSlothBlendShapes(float[] blendshapes_)
+    {
+        
+    }
 }
