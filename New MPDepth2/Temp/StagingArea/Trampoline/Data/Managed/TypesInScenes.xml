@@ -98,6 +98,7 @@
 		<type fullname="Character" preserve="nothing"/>
 		<type fullname="CharacterSelector" preserve="nothing"/>
 		<type fullname="FixSpeakerDelay" preserve="nothing"/>
+		<type fullname="MirrorModeController" preserve="nothing"/>
 		<type fullname="NetworkManager" preserve="nothing"/>
 		<type fullname="ParallaxControl" preserve="nothing"/>
 		<type fullname="ReadyPlayerMe.ReadyPlayerLoader" preserve="nothing"/>

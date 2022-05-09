@@ -33,6 +33,7 @@ ScriptsOnlyBuild:
     - Character
     - CharacterSelector
     - FixSpeakerDelay
+    - MirrorModeController
     - NetworkManager
     - ParallaxControl
     - ReadyPlayerMe.ReadyPlayerLoader
@@ -329,6 +330,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6310}
     - Class: 114
       Script: {instanceID: 6406}
+    - Class: 114
+      Script: {instanceID: 133542}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -1592,7 +1595,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 4e89f79e3922011aaabc5c2262436ae1
+      Hash: 6bf86f7285780cc8a782b001a478db2e
     assemblyName: NewMPDepth2.dll
     namespaceName: 
     className: NetworkManager
@@ -2646,6 +2649,12 @@ ScriptsOnlyBuild:
     assemblyName: ReadyPlayerMe.dll
     namespaceName: ReadyPlayerMe
     className: EyeAnimationHandler
+  - hash:
+      serializedVersion: 2
+      Hash: e8acb026d66133688ad560b60f97c592
+    assemblyName: NewMPDepth2.dll
+    namespaceName: 
+    className: MirrorModeController
   platform: 9
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

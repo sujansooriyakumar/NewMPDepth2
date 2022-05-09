@@ -18,8 +18,12 @@ public class NetworkManager : MonoBehaviour
     [SerializeField] bool isOtherPlayerTracking;
     public bool isConnected;
     PhotonView view;
-    [SerializeField] Int32 otherPlayerAvatarID;
+    [SerializeField] public Int32 otherPlayerAvatarID;
     public string currentAvatarURL;
+    public string otherAvatarURL;
+    public bool OtherPlayerMirrorMode;
+
+
     private void Awake()
     {
         instance = this;
@@ -38,9 +42,9 @@ public class NetworkManager : MonoBehaviour
         trackingData = trackingSystemsManager.CurrentCalibratedTrackingData;
         if (isConnected)
         {
-            view.RPC("SetIsOtherPlayerTracking", RpcTarget.OthersBuffered, TrackingSystemsManager.instance.CurrentCalibratedTrackingData.IsTracking);
+            //view.RPC("SetIsOtherPlayerTracking", RpcTarget.OthersBuffered, TrackingSystemsManager.instance.CurrentCalibratedTrackingData.IsTracking);
             view.RPC("SetOtherPlayerData", RpcTarget.Others, trackingData.CameraTrackingData.Position, trackingData.CameraTrackingData.Eulers, trackingData.BlendshapeTrackingData.Blendshapes);
-            
+
         }
     }
 
@@ -80,7 +84,7 @@ public class NetworkManager : MonoBehaviour
         GameObject avatar = FindObjectOfType<ReceiveBlendshapes>().gameObject;
         avatar.transform.localScale = new Vector3(-1, 1, 1);
     }
-    
+
     public bool GetIsOtherPlayerTracking()
     {
         return isOtherPlayerTracking;
@@ -95,12 +99,12 @@ public class NetworkManager : MonoBehaviour
     public void SetAvatarID(Int32 val)
     {
         otherPlayerAvatarID = val;
-        CharacterSelector.instance.UpdateAvatar(otherPlayerAvatarID);
+        if(OtherPlayerMirrorMode == false) CharacterSelector.instance.UpdateAvatar(otherPlayerAvatarID);
     }
 
     public void UpdateAvatar()
     {
-        if(otherPlayerAvatarID > 0) CharacterSelector.instance.UpdateAvatar(otherPlayerAvatarID);
+        if (otherPlayerAvatarID > 0) CharacterSelector.instance.UpdateAvatar(otherPlayerAvatarID);
     }
 
     [PunRPC]
@@ -108,6 +112,7 @@ public class NetworkManager : MonoBehaviour
     public void LoadAvatar(string url)
     {
         Debug.Log("LoadAvatar Call");
+        otherAvatarURL = url;
         ReadyPlayerLoader.instance.BeginLoadCharacter(url);
     }
 
@@ -121,5 +126,12 @@ public class NetworkManager : MonoBehaviour
     {
         return currentAvatarURL;
     }
-   
+    [PunRPC]
+    public void SetOtherPlayerMirrorMode(bool val)
+    {
+        OtherPlayerMirrorMode = val;
+    }
+
 }
+    
+   

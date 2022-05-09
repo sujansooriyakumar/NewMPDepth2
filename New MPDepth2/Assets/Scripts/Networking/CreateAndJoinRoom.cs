@@ -42,7 +42,10 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
         {
             networkManager.GetView().RPC("LoadAvatar", RpcTarget.OthersBuffered, networkManager.GetURL());
         }
-        
+        MirrorModeController.instance.ToggleMirrorMode();
+        GameObject avatar = FindObjectOfType<ReceiveBlendshapes>().gameObject;
+        avatar.transform.localScale = new Vector3(-1, 1, 1);
+
     }
 
     public bool GetIsConnected()

@@ -47,6 +47,14 @@ namespace ReadyPlayerMe
                 }
             }
             avatar.AddComponent<ReceiveBlendshapes>();
+            if (MirrorModeController.instance.GetMirrorMode())
+            {
+                avatar.transform.localScale = new Vector3(1, 1, 1);
+            }
+            else
+            {
+                avatar.transform.localScale = new Vector3(-1, 1, 1);
+            }
             /*Character temp = ScriptableObject.CreateInstance<Character>();
             temp.name = "Temp";
             temp.SetPrefab(avatar);
@@ -60,11 +68,8 @@ namespace ReadyPlayerMe
         {
             avatarLoader = new AvatarLoader();
             Debug.Log(url);
-            if(NetworkManager.instance.isConnected == false) avatarLoader.LoadAvatar(urlParser.GetURL(), AvatarImportedCallback, AvatarLoadedCallback);
-            else
-            {
-                avatarLoader.LoadAvatar(url, AvatarImportedCallback, AvatarLoadedCallback);
-            }
+            avatarLoader.LoadAvatar(url, AvatarImportedCallback, AvatarLoadedCallback);
+            
             //urlCanvas.SetActive(false);
 
         }

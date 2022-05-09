@@ -17,7 +17,8 @@ public class ReceiveBlendshapes : MonoBehaviour
     private Vector3 position;
     private Vector3 rotation;
     private float[] blendshapes;
-    float xAngleOffset;
+    private float rotationOffset;
+    private MirrorModeController mirrorModeController;
     private void Start()
     {
         networkManager = NetworkManager.instance;
@@ -31,10 +32,13 @@ public class ReceiveBlendshapes : MonoBehaviour
                 headBone = child;
             }
         }
+        rotationOffset = headBone.rotation.eulerAngles.x;
+        mirrorModeController = MirrorModeController.instance;
     }
     private void Update()
     {
-        if (!networkManager.isConnected)
+        bool isInMirrorMode = mirrorModeController.GetMirrorMode();
+        if (!networkManager.isConnected || isInMirrorMode)
         {
             position = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Position;
             rotation = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Eulers;
@@ -42,7 +46,7 @@ public class ReceiveBlendshapes : MonoBehaviour
 
     
         }
-        else
+        else if(networkManager.isConnected && !isInMirrorMode)
         {
             position = networkManager.GetPosition();
             rotation = networkManager.GetEulers();
@@ -52,16 +56,16 @@ public class ReceiveBlendshapes : MonoBehaviour
         }
         if (rotation.magnitude > 0)
         {
-            if (networkManager.isConnected)
+            if (networkManager.isConnected && !isInMirrorMode)
             {
-                headBone.rotation = Quaternion.Euler((rotation.x), -(180 - rotation.y), rotation.z);
+                headBone.rotation = Quaternion.Euler((rotation.x - rotationOffset), -(180 - rotation.y), rotation.z);
                 if (position.magnitude > 0) transform.localPosition = -position;
 
             }
-            else
+            else if(!networkManager.isConnected || isInMirrorMode)
             {
-                headBone.rotation = Quaternion.Euler((rotation.x), (180 - rotation.y), -rotation.z);
-
+                headBone.rotation = Quaternion.Euler((rotation.x - rotationOffset), (180 - rotation.y), -rotation.z);
+                transform.localPosition = new Vector3(position.x, position.y, -position.z);
             }
         }
        

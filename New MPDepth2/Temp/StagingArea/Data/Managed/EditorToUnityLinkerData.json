@@ -819,6 +819,13 @@
         {
             "managedAssemblyName": "NewMPDepth2.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "MirrorModeController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "NewMPDepth2.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "NetworkManager",
             "moduleName": "",
             "usedInScenes": []

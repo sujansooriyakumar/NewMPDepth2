@@ -15,6 +15,7 @@ public class CharacterSelector : MonoBehaviour
     public NetworkManager networkManager;
     public static CharacterSelector instance;
 
+
     private void OnEnable()
     {
         instance = this;
@@ -28,7 +29,6 @@ public class CharacterSelector : MonoBehaviour
 
     public void OnCharacterSelected(Int32 index_)
     {
-
         index = index_;
         /*Vector3 position = currentAvatar.transform.position;
         Destroy(currentAvatar);
@@ -36,7 +36,7 @@ public class CharacterSelector : MonoBehaviour
         faceManager.facePrefab = characters[index].GetPrefab();*/
         if(networkManager.isConnected) networkManager.GetView().RPC("SetAvatarID", Photon.Pun.RpcTarget.OthersBuffered, index);
 
-        if (!networkManager.isConnected)
+        if (!networkManager.isConnected || MirrorModeController.instance.GetMirrorMode())
         {
             UpdateAvatar(index);
 
@@ -67,6 +67,14 @@ public class CharacterSelector : MonoBehaviour
             currentAvatar.transform.parent = slothParent;
         }
         currentAvatar.transform.localPosition = Vector3.zero;
+        if (MirrorModeController.instance.GetMirrorMode())
+        {
+            currentAvatar.transform.localScale = new Vector3(1, 1, 1);
+        }
+        else
+        {
+            currentAvatar.transform.localScale = new Vector3(-1, 1, 1);
+        }
 
     }
 
