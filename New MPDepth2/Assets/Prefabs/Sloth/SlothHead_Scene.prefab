@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   networkManager: {fileID: 0}
   skinnedMeshRenderer: {fileID: 1386604508436667198}
-  isReadyPlayerAvatar: 0
+  isSloth: 1
   trackingSystemsManager: {fileID: 0}
   headBone: {fileID: 1358011434774866546}
 --- !u!1 &1356614717076384722
