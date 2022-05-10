@@ -13,7 +13,7 @@ public class ReceiveBlendshapes : MonoBehaviour
     [SerializeField] bool isSloth;
     [SerializeField] TrackingSystemsManager trackingSystemsManager;
     [SerializeField] Transform headBone;
-
+    [SerializeField] bool isMirrorAvatar;
     private Vector3 position;
     private Vector3 rotation;
     private float[] blendshapes;
@@ -25,20 +25,26 @@ public class ReceiveBlendshapes : MonoBehaviour
         trackingSystemsManager = TrackingSystemsManager.instance;
         skinnedMeshRenderer = GetComponentInChildren<SkinnedMeshRenderer>();
         Transform[] children = transform.GetComponentsInChildren<Transform>();
+        Transform neckBone = null;
         foreach(Transform child in children)
         {
             if(child.gameObject.name == "Head")
             {
                 headBone = child;
             }
+            if(child.gameObject.name == "Neck")
+            {
+                neckBone = child;
+            }
         }
+        if(neckBone) neckBone.localScale = new Vector3(1.1f, 1.1f, 1.1f);
         rotationOffset = headBone.rotation.eulerAngles.x;
         mirrorModeController = MirrorModeController.instance;
     }
     private void Update()
     {
         bool isInMirrorMode = mirrorModeController.GetMirrorMode();
-        if (!networkManager.isConnected || isInMirrorMode)
+        if (isMirrorAvatar)
         {
             position = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Position;
             rotation = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Eulers;
@@ -46,7 +52,7 @@ public class ReceiveBlendshapes : MonoBehaviour
 
     
         }
-        else if(networkManager.isConnected && !isInMirrorMode)
+        else if(!isMirrorAvatar)
         {
             position = networkManager.GetPosition();
             rotation = networkManager.GetEulers();
@@ -56,17 +62,21 @@ public class ReceiveBlendshapes : MonoBehaviour
         }
         if (rotation.magnitude > 0)
         {
-            if (networkManager.isConnected && !isInMirrorMode)
-            {
-                headBone.rotation = Quaternion.Euler((rotation.x - rotationOffset), -(180 - rotation.y), rotation.z);
-                if (position.magnitude > 0) transform.localPosition = -position;
-
-            }
-            else if(!networkManager.isConnected || isInMirrorMode)
+            if (isMirrorAvatar)
             {
                 headBone.rotation = Quaternion.Euler((rotation.x - rotationOffset), (180 - rotation.y), -rotation.z);
                 transform.localPosition = new Vector3(position.x, position.y, -position.z);
             }
+
+            else if (!isMirrorAvatar)
+            {
+                headBone.rotation = Quaternion.Euler((rotation.x - rotationOffset), -(180 - rotation.y), rotation.z);
+                if (position.magnitude > 0) transform.localPosition = -position;
+
+
+            }
+            
+            
         }
         if (isSloth)
         {
@@ -132,5 +142,10 @@ public class ReceiveBlendshapes : MonoBehaviour
         skinnedMeshRenderer.SetBlendShapeWeight(48, blendshapes_[49+5]);
         skinnedMeshRenderer.SetBlendShapeWeight(49, blendshapes_[50+5]);
 
+    }
+
+    public void SetIsMirrorAvatar(bool val)
+    {
+        isMirrorAvatar = val;
     }
 }

@@ -17,7 +17,7 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
             PhotonNetwork.CreateRoom("Test");
         }
 
-        else
+        else if(PhotonNetwork.CountOfPlayersInRooms < 2)
         {
             JoinRoom();
         }
@@ -42,9 +42,8 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
         {
             networkManager.GetView().RPC("LoadAvatar", RpcTarget.OthersBuffered, networkManager.GetURL());
         }
-        MirrorModeController.instance.ToggleMirrorMode();
-        GameObject avatar = FindObjectOfType<ReceiveBlendshapes>().gameObject;
-        avatar.transform.localScale = new Vector3(-1, 1, 1);
+
+
 
     }
 

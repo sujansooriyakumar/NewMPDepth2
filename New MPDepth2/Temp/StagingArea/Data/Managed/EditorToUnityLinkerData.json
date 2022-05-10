@@ -819,6 +819,13 @@
         {
             "managedAssemblyName": "NewMPDepth2.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "HideUI",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "NewMPDepth2.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "MirrorModeController",
             "moduleName": "",
             "usedInScenes": []
@@ -1030,6 +1037,13 @@
             "managedAssemblyName": "PhotonVoice.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Photon.Voice.Unity.Speaker",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonVoice.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Voice.Unity.WebRtcAudioDsp",
             "moduleName": "",
             "usedInScenes": []
         },

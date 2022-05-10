@@ -12771,6 +12771,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BuiltinRuntimeReflectionSystem_Dispose_m
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BuiltinRuntimeReflectionSystem__ctor_m418427E040351EC086975D95B409F2C6E3E41045 (BuiltinRuntimeReflectionSystem_t28584708A510CEE39431FF9695276A0C9EC45159 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Behaviour::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour__ctor_mCACD3614226521EA607B0F3640C0FAC7EACCBCE0 (Behaviour_t1A3DDDCF73B4627928FBFE02ED52B7251777DBD9 * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Camera::set_rect_Injected(UnityEngine.Rect&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_set_rect_Injected_mC1896D15DA80E72529F7467BFB1E718090F8AF17 (Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * __this, Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878 * ___value0, const RuntimeMethod* method);
 // System.Void UnityEngine.Camera::get_pixelRect_Injected(UnityEngine.Rect&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_get_pixelRect_Injected_mE01A6F5B5892953CD25DECDBC12B5CBF15CD84E2 (Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * __this, Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878 * ___ret0, const RuntimeMethod* method);
 // System.Void UnityEngine.Camera::set_worldToCameraMatrix_Injected(UnityEngine.Matrix4x4&)
@@ -19518,6 +19520,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Camera_get_depth_m063B48665DB9226949AC3
 	float icallRetVal = _il2cpp_icall_func(__this);
 	return icallRetVal;
 }
+// System.Void UnityEngine.Camera::set_depth(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_set_depth_m33DBE382C6A293EDFF50FF459CBAB2FD3B7F469C (Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * __this, float ___value0, const RuntimeMethod* method)
+{
+	typedef void (*Camera_set_depth_m33DBE382C6A293EDFF50FF459CBAB2FD3B7F469C_ftn) (Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C *, float);
+	static Camera_set_depth_m33DBE382C6A293EDFF50FF459CBAB2FD3B7F469C_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Camera_set_depth_m33DBE382C6A293EDFF50FF459CBAB2FD3B7F469C_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::set_depth(System.Single)");
+	_il2cpp_icall_func(__this, ___value0);
+}
 // System.Single UnityEngine.Camera::get_aspect()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Camera_get_aspect_mD0A1FC8F998473DA08866FF9CD61C02E6D5F4987 (Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * __this, const RuntimeMethod* method)
 {
@@ -19575,6 +19586,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_set_clearFlags_mE79A756CD7C9C84C8
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Camera_set_clearFlags_mE79A756CD7C9C84C86B6676F5C6342A45AE5F373_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::set_clearFlags(UnityEngine.CameraClearFlags)");
 	_il2cpp_icall_func(__this, ___value0);
+}
+// System.Void UnityEngine.Camera::set_rect(UnityEngine.Rect)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_set_rect_m556222CD5D4975EF672DC33D979611405A173F79 (Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * __this, Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  ___value0, const RuntimeMethod* method)
+{
+	{
+		Camera_set_rect_Injected_mC1896D15DA80E72529F7467BFB1E718090F8AF17(__this, (Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878 *)(&___value0), /*hidden argument*/NULL);
+		return;
+	}
 }
 // UnityEngine.Rect UnityEngine.Camera::get_pixelRect()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878  Camera_get_pixelRect_m58284153875DDE6470D4BDCAF2DFC9F5C9DE3D3A (Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * __this, const RuntimeMethod* method)
@@ -20072,6 +20091,15 @@ IL_0019:
 	{
 		return;
 	}
+}
+// System.Void UnityEngine.Camera::set_rect_Injected(UnityEngine.Rect&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_set_rect_Injected_mC1896D15DA80E72529F7467BFB1E718090F8AF17 (Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * __this, Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878 * ___value0, const RuntimeMethod* method)
+{
+	typedef void (*Camera_set_rect_Injected_mC1896D15DA80E72529F7467BFB1E718090F8AF17_ftn) (Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C *, Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878 *);
+	static Camera_set_rect_Injected_mC1896D15DA80E72529F7467BFB1E718090F8AF17_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Camera_set_rect_Injected_mC1896D15DA80E72529F7467BFB1E718090F8AF17_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Camera::set_rect_Injected(UnityEngine.Rect&)");
+	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Void UnityEngine.Camera::get_pixelRect_Injected(UnityEngine.Rect&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Camera_get_pixelRect_Injected_mE01A6F5B5892953CD25DECDBC12B5CBF15CD84E2 (Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * __this, Rect_t7D9187DB6339DBA5741C09B6CCEF2F54F1966878 * ___ret0, const RuntimeMethod* method)

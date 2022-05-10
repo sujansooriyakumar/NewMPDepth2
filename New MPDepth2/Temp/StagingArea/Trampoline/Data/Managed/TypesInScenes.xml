@@ -98,6 +98,7 @@
 		<type fullname="Character" preserve="nothing"/>
 		<type fullname="CharacterSelector" preserve="nothing"/>
 		<type fullname="FixSpeakerDelay" preserve="nothing"/>
+		<type fullname="HideUI" preserve="nothing"/>
 		<type fullname="MirrorModeController" preserve="nothing"/>
 		<type fullname="NetworkManager" preserve="nothing"/>
 		<type fullname="ParallaxControl" preserve="nothing"/>
@@ -141,6 +142,7 @@
 	<assembly fullname="PhotonVoice">
 		<type fullname="Photon.Voice.Unity.Recorder" preserve="nothing"/>
 		<type fullname="Photon.Voice.Unity.Speaker" preserve="nothing"/>
+		<type fullname="Photon.Voice.Unity.WebRtcAudioDsp" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="ReadyPlayerMe">
 		<type fullname="ReadyPlayerMe.WebViewTest" preserve="nothing"/>

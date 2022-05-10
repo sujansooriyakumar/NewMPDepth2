@@ -842,6 +842,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Camera_set_clearFlags();
 		Register_UnityEngine_Camera_set_clearFlags();
 
+		//System.Void UnityEngine.Camera::set_depth(System.Single)
+		void Register_UnityEngine_Camera_set_depth();
+		Register_UnityEngine_Camera_set_depth();
+
 		//System.Void UnityEngine.Camera::set_farClipPlane(System.Single)
 		void Register_UnityEngine_Camera_set_farClipPlane();
 		Register_UnityEngine_Camera_set_farClipPlane();
@@ -865,6 +869,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Camera::set_projectionMatrix_Injected(UnityEngine.Matrix4x4&)
 		void Register_UnityEngine_Camera_set_projectionMatrix_Injected();
 		Register_UnityEngine_Camera_set_projectionMatrix_Injected();
+
+		//System.Void UnityEngine.Camera::set_rect_Injected(UnityEngine.Rect&)
+		void Register_UnityEngine_Camera_set_rect_Injected();
+		Register_UnityEngine_Camera_set_rect_Injected();
 
 		//System.Void UnityEngine.Camera::set_worldToCameraMatrix_Injected(UnityEngine.Matrix4x4&)
 		void Register_UnityEngine_Camera_set_worldToCameraMatrix_Injected();

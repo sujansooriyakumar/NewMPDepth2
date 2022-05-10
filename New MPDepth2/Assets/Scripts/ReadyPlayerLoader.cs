@@ -14,7 +14,16 @@ namespace ReadyPlayerMe
         [SerializeField] Text urlInput;
         [SerializeField] GameObject urlCanvas;
         [SerializeField] URLParse urlParser;
-        [SerializeField] Transform avatarParent;
+
+        [SerializeField] GameObject dyadicAvatar;
+        [SerializeField] GameObject mirrorAvatar;
+
+        [SerializeField] Transform dyadicAvatarParent;
+        [SerializeField] Transform dyadicSlothParent;
+
+        [SerializeField] Transform mirrorAvatarParent;
+        [SerializeField] Transform mirrorSlothParent;
+        bool mirror;
 
         private void Awake()
         {
@@ -34,26 +43,40 @@ namespace ReadyPlayerMe
         {
 
             Debug.Log("Avatar loaded!");
-            avatar.transform.parent = avatarParent;
-            CharacterSelector.instance.DestroyCurrentAvatar();
-            CharacterSelector.instance.SetCurrentAvatar(avatar);
-            avatar.transform.localPosition = Vector3.zero;
+            if (mirror)
+            {
+                avatar.transform.parent = mirrorAvatarParent;
+                CharacterSelector.instance.DestroyMirrorAvatar();
+                CharacterSelector.instance.SetMirrorAvatar(avatar);
+                avatar.layer = 7;
+                avatar.AddComponent<ReceiveBlendshapes>();
+                avatar.GetComponent<ReceiveBlendshapes>().SetIsMirrorAvatar(true);
+                avatar.transform.localPosition = Vector3.zero;
+
+                
+
+            }
+
+            else if (!mirror)
+            {
+                avatar.transform.parent = dyadicAvatarParent;
+                CharacterSelector.instance.DestroyDyadicAvatar();
+                CharacterSelector.instance.SetDyadicAvatar(avatar);
+                avatar.layer = 6;
+                avatar.AddComponent<ReceiveBlendshapes>();
+                avatar.GetComponent<ReceiveBlendshapes>().SetIsMirrorAvatar(false);
+                avatar.transform.localPosition = Vector3.zero;
+            }
+       
             Transform[] children = avatar.transform.GetComponentsInChildren<Transform>();
             foreach(Transform child in children)
             {
+                child.gameObject.layer = avatar.layer;
                 if(child.gameObject.name == "LeftHand" || child.gameObject.name == "RightHand")
                 {
                     child.localScale = new Vector3(0, 0, 0);
+                    
                 }
-            }
-            avatar.AddComponent<ReceiveBlendshapes>();
-            if (MirrorModeController.instance.GetMirrorMode())
-            {
-                avatar.transform.localScale = new Vector3(1, 1, 1);
-            }
-            else
-            {
-                avatar.transform.localScale = new Vector3(-1, 1, 1);
             }
             /*Character temp = ScriptableObject.CreateInstance<Character>();
             temp.name = "Temp";
@@ -64,8 +87,9 @@ namespace ReadyPlayerMe
         }
 
      
-        public void BeginLoadCharacter(string url)
+        public void BeginLoadCharacter(string url, bool self)
         {
+            mirror = self;
             avatarLoader = new AvatarLoader();
             Debug.Log(url);
             avatarLoader.LoadAvatar(url, AvatarImportedCallback, AvatarLoadedCallback);

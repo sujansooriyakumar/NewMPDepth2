@@ -81,8 +81,6 @@ public class NetworkManager : MonoBehaviour
     public void SetIsOtherPlayerTracking(bool val)
     {
         isOtherPlayerTracking = val;
-        GameObject avatar = FindObjectOfType<ReceiveBlendshapes>().gameObject;
-        avatar.transform.localScale = new Vector3(-1, 1, 1);
     }
 
     public bool GetIsOtherPlayerTracking()
@@ -99,12 +97,12 @@ public class NetworkManager : MonoBehaviour
     public void SetAvatarID(Int32 val)
     {
         otherPlayerAvatarID = val;
-        if(OtherPlayerMirrorMode == false) CharacterSelector.instance.UpdateAvatar(otherPlayerAvatarID);
+        if(OtherPlayerMirrorMode == false) CharacterSelector.instance.UpdateAvatar(otherPlayerAvatarID, false);
     }
 
     public void UpdateAvatar()
     {
-        if (otherPlayerAvatarID > 0) CharacterSelector.instance.UpdateAvatar(otherPlayerAvatarID);
+        if (otherPlayerAvatarID > 0) CharacterSelector.instance.UpdateAvatar(otherPlayerAvatarID, true);
     }
 
     [PunRPC]
@@ -113,12 +111,13 @@ public class NetworkManager : MonoBehaviour
     {
         Debug.Log("LoadAvatar Call");
         otherAvatarURL = url;
-        ReadyPlayerLoader.instance.BeginLoadCharacter(url);
+        ReadyPlayerLoader.instance.BeginLoadCharacter(url, false);
     }
 
     public void SetURL(string url)
     {
         currentAvatarURL = url;
+        ReadyPlayerLoader.instance.BeginLoadCharacter(url, true);
         view.RPC("LoadAvatar", RpcTarget.OthersBuffered, url);
     }
 

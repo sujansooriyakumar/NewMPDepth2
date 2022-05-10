@@ -77,14 +77,7 @@ public class WebViewController : MonoBehaviour
         loadingLabel.SetActive(false);
         displayButton.gameObject.SetActive(true);
 
-        if (NetworkManager.instance.isConnected == false || MirrorModeController.instance.GetMirrorMode())
-        {
-            CharacterSelector.instance.DestroyCurrentAvatar();
-            avatar.transform.parent = avatarParent;
-            avatar.transform.localPosition = Vector3.zero;
-            avatar.AddComponent<ReceiveBlendshapes>();
-            CharacterSelector.instance.SetCurrentAvatar(avatar);
-        }
+        
         NetworkManager.instance.SetURL(url);
     }
 
