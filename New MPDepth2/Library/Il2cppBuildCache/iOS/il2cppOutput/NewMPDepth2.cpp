@@ -5850,8 +5850,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* NetworkManager_GetBlendshapes_m31CECB2437882E5CB96C32CF48A8A7B443915A16 (NetworkManager_tBB503FE1461F7B91E1CCE3C05C393DF673B1623B * __this, const RuntimeMethod* method);
 // System.Single UnityEngine.Vector3::get_magnitude()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mDDD40612220D8104E77E993E18A101A69A944991 (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * __this, const RuntimeMethod* method);
-// UnityEngine.Vector3 UnityEngine.Vector3::op_UnaryNegation(UnityEngine.Vector3)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  Vector3_op_UnaryNegation_m362EA356F4CADEDB39F965A0DBDED6EA890925F7_inline (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___a0, const RuntimeMethod* method);
 // System.Void ReceiveBlendshapes::UpdateSlothBlendShapes(System.Single[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReceiveBlendshapes_UpdateSlothBlendShapes_m058080FDB3358CC6B8610294A711991FD58F5D72 (ReceiveBlendshapes_tAF0A3342973547EB6CACBA0F35BBF80B2D0F6D73 * __this, SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* ___blendshapes_0, const RuntimeMethod* method);
 // System.Void UnityEngine.SkinnedMeshRenderer::SetBlendShapeWeight(System.Int32,System.Single)
@@ -8256,7 +8254,7 @@ IL_00ae:
 		bool L_26 = V_3;
 		if (!L_26)
 		{
-			goto IL_01cf;
+			goto IL_01ef;
 		}
 	}
 	{
@@ -8297,7 +8295,7 @@ IL_00ae:
 		Vector3__ctor_m57495F692C6CE1CEF278CAD9A98221165D37E636_inline((&L_45), L_40, L_42, ((-L_44)), /*hidden argument*/NULL);
 		NullCheck(L_38);
 		Transform_set_localPosition_m2A2B0033EF079077FAE7C65196078EAF5D041AFC(L_38, L_45, /*hidden argument*/NULL);
-		goto IL_01ce;
+		goto IL_01ee;
 	}
 
 IL_014e:
@@ -8308,7 +8306,7 @@ IL_014e:
 		bool L_47 = V_5;
 		if (!L_47)
 		{
-			goto IL_01ce;
+			goto IL_01ee;
 		}
 	}
 	{
@@ -8325,7 +8323,7 @@ IL_014e:
 		L_56 = Quaternion_Euler_m37BF99FFFA09F4B3F83DC066641B82C59B19A9C3(((float)il2cpp_codegen_subtract((float)L_50, (float)L_51)), ((-((float)il2cpp_codegen_subtract((float)(180.0f), (float)L_53)))), L_55, /*hidden argument*/NULL);
 		NullCheck(L_48);
 		Transform_set_rotation_m1B5F3D4CE984AB31254615C9C71B0E54978583B4(L_48, L_56, /*hidden argument*/NULL);
-		// if (position.magnitude > 0) transform.localPosition = -position;
+		// if (position.magnitude > 0) transform.localPosition = new Vector3(position.x, -position.y, -position.z);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * L_57 = __this->get_address_of_position_10();
 		float L_58;
 		L_58 = Vector3_get_magnitude_mDDD40612220D8104E77E993E18A101A69A944991((Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *)L_57, /*hidden argument*/NULL);
@@ -8333,102 +8331,108 @@ IL_014e:
 		bool L_59 = V_6;
 		if (!L_59)
 		{
-			goto IL_01cd;
+			goto IL_01ed;
 		}
 	}
 	{
-		// if (position.magnitude > 0) transform.localPosition = -position;
+		// if (position.magnitude > 0) transform.localPosition = new Vector3(position.x, -position.y, -position.z);
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_60;
 		L_60 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(__this, /*hidden argument*/NULL);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_61 = __this->get_position_10();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_62;
-		L_62 = Vector3_op_UnaryNegation_m362EA356F4CADEDB39F965A0DBDED6EA890925F7_inline(L_61, /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * L_61 = __this->get_address_of_position_10();
+		float L_62 = L_61->get_x_2();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * L_63 = __this->get_address_of_position_10();
+		float L_64 = L_63->get_y_3();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * L_65 = __this->get_address_of_position_10();
+		float L_66 = L_65->get_z_4();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_67;
+		memset((&L_67), 0, sizeof(L_67));
+		Vector3__ctor_m57495F692C6CE1CEF278CAD9A98221165D37E636_inline((&L_67), L_62, ((-L_64)), ((-L_66)), /*hidden argument*/NULL);
 		NullCheck(L_60);
-		Transform_set_localPosition_m2A2B0033EF079077FAE7C65196078EAF5D041AFC(L_60, L_62, /*hidden argument*/NULL);
+		Transform_set_localPosition_m2A2B0033EF079077FAE7C65196078EAF5D041AFC(L_60, L_67, /*hidden argument*/NULL);
 	}
 
-IL_01cd:
+IL_01ed:
 	{
 	}
 
-IL_01ce:
+IL_01ee:
 	{
 	}
 
-IL_01cf:
+IL_01ef:
 	{
 		// if (isSloth)
-		bool L_63 = __this->get_isSloth_6();
-		V_7 = L_63;
-		bool L_64 = V_7;
-		if (!L_64)
+		bool L_68 = __this->get_isSloth_6();
+		V_7 = L_68;
+		bool L_69 = V_7;
+		if (!L_69)
 		{
-			goto IL_01ec;
+			goto IL_020c;
 		}
 	}
 	{
 		// UpdateSlothBlendShapes(blendshapes);
-		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_65 = __this->get_blendshapes_12();
-		ReceiveBlendshapes_UpdateSlothBlendShapes_m058080FDB3358CC6B8610294A711991FD58F5D72(__this, L_65, /*hidden argument*/NULL);
-		goto IL_0236;
+		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_70 = __this->get_blendshapes_12();
+		ReceiveBlendshapes_UpdateSlothBlendShapes_m058080FDB3358CC6B8610294A711991FD58F5D72(__this, L_70, /*hidden argument*/NULL);
+		goto IL_0256;
 	}
 
-IL_01ec:
+IL_020c:
 	{
 		// if (blendshapes.Length > 0)
-		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_66 = __this->get_blendshapes_12();
-		NullCheck(L_66);
-		V_8 = (bool)((!(((uint32_t)(((RuntimeArray*)L_66)->max_length)) <= ((uint32_t)0)))? 1 : 0);
-		bool L_67 = V_8;
-		if (!L_67)
+		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_71 = __this->get_blendshapes_12();
+		NullCheck(L_71);
+		V_8 = (bool)((!(((uint32_t)(((RuntimeArray*)L_71)->max_length)) <= ((uint32_t)0)))? 1 : 0);
+		bool L_72 = V_8;
+		if (!L_72)
 		{
-			goto IL_0235;
+			goto IL_0255;
 		}
 	}
 	{
 		// for (int i = 0; i < blendshapes.Length; i++)
 		V_9 = 0;
-		goto IL_0222;
+		goto IL_0242;
 	}
 
-IL_0203:
+IL_0223:
 	{
 		// skinnedMeshRenderer.SetBlendShapeWeight(i, blendshapes[i]);
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_68 = __this->get_skinnedMeshRenderer_5();
-		int32_t L_69 = V_9;
-		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_70 = __this->get_blendshapes_12();
-		int32_t L_71 = V_9;
-		NullCheck(L_70);
-		int32_t L_72 = L_71;
-		float L_73 = (L_70)->GetAt(static_cast<il2cpp_array_size_t>(L_72));
-		NullCheck(L_68);
-		SkinnedMeshRenderer_SetBlendShapeWeight_mF546F3567C5039C217AD1E32157B992B4124B5FD(L_68, L_69, L_73, /*hidden argument*/NULL);
-		// for (int i = 0; i < blendshapes.Length; i++)
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_73 = __this->get_skinnedMeshRenderer_5();
 		int32_t L_74 = V_9;
-		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_74, (int32_t)1));
+		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_75 = __this->get_blendshapes_12();
+		int32_t L_76 = V_9;
+		NullCheck(L_75);
+		int32_t L_77 = L_76;
+		float L_78 = (L_75)->GetAt(static_cast<il2cpp_array_size_t>(L_77));
+		NullCheck(L_73);
+		SkinnedMeshRenderer_SetBlendShapeWeight_mF546F3567C5039C217AD1E32157B992B4124B5FD(L_73, L_74, L_78, /*hidden argument*/NULL);
+		// for (int i = 0; i < blendshapes.Length; i++)
+		int32_t L_79 = V_9;
+		V_9 = ((int32_t)il2cpp_codegen_add((int32_t)L_79, (int32_t)1));
 	}
 
-IL_0222:
+IL_0242:
 	{
 		// for (int i = 0; i < blendshapes.Length; i++)
-		int32_t L_75 = V_9;
-		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_76 = __this->get_blendshapes_12();
-		NullCheck(L_76);
-		V_10 = (bool)((((int32_t)L_75) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_76)->max_length)))))? 1 : 0);
-		bool L_77 = V_10;
-		if (L_77)
+		int32_t L_80 = V_9;
+		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_81 = __this->get_blendshapes_12();
+		NullCheck(L_81);
+		V_10 = (bool)((((int32_t)L_80) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_81)->max_length)))))? 1 : 0);
+		bool L_82 = V_10;
+		if (L_82)
 		{
-			goto IL_0203;
+			goto IL_0223;
 		}
 	}
 	{
 	}
 
-IL_0235:
+IL_0255:
 	{
 	}
 
-IL_0236:
+IL_0256:
 	{
 		// }
 		return;
@@ -9479,30 +9483,6 @@ IL_0015:
 	{
 		Vector2_tBB32F2736AEC229A7BFBCE18197EC0F6AC7EC2D9  L_5 = V_0;
 		return L_5;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  Vector3_op_UnaryNegation_m362EA356F4CADEDB39F965A0DBDED6EA890925F7_inline (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___a0, const RuntimeMethod* method)
-{
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = ___a0;
-		float L_1 = L_0.get_x_2();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___a0;
-		float L_3 = L_2.get_y_3();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4 = ___a0;
-		float L_5 = L_4.get_z_4();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6;
-		memset((&L_6), 0, sizeof(L_6));
-		Vector3__ctor_m57495F692C6CE1CEF278CAD9A98221165D37E636_inline((&L_6), ((-L_1)), ((-L_3)), ((-L_5)), /*hidden argument*/NULL);
-		V_0 = L_6;
-		goto IL_001e;
-	}
-
-IL_001e:
-	{
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_7 = V_0;
-		return L_7;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* StreamTrackingDataReceiver_get_IP_m691B152863A406BEDD305433B0181A8806B00F29_inline (StreamTrackingDataReceiver_t6A04B9CE0EDA64F9EEA319D25EDFC6153651FED0 * __this, const RuntimeMethod* method)

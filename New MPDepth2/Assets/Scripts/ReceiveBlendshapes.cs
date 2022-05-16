@@ -71,7 +71,7 @@ public class ReceiveBlendshapes : MonoBehaviour
             else if (!isMirrorAvatar)
             {
                 headBone.rotation = Quaternion.Euler((rotation.x - rotationOffset), -(180 - rotation.y), rotation.z);
-                if (position.magnitude > 0) transform.localPosition = -position;
+                if (position.magnitude > 0) transform.localPosition = new Vector3(position.x, -position.y, -position.z);
 
 
             }
