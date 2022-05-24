@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18154591, g: 0.22718865, b: 0.30740604, a: 1}
+  m_IndirectSpecularColor: {r: 0.18144932, g: 0.22706543, b: 0.30727005, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -623,7 +623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &104908454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,6 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d907be549035e4c923de90967dd86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pvCache: {fileID: 0}
 --- !u!4 &104908455
 Transform:
   m_ObjectHideFlags: 0
@@ -1405,7 +1406,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386373662}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8407abd27554a124098bc698972cae20, type: 3}
   m_Name: 
@@ -4084,6 +4085,7 @@ GameObject:
   - component: {fileID: 1339267534}
   - component: {fileID: 1339267533}
   - component: {fileID: 1339267535}
+  - component: {fileID: 1339267536}
   m_Layer: 0
   m_Name: VoiceManagement
   m_TagString: Untagged
@@ -4124,7 +4126,7 @@ MonoBehaviour:
   voiceDetectionThreshold: 0.317
   voiceDetectionDelayMs: 500
   unityMicrophoneDevice: 
-  photonMicrophoneDeviceId: -1
+  photonMicrophoneDeviceId: 71
   interestGroup: 0
   debugEchoMode: 0
   reliableMode: 0
@@ -4134,17 +4136,17 @@ MonoBehaviour:
   frameDuration: 20000
   bitrate: 30000
   sourceType: 0
-  microphoneType: 0
+  microphoneType: 1
   audioClip: {fileID: 0}
   loopAudioClip: 1
   reactOnSystemChanges: 0
   autoStart: 1
   audioSessionParameters:
     Category: 4
-    Mode: 0
-    CategoryOptions: 0800000004000000
+    Mode: 1
+    CategoryOptions: 04000000
   useCustomAudioSessionParameters: 0
-  audioSessionPresetIndex: 0
+  audioSessionPresetIndex: 1
   nativeAndroidMicrophoneSettings:
     AcousticEchoCancellation: 0
     AutomaticGainControl: 0
@@ -4220,24 +4222,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 1339267531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ddec46cf6a4c4addbf21b6be8442124, type: 3}
+  m_Script: {fileID: 11500000, guid: b7f95aa3c06eaa84bba4eafdedf12758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   logLevel: 2
   ignoreGlobalLogLevel: 0
-  aec: 1
-  aecHighPass: 0
-  agc: 1
-  agcCompressionGain: 9
-  vad: 1
-  highPass: 0
-  bypass: 0
-  noiseSuppression: 1
-  reverseStreamDelayMs: 120
-  ForceNormalAecInMobile: 0
-  aecOnlyWhenEnabled: 1
-  AutoRestartOnAudioChannelsMismatch: 1
-  AECMobileComfortNoise: 0
+  StartWhenDeviceChange: 1
+  HandleDeviceChange: 1
+  HandleConfigChange: 1
+  UseNativePluginChangeNotifier: 1
+  UseOnAudioConfigurationChanged: 1
+  Android_AlwaysHandleDeviceChange: 0
+  iOS_AlwaysHandleDeviceChange: 1
+--- !u!114 &1339267536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339267531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31feca836a14b4084917a118f32ba6c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1370639140 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6588493171456379045, guid: a7a18a5f237534a9aae9f6347e3c319e, type: 3}
