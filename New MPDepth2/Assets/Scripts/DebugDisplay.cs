@@ -8,7 +8,7 @@ using UnityEngine.XR.ARFoundation;
 public class DebugDisplay : MonoBehaviour
 {
     Text t;
-    [SerializeField] ARFaceManager faceManager;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -19,5 +19,10 @@ public class DebugDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        t.text = "";
+        for(int i = 0; i < UnityEngine.Microphone.devices.Length; i++)
+        {
+            t.text += UnityEngine.Microphone.devices[i];
+        }
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Voice.Unity;
 using UnityEngine;
 
 public class SetMicrophone : MonoBehaviour
@@ -8,11 +9,12 @@ public class SetMicrophone : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        r = GetComponent<Recorder>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        r.PhotonMicrophoneDeviceId = UnityEngine.Microphone.devices.Length-1;
     }
 }
