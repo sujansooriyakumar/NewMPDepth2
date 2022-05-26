@@ -45,6 +45,8 @@ struct Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52;
 struct Dictionary_2_tF07FB2CCA54ADAB1549E54E2E9614059B7B21F74;
 // System.Func`1<Photon.Voice.IAudioOut`1<System.Single>>
 struct Func_1_t33E9723694F2BF4546C0EAB9192BDA476361C7CC;
+// System.Func`1<Photon.Voice.IAudioDesc>
+struct Func_1_t3729C27ED506C17CDE248FA4C18C6B936CAE4718;
 // Photon.Voice.IAudioOut`1<System.Single>
 struct IAudioOut_1_t9DA47378F3CB196929EDD4275C59F2AF8FB21868;
 // System.Collections.Generic.List`1<UnityEngine.XR.ARFoundation.ARFace>
@@ -73,6 +75,8 @@ struct Queue_1_tFEA541538EDABF264541600D59670F3BF7A1CBBA;
 struct TrackingStreamNotificationEvent_t20103F81B134B5862A8DC25AB98B72F094D48C6C;
 // UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.ColorTween>
 struct TweenRunner_1_tD84B9953874682FCC36990AF2C54D748293908F3;
+// Photon.Voice.IOS.AudioSessionCategoryOption[]
+struct AudioSessionCategoryOptionU5BU5D_t2A1DE090F6469C030DEF35A1898A4E58CB10018F;
 // System.Char[]
 struct CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34;
 // Character[]
@@ -89,6 +93,8 @@ struct ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE;
 struct SelectableU5BU5D_tECF9F5BDBF0652A937D18F10C883EFDAE2E62535;
 // System.Single[]
 struct SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA;
+// System.String[]
+struct StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A;
 // UnityEngine.Transform[]
 struct TransformU5BU5D_t7821C0520CC567C0A069329C01AE9C058C7E3F1D;
 // UnityEngine.UIVertex[]
@@ -113,6 +119,10 @@ struct ARSessionOrigin_tA15648434106370D592D12C00B93054EC6CE6AE1;
 struct AnimationTriggers_tF38CA7FA631709E096B57D732668D86081F44C11;
 // System.AsyncCallback
 struct AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA;
+// UnityEngine.AudioClip
+struct AudioClip_t16D2E573E7CC1C5118D8EE0F0692D46866A1C0EE;
+// Photon.Voice.Unity.AudioInEnumerator
+struct AudioInEnumerator_tF947D3CF2E3FAA2C4CAE2AC47E69D7CAD332F197;
 // ReadyPlayerMe.AvatarLoader
 struct AvatarLoader_t4264663AB78C9924F4AFBA7A472329BCAA39F017;
 // ReadyPlayerMe.AvatarMetaData
@@ -165,10 +175,18 @@ struct Gyroscope_tA2A2E6973EE6217F14621CF5BF4FBE4504DB807A;
 struct HideUI_tE5D7AC6F94B227A71BB264318B58B8998505EAFF;
 // System.IAsyncResult
 struct IAsyncResult_tC9F97BF36FCF122D29D3101D80642278297BF370;
+// Photon.Voice.IAudioDesc
+struct IAudioDesc_t4E594E9B8AABF4918890F9377E390A320E285E50;
+// Photon.Voice.IAudioInChangeNotifier
+struct IAudioInChangeNotifier_t3A534BDF3FCCEDAC005D11E8985F0FDE02B10836;
+// Photon.Voice.IDeviceEnumerator
+struct IDeviceEnumerator_t9B1719399BE2DED4A4D413B03FC06F14778A24E8;
 // System.Net.IPAddress
 struct IPAddress_t2B5F1762B4B9935BA6CA8FB12C87282C72E035AE;
 // UnityEngine.Events.InvokableCallList
 struct InvokableCallList_tB7C66AA0C00F9C102C8BDC17A144E569AC7527A9;
+// Photon.Voice.LocalVoice
+struct LocalVoice_t736EC7933A085BF3FF9C93F2E68B746816E1BAC9;
 // MPDepthCore.Calibration.Camera.MPDepthTrackingData
 struct MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7;
 // UnityEngine.Material
@@ -207,6 +225,8 @@ struct RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD;
 struct ReadyPlayerLoader_t3DAAB8CF6F1B191927FBD44DB2BF8D939F9E7FEB;
 // ReceiveBlendshapes
 struct ReceiveBlendshapes_tAF0A3342973547EB6CACBA0F35BBF80B2D0F6D73;
+// Photon.Voice.Unity.Recorder
+struct Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5;
 // UnityEngine.UI.RectMask2D
 struct RectMask2D_tD909811991B341D752E4C978C89EFB80FA7A2B15;
 // UnityEngine.RectTransform
@@ -217,6 +237,8 @@ struct RemoteVoiceLink_tDDD70AB15B70170AF282B017A3BCE94DB80E9CBC;
 struct ScriptableObject_t4361E08CEBF052C650D3666C7CEC37EB31DE116A;
 // UnityEngine.UI.Selectable
 struct Selectable_t34088A3677CC9D344F81B0D91999D8C5963D7DBD;
+// SetMicrophone
+struct SetMicrophone_tBF980B1011E75EAFCC8E1A38CE4F967771586ACB;
 // UnityEngine.SkinnedMeshRenderer
 struct SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496;
 // Photon.Voice.Unity.Speaker
@@ -255,6 +277,10 @@ struct UnityAction_t22E545F8BE0A62EE051C6A83E209587A0DB1C099;
 struct UnityEvent_tA0EA9BC49FD7D5185E7A238EF2E0E6F5D0EE27F4;
 // UnityEngine.UI.VertexHelper
 struct VertexHelper_tDE8B67D3B076061C4F8DF325B0D63ED2E5367E55;
+// Photon.Voice.VoiceClient
+struct VoiceClient_t59431EAB90729511B433F45EEA9F2B3ABDC2D96E;
+// Photon.Voice.Unity.VoiceConnection
+struct VoiceConnection_t65A719BDA53623411E6DC2E6CC34B120E0EBA704;
 // Photon.Voice.Unity.VoiceLogger
 struct VoiceLogger_tA6D71C204E3545DA66F54063A4E722EC5CF9632F;
 // System.Void
@@ -322,6 +348,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Action_2__ctor_mDDC1E32F9C7D66A2E72EEC32BC8
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisSkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496_mA311082AF9E4D2D9A007962A3E0517BE41067EFE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisText_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1_mFB5C182E24F496A866F116D3F75CBD8616A46AB3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisPhotonView_t946AFEDA09B2C5BE655DAA7574D432B3545FCB43_mB49C83D0A19254B75FDC3803E12466436487B8F6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRecorder_t13D849D3581771415EF2D39F877106A1AC72C6C5_m96A9AD1EED671D74A2A953BBFFA2D59C945D1A50_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisText_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1_m2D99AC2081683F963C56EC738451EC0B59B5D137_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentsInChildren_TisTransform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1_mF2B4E2828789B863B83BCBC705EDFAF6F3DCE21C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisReceiveBlendshapes_tAF0A3342973547EB6CACBA0F35BBF80B2D0F6D73_m9A52A838B9DCA8BEB696C10A73385942ADB917C3_RuntimeMethod_var;
@@ -345,6 +372,7 @@ struct CharacterU5BU5D_t230B909D1926163B1CD1AABE3D56A8AAE8D9F56C;
 struct GameObjectU5BU5D_tA88FC1A1FC9D4D73D0B3984D4B0ECE88F4C47642;
 struct ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE;
 struct SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA;
+struct StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A;
 struct TransformU5BU5D_t7821C0520CC567C0A069329C01AE9C058C7E3F1D;
 
 IL2CPP_EXTERN_C_BEGIN
@@ -1468,6 +1496,42 @@ public:
 };
 
 
+// Photon.Voice.IOS.AudioSessionCategory
+struct AudioSessionCategory_tE250FDE11CD1BE66B77C0CDD6F78F2CC73F821C3 
+{
+public:
+	// System.Int32 Photon.Voice.IOS.AudioSessionCategory::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(AudioSessionCategory_tE250FDE11CD1BE66B77C0CDD6F78F2CC73F821C3, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
+// Photon.Voice.IOS.AudioSessionMode
+struct AudioSessionMode_tCE654A88A20960DF6620AF7DA7C66E5AB9401EEB 
+{
+public:
+	// System.Int32 Photon.Voice.IOS.AudioSessionMode::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(AudioSessionMode_tCE654A88A20960DF6620AF7DA7C66E5AB9401EEB, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // ReadyPlayerMe.BodyType
 struct BodyType_tB1EE1304F8EB605CB9CAB75A31AD51E096C86EED 
 {
@@ -1866,6 +1930,24 @@ public:
 };
 
 
+// POpusCodec.Enums.SamplingRate
+struct SamplingRate_tB35955BC7837DAB0BF0F4D73CAA2BAFD47646F51 
+{
+public:
+	// System.Int32 POpusCodec.Enums.SamplingRate::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(SamplingRate_tB35955BC7837DAB0BF0F4D73CAA2BAFD47646F51, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // MPDepthCore.Calibration.Camera.TrackingPose
 struct TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265  : public RuntimeObject
 {
@@ -1939,6 +2021,24 @@ public:
 };
 
 
+// Photon.Voice.OpusCodec/FrameDuration
+struct FrameDuration_tD560D6F059401A66EE1FF773851E931BC1E0CE4D 
+{
+public:
+	// System.Int32 Photon.Voice.OpusCodec/FrameDuration::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(FrameDuration_tD560D6F059401A66EE1FF773851E931BC1E0CE4D, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // Photon.Pun.PhotonView/ObservableSearch
 struct ObservableSearch_t45D1FEF0FC92346CB3A3AEC86E2B9E8B59AE6C47 
 {
@@ -1948,6 +2048,60 @@ public:
 
 public:
 	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(ObservableSearch_t45D1FEF0FC92346CB3A3AEC86E2B9E8B59AE6C47, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
+// Photon.Voice.Unity.Recorder/InputSourceType
+struct InputSourceType_tE4976CF7634D1A2EE44CE97F43BC598CE063E5E4 
+{
+public:
+	// System.Int32 Photon.Voice.Unity.Recorder/InputSourceType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(InputSourceType_tE4976CF7634D1A2EE44CE97F43BC598CE063E5E4, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
+// Photon.Voice.Unity.Recorder/MicType
+struct MicType_t25290DF0A5AF1BBC22A27D10C65C62AC81B71DD9 
+{
+public:
+	// System.Int32 Photon.Voice.Unity.Recorder/MicType::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(MicType_t25290DF0A5AF1BBC22A27D10C65C62AC81B71DD9, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
+// Photon.Voice.Unity.Recorder/SampleTypeConv
+struct SampleTypeConv_tA67BEB60358D5817001656554FB3432E3DC49BC9 
+{
+public:
+	// System.Int32 Photon.Voice.Unity.Recorder/SampleTypeConv::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(SampleTypeConv_tA67BEB60358D5817001656554FB3432E3DC49BC9, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -1974,6 +2128,59 @@ public:
 	}
 };
 
+
+// Photon.Voice.IOS.AudioSessionParameters
+struct AudioSessionParameters_t1CDC7A44917B3D2D554440383473C28B84EFB26E 
+{
+public:
+	// Photon.Voice.IOS.AudioSessionCategory Photon.Voice.IOS.AudioSessionParameters::Category
+	int32_t ___Category_0;
+	// Photon.Voice.IOS.AudioSessionMode Photon.Voice.IOS.AudioSessionParameters::Mode
+	int32_t ___Mode_1;
+	// Photon.Voice.IOS.AudioSessionCategoryOption[] Photon.Voice.IOS.AudioSessionParameters::CategoryOptions
+	AudioSessionCategoryOptionU5BU5D_t2A1DE090F6469C030DEF35A1898A4E58CB10018F* ___CategoryOptions_2;
+
+public:
+	inline static int32_t get_offset_of_Category_0() { return static_cast<int32_t>(offsetof(AudioSessionParameters_t1CDC7A44917B3D2D554440383473C28B84EFB26E, ___Category_0)); }
+	inline int32_t get_Category_0() const { return ___Category_0; }
+	inline int32_t* get_address_of_Category_0() { return &___Category_0; }
+	inline void set_Category_0(int32_t value)
+	{
+		___Category_0 = value;
+	}
+
+	inline static int32_t get_offset_of_Mode_1() { return static_cast<int32_t>(offsetof(AudioSessionParameters_t1CDC7A44917B3D2D554440383473C28B84EFB26E, ___Mode_1)); }
+	inline int32_t get_Mode_1() const { return ___Mode_1; }
+	inline int32_t* get_address_of_Mode_1() { return &___Mode_1; }
+	inline void set_Mode_1(int32_t value)
+	{
+		___Mode_1 = value;
+	}
+
+	inline static int32_t get_offset_of_CategoryOptions_2() { return static_cast<int32_t>(offsetof(AudioSessionParameters_t1CDC7A44917B3D2D554440383473C28B84EFB26E, ___CategoryOptions_2)); }
+	inline AudioSessionCategoryOptionU5BU5D_t2A1DE090F6469C030DEF35A1898A4E58CB10018F* get_CategoryOptions_2() const { return ___CategoryOptions_2; }
+	inline AudioSessionCategoryOptionU5BU5D_t2A1DE090F6469C030DEF35A1898A4E58CB10018F** get_address_of_CategoryOptions_2() { return &___CategoryOptions_2; }
+	inline void set_CategoryOptions_2(AudioSessionCategoryOptionU5BU5D_t2A1DE090F6469C030DEF35A1898A4E58CB10018F* value)
+	{
+		___CategoryOptions_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___CategoryOptions_2), (void*)value);
+	}
+};
+
+// Native definition for P/Invoke marshalling of Photon.Voice.IOS.AudioSessionParameters
+struct AudioSessionParameters_t1CDC7A44917B3D2D554440383473C28B84EFB26E_marshaled_pinvoke
+{
+	int32_t ___Category_0;
+	int32_t ___Mode_1;
+	int32_t* ___CategoryOptions_2;
+};
+// Native definition for COM marshalling of Photon.Voice.IOS.AudioSessionParameters
+struct AudioSessionParameters_t1CDC7A44917B3D2D554440383473C28B84EFB26E_marshaled_com
+{
+	int32_t ___Category_0;
+	int32_t ___Mode_1;
+	int32_t* ___CategoryOptions_2;
+};
 
 // ReadyPlayerMe.AvatarMetaData
 struct AvatarMetaData_t2C948A85765015C2878D630D08691A60AF0ECD4B  : public RuntimeObject
@@ -3078,8 +3285,8 @@ struct DebugDisplay_t0EC3CF624C8518176A96BBF0D8F6B715902DAE59  : public MonoBeha
 public:
 	// UnityEngine.UI.Text DebugDisplay::t
 	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___t_4;
-	// UnityEngine.XR.ARFoundation.ARFaceManager DebugDisplay::faceManager
-	ARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647 * ___faceManager_5;
+	// Photon.Voice.Unity.Recorder DebugDisplay::r
+	Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 * ___r_5;
 
 public:
 	inline static int32_t get_offset_of_t_4() { return static_cast<int32_t>(offsetof(DebugDisplay_t0EC3CF624C8518176A96BBF0D8F6B715902DAE59, ___t_4)); }
@@ -3091,13 +3298,13 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___t_4), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_faceManager_5() { return static_cast<int32_t>(offsetof(DebugDisplay_t0EC3CF624C8518176A96BBF0D8F6B715902DAE59, ___faceManager_5)); }
-	inline ARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647 * get_faceManager_5() const { return ___faceManager_5; }
-	inline ARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647 ** get_address_of_faceManager_5() { return &___faceManager_5; }
-	inline void set_faceManager_5(ARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647 * value)
+	inline static int32_t get_offset_of_r_5() { return static_cast<int32_t>(offsetof(DebugDisplay_t0EC3CF624C8518176A96BBF0D8F6B715902DAE59, ___r_5)); }
+	inline Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 * get_r_5() const { return ___r_5; }
+	inline Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 ** get_address_of_r_5() { return &___r_5; }
+	inline void set_r_5(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 * value)
 	{
-		___faceManager_5 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___faceManager_5), (void*)value);
+		___r_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___r_5), (void*)value);
 	}
 };
 
@@ -4067,6 +4274,25 @@ public:
 };
 
 
+// SetMicrophone
+struct SetMicrophone_tBF980B1011E75EAFCC8E1A38CE4F967771586ACB  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
+{
+public:
+	// Photon.Voice.Unity.Recorder SetMicrophone::r
+	Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 * ___r_4;
+
+public:
+	inline static int32_t get_offset_of_r_4() { return static_cast<int32_t>(offsetof(SetMicrophone_tBF980B1011E75EAFCC8E1A38CE4F967771586ACB, ___r_4)); }
+	inline Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 * get_r_4() const { return ___r_4; }
+	inline Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 ** get_address_of_r_4() { return &___r_4; }
+	inline void set_r_4(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 * value)
+	{
+		___r_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___r_4), (void*)value);
+	}
+};
+
+
 // TrackingIPSave
 struct TrackingIPSave_t1313B8FF9C88898B335917382AED461528AA236F  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
 {
@@ -4877,6 +5103,535 @@ public:
 };
 
 
+// Photon.Voice.Unity.Recorder
+struct Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5  : public VoiceComponent_tCE3547F23B76A6B42D3BD5158F110EFD8044E88C
+{
+public:
+	// System.Boolean Photon.Voice.Unity.Recorder::voiceDetection
+	bool ___voiceDetection_11;
+	// System.Single Photon.Voice.Unity.Recorder::voiceDetectionThreshold
+	float ___voiceDetectionThreshold_12;
+	// System.Int32 Photon.Voice.Unity.Recorder::voiceDetectionDelayMs
+	int32_t ___voiceDetectionDelayMs_13;
+	// System.Object Photon.Voice.Unity.Recorder::userData
+	RuntimeObject * ___userData_14;
+	// Photon.Voice.LocalVoice Photon.Voice.Unity.Recorder::voice
+	LocalVoice_t736EC7933A085BF3FF9C93F2E68B746816E1BAC9 * ___voice_15;
+	// System.String Photon.Voice.Unity.Recorder::unityMicrophoneDevice
+	String_t* ___unityMicrophoneDevice_16;
+	// System.Int32 Photon.Voice.Unity.Recorder::photonMicrophoneDeviceId
+	int32_t ___photonMicrophoneDeviceId_17;
+	// Photon.Voice.IAudioDesc Photon.Voice.Unity.Recorder::inputSource
+	RuntimeObject* ___inputSource_18;
+	// Photon.Voice.VoiceClient Photon.Voice.Unity.Recorder::client
+	VoiceClient_t59431EAB90729511B433F45EEA9F2B3ABDC2D96E * ___client_19;
+	// Photon.Voice.Unity.VoiceConnection Photon.Voice.Unity.Recorder::voiceConnection
+	VoiceConnection_t65A719BDA53623411E6DC2E6CC34B120E0EBA704 * ___voiceConnection_20;
+	// System.Byte Photon.Voice.Unity.Recorder::interestGroup
+	uint8_t ___interestGroup_21;
+	// System.Boolean Photon.Voice.Unity.Recorder::debugEchoMode
+	bool ___debugEchoMode_22;
+	// System.Boolean Photon.Voice.Unity.Recorder::reliableMode
+	bool ___reliableMode_23;
+	// System.Boolean Photon.Voice.Unity.Recorder::encrypt
+	bool ___encrypt_24;
+	// System.Boolean Photon.Voice.Unity.Recorder::transmitEnabled
+	bool ___transmitEnabled_25;
+	// POpusCodec.Enums.SamplingRate Photon.Voice.Unity.Recorder::samplingRate
+	int32_t ___samplingRate_26;
+	// Photon.Voice.OpusCodec/FrameDuration Photon.Voice.Unity.Recorder::frameDuration
+	int32_t ___frameDuration_27;
+	// System.Int32 Photon.Voice.Unity.Recorder::bitrate
+	int32_t ___bitrate_28;
+	// Photon.Voice.Unity.Recorder/InputSourceType Photon.Voice.Unity.Recorder::sourceType
+	int32_t ___sourceType_29;
+	// Photon.Voice.Unity.Recorder/MicType Photon.Voice.Unity.Recorder::microphoneType
+	int32_t ___microphoneType_30;
+	// UnityEngine.AudioClip Photon.Voice.Unity.Recorder::audioClip
+	AudioClip_t16D2E573E7CC1C5118D8EE0F0692D46866A1C0EE * ___audioClip_31;
+	// System.Boolean Photon.Voice.Unity.Recorder::loopAudioClip
+	bool ___loopAudioClip_32;
+	// System.Boolean Photon.Voice.Unity.Recorder::isRecording
+	bool ___isRecording_33;
+	// System.Func`1<Photon.Voice.IAudioDesc> Photon.Voice.Unity.Recorder::inputFactory
+	Func_1_t3729C27ED506C17CDE248FA4C18C6B936CAE4718 * ___inputFactory_34;
+	// Photon.Voice.IAudioInChangeNotifier Photon.Voice.Unity.Recorder::photonMicChangeNotifier
+	RuntimeObject* ___photonMicChangeNotifier_36;
+	// System.Boolean Photon.Voice.Unity.Recorder::reactOnSystemChanges
+	bool ___reactOnSystemChanges_37;
+	// System.Boolean Photon.Voice.Unity.Recorder::subscribedToSystemChangesPhoton
+	bool ___subscribedToSystemChangesPhoton_38;
+	// System.Boolean Photon.Voice.Unity.Recorder::subscribedToSystemChangesUnity
+	bool ___subscribedToSystemChangesUnity_39;
+	// System.Boolean Photon.Voice.Unity.Recorder::autoStart
+	bool ___autoStart_40;
+	// Photon.Voice.IOS.AudioSessionParameters Photon.Voice.Unity.Recorder::audioSessionParameters
+	AudioSessionParameters_t1CDC7A44917B3D2D554440383473C28B84EFB26E  ___audioSessionParameters_41;
+	// System.Boolean Photon.Voice.Unity.Recorder::useCustomAudioSessionParameters
+	bool ___useCustomAudioSessionParameters_42;
+	// System.Int32 Photon.Voice.Unity.Recorder::audioSessionPresetIndex
+	int32_t ___audioSessionPresetIndex_43;
+	// System.Boolean Photon.Voice.Unity.Recorder::recordOnlyWhenEnabled
+	bool ___recordOnlyWhenEnabled_44;
+	// System.Boolean Photon.Voice.Unity.Recorder::skipDeviceChangeChecks
+	bool ___skipDeviceChangeChecks_45;
+	// System.Boolean Photon.Voice.Unity.Recorder::wasRecordingBeforePause
+	bool ___wasRecordingBeforePause_46;
+	// System.Boolean Photon.Voice.Unity.Recorder::isPausedOrInBackground
+	bool ___isPausedOrInBackground_47;
+	// System.Boolean Photon.Voice.Unity.Recorder::stopRecordingWhenPaused
+	bool ___stopRecordingWhenPaused_48;
+	// System.Boolean Photon.Voice.Unity.Recorder::useOnAudioFilterRead
+	bool ___useOnAudioFilterRead_49;
+	// System.Boolean Photon.Voice.Unity.Recorder::trySamplingRateMatch
+	bool ___trySamplingRateMatch_50;
+	// System.Boolean Photon.Voice.Unity.Recorder::useMicrophoneTypeFallback
+	bool ___useMicrophoneTypeFallback_51;
+	// System.Boolean Photon.Voice.Unity.Recorder::recordOnlyWhenJoined
+	bool ___recordOnlyWhenJoined_52;
+	// System.Boolean Photon.Voice.Unity.Recorder::recordingStoppedExplicitly
+	bool ___recordingStoppedExplicitly_53;
+	// Photon.Voice.IDeviceEnumerator Photon.Voice.Unity.Recorder::photonMicrophonesEnumerator
+	RuntimeObject* ___photonMicrophonesEnumerator_54;
+	// Photon.Voice.Unity.AudioInEnumerator Photon.Voice.Unity.Recorder::unityMicrophonesEnumerator
+	AudioInEnumerator_tF947D3CF2E3FAA2C4CAE2AC47E69D7CAD332F197 * ___unityMicrophonesEnumerator_55;
+	// System.Object Photon.Voice.Unity.Recorder::microphoneDeviceChangeDetectedLock
+	RuntimeObject * ___microphoneDeviceChangeDetectedLock_56;
+	// System.Boolean Photon.Voice.Unity.Recorder::microphoneDeviceChangeDetected
+	bool ___microphoneDeviceChangeDetected_57;
+	// System.Boolean Photon.Voice.Unity.Recorder::<RequiresRestart>k__BackingField
+	bool ___U3CRequiresRestartU3Ek__BackingField_58;
+	// Photon.Voice.Unity.Recorder/SampleTypeConv Photon.Voice.Unity.Recorder::<TypeConvert>k__BackingField
+	int32_t ___U3CTypeConvertU3Ek__BackingField_59;
+
+public:
+	inline static int32_t get_offset_of_voiceDetection_11() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___voiceDetection_11)); }
+	inline bool get_voiceDetection_11() const { return ___voiceDetection_11; }
+	inline bool* get_address_of_voiceDetection_11() { return &___voiceDetection_11; }
+	inline void set_voiceDetection_11(bool value)
+	{
+		___voiceDetection_11 = value;
+	}
+
+	inline static int32_t get_offset_of_voiceDetectionThreshold_12() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___voiceDetectionThreshold_12)); }
+	inline float get_voiceDetectionThreshold_12() const { return ___voiceDetectionThreshold_12; }
+	inline float* get_address_of_voiceDetectionThreshold_12() { return &___voiceDetectionThreshold_12; }
+	inline void set_voiceDetectionThreshold_12(float value)
+	{
+		___voiceDetectionThreshold_12 = value;
+	}
+
+	inline static int32_t get_offset_of_voiceDetectionDelayMs_13() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___voiceDetectionDelayMs_13)); }
+	inline int32_t get_voiceDetectionDelayMs_13() const { return ___voiceDetectionDelayMs_13; }
+	inline int32_t* get_address_of_voiceDetectionDelayMs_13() { return &___voiceDetectionDelayMs_13; }
+	inline void set_voiceDetectionDelayMs_13(int32_t value)
+	{
+		___voiceDetectionDelayMs_13 = value;
+	}
+
+	inline static int32_t get_offset_of_userData_14() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___userData_14)); }
+	inline RuntimeObject * get_userData_14() const { return ___userData_14; }
+	inline RuntimeObject ** get_address_of_userData_14() { return &___userData_14; }
+	inline void set_userData_14(RuntimeObject * value)
+	{
+		___userData_14 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___userData_14), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_voice_15() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___voice_15)); }
+	inline LocalVoice_t736EC7933A085BF3FF9C93F2E68B746816E1BAC9 * get_voice_15() const { return ___voice_15; }
+	inline LocalVoice_t736EC7933A085BF3FF9C93F2E68B746816E1BAC9 ** get_address_of_voice_15() { return &___voice_15; }
+	inline void set_voice_15(LocalVoice_t736EC7933A085BF3FF9C93F2E68B746816E1BAC9 * value)
+	{
+		___voice_15 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___voice_15), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_unityMicrophoneDevice_16() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___unityMicrophoneDevice_16)); }
+	inline String_t* get_unityMicrophoneDevice_16() const { return ___unityMicrophoneDevice_16; }
+	inline String_t** get_address_of_unityMicrophoneDevice_16() { return &___unityMicrophoneDevice_16; }
+	inline void set_unityMicrophoneDevice_16(String_t* value)
+	{
+		___unityMicrophoneDevice_16 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___unityMicrophoneDevice_16), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_photonMicrophoneDeviceId_17() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___photonMicrophoneDeviceId_17)); }
+	inline int32_t get_photonMicrophoneDeviceId_17() const { return ___photonMicrophoneDeviceId_17; }
+	inline int32_t* get_address_of_photonMicrophoneDeviceId_17() { return &___photonMicrophoneDeviceId_17; }
+	inline void set_photonMicrophoneDeviceId_17(int32_t value)
+	{
+		___photonMicrophoneDeviceId_17 = value;
+	}
+
+	inline static int32_t get_offset_of_inputSource_18() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___inputSource_18)); }
+	inline RuntimeObject* get_inputSource_18() const { return ___inputSource_18; }
+	inline RuntimeObject** get_address_of_inputSource_18() { return &___inputSource_18; }
+	inline void set_inputSource_18(RuntimeObject* value)
+	{
+		___inputSource_18 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___inputSource_18), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_client_19() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___client_19)); }
+	inline VoiceClient_t59431EAB90729511B433F45EEA9F2B3ABDC2D96E * get_client_19() const { return ___client_19; }
+	inline VoiceClient_t59431EAB90729511B433F45EEA9F2B3ABDC2D96E ** get_address_of_client_19() { return &___client_19; }
+	inline void set_client_19(VoiceClient_t59431EAB90729511B433F45EEA9F2B3ABDC2D96E * value)
+	{
+		___client_19 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___client_19), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_voiceConnection_20() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___voiceConnection_20)); }
+	inline VoiceConnection_t65A719BDA53623411E6DC2E6CC34B120E0EBA704 * get_voiceConnection_20() const { return ___voiceConnection_20; }
+	inline VoiceConnection_t65A719BDA53623411E6DC2E6CC34B120E0EBA704 ** get_address_of_voiceConnection_20() { return &___voiceConnection_20; }
+	inline void set_voiceConnection_20(VoiceConnection_t65A719BDA53623411E6DC2E6CC34B120E0EBA704 * value)
+	{
+		___voiceConnection_20 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___voiceConnection_20), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_interestGroup_21() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___interestGroup_21)); }
+	inline uint8_t get_interestGroup_21() const { return ___interestGroup_21; }
+	inline uint8_t* get_address_of_interestGroup_21() { return &___interestGroup_21; }
+	inline void set_interestGroup_21(uint8_t value)
+	{
+		___interestGroup_21 = value;
+	}
+
+	inline static int32_t get_offset_of_debugEchoMode_22() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___debugEchoMode_22)); }
+	inline bool get_debugEchoMode_22() const { return ___debugEchoMode_22; }
+	inline bool* get_address_of_debugEchoMode_22() { return &___debugEchoMode_22; }
+	inline void set_debugEchoMode_22(bool value)
+	{
+		___debugEchoMode_22 = value;
+	}
+
+	inline static int32_t get_offset_of_reliableMode_23() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___reliableMode_23)); }
+	inline bool get_reliableMode_23() const { return ___reliableMode_23; }
+	inline bool* get_address_of_reliableMode_23() { return &___reliableMode_23; }
+	inline void set_reliableMode_23(bool value)
+	{
+		___reliableMode_23 = value;
+	}
+
+	inline static int32_t get_offset_of_encrypt_24() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___encrypt_24)); }
+	inline bool get_encrypt_24() const { return ___encrypt_24; }
+	inline bool* get_address_of_encrypt_24() { return &___encrypt_24; }
+	inline void set_encrypt_24(bool value)
+	{
+		___encrypt_24 = value;
+	}
+
+	inline static int32_t get_offset_of_transmitEnabled_25() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___transmitEnabled_25)); }
+	inline bool get_transmitEnabled_25() const { return ___transmitEnabled_25; }
+	inline bool* get_address_of_transmitEnabled_25() { return &___transmitEnabled_25; }
+	inline void set_transmitEnabled_25(bool value)
+	{
+		___transmitEnabled_25 = value;
+	}
+
+	inline static int32_t get_offset_of_samplingRate_26() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___samplingRate_26)); }
+	inline int32_t get_samplingRate_26() const { return ___samplingRate_26; }
+	inline int32_t* get_address_of_samplingRate_26() { return &___samplingRate_26; }
+	inline void set_samplingRate_26(int32_t value)
+	{
+		___samplingRate_26 = value;
+	}
+
+	inline static int32_t get_offset_of_frameDuration_27() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___frameDuration_27)); }
+	inline int32_t get_frameDuration_27() const { return ___frameDuration_27; }
+	inline int32_t* get_address_of_frameDuration_27() { return &___frameDuration_27; }
+	inline void set_frameDuration_27(int32_t value)
+	{
+		___frameDuration_27 = value;
+	}
+
+	inline static int32_t get_offset_of_bitrate_28() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___bitrate_28)); }
+	inline int32_t get_bitrate_28() const { return ___bitrate_28; }
+	inline int32_t* get_address_of_bitrate_28() { return &___bitrate_28; }
+	inline void set_bitrate_28(int32_t value)
+	{
+		___bitrate_28 = value;
+	}
+
+	inline static int32_t get_offset_of_sourceType_29() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___sourceType_29)); }
+	inline int32_t get_sourceType_29() const { return ___sourceType_29; }
+	inline int32_t* get_address_of_sourceType_29() { return &___sourceType_29; }
+	inline void set_sourceType_29(int32_t value)
+	{
+		___sourceType_29 = value;
+	}
+
+	inline static int32_t get_offset_of_microphoneType_30() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___microphoneType_30)); }
+	inline int32_t get_microphoneType_30() const { return ___microphoneType_30; }
+	inline int32_t* get_address_of_microphoneType_30() { return &___microphoneType_30; }
+	inline void set_microphoneType_30(int32_t value)
+	{
+		___microphoneType_30 = value;
+	}
+
+	inline static int32_t get_offset_of_audioClip_31() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___audioClip_31)); }
+	inline AudioClip_t16D2E573E7CC1C5118D8EE0F0692D46866A1C0EE * get_audioClip_31() const { return ___audioClip_31; }
+	inline AudioClip_t16D2E573E7CC1C5118D8EE0F0692D46866A1C0EE ** get_address_of_audioClip_31() { return &___audioClip_31; }
+	inline void set_audioClip_31(AudioClip_t16D2E573E7CC1C5118D8EE0F0692D46866A1C0EE * value)
+	{
+		___audioClip_31 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___audioClip_31), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_loopAudioClip_32() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___loopAudioClip_32)); }
+	inline bool get_loopAudioClip_32() const { return ___loopAudioClip_32; }
+	inline bool* get_address_of_loopAudioClip_32() { return &___loopAudioClip_32; }
+	inline void set_loopAudioClip_32(bool value)
+	{
+		___loopAudioClip_32 = value;
+	}
+
+	inline static int32_t get_offset_of_isRecording_33() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___isRecording_33)); }
+	inline bool get_isRecording_33() const { return ___isRecording_33; }
+	inline bool* get_address_of_isRecording_33() { return &___isRecording_33; }
+	inline void set_isRecording_33(bool value)
+	{
+		___isRecording_33 = value;
+	}
+
+	inline static int32_t get_offset_of_inputFactory_34() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___inputFactory_34)); }
+	inline Func_1_t3729C27ED506C17CDE248FA4C18C6B936CAE4718 * get_inputFactory_34() const { return ___inputFactory_34; }
+	inline Func_1_t3729C27ED506C17CDE248FA4C18C6B936CAE4718 ** get_address_of_inputFactory_34() { return &___inputFactory_34; }
+	inline void set_inputFactory_34(Func_1_t3729C27ED506C17CDE248FA4C18C6B936CAE4718 * value)
+	{
+		___inputFactory_34 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___inputFactory_34), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_photonMicChangeNotifier_36() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___photonMicChangeNotifier_36)); }
+	inline RuntimeObject* get_photonMicChangeNotifier_36() const { return ___photonMicChangeNotifier_36; }
+	inline RuntimeObject** get_address_of_photonMicChangeNotifier_36() { return &___photonMicChangeNotifier_36; }
+	inline void set_photonMicChangeNotifier_36(RuntimeObject* value)
+	{
+		___photonMicChangeNotifier_36 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___photonMicChangeNotifier_36), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_reactOnSystemChanges_37() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___reactOnSystemChanges_37)); }
+	inline bool get_reactOnSystemChanges_37() const { return ___reactOnSystemChanges_37; }
+	inline bool* get_address_of_reactOnSystemChanges_37() { return &___reactOnSystemChanges_37; }
+	inline void set_reactOnSystemChanges_37(bool value)
+	{
+		___reactOnSystemChanges_37 = value;
+	}
+
+	inline static int32_t get_offset_of_subscribedToSystemChangesPhoton_38() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___subscribedToSystemChangesPhoton_38)); }
+	inline bool get_subscribedToSystemChangesPhoton_38() const { return ___subscribedToSystemChangesPhoton_38; }
+	inline bool* get_address_of_subscribedToSystemChangesPhoton_38() { return &___subscribedToSystemChangesPhoton_38; }
+	inline void set_subscribedToSystemChangesPhoton_38(bool value)
+	{
+		___subscribedToSystemChangesPhoton_38 = value;
+	}
+
+	inline static int32_t get_offset_of_subscribedToSystemChangesUnity_39() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___subscribedToSystemChangesUnity_39)); }
+	inline bool get_subscribedToSystemChangesUnity_39() const { return ___subscribedToSystemChangesUnity_39; }
+	inline bool* get_address_of_subscribedToSystemChangesUnity_39() { return &___subscribedToSystemChangesUnity_39; }
+	inline void set_subscribedToSystemChangesUnity_39(bool value)
+	{
+		___subscribedToSystemChangesUnity_39 = value;
+	}
+
+	inline static int32_t get_offset_of_autoStart_40() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___autoStart_40)); }
+	inline bool get_autoStart_40() const { return ___autoStart_40; }
+	inline bool* get_address_of_autoStart_40() { return &___autoStart_40; }
+	inline void set_autoStart_40(bool value)
+	{
+		___autoStart_40 = value;
+	}
+
+	inline static int32_t get_offset_of_audioSessionParameters_41() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___audioSessionParameters_41)); }
+	inline AudioSessionParameters_t1CDC7A44917B3D2D554440383473C28B84EFB26E  get_audioSessionParameters_41() const { return ___audioSessionParameters_41; }
+	inline AudioSessionParameters_t1CDC7A44917B3D2D554440383473C28B84EFB26E * get_address_of_audioSessionParameters_41() { return &___audioSessionParameters_41; }
+	inline void set_audioSessionParameters_41(AudioSessionParameters_t1CDC7A44917B3D2D554440383473C28B84EFB26E  value)
+	{
+		___audioSessionParameters_41 = value;
+		Il2CppCodeGenWriteBarrier((void**)&(((&___audioSessionParameters_41))->___CategoryOptions_2), (void*)NULL);
+	}
+
+	inline static int32_t get_offset_of_useCustomAudioSessionParameters_42() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___useCustomAudioSessionParameters_42)); }
+	inline bool get_useCustomAudioSessionParameters_42() const { return ___useCustomAudioSessionParameters_42; }
+	inline bool* get_address_of_useCustomAudioSessionParameters_42() { return &___useCustomAudioSessionParameters_42; }
+	inline void set_useCustomAudioSessionParameters_42(bool value)
+	{
+		___useCustomAudioSessionParameters_42 = value;
+	}
+
+	inline static int32_t get_offset_of_audioSessionPresetIndex_43() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___audioSessionPresetIndex_43)); }
+	inline int32_t get_audioSessionPresetIndex_43() const { return ___audioSessionPresetIndex_43; }
+	inline int32_t* get_address_of_audioSessionPresetIndex_43() { return &___audioSessionPresetIndex_43; }
+	inline void set_audioSessionPresetIndex_43(int32_t value)
+	{
+		___audioSessionPresetIndex_43 = value;
+	}
+
+	inline static int32_t get_offset_of_recordOnlyWhenEnabled_44() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___recordOnlyWhenEnabled_44)); }
+	inline bool get_recordOnlyWhenEnabled_44() const { return ___recordOnlyWhenEnabled_44; }
+	inline bool* get_address_of_recordOnlyWhenEnabled_44() { return &___recordOnlyWhenEnabled_44; }
+	inline void set_recordOnlyWhenEnabled_44(bool value)
+	{
+		___recordOnlyWhenEnabled_44 = value;
+	}
+
+	inline static int32_t get_offset_of_skipDeviceChangeChecks_45() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___skipDeviceChangeChecks_45)); }
+	inline bool get_skipDeviceChangeChecks_45() const { return ___skipDeviceChangeChecks_45; }
+	inline bool* get_address_of_skipDeviceChangeChecks_45() { return &___skipDeviceChangeChecks_45; }
+	inline void set_skipDeviceChangeChecks_45(bool value)
+	{
+		___skipDeviceChangeChecks_45 = value;
+	}
+
+	inline static int32_t get_offset_of_wasRecordingBeforePause_46() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___wasRecordingBeforePause_46)); }
+	inline bool get_wasRecordingBeforePause_46() const { return ___wasRecordingBeforePause_46; }
+	inline bool* get_address_of_wasRecordingBeforePause_46() { return &___wasRecordingBeforePause_46; }
+	inline void set_wasRecordingBeforePause_46(bool value)
+	{
+		___wasRecordingBeforePause_46 = value;
+	}
+
+	inline static int32_t get_offset_of_isPausedOrInBackground_47() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___isPausedOrInBackground_47)); }
+	inline bool get_isPausedOrInBackground_47() const { return ___isPausedOrInBackground_47; }
+	inline bool* get_address_of_isPausedOrInBackground_47() { return &___isPausedOrInBackground_47; }
+	inline void set_isPausedOrInBackground_47(bool value)
+	{
+		___isPausedOrInBackground_47 = value;
+	}
+
+	inline static int32_t get_offset_of_stopRecordingWhenPaused_48() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___stopRecordingWhenPaused_48)); }
+	inline bool get_stopRecordingWhenPaused_48() const { return ___stopRecordingWhenPaused_48; }
+	inline bool* get_address_of_stopRecordingWhenPaused_48() { return &___stopRecordingWhenPaused_48; }
+	inline void set_stopRecordingWhenPaused_48(bool value)
+	{
+		___stopRecordingWhenPaused_48 = value;
+	}
+
+	inline static int32_t get_offset_of_useOnAudioFilterRead_49() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___useOnAudioFilterRead_49)); }
+	inline bool get_useOnAudioFilterRead_49() const { return ___useOnAudioFilterRead_49; }
+	inline bool* get_address_of_useOnAudioFilterRead_49() { return &___useOnAudioFilterRead_49; }
+	inline void set_useOnAudioFilterRead_49(bool value)
+	{
+		___useOnAudioFilterRead_49 = value;
+	}
+
+	inline static int32_t get_offset_of_trySamplingRateMatch_50() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___trySamplingRateMatch_50)); }
+	inline bool get_trySamplingRateMatch_50() const { return ___trySamplingRateMatch_50; }
+	inline bool* get_address_of_trySamplingRateMatch_50() { return &___trySamplingRateMatch_50; }
+	inline void set_trySamplingRateMatch_50(bool value)
+	{
+		___trySamplingRateMatch_50 = value;
+	}
+
+	inline static int32_t get_offset_of_useMicrophoneTypeFallback_51() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___useMicrophoneTypeFallback_51)); }
+	inline bool get_useMicrophoneTypeFallback_51() const { return ___useMicrophoneTypeFallback_51; }
+	inline bool* get_address_of_useMicrophoneTypeFallback_51() { return &___useMicrophoneTypeFallback_51; }
+	inline void set_useMicrophoneTypeFallback_51(bool value)
+	{
+		___useMicrophoneTypeFallback_51 = value;
+	}
+
+	inline static int32_t get_offset_of_recordOnlyWhenJoined_52() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___recordOnlyWhenJoined_52)); }
+	inline bool get_recordOnlyWhenJoined_52() const { return ___recordOnlyWhenJoined_52; }
+	inline bool* get_address_of_recordOnlyWhenJoined_52() { return &___recordOnlyWhenJoined_52; }
+	inline void set_recordOnlyWhenJoined_52(bool value)
+	{
+		___recordOnlyWhenJoined_52 = value;
+	}
+
+	inline static int32_t get_offset_of_recordingStoppedExplicitly_53() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___recordingStoppedExplicitly_53)); }
+	inline bool get_recordingStoppedExplicitly_53() const { return ___recordingStoppedExplicitly_53; }
+	inline bool* get_address_of_recordingStoppedExplicitly_53() { return &___recordingStoppedExplicitly_53; }
+	inline void set_recordingStoppedExplicitly_53(bool value)
+	{
+		___recordingStoppedExplicitly_53 = value;
+	}
+
+	inline static int32_t get_offset_of_photonMicrophonesEnumerator_54() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___photonMicrophonesEnumerator_54)); }
+	inline RuntimeObject* get_photonMicrophonesEnumerator_54() const { return ___photonMicrophonesEnumerator_54; }
+	inline RuntimeObject** get_address_of_photonMicrophonesEnumerator_54() { return &___photonMicrophonesEnumerator_54; }
+	inline void set_photonMicrophonesEnumerator_54(RuntimeObject* value)
+	{
+		___photonMicrophonesEnumerator_54 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___photonMicrophonesEnumerator_54), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_unityMicrophonesEnumerator_55() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___unityMicrophonesEnumerator_55)); }
+	inline AudioInEnumerator_tF947D3CF2E3FAA2C4CAE2AC47E69D7CAD332F197 * get_unityMicrophonesEnumerator_55() const { return ___unityMicrophonesEnumerator_55; }
+	inline AudioInEnumerator_tF947D3CF2E3FAA2C4CAE2AC47E69D7CAD332F197 ** get_address_of_unityMicrophonesEnumerator_55() { return &___unityMicrophonesEnumerator_55; }
+	inline void set_unityMicrophonesEnumerator_55(AudioInEnumerator_tF947D3CF2E3FAA2C4CAE2AC47E69D7CAD332F197 * value)
+	{
+		___unityMicrophonesEnumerator_55 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___unityMicrophonesEnumerator_55), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_microphoneDeviceChangeDetectedLock_56() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___microphoneDeviceChangeDetectedLock_56)); }
+	inline RuntimeObject * get_microphoneDeviceChangeDetectedLock_56() const { return ___microphoneDeviceChangeDetectedLock_56; }
+	inline RuntimeObject ** get_address_of_microphoneDeviceChangeDetectedLock_56() { return &___microphoneDeviceChangeDetectedLock_56; }
+	inline void set_microphoneDeviceChangeDetectedLock_56(RuntimeObject * value)
+	{
+		___microphoneDeviceChangeDetectedLock_56 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___microphoneDeviceChangeDetectedLock_56), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_microphoneDeviceChangeDetected_57() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___microphoneDeviceChangeDetected_57)); }
+	inline bool get_microphoneDeviceChangeDetected_57() const { return ___microphoneDeviceChangeDetected_57; }
+	inline bool* get_address_of_microphoneDeviceChangeDetected_57() { return &___microphoneDeviceChangeDetected_57; }
+	inline void set_microphoneDeviceChangeDetected_57(bool value)
+	{
+		___microphoneDeviceChangeDetected_57 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CRequiresRestartU3Ek__BackingField_58() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___U3CRequiresRestartU3Ek__BackingField_58)); }
+	inline bool get_U3CRequiresRestartU3Ek__BackingField_58() const { return ___U3CRequiresRestartU3Ek__BackingField_58; }
+	inline bool* get_address_of_U3CRequiresRestartU3Ek__BackingField_58() { return &___U3CRequiresRestartU3Ek__BackingField_58; }
+	inline void set_U3CRequiresRestartU3Ek__BackingField_58(bool value)
+	{
+		___U3CRequiresRestartU3Ek__BackingField_58 = value;
+	}
+
+	inline static int32_t get_offset_of_U3CTypeConvertU3Ek__BackingField_59() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5, ___U3CTypeConvertU3Ek__BackingField_59)); }
+	inline int32_t get_U3CTypeConvertU3Ek__BackingField_59() const { return ___U3CTypeConvertU3Ek__BackingField_59; }
+	inline int32_t* get_address_of_U3CTypeConvertU3Ek__BackingField_59() { return &___U3CTypeConvertU3Ek__BackingField_59; }
+	inline void set_U3CTypeConvertU3Ek__BackingField_59(int32_t value)
+	{
+		___U3CTypeConvertU3Ek__BackingField_59 = value;
+	}
+};
+
+struct Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5_StaticFields
+{
+public:
+	// System.Array Photon.Voice.Unity.Recorder::samplingRateValues
+	RuntimeArray * ___samplingRateValues_10;
+	// Photon.Voice.IDeviceEnumerator Photon.Voice.Unity.Recorder::photonMicrophoneEnumerator
+	RuntimeObject* ___photonMicrophoneEnumerator_35;
+
+public:
+	inline static int32_t get_offset_of_samplingRateValues_10() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5_StaticFields, ___samplingRateValues_10)); }
+	inline RuntimeArray * get_samplingRateValues_10() const { return ___samplingRateValues_10; }
+	inline RuntimeArray ** get_address_of_samplingRateValues_10() { return &___samplingRateValues_10; }
+	inline void set_samplingRateValues_10(RuntimeArray * value)
+	{
+		___samplingRateValues_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___samplingRateValues_10), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_photonMicrophoneEnumerator_35() { return static_cast<int32_t>(offsetof(Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5_StaticFields, ___photonMicrophoneEnumerator_35)); }
+	inline RuntimeObject* get_photonMicrophoneEnumerator_35() const { return ___photonMicrophoneEnumerator_35; }
+	inline RuntimeObject** get_address_of_photonMicrophoneEnumerator_35() { return &___photonMicrophoneEnumerator_35; }
+	inline void set_photonMicrophoneEnumerator_35(RuntimeObject* value)
+	{
+		___photonMicrophoneEnumerator_35 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___photonMicrophoneEnumerator_35), (void*)value);
+	}
+};
+
+
 // UnityEngine.UI.Selectable
 struct Selectable_t34088A3677CC9D344F81B0D91999D8C5963D7DBD  : public UIBehaviour_tD1C6E2D542222546D68510ECE74036EFBC3C3B0E
 {
@@ -5653,6 +6408,43 @@ public:
 		m_Items[index] = value;
 	}
 };
+// System.String[]
+struct StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) String_t* m_Items[1];
+
+public:
+	inline String_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, String_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 
 
 // !!0 UnityEngine.Object::Instantiate<System.Object>(!!0,UnityEngine.Vector3,UnityEngine.Quaternion)
@@ -5740,6 +6532,8 @@ inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * Component_GetComponent_T
 {
 	return ((  Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * (*) (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m69D9C576D6DD024C709E29EEADBC8041299A3AA7_gshared)(__this, method);
 }
+// System.String Photon.Voice.Unity.Recorder::get_UnityMicrophoneDevice()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Recorder_get_UnityMicrophoneDevice_mD3997DB657B5368277B4A76DB53A64A3A343D71B (Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 * __this, const RuntimeMethod* method);
 // System.Boolean UnityEngine.SystemInfo::get_supportsGyroscope()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SystemInfo_get_supportsGyroscope_m342A5CD283DB840C10B5CEC10C997E3E7086CD57 (const RuntimeMethod* method);
 // UnityEngine.Transform UnityEngine.Component::get_transform()
@@ -5854,6 +6648,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mDDD40612220D8104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReceiveBlendshapes_UpdateSlothBlendShapes_m058080FDB3358CC6B8610294A711991FD58F5D72 (ReceiveBlendshapes_tAF0A3342973547EB6CACBA0F35BBF80B2D0F6D73 * __this, SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* ___blendshapes_0, const RuntimeMethod* method);
 // System.Void UnityEngine.SkinnedMeshRenderer::SetBlendShapeWeight(System.Int32,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkinnedMeshRenderer_SetBlendShapeWeight_mF546F3567C5039C217AD1E32157B992B4124B5FD (SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * __this, int32_t ___index0, float ___value1, const RuntimeMethod* method);
+// !!0 UnityEngine.Component::GetComponent<Photon.Voice.Unity.Recorder>()
+inline Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 * Component_GetComponent_TisRecorder_t13D849D3581771415EF2D39F877106A1AC72C6C5_m96A9AD1EED671D74A2A953BBFFA2D59C945D1A50 (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method)
+{
+	return ((  Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 * (*) (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m69D9C576D6DD024C709E29EEADBC8041299A3AA7_gshared)(__this, method);
+}
+// System.String[] UnityEngine.Microphone::get_devices()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* Microphone_get_devices_m550C09D23C4FF50A6F3E1A2198D741436CCB584A (const RuntimeMethod* method);
+// System.Void Photon.Voice.Unity.Recorder::set_UnityMicrophoneDevice(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Recorder_set_UnityMicrophoneDevice_m101328DC02C1E07D9777CC2945E7068FF43AE385 (Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 * __this, String_t* ___value0, const RuntimeMethod* method);
 // System.String TrackingIPSave::get_FileFolder()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TrackingIPSave_get_FileFolder_m1E2C3AF9AEE0EC8B7B4E1B8BF3D74E9334579E01 (const RuntimeMethod* method);
 // System.String TrackingIPSave::get_Filename()
@@ -6674,6 +7477,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugDisplay_Start_m19D3D50E84B8A343EE97
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebugDisplay_Update_m26841B2225FCFD801E508D232DAFE2D80E01F5A0 (DebugDisplay_t0EC3CF624C8518176A96BBF0D8F6B715902DAE59 * __this, const RuntimeMethod* method)
 {
 	{
+		// t.text = r.UnityMicrophoneDevice;
+		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_0 = __this->get_t_4();
+		Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 * L_1 = __this->get_r_5();
+		NullCheck(L_1);
+		String_t* L_2;
+		L_2 = Recorder_get_UnityMicrophoneDevice_mD3997DB657B5368277B4A76DB53A64A3A343D71B(L_1, /*hidden argument*/NULL);
+		NullCheck(L_0);
+		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, L_2);
 		// }
 		return;
 	}
@@ -8799,6 +9610,57 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReceiveBlendshapes_SetIsMirrorAvatar_m84
 }
 // System.Void ReceiveBlendshapes::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReceiveBlendshapes__ctor_m2F4830D32C29A9F0CF3ED1A9478A8FADF59BC5F8 (ReceiveBlendshapes_tAF0A3342973547EB6CACBA0F35BBF80B2D0F6D73 * __this, const RuntimeMethod* method)
+{
+	{
+		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SetMicrophone::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetMicrophone_Start_mFA50307E5F74B84D13DBC446E4F54DA10D72090A (SetMicrophone_tBF980B1011E75EAFCC8E1A38CE4F967771586ACB * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRecorder_t13D849D3581771415EF2D39F877106A1AC72C6C5_m96A9AD1EED671D74A2A953BBFFA2D59C945D1A50_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// r = GetComponent<Recorder>();
+		Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 * L_0;
+		L_0 = Component_GetComponent_TisRecorder_t13D849D3581771415EF2D39F877106A1AC72C6C5_m96A9AD1EED671D74A2A953BBFFA2D59C945D1A50(__this, /*hidden argument*/Component_GetComponent_TisRecorder_t13D849D3581771415EF2D39F877106A1AC72C6C5_m96A9AD1EED671D74A2A953BBFFA2D59C945D1A50_RuntimeMethod_var);
+		__this->set_r_4(L_0);
+		// r.UnityMicrophoneDevice = Microphone.devices[1];
+		Recorder_t13D849D3581771415EF2D39F877106A1AC72C6C5 * L_1 = __this->get_r_4();
+		StringU5BU5D_tACEBFEDE350025B554CD507C9AE8FFE49359549A* L_2;
+		L_2 = Microphone_get_devices_m550C09D23C4FF50A6F3E1A2198D741436CCB584A(/*hidden argument*/NULL);
+		NullCheck(L_2);
+		int32_t L_3 = 1;
+		String_t* L_4 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
+		NullCheck(L_1);
+		Recorder_set_UnityMicrophoneDevice_m101328DC02C1E07D9777CC2945E7068FF43AE385(L_1, L_4, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void SetMicrophone::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetMicrophone_Update_m2FA49D151AAF0F9D2942ED8325CAABDBA444F3CA (SetMicrophone_tBF980B1011E75EAFCC8E1A38CE4F967771586ACB * __this, const RuntimeMethod* method)
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void SetMicrophone::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetMicrophone__ctor_mD5D9E4DF686DA097694C941B9BA510445BEABECE (SetMicrophone_tBF980B1011E75EAFCC8E1A38CE4F967771586ACB * __this, const RuntimeMethod* method)
 {
 	{
 		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);

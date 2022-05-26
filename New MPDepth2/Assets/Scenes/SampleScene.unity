@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18154591, g: 0.22718865, b: 0.30740604, a: 1}
+  m_IndirectSpecularColor: {r: 0.18144932, g: 0.22706543, b: 0.30727005, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1090,6 +1090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff4653a7efd4d4c94a934fdabdc2de71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  r: {fileID: 1339267533}
 --- !u!114 &287261554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2027,7 +2028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &592250386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4232,8 +4233,8 @@ GameObject:
   - component: {fileID: 1339267532}
   - component: {fileID: 1339267534}
   - component: {fileID: 1339267533}
-  - component: {fileID: 1339267535}
   - component: {fileID: 1339267536}
+  - component: {fileID: 1339267535}
   m_Layer: 0
   m_Name: VoiceManagement
   m_TagString: Untagged
@@ -4272,7 +4273,7 @@ MonoBehaviour:
   ignoreGlobalLogLevel: 0
   voiceDetection: 0
   voiceDetectionThreshold: 0.317
-  voiceDetectionDelayMs: 500
+  voiceDetectionDelayMs: 82
   unityMicrophoneDevice: 
   photonMicrophoneDeviceId: -1
   interestGroup: 0
@@ -4280,21 +4281,21 @@ MonoBehaviour:
   reliableMode: 0
   encrypt: 0
   transmitEnabled: 1
-  samplingRate: 24000
+  samplingRate: 48000
   frameDuration: 20000
-  bitrate: 30000
+  bitrate: 510000
   sourceType: 0
-  microphoneType: 1
+  microphoneType: 0
   audioClip: {fileID: 0}
   loopAudioClip: 1
   reactOnSystemChanges: 0
   autoStart: 1
   audioSessionParameters:
     Category: 4
-    Mode: 1
-    CategoryOptions: 04000000
+    Mode: 0
+    CategoryOptions: 0800000004000000
   useCustomAudioSessionParameters: 0
-  audioSessionPresetIndex: 1
+  audioSessionPresetIndex: 0
   nativeAndroidMicrophoneSettings:
     AcousticEchoCancellation: 0
     AutomaticGainControl: 0
@@ -4334,7 +4335,7 @@ MonoBehaviour:
   globalPlaybackDelaySettings:
     MinDelaySoft: 50
     MaxDelaySoft: 100
-    MaxDelayHard: 120
+    MaxDelayHard: 150
   Settings:
     AppIdRealtime: 
     AppIdFusion: 
@@ -4370,18 +4371,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1339267531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7f95aa3c06eaa84bba4eafdedf12758, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ddec46cf6a4c4addbf21b6be8442124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   logLevel: 2
   ignoreGlobalLogLevel: 0
-  StartWhenDeviceChange: 1
-  HandleDeviceChange: 1
-  HandleConfigChange: 1
-  UseNativePluginChangeNotifier: 1
-  UseOnAudioConfigurationChanged: 1
-  Android_AlwaysHandleDeviceChange: 0
-  iOS_AlwaysHandleDeviceChange: 1
+  aec: 1
+  aecHighPass: 0
+  agc: 1
+  agcCompressionGain: 9
+  vad: 1
+  highPass: 1
+  bypass: 0
+  noiseSuppression: 1
+  reverseStreamDelayMs: 120
+  ForceNormalAecInMobile: 0
+  aecOnlyWhenEnabled: 1
+  AutoRestartOnAudioChannelsMismatch: 1
+  AECMobileComfortNoise: 0
 --- !u!114 &1339267536
 MonoBehaviour:
   m_ObjectHideFlags: 0

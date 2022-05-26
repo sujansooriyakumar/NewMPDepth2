@@ -120,59 +120,65 @@ extern void ReceiveBlendshapes_UpdateSlothBlendShapes_m058080FDB3358CC6B8610294A
 extern void ReceiveBlendshapes_SetIsMirrorAvatar_m84A47E3E35948ACB478199BCBDA11B5C042CDF1A (void);
 // 0x00000036 System.Void ReceiveBlendshapes::.ctor()
 extern void ReceiveBlendshapes__ctor_m2F4830D32C29A9F0CF3ED1A9478A8FADF59BC5F8 (void);
-// 0x00000037 System.String TrackingIPSave::get_Filename()
+// 0x00000037 System.Void SetMicrophone::Start()
+extern void SetMicrophone_Start_mFA50307E5F74B84D13DBC446E4F54DA10D72090A (void);
+// 0x00000038 System.Void SetMicrophone::Update()
+extern void SetMicrophone_Update_m2FA49D151AAF0F9D2942ED8325CAABDBA444F3CA (void);
+// 0x00000039 System.Void SetMicrophone::.ctor()
+extern void SetMicrophone__ctor_mD5D9E4DF686DA097694C941B9BA510445BEABECE (void);
+// 0x0000003A System.String TrackingIPSave::get_Filename()
 extern void TrackingIPSave_get_Filename_m3DF1A8EF3CED5E8E89BBB952B29E90EFC08DD1E9 (void);
-// 0x00000038 System.String TrackingIPSave::get_FilePath()
+// 0x0000003B System.String TrackingIPSave::get_FilePath()
 extern void TrackingIPSave_get_FilePath_mE7EDE7F943932CFD82F63946071451711A48078C (void);
-// 0x00000039 System.String TrackingIPSave::get_FileFolder()
+// 0x0000003C System.String TrackingIPSave::get_FileFolder()
 extern void TrackingIPSave_get_FileFolder_m1E2C3AF9AEE0EC8B7B4E1B8BF3D74E9334579E01 (void);
-// 0x0000003A System.Void TrackingIPSave::OnEnable()
+// 0x0000003D System.Void TrackingIPSave::OnEnable()
 extern void TrackingIPSave_OnEnable_mC706D8F402ADDCABF4630F2DC4F41DC666CD8E2E (void);
-// 0x0000003B System.Void TrackingIPSave::Save()
+// 0x0000003E System.Void TrackingIPSave::Save()
 extern void TrackingIPSave_Save_m7FB19D867D096D7B721146082BBF543781D447FF (void);
-// 0x0000003C System.Void TrackingIPSave::Load()
+// 0x0000003F System.Void TrackingIPSave::Load()
 extern void TrackingIPSave_Load_m1E625F8F7F9BFF11B8E3C3E175CCC24443FC4B17 (void);
-// 0x0000003D System.Void TrackingIPSave::.ctor()
+// 0x00000040 System.Void TrackingIPSave::.ctor()
 extern void TrackingIPSave__ctor_m26BD7AA1F3CBF5992D54414ED48941639468DD31 (void);
-// 0x0000003E System.Void NetworkSettingsSave::.ctor()
+// 0x00000041 System.Void NetworkSettingsSave::.ctor()
 extern void NetworkSettingsSave__ctor_mA30321CAE0C785F645BAD9F2685C589FF7ED2531 (void);
-// 0x0000003F System.Void URLParse::OnValueChanged(System.String)
+// 0x00000042 System.Void URLParse::OnValueChanged(System.String)
 extern void URLParse_OnValueChanged_mB6F0EB69E7BF58F229408894F3D6E2019D0A0E76 (void);
-// 0x00000040 System.String URLParse::GetURL()
+// 0x00000043 System.String URLParse::GetURL()
 extern void URLParse_GetURL_mAAE61BAA43D0149EF36A1297A99B4E16F4EF1AE3 (void);
-// 0x00000041 System.Void URLParse::.ctor()
+// 0x00000044 System.Void URLParse::.ctor()
 extern void URLParse__ctor_m3075428C7B443255E0A07249DF4715DD0DC37EBA (void);
-// 0x00000042 System.Void WebViewController::Start()
+// 0x00000045 System.Void WebViewController::Start()
 extern void WebViewController_Start_mAED767B0F18010F219142B5F68152A14E9630C3A (void);
-// 0x00000043 System.Void WebViewController::DisplayWebView()
+// 0x00000046 System.Void WebViewController::DisplayWebView()
 extern void WebViewController_DisplayWebView_m6B43360F9600D6DF9551D67AAEEE20A9E47537EB (void);
-// 0x00000044 System.Void WebViewController::HideWebView()
+// 0x00000047 System.Void WebViewController::HideWebView()
 extern void WebViewController_HideWebView_m4AC0370BD673B5585D898199E87BCC57E41136C2 (void);
-// 0x00000045 System.Void WebViewController::OnAvatarCreated(System.String)
+// 0x00000048 System.Void WebViewController::OnAvatarCreated(System.String)
 extern void WebViewController_OnAvatarCreated_m19DDE651B54B59736D99320EC670BC7D5C917A9D (void);
-// 0x00000046 System.Void WebViewController::OnAvatarImported(UnityEngine.GameObject,ReadyPlayerMe.AvatarMetaData)
+// 0x00000049 System.Void WebViewController::OnAvatarImported(UnityEngine.GameObject,ReadyPlayerMe.AvatarMetaData)
 extern void WebViewController_OnAvatarImported_m48B5C306D785F57AA493830FC2B326C23F83EB9A (void);
-// 0x00000047 System.Void WebViewController::Destroy()
+// 0x0000004A System.Void WebViewController::Destroy()
 extern void WebViewController_Destroy_mDCBAEDAFEA37F67A15B58BDFE2BFF37D16326D85 (void);
-// 0x00000048 System.String WebViewController::GetURL()
+// 0x0000004B System.String WebViewController::GetURL()
 extern void WebViewController_GetURL_mC93F43E580C4A317452A6929703818E4D35CB49B (void);
-// 0x00000049 System.Void WebViewController::.ctor()
+// 0x0000004C System.Void WebViewController::.ctor()
 extern void WebViewController__ctor_m6ED82FD7A66D0C2D70D887AED8243656A7D18C1E (void);
-// 0x0000004A System.Void test::Update()
+// 0x0000004D System.Void test::Update()
 extern void test_Update_mE3108A21C20B15A0001D555E17B918DEDF2F470F (void);
-// 0x0000004B System.Void test::.ctor()
+// 0x0000004E System.Void test::.ctor()
 extern void test__ctor_mF9E38D0BB87770A10C0B7997EC909084D76CB7CB (void);
-// 0x0000004C System.Void ReadyPlayerMe.ReadyPlayerLoader::Awake()
+// 0x0000004F System.Void ReadyPlayerMe.ReadyPlayerLoader::Awake()
 extern void ReadyPlayerLoader_Awake_m291BAA984E87D629613A292ACC2F5767D9AD602D (void);
-// 0x0000004D System.Void ReadyPlayerMe.ReadyPlayerLoader::AvatarImportedCallback(UnityEngine.GameObject)
+// 0x00000050 System.Void ReadyPlayerMe.ReadyPlayerLoader::AvatarImportedCallback(UnityEngine.GameObject)
 extern void ReadyPlayerLoader_AvatarImportedCallback_m36E704D246961D3ED8480CA02F833EC9D6537A1A (void);
-// 0x0000004E System.Void ReadyPlayerMe.ReadyPlayerLoader::AvatarLoadedCallback(UnityEngine.GameObject,ReadyPlayerMe.AvatarMetaData)
+// 0x00000051 System.Void ReadyPlayerMe.ReadyPlayerLoader::AvatarLoadedCallback(UnityEngine.GameObject,ReadyPlayerMe.AvatarMetaData)
 extern void ReadyPlayerLoader_AvatarLoadedCallback_m590B7EA0032DD64B55F845A62F63F88BF83E40B6 (void);
-// 0x0000004F System.Void ReadyPlayerMe.ReadyPlayerLoader::BeginLoadCharacter(System.String,System.Boolean)
+// 0x00000052 System.Void ReadyPlayerMe.ReadyPlayerLoader::BeginLoadCharacter(System.String,System.Boolean)
 extern void ReadyPlayerLoader_BeginLoadCharacter_m608BF4A4BCA0EF7D14659ED34FB136DA5459E5E6 (void);
-// 0x00000050 System.Void ReadyPlayerMe.ReadyPlayerLoader::.ctor()
+// 0x00000053 System.Void ReadyPlayerMe.ReadyPlayerLoader::.ctor()
 extern void ReadyPlayerLoader__ctor_mB4CF813562281A82F5009C908AB14BFC2CB4F905 (void);
-static Il2CppMethodPointer s_methodPointers[80] = 
+static Il2CppMethodPointer s_methodPointers[83] = 
 {
 	Character_GetPrefab_m462FDBEA370E66581DA4BF563E35B5CAEB4E5FBD,
 	Character_GetScenePrefab_mF71EB331AF62E7CD599702198772542676DC4E55,
@@ -228,6 +234,9 @@ static Il2CppMethodPointer s_methodPointers[80] =
 	ReceiveBlendshapes_UpdateSlothBlendShapes_m058080FDB3358CC6B8610294A711991FD58F5D72,
 	ReceiveBlendshapes_SetIsMirrorAvatar_m84A47E3E35948ACB478199BCBDA11B5C042CDF1A,
 	ReceiveBlendshapes__ctor_m2F4830D32C29A9F0CF3ED1A9478A8FADF59BC5F8,
+	SetMicrophone_Start_mFA50307E5F74B84D13DBC446E4F54DA10D72090A,
+	SetMicrophone_Update_m2FA49D151AAF0F9D2942ED8325CAABDBA444F3CA,
+	SetMicrophone__ctor_mD5D9E4DF686DA097694C941B9BA510445BEABECE,
 	TrackingIPSave_get_Filename_m3DF1A8EF3CED5E8E89BBB952B29E90EFC08DD1E9,
 	TrackingIPSave_get_FilePath_mE7EDE7F943932CFD82F63946071451711A48078C,
 	TrackingIPSave_get_FileFolder_m1E2C3AF9AEE0EC8B7B4E1B8BF3D74E9334579E01,
@@ -255,7 +264,7 @@ static Il2CppMethodPointer s_methodPointers[80] =
 	ReadyPlayerLoader_BeginLoadCharacter_m608BF4A4BCA0EF7D14659ED34FB136DA5459E5E6,
 	ReadyPlayerLoader__ctor_mB4CF813562281A82F5009C908AB14BFC2CB4F905,
 };
-static const int32_t s_InvokerIndices[80] = 
+static const int32_t s_InvokerIndices[83] = 
 {
 	4262,
 	4262,
@@ -311,6 +320,9 @@ static const int32_t s_InvokerIndices[80] =
 	3537,
 	3562,
 	4332,
+	4332,
+	4332,
+	4332,
 	6600,
 	6600,
 	6600,
@@ -343,7 +355,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_NewMPDepth2_CodeGenModule;
 const Il2CppCodeGenModule g_NewMPDepth2_CodeGenModule = 
 {
 	"NewMPDepth2.dll",
-	80,
+	83,
 	s_methodPointers,
 	0,
 	NULL,
