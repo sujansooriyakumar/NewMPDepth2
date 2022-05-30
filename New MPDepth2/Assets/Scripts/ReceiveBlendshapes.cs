@@ -40,10 +40,10 @@ public class ReceiveBlendshapes : MonoBehaviour
         if(neckBone) neckBone.localScale = new Vector3(1.1f, 1.1f, 1.1f);
         rotationOffset = headBone.rotation.eulerAngles.x;
         mirrorModeController = MirrorModeController.instance;
+        headBone.rotation = Quaternion.Euler(Vector3.zero);
     }
     private void Update()
     {
-        bool isInMirrorMode = mirrorModeController.GetMirrorMode();
         if (isMirrorAvatar)
         {
             position = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Position;
@@ -64,13 +64,13 @@ public class ReceiveBlendshapes : MonoBehaviour
         {
             if (isMirrorAvatar)
             {
-                headBone.rotation = Quaternion.Euler((rotation.x - rotationOffset), (180 - rotation.y), -rotation.z);
+                headBone.rotation = Quaternion.Euler((rotation.x), (180 - rotation.y), -rotation.z);
                 transform.localPosition = new Vector3(position.x, position.y, -position.z);
             }
 
             else if (!isMirrorAvatar)
             {
-                headBone.rotation = Quaternion.Euler((rotation.x - rotationOffset), -(180 - rotation.y), rotation.z);
+                headBone.rotation = Quaternion.Euler((rotation.x), -(180 - rotation.y), rotation.z);
                 if (position.magnitude > 0) transform.localPosition = new Vector3(position.x, -position.y, -position.z);
 
 
