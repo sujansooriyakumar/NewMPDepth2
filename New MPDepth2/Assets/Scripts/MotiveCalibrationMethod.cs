@@ -74,8 +74,10 @@ public class MotiveCalibrationMethod : MonoBehaviour
          streamTrackingProvider.SaveCalibration(calibration);*/
 
         Vector3 posDiff = screenPos - phonePos;
-        posDiff.y *= -1;
-        Vector3 rotDiff = (Quaternion.Euler(screenRot) * Quaternion.Inverse(Quaternion.Euler(phoneRot))).eulerAngles;
+       posDiff.y *= -1;
+        Quaternion q = Quaternion.Euler(screenRot) * Quaternion.Inverse(Quaternion.Euler(phoneRot));
+
+        Vector3 rotDiff = q.eulerAngles;
         StreamTrackingProvider.SavedStreamTrackingConfiguration calibration = new StreamTrackingProvider.SavedStreamTrackingConfiguration();
 
 

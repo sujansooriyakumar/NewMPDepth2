@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18144932, g: 0.22706543, b: 0.30727005, a: 1}
+  m_IndirectSpecularColor: {r: 0.18154515, g: 0.22718747, b: 0.3074045, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -355,6 +355,123 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lobbyName: {fileID: 596714252}
   networkManager: {fileID: 503642485}
+--- !u!1 &61306072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61306073}
+  - component: {fileID: 61306074}
+  m_Layer: 0
+  m_Name: TrackingSystemsManager (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &61306073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61306072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4541630009517649537}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &61306074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61306072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11fa6950de40d4f20b2f90ea3f11581b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offAxisCameraRig: {fileID: 2345412281996839972}
+  currentTrackingSystem: {fileID: 8039209321135369123}
+  trackingSystems:
+  - {fileID: 8039209321135369123}
+  parallaxToggleEvent: {fileID: 0}
+  CurrentCalibratedTrackingData:
+    IsTracking: 0
+    CameraTrackingData:
+      Position: {x: 0, y: 0, z: 0}
+      Eulers: {x: 0, y: 0, z: 0}
+    EyeTrackingData:
+      LeftEyeTrackingData:
+        Position: {x: 0, y: 0, z: 0}
+        Eulers: {x: 0, y: 0, z: 0}
+      RightEyeTrackingData:
+        Position: {x: 0, y: 0, z: 0}
+        Eulers: {x: 0, y: 0, z: 0}
+      FixationPointTrackingData:
+        Position: {x: 0, y: 0, z: 0}
+    BlendshapeTrackingData:
+      Blendshapes:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  calibrationTransform: {fileID: 2345412281137102038}
+  calibrationDropdown: {fileID: 2218350700367400499}
+  trackingSystemsDropdown: {fileID: 2218350699267201781}
 --- !u!1 &77344904
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,15 +3196,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offAxisCameraRig: {fileID: 1955610012}
-  size: {x: 0.8, y: 0.45}
-  aspectRatio: {x: 16, y: 9}
+  size: {x: 0.31, y: 0.55}
+  aspectRatio: {x: 9, y: 16}
   lockAspectRatio: 1
   drawGizmo: 1
   showAlignmentCube: 0
   alignmentDepth: 1
   alignmentMaterial: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  bottomRight: {x: -0.4, y: -0.225, z: 0}
-  bottomLeft: {x: 0.4, y: -0.225, z: 0}
+  bottomRight: {x: -0.155, y: -0.275, z: 0}
+  bottomLeft: {x: 0.155, y: -0.275, z: 0}
 --- !u!1 &691874869
 GameObject:
   m_ObjectHideFlags: 0
@@ -4601,9 +4718,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offAxisCameraRig: {fileID: 1955610012}
-  currentTrackingSystem: {fileID: 2345412282754342299}
+  currentTrackingSystem: {fileID: 8039209321135369123}
   trackingSystems:
-  - {fileID: 2345412282754342299}
+  - {fileID: 8039209321135369123}
   parallaxToggleEvent: {fileID: 0}
   CurrentCalibratedTrackingData:
     IsTracking: 0
@@ -10692,7 +10809,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -312, y: -1442.69}
+  m_AnchoredPosition: {x: -312, y: -2808}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2345412280945905541
@@ -10893,12 +11010,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deviceStreamInputField: {fileID: 2345412281255951578}
   streamCalibrationInputField: {fileID: 2345412282550288376}
-  streamTrackingDataReceiver: {fileID: 0}
-  motiveTrackingDataReceiver: {fileID: 0}
+  streamTrackingDataReceiver: {fileID: 8039209322131583635}
+  motiveTrackingDataReceiver: {fileID: 8039209322131583635}
   deviceStreamCanvas: {fileID: 2345412281761486824}
   streamCalibrationCanvas: {fileID: 2345412281892902513}
-  streamTrackingCalibrator: {fileID: 0}
-  trackingIPSave: {fileID: 0}
+  streamTrackingCalibrator: {fileID: 8039209320867615249}
+  trackingIPSave: {fileID: 8039209322131583644}
   connectionUI: {fileID: 602141927}
   urlCanvas: {fileID: 2024919034}
   customCalibrationCanvas: {fileID: 2026285383}
@@ -12608,7 +12725,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 2732, y: 2048}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
+  m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -13065,7 +13182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11fa6950de40d4f20b2f90ea3f11581b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offAxisCameraRig: {fileID: 2345412281996839972}
+  offAxisCameraRig: {fileID: 1955610012}
   currentTrackingSystem: {fileID: 8039209321135369123}
   trackingSystems:
   - {fileID: 8039209321135369123}
@@ -13378,15 +13495,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offAxisCameraRig: {fileID: 2345412281996839972}
-  size: {x: 0.8, y: 0.45}
-  aspectRatio: {x: 16, y: 9}
+  size: {x: 0.45, y: 0.8}
+  aspectRatio: {x: 9, y: 16}
   lockAspectRatio: 1
   drawGizmo: 1
   showAlignmentCube: 0
   alignmentDepth: 1
   alignmentMaterial: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  bottomRight: {x: -0.4, y: -0.225, z: 0}
-  bottomLeft: {x: 0.4, y: -0.225, z: 0}
+  bottomRight: {x: -0.225, y: -0.4, z: 0}
+  bottomLeft: {x: 0.225, y: -0.4, z: 0}
 --- !u!1 &2345412281887932198
 GameObject:
   m_ObjectHideFlags: 0
@@ -15955,6 +16072,7 @@ Transform:
   - {fileID: 6776870976932525033}
   - {fileID: 455721918}
   - {fileID: 1331923555}
+  - {fileID: 61306073}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
