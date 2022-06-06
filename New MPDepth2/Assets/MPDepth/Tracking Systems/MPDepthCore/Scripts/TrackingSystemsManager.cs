@@ -51,7 +51,7 @@ namespace MPDepthCore
             }
 
             ChangeSystemTo(currentTrackingSystem);
-            SelectCalibration(0);
+           // SelectCalibration(0);
         }
 
         void ToggleParallax(bool parallaxIsOn)

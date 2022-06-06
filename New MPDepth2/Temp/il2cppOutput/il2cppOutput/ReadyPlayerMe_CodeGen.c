@@ -1,0 +1,661 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.Void ReadyPlayerMe.RuntimeTest::Start()
+extern void RuntimeTest_Start_m8E10FD2AD1C6C0B9FCB9029484A3EF880B5A5C5C (void);
+// 0x00000002 System.Void ReadyPlayerMe.RuntimeTest::OnAvatarImported(UnityEngine.GameObject)
+extern void RuntimeTest_OnAvatarImported_m37F7D5BC9800B53A4C6ED088314E2FEFA0E8FA95 (void);
+// 0x00000003 System.Void ReadyPlayerMe.RuntimeTest::OnAvatarLoaded(UnityEngine.GameObject,ReadyPlayerMe.AvatarMetaData)
+extern void RuntimeTest_OnAvatarLoaded_m9E450743E4D62D7AF29DE3235D8F383D49598B38 (void);
+// 0x00000004 System.Void ReadyPlayerMe.RuntimeTest::.ctor()
+extern void RuntimeTest__ctor_m407AFDE570FD7620D3C94529C0914639CC5BDF69 (void);
+// 0x00000005 System.Void ReadyPlayerMe.WebViewTest::Start()
+extern void WebViewTest_Start_m98AC0ABF7355F648192E91F4C4C2F51D3C622F04 (void);
+// 0x00000006 System.Void ReadyPlayerMe.WebViewTest::DisplayWebView()
+extern void WebViewTest_DisplayWebView_m07E64717583619E0297459C1E7ACEC1065457AEE (void);
+// 0x00000007 System.Void ReadyPlayerMe.WebViewTest::HideWebView()
+extern void WebViewTest_HideWebView_mC30C5D69ADD0954C9F9F11E41F385A39AE80397A (void);
+// 0x00000008 System.Void ReadyPlayerMe.WebViewTest::OnAvatarCreated(System.String)
+extern void WebViewTest_OnAvatarCreated_m76028AFB7B491BAA0B156D52709DAEA1E4BB90A5 (void);
+// 0x00000009 System.Void ReadyPlayerMe.WebViewTest::OnAvatarImported(UnityEngine.GameObject,ReadyPlayerMe.AvatarMetaData)
+extern void WebViewTest_OnAvatarImported_m9CEB81C916B782F05FD7858CAE46BF284140264A (void);
+// 0x0000000A System.Void ReadyPlayerMe.WebViewTest::Destroy()
+extern void WebViewTest_Destroy_m0253A2A4B41BB741BD19804C53EEE5F76ED97309 (void);
+// 0x0000000B System.Void ReadyPlayerMe.WebViewTest::.ctor()
+extern void WebViewTest__ctor_m92D6A421A6ACFF433B6C6E2673CD6B8EF5C635B8 (void);
+// 0x0000000C System.Int32 ReadyPlayerMe.AvatarLoader::get_Timeout()
+extern void AvatarLoader_get_Timeout_mECE3C763A18A11EF6158C753850EFB5F1B06F874 (void);
+// 0x0000000D System.Void ReadyPlayerMe.AvatarLoader::set_Timeout(System.Int32)
+extern void AvatarLoader_set_Timeout_mEA1863616053E55D14F7CD20336869EFD91F5D5D (void);
+// 0x0000000E System.Void ReadyPlayerMe.AvatarLoader::LoadAvatar(System.String,System.Action`1<UnityEngine.GameObject>,System.Action`2<UnityEngine.GameObject,ReadyPlayerMe.AvatarMetaData>)
+extern void AvatarLoader_LoadAvatar_m221C98CB7A12467E6D32EE7A81996444085726B5 (void);
+// 0x0000000F System.Void ReadyPlayerMe.AvatarLoader::.ctor()
+extern void AvatarLoader__ctor_m07CF6BF93BD24FA8B5C9B3A8CB38B7E44DA41175 (void);
+// 0x00000010 System.Collections.IEnumerator ReadyPlayerMe.AvatarLoader/LoadOperation::LoadAvatarAsync(ReadyPlayerMe.AvatarUri)
+extern void LoadOperation_LoadAvatarAsync_m0C8B568801E14BF7CE8F6C4F27C98D36FB5C8344 (void);
+// 0x00000011 System.Collections.IEnumerator ReadyPlayerMe.AvatarLoader/LoadOperation::DownloadAvatar(ReadyPlayerMe.AvatarUri)
+extern void LoadOperation_DownloadAvatar_m0A24C31466D3613D857991483243D74EC839C601 (void);
+// 0x00000012 System.Void ReadyPlayerMe.AvatarLoader/LoadOperation::OnImportFinished(UnityEngine.GameObject)
+extern void LoadOperation_OnImportFinished_m2970D53A3B8DC2A52465B44E9229067B08EF351E (void);
+// 0x00000013 System.Collections.IEnumerator ReadyPlayerMe.AvatarLoader/LoadOperation::PrepareAvatarAsync(UnityEngine.GameObject)
+extern void LoadOperation_PrepareAvatarAsync_m8FE27C5E871B60AFF747CCF67E03AA931B4AF949 (void);
+// 0x00000014 System.Void ReadyPlayerMe.AvatarLoader/LoadOperation::.ctor()
+extern void LoadOperation__ctor_m62FD38FAFEE2DE1E142D346CD5B6390E7DDF8BE5 (void);
+// 0x00000015 System.Void ReadyPlayerMe.AvatarLoader/LoadOperation/<LoadAvatarAsync>d__2::.ctor(System.Int32)
+extern void U3CLoadAvatarAsyncU3Ed__2__ctor_m723EE68B56CBAD5C68B5C8F8A6D6E5276C56C156 (void);
+// 0x00000016 System.Void ReadyPlayerMe.AvatarLoader/LoadOperation/<LoadAvatarAsync>d__2::System.IDisposable.Dispose()
+extern void U3CLoadAvatarAsyncU3Ed__2_System_IDisposable_Dispose_m06019078EBCED91B3D3EBEA819717256FBDDA977 (void);
+// 0x00000017 System.Boolean ReadyPlayerMe.AvatarLoader/LoadOperation/<LoadAvatarAsync>d__2::MoveNext()
+extern void U3CLoadAvatarAsyncU3Ed__2_MoveNext_m2F58A0274F1F35D849743DA931CD87270631845A (void);
+// 0x00000018 System.Object ReadyPlayerMe.AvatarLoader/LoadOperation/<LoadAvatarAsync>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CLoadAvatarAsyncU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7A4FD8B717B8A29C6767584A9FD00666BD20A216 (void);
+// 0x00000019 System.Void ReadyPlayerMe.AvatarLoader/LoadOperation/<LoadAvatarAsync>d__2::System.Collections.IEnumerator.Reset()
+extern void U3CLoadAvatarAsyncU3Ed__2_System_Collections_IEnumerator_Reset_mDE53C5DE2732FA237922703AC6473FA5CAFA39E4 (void);
+// 0x0000001A System.Object ReadyPlayerMe.AvatarLoader/LoadOperation/<LoadAvatarAsync>d__2::System.Collections.IEnumerator.get_Current()
+extern void U3CLoadAvatarAsyncU3Ed__2_System_Collections_IEnumerator_get_Current_mCF3400F0567B5AB0EC242A49C6D35779675735AD (void);
+// 0x0000001B System.Void ReadyPlayerMe.AvatarLoader/LoadOperation/<DownloadAvatar>d__3::.ctor(System.Int32)
+extern void U3CDownloadAvatarU3Ed__3__ctor_m302F2DA09081E7D59CEF52554350735127CB9BF6 (void);
+// 0x0000001C System.Void ReadyPlayerMe.AvatarLoader/LoadOperation/<DownloadAvatar>d__3::System.IDisposable.Dispose()
+extern void U3CDownloadAvatarU3Ed__3_System_IDisposable_Dispose_m7FBA691EFDF78D0126A6759783F83BBAB8A11B77 (void);
+// 0x0000001D System.Boolean ReadyPlayerMe.AvatarLoader/LoadOperation/<DownloadAvatar>d__3::MoveNext()
+extern void U3CDownloadAvatarU3Ed__3_MoveNext_mCF671951BD1102A4BB3886A0EBDAFBC0266FE9E3 (void);
+// 0x0000001E System.Void ReadyPlayerMe.AvatarLoader/LoadOperation/<DownloadAvatar>d__3::<>m__Finally1()
+extern void U3CDownloadAvatarU3Ed__3_U3CU3Em__Finally1_mB6F2B2FC79B31E4E62B1F975FAFC10E0433E60CD (void);
+// 0x0000001F System.Object ReadyPlayerMe.AvatarLoader/LoadOperation/<DownloadAvatar>d__3::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CDownloadAvatarU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m652107B07D2D9023906DE6CC238C523FF162ADCA (void);
+// 0x00000020 System.Void ReadyPlayerMe.AvatarLoader/LoadOperation/<DownloadAvatar>d__3::System.Collections.IEnumerator.Reset()
+extern void U3CDownloadAvatarU3Ed__3_System_Collections_IEnumerator_Reset_mE5343C50B3EDA739025BD63E350A027EC124D3F2 (void);
+// 0x00000021 System.Object ReadyPlayerMe.AvatarLoader/LoadOperation/<DownloadAvatar>d__3::System.Collections.IEnumerator.get_Current()
+extern void U3CDownloadAvatarU3Ed__3_System_Collections_IEnumerator_get_Current_m2CC60C73F192538718576E8967E9B3E732BD9671 (void);
+// 0x00000022 System.Void ReadyPlayerMe.AvatarLoader/LoadOperation/<PrepareAvatarAsync>d__5::.ctor(System.Int32)
+extern void U3CPrepareAvatarAsyncU3Ed__5__ctor_m06203897A015CA5A293B347F6E3781099ED5E905 (void);
+// 0x00000023 System.Void ReadyPlayerMe.AvatarLoader/LoadOperation/<PrepareAvatarAsync>d__5::System.IDisposable.Dispose()
+extern void U3CPrepareAvatarAsyncU3Ed__5_System_IDisposable_Dispose_m838E051626B4A7CF01BA4729832726EAAB31E74F (void);
+// 0x00000024 System.Boolean ReadyPlayerMe.AvatarLoader/LoadOperation/<PrepareAvatarAsync>d__5::MoveNext()
+extern void U3CPrepareAvatarAsyncU3Ed__5_MoveNext_mDF456B38E19A371E19B0B20D5CEDAE3989E4CFD4 (void);
+// 0x00000025 System.Object ReadyPlayerMe.AvatarLoader/LoadOperation/<PrepareAvatarAsync>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CPrepareAvatarAsyncU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2CE98F6A892EED16D51CEA7CCF6249D289BE634A (void);
+// 0x00000026 System.Void ReadyPlayerMe.AvatarLoader/LoadOperation/<PrepareAvatarAsync>d__5::System.Collections.IEnumerator.Reset()
+extern void U3CPrepareAvatarAsyncU3Ed__5_System_Collections_IEnumerator_Reset_mC42349E1BD2CABD51EA3720A93F5BC354312909A (void);
+// 0x00000027 System.Object ReadyPlayerMe.AvatarLoader/LoadOperation/<PrepareAvatarAsync>d__5::System.Collections.IEnumerator.get_Current()
+extern void U3CPrepareAvatarAsyncU3Ed__5_System_Collections_IEnumerator_get_Current_m78B2F3F6BF7A839C7DC3D747340D2B050C31FE9A (void);
+// 0x00000028 System.Int32 ReadyPlayerMe.AvatarLoaderBase::get_Timeout()
+extern void AvatarLoaderBase_get_Timeout_mC885D4129CB54A3DFE10114DFF056EF7AF94DD4F (void);
+// 0x00000029 System.Void ReadyPlayerMe.AvatarLoaderBase::set_Timeout(System.Int32)
+extern void AvatarLoaderBase_set_Timeout_mFC31ABB4D32172FAA6C410F49E130FFCAE8AE068 (void);
+// 0x0000002A System.Void ReadyPlayerMe.AvatarLoaderBase::LoadAvatar(System.String,System.Action`1<UnityEngine.GameObject>,System.Action`2<UnityEngine.GameObject,ReadyPlayerMe.AvatarMetaData>)
+extern void AvatarLoaderBase_LoadAvatar_mFB2001329E17644EA0FC7CED2B52FF9A5F197FB6 (void);
+// 0x0000002B System.Collections.IEnumerator ReadyPlayerMe.AvatarLoaderBase::LoadAvatarAsync(ReadyPlayerMe.AvatarUri)
+// 0x0000002C System.Collections.IEnumerator ReadyPlayerMe.AvatarLoaderBase::DownloadAvatar(ReadyPlayerMe.AvatarUri)
+// 0x0000002D System.Collections.IEnumerator ReadyPlayerMe.AvatarLoaderBase::DownloadMetaData(ReadyPlayerMe.AvatarUri,UnityEngine.GameObject)
+extern void AvatarLoaderBase_DownloadMetaData_m170CA93E9037637597727B10EC806E7870B8D9C9 (void);
+// 0x0000002E System.String ReadyPlayerMe.AvatarLoaderBase::get_AnimationAvatarSource()
+extern void AvatarLoaderBase_get_AnimationAvatarSource_mEF6B43931041223459780DCBAF85F57FD203A4BC (void);
+// 0x0000002F System.Void ReadyPlayerMe.AvatarLoaderBase::RestructureAndSetAnimator(UnityEngine.GameObject)
+extern void AvatarLoaderBase_RestructureAndSetAnimator_m4562BD1BF21AE80E9209DF24D9DA9D1C1A960403 (void);
+// 0x00000030 System.String ReadyPlayerMe.AvatarLoaderBase::OutfitVersion(System.Int32)
+extern void AvatarLoaderBase_OutfitVersion_m996CE0BA1EC8B0DFAEEC5FA8E009613C4289F1A7 (void);
+// 0x00000031 System.Void ReadyPlayerMe.AvatarLoaderBase::SetMetaData(System.String,UnityEngine.GameObject)
+extern void AvatarLoaderBase_SetMetaData_mF039271ED35956A8A1491F8C3335742488F78F56 (void);
+// 0x00000032 System.Void ReadyPlayerMe.AvatarLoaderBase::SetAvatarAssetNames(UnityEngine.GameObject)
+extern void AvatarLoaderBase_SetAvatarAssetNames_m5443E1F1BFC6595AF3A78F4303AF3B4BD967EFBC (void);
+// 0x00000033 System.Void ReadyPlayerMe.AvatarLoaderBase::SetTextureNames(UnityEngine.Renderer,System.String)
+extern void AvatarLoaderBase_SetTextureNames_mB14DAC07789D97374849431A7A7F56C41A0A57AB (void);
+// 0x00000034 System.Void ReadyPlayerMe.AvatarLoaderBase::SetMeshName(UnityEngine.Renderer,System.String)
+extern void AvatarLoaderBase_SetMeshName_mDB9DD3D34566F52E8337EC8695E6B0CAE0DD04AF (void);
+// 0x00000035 System.Void ReadyPlayerMe.AvatarLoaderBase::.ctor()
+extern void AvatarLoaderBase__ctor_m32AB9898FF8CCD18EAD3DA1CD3B195E9E4577905 (void);
+// 0x00000036 System.Void ReadyPlayerMe.AvatarLoaderBase::.cctor()
+extern void AvatarLoaderBase__cctor_mE3521506E7F78BA44089DFFEB1FF29DC9B28ACBA (void);
+// 0x00000037 System.Void ReadyPlayerMe.AvatarLoaderBase/<LoadAvatar>d__19::.ctor()
+extern void U3CLoadAvatarU3Ed__19__ctor_m66DC715D157046B608B85BF894875C548577C31B (void);
+// 0x00000038 System.Void ReadyPlayerMe.AvatarLoaderBase/<LoadAvatar>d__19::MoveNext()
+extern void U3CLoadAvatarU3Ed__19_MoveNext_m85B93D4588F200A2A5DF0464B86A1756D3D1BBBB (void);
+// 0x00000039 System.Void ReadyPlayerMe.AvatarLoaderBase/<LoadAvatar>d__19::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CLoadAvatarU3Ed__19_SetStateMachine_mF14D886E98909B2EBCA7AB8C0B999F4A4E5B2CAF (void);
+// 0x0000003A System.Void ReadyPlayerMe.AvatarLoaderBase/<DownloadMetaData>d__22::.ctor(System.Int32)
+extern void U3CDownloadMetaDataU3Ed__22__ctor_m21DCD7BB514730E305EB4555B320544508DCB288 (void);
+// 0x0000003B System.Void ReadyPlayerMe.AvatarLoaderBase/<DownloadMetaData>d__22::System.IDisposable.Dispose()
+extern void U3CDownloadMetaDataU3Ed__22_System_IDisposable_Dispose_m2259745304E4708673413499673320E9B0EE1AB2 (void);
+// 0x0000003C System.Boolean ReadyPlayerMe.AvatarLoaderBase/<DownloadMetaData>d__22::MoveNext()
+extern void U3CDownloadMetaDataU3Ed__22_MoveNext_m53C67B39ADBB5FDEE5BA8FC67BE37E7C3DA53499 (void);
+// 0x0000003D System.Void ReadyPlayerMe.AvatarLoaderBase/<DownloadMetaData>d__22::<>m__Finally1()
+extern void U3CDownloadMetaDataU3Ed__22_U3CU3Em__Finally1_mCB3F7F3B30509217012A44407EF2391150CF0E3E (void);
+// 0x0000003E System.Object ReadyPlayerMe.AvatarLoaderBase/<DownloadMetaData>d__22::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CDownloadMetaDataU3Ed__22_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m80F726AE7CD74EECBCCA43DF95EDD833D3F03DEC (void);
+// 0x0000003F System.Void ReadyPlayerMe.AvatarLoaderBase/<DownloadMetaData>d__22::System.Collections.IEnumerator.Reset()
+extern void U3CDownloadMetaDataU3Ed__22_System_Collections_IEnumerator_Reset_m1A4B8BFF5488D3A94799BB0BBC49AFC8079C1D6B (void);
+// 0x00000040 System.Object ReadyPlayerMe.AvatarLoaderBase/<DownloadMetaData>d__22::System.Collections.IEnumerator.get_Current()
+extern void U3CDownloadMetaDataU3Ed__22_System_Collections_IEnumerator_get_Current_mEDF0F3440658F9FAD6277BEE0AFF1F3A00C99110 (void);
+// 0x00000041 System.Collections.IEnumerator ReadyPlayerMe.EditorAvatarLoader::LoadAvatarAsync(ReadyPlayerMe.AvatarUri)
+extern void EditorAvatarLoader_LoadAvatarAsync_mAC65EF3986EF3E556ED7E39F3ECAF1F8517D3192 (void);
+// 0x00000042 System.Collections.IEnumerator ReadyPlayerMe.EditorAvatarLoader::DownloadAvatar(ReadyPlayerMe.AvatarUri)
+extern void EditorAvatarLoader_DownloadAvatar_mDF8285860C2B9D7F668FF67BFD54DC9E1EB09CFB (void);
+// 0x00000043 UnityEngine.GameObject ReadyPlayerMe.EditorAvatarLoader::InstantiateAvatar(ReadyPlayerMe.AvatarUri)
+extern void EditorAvatarLoader_InstantiateAvatar_m8867C92EB44E6C6AA31237BEBCEE371765BB3795 (void);
+// 0x00000044 System.Void ReadyPlayerMe.EditorAvatarLoader::.ctor()
+extern void EditorAvatarLoader__ctor_m8EED104CF1B256AEE249F13322B827B7CEAB8167 (void);
+// 0x00000045 System.Void ReadyPlayerMe.EditorAvatarLoader/<LoadAvatarAsync>d__2::.ctor(System.Int32)
+extern void U3CLoadAvatarAsyncU3Ed__2__ctor_mDA75AA87CB8E414207FD08E59E6A9030F23087AD (void);
+// 0x00000046 System.Void ReadyPlayerMe.EditorAvatarLoader/<LoadAvatarAsync>d__2::System.IDisposable.Dispose()
+extern void U3CLoadAvatarAsyncU3Ed__2_System_IDisposable_Dispose_m94ABBEF5206EAC344533CD4A410B23163504C6A9 (void);
+// 0x00000047 System.Boolean ReadyPlayerMe.EditorAvatarLoader/<LoadAvatarAsync>d__2::MoveNext()
+extern void U3CLoadAvatarAsyncU3Ed__2_MoveNext_m029FA7AF322C7C42E35AF29388ED8EE356C62655 (void);
+// 0x00000048 System.Object ReadyPlayerMe.EditorAvatarLoader/<LoadAvatarAsync>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CLoadAvatarAsyncU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDC66FA952798DB6B5EC876BC59081B9804DD0C9C (void);
+// 0x00000049 System.Void ReadyPlayerMe.EditorAvatarLoader/<LoadAvatarAsync>d__2::System.Collections.IEnumerator.Reset()
+extern void U3CLoadAvatarAsyncU3Ed__2_System_Collections_IEnumerator_Reset_mCC9E9D362AF528C77A28D01F81DF02A50DA1E116 (void);
+// 0x0000004A System.Object ReadyPlayerMe.EditorAvatarLoader/<LoadAvatarAsync>d__2::System.Collections.IEnumerator.get_Current()
+extern void U3CLoadAvatarAsyncU3Ed__2_System_Collections_IEnumerator_get_Current_m2731A650248204C70F65F5DDE7A7D2BAC46F4F6E (void);
+// 0x0000004B System.Void ReadyPlayerMe.EditorAvatarLoader/<>c__DisplayClass3_0::.ctor()
+extern void U3CU3Ec__DisplayClass3_0__ctor_mB4332950FFAB4D473E27D648CB5388F776D1F7A4 (void);
+// 0x0000004C System.Void ReadyPlayerMe.EditorAvatarLoader/<>c__DisplayClass3_1::.ctor()
+extern void U3CU3Ec__DisplayClass3_1__ctor_m5794B2E5D01F3DACA2F3D05DAB6EBDEEA61CB5B7 (void);
+// 0x0000004D System.Boolean ReadyPlayerMe.EditorAvatarLoader/<>c__DisplayClass3_1::<DownloadAvatar>b__0()
+extern void U3CU3Ec__DisplayClass3_1_U3CDownloadAvatarU3Eb__0_mDE20D8303856CE67E50124BAC48B84FB6F27E467 (void);
+// 0x0000004E System.Void ReadyPlayerMe.EditorAvatarLoader/<DownloadAvatar>d__3::.ctor(System.Int32)
+extern void U3CDownloadAvatarU3Ed__3__ctor_mDA34620D41443523AB2C4AE8FEFF5DCA1BE6D19C (void);
+// 0x0000004F System.Void ReadyPlayerMe.EditorAvatarLoader/<DownloadAvatar>d__3::System.IDisposable.Dispose()
+extern void U3CDownloadAvatarU3Ed__3_System_IDisposable_Dispose_m58422182B52B2AC5D231CAB812B241A9434C9E02 (void);
+// 0x00000050 System.Boolean ReadyPlayerMe.EditorAvatarLoader/<DownloadAvatar>d__3::MoveNext()
+extern void U3CDownloadAvatarU3Ed__3_MoveNext_m9DC5F71F0D3BCFE14DD144DC80B1E95381B42057 (void);
+// 0x00000051 System.Void ReadyPlayerMe.EditorAvatarLoader/<DownloadAvatar>d__3::<>m__Finally1()
+extern void U3CDownloadAvatarU3Ed__3_U3CU3Em__Finally1_mD465D823FC084BAD34D8A17CBFAEFB0E2EF08880 (void);
+// 0x00000052 System.Object ReadyPlayerMe.EditorAvatarLoader/<DownloadAvatar>d__3::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CDownloadAvatarU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF0AF9402949060D7AA5BAF23149B5F9A910CCA6E (void);
+// 0x00000053 System.Void ReadyPlayerMe.EditorAvatarLoader/<DownloadAvatar>d__3::System.Collections.IEnumerator.Reset()
+extern void U3CDownloadAvatarU3Ed__3_System_Collections_IEnumerator_Reset_m1116D0761C2A1CE90A716422E6710AE9DC623702 (void);
+// 0x00000054 System.Object ReadyPlayerMe.EditorAvatarLoader/<DownloadAvatar>d__3::System.Collections.IEnumerator.get_Current()
+extern void U3CDownloadAvatarU3Ed__3_System_Collections_IEnumerator_get_Current_mAF1C7749021E334AB4E6400B4DADD949BF1D2057 (void);
+// 0x00000055 System.Void ReadyPlayerMe.EyeAnimationHandler::Start()
+extern void EyeAnimationHandler_Start_m389222CE6493D1F67665E3FA8C690BC13152C0F5 (void);
+// 0x00000056 System.Void ReadyPlayerMe.EyeAnimationHandler::Initialize()
+extern void EyeAnimationHandler_Initialize_m3EEAFD8B89B3778F9E421701C18221222A80C3F7 (void);
+// 0x00000057 System.Void ReadyPlayerMe.EyeAnimationHandler::AnimateEyes()
+extern void EyeAnimationHandler_AnimateEyes_m161423359A02E60F67A58FE985457563002792DF (void);
+// 0x00000058 System.Void ReadyPlayerMe.EyeAnimationHandler::RotateEyes()
+extern void EyeAnimationHandler_RotateEyes_m64AC6E73BAD5EE2CA12D39AECBFCF447751AE1A2 (void);
+// 0x00000059 System.Collections.IEnumerator ReadyPlayerMe.EyeAnimationHandler::BlinkEyes()
+extern void EyeAnimationHandler_BlinkEyes_mF2D4BD0100314CEFCBEB33942A2272B1E56F7600 (void);
+// 0x0000005A System.Void ReadyPlayerMe.EyeAnimationHandler::.ctor()
+extern void EyeAnimationHandler__ctor_m23F3CE8253159A6B179FB4715C4BA30F843B24A0 (void);
+// 0x0000005B System.Void ReadyPlayerMe.EyeAnimationHandler/<BlinkEyes>d__24::.ctor(System.Int32)
+extern void U3CBlinkEyesU3Ed__24__ctor_m7CFE777D31582BFCE868A2D254DF23B96B313AB5 (void);
+// 0x0000005C System.Void ReadyPlayerMe.EyeAnimationHandler/<BlinkEyes>d__24::System.IDisposable.Dispose()
+extern void U3CBlinkEyesU3Ed__24_System_IDisposable_Dispose_m6DF42C465E54BE49DCF49CC2B071BFE2E5D6B8DA (void);
+// 0x0000005D System.Boolean ReadyPlayerMe.EyeAnimationHandler/<BlinkEyes>d__24::MoveNext()
+extern void U3CBlinkEyesU3Ed__24_MoveNext_m5E005C44A54BA1EBF9D6C77641DAB893A8768ECF (void);
+// 0x0000005E System.Object ReadyPlayerMe.EyeAnimationHandler/<BlinkEyes>d__24::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CBlinkEyesU3Ed__24_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8298C6BE9A3324E62F0AB6C099B631AB50A0F2D3 (void);
+// 0x0000005F System.Void ReadyPlayerMe.EyeAnimationHandler/<BlinkEyes>d__24::System.Collections.IEnumerator.Reset()
+extern void U3CBlinkEyesU3Ed__24_System_Collections_IEnumerator_Reset_m49DAA8013FA86104A575F7F27BBB15EE4E4B1751 (void);
+// 0x00000060 System.Object ReadyPlayerMe.EyeAnimationHandler/<BlinkEyes>d__24::System.Collections.IEnumerator.get_Current()
+extern void U3CBlinkEyesU3Ed__24_System_Collections_IEnumerator_get_Current_m1DD5A08129EE9F9BD221217FC7A4B0D5A8014BF1 (void);
+// 0x00000061 System.Void ReadyPlayerMe.VoiceHandler::Start()
+extern void VoiceHandler_Start_m0481460A6F82547F4DCF256EA79CD658D50EBC77 (void);
+// 0x00000062 System.Void ReadyPlayerMe.VoiceHandler::Update()
+extern void VoiceHandler_Update_m6D7F051E3922A6EA9A431D52D5BF5DEE12CB7B48 (void);
+// 0x00000063 System.Void ReadyPlayerMe.VoiceHandler::InitializeAudio()
+extern void VoiceHandler_InitializeAudio_m0F8EDC7D165881544DB06EC2AB22E50F5C3FA8E6 (void);
+// 0x00000064 System.Void ReadyPlayerMe.VoiceHandler::SetMicrophoneSource()
+extern void VoiceHandler_SetMicrophoneSource_m9005AC6289BDCF1FF59B32971B594823140DFCCE (void);
+// 0x00000065 System.Void ReadyPlayerMe.VoiceHandler::SetAudioClipSource()
+extern void VoiceHandler_SetAudioClipSource_m88D028AEA71D4B985E67D70F3A5B0AC92804B031 (void);
+// 0x00000066 System.Void ReadyPlayerMe.VoiceHandler::PlayCurrentAudioClip()
+extern void VoiceHandler_PlayCurrentAudioClip_mF4E26677167D10E3C390D7019EE43C949E0276FA (void);
+// 0x00000067 System.Void ReadyPlayerMe.VoiceHandler::PlayAudioClip(UnityEngine.AudioClip)
+extern void VoiceHandler_PlayAudioClip_m135CEDC6C099AD30B51B630C861E52B7A527163D (void);
+// 0x00000068 System.Single ReadyPlayerMe.VoiceHandler::GetAmplitude()
+extern void VoiceHandler_GetAmplitude_mD5F089A4CA209A524E9D6E0C8A17DE67A62F709A (void);
+// 0x00000069 System.Void ReadyPlayerMe.VoiceHandler::GetMeshAndSetIndex(ReadyPlayerMe.ExtensionMethods/MeshType,UnityEngine.SkinnedMeshRenderer&,System.Int32&)
+extern void VoiceHandler_GetMeshAndSetIndex_m9D84FD16B9A70BF68D5462E4EE0650AF66EBEFC6 (void);
+// 0x0000006A System.Void ReadyPlayerMe.VoiceHandler::SetBlendshapeWeights(System.Single)
+extern void VoiceHandler_SetBlendshapeWeights_m69666EC6C76D2FD89BF5D13A7673B37F93A9D235 (void);
+// 0x0000006B System.Collections.IEnumerator ReadyPlayerMe.VoiceHandler::CheckIOSMicrophonePermission()
+extern void VoiceHandler_CheckIOSMicrophonePermission_m009E869060DAC0D3C234F247D84ED1D75906C4AD (void);
+// 0x0000006C System.Void ReadyPlayerMe.VoiceHandler::OnDestroy()
+extern void VoiceHandler_OnDestroy_mC7147B221FF620FD2B01583DDA35FD0F1A29E228 (void);
+// 0x0000006D System.Void ReadyPlayerMe.VoiceHandler::.ctor()
+extern void VoiceHandler__ctor_m0F5787A95498CD2478AE7F4A450889B1E9B84879 (void);
+// 0x0000006E System.Void ReadyPlayerMe.VoiceHandler::<SetBlendshapeWeights>g__SetBlendShapeWeight|22_0(UnityEngine.SkinnedMeshRenderer,System.Int32,ReadyPlayerMe.VoiceHandler/<>c__DisplayClass22_0&)
+extern void VoiceHandler_U3CSetBlendshapeWeightsU3Eg__SetBlendShapeWeightU7C22_0_m4EFD4434DC2DED50E2EECA45407BD98850B82AC7 (void);
+// 0x0000006F System.Void ReadyPlayerMe.VoiceHandler/<CheckIOSMicrophonePermission>d__23::.ctor(System.Int32)
+extern void U3CCheckIOSMicrophonePermissionU3Ed__23__ctor_m0067CD27DD4ED9D877166ACF41B9018B4EE6E2EE (void);
+// 0x00000070 System.Void ReadyPlayerMe.VoiceHandler/<CheckIOSMicrophonePermission>d__23::System.IDisposable.Dispose()
+extern void U3CCheckIOSMicrophonePermissionU3Ed__23_System_IDisposable_Dispose_m371C0FD029DDDE1BE2FF0DBCAEB31919C42DC49E (void);
+// 0x00000071 System.Boolean ReadyPlayerMe.VoiceHandler/<CheckIOSMicrophonePermission>d__23::MoveNext()
+extern void U3CCheckIOSMicrophonePermissionU3Ed__23_MoveNext_mE8AE701E2E88DD85CC0957C463F9FC97B90AB7E6 (void);
+// 0x00000072 System.Object ReadyPlayerMe.VoiceHandler/<CheckIOSMicrophonePermission>d__23::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CCheckIOSMicrophonePermissionU3Ed__23_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m57F74097DE8E2DF430FECB24A867A8A3A9975C9E (void);
+// 0x00000073 System.Void ReadyPlayerMe.VoiceHandler/<CheckIOSMicrophonePermission>d__23::System.Collections.IEnumerator.Reset()
+extern void U3CCheckIOSMicrophonePermissionU3Ed__23_System_Collections_IEnumerator_Reset_m570FA60E5C4BECEB110FAA1B49EC43CCE39F2BE2 (void);
+// 0x00000074 System.Object ReadyPlayerMe.VoiceHandler/<CheckIOSMicrophonePermission>d__23::System.Collections.IEnumerator.get_Current()
+extern void U3CCheckIOSMicrophonePermissionU3Ed__23_System_Collections_IEnumerator_get_Current_m7E43557365C27A60196F982C8717CD390C2A4345 (void);
+// 0x00000075 System.Boolean ReadyPlayerMe.AvatarMetaData::IsOutfitMasculine()
+extern void AvatarMetaData_IsOutfitMasculine_m299E7CE9E2BBF8C23C321CA8F3B9252B28B1A528 (void);
+// 0x00000076 System.Boolean ReadyPlayerMe.AvatarMetaData::IsFullbody()
+extern void AvatarMetaData_IsFullbody_m5B82F41D5B798875A25B6FB9386B55B19DE5556C (void);
+// 0x00000077 System.String ReadyPlayerMe.AvatarMetaData::ToString()
+extern void AvatarMetaData_ToString_mC96D38A702CED9241DA937F43A88E4E593DD1B04 (void);
+// 0x00000078 System.Void ReadyPlayerMe.AvatarMetaData::.ctor()
+extern void AvatarMetaData__ctor_m6B540071EBC23638346648BA4D1989B9A8814D01 (void);
+// 0x00000079 System.String ReadyPlayerMe.AvatarUri::get_Extension()
+extern void AvatarUri_get_Extension_m8CBCD1667D81475F0285A7D087CF973CC6F56BCF (void);
+// 0x0000007A System.Void ReadyPlayerMe.AvatarUri::set_Extension(System.String)
+extern void AvatarUri_set_Extension_mE7537C968323B1B882763642C55B57E99D7709A3 (void);
+// 0x0000007B System.String ReadyPlayerMe.AvatarUri::get_ModelName()
+extern void AvatarUri_get_ModelName_m95B514DC8FFE0122284525375DBAEF7EFC51419F (void);
+// 0x0000007C System.Void ReadyPlayerMe.AvatarUri::set_ModelName(System.String)
+extern void AvatarUri_set_ModelName_mA3390ABAEDE12141EB692FD2DB16532078CC2750 (void);
+// 0x0000007D System.String ReadyPlayerMe.AvatarUri::get_ModelPath()
+extern void AvatarUri_get_ModelPath_m632AE4702EA9708D445F82B38F6E113C57266D49 (void);
+// 0x0000007E System.Void ReadyPlayerMe.AvatarUri::set_ModelPath(System.String)
+extern void AvatarUri_set_ModelPath_mE5CA335C025E6A2B3E6B7E11DE799A02ECD44C3C (void);
+// 0x0000007F System.String ReadyPlayerMe.AvatarUri::get_AbsoluteUrl()
+extern void AvatarUri_get_AbsoluteUrl_mE5001E426004CD4A44682A9BA47813B100A6D0B3 (void);
+// 0x00000080 System.Void ReadyPlayerMe.AvatarUri::set_AbsoluteUrl(System.String)
+extern void AvatarUri_set_AbsoluteUrl_m396A2536E895D7ABB75E4D5CBDC41FB7B6F4A444 (void);
+// 0x00000081 System.String ReadyPlayerMe.AvatarUri::get_AbsolutePath()
+extern void AvatarUri_get_AbsolutePath_m0498C39474F1D960D69035EDC889A427AE9D8CF1 (void);
+// 0x00000082 System.Void ReadyPlayerMe.AvatarUri::set_AbsolutePath(System.String)
+extern void AvatarUri_set_AbsolutePath_m338223EC059FB03E11A4FAF58E4DBB6D26889E85 (void);
+// 0x00000083 System.String ReadyPlayerMe.AvatarUri::get_AbsoluteName()
+extern void AvatarUri_get_AbsoluteName_m4506DAD6CCFAF79ACE57C51FE90C73F92A71D97C (void);
+// 0x00000084 System.Void ReadyPlayerMe.AvatarUri::set_AbsoluteName(System.String)
+extern void AvatarUri_set_AbsoluteName_m8CAB1BF5A010E49C0160256C751545EA43990971 (void);
+// 0x00000085 System.String ReadyPlayerMe.AvatarUri::get_MetaDataUrl()
+extern void AvatarUri_get_MetaDataUrl_mCB4A35D69D024DCFE94340BE0928AC852B9BB4AF (void);
+// 0x00000086 System.Void ReadyPlayerMe.AvatarUri::set_MetaDataUrl(System.String)
+extern void AvatarUri_set_MetaDataUrl_m864590C64446D5A9037E638588A682017AEECE67 (void);
+// 0x00000087 System.Threading.Tasks.Task`1<ReadyPlayerMe.AvatarUri> ReadyPlayerMe.AvatarUri::Create(System.String)
+extern void AvatarUri_Create_m5742E6A9D2F406D022BC1511C8DA90285FCC313B (void);
+// 0x00000088 ReadyPlayerMe.AvatarUri ReadyPlayerMe.AvatarUri::CreateFromUrl(System.String)
+extern void AvatarUri_CreateFromUrl_m1648B830C45E0E2ED1C386B8B9B28D7251CBBFDE (void);
+// 0x00000089 System.Threading.Tasks.Task`1<System.String> ReadyPlayerMe.AvatarUri::GetUrlFromShortCode(System.String)
+extern void AvatarUri_GetUrlFromShortCode_m7749726FD13CC328236B3F4DF088479E43EDB20E (void);
+// 0x0000008A System.Void ReadyPlayerMe.AvatarUri::.ctor()
+extern void AvatarUri__ctor_mAE245178A5A4B8038103A23088153D6BD7C376E9 (void);
+// 0x0000008B System.Void ReadyPlayerMe.AvatarUri/<Create>d__32::.ctor()
+extern void U3CCreateU3Ed__32__ctor_m295F877CC7E22DC82E706408D5DD6BDD71F4AE5E (void);
+// 0x0000008C System.Void ReadyPlayerMe.AvatarUri/<Create>d__32::MoveNext()
+extern void U3CCreateU3Ed__32_MoveNext_mA1F8ED24CC619BDE235DA7C1B3036C1B7069B8D5 (void);
+// 0x0000008D System.Void ReadyPlayerMe.AvatarUri/<Create>d__32::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CCreateU3Ed__32_SetStateMachine_mA35279136C966E331F04047E36EE88968B2D180A (void);
+// 0x0000008E System.Void ReadyPlayerMe.AvatarUri/<GetUrlFromShortCode>d__34::.ctor()
+extern void U3CGetUrlFromShortCodeU3Ed__34__ctor_m680D01F783B81AA8ED3CE004F5B22D33A1061A51 (void);
+// 0x0000008F System.Void ReadyPlayerMe.AvatarUri/<GetUrlFromShortCode>d__34::MoveNext()
+extern void U3CGetUrlFromShortCodeU3Ed__34_MoveNext_m83BBE4357C9015F94194FB1232A1812D39C4E37F (void);
+// 0x00000090 System.Void ReadyPlayerMe.AvatarUri/<GetUrlFromShortCode>d__34::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+extern void U3CGetUrlFromShortCodeU3Ed__34_SetStateMachine_mF6058152B3369B2EA33229421068A599377F2331 (void);
+// 0x00000091 UnityEngine.Coroutine ReadyPlayerMe.ExtensionMethods::Run(System.Collections.IEnumerator)
+extern void ExtensionMethods_Run_m031C476A1A8050C21A57E720F01AA10DD5FA4880 (void);
+// 0x00000092 UnityEngine.SkinnedMeshRenderer ReadyPlayerMe.ExtensionMethods::GetMeshRenderer(UnityEngine.GameObject,ReadyPlayerMe.ExtensionMethods/MeshType)
+extern void ExtensionMethods_GetMeshRenderer_m69A2D9F3EBD5209A9411774C23C1308A34A66E02 (void);
+// 0x00000093 System.Void ReadyPlayerMe.ExtensionMethods::.cctor()
+extern void ExtensionMethods__cctor_mA866DA75F69E57BF5EBCC714E06EB7960D4EE62D (void);
+// 0x00000094 System.Void ReadyPlayerMe.ExtensionMethods::<GetMeshRenderer>g__GetMesh|7_0(System.Func`2<UnityEngine.SkinnedMeshRenderer,System.Boolean>,ReadyPlayerMe.ExtensionMethods/<>c__DisplayClass7_0&)
+extern void ExtensionMethods_U3CGetMeshRendererU3Eg__GetMeshU7C7_0_m5D6C9BCB0E45F218A6BD056D81781DA7B9C5CC69 (void);
+// 0x00000095 System.Void ReadyPlayerMe.ExtensionMethods/CoroutineRunner::Finalize()
+extern void CoroutineRunner_Finalize_mCDF67130625858F5F74BDF5E3AB991B2CD57BB3A (void);
+// 0x00000096 System.Void ReadyPlayerMe.ExtensionMethods/CoroutineRunner::.ctor()
+extern void CoroutineRunner__ctor_mA4A5B98F9D3B6F91BB45ACFA53FDDB9B88CA7B2A (void);
+// 0x00000097 System.Void ReadyPlayerMe.ExtensionMethods/<>c::.cctor()
+extern void U3CU3Ec__cctor_mEB1C7099F237C60D90C57544AC93A8D5583EF8C0 (void);
+// 0x00000098 System.Void ReadyPlayerMe.ExtensionMethods/<>c::.ctor()
+extern void U3CU3Ec__ctor_mE56ACC0A9182D16A258F5FC9C0BFF2F47E3AAFE5 (void);
+// 0x00000099 System.Boolean ReadyPlayerMe.ExtensionMethods/<>c::<GetMeshRenderer>b__7_1(UnityEngine.SkinnedMeshRenderer)
+extern void U3CU3Ec_U3CGetMeshRendererU3Eb__7_1_m89910F41AE32625001ABEF8B373C9866D5A64D7F (void);
+// 0x0000009A System.Boolean ReadyPlayerMe.ExtensionMethods/<>c::<GetMeshRenderer>b__7_2(UnityEngine.SkinnedMeshRenderer)
+extern void U3CU3Ec_U3CGetMeshRendererU3Eb__7_2_m03788AAB44C09C08A3DF19A9686366A6DE37221A (void);
+// 0x0000009B System.Boolean ReadyPlayerMe.ExtensionMethods/<>c::<GetMeshRenderer>b__7_3(UnityEngine.SkinnedMeshRenderer)
+extern void U3CU3Ec_U3CGetMeshRendererU3Eb__7_3_mDBF0164D29146B41B0906E9CEFB8341C6AC2EF13 (void);
+static Il2CppMethodPointer s_methodPointers[155] = 
+{
+	RuntimeTest_Start_m8E10FD2AD1C6C0B9FCB9029484A3EF880B5A5C5C,
+	RuntimeTest_OnAvatarImported_m37F7D5BC9800B53A4C6ED088314E2FEFA0E8FA95,
+	RuntimeTest_OnAvatarLoaded_m9E450743E4D62D7AF29DE3235D8F383D49598B38,
+	RuntimeTest__ctor_m407AFDE570FD7620D3C94529C0914639CC5BDF69,
+	WebViewTest_Start_m98AC0ABF7355F648192E91F4C4C2F51D3C622F04,
+	WebViewTest_DisplayWebView_m07E64717583619E0297459C1E7ACEC1065457AEE,
+	WebViewTest_HideWebView_mC30C5D69ADD0954C9F9F11E41F385A39AE80397A,
+	WebViewTest_OnAvatarCreated_m76028AFB7B491BAA0B156D52709DAEA1E4BB90A5,
+	WebViewTest_OnAvatarImported_m9CEB81C916B782F05FD7858CAE46BF284140264A,
+	WebViewTest_Destroy_m0253A2A4B41BB741BD19804C53EEE5F76ED97309,
+	WebViewTest__ctor_m92D6A421A6ACFF433B6C6E2673CD6B8EF5C635B8,
+	AvatarLoader_get_Timeout_mECE3C763A18A11EF6158C753850EFB5F1B06F874,
+	AvatarLoader_set_Timeout_mEA1863616053E55D14F7CD20336869EFD91F5D5D,
+	AvatarLoader_LoadAvatar_m221C98CB7A12467E6D32EE7A81996444085726B5,
+	AvatarLoader__ctor_m07CF6BF93BD24FA8B5C9B3A8CB38B7E44DA41175,
+	LoadOperation_LoadAvatarAsync_m0C8B568801E14BF7CE8F6C4F27C98D36FB5C8344,
+	LoadOperation_DownloadAvatar_m0A24C31466D3613D857991483243D74EC839C601,
+	LoadOperation_OnImportFinished_m2970D53A3B8DC2A52465B44E9229067B08EF351E,
+	LoadOperation_PrepareAvatarAsync_m8FE27C5E871B60AFF747CCF67E03AA931B4AF949,
+	LoadOperation__ctor_m62FD38FAFEE2DE1E142D346CD5B6390E7DDF8BE5,
+	U3CLoadAvatarAsyncU3Ed__2__ctor_m723EE68B56CBAD5C68B5C8F8A6D6E5276C56C156,
+	U3CLoadAvatarAsyncU3Ed__2_System_IDisposable_Dispose_m06019078EBCED91B3D3EBEA819717256FBDDA977,
+	U3CLoadAvatarAsyncU3Ed__2_MoveNext_m2F58A0274F1F35D849743DA931CD87270631845A,
+	U3CLoadAvatarAsyncU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7A4FD8B717B8A29C6767584A9FD00666BD20A216,
+	U3CLoadAvatarAsyncU3Ed__2_System_Collections_IEnumerator_Reset_mDE53C5DE2732FA237922703AC6473FA5CAFA39E4,
+	U3CLoadAvatarAsyncU3Ed__2_System_Collections_IEnumerator_get_Current_mCF3400F0567B5AB0EC242A49C6D35779675735AD,
+	U3CDownloadAvatarU3Ed__3__ctor_m302F2DA09081E7D59CEF52554350735127CB9BF6,
+	U3CDownloadAvatarU3Ed__3_System_IDisposable_Dispose_m7FBA691EFDF78D0126A6759783F83BBAB8A11B77,
+	U3CDownloadAvatarU3Ed__3_MoveNext_mCF671951BD1102A4BB3886A0EBDAFBC0266FE9E3,
+	U3CDownloadAvatarU3Ed__3_U3CU3Em__Finally1_mB6F2B2FC79B31E4E62B1F975FAFC10E0433E60CD,
+	U3CDownloadAvatarU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m652107B07D2D9023906DE6CC238C523FF162ADCA,
+	U3CDownloadAvatarU3Ed__3_System_Collections_IEnumerator_Reset_mE5343C50B3EDA739025BD63E350A027EC124D3F2,
+	U3CDownloadAvatarU3Ed__3_System_Collections_IEnumerator_get_Current_m2CC60C73F192538718576E8967E9B3E732BD9671,
+	U3CPrepareAvatarAsyncU3Ed__5__ctor_m06203897A015CA5A293B347F6E3781099ED5E905,
+	U3CPrepareAvatarAsyncU3Ed__5_System_IDisposable_Dispose_m838E051626B4A7CF01BA4729832726EAAB31E74F,
+	U3CPrepareAvatarAsyncU3Ed__5_MoveNext_mDF456B38E19A371E19B0B20D5CEDAE3989E4CFD4,
+	U3CPrepareAvatarAsyncU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2CE98F6A892EED16D51CEA7CCF6249D289BE634A,
+	U3CPrepareAvatarAsyncU3Ed__5_System_Collections_IEnumerator_Reset_mC42349E1BD2CABD51EA3720A93F5BC354312909A,
+	U3CPrepareAvatarAsyncU3Ed__5_System_Collections_IEnumerator_get_Current_m78B2F3F6BF7A839C7DC3D747340D2B050C31FE9A,
+	AvatarLoaderBase_get_Timeout_mC885D4129CB54A3DFE10114DFF056EF7AF94DD4F,
+	AvatarLoaderBase_set_Timeout_mFC31ABB4D32172FAA6C410F49E130FFCAE8AE068,
+	AvatarLoaderBase_LoadAvatar_mFB2001329E17644EA0FC7CED2B52FF9A5F197FB6,
+	NULL,
+	NULL,
+	AvatarLoaderBase_DownloadMetaData_m170CA93E9037637597727B10EC806E7870B8D9C9,
+	AvatarLoaderBase_get_AnimationAvatarSource_mEF6B43931041223459780DCBAF85F57FD203A4BC,
+	AvatarLoaderBase_RestructureAndSetAnimator_m4562BD1BF21AE80E9209DF24D9DA9D1C1A960403,
+	AvatarLoaderBase_OutfitVersion_m996CE0BA1EC8B0DFAEEC5FA8E009613C4289F1A7,
+	AvatarLoaderBase_SetMetaData_mF039271ED35956A8A1491F8C3335742488F78F56,
+	AvatarLoaderBase_SetAvatarAssetNames_m5443E1F1BFC6595AF3A78F4303AF3B4BD967EFBC,
+	AvatarLoaderBase_SetTextureNames_mB14DAC07789D97374849431A7A7F56C41A0A57AB,
+	AvatarLoaderBase_SetMeshName_mDB9DD3D34566F52E8337EC8695E6B0CAE0DD04AF,
+	AvatarLoaderBase__ctor_m32AB9898FF8CCD18EAD3DA1CD3B195E9E4577905,
+	AvatarLoaderBase__cctor_mE3521506E7F78BA44089DFFEB1FF29DC9B28ACBA,
+	U3CLoadAvatarU3Ed__19__ctor_m66DC715D157046B608B85BF894875C548577C31B,
+	U3CLoadAvatarU3Ed__19_MoveNext_m85B93D4588F200A2A5DF0464B86A1756D3D1BBBB,
+	U3CLoadAvatarU3Ed__19_SetStateMachine_mF14D886E98909B2EBCA7AB8C0B999F4A4E5B2CAF,
+	U3CDownloadMetaDataU3Ed__22__ctor_m21DCD7BB514730E305EB4555B320544508DCB288,
+	U3CDownloadMetaDataU3Ed__22_System_IDisposable_Dispose_m2259745304E4708673413499673320E9B0EE1AB2,
+	U3CDownloadMetaDataU3Ed__22_MoveNext_m53C67B39ADBB5FDEE5BA8FC67BE37E7C3DA53499,
+	U3CDownloadMetaDataU3Ed__22_U3CU3Em__Finally1_mCB3F7F3B30509217012A44407EF2391150CF0E3E,
+	U3CDownloadMetaDataU3Ed__22_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m80F726AE7CD74EECBCCA43DF95EDD833D3F03DEC,
+	U3CDownloadMetaDataU3Ed__22_System_Collections_IEnumerator_Reset_m1A4B8BFF5488D3A94799BB0BBC49AFC8079C1D6B,
+	U3CDownloadMetaDataU3Ed__22_System_Collections_IEnumerator_get_Current_mEDF0F3440658F9FAD6277BEE0AFF1F3A00C99110,
+	EditorAvatarLoader_LoadAvatarAsync_mAC65EF3986EF3E556ED7E39F3ECAF1F8517D3192,
+	EditorAvatarLoader_DownloadAvatar_mDF8285860C2B9D7F668FF67BFD54DC9E1EB09CFB,
+	EditorAvatarLoader_InstantiateAvatar_m8867C92EB44E6C6AA31237BEBCEE371765BB3795,
+	EditorAvatarLoader__ctor_m8EED104CF1B256AEE249F13322B827B7CEAB8167,
+	U3CLoadAvatarAsyncU3Ed__2__ctor_mDA75AA87CB8E414207FD08E59E6A9030F23087AD,
+	U3CLoadAvatarAsyncU3Ed__2_System_IDisposable_Dispose_m94ABBEF5206EAC344533CD4A410B23163504C6A9,
+	U3CLoadAvatarAsyncU3Ed__2_MoveNext_m029FA7AF322C7C42E35AF29388ED8EE356C62655,
+	U3CLoadAvatarAsyncU3Ed__2_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDC66FA952798DB6B5EC876BC59081B9804DD0C9C,
+	U3CLoadAvatarAsyncU3Ed__2_System_Collections_IEnumerator_Reset_mCC9E9D362AF528C77A28D01F81DF02A50DA1E116,
+	U3CLoadAvatarAsyncU3Ed__2_System_Collections_IEnumerator_get_Current_m2731A650248204C70F65F5DDE7A7D2BAC46F4F6E,
+	U3CU3Ec__DisplayClass3_0__ctor_mB4332950FFAB4D473E27D648CB5388F776D1F7A4,
+	U3CU3Ec__DisplayClass3_1__ctor_m5794B2E5D01F3DACA2F3D05DAB6EBDEEA61CB5B7,
+	U3CU3Ec__DisplayClass3_1_U3CDownloadAvatarU3Eb__0_mDE20D8303856CE67E50124BAC48B84FB6F27E467,
+	U3CDownloadAvatarU3Ed__3__ctor_mDA34620D41443523AB2C4AE8FEFF5DCA1BE6D19C,
+	U3CDownloadAvatarU3Ed__3_System_IDisposable_Dispose_m58422182B52B2AC5D231CAB812B241A9434C9E02,
+	U3CDownloadAvatarU3Ed__3_MoveNext_m9DC5F71F0D3BCFE14DD144DC80B1E95381B42057,
+	U3CDownloadAvatarU3Ed__3_U3CU3Em__Finally1_mD465D823FC084BAD34D8A17CBFAEFB0E2EF08880,
+	U3CDownloadAvatarU3Ed__3_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF0AF9402949060D7AA5BAF23149B5F9A910CCA6E,
+	U3CDownloadAvatarU3Ed__3_System_Collections_IEnumerator_Reset_m1116D0761C2A1CE90A716422E6710AE9DC623702,
+	U3CDownloadAvatarU3Ed__3_System_Collections_IEnumerator_get_Current_mAF1C7749021E334AB4E6400B4DADD949BF1D2057,
+	EyeAnimationHandler_Start_m389222CE6493D1F67665E3FA8C690BC13152C0F5,
+	EyeAnimationHandler_Initialize_m3EEAFD8B89B3778F9E421701C18221222A80C3F7,
+	EyeAnimationHandler_AnimateEyes_m161423359A02E60F67A58FE985457563002792DF,
+	EyeAnimationHandler_RotateEyes_m64AC6E73BAD5EE2CA12D39AECBFCF447751AE1A2,
+	EyeAnimationHandler_BlinkEyes_mF2D4BD0100314CEFCBEB33942A2272B1E56F7600,
+	EyeAnimationHandler__ctor_m23F3CE8253159A6B179FB4715C4BA30F843B24A0,
+	U3CBlinkEyesU3Ed__24__ctor_m7CFE777D31582BFCE868A2D254DF23B96B313AB5,
+	U3CBlinkEyesU3Ed__24_System_IDisposable_Dispose_m6DF42C465E54BE49DCF49CC2B071BFE2E5D6B8DA,
+	U3CBlinkEyesU3Ed__24_MoveNext_m5E005C44A54BA1EBF9D6C77641DAB893A8768ECF,
+	U3CBlinkEyesU3Ed__24_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8298C6BE9A3324E62F0AB6C099B631AB50A0F2D3,
+	U3CBlinkEyesU3Ed__24_System_Collections_IEnumerator_Reset_m49DAA8013FA86104A575F7F27BBB15EE4E4B1751,
+	U3CBlinkEyesU3Ed__24_System_Collections_IEnumerator_get_Current_m1DD5A08129EE9F9BD221217FC7A4B0D5A8014BF1,
+	VoiceHandler_Start_m0481460A6F82547F4DCF256EA79CD658D50EBC77,
+	VoiceHandler_Update_m6D7F051E3922A6EA9A431D52D5BF5DEE12CB7B48,
+	VoiceHandler_InitializeAudio_m0F8EDC7D165881544DB06EC2AB22E50F5C3FA8E6,
+	VoiceHandler_SetMicrophoneSource_m9005AC6289BDCF1FF59B32971B594823140DFCCE,
+	VoiceHandler_SetAudioClipSource_m88D028AEA71D4B985E67D70F3A5B0AC92804B031,
+	VoiceHandler_PlayCurrentAudioClip_mF4E26677167D10E3C390D7019EE43C949E0276FA,
+	VoiceHandler_PlayAudioClip_m135CEDC6C099AD30B51B630C861E52B7A527163D,
+	VoiceHandler_GetAmplitude_mD5F089A4CA209A524E9D6E0C8A17DE67A62F709A,
+	VoiceHandler_GetMeshAndSetIndex_m9D84FD16B9A70BF68D5462E4EE0650AF66EBEFC6,
+	VoiceHandler_SetBlendshapeWeights_m69666EC6C76D2FD89BF5D13A7673B37F93A9D235,
+	VoiceHandler_CheckIOSMicrophonePermission_m009E869060DAC0D3C234F247D84ED1D75906C4AD,
+	VoiceHandler_OnDestroy_mC7147B221FF620FD2B01583DDA35FD0F1A29E228,
+	VoiceHandler__ctor_m0F5787A95498CD2478AE7F4A450889B1E9B84879,
+	VoiceHandler_U3CSetBlendshapeWeightsU3Eg__SetBlendShapeWeightU7C22_0_m4EFD4434DC2DED50E2EECA45407BD98850B82AC7,
+	U3CCheckIOSMicrophonePermissionU3Ed__23__ctor_m0067CD27DD4ED9D877166ACF41B9018B4EE6E2EE,
+	U3CCheckIOSMicrophonePermissionU3Ed__23_System_IDisposable_Dispose_m371C0FD029DDDE1BE2FF0DBCAEB31919C42DC49E,
+	U3CCheckIOSMicrophonePermissionU3Ed__23_MoveNext_mE8AE701E2E88DD85CC0957C463F9FC97B90AB7E6,
+	U3CCheckIOSMicrophonePermissionU3Ed__23_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m57F74097DE8E2DF430FECB24A867A8A3A9975C9E,
+	U3CCheckIOSMicrophonePermissionU3Ed__23_System_Collections_IEnumerator_Reset_m570FA60E5C4BECEB110FAA1B49EC43CCE39F2BE2,
+	U3CCheckIOSMicrophonePermissionU3Ed__23_System_Collections_IEnumerator_get_Current_m7E43557365C27A60196F982C8717CD390C2A4345,
+	AvatarMetaData_IsOutfitMasculine_m299E7CE9E2BBF8C23C321CA8F3B9252B28B1A528,
+	AvatarMetaData_IsFullbody_m5B82F41D5B798875A25B6FB9386B55B19DE5556C,
+	AvatarMetaData_ToString_mC96D38A702CED9241DA937F43A88E4E593DD1B04,
+	AvatarMetaData__ctor_m6B540071EBC23638346648BA4D1989B9A8814D01,
+	AvatarUri_get_Extension_m8CBCD1667D81475F0285A7D087CF973CC6F56BCF,
+	AvatarUri_set_Extension_mE7537C968323B1B882763642C55B57E99D7709A3,
+	AvatarUri_get_ModelName_m95B514DC8FFE0122284525375DBAEF7EFC51419F,
+	AvatarUri_set_ModelName_mA3390ABAEDE12141EB692FD2DB16532078CC2750,
+	AvatarUri_get_ModelPath_m632AE4702EA9708D445F82B38F6E113C57266D49,
+	AvatarUri_set_ModelPath_mE5CA335C025E6A2B3E6B7E11DE799A02ECD44C3C,
+	AvatarUri_get_AbsoluteUrl_mE5001E426004CD4A44682A9BA47813B100A6D0B3,
+	AvatarUri_set_AbsoluteUrl_m396A2536E895D7ABB75E4D5CBDC41FB7B6F4A444,
+	AvatarUri_get_AbsolutePath_m0498C39474F1D960D69035EDC889A427AE9D8CF1,
+	AvatarUri_set_AbsolutePath_m338223EC059FB03E11A4FAF58E4DBB6D26889E85,
+	AvatarUri_get_AbsoluteName_m4506DAD6CCFAF79ACE57C51FE90C73F92A71D97C,
+	AvatarUri_set_AbsoluteName_m8CAB1BF5A010E49C0160256C751545EA43990971,
+	AvatarUri_get_MetaDataUrl_mCB4A35D69D024DCFE94340BE0928AC852B9BB4AF,
+	AvatarUri_set_MetaDataUrl_m864590C64446D5A9037E638588A682017AEECE67,
+	AvatarUri_Create_m5742E6A9D2F406D022BC1511C8DA90285FCC313B,
+	AvatarUri_CreateFromUrl_m1648B830C45E0E2ED1C386B8B9B28D7251CBBFDE,
+	AvatarUri_GetUrlFromShortCode_m7749726FD13CC328236B3F4DF088479E43EDB20E,
+	AvatarUri__ctor_mAE245178A5A4B8038103A23088153D6BD7C376E9,
+	U3CCreateU3Ed__32__ctor_m295F877CC7E22DC82E706408D5DD6BDD71F4AE5E,
+	U3CCreateU3Ed__32_MoveNext_mA1F8ED24CC619BDE235DA7C1B3036C1B7069B8D5,
+	U3CCreateU3Ed__32_SetStateMachine_mA35279136C966E331F04047E36EE88968B2D180A,
+	U3CGetUrlFromShortCodeU3Ed__34__ctor_m680D01F783B81AA8ED3CE004F5B22D33A1061A51,
+	U3CGetUrlFromShortCodeU3Ed__34_MoveNext_m83BBE4357C9015F94194FB1232A1812D39C4E37F,
+	U3CGetUrlFromShortCodeU3Ed__34_SetStateMachine_mF6058152B3369B2EA33229421068A599377F2331,
+	ExtensionMethods_Run_m031C476A1A8050C21A57E720F01AA10DD5FA4880,
+	ExtensionMethods_GetMeshRenderer_m69A2D9F3EBD5209A9411774C23C1308A34A66E02,
+	ExtensionMethods__cctor_mA866DA75F69E57BF5EBCC714E06EB7960D4EE62D,
+	ExtensionMethods_U3CGetMeshRendererU3Eg__GetMeshU7C7_0_m5D6C9BCB0E45F218A6BD056D81781DA7B9C5CC69,
+	CoroutineRunner_Finalize_mCDF67130625858F5F74BDF5E3AB991B2CD57BB3A,
+	CoroutineRunner__ctor_mA4A5B98F9D3B6F91BB45ACFA53FDDB9B88CA7B2A,
+	U3CU3Ec__cctor_mEB1C7099F237C60D90C57544AC93A8D5583EF8C0,
+	U3CU3Ec__ctor_mE56ACC0A9182D16A258F5FC9C0BFF2F47E3AAFE5,
+	U3CU3Ec_U3CGetMeshRendererU3Eb__7_1_m89910F41AE32625001ABEF8B373C9866D5A64D7F,
+	U3CU3Ec_U3CGetMeshRendererU3Eb__7_2_m03788AAB44C09C08A3DF19A9686366A6DE37221A,
+	U3CU3Ec_U3CGetMeshRendererU3Eb__7_3_mDBF0164D29146B41B0906E9CEFB8341C6AC2EF13,
+};
+static const int32_t s_InvokerIndices[155] = 
+{
+	4332,
+	3537,
+	2012,
+	4332,
+	4332,
+	4332,
+	4332,
+	3537,
+	2012,
+	4332,
+	4332,
+	4240,
+	3517,
+	1239,
+	4332,
+	2655,
+	2655,
+	3537,
+	2655,
+	4332,
+	3517,
+	4332,
+	4288,
+	4262,
+	4332,
+	4262,
+	3517,
+	4332,
+	4288,
+	4332,
+	4262,
+	4332,
+	4262,
+	3517,
+	4332,
+	4288,
+	4262,
+	4332,
+	4262,
+	4240,
+	3517,
+	1239,
+	2655,
+	2655,
+	1482,
+	4262,
+	3537,
+	2652,
+	2012,
+	3537,
+	2012,
+	2012,
+	4332,
+	6620,
+	4332,
+	4332,
+	3537,
+	3517,
+	4332,
+	4288,
+	4332,
+	4262,
+	4332,
+	4262,
+	2655,
+	2655,
+	2655,
+	4332,
+	3517,
+	4332,
+	4288,
+	4262,
+	4332,
+	4262,
+	4332,
+	4332,
+	4288,
+	3517,
+	4332,
+	4288,
+	4332,
+	4262,
+	4332,
+	4262,
+	4332,
+	4332,
+	4332,
+	4332,
+	4262,
+	4332,
+	3517,
+	4332,
+	4288,
+	4262,
+	4332,
+	4262,
+	4332,
+	4332,
+	4332,
+	4332,
+	4332,
+	4332,
+	3537,
+	4291,
+	1177,
+	3564,
+	4262,
+	4332,
+	4332,
+	5582,
+	3517,
+	4332,
+	4288,
+	4262,
+	4332,
+	4262,
+	4288,
+	4288,
+	4262,
+	4332,
+	4262,
+	3537,
+	4262,
+	3537,
+	4262,
+	3537,
+	4262,
+	3537,
+	4262,
+	3537,
+	4262,
+	3537,
+	4262,
+	3537,
+	2655,
+	2655,
+	6385,
+	4332,
+	4332,
+	4332,
+	3537,
+	4332,
+	4332,
+	3537,
+	6385,
+	5776,
+	6620,
+	6059,
+	4332,
+	4332,
+	6620,
+	4332,
+	3019,
+	3019,
+	3019,
+};
+extern const CustomAttributesCacheGenerator g_ReadyPlayerMe_AttributeGenerators[];
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_ReadyPlayerMe_CodeGenModule;
+const Il2CppCodeGenModule g_ReadyPlayerMe_CodeGenModule = 
+{
+	"ReadyPlayerMe.dll",
+	155,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	g_ReadyPlayerMe_AttributeGenerators,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};
