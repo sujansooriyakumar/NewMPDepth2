@@ -31,6 +31,8 @@ namespace StreamTrackingSystem
         public void SaveCalibration(StreamTrackingProvider.SavedStreamTrackingConfiguration calibration)
         {
             savedCalibrations.Add(calibration);
+            AllCalibrations.Add(calibration);
+            
             currentCalibration = calibration;
             
         }

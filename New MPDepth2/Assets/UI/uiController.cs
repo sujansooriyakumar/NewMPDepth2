@@ -20,6 +20,7 @@ public class uiController : MonoBehaviour
     [SerializeField] TrackingIPSave trackingIPSave;
     [SerializeField] GameObject connectionUI;
     [SerializeField] GameObject urlCanvas;
+    [SerializeField] GameObject customCalibrationCanvas;
 
     public void SubmitDeviceStreamIP()
     {
@@ -77,4 +78,8 @@ public class uiController : MonoBehaviour
         urlCanvas.SetActive(true);
     }
 
+    public void ShowCustomCalibrationUI()
+    {
+        customCalibrationCanvas.SetActive(true);
+    }
 }
