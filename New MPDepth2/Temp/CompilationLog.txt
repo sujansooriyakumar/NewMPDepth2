@@ -1,0 +1,2 @@
+# Starting compiling MPDepthCore.dll
+/Applications/Unity/Hub/Editor/2020.3.18f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-f6cb8fb886380447798ae610ce4f6410
