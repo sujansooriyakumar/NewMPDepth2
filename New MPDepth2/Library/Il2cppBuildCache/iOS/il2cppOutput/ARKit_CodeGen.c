@@ -184,59 +184,61 @@ extern void RotatableDeviceTrackingCalibrationProvider_get_GetTrackerOffsetCalib
 extern void RotatableDeviceTrackingCalibrationProvider_Calibrate_m44C5ED5150BE8EA454F4D35E6968040205A808B4 (void);
 // 0x00000056 System.Void RotatableDeviceTrackingCalibrationProvider::FinishSetupAfterLoad()
 extern void RotatableDeviceTrackingCalibrationProvider_FinishSetupAfterLoad_m41E9C289C24E7B180D6519DC966573E76B62EA0C (void);
-// 0x00000057 System.Void RotatableDeviceTrackingCalibrationProvider::SetCurrentToDefaultCalibration()
+// 0x00000057 System.Void RotatableDeviceTrackingCalibrationProvider::Update()
+extern void RotatableDeviceTrackingCalibrationProvider_Update_m3ACD98E917DDE8D17B1B2EF635C746C43F199CC0 (void);
+// 0x00000058 System.Void RotatableDeviceTrackingCalibrationProvider::SetCurrentToDefaultCalibration()
 extern void RotatableDeviceTrackingCalibrationProvider_SetCurrentToDefaultCalibration_mD6298A476DD8F9A1BD54E18610F8AB205D562BCD (void);
-// 0x00000058 System.Void RotatableDeviceTrackingCalibrationProvider::LoadSelfFromJson(System.String)
+// 0x00000059 System.Void RotatableDeviceTrackingCalibrationProvider::LoadSelfFromJson(System.String)
 extern void RotatableDeviceTrackingCalibrationProvider_LoadSelfFromJson_mB849B08208A70ADBE205BDEA0004B47B8FC0C889 (void);
-// 0x00000059 System.String RotatableDeviceTrackingCalibrationProvider::GetSelfAsJson()
+// 0x0000005A System.String RotatableDeviceTrackingCalibrationProvider::GetSelfAsJson()
 extern void RotatableDeviceTrackingCalibrationProvider_GetSelfAsJson_m33866D6D01349E76571E43371740CE308FBB4A34 (void);
-// 0x0000005A System.Void RotatableDeviceTrackingCalibrationProvider::.ctor()
+// 0x0000005B System.Void RotatableDeviceTrackingCalibrationProvider::.ctor()
 extern void RotatableDeviceTrackingCalibrationProvider__ctor_mECDED3D215085CE93D6D359CDFD92F7D79CD0294 (void);
-// 0x0000005B System.String RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration::get_Name()
+// 0x0000005C System.String RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration::get_Name()
 extern void SavedRotatableDeviceCalibration_get_Name_m60EBC6C858493C7D56E40D2C337B01790BE8284C (void);
-// 0x0000005C System.Void RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration::set_Name(System.String)
+// 0x0000005D System.Void RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration::set_Name(System.String)
 extern void SavedRotatableDeviceCalibration_set_Name_mAA10C414545A6C8B4833253C704D82BD296B9DBB (void);
-// 0x0000005D System.Void RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration::.ctor()
+// 0x0000005E System.Void RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration::.ctor()
 extern void SavedRotatableDeviceCalibration__ctor_m1E926A219ED1F085CBA34C045900A7444366469D (void);
-// 0x0000005E System.Void RotatableDeviceTrackingCalibrationProvider/SaveData::.ctor(RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration,System.Collections.Generic.List`1<RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration>)
+// 0x0000005F System.Void RotatableDeviceTrackingCalibrationProvider/SaveData::.ctor(RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration,System.Collections.Generic.List`1<RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration>)
 extern void SaveData__ctor_m0FFAC19B03780B948FE5F85EC9F8EE231D80A156 (void);
-// 0x0000005F System.Threading.Tasks.Task`1<System.Boolean> RotatableScreenCalibrator::StartCalibration(RotatableDeviceScreen/SavedRotatableScreenCalibration)
+// 0x00000060 System.Threading.Tasks.Task`1<System.Boolean> RotatableScreenCalibrator::StartCalibration(RotatableDeviceScreen/SavedRotatableScreenCalibration)
 extern void RotatableScreenCalibrator_StartCalibration_m78963AEF65C9F1527C90AA109F66C4BF70C95988 (void);
-// 0x00000060 System.Void RotatableScreenCalibrator::Complete()
+// 0x00000061 System.Void RotatableScreenCalibrator::Complete()
 extern void RotatableScreenCalibrator_Complete_m48CDE7B903F40F267294F8A8CC2E195353F06061 (void);
-// 0x00000061 System.Void RotatableScreenCalibrator::Cancel()
+// 0x00000062 System.Void RotatableScreenCalibrator::Cancel()
 extern void RotatableScreenCalibrator_Cancel_mD49A6169ACC7E17E0AA0A4BB1805EB645659F31C (void);
-// 0x00000062 System.Void RotatableScreenCalibrator::TryAutoDetect()
+// 0x00000063 System.Void RotatableScreenCalibrator::TryAutoDetect()
 extern void RotatableScreenCalibrator_TryAutoDetect_m7E9A1FB7043C8664FE71554436563F3E01C10698 (void);
-// 0x00000063 System.Void RotatableScreenCalibrator::FinalizeSizeChange()
+// 0x00000064 System.Void RotatableScreenCalibrator::FinalizeSizeChange()
 extern void RotatableScreenCalibrator_FinalizeSizeChange_mEE5CC9B09011FA7ADB24EF7DD767C2D4798DEBFC (void);
-// 0x00000064 System.Void RotatableScreenCalibrator::Decrease()
+// 0x00000065 System.Void RotatableScreenCalibrator::Decrease()
 extern void RotatableScreenCalibrator_Decrease_mC0CCC97F03063D8E2232A79C9A2DBD30B9B09842 (void);
-// 0x00000065 System.Void RotatableScreenCalibrator::Increase()
+// 0x00000066 System.Void RotatableScreenCalibrator::Increase()
 extern void RotatableScreenCalibrator_Increase_mE596030566E343A55B1F2F0C9CDBB0C0C5BD92AE (void);
-// 0x00000066 System.Void RotatableScreenCalibrator::DecreaseAlt()
+// 0x00000067 System.Void RotatableScreenCalibrator::DecreaseAlt()
 extern void RotatableScreenCalibrator_DecreaseAlt_mFDA60C5601886DD46D6B8613FB1681FF590B1B0D (void);
-// 0x00000067 System.Void RotatableScreenCalibrator::IncreaseAlt()
+// 0x00000068 System.Void RotatableScreenCalibrator::IncreaseAlt()
 extern void RotatableScreenCalibrator_IncreaseAlt_mE81A2BE1420307966F9905D7B9D2E81946747758 (void);
-// 0x00000068 System.Void RotatableScreenCalibrator::SetName(System.String)
+// 0x00000069 System.Void RotatableScreenCalibrator::SetName(System.String)
 extern void RotatableScreenCalibrator_SetName_m42CB47E0AC6DC9B8C0D8B876EBC4A8E1C8A6E089 (void);
-// 0x00000069 System.Void RotatableScreenCalibrator::ResetToMaxSize()
+// 0x0000006A System.Void RotatableScreenCalibrator::ResetToMaxSize()
 extern void RotatableScreenCalibrator_ResetToMaxSize_mD63675C1C4CA7EF4E072561525EF30C61AFA88E6 (void);
-// 0x0000006A System.Void RotatableScreenCalibrator::.ctor()
+// 0x0000006B System.Void RotatableScreenCalibrator::.ctor()
 extern void RotatableScreenCalibrator__ctor_m34F7BB7EE11A47944A93BF862DD89507A0604D5D (void);
-// 0x0000006B System.Void RotatableScreenCalibrator/<StartCalibration>d__8::.ctor()
+// 0x0000006C System.Void RotatableScreenCalibrator/<StartCalibration>d__8::.ctor()
 extern void U3CStartCalibrationU3Ed__8__ctor_mED6C7FDB679F0F4CAEB8AB53DF5D094CEF8F29FA (void);
-// 0x0000006C System.Void RotatableScreenCalibrator/<StartCalibration>d__8::MoveNext()
+// 0x0000006D System.Void RotatableScreenCalibrator/<StartCalibration>d__8::MoveNext()
 extern void U3CStartCalibrationU3Ed__8_MoveNext_mDB1F00D1D4543AB91A0E8053A7FBC66813BA3925 (void);
-// 0x0000006D System.Void RotatableScreenCalibrator/<StartCalibration>d__8::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x0000006E System.Void RotatableScreenCalibrator/<StartCalibration>d__8::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CStartCalibrationU3Ed__8_SetStateMachine_m31C42AA58C3AF8C9F1C81F91A49D52CD47F36331 (void);
-// 0x0000006E RotatableDeviceScreen/SavedRotatableScreenCalibration RotatableScreenDimensionAsset::get_Calibration()
+// 0x0000006F RotatableDeviceScreen/SavedRotatableScreenCalibration RotatableScreenDimensionAsset::get_Calibration()
 extern void RotatableScreenDimensionAsset_get_Calibration_m81D262B4D1CB7319FECA64C79B98B297A416C499 (void);
-// 0x0000006F System.Void RotatableScreenDimensionAsset::.ctor()
+// 0x00000070 System.Void RotatableScreenDimensionAsset::.ctor()
 extern void RotatableScreenDimensionAsset__ctor_m02BD02C736CD2EBB223D03D2F424DBC0FA9F2F48 (void);
-// 0x00000070 System.Void RotatableTrackingConfigurationAsset::.ctor()
+// 0x00000071 System.Void RotatableTrackingConfigurationAsset::.ctor()
 extern void RotatableTrackingConfigurationAsset__ctor_m7D40805897B78AB238DF3291CE715ACD3A507A8A (void);
-static Il2CppMethodPointer s_methodPointers[112] = 
+static Il2CppMethodPointer s_methodPointers[113] = 
 {
 	ARKitBlendShapeVisualizer_get_coefficientScale_m3CDD631E0CCD082B512ED45BB8492477DA85E614,
 	ARKitBlendShapeVisualizer_set_coefficientScale_m3364BE2E147BC0039ED903FA8610039BE2A3DA57,
@@ -324,6 +326,7 @@ static Il2CppMethodPointer s_methodPointers[112] =
 	RotatableDeviceTrackingCalibrationProvider_get_GetTrackerOffsetCalibration_m31EEB48D75D5DA7CD0FD9064DF99E49E39D18933,
 	RotatableDeviceTrackingCalibrationProvider_Calibrate_m44C5ED5150BE8EA454F4D35E6968040205A808B4,
 	RotatableDeviceTrackingCalibrationProvider_FinishSetupAfterLoad_m41E9C289C24E7B180D6519DC966573E76B62EA0C,
+	RotatableDeviceTrackingCalibrationProvider_Update_m3ACD98E917DDE8D17B1B2EF635C746C43F199CC0,
 	RotatableDeviceTrackingCalibrationProvider_SetCurrentToDefaultCalibration_mD6298A476DD8F9A1BD54E18610F8AB205D562BCD,
 	RotatableDeviceTrackingCalibrationProvider_LoadSelfFromJson_mB849B08208A70ADBE205BDEA0004B47B8FC0C889,
 	RotatableDeviceTrackingCalibrationProvider_GetSelfAsJson_m33866D6D01349E76571E43371740CE308FBB4A34,
@@ -351,7 +354,7 @@ static Il2CppMethodPointer s_methodPointers[112] =
 	RotatableScreenDimensionAsset__ctor_m02BD02C736CD2EBB223D03D2F424DBC0FA9F2F48,
 	RotatableTrackingConfigurationAsset__ctor_m7D40805897B78AB238DF3291CE715ACD3A507A8A,
 };
-static const int32_t s_InvokerIndices[112] = 
+static const int32_t s_InvokerIndices[113] = 
 {
 	4291,
 	3564,
@@ -440,6 +443,7 @@ static const int32_t s_InvokerIndices[112] =
 	4332,
 	4332,
 	4332,
+	4332,
 	3537,
 	4262,
 	4332,
@@ -471,7 +475,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_ARKit_CodeGenModule;
 const Il2CppCodeGenModule g_ARKit_CodeGenModule = 
 {
 	"ARKit.dll",
-	112,
+	113,
 	s_methodPointers,
 	0,
 	NULL,

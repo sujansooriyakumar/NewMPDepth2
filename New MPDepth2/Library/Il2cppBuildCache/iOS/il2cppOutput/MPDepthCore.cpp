@@ -13683,8 +13683,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserEventDelegate__ctor_m00F3B644620B87F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ToggleUserEvent_add_Toggled_m86D41873548C8BC1DBD33C51960689297DBEBBC2 (ToggleUserEvent_tE32E5B4618A68FDF0249AA5B94B0A953EFB2C3DA * __this, UserEventDelegate_t472040FA8566F244B3FB20852A47AD089E838F3D * ___value0, const RuntimeMethod* method);
 // System.Void MPDepthCore.TrackingSystemsManager::ChangeSystemTo(MPDepthCore.TrackingSystem)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackingSystemsManager_ChangeSystemTo_mF8FDFE8229D04D30319065A23875D1040A011338 (TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40 * __this, TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53 * ___newTrackingSystem0, const RuntimeMethod* method);
-// System.Void MPDepthCore.TrackingSystemsManager::SelectCalibration(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackingSystemsManager_SelectCalibration_m770FAC7C199960986C38E78273E0F6A429306281 (TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40 * __this, int32_t ___index0, const RuntimeMethod* method);
 // System.Void OffAxisCamera.OffAxisCameraRig::EnableCameraTracking()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OffAxisCameraRig_EnableCameraTracking_mC24B2E1754DA3E2B4B80C77D0DBB0F0CC1C6EE96 (OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * __this, const RuntimeMethod* method);
 // System.Void OffAxisCamera.OffAxisCameraRig::DisableCameraTracking()
@@ -13724,6 +13722,8 @@ inline int32_t List_1_get_Count_mA84931CD0674D756C6AFB5B289ADAE9E2ADA597C_inline
 {
 	return ((  int32_t (*) (List_1_tCA32F60E5D373503E782165058D7A7D1F2C7C13E *, const RuntimeMethod*))List_1_get_Count_m5D847939ABB9A78203B062CAFFE975792174D00F_gshared_inline)(__this, method);
 }
+// System.Void MPDepthCore.TrackingSystemsManager::SelectCalibration(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackingSystemsManager_SelectCalibration_m770FAC7C199960986C38E78273E0F6A429306281 (TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40 * __this, int32_t ___index0, const RuntimeMethod* method);
 // System.Void OffAxisCamera.OffAxisCameraRig::set_Screen(OffAxisCamera.ScreenConfiguration.OffAxisScreenProvider)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OffAxisCameraRig_set_Screen_m1E9F6BE32A51E58D2E104569568D9933CD4B88F8_inline (OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * __this, OffAxisScreenProvider_t45C80864E577E00448ACE703B2FAED5A7A961BFA * ___value0, const RuntimeMethod* method);
 // System.Void MPDepthCore.TrackingSystem::TurnOn()
@@ -17623,8 +17623,6 @@ IL_0087:
 		// ChangeSystemTo(currentTrackingSystem);
 		TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53 * L_15 = __this->get_currentTrackingSystem_7();
 		TrackingSystemsManager_ChangeSystemTo_mF8FDFE8229D04D30319065A23875D1040A011338(__this, L_15, /*hidden argument*/NULL);
-		// SelectCalibration(0);
-		TrackingSystemsManager_SelectCalibration_m770FAC7C199960986C38E78273E0F6A429306281(__this, 0, /*hidden argument*/NULL);
 		// }
 		return;
 	}

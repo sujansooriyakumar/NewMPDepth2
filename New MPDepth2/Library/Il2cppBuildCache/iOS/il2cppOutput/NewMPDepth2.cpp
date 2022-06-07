@@ -7497,6 +7497,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mDE415591B28853D1C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MotiveRigidBodyData_t38A0173363ADA22554E261852583DB920982DD37 * MotiveTrackingDataReceiver_GetData_mFB515C51134C4A061929540866276D1C0451C8B0 (MotiveTrackingDataReceiver_tDFDFB254132DD7F9559DCFF24C72E3DA8BEB3821 * __this, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Subtraction(UnityEngine.Vector3,UnityEngine.Vector3)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  Vector3_op_Subtraction_m2725C96965D5C0B1F9715797E51762B13A5FED58_inline (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___a0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___b1, const RuntimeMethod* method);
+// UnityEngine.Quaternion UnityEngine.Transform::get_rotation()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200 (Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * __this, const RuntimeMethod* method);
 // UnityEngine.Quaternion UnityEngine.Quaternion::Inverse(UnityEngine.Quaternion)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  Quaternion_Inverse_mE2A449C7AC8A40350AAC3761AE1AFC170062CAC9 (Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  ___rotation0, const RuntimeMethod* method);
 // UnityEngine.Quaternion UnityEngine.Quaternion::op_Multiply(UnityEngine.Quaternion,UnityEngine.Quaternion)
@@ -7578,8 +7580,6 @@ inline SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * Component
 }
 // System.Boolean UnityEngine.Object::op_Implicit(UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_mC8214E4F028CC2F036CC82BDB81D102A02893499 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___exists0, const RuntimeMethod* method);
-// UnityEngine.Quaternion UnityEngine.Transform::get_rotation()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200 (Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * __this, const RuntimeMethod* method);
 // UnityEngine.Vector3 NetworkManager::GetPosition()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  NetworkManager_GetPosition_m179E1B889E410FAECA61FBD6CA7E492C54512AEB (NetworkManager_tBB503FE1461F7B91E1CCE3C05C393DF673B1623B * __this, const RuntimeMethod* method);
 // UnityEngine.Vector3 NetworkManager::GetEulers()
@@ -8904,11 +8904,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotiveCalibrationMethod_CalculateCalibra
 	memset((&V_4), 0, sizeof(V_4));
 	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_5;
 	memset((&V_5), 0, sizeof(V_5));
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_6;
+	Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  V_6;
 	memset((&V_6), 0, sizeof(V_6));
-	SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * V_7 = NULL;
-	Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  V_8;
-	memset((&V_8), 0, sizeof(V_8));
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * V_8 = NULL;
 	{
 		// xHat = new Vector3(1, 0, 0);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0;
@@ -8962,47 +8962,49 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotiveCalibrationMethod_CalculateCalibra
 		float* L_17 = L_16;
 		float L_18 = *((float*)L_17);
 		*((float*)L_17) = (float)((float)il2cpp_codegen_multiply((float)L_18, (float)(-1.0f)));
-		// Vector3 rotDiff = (Quaternion.Euler(screenRot) * Quaternion.Inverse(Quaternion.Euler(phoneRot))).eulerAngles;
+		// Quaternion q = Quaternion.Euler(screenRot) * Quaternion.Inverse(phone.rotation);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_19 = V_4;
 		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_20;
 		L_20 = Quaternion_Euler_m887ABE4F4DD563351E9874D63922C2F53969BBAB(L_19, /*hidden argument*/NULL);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_21 = V_2;
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_21 = __this->get_phone_21();
+		NullCheck(L_21);
 		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_22;
-		L_22 = Quaternion_Euler_m887ABE4F4DD563351E9874D63922C2F53969BBAB(L_21, /*hidden argument*/NULL);
+		L_22 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_21, /*hidden argument*/NULL);
 		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_23;
 		L_23 = Quaternion_Inverse_mE2A449C7AC8A40350AAC3761AE1AFC170062CAC9(L_22, /*hidden argument*/NULL);
 		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_24;
 		L_24 = Quaternion_op_Multiply_m5C7A60AC0CDCA2C5E2F23E45FBD1B15CA152D7B0(L_20, L_23, /*hidden argument*/NULL);
-		V_8 = L_24;
+		V_6 = L_24;
+		// Vector3 rotDiff = q.eulerAngles;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_25;
-		L_25 = Quaternion_get_eulerAngles_m3DA616CAD670235A407E8A7A75925AA8E22338C3((Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4 *)(&V_8), /*hidden argument*/NULL);
-		V_6 = L_25;
+		L_25 = Quaternion_get_eulerAngles_m3DA616CAD670235A407E8A7A75925AA8E22338C3((Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4 *)(&V_6), /*hidden argument*/NULL);
+		V_7 = L_25;
 		// StreamTrackingProvider.SavedStreamTrackingConfiguration calibration = new StreamTrackingProvider.SavedStreamTrackingConfiguration();
 		SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_26 = (SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF *)il2cpp_codegen_object_new(SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF_il2cpp_TypeInfo_var);
 		SavedStreamTrackingConfiguration__ctor_m72339F8AE71C40B33AA10DD430B6CBEF8ABC616A(L_26, /*hidden argument*/NULL);
-		V_7 = L_26;
+		V_8 = L_26;
 		// calibration.name = calibrationName;
-		SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_27 = V_7;
+		SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_27 = V_8;
 		String_t* L_28 = __this->get_calibrationName_20();
 		NullCheck(L_27);
 		L_27->set_name_0(L_28);
 		// calibration.TrackerOffsetCalibration.Position = posDiff;
-		SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_29 = V_7;
+		SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_29 = V_8;
 		NullCheck(L_29);
 		TrackerOffsetCalibration_tD2EC555FBB1EF1E2A33767B5EF260584742C3321 * L_30 = L_29->get_TrackerOffsetCalibration_1();
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_31 = V_5;
 		NullCheck(L_30);
 		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_30)->set_Position_0(L_31);
 		// calibration.TrackerOffsetCalibration.Eulers = rotDiff;
-		SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_32 = V_7;
+		SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_32 = V_8;
 		NullCheck(L_32);
 		TrackerOffsetCalibration_tD2EC555FBB1EF1E2A33767B5EF260584742C3321 * L_33 = L_32->get_TrackerOffsetCalibration_1();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_34 = V_6;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_34 = V_7;
 		NullCheck(L_33);
 		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_33)->set_Eulers_1(L_34);
 		// streamTrackingProvider.SaveCalibration(calibration);
 		StreamTrackingProvider_t6B2C21DF1BCB6AEE131C01422B53D03B99276667 * L_35 = __this->get_streamTrackingProvider_4();
-		SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_36 = V_7;
+		SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_36 = V_8;
 		NullCheck(L_35);
 		StreamTrackingProvider_SaveCalibration_m7800F133B98FA3986D8063EE054DD56C739A5294(L_35, L_36, /*hidden argument*/NULL);
 		// TrackingSystemsManager.instance.CurrentTrackingSystem.ScreenCalibrationProvider.Calibrate();

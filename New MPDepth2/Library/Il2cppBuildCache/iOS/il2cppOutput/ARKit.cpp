@@ -467,6 +467,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1_Dispose_m383935C666B52E9F3F69
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1_GetEnumerator_mD989135403C8D2F333ECDC69D66CF3E3443273AA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectOfType_TisARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647_m9C579D798239EFD45E22AD1A30E5C53146871399_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_mF131D53AB04E75E849487A7ACF79A8B27527F4B8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* RotatableDeviceTrackingCalibrationProvider_Update_m3ACD98E917DDE8D17B1B2EF635C746C43F199CC0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* RotatableDeviceTrackingCalibrationProvider_get_OffsetPosition_m580FAC909D7543FFBBDAD07591F97FC608203BAF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SubsystemLifecycleManager_3_get_subsystem_m4391B33B0DF93408538702190F99FFBA89343CC6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SubsystemWithProvider_3_get_subsystemDescriptor_mCC699F434BAAEA06444E9C4CF4D8FFD58349DBD1_RuntimeMethod_var;
@@ -11033,6 +11034,114 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableDeviceTrackingCalibrationProvid
 // System.Void RotatableDeviceTrackingCalibrationProvider::FinishSetupAfterLoad()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableDeviceTrackingCalibrationProvider_FinishSetupAfterLoad_m41E9C289C24E7B180D6519DC966573E76B62EA0C (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method)
 {
+	{
+		// }
+		return;
+	}
+}
+// System.Void RotatableDeviceTrackingCalibrationProvider::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableDeviceTrackingCalibrationProvider_Update_m3ACD98E917DDE8D17B1B2EF635C746C43F199CC0 (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method)
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	int32_t V_2 = 0;
+	{
+		// DeviceOrientation orientation = CurrentOrientation;
+		int32_t L_0;
+		L_0 = RotatableDeviceTrackingCalibrationProvider_get_CurrentOrientation_m9A10DC295BCF680428900EFED9B327BB9C2B7F10(__this, /*hidden argument*/NULL);
+		V_0 = L_0;
+		// switch (orientation)
+		int32_t L_1 = V_0;
+		V_2 = L_1;
+		int32_t L_2 = V_2;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_3, (int32_t)1)))
+		{
+			case 0:
+			{
+				goto IL_0026;
+			}
+			case 1:
+			{
+				goto IL_003a;
+			}
+			case 2:
+			{
+				goto IL_004e;
+			}
+			case 3:
+			{
+				goto IL_0062;
+			}
+		}
+	}
+	{
+		goto IL_0076;
+	}
+
+IL_0026:
+	{
+		// calibrationTransform.position = PortraitOffset;
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_4 = ((TrackingCalibrationProvider_t936458C67919392EE6B88C439729E2AECA9293AB *)__this)->get_calibrationTransform_4();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_5;
+		L_5 = RotatableDeviceTrackingCalibrationProvider_get_PortraitOffset_m7810C4A456B8FDD3CFB5A0D42ABAEC226F0BD482(__this, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Transform_set_position_mB169E52D57EEAC1E3F22C5395968714E4F00AC91(L_4, L_5, /*hidden argument*/NULL);
+		// break;
+		goto IL_008c;
+	}
+
+IL_003a:
+	{
+		// calibrationTransform.position = PortraitUpsideDownOffset;
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_6 = ((TrackingCalibrationProvider_t936458C67919392EE6B88C439729E2AECA9293AB *)__this)->get_calibrationTransform_4();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_7;
+		L_7 = RotatableDeviceTrackingCalibrationProvider_get_PortraitUpsideDownOffset_m57556000C76B19A98093B05FA409139D23D9F526(__this, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		Transform_set_position_mB169E52D57EEAC1E3F22C5395968714E4F00AC91(L_6, L_7, /*hidden argument*/NULL);
+		// break;
+		goto IL_008c;
+	}
+
+IL_004e:
+	{
+		// calibrationTransform.position = LandscapeLeftOffset;
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_8 = ((TrackingCalibrationProvider_t936458C67919392EE6B88C439729E2AECA9293AB *)__this)->get_calibrationTransform_4();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_9;
+		L_9 = RotatableDeviceTrackingCalibrationProvider_get_LandscapeLeftOffset_m4A4BB1F868807C746FB8B9C4210A045ABEF06D64(__this, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Transform_set_position_mB169E52D57EEAC1E3F22C5395968714E4F00AC91(L_8, L_9, /*hidden argument*/NULL);
+		// break;
+		goto IL_008c;
+	}
+
+IL_0062:
+	{
+		// calibrationTransform.position = LandscapeRightOffset;
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_10 = ((TrackingCalibrationProvider_t936458C67919392EE6B88C439729E2AECA9293AB *)__this)->get_calibrationTransform_4();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_11;
+		L_11 = RotatableDeviceTrackingCalibrationProvider_get_LandscapeRightOffset_mD8C2A9D349DB176813820FDA10826B95AB93C444(__this, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		Transform_set_position_mB169E52D57EEAC1E3F22C5395968714E4F00AC91(L_10, L_11, /*hidden argument*/NULL);
+		// break;
+		goto IL_008c;
+	}
+
+IL_0076:
+	{
+		// throw new ArgumentException($"unspported orientation {orientation}");
+		int32_t L_12 = V_0;
+		int32_t L_13 = L_12;
+		RuntimeObject * L_14 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DeviceOrientation_t73A4A44136AE4C97E4139F7805534F9CBCB9782C_il2cpp_TypeInfo_var)), &L_13);
+		String_t* L_15;
+		L_15 = String_Format_mB3D38E5238C3164DB4D7D29339D9E225A4496D17(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral3753D8D8169336EEBE5EC01F13CB2DFEBF3AD326)), L_14, /*hidden argument*/NULL);
+		ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00 * L_16 = (ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00 *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00_il2cpp_TypeInfo_var)));
+		ArgumentException__ctor_m2D35EAD113C2ADC99EB17B940A2097A93FD23EFC(L_16, L_15, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_16, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&RotatableDeviceTrackingCalibrationProvider_Update_m3ACD98E917DDE8D17B1B2EF635C746C43F199CC0_RuntimeMethod_var)));
+	}
+
+IL_008c:
 	{
 		// }
 		return;

@@ -1,4 +1,5 @@
 using MPDepthCore.Calibration.Camera;
+using MPDepthCore.Calibration.Screen;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -118,6 +119,28 @@ public class RotatableDeviceTrackingCalibrationProvider : TrackingCalibrationPro
 
     protected override void FinishSetupAfterLoad()
     {
+    }
+
+    private void Update()
+    {
+        DeviceOrientation orientation = CurrentOrientation;
+        switch (orientation)
+        {
+            case DeviceOrientation.Portrait:
+                calibrationTransform.position = PortraitOffset;
+                break;
+            case DeviceOrientation.PortraitUpsideDown:
+                calibrationTransform.position = PortraitUpsideDownOffset;
+                break;
+            case DeviceOrientation.LandscapeLeft:
+                calibrationTransform.position = LandscapeLeftOffset;
+                break;
+            case DeviceOrientation.LandscapeRight:
+                calibrationTransform.position = LandscapeRightOffset;
+                break;
+            default:
+                throw new ArgumentException($"unspported orientation {orientation}");
+        }
     }
 
     protected override void SetCurrentToDefaultCalibration()
