@@ -12,9 +12,9 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
 
     public void CreateRoom()
     {
-        if(PhotonNetwork.CountOfRooms == 0)
+        if(PhotonNetwork.CountOfRooms >= 0)
         {
-            PhotonNetwork.CreateRoom("Test");
+            PhotonNetwork.CreateRoom("Demo");
         }
 
         else if(PhotonNetwork.CountOfPlayersInRooms < 2)
@@ -25,7 +25,7 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
 
     public void JoinRoom()
     {
-        PhotonNetwork.JoinRoom("Test");
+        PhotonNetwork.JoinRoom("Demo");
     }
 
     public override void OnJoinedRoom()
