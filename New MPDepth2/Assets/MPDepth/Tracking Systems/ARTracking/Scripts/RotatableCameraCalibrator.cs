@@ -8,8 +8,7 @@ using UnityEngine;
     {
 
         GameObject mainUI;
-        [SerializeField] GameObject calibrationUI;
-    [SerializeField] Transform calibrationTransform;
+        
 
         bool calibrating;
         bool cancelled;
@@ -17,32 +16,9 @@ using UnityEngine;
 
         void Awake()
         {
-            mainUI = this.GetComponentInParent<TrackingSystem>().mainUI;
         }
 
-        public async Task<bool> RunCalibrationProcedure(RotatableDeviceTrackingCalibrationProvider.SavedRotatableDeviceCalibration newCalibration)
-        {
-            calibration = newCalibration;
-            calibration.Name = string.Empty;
-
-            calibrating = true;
-            cancelled = false;
-
-            this.calibrationUI.SetActive(true);
-            this.mainUI.SetActive(false);
-
-            while (calibrating && !cancelled)
-            {
-                await Task.Delay(5);
-            }
-
-            this.calibrationUI.SetActive(false);
-            this.mainUI.SetActive(true);
-
-            if (cancelled) return false;
-            return true;
-
-        }
+    
     
 
     public void Complete()

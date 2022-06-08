@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using MPDepthCore;
 using MPDepthCore.Calibration.Camera;
 using UnityEngine;
 
@@ -17,8 +18,8 @@ public class MotiveTrackingProvider : TrackingCalibrationProvider
     public override void SelectCalibration(int selectedIndex)
     {
         currentCalibration = savedCalibrations[selectedIndex];
-        calibrationTransform.position = currentCalibration.TrackerOffsetCalibration.Position;
-        calibrationTransform.rotation = Quaternion.Euler(currentCalibration.TrackerOffsetCalibration.Eulers);
+        TrackingSystemsManager.instance.SetCalibrationTransform(currentCalibration.TrackerOffsetCalibration.Position, currentCalibration.TrackerOffsetCalibration.Eulers);
+        
     }
 
     public override void Calibrate()

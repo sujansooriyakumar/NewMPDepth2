@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using MPDepthCore;
 using OffAxisCamera;
 using ReadyPlayerMe;
 using UnityEngine;
@@ -11,12 +12,15 @@ public class MirrorModeController : MonoBehaviour
     [SerializeField] Text text;
     [SerializeField] Camera dyadicCamera;
     [SerializeField] Camera mirrorCamera;
+    [SerializeField] OffAxisCameraRig dyadicCameraRig;
+    [SerializeField] OffAxisCameraRig mirrorCameraRig;
 
     [SerializeField] Vector2 insetPosition;
     [SerializeField] Vector3 insetSize;
 
     [SerializeField] Vector2 mainPosition;
     [SerializeField] Vector2 mainSize;
+    [SerializeField] TrackingSystemsManager trackingSystemsManager;
     public static MirrorModeController instance;
     string otherPlayerURL;
 
@@ -30,6 +34,7 @@ public class MirrorModeController : MonoBehaviour
 
         if (mirrorMode)
         {
+            trackingSystemsManager.SetCamera(dyadicCameraRig);
             mirrorCamera.rect = new Rect(insetPosition, insetSize);
             dyadicCamera.rect = new Rect(mainPosition, mainSize);
             mirrorCamera.depth = 1;
@@ -43,6 +48,8 @@ public class MirrorModeController : MonoBehaviour
 
         else
         {
+            trackingSystemsManager.SetCamera(mirrorCameraRig);
+
             dyadicCamera.rect = new Rect(insetPosition, insetSize);
             mirrorCamera.rect = new Rect(mainPosition, mainSize);
             dyadicCamera.depth = 1;

@@ -8,12 +8,7 @@ namespace MPDepthCore.Calibration.Screen {
 
         TrackingSystem trackingSystem;
 
-        protected GameObject mainUI {
-            get {
-                trackingSystem ??= GetComponentInParent<TrackingSystem>();
-                return trackingSystem.mainUI;
-            }
-        }
+     
 
         protected OffAxisCameraRig offAxisCameraRig {
             get {

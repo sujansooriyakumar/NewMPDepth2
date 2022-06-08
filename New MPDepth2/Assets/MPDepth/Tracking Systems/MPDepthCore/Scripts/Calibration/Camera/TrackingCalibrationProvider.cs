@@ -7,7 +7,6 @@ using UnityEngine.UIElements;
 
 namespace MPDepthCore.Calibration.Camera {
     public abstract class TrackingCalibrationProvider : MonoBehaviour {
-        [SerializeField]  public Transform calibrationTransform;
         public abstract TrackerOffsetCalibration GetTrackerOffsetCalibration {get; }
         public abstract SavedTrackerCalibration CurrentTrackerCalibration { get; }
         
@@ -42,11 +41,7 @@ namespace MPDepthCore.Calibration.Camera {
             File.WriteAllText(FilePath, json);
         }
 
-        public void SetCalibrationTransform(Transform t)
-        {
-            calibrationTransform = t;
-        }
-
+       
 
         
         protected string FilePath => Path.Combine(BaseFolder, Filename);

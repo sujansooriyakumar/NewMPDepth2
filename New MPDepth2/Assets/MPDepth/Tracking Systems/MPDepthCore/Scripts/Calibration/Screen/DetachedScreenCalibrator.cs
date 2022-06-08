@@ -19,7 +19,7 @@ namespace MPDepthCore.Calibration.Screen {
         bool cancelled;
         bool calibrating;
 
-        public async Task<bool> RunCalibrationProcedure(BasicScreenCalibrationProvider.SavedBasicScreenCalibration newCalibration) {
+/*        public async Task<bool> RunCalibrationProcedure(BasicScreenCalibrationProvider.SavedBasicScreenCalibration newCalibration) {
             calibration = newCalibration;
             calibration.name = string.Empty;
             
@@ -93,7 +93,7 @@ namespace MPDepthCore.Calibration.Screen {
 
             if (cancelled) return false;
             return true;
-        }
+        }*/
 
         public void Confirm() {
             if (calibration.name != string.Empty) {
@@ -108,14 +108,15 @@ namespace MPDepthCore.Calibration.Screen {
             cancelled = true;
         }
 
-        public void TryToAutoDetectScreen(BasicScreenCalibrationProvider.SavedBasicScreenCalibration currentCalibration) {
+        public BasicScreenCalibrationProvider.SavedBasicScreenCalibration TryToAutoDetectScreen() {
             ScreenSizeDetector.ScreenInfo screenInfo = ScreenSizeDetector.GetDeviceScreenSize();
-            calibration = currentCalibration;
+            BasicScreenCalibrationProvider.SavedBasicScreenCalibration calibration = new BasicScreenCalibrationProvider.SavedBasicScreenCalibration();
             calibration.name = screenInfo.Device;
             calibration.Height = screenInfo.ScreenHeight;
             calibration.Width = screenInfo.ScreenWidth;
             calibrating = false;
             Debug.Log($"Finished screen auto detect. Results: {screenInfo}");
+            return calibration;
         }
 
         public void SetName(string newName) {
@@ -127,10 +128,10 @@ namespace MPDepthCore.Calibration.Screen {
             calibration.Height = calibration.Width / offAxisCamera.aspect;
         }
 
-        public void Calibrate(BasicScreenCalibrationProvider.SavedBasicScreenCalibration currentCalibration)
+        public BasicScreenCalibrationProvider.SavedBasicScreenCalibration Calibrate(BasicScreenCalibrationProvider.SavedBasicScreenCalibration currentCalibration)
         {
-            TryToAutoDetectScreen(currentCalibration);
-
+            BasicScreenCalibrationProvider.SavedBasicScreenCalibration calibration = TryToAutoDetectScreen();
+            return calibration;
         }
 
         private void Update()

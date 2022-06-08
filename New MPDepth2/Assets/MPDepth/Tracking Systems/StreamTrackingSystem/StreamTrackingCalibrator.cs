@@ -22,15 +22,12 @@ namespace StreamTrackingSystem {
         bool cancelled;
         StreamTrackingProvider.SavedStreamTrackingConfiguration calibration;
         [SerializeField] float defaultDistanceFromScreenCenter;
-        [SerializeField] Transform calibrationTransform;
-        GameObject mainUI;
         OffAxisCameraRig offAxisCameraRig;
         Camera offAxisCamera;
 
         private void Awake()
         {
             TrackingSystem trackingSystem = GetComponentInParent<TrackingSystem>();
-            mainUI = trackingSystem.mainUI;
             offAxisCameraRig = trackingSystem.offAxisCameraRig;
             offAxisCamera = trackingSystem.offAxisCamera;
             trackingSource.TrackingDataUpdated += TrackingUpdated;
@@ -63,8 +60,9 @@ namespace StreamTrackingSystem {
 
         public void CalculateCalibrationFromTrackingInfo()
         {
-            calibrationTransform.position = Vector3.zero;
-            calibrationTransform.rotation = Quaternion.Euler(Vector3.zero);
+            Vector3 position = Vector3.zero;
+            Vector3 rotation = Vector3.zero;
+            
 
             Vector3 camPos = new Vector3(0, 0, manualCalibrationDistance);
             offAxisCamera.transform.localPosition = camPos;
@@ -82,15 +80,16 @@ namespace StreamTrackingSystem {
             tempOffset.transform.localPosition = new Vector3(flippedPos.x, flippedPos.y, flippedPos.z);
             tempOffset.transform.localEulerAngles = Vector3.zero;
 
-
-            calibrationTransform.position = tempOffset.transform.position;
-            calibrationTransform.rotation = tempOffset.transform.rotation;
+            position = tempOffset.transform.position;
+            rotation = tempOffset.transform.rotation.eulerAngles;
+            
 
             Destroy(tempFace);
             calibration = new StreamTrackingProvider.SavedStreamTrackingConfiguration();
             calibration.name = System.DateTime.Now.ToString();
-            calibration.TrackerOffsetCalibration.Position = calibrationTransform.position;
-            calibration.TrackerOffsetCalibration.Eulers = calibrationTransform.rotation.eulerAngles;
+            calibration.TrackerOffsetCalibration.Position = position;
+            calibration.TrackerOffsetCalibration.Eulers = rotation;
+            TrackingSystemsManager.instance.SetCalibrationTransform(position, rotation);
             GetComponent<StreamTrackingProvider>().SaveCalibration(calibration);
             // Destroy(tempFace);
         }

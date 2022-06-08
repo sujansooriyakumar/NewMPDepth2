@@ -33,7 +33,7 @@ namespace MPDepthCore
 
         public List<TrackingSystem> TrackingSystems => trackingSystems;
 
-
+    
         void OnEnable()
         {
             foreach (TrackingSystem trackingSystem in trackingSystems)
@@ -50,8 +50,13 @@ namespace MPDepthCore
                 parallaxToggleEvent.Toggled += ToggleParallax;
             }
 
-            ChangeSystemTo(currentTrackingSystem);
+            //ChangeSystemTo(currentTrackingSystem);
             SelectCalibration(0);
+        }
+
+        public void SetCamera(OffAxisCameraRig camera)
+        {
+            offAxisCameraRig = camera;
         }
 
         void ToggleParallax(bool parallaxIsOn)
@@ -89,9 +94,10 @@ namespace MPDepthCore
 
         public void SelectCalibration(Int32 index)
         {
-            if (currentTrackingSystem.TrackingCalibrationProvider.AllCalibrations.Count > 0) currentTrackingSystem.TrackingCalibrationProvider.SelectCalibration(index);
-            if (currentTrackingSystem.ScreenCalibrationProvider.AllCalibrations.Count > 0) currentTrackingSystem.ScreenCalibrationProvider.SelectCalibration(index);
-            else currentTrackingSystem.ScreenCalibrationProvider.Calibrate();
+            currentTrackingSystem.ScreenCalibrationProvider.Calibrate();
+
+            //if (currentTrackingSystem.TrackingCalibrationProvider.AllCalibrations.Count > 0) currentTrackingSystem.TrackingCalibrationProvider.SelectCalibration(index);
+            //if (currentTrackingSystem.ScreenCalibrationProvider.AllCalibrations.Count > 0) currentTrackingSystem.ScreenCalibrationProvider.SelectCalibration(index);
         }
         void OnDisable()
         {
@@ -149,6 +155,7 @@ namespace MPDepthCore
         public void UpdateCalibrationDropdown()
         {
             calibrationDropdown.ClearOptions();
+            Debug.Log(currentTrackingSystem.TrackingCalibrationProvider.AllCalibrations.Count);
             for(int i = 0; i < currentTrackingSystem.TrackingCalibrationProvider.AllCalibrations.Count; i++)
             {
                 calibrationDropdown.options.Add(new Dropdown.OptionData(currentTrackingSystem.TrackingCalibrationProvider.AllCalibrations[i].Name));
@@ -180,6 +187,18 @@ namespace MPDepthCore
         public Transform GetCalibrationTransform()
         {
             return calibrationTransform;
+        }
+
+        public void SetCalibrationTransform(Vector3 position, Vector3 rotation)
+        {
+            calibrationTransform.position = position;
+            calibrationTransform.rotation = Quaternion.Euler(rotation);
+        }
+
+        public void UpdateScreenCalibration(Vector2 size)
+        {
+            ProjectionPlane plane = offAxisCameraRig.GetComponentInChildren<ProjectionPlane>();
+            plane.size = size;
         }
     }
 

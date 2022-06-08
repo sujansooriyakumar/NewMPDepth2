@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using MPDepthCore;
 using MPDepthCore.Calibration.Camera;
 using UnityEngine;
 
@@ -19,8 +20,8 @@ namespace StreamTrackingSystem
         public override void SelectCalibration(int selectedIndex)
         {
             currentCalibration = savedCalibrations[selectedIndex];
-            calibrationTransform.position = currentCalibration.TrackerOffsetCalibration.Position;
-            calibrationTransform.rotation = Quaternion.Euler(currentCalibration.TrackerOffsetCalibration.Eulers);
+            if(savedCalibrations.Count != 0) TrackingSystemsManager.instance.SetCalibrationTransform(currentCalibration.TrackerOffsetCalibration.Position, currentCalibration.TrackerOffsetCalibration.Eulers);
+            
         }
 
         public override void Calibrate()

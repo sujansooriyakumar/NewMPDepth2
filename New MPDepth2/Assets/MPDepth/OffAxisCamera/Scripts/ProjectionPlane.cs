@@ -35,7 +35,7 @@ namespace OffAxisCamera
     /// and https://forum.unity.com/threads/vr-cave-projection.76051/
     /// </summary>
     [ExecuteInEditMode]
-    class ProjectionPlane : MonoBehaviour
+    public class ProjectionPlane : MonoBehaviour
     {
 
         [SerializeField] OffAxisCameraRig offAxisCameraRig;

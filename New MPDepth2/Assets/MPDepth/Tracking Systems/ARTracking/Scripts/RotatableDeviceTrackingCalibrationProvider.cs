@@ -1,3 +1,4 @@
+using MPDepthCore;
 using MPDepthCore.Calibration.Camera;
 using System;
 using System.Collections;
@@ -88,10 +89,9 @@ public class RotatableDeviceTrackingCalibrationProvider : TrackingCalibrationPro
     public override void SelectCalibration(int selectedIndex)
     {
         currentCalibration = defaultCalibrations[selectedIndex].trackingCalibration;
-        calibrationTransform.position = Vector3.zero;
-        calibrationTransform.rotation = Quaternion.Euler(Vector3.zero);
-        DeviceOrientation orientation = CurrentOrientation;
-        calibrationTransform.position = OffsetPosition;
+        TrackingSystemsManager.instance.SetCalibrationTransform(OffsetPosition, Vector3.zero);
+
+        
         
         //calibrationTransform.position = currentCalibration.portraitOffset;
 
@@ -130,7 +130,7 @@ public class RotatableDeviceTrackingCalibrationProvider : TrackingCalibrationPro
         SaveData saveData = JsonUtility.FromJson<SaveData>(json);
         this.currentCalibration = saveData.currentCalibration;
         this.savedCalibrations = saveData.savedCalibrations;
-        calibrationTransform.position = currentCalibration.portraitOffset;
+        TrackingSystemsManager.instance.SetCalibrationTransform(OffsetPosition, Vector3.zero);
 
     }
 

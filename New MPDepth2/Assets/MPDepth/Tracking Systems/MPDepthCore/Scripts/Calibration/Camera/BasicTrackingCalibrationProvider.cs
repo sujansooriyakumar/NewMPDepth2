@@ -45,9 +45,10 @@ namespace MPDepthCore.Calibration.Camera {
 
         public override void Calibrate()
         {
-            calibrationTransform.position = Vector3.zero;
-            calibrationTransform.rotation = Quaternion.Euler(Vector3.zero);
-            calibrationTransform.position = currentTrackerCalibration.OffsetCalibration.Position;
+            TrackingSystemsManager.instance.SetCalibrationTransform(Vector3.zero, Vector3.zero);
+            Vector3 rotation = Vector3.zero;
+            Vector3 position = currentTrackerCalibration.OffsetCalibration.Position;
+            TrackingSystemsManager.instance.SetCalibrationTransform(position, rotation);
         }
 
         protected override void FinishSetupAfterLoad()

@@ -27,7 +27,6 @@ public class MotiveTrackingCalibration : MonoBehaviour
     private void Awake()
     {
         TrackingSystem trackingSystem = GetComponentInParent<TrackingSystem>();
-        mainUI = trackingSystem.mainUI;
         offAxisCameraRig = trackingSystem.offAxisCameraRig;
         offAxisCamera = trackingSystem.offAxisCamera;
         trackingSource.TrackingDataUpdated += TrackingUpdated;

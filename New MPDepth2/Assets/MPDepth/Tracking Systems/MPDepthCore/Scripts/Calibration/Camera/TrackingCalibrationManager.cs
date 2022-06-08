@@ -13,7 +13,6 @@ namespace MPDepthCore.Calibration.Camera {
         [SerializeField] MPDepthTrackingSource trackingSource = default;
         [FormerlySerializedAs("calibrationProvider")] [SerializeField] public TrackingCalibrationProvider trackingCalibrationProvider = default;
         
-        [SerializeField] Transform offsetTransform;
 
         [SerializeField] public RawTrackingData rawTrackingData = new RawTrackingData();
         [SerializeField] public CalibratedTrackingData calibratedTrackingData = CalibratedTrackingData.Empty();
@@ -28,7 +27,6 @@ namespace MPDepthCore.Calibration.Camera {
         }
 
         void OnEnable() {
-            calibratedTrackingData = CalibratedTrackingData.From(new RawTrackingData(), offsetTransform);
             trackingSource.TrackingDataUpdated += RawDataUpdated;
         }
 

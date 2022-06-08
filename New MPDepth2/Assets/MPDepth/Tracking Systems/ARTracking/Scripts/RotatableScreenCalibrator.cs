@@ -23,7 +23,7 @@ public class RotatableScreenCalibrator : ScreenCalibrator
     RotatableDeviceScreen.SavedRotatableScreenCalibration calibration;
     bool cancelled;
 
-    public async Task<bool> StartCalibration(RotatableDeviceScreen.SavedRotatableScreenCalibration newCalibration)
+  /*  public async Task<bool> StartCalibration(RotatableDeviceScreen.SavedRotatableScreenCalibration newCalibration)
     {
 
         calibration = newCalibration;
@@ -61,7 +61,7 @@ public class RotatableScreenCalibrator : ScreenCalibrator
         this.offAxisCameraRig.EnableCameraTracking();
 
         return !cancelled;
-    }
+    }*/
 
     public void Complete()
     {

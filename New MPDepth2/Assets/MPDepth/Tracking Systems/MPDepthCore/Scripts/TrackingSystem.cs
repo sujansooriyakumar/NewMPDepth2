@@ -17,7 +17,6 @@ namespace MPDepthCore {
         [SerializeField] ScreenCalibrationProvider screenCalibrationProvider;
 
         [Header("Scene References")]
-        [SerializeField] public GameObject mainUI = default;
         [SerializeField] public OffAxisCameraRig offAxisCameraRig;
         [SerializeField] public Camera offAxisCamera;
 
@@ -31,10 +30,8 @@ namespace MPDepthCore {
         void OnEnable() {
             if (trackingSource == null) return;
             trackingSource.TrackingDataUpdated += TrackingDataWasUpdated;
-            trackingCalibrationProvider.SelectCalibration(0);
-            screenCalibrationProvider.SelectCalibration(0);
-            calibrationTransform = TrackingSystemsManager.instance.GetCalibrationTransform();
-            trackingCalibrationProvider.SetCalibrationTransform(calibrationTransform);
+            //trackingCalibrationProvider.SelectCalibration(0);
+            //screenCalibrationProvider.SelectCalibration(0);
             
         }
 
@@ -47,6 +44,10 @@ namespace MPDepthCore {
             return calibrationTransform;
         }
 
+        public void SetCalibrationTransform(Transform t)
+        {
+            calibrationTransform = t;
+        }
        
 
         public void TurnOff() {

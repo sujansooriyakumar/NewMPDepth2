@@ -23,7 +23,8 @@ namespace MPDepthCore.Calibration.Screen {
 
         public override void Calibrate()
         {
-            screenCalibrator.Calibrate(currentCalibration);
+            currentCalibration = screenCalibrator.Calibrate(currentCalibration);
+            TrackingSystemsManager.instance.UpdateScreenCalibration(new Vector2(currentCalibration.Width, currentCalibration.Height));
         }
 
         public override float Width => currentCalibration.Width;
