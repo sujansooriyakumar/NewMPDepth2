@@ -484,459 +484,457 @@ extern void U3CU3Ec_U3Cget_PlayerListOthersU3Eb__49_0_m476164E024D0D919C9ABF1A23
 extern void U3CU3Ec_U3Cget_PlayerListOthersU3Eb__49_1_m7725B84F4FE19BA18DB2879239DC5D91869D01E3 (void);
 // 0x000000F1 System.String Photon.Pun.PhotonNetwork/<>c::<CallbacksToString>b__217_0(Photon.Realtime.IConnectionCallbacks)
 extern void U3CU3Ec_U3CCallbacksToStringU3Eb__217_0_m373E5FF7EF6851EA784E2C1C3AA0421D0A3D269F (void);
-// 0x000000F2 System.Boolean Photon.Pun.PhotonNetwork/<>c::<OnRegionsPinged>b__316_0(Photon.Realtime.Region)
-extern void U3CU3Ec_U3COnRegionsPingedU3Eb__316_0_mCC92C172190005A354C33A6CCDB929EA9875B1E5 (void);
-// 0x000000F3 System.Void Photon.Pun.PhotonStreamQueue::.ctor(System.Int32)
+// 0x000000F2 System.Void Photon.Pun.PhotonStreamQueue::.ctor(System.Int32)
 extern void PhotonStreamQueue__ctor_mE0BB2C50F7909A2E50A52E2F68CA055E5FAEBB16 (void);
-// 0x000000F4 System.Void Photon.Pun.PhotonStreamQueue::BeginWritePackage()
+// 0x000000F3 System.Void Photon.Pun.PhotonStreamQueue::BeginWritePackage()
 extern void PhotonStreamQueue_BeginWritePackage_mAB54947A606C8424B690FF19CA996A98DA6F8C81 (void);
-// 0x000000F5 System.Void Photon.Pun.PhotonStreamQueue::Reset()
+// 0x000000F4 System.Void Photon.Pun.PhotonStreamQueue::Reset()
 extern void PhotonStreamQueue_Reset_mE68C674FD933433441F7B6761DD0295DB66D3F7F (void);
-// 0x000000F6 System.Void Photon.Pun.PhotonStreamQueue::SendNext(System.Object)
+// 0x000000F5 System.Void Photon.Pun.PhotonStreamQueue::SendNext(System.Object)
 extern void PhotonStreamQueue_SendNext_mD411FF3E7FF4051D856D759AB7F1720FC518E998 (void);
-// 0x000000F7 System.Boolean Photon.Pun.PhotonStreamQueue::HasQueuedObjects()
+// 0x000000F6 System.Boolean Photon.Pun.PhotonStreamQueue::HasQueuedObjects()
 extern void PhotonStreamQueue_HasQueuedObjects_m484A7DC4BD643DADE0F13F215F2B4D46BCEB97E2 (void);
-// 0x000000F8 System.Object Photon.Pun.PhotonStreamQueue::ReceiveNext()
+// 0x000000F7 System.Object Photon.Pun.PhotonStreamQueue::ReceiveNext()
 extern void PhotonStreamQueue_ReceiveNext_m3DFBA0EABC6C149C1C8B458F8B1FD5485440AC56 (void);
-// 0x000000F9 System.Void Photon.Pun.PhotonStreamQueue::Serialize(Photon.Pun.PhotonStream)
+// 0x000000F8 System.Void Photon.Pun.PhotonStreamQueue::Serialize(Photon.Pun.PhotonStream)
 extern void PhotonStreamQueue_Serialize_m9014849027A974A59040B4224DF514ED0A424124 (void);
-// 0x000000FA System.Void Photon.Pun.PhotonStreamQueue::Deserialize(Photon.Pun.PhotonStream)
+// 0x000000F9 System.Void Photon.Pun.PhotonStreamQueue::Deserialize(Photon.Pun.PhotonStream)
 extern void PhotonStreamQueue_Deserialize_mAD8F33EE426F90E169853568C1B1BEA4F71A9294 (void);
-// 0x000000FB System.Int32 Photon.Pun.PhotonView::get_Prefix()
+// 0x000000FA System.Int32 Photon.Pun.PhotonView::get_Prefix()
 extern void PhotonView_get_Prefix_m2F8F881E9D6D267410D0FCAEE50BDD9624D55E42 (void);
-// 0x000000FC System.Void Photon.Pun.PhotonView::set_Prefix(System.Int32)
+// 0x000000FB System.Void Photon.Pun.PhotonView::set_Prefix(System.Int32)
 extern void PhotonView_set_Prefix_m7C24BC844EC043E60B5F99EAC71FBED4BCD46CFF (void);
-// 0x000000FD System.Object[] Photon.Pun.PhotonView::get_InstantiationData()
+// 0x000000FC System.Object[] Photon.Pun.PhotonView::get_InstantiationData()
 extern void PhotonView_get_InstantiationData_m45D06ABDF11E5CF9082F4B0E6715FBE228686E04 (void);
-// 0x000000FE System.Void Photon.Pun.PhotonView::set_InstantiationData(System.Object[])
+// 0x000000FD System.Void Photon.Pun.PhotonView::set_InstantiationData(System.Object[])
 extern void PhotonView_set_InstantiationData_m895DF09DA0BE17A39FF8883E13856B7A12D81DC5 (void);
-// 0x000000FF System.Boolean Photon.Pun.PhotonView::get_IsSceneView()
+// 0x000000FE System.Boolean Photon.Pun.PhotonView::get_IsSceneView()
 extern void PhotonView_get_IsSceneView_m488B97CE627F770B4F60823527C51C18DE995CF6 (void);
-// 0x00000100 System.Boolean Photon.Pun.PhotonView::get_IsRoomView()
+// 0x000000FF System.Boolean Photon.Pun.PhotonView::get_IsRoomView()
 extern void PhotonView_get_IsRoomView_m48B1DAC0C9B09C734CAFE8C5602ADFA166AD5FBB (void);
-// 0x00000101 System.Boolean Photon.Pun.PhotonView::get_IsOwnerActive()
+// 0x00000100 System.Boolean Photon.Pun.PhotonView::get_IsOwnerActive()
 extern void PhotonView_get_IsOwnerActive_m2E804F91880F14CE8AAEBFD5E6558FBBE0F7B67A (void);
-// 0x00000102 System.Boolean Photon.Pun.PhotonView::get_IsMine()
+// 0x00000101 System.Boolean Photon.Pun.PhotonView::get_IsMine()
 extern void PhotonView_get_IsMine_mE15BE477AABC0A3EE31F6E5131483A548F48D823 (void);
-// 0x00000103 System.Void Photon.Pun.PhotonView::set_IsMine(System.Boolean)
+// 0x00000102 System.Void Photon.Pun.PhotonView::set_IsMine(System.Boolean)
 extern void PhotonView_set_IsMine_m47DB674D43E3261E57D32FAF67932BC32117FA45 (void);
-// 0x00000104 System.Boolean Photon.Pun.PhotonView::get_AmController()
+// 0x00000103 System.Boolean Photon.Pun.PhotonView::get_AmController()
 extern void PhotonView_get_AmController_mD3E940604651A5D0778312DA5AC2847922A81283 (void);
-// 0x00000105 Photon.Realtime.Player Photon.Pun.PhotonView::get_Controller()
+// 0x00000104 Photon.Realtime.Player Photon.Pun.PhotonView::get_Controller()
 extern void PhotonView_get_Controller_m8EF22392161BAF2B8276C46599BC8F64904589C1 (void);
-// 0x00000106 System.Void Photon.Pun.PhotonView::set_Controller(Photon.Realtime.Player)
+// 0x00000105 System.Void Photon.Pun.PhotonView::set_Controller(Photon.Realtime.Player)
 extern void PhotonView_set_Controller_mE1CDFEF96720EEA5EA0318900EF98EC6137D0982 (void);
-// 0x00000107 System.Int32 Photon.Pun.PhotonView::get_CreatorActorNr()
+// 0x00000106 System.Int32 Photon.Pun.PhotonView::get_CreatorActorNr()
 extern void PhotonView_get_CreatorActorNr_m6312986A9C95438FD19BE0E2F4691326F268F4B7 (void);
-// 0x00000108 System.Void Photon.Pun.PhotonView::set_CreatorActorNr(System.Int32)
+// 0x00000107 System.Void Photon.Pun.PhotonView::set_CreatorActorNr(System.Int32)
 extern void PhotonView_set_CreatorActorNr_mAD781481D44AB501F858874E47F75B6959231A87 (void);
-// 0x00000109 System.Boolean Photon.Pun.PhotonView::get_AmOwner()
+// 0x00000108 System.Boolean Photon.Pun.PhotonView::get_AmOwner()
 extern void PhotonView_get_AmOwner_m67C76F95A540958AE814D15B043E53A536BC0F88 (void);
-// 0x0000010A System.Void Photon.Pun.PhotonView::set_AmOwner(System.Boolean)
+// 0x00000109 System.Void Photon.Pun.PhotonView::set_AmOwner(System.Boolean)
 extern void PhotonView_set_AmOwner_mD3162EB8DCE079295BEC4165CAF15B08D1B8940F (void);
-// 0x0000010B Photon.Realtime.Player Photon.Pun.PhotonView::get_Owner()
+// 0x0000010A Photon.Realtime.Player Photon.Pun.PhotonView::get_Owner()
 extern void PhotonView_get_Owner_mF639C9E1BE7FB83ABC397658151CEF0317C517BF (void);
-// 0x0000010C System.Void Photon.Pun.PhotonView::set_Owner(Photon.Realtime.Player)
+// 0x0000010B System.Void Photon.Pun.PhotonView::set_Owner(Photon.Realtime.Player)
 extern void PhotonView_set_Owner_mFD38B4028080E585F4136724CA1C2E53722876AE (void);
-// 0x0000010D System.Int32 Photon.Pun.PhotonView::get_OwnerActorNr()
+// 0x0000010C System.Int32 Photon.Pun.PhotonView::get_OwnerActorNr()
 extern void PhotonView_get_OwnerActorNr_m8101EF402C54CE02531D5CA5ED77748076E67856 (void);
-// 0x0000010E System.Void Photon.Pun.PhotonView::set_OwnerActorNr(System.Int32)
+// 0x0000010D System.Void Photon.Pun.PhotonView::set_OwnerActorNr(System.Int32)
 extern void PhotonView_set_OwnerActorNr_m4487A3A6096567713A24B544DA5EEC6D6BA50497 (void);
-// 0x0000010F System.Int32 Photon.Pun.PhotonView::get_ControllerActorNr()
+// 0x0000010E System.Int32 Photon.Pun.PhotonView::get_ControllerActorNr()
 extern void PhotonView_get_ControllerActorNr_m5FE7455025ACCF27EFA3EAB0455052A038C49976 (void);
-// 0x00000110 System.Void Photon.Pun.PhotonView::set_ControllerActorNr(System.Int32)
+// 0x0000010F System.Void Photon.Pun.PhotonView::set_ControllerActorNr(System.Int32)
 extern void PhotonView_set_ControllerActorNr_m33445ADF3FCA4E946E6743481971BBA133B4B45F (void);
-// 0x00000111 System.Int32 Photon.Pun.PhotonView::get_ViewID()
+// 0x00000110 System.Int32 Photon.Pun.PhotonView::get_ViewID()
 extern void PhotonView_get_ViewID_m024548C7B40DF767DF5F3BAF548B25618FAC8D5C (void);
-// 0x00000112 System.Void Photon.Pun.PhotonView::set_ViewID(System.Int32)
+// 0x00000111 System.Void Photon.Pun.PhotonView::set_ViewID(System.Int32)
 extern void PhotonView_set_ViewID_mECEA9C56A0C7584BA6C2F640EEDD9BA846062B68 (void);
-// 0x00000113 System.Void Photon.Pun.PhotonView::Awake()
+// 0x00000112 System.Void Photon.Pun.PhotonView::Awake()
 extern void PhotonView_Awake_m637DBF00966F02B8BF0DA61E7E89F691C3BC0658 (void);
-// 0x00000114 System.Void Photon.Pun.PhotonView::ResetPhotonView(System.Boolean)
+// 0x00000113 System.Void Photon.Pun.PhotonView::ResetPhotonView(System.Boolean)
 extern void PhotonView_ResetPhotonView_m622840817989149FDDC8FFD67EA37C9705AE4506 (void);
-// 0x00000115 System.Void Photon.Pun.PhotonView::RebuildControllerCache(System.Boolean)
+// 0x00000114 System.Void Photon.Pun.PhotonView::RebuildControllerCache(System.Boolean)
 extern void PhotonView_RebuildControllerCache_mE60F1A3F0B658873A4FBE04D6FCD1B8D8D34D5D8 (void);
-// 0x00000116 System.Void Photon.Pun.PhotonView::OnPreNetDestroy(Photon.Pun.PhotonView)
+// 0x00000115 System.Void Photon.Pun.PhotonView::OnPreNetDestroy(Photon.Pun.PhotonView)
 extern void PhotonView_OnPreNetDestroy_m1383F6369BEBB7CB91C31FF6A8F9CC8C1551388E (void);
-// 0x00000117 System.Void Photon.Pun.PhotonView::OnDestroy()
+// 0x00000116 System.Void Photon.Pun.PhotonView::OnDestroy()
 extern void PhotonView_OnDestroy_m737F1EDBBFF9C59B7DF221DBE58C3FAC511A614D (void);
-// 0x00000118 System.Void Photon.Pun.PhotonView::RequestOwnership()
+// 0x00000117 System.Void Photon.Pun.PhotonView::RequestOwnership()
 extern void PhotonView_RequestOwnership_m7BC36EAA9766F321AC8430B893E588DDEB35250D (void);
-// 0x00000119 System.Void Photon.Pun.PhotonView::TransferOwnership(Photon.Realtime.Player)
+// 0x00000118 System.Void Photon.Pun.PhotonView::TransferOwnership(Photon.Realtime.Player)
 extern void PhotonView_TransferOwnership_mEB55DDAA1B560379501604A140BE9B7A74374B55 (void);
-// 0x0000011A System.Void Photon.Pun.PhotonView::TransferOwnership(System.Int32)
+// 0x00000119 System.Void Photon.Pun.PhotonView::TransferOwnership(System.Int32)
 extern void PhotonView_TransferOwnership_m01B6A48CF9F918B0397C3383FAB3950B3884AD33 (void);
-// 0x0000011B System.Void Photon.Pun.PhotonView::FindObservables(System.Boolean)
+// 0x0000011A System.Void Photon.Pun.PhotonView::FindObservables(System.Boolean)
 extern void PhotonView_FindObservables_m966D9464E79520040B1CD5C787A7B252F3EFB26A (void);
-// 0x0000011C System.Void Photon.Pun.PhotonView::SerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x0000011B System.Void Photon.Pun.PhotonView::SerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonView_SerializeView_m2A2A1364635489CE4F388DC53953DC9FE2D957A0 (void);
-// 0x0000011D System.Void Photon.Pun.PhotonView::DeserializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x0000011C System.Void Photon.Pun.PhotonView::DeserializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonView_DeserializeView_mD521644FAF8477EE55560DA56D12843BFFE89D4B (void);
-// 0x0000011E System.Void Photon.Pun.PhotonView::DeserializeComponent(UnityEngine.Component,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x0000011D System.Void Photon.Pun.PhotonView::DeserializeComponent(UnityEngine.Component,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonView_DeserializeComponent_m52485E636485E5F2013F44ABCB0DD12D478A93F8 (void);
-// 0x0000011F System.Void Photon.Pun.PhotonView::SerializeComponent(UnityEngine.Component,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x0000011E System.Void Photon.Pun.PhotonView::SerializeComponent(UnityEngine.Component,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonView_SerializeComponent_mC47B07D87FF882262BFFF07BEB83CFB7691BFF8B (void);
-// 0x00000120 System.Void Photon.Pun.PhotonView::RefreshRpcMonoBehaviourCache()
+// 0x0000011F System.Void Photon.Pun.PhotonView::RefreshRpcMonoBehaviourCache()
 extern void PhotonView_RefreshRpcMonoBehaviourCache_mFD4700C7968D969576803F9FC7B65DD721D04925 (void);
-// 0x00000121 System.Void Photon.Pun.PhotonView::RPC(System.String,Photon.Pun.RpcTarget,System.Object[])
+// 0x00000120 System.Void Photon.Pun.PhotonView::RPC(System.String,Photon.Pun.RpcTarget,System.Object[])
 extern void PhotonView_RPC_m97CDF5E617695D4656A00DBD7015B05D2DC9E8C6 (void);
-// 0x00000122 System.Void Photon.Pun.PhotonView::RpcSecure(System.String,Photon.Pun.RpcTarget,System.Boolean,System.Object[])
+// 0x00000121 System.Void Photon.Pun.PhotonView::RpcSecure(System.String,Photon.Pun.RpcTarget,System.Boolean,System.Object[])
 extern void PhotonView_RpcSecure_m617DEA46251BAAA0E8EAFC94AC443AF4DBD910A9 (void);
-// 0x00000123 System.Void Photon.Pun.PhotonView::RPC(System.String,Photon.Realtime.Player,System.Object[])
+// 0x00000122 System.Void Photon.Pun.PhotonView::RPC(System.String,Photon.Realtime.Player,System.Object[])
 extern void PhotonView_RPC_mEF3BDC753F512BA2B4E2A6CDC724BFCBF5621C61 (void);
-// 0x00000124 System.Void Photon.Pun.PhotonView::RpcSecure(System.String,Photon.Realtime.Player,System.Boolean,System.Object[])
+// 0x00000123 System.Void Photon.Pun.PhotonView::RpcSecure(System.String,Photon.Realtime.Player,System.Boolean,System.Object[])
 extern void PhotonView_RpcSecure_m39FEA3E626404C2BF586D8777831B2FD79C27E14 (void);
-// 0x00000125 Photon.Pun.PhotonView Photon.Pun.PhotonView::Get(UnityEngine.Component)
+// 0x00000124 Photon.Pun.PhotonView Photon.Pun.PhotonView::Get(UnityEngine.Component)
 extern void PhotonView_Get_mC3362DA9919B8982269B055A0D27D7D4895BC3A2 (void);
-// 0x00000126 Photon.Pun.PhotonView Photon.Pun.PhotonView::Get(UnityEngine.GameObject)
+// 0x00000125 Photon.Pun.PhotonView Photon.Pun.PhotonView::Get(UnityEngine.GameObject)
 extern void PhotonView_Get_m89F1F371C3052C840529B53ED2283DC1DFE8D07C (void);
-// 0x00000127 Photon.Pun.PhotonView Photon.Pun.PhotonView::Find(System.Int32)
+// 0x00000126 Photon.Pun.PhotonView Photon.Pun.PhotonView::Find(System.Int32)
 extern void PhotonView_Find_mB5E0B27030057D2FC8FA9FAF5A08BB6AE2A9D2C1 (void);
-// 0x00000128 System.Void Photon.Pun.PhotonView::AddCallbackTarget(Photon.Pun.IPhotonViewCallback)
+// 0x00000127 System.Void Photon.Pun.PhotonView::AddCallbackTarget(Photon.Pun.IPhotonViewCallback)
 extern void PhotonView_AddCallbackTarget_mE49926158D7B9CC61C10CA3F91377A1C1292E854 (void);
-// 0x00000129 System.Void Photon.Pun.PhotonView::RemoveCallbackTarget(Photon.Pun.IPhotonViewCallback)
+// 0x00000128 System.Void Photon.Pun.PhotonView::RemoveCallbackTarget(Photon.Pun.IPhotonViewCallback)
 extern void PhotonView_RemoveCallbackTarget_m8FF1E52C9599E573F8E6D418A7E192B81C9F4116 (void);
-// 0x0000012A System.Void Photon.Pun.PhotonView::AddCallback(Photon.Pun.IPhotonViewCallback)
-// 0x0000012B System.Void Photon.Pun.PhotonView::RemoveCallback(Photon.Pun.IPhotonViewCallback)
-// 0x0000012C System.Void Photon.Pun.PhotonView::UpdateCallbackLists()
+// 0x00000129 System.Void Photon.Pun.PhotonView::AddCallback(Photon.Pun.IPhotonViewCallback)
+// 0x0000012A System.Void Photon.Pun.PhotonView::RemoveCallback(Photon.Pun.IPhotonViewCallback)
+// 0x0000012B System.Void Photon.Pun.PhotonView::UpdateCallbackLists()
 extern void PhotonView_UpdateCallbackLists_mEF3302FD4CFDAD9CF20A82394429082F477FF680 (void);
-// 0x0000012D System.Void Photon.Pun.PhotonView::TryRegisterCallback(Photon.Pun.IPhotonViewCallback,System.Collections.Generic.List`1<T>&,System.Boolean)
-// 0x0000012E System.Void Photon.Pun.PhotonView::RegisterCallback(T,System.Collections.Generic.List`1<T>&,System.Boolean)
-// 0x0000012F System.String Photon.Pun.PhotonView::ToString()
+// 0x0000012C System.Void Photon.Pun.PhotonView::TryRegisterCallback(Photon.Pun.IPhotonViewCallback,System.Collections.Generic.List`1<T>&,System.Boolean)
+// 0x0000012D System.Void Photon.Pun.PhotonView::RegisterCallback(T,System.Collections.Generic.List`1<T>&,System.Boolean)
+// 0x0000012E System.String Photon.Pun.PhotonView::ToString()
 extern void PhotonView_ToString_m563A2E6382E06FFCAED055F6CFD19E973FC25B53 (void);
-// 0x00000130 System.Void Photon.Pun.PhotonView::.ctor()
+// 0x0000012F System.Void Photon.Pun.PhotonView::.ctor()
 extern void PhotonView__ctor_mD1577C3F4D927F18589CCECE9800CD8152987CAB (void);
-// 0x00000131 System.Void Photon.Pun.PhotonView/CallbackTargetChange::.ctor(Photon.Pun.IPhotonViewCallback,System.Type,System.Boolean)
+// 0x00000130 System.Void Photon.Pun.PhotonView/CallbackTargetChange::.ctor(Photon.Pun.IPhotonViewCallback,System.Type,System.Boolean)
 extern void CallbackTargetChange__ctor_m6FDF2FE1107B8DBF00575D8E3D56007196074762 (void);
-// 0x00000132 System.Void Photon.Pun.PunRPC::.ctor()
+// 0x00000131 System.Void Photon.Pun.PunRPC::.ctor()
 extern void PunRPC__ctor_mB04301E5CA11F695DE1AFF36983947C58D1B74E6 (void);
-// 0x00000133 Photon.Pun.PhotonView Photon.Pun.MonoBehaviourPun::get_photonView()
+// 0x00000132 Photon.Pun.PhotonView Photon.Pun.MonoBehaviourPun::get_photonView()
 extern void MonoBehaviourPun_get_photonView_m3F63E6D42FDD54B75EF0EC0D2DC07C5A6CDBFC0C (void);
-// 0x00000134 System.Void Photon.Pun.MonoBehaviourPun::.ctor()
+// 0x00000133 System.Void Photon.Pun.MonoBehaviourPun::.ctor()
 extern void MonoBehaviourPun__ctor_mCE5059964AC90D4EBEB442C9A3B67F92A966E617 (void);
-// 0x00000135 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnEnable()
+// 0x00000134 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnEnable()
 extern void MonoBehaviourPunCallbacks_OnEnable_m9FE9E6E05B444711D2354A8884DAF3A1BFA7AFB2 (void);
-// 0x00000136 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnDisable()
+// 0x00000135 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnDisable()
 extern void MonoBehaviourPunCallbacks_OnDisable_m15A4C13D2102C9E1A24AF44704532FB6456309C3 (void);
-// 0x00000137 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnConnected()
+// 0x00000136 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnConnected()
 extern void MonoBehaviourPunCallbacks_OnConnected_mAFA5EDFFAD40C6CCC3CB36FA3E202BCE39E22A31 (void);
-// 0x00000138 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnLeftRoom()
+// 0x00000137 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnLeftRoom()
 extern void MonoBehaviourPunCallbacks_OnLeftRoom_mB5FE0A55091567B4B8BFC0A41990EA17F7475D7D (void);
-// 0x00000139 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnMasterClientSwitched(Photon.Realtime.Player)
+// 0x00000138 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnMasterClientSwitched(Photon.Realtime.Player)
 extern void MonoBehaviourPunCallbacks_OnMasterClientSwitched_mBB4BA0FC6357DBD90712244F4F62650A750FAA63 (void);
-// 0x0000013A System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnCreateRoomFailed(System.Int16,System.String)
+// 0x00000139 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnCreateRoomFailed(System.Int16,System.String)
 extern void MonoBehaviourPunCallbacks_OnCreateRoomFailed_m790730DB0E6F0EBE1281D5079FB16673DD84F868 (void);
-// 0x0000013B System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnJoinRoomFailed(System.Int16,System.String)
+// 0x0000013A System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnJoinRoomFailed(System.Int16,System.String)
 extern void MonoBehaviourPunCallbacks_OnJoinRoomFailed_m59F73AEC50EA4900E3660145792CC700FAFA5F0A (void);
-// 0x0000013C System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnCreatedRoom()
+// 0x0000013B System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnCreatedRoom()
 extern void MonoBehaviourPunCallbacks_OnCreatedRoom_m9959902D8F1370E545918C68D16767815D272D65 (void);
-// 0x0000013D System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnJoinedLobby()
+// 0x0000013C System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnJoinedLobby()
 extern void MonoBehaviourPunCallbacks_OnJoinedLobby_mC6743579F4683395F45F564477DD1CAD1BDF7B9B (void);
-// 0x0000013E System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnLeftLobby()
+// 0x0000013D System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnLeftLobby()
 extern void MonoBehaviourPunCallbacks_OnLeftLobby_mF3383465AA06DEB8339C5A6003BA79DEA5DBACEF (void);
-// 0x0000013F System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnDisconnected(Photon.Realtime.DisconnectCause)
+// 0x0000013E System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnDisconnected(Photon.Realtime.DisconnectCause)
 extern void MonoBehaviourPunCallbacks_OnDisconnected_m3B13A9E8E70097BAA7FA0A18F98C144247932B36 (void);
-// 0x00000140 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnRegionListReceived(Photon.Realtime.RegionHandler)
+// 0x0000013F System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnRegionListReceived(Photon.Realtime.RegionHandler)
 extern void MonoBehaviourPunCallbacks_OnRegionListReceived_mE6E60140B027FD19F77F2A25ABD2DE92AE8FFAD4 (void);
-// 0x00000141 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnRoomListUpdate(System.Collections.Generic.List`1<Photon.Realtime.RoomInfo>)
+// 0x00000140 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnRoomListUpdate(System.Collections.Generic.List`1<Photon.Realtime.RoomInfo>)
 extern void MonoBehaviourPunCallbacks_OnRoomListUpdate_m72E44DCE63F3867FA9BD67C3845B21BE887910FF (void);
-// 0x00000142 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnJoinedRoom()
+// 0x00000141 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnJoinedRoom()
 extern void MonoBehaviourPunCallbacks_OnJoinedRoom_m58AF2C300B21D8DA1B3D91889C91E66116366A10 (void);
-// 0x00000143 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnPlayerEnteredRoom(Photon.Realtime.Player)
+// 0x00000142 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnPlayerEnteredRoom(Photon.Realtime.Player)
 extern void MonoBehaviourPunCallbacks_OnPlayerEnteredRoom_m11D751FB2E32F3A3F1A672BFD628C5790BC09E3B (void);
-// 0x00000144 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnPlayerLeftRoom(Photon.Realtime.Player)
+// 0x00000143 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnPlayerLeftRoom(Photon.Realtime.Player)
 extern void MonoBehaviourPunCallbacks_OnPlayerLeftRoom_m926395E55998789CEECA333D0BB669F4D7D433EE (void);
-// 0x00000145 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnJoinRandomFailed(System.Int16,System.String)
+// 0x00000144 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnJoinRandomFailed(System.Int16,System.String)
 extern void MonoBehaviourPunCallbacks_OnJoinRandomFailed_mFF23C4DD9444109A33449FB75702CE02711E6508 (void);
-// 0x00000146 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnConnectedToMaster()
+// 0x00000145 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnConnectedToMaster()
 extern void MonoBehaviourPunCallbacks_OnConnectedToMaster_mD522580AE6F245FE65BA0CA01D377056A44DE946 (void);
-// 0x00000147 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnRoomPropertiesUpdate(ExitGames.Client.Photon.Hashtable)
+// 0x00000146 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnRoomPropertiesUpdate(ExitGames.Client.Photon.Hashtable)
 extern void MonoBehaviourPunCallbacks_OnRoomPropertiesUpdate_m8D638F68614185C82F6AA1B1DC6308CB336DDB10 (void);
-// 0x00000148 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnPlayerPropertiesUpdate(Photon.Realtime.Player,ExitGames.Client.Photon.Hashtable)
+// 0x00000147 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnPlayerPropertiesUpdate(Photon.Realtime.Player,ExitGames.Client.Photon.Hashtable)
 extern void MonoBehaviourPunCallbacks_OnPlayerPropertiesUpdate_m2835D01B5FDCD7E553FAF70267EE19095EFE7EA3 (void);
-// 0x00000149 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnFriendListUpdate(System.Collections.Generic.List`1<Photon.Realtime.FriendInfo>)
+// 0x00000148 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnFriendListUpdate(System.Collections.Generic.List`1<Photon.Realtime.FriendInfo>)
 extern void MonoBehaviourPunCallbacks_OnFriendListUpdate_m6D8D26E915CF012F5C3D7D26E05C71C37F0A5DB8 (void);
-// 0x0000014A System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnCustomAuthenticationResponse(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+// 0x00000149 System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnCustomAuthenticationResponse(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
 extern void MonoBehaviourPunCallbacks_OnCustomAuthenticationResponse_m54383A77348B2DD029B3D16B8E438D09A56F30AE (void);
-// 0x0000014B System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnCustomAuthenticationFailed(System.String)
+// 0x0000014A System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnCustomAuthenticationFailed(System.String)
 extern void MonoBehaviourPunCallbacks_OnCustomAuthenticationFailed_m39856C74679FE9E1228A9E6C8AD548321A320B26 (void);
-// 0x0000014C System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnWebRpcResponse(ExitGames.Client.Photon.OperationResponse)
+// 0x0000014B System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnWebRpcResponse(ExitGames.Client.Photon.OperationResponse)
 extern void MonoBehaviourPunCallbacks_OnWebRpcResponse_m3EA637B5FC8155201651F62CACD6C1CDE2A8F396 (void);
-// 0x0000014D System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnLobbyStatisticsUpdate(System.Collections.Generic.List`1<Photon.Realtime.TypedLobbyInfo>)
+// 0x0000014C System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnLobbyStatisticsUpdate(System.Collections.Generic.List`1<Photon.Realtime.TypedLobbyInfo>)
 extern void MonoBehaviourPunCallbacks_OnLobbyStatisticsUpdate_m06BB6AF0075C627687AA611324E7573C090459BD (void);
-// 0x0000014E System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnErrorInfo(Photon.Realtime.ErrorInfo)
+// 0x0000014D System.Void Photon.Pun.MonoBehaviourPunCallbacks::OnErrorInfo(Photon.Realtime.ErrorInfo)
 extern void MonoBehaviourPunCallbacks_OnErrorInfo_m089DEBD53C20F449B172E5F6242D890D27E77E5C (void);
-// 0x0000014F System.Void Photon.Pun.MonoBehaviourPunCallbacks::.ctor()
+// 0x0000014E System.Void Photon.Pun.MonoBehaviourPunCallbacks::.ctor()
 extern void MonoBehaviourPunCallbacks__ctor_m62F4C1105FC1D237DEBE4BE76535F8152A8FF553 (void);
-// 0x00000150 System.Void Photon.Pun.PhotonMessageInfo::.ctor(Photon.Realtime.Player,System.Int32,Photon.Pun.PhotonView)
+// 0x0000014F System.Void Photon.Pun.PhotonMessageInfo::.ctor(Photon.Realtime.Player,System.Int32,Photon.Pun.PhotonView)
 extern void PhotonMessageInfo__ctor_m460F5B71A501C3A4B65970CFB8FF3AEB3D589DB6 (void);
-// 0x00000151 System.Double Photon.Pun.PhotonMessageInfo::get_timestamp()
+// 0x00000150 System.Double Photon.Pun.PhotonMessageInfo::get_timestamp()
 extern void PhotonMessageInfo_get_timestamp_m8085CA2B61099188C189B4C01293CC9458A52BBD (void);
-// 0x00000152 System.Double Photon.Pun.PhotonMessageInfo::get_SentServerTime()
+// 0x00000151 System.Double Photon.Pun.PhotonMessageInfo::get_SentServerTime()
 extern void PhotonMessageInfo_get_SentServerTime_mE8D94BF3C4ECBC3C71DAD1EF8E82CF408DDC9B90 (void);
-// 0x00000153 System.Int32 Photon.Pun.PhotonMessageInfo::get_SentServerTimestamp()
+// 0x00000152 System.Int32 Photon.Pun.PhotonMessageInfo::get_SentServerTimestamp()
 extern void PhotonMessageInfo_get_SentServerTimestamp_m401BF1AF793A20B69BC6C1CCC3432B9DC1751B67 (void);
-// 0x00000154 System.String Photon.Pun.PhotonMessageInfo::ToString()
+// 0x00000153 System.String Photon.Pun.PhotonMessageInfo::ToString()
 extern void PhotonMessageInfo_ToString_m7510C223D5C90664456950B6C5AEF39D7A77D87D (void);
-// 0x00000155 System.Void Photon.Pun.PunEvent::.ctor()
+// 0x00000154 System.Void Photon.Pun.PunEvent::.ctor()
 extern void PunEvent__ctor_mEE9A018459FB2727F6CEA0915B7153BBC74D41AA (void);
-// 0x00000156 System.Boolean Photon.Pun.PhotonStream::get_IsWriting()
+// 0x00000155 System.Boolean Photon.Pun.PhotonStream::get_IsWriting()
 extern void PhotonStream_get_IsWriting_mAE4315E0AD6B3A0770F8304D6D61306471742100 (void);
-// 0x00000157 System.Void Photon.Pun.PhotonStream::set_IsWriting(System.Boolean)
+// 0x00000156 System.Void Photon.Pun.PhotonStream::set_IsWriting(System.Boolean)
 extern void PhotonStream_set_IsWriting_mED961CCA010FB7F4E757A91CA02754A254F9AF68 (void);
-// 0x00000158 System.Boolean Photon.Pun.PhotonStream::get_IsReading()
+// 0x00000157 System.Boolean Photon.Pun.PhotonStream::get_IsReading()
 extern void PhotonStream_get_IsReading_m85B1A69AFCE423D57E2410B40AB35B5D5D80FCA3 (void);
-// 0x00000159 System.Int32 Photon.Pun.PhotonStream::get_Count()
+// 0x00000158 System.Int32 Photon.Pun.PhotonStream::get_Count()
 extern void PhotonStream_get_Count_mD2100DB35310E1B6E551CD201030D80205E0A3D1 (void);
-// 0x0000015A System.Void Photon.Pun.PhotonStream::.ctor(System.Boolean,System.Object[])
+// 0x00000159 System.Void Photon.Pun.PhotonStream::.ctor(System.Boolean,System.Object[])
 extern void PhotonStream__ctor_m3019E703CECB3B137A0A586BA96B32CBA90E980F (void);
-// 0x0000015B System.Void Photon.Pun.PhotonStream::SetReadStream(System.Object[],System.Int32)
+// 0x0000015A System.Void Photon.Pun.PhotonStream::SetReadStream(System.Object[],System.Int32)
 extern void PhotonStream_SetReadStream_m17BC4B085D1E5E834AC5BBEA256170C7622AEB01 (void);
-// 0x0000015C System.Void Photon.Pun.PhotonStream::SetWriteStream(System.Collections.Generic.List`1<System.Object>,System.Int32)
+// 0x0000015B System.Void Photon.Pun.PhotonStream::SetWriteStream(System.Collections.Generic.List`1<System.Object>,System.Int32)
 extern void PhotonStream_SetWriteStream_m543E5AB19D8FAF0B61766D9EE27E3D55C3F0BAB0 (void);
-// 0x0000015D System.Collections.Generic.List`1<System.Object> Photon.Pun.PhotonStream::GetWriteStream()
+// 0x0000015C System.Collections.Generic.List`1<System.Object> Photon.Pun.PhotonStream::GetWriteStream()
 extern void PhotonStream_GetWriteStream_m37960C98A18B27CB9442040A8B45BD2FA90EDDFE (void);
-// 0x0000015E System.Void Photon.Pun.PhotonStream::ResetWriteStream()
+// 0x0000015D System.Void Photon.Pun.PhotonStream::ResetWriteStream()
 extern void PhotonStream_ResetWriteStream_mF0DBDEEEAE7EDC08C0189CE3F819E8272C6F916A (void);
-// 0x0000015F System.Object Photon.Pun.PhotonStream::ReceiveNext()
+// 0x0000015E System.Object Photon.Pun.PhotonStream::ReceiveNext()
 extern void PhotonStream_ReceiveNext_mF6535E8467C5C894E87F9162295699226504F19A (void);
-// 0x00000160 System.Object Photon.Pun.PhotonStream::PeekNext()
+// 0x0000015F System.Object Photon.Pun.PhotonStream::PeekNext()
 extern void PhotonStream_PeekNext_m6A2592DDB7E3ED60BE123AA8F5D13340ED67AE9F (void);
-// 0x00000161 System.Void Photon.Pun.PhotonStream::SendNext(System.Object)
+// 0x00000160 System.Void Photon.Pun.PhotonStream::SendNext(System.Object)
 extern void PhotonStream_SendNext_mEFDDED41389B8F80F4B181478A0165550DD83A4A (void);
-// 0x00000162 System.Boolean Photon.Pun.PhotonStream::CopyToListAndClear(System.Collections.Generic.List`1<System.Object>)
+// 0x00000161 System.Boolean Photon.Pun.PhotonStream::CopyToListAndClear(System.Collections.Generic.List`1<System.Object>)
 extern void PhotonStream_CopyToListAndClear_m4BC00556BF659FA69EFC8638D6D5831C866CF4D6 (void);
-// 0x00000163 System.Object[] Photon.Pun.PhotonStream::ToArray()
+// 0x00000162 System.Object[] Photon.Pun.PhotonStream::ToArray()
 extern void PhotonStream_ToArray_m3D66469C5D1483688AA45B81D0193408398346BA (void);
-// 0x00000164 System.Void Photon.Pun.PhotonStream::Serialize(System.Boolean&)
+// 0x00000163 System.Void Photon.Pun.PhotonStream::Serialize(System.Boolean&)
 extern void PhotonStream_Serialize_mFF334CFF038195A6114B1E3C9DA0A2271F7B8A7A (void);
-// 0x00000165 System.Void Photon.Pun.PhotonStream::Serialize(System.Int32&)
+// 0x00000164 System.Void Photon.Pun.PhotonStream::Serialize(System.Int32&)
 extern void PhotonStream_Serialize_m51DFE527459F91F898C8AA7D65978C1DBB926F14 (void);
-// 0x00000166 System.Void Photon.Pun.PhotonStream::Serialize(System.String&)
+// 0x00000165 System.Void Photon.Pun.PhotonStream::Serialize(System.String&)
 extern void PhotonStream_Serialize_mA891A2D93B4812F59AA5D2F95CACA7438A1F4FE6 (void);
-// 0x00000167 System.Void Photon.Pun.PhotonStream::Serialize(System.Char&)
+// 0x00000166 System.Void Photon.Pun.PhotonStream::Serialize(System.Char&)
 extern void PhotonStream_Serialize_mBADE9F77CC18EDFA6DD9230C803BE860A2F06155 (void);
-// 0x00000168 System.Void Photon.Pun.PhotonStream::Serialize(System.Int16&)
+// 0x00000167 System.Void Photon.Pun.PhotonStream::Serialize(System.Int16&)
 extern void PhotonStream_Serialize_mD732B6210192D1D7B2E0FE410E543E6BA59E617D (void);
-// 0x00000169 System.Void Photon.Pun.PhotonStream::Serialize(System.Single&)
+// 0x00000168 System.Void Photon.Pun.PhotonStream::Serialize(System.Single&)
 extern void PhotonStream_Serialize_m3F700E78B54EF224DF23B773280A3C87D8F36BA1 (void);
-// 0x0000016A System.Void Photon.Pun.PhotonStream::Serialize(Photon.Realtime.Player&)
+// 0x00000169 System.Void Photon.Pun.PhotonStream::Serialize(Photon.Realtime.Player&)
 extern void PhotonStream_Serialize_mB1D1B10577A5C19DD893753C7623C32F2997FB0C (void);
-// 0x0000016B System.Void Photon.Pun.PhotonStream::Serialize(UnityEngine.Vector3&)
+// 0x0000016A System.Void Photon.Pun.PhotonStream::Serialize(UnityEngine.Vector3&)
 extern void PhotonStream_Serialize_m48175CB7AD614D7B8995C44778D41D7612BED013 (void);
-// 0x0000016C System.Void Photon.Pun.PhotonStream::Serialize(UnityEngine.Vector2&)
+// 0x0000016B System.Void Photon.Pun.PhotonStream::Serialize(UnityEngine.Vector2&)
 extern void PhotonStream_Serialize_mEB74181DA1F6E8F4CA4DCE31556EB13C0EB8FF8C (void);
-// 0x0000016D System.Void Photon.Pun.PhotonStream::Serialize(UnityEngine.Quaternion&)
+// 0x0000016C System.Void Photon.Pun.PhotonStream::Serialize(UnityEngine.Quaternion&)
 extern void PhotonStream_Serialize_m115BFCF462354ABAD15D34CBD544C93FF4291F07 (void);
-// 0x0000016E System.String Photon.Pun.SceneManagerHelper::get_ActiveSceneName()
+// 0x0000016D System.String Photon.Pun.SceneManagerHelper::get_ActiveSceneName()
 extern void SceneManagerHelper_get_ActiveSceneName_m07552766F052EABAB34AE40AE91F2D72F58F682E (void);
-// 0x0000016F System.Int32 Photon.Pun.SceneManagerHelper::get_ActiveSceneBuildIndex()
+// 0x0000016E System.Int32 Photon.Pun.SceneManagerHelper::get_ActiveSceneBuildIndex()
 extern void SceneManagerHelper_get_ActiveSceneBuildIndex_m1AA27E5F506724ED13401567166BB3A9C989B5FA (void);
-// 0x00000170 System.Void Photon.Pun.SceneManagerHelper::.ctor()
+// 0x0000016F System.Void Photon.Pun.SceneManagerHelper::.ctor()
 extern void SceneManagerHelper__ctor_mA5ED2B9170897D32094F20F752EBA07C275AFF63 (void);
-// 0x00000171 UnityEngine.GameObject Photon.Pun.DefaultPool::Instantiate(System.String,UnityEngine.Vector3,UnityEngine.Quaternion)
+// 0x00000170 UnityEngine.GameObject Photon.Pun.DefaultPool::Instantiate(System.String,UnityEngine.Vector3,UnityEngine.Quaternion)
 extern void DefaultPool_Instantiate_m19AEF35AA1F8C06CCE393E105EA1036D8D9EC929 (void);
-// 0x00000172 System.Void Photon.Pun.DefaultPool::Destroy(UnityEngine.GameObject)
+// 0x00000171 System.Void Photon.Pun.DefaultPool::Destroy(UnityEngine.GameObject)
 extern void DefaultPool_Destroy_m362E178F579F95CB1FD9BC63BAB606688623D314 (void);
-// 0x00000173 System.Void Photon.Pun.DefaultPool::.ctor()
+// 0x00000172 System.Void Photon.Pun.DefaultPool::.ctor()
 extern void DefaultPool__ctor_m5ABD35607DE3491AC2141F9ACD7964F3AF0B87BD (void);
-// 0x00000174 System.Reflection.ParameterInfo[] Photon.Pun.PunExtensions::GetCachedParemeters(System.Reflection.MethodInfo)
+// 0x00000173 System.Reflection.ParameterInfo[] Photon.Pun.PunExtensions::GetCachedParemeters(System.Reflection.MethodInfo)
 extern void PunExtensions_GetCachedParemeters_m03B80B2329F0866EB5F6FD09D759C841EFCD9F5C (void);
-// 0x00000175 Photon.Pun.PhotonView[] Photon.Pun.PunExtensions::GetPhotonViewsInChildren(UnityEngine.GameObject)
+// 0x00000174 Photon.Pun.PhotonView[] Photon.Pun.PunExtensions::GetPhotonViewsInChildren(UnityEngine.GameObject)
 extern void PunExtensions_GetPhotonViewsInChildren_m39CCA27BE4E1FA0E63969D935C16A523029CD748 (void);
-// 0x00000176 Photon.Pun.PhotonView Photon.Pun.PunExtensions::GetPhotonView(UnityEngine.GameObject)
+// 0x00000175 Photon.Pun.PhotonView Photon.Pun.PunExtensions::GetPhotonView(UnityEngine.GameObject)
 extern void PunExtensions_GetPhotonView_m4CF5F2F8A1BD8046995FF41970EE2704FE7EFAAE (void);
-// 0x00000177 System.Boolean Photon.Pun.PunExtensions::AlmostEquals(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+// 0x00000176 System.Boolean Photon.Pun.PunExtensions::AlmostEquals(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 extern void PunExtensions_AlmostEquals_mF2C6B20F267ED0039155A2BF6A1001EFC24D1622 (void);
-// 0x00000178 System.Boolean Photon.Pun.PunExtensions::AlmostEquals(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+// 0x00000177 System.Boolean Photon.Pun.PunExtensions::AlmostEquals(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
 extern void PunExtensions_AlmostEquals_mE2EDD3C0A61739D81E88DC96143FB8CDD75C5E16 (void);
-// 0x00000179 System.Boolean Photon.Pun.PunExtensions::AlmostEquals(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
+// 0x00000178 System.Boolean Photon.Pun.PunExtensions::AlmostEquals(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
 extern void PunExtensions_AlmostEquals_m4D0DAB4B7932B9A35108000E88108FAC4A47B8C0 (void);
-// 0x0000017A System.Boolean Photon.Pun.PunExtensions::AlmostEquals(System.Single,System.Single,System.Single)
+// 0x00000179 System.Boolean Photon.Pun.PunExtensions::AlmostEquals(System.Single,System.Single,System.Single)
 extern void PunExtensions_AlmostEquals_mCF0848EB67246A23803429C6D8D15EBA47F913AB (void);
-// 0x0000017B System.Boolean Photon.Pun.PunExtensions::CheckIsAssignableFrom(System.Type,System.Type)
+// 0x0000017A System.Boolean Photon.Pun.PunExtensions::CheckIsAssignableFrom(System.Type,System.Type)
 extern void PunExtensions_CheckIsAssignableFrom_m898C253BB0C2365F344858531B1F7D114199305F (void);
-// 0x0000017C System.Boolean Photon.Pun.PunExtensions::CheckIsInterface(System.Type)
+// 0x0000017B System.Boolean Photon.Pun.PunExtensions::CheckIsInterface(System.Type)
 extern void PunExtensions_CheckIsInterface_mC53C2646AE54AA6E2FF0BE06FB94475F01FCDB78 (void);
-// 0x0000017D System.Void Photon.Pun.PunExtensions::.cctor()
+// 0x0000017C System.Void Photon.Pun.PunExtensions::.cctor()
 extern void PunExtensions__cctor_mE1A47F8E1A2F545A906D063BB57E8FAAD50D3781 (void);
-// 0x0000017E System.Void Photon.Pun.ServerSettings::UseCloud(System.String,System.String)
+// 0x0000017D System.Void Photon.Pun.ServerSettings::UseCloud(System.String,System.String)
 extern void ServerSettings_UseCloud_m5E8B2497586E38C2B438AABE34E6B5651278859D (void);
-// 0x0000017F System.Boolean Photon.Pun.ServerSettings::IsAppId(System.String)
+// 0x0000017E System.Boolean Photon.Pun.ServerSettings::IsAppId(System.String)
 extern void ServerSettings_IsAppId_mC0938957DB02BE8E0EBD73B776427120278CCE46 (void);
-// 0x00000180 System.String Photon.Pun.ServerSettings::get_BestRegionSummaryInPreferences()
+// 0x0000017F System.String Photon.Pun.ServerSettings::get_BestRegionSummaryInPreferences()
 extern void ServerSettings_get_BestRegionSummaryInPreferences_mCC0B31437E5BDED0541D7D810A678A8928E30191 (void);
-// 0x00000181 System.Void Photon.Pun.ServerSettings::ResetBestRegionCodeInPreferences()
+// 0x00000180 System.Void Photon.Pun.ServerSettings::ResetBestRegionCodeInPreferences()
 extern void ServerSettings_ResetBestRegionCodeInPreferences_mBB4C752844BE894C52E35D72FF390DBC84EDCA4F (void);
-// 0x00000182 System.String Photon.Pun.ServerSettings::ToString()
+// 0x00000181 System.String Photon.Pun.ServerSettings::ToString()
 extern void ServerSettings_ToString_m44D611FDF0CF8601586DF780DE07AEEEFDF0931E (void);
-// 0x00000183 System.Void Photon.Pun.ServerSettings::.ctor()
+// 0x00000182 System.Void Photon.Pun.ServerSettings::.ctor()
 extern void ServerSettings__ctor_m814F00299E77F85433221A10B385F6BAD185099A (void);
-// 0x00000184 T Photon.Pun.NestedComponentUtilities::EnsureRootComponentExists(UnityEngine.Transform)
-// 0x00000185 T Photon.Pun.NestedComponentUtilities::GetParentComponent(UnityEngine.Transform)
-// 0x00000186 System.Void Photon.Pun.NestedComponentUtilities::GetNestedComponentsInParents(UnityEngine.Transform,System.Collections.Generic.List`1<T>)
-// 0x00000187 T Photon.Pun.NestedComponentUtilities::GetNestedComponentInChildren(UnityEngine.Transform,System.Boolean)
-// 0x00000188 T Photon.Pun.NestedComponentUtilities::GetNestedComponentInParent(UnityEngine.Transform)
-// 0x00000189 T Photon.Pun.NestedComponentUtilities::GetNestedComponentInParents(UnityEngine.Transform)
-// 0x0000018A System.Void Photon.Pun.NestedComponentUtilities::GetNestedComponentsInParents(UnityEngine.Transform,System.Collections.Generic.List`1<T>)
-// 0x0000018B System.Collections.Generic.List`1<T> Photon.Pun.NestedComponentUtilities::GetNestedComponentsInChildren(UnityEngine.Transform,System.Collections.Generic.List`1<T>,System.Boolean)
-// 0x0000018C System.Collections.Generic.List`1<T> Photon.Pun.NestedComponentUtilities::GetNestedComponentsInChildren(UnityEngine.Transform,System.Collections.Generic.List`1<T>,System.Boolean,System.Type[])
-// 0x0000018D System.Void Photon.Pun.NestedComponentUtilities::GetNestedComponentsInChildren(UnityEngine.Transform,System.Boolean,System.Collections.Generic.List`1<T>)
-// 0x0000018E System.Void Photon.Pun.NestedComponentUtilities::.cctor()
+// 0x00000183 T Photon.Pun.NestedComponentUtilities::EnsureRootComponentExists(UnityEngine.Transform)
+// 0x00000184 T Photon.Pun.NestedComponentUtilities::GetParentComponent(UnityEngine.Transform)
+// 0x00000185 System.Void Photon.Pun.NestedComponentUtilities::GetNestedComponentsInParents(UnityEngine.Transform,System.Collections.Generic.List`1<T>)
+// 0x00000186 T Photon.Pun.NestedComponentUtilities::GetNestedComponentInChildren(UnityEngine.Transform,System.Boolean)
+// 0x00000187 T Photon.Pun.NestedComponentUtilities::GetNestedComponentInParent(UnityEngine.Transform)
+// 0x00000188 T Photon.Pun.NestedComponentUtilities::GetNestedComponentInParents(UnityEngine.Transform)
+// 0x00000189 System.Void Photon.Pun.NestedComponentUtilities::GetNestedComponentsInParents(UnityEngine.Transform,System.Collections.Generic.List`1<T>)
+// 0x0000018A System.Collections.Generic.List`1<T> Photon.Pun.NestedComponentUtilities::GetNestedComponentsInChildren(UnityEngine.Transform,System.Collections.Generic.List`1<T>,System.Boolean)
+// 0x0000018B System.Collections.Generic.List`1<T> Photon.Pun.NestedComponentUtilities::GetNestedComponentsInChildren(UnityEngine.Transform,System.Collections.Generic.List`1<T>,System.Boolean,System.Type[])
+// 0x0000018C System.Void Photon.Pun.NestedComponentUtilities::GetNestedComponentsInChildren(UnityEngine.Transform,System.Boolean,System.Collections.Generic.List`1<T>)
+// 0x0000018D System.Void Photon.Pun.NestedComponentUtilities::.cctor()
 extern void NestedComponentUtilities__cctor_mC560678169AC48918742D8AAEE1A79E72B2DA386 (void);
-// 0x0000018F System.Void Photon.Pun.PhotonAnimatorView::Awake()
+// 0x0000018E System.Void Photon.Pun.PhotonAnimatorView::Awake()
 extern void PhotonAnimatorView_Awake_m3F0C810A10CE506A109AFD940A34A619ECB241DD (void);
-// 0x00000190 System.Void Photon.Pun.PhotonAnimatorView::Update()
+// 0x0000018F System.Void Photon.Pun.PhotonAnimatorView::Update()
 extern void PhotonAnimatorView_Update_m26D1996AF762D9154C2A1716F5F7CEAA0953E14C (void);
-// 0x00000191 System.Void Photon.Pun.PhotonAnimatorView::CacheDiscreteTriggers()
+// 0x00000190 System.Void Photon.Pun.PhotonAnimatorView::CacheDiscreteTriggers()
 extern void PhotonAnimatorView_CacheDiscreteTriggers_mF03CCE69BE666B01DA4AF0AB972519D9DAD6EB94 (void);
-// 0x00000192 System.Boolean Photon.Pun.PhotonAnimatorView::DoesLayerSynchronizeTypeExist(System.Int32)
+// 0x00000191 System.Boolean Photon.Pun.PhotonAnimatorView::DoesLayerSynchronizeTypeExist(System.Int32)
 extern void PhotonAnimatorView_DoesLayerSynchronizeTypeExist_m209DAB3897F2FE6C950D7F52ECBC1B8CE38E39A0 (void);
-// 0x00000193 System.Boolean Photon.Pun.PhotonAnimatorView::DoesParameterSynchronizeTypeExist(System.String)
+// 0x00000192 System.Boolean Photon.Pun.PhotonAnimatorView::DoesParameterSynchronizeTypeExist(System.String)
 extern void PhotonAnimatorView_DoesParameterSynchronizeTypeExist_mB85646FB6ED43FB08831A38CE02A0C82185E24B5 (void);
-// 0x00000194 System.Collections.Generic.List`1<Photon.Pun.PhotonAnimatorView/SynchronizedLayer> Photon.Pun.PhotonAnimatorView::GetSynchronizedLayers()
+// 0x00000193 System.Collections.Generic.List`1<Photon.Pun.PhotonAnimatorView/SynchronizedLayer> Photon.Pun.PhotonAnimatorView::GetSynchronizedLayers()
 extern void PhotonAnimatorView_GetSynchronizedLayers_m4AB53A8B52191EB5F11E29895021DD475875214D (void);
-// 0x00000195 System.Collections.Generic.List`1<Photon.Pun.PhotonAnimatorView/SynchronizedParameter> Photon.Pun.PhotonAnimatorView::GetSynchronizedParameters()
+// 0x00000194 System.Collections.Generic.List`1<Photon.Pun.PhotonAnimatorView/SynchronizedParameter> Photon.Pun.PhotonAnimatorView::GetSynchronizedParameters()
 extern void PhotonAnimatorView_GetSynchronizedParameters_m6897BB23F5527C47BE7D15E197E04185E8659CCE (void);
-// 0x00000196 Photon.Pun.PhotonAnimatorView/SynchronizeType Photon.Pun.PhotonAnimatorView::GetLayerSynchronizeType(System.Int32)
+// 0x00000195 Photon.Pun.PhotonAnimatorView/SynchronizeType Photon.Pun.PhotonAnimatorView::GetLayerSynchronizeType(System.Int32)
 extern void PhotonAnimatorView_GetLayerSynchronizeType_m8ED4E42CDFE5FD3C97FD10CC4D73B6FD72BB7A33 (void);
-// 0x00000197 Photon.Pun.PhotonAnimatorView/SynchronizeType Photon.Pun.PhotonAnimatorView::GetParameterSynchronizeType(System.String)
+// 0x00000196 Photon.Pun.PhotonAnimatorView/SynchronizeType Photon.Pun.PhotonAnimatorView::GetParameterSynchronizeType(System.String)
 extern void PhotonAnimatorView_GetParameterSynchronizeType_m0FF8F7AE526D64EA087CA5332A97D8586A1FA9EF (void);
-// 0x00000198 System.Void Photon.Pun.PhotonAnimatorView::SetLayerSynchronized(System.Int32,Photon.Pun.PhotonAnimatorView/SynchronizeType)
+// 0x00000197 System.Void Photon.Pun.PhotonAnimatorView::SetLayerSynchronized(System.Int32,Photon.Pun.PhotonAnimatorView/SynchronizeType)
 extern void PhotonAnimatorView_SetLayerSynchronized_mF71B49D006A6ECC39ED9ED0FA800CC11430209E6 (void);
-// 0x00000199 System.Void Photon.Pun.PhotonAnimatorView::SetParameterSynchronized(System.String,Photon.Pun.PhotonAnimatorView/ParameterType,Photon.Pun.PhotonAnimatorView/SynchronizeType)
+// 0x00000198 System.Void Photon.Pun.PhotonAnimatorView::SetParameterSynchronized(System.String,Photon.Pun.PhotonAnimatorView/ParameterType,Photon.Pun.PhotonAnimatorView/SynchronizeType)
 extern void PhotonAnimatorView_SetParameterSynchronized_m89FF2229C676C85B61A1B85C9FB6141BB68CA5D9 (void);
-// 0x0000019A System.Void Photon.Pun.PhotonAnimatorView::SerializeDataContinuously()
+// 0x00000199 System.Void Photon.Pun.PhotonAnimatorView::SerializeDataContinuously()
 extern void PhotonAnimatorView_SerializeDataContinuously_m8C117CC5A9D2332427C57C4E8FBCF3F45F476305 (void);
-// 0x0000019B System.Void Photon.Pun.PhotonAnimatorView::DeserializeDataContinuously()
+// 0x0000019A System.Void Photon.Pun.PhotonAnimatorView::DeserializeDataContinuously()
 extern void PhotonAnimatorView_DeserializeDataContinuously_mF25A7D0BA4EA6913E9CE14E912BAAB80BBA50795 (void);
-// 0x0000019C System.Void Photon.Pun.PhotonAnimatorView::SerializeDataDiscretly(Photon.Pun.PhotonStream)
+// 0x0000019B System.Void Photon.Pun.PhotonAnimatorView::SerializeDataDiscretly(Photon.Pun.PhotonStream)
 extern void PhotonAnimatorView_SerializeDataDiscretly_m4D51FC2843CCC072F966B1080F55E63B9976A747 (void);
-// 0x0000019D System.Void Photon.Pun.PhotonAnimatorView::DeserializeDataDiscretly(Photon.Pun.PhotonStream)
+// 0x0000019C System.Void Photon.Pun.PhotonAnimatorView::DeserializeDataDiscretly(Photon.Pun.PhotonStream)
 extern void PhotonAnimatorView_DeserializeDataDiscretly_mA70B034592F0C268EF9377871767B519123E5636 (void);
-// 0x0000019E System.Void Photon.Pun.PhotonAnimatorView::SerializeSynchronizationTypeState(Photon.Pun.PhotonStream)
+// 0x0000019D System.Void Photon.Pun.PhotonAnimatorView::SerializeSynchronizationTypeState(Photon.Pun.PhotonStream)
 extern void PhotonAnimatorView_SerializeSynchronizationTypeState_m64F58BAF5526DAEFB44E4E5CEF04E6D9F2FAA091 (void);
-// 0x0000019F System.Void Photon.Pun.PhotonAnimatorView::DeserializeSynchronizationTypeState(Photon.Pun.PhotonStream)
+// 0x0000019E System.Void Photon.Pun.PhotonAnimatorView::DeserializeSynchronizationTypeState(Photon.Pun.PhotonStream)
 extern void PhotonAnimatorView_DeserializeSynchronizationTypeState_m6C900ED260869B0AAAC62E827B4051587F84FE20 (void);
-// 0x000001A0 System.Void Photon.Pun.PhotonAnimatorView::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x0000019F System.Void Photon.Pun.PhotonAnimatorView::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonAnimatorView_OnPhotonSerializeView_m3C4CB31EB2A09F8742FE1C81381180D0AF1FB9DB (void);
-// 0x000001A1 System.Void Photon.Pun.PhotonAnimatorView::.ctor()
+// 0x000001A0 System.Void Photon.Pun.PhotonAnimatorView::.ctor()
 extern void PhotonAnimatorView__ctor_mB56A643C59A0327CB6ECAEC52E5A8E3097F8F51E (void);
-// 0x000001A2 System.Void Photon.Pun.PhotonAnimatorView/SynchronizedParameter::.ctor()
+// 0x000001A1 System.Void Photon.Pun.PhotonAnimatorView/SynchronizedParameter::.ctor()
 extern void SynchronizedParameter__ctor_m12E48616E9E1E65717ECBDA7686562C6E11747F8 (void);
-// 0x000001A3 System.Void Photon.Pun.PhotonAnimatorView/SynchronizedLayer::.ctor()
+// 0x000001A2 System.Void Photon.Pun.PhotonAnimatorView/SynchronizedLayer::.ctor()
 extern void SynchronizedLayer__ctor_m80BC3600C394D7768FFE13A13FD414CEF2200578 (void);
-// 0x000001A4 System.Void Photon.Pun.PhotonAnimatorView/<>c__DisplayClass18_0::.ctor()
+// 0x000001A3 System.Void Photon.Pun.PhotonAnimatorView/<>c__DisplayClass18_0::.ctor()
 extern void U3CU3Ec__DisplayClass18_0__ctor_m05B15BD8CD1AD112CBDA81CE29E3EC3A421E50B5 (void);
-// 0x000001A5 System.Boolean Photon.Pun.PhotonAnimatorView/<>c__DisplayClass18_0::<DoesLayerSynchronizeTypeExist>b__0(Photon.Pun.PhotonAnimatorView/SynchronizedLayer)
+// 0x000001A4 System.Boolean Photon.Pun.PhotonAnimatorView/<>c__DisplayClass18_0::<DoesLayerSynchronizeTypeExist>b__0(Photon.Pun.PhotonAnimatorView/SynchronizedLayer)
 extern void U3CU3Ec__DisplayClass18_0_U3CDoesLayerSynchronizeTypeExistU3Eb__0_m48D4245BFE6709613155A91C5E9699AF726C859D (void);
-// 0x000001A6 System.Void Photon.Pun.PhotonAnimatorView/<>c__DisplayClass19_0::.ctor()
+// 0x000001A5 System.Void Photon.Pun.PhotonAnimatorView/<>c__DisplayClass19_0::.ctor()
 extern void U3CU3Ec__DisplayClass19_0__ctor_m6C6720D2A9A865E5BE02589C42D528F7BCE1B752 (void);
-// 0x000001A7 System.Boolean Photon.Pun.PhotonAnimatorView/<>c__DisplayClass19_0::<DoesParameterSynchronizeTypeExist>b__0(Photon.Pun.PhotonAnimatorView/SynchronizedParameter)
+// 0x000001A6 System.Boolean Photon.Pun.PhotonAnimatorView/<>c__DisplayClass19_0::<DoesParameterSynchronizeTypeExist>b__0(Photon.Pun.PhotonAnimatorView/SynchronizedParameter)
 extern void U3CU3Ec__DisplayClass19_0_U3CDoesParameterSynchronizeTypeExistU3Eb__0_mFCC8DD477618048EABF993414BAA0C70D403C263 (void);
-// 0x000001A8 System.Void Photon.Pun.PhotonAnimatorView/<>c__DisplayClass22_0::.ctor()
+// 0x000001A7 System.Void Photon.Pun.PhotonAnimatorView/<>c__DisplayClass22_0::.ctor()
 extern void U3CU3Ec__DisplayClass22_0__ctor_m969D77946CFA9A7A29A4F23375814C32B5332291 (void);
-// 0x000001A9 System.Boolean Photon.Pun.PhotonAnimatorView/<>c__DisplayClass22_0::<GetLayerSynchronizeType>b__0(Photon.Pun.PhotonAnimatorView/SynchronizedLayer)
+// 0x000001A8 System.Boolean Photon.Pun.PhotonAnimatorView/<>c__DisplayClass22_0::<GetLayerSynchronizeType>b__0(Photon.Pun.PhotonAnimatorView/SynchronizedLayer)
 extern void U3CU3Ec__DisplayClass22_0_U3CGetLayerSynchronizeTypeU3Eb__0_m6F65BBA1C20E87266632297EC193D1CC3A0F002E (void);
-// 0x000001AA System.Void Photon.Pun.PhotonAnimatorView/<>c__DisplayClass23_0::.ctor()
+// 0x000001A9 System.Void Photon.Pun.PhotonAnimatorView/<>c__DisplayClass23_0::.ctor()
 extern void U3CU3Ec__DisplayClass23_0__ctor_m81B96533EB058052A0229AD4FE1A3C8D976F4685 (void);
-// 0x000001AB System.Boolean Photon.Pun.PhotonAnimatorView/<>c__DisplayClass23_0::<GetParameterSynchronizeType>b__0(Photon.Pun.PhotonAnimatorView/SynchronizedParameter)
+// 0x000001AA System.Boolean Photon.Pun.PhotonAnimatorView/<>c__DisplayClass23_0::<GetParameterSynchronizeType>b__0(Photon.Pun.PhotonAnimatorView/SynchronizedParameter)
 extern void U3CU3Ec__DisplayClass23_0_U3CGetParameterSynchronizeTypeU3Eb__0_m66FB2B4AB88259A5FA451008A8A5FDC46998D93F (void);
-// 0x000001AC System.Void Photon.Pun.PhotonAnimatorView/<>c__DisplayClass24_0::.ctor()
+// 0x000001AB System.Void Photon.Pun.PhotonAnimatorView/<>c__DisplayClass24_0::.ctor()
 extern void U3CU3Ec__DisplayClass24_0__ctor_mEDE08D0C80A957804DDCE99A54AEBE495203433A (void);
-// 0x000001AD System.Boolean Photon.Pun.PhotonAnimatorView/<>c__DisplayClass24_0::<SetLayerSynchronized>b__0(Photon.Pun.PhotonAnimatorView/SynchronizedLayer)
+// 0x000001AC System.Boolean Photon.Pun.PhotonAnimatorView/<>c__DisplayClass24_0::<SetLayerSynchronized>b__0(Photon.Pun.PhotonAnimatorView/SynchronizedLayer)
 extern void U3CU3Ec__DisplayClass24_0_U3CSetLayerSynchronizedU3Eb__0_m3D72866B5BE7662521064371186EA0BCC59E112E (void);
-// 0x000001AE System.Void Photon.Pun.PhotonAnimatorView/<>c__DisplayClass25_0::.ctor()
+// 0x000001AD System.Void Photon.Pun.PhotonAnimatorView/<>c__DisplayClass25_0::.ctor()
 extern void U3CU3Ec__DisplayClass25_0__ctor_m4391E103836699CEF882E68A5187F6BEC3B81344 (void);
-// 0x000001AF System.Boolean Photon.Pun.PhotonAnimatorView/<>c__DisplayClass25_0::<SetParameterSynchronized>b__0(Photon.Pun.PhotonAnimatorView/SynchronizedParameter)
+// 0x000001AE System.Boolean Photon.Pun.PhotonAnimatorView/<>c__DisplayClass25_0::<SetParameterSynchronized>b__0(Photon.Pun.PhotonAnimatorView/SynchronizedParameter)
 extern void U3CU3Ec__DisplayClass25_0_U3CSetParameterSynchronizedU3Eb__0_mD220D1D3686D9F5D9EDDA96ABD68C99DCC8DC9AA (void);
-// 0x000001B0 System.Void Photon.Pun.PhotonRigidbody2DView::Awake()
+// 0x000001AF System.Void Photon.Pun.PhotonRigidbody2DView::Awake()
 extern void PhotonRigidbody2DView_Awake_m1D88D42D64C4052DA17ACA3A51AB850E1ED56391 (void);
-// 0x000001B1 System.Void Photon.Pun.PhotonRigidbody2DView::FixedUpdate()
+// 0x000001B0 System.Void Photon.Pun.PhotonRigidbody2DView::FixedUpdate()
 extern void PhotonRigidbody2DView_FixedUpdate_m9F1E886F71BBD59176FF975ACA66BF4FB60B82C1 (void);
-// 0x000001B2 System.Void Photon.Pun.PhotonRigidbody2DView::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x000001B1 System.Void Photon.Pun.PhotonRigidbody2DView::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonRigidbody2DView_OnPhotonSerializeView_mAA77F477360C8694553BBD242438FB21E1BCD1BF (void);
-// 0x000001B3 System.Void Photon.Pun.PhotonRigidbody2DView::.ctor()
+// 0x000001B2 System.Void Photon.Pun.PhotonRigidbody2DView::.ctor()
 extern void PhotonRigidbody2DView__ctor_m4468D87170F1DA65A329F050381632A30EAC1782 (void);
-// 0x000001B4 System.Void Photon.Pun.PhotonRigidbodyView::Awake()
+// 0x000001B3 System.Void Photon.Pun.PhotonRigidbodyView::Awake()
 extern void PhotonRigidbodyView_Awake_mB75176019FE9F1AE3868BB8ECD9DE09B3C763056 (void);
-// 0x000001B5 System.Void Photon.Pun.PhotonRigidbodyView::FixedUpdate()
+// 0x000001B4 System.Void Photon.Pun.PhotonRigidbodyView::FixedUpdate()
 extern void PhotonRigidbodyView_FixedUpdate_m39DE3DB44DFF4576B8BA3BA20BEA00B11D5FF5A7 (void);
-// 0x000001B6 System.Void Photon.Pun.PhotonRigidbodyView::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x000001B5 System.Void Photon.Pun.PhotonRigidbodyView::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonRigidbodyView_OnPhotonSerializeView_mB0B42B929E0452B342FDB073935C512C1E1B8D6B (void);
-// 0x000001B7 System.Void Photon.Pun.PhotonRigidbodyView::.ctor()
+// 0x000001B6 System.Void Photon.Pun.PhotonRigidbodyView::.ctor()
 extern void PhotonRigidbodyView__ctor_m2B762B4FB55C62C667B8106C359AFDD277F707D8 (void);
-// 0x000001B8 System.Void Photon.Pun.PhotonTransformView::Awake()
+// 0x000001B7 System.Void Photon.Pun.PhotonTransformView::Awake()
 extern void PhotonTransformView_Awake_mCF2159BF4DB7227AA182D4A77017DC06EF1A47EF (void);
-// 0x000001B9 System.Void Photon.Pun.PhotonTransformView::Reset()
+// 0x000001B8 System.Void Photon.Pun.PhotonTransformView::Reset()
 extern void PhotonTransformView_Reset_m7F5F60F7ECDDC2AC56C94AF4F726FE4015D27557 (void);
-// 0x000001BA System.Void Photon.Pun.PhotonTransformView::OnEnable()
+// 0x000001B9 System.Void Photon.Pun.PhotonTransformView::OnEnable()
 extern void PhotonTransformView_OnEnable_m0B32033869DD0029C33FE9B2D0E92A4E41F4F11D (void);
-// 0x000001BB System.Void Photon.Pun.PhotonTransformView::Update()
+// 0x000001BA System.Void Photon.Pun.PhotonTransformView::Update()
 extern void PhotonTransformView_Update_mBBE9558CA7F1F44417C9372149814FE5E3851E26 (void);
-// 0x000001BC System.Void Photon.Pun.PhotonTransformView::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x000001BB System.Void Photon.Pun.PhotonTransformView::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonTransformView_OnPhotonSerializeView_m27A2F5566289E4D9C58A47DAEE337F53102879D8 (void);
-// 0x000001BD System.Void Photon.Pun.PhotonTransformView::.ctor()
+// 0x000001BC System.Void Photon.Pun.PhotonTransformView::.ctor()
 extern void PhotonTransformView__ctor_m9E6A01DD19CB9D07A57084C6D7AED2C793911068 (void);
-// 0x000001BE System.Void Photon.Pun.PhotonTransformViewClassic::Awake()
+// 0x000001BD System.Void Photon.Pun.PhotonTransformViewClassic::Awake()
 extern void PhotonTransformViewClassic_Awake_mC6C8F9ED51BD33F77B328708869AD1056ED21FC2 (void);
-// 0x000001BF System.Void Photon.Pun.PhotonTransformViewClassic::OnEnable()
+// 0x000001BE System.Void Photon.Pun.PhotonTransformViewClassic::OnEnable()
 extern void PhotonTransformViewClassic_OnEnable_mCB54CEC250B854CDDB294B54365B41D8F2C47285 (void);
-// 0x000001C0 System.Void Photon.Pun.PhotonTransformViewClassic::Update()
+// 0x000001BF System.Void Photon.Pun.PhotonTransformViewClassic::Update()
 extern void PhotonTransformViewClassic_Update_m27D244023811DC89A7C2313BA9541AD7FB4289F1 (void);
-// 0x000001C1 System.Void Photon.Pun.PhotonTransformViewClassic::UpdatePosition()
+// 0x000001C0 System.Void Photon.Pun.PhotonTransformViewClassic::UpdatePosition()
 extern void PhotonTransformViewClassic_UpdatePosition_m30BF0D00189A9F28102B8D37852C16535BAFD6D4 (void);
-// 0x000001C2 System.Void Photon.Pun.PhotonTransformViewClassic::UpdateRotation()
+// 0x000001C1 System.Void Photon.Pun.PhotonTransformViewClassic::UpdateRotation()
 extern void PhotonTransformViewClassic_UpdateRotation_m3AD37A2E04FBE3562645D3AA980551CAD6AA068D (void);
-// 0x000001C3 System.Void Photon.Pun.PhotonTransformViewClassic::UpdateScale()
+// 0x000001C2 System.Void Photon.Pun.PhotonTransformViewClassic::UpdateScale()
 extern void PhotonTransformViewClassic_UpdateScale_m660FA7943CD56D34A4B6740A8919DC4ED15F521E (void);
-// 0x000001C4 System.Void Photon.Pun.PhotonTransformViewClassic::SetSynchronizedValues(UnityEngine.Vector3,System.Single)
+// 0x000001C3 System.Void Photon.Pun.PhotonTransformViewClassic::SetSynchronizedValues(UnityEngine.Vector3,System.Single)
 extern void PhotonTransformViewClassic_SetSynchronizedValues_m33C26AA09EDE8A8755CC9A61263BAAB179705E77 (void);
-// 0x000001C5 System.Void Photon.Pun.PhotonTransformViewClassic::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x000001C4 System.Void Photon.Pun.PhotonTransformViewClassic::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonTransformViewClassic_OnPhotonSerializeView_m8AF91B214DF2C04D1A5AF23E5152BD59A1C94AA6 (void);
-// 0x000001C6 System.Void Photon.Pun.PhotonTransformViewClassic::.ctor()
+// 0x000001C5 System.Void Photon.Pun.PhotonTransformViewClassic::.ctor()
 extern void PhotonTransformViewClassic__ctor_m1E9DACFF3D4DDB40C86F650D74CFADD168140118 (void);
-// 0x000001C7 System.Void Photon.Pun.PhotonTransformViewPositionModel::.ctor()
+// 0x000001C6 System.Void Photon.Pun.PhotonTransformViewPositionModel::.ctor()
 extern void PhotonTransformViewPositionModel__ctor_mCFE1C9A64D2C030A4964F496C21A6457B0FE0997 (void);
-// 0x000001C8 System.Void Photon.Pun.PhotonTransformViewPositionControl::.ctor(Photon.Pun.PhotonTransformViewPositionModel)
+// 0x000001C7 System.Void Photon.Pun.PhotonTransformViewPositionControl::.ctor(Photon.Pun.PhotonTransformViewPositionModel)
 extern void PhotonTransformViewPositionControl__ctor_m7C6C92ACC411A60BD9923B0EC68429BE453E15B9 (void);
-// 0x000001C9 UnityEngine.Vector3 Photon.Pun.PhotonTransformViewPositionControl::GetOldestStoredNetworkPosition()
+// 0x000001C8 UnityEngine.Vector3 Photon.Pun.PhotonTransformViewPositionControl::GetOldestStoredNetworkPosition()
 extern void PhotonTransformViewPositionControl_GetOldestStoredNetworkPosition_mE7A84E00A2DAA44AD4D62BE17849297B3C5E1400 (void);
-// 0x000001CA System.Void Photon.Pun.PhotonTransformViewPositionControl::SetSynchronizedValues(UnityEngine.Vector3,System.Single)
+// 0x000001C9 System.Void Photon.Pun.PhotonTransformViewPositionControl::SetSynchronizedValues(UnityEngine.Vector3,System.Single)
 extern void PhotonTransformViewPositionControl_SetSynchronizedValues_mA0CA206BEDEAE3E26D5C48546E91AE9DF0ED6C09 (void);
-// 0x000001CB UnityEngine.Vector3 Photon.Pun.PhotonTransformViewPositionControl::UpdatePosition(UnityEngine.Vector3)
+// 0x000001CA UnityEngine.Vector3 Photon.Pun.PhotonTransformViewPositionControl::UpdatePosition(UnityEngine.Vector3)
 extern void PhotonTransformViewPositionControl_UpdatePosition_m4C26C075A90CE0B316EEC7272AE3FB66D7ECD923 (void);
-// 0x000001CC UnityEngine.Vector3 Photon.Pun.PhotonTransformViewPositionControl::GetNetworkPosition()
+// 0x000001CB UnityEngine.Vector3 Photon.Pun.PhotonTransformViewPositionControl::GetNetworkPosition()
 extern void PhotonTransformViewPositionControl_GetNetworkPosition_m284DBAAF7AC96FA62E035506277EC3D47F5AC4DC (void);
-// 0x000001CD UnityEngine.Vector3 Photon.Pun.PhotonTransformViewPositionControl::GetExtrapolatedPositionOffset()
+// 0x000001CC UnityEngine.Vector3 Photon.Pun.PhotonTransformViewPositionControl::GetExtrapolatedPositionOffset()
 extern void PhotonTransformViewPositionControl_GetExtrapolatedPositionOffset_mE2556E953D7A6BF31D17385981696517EA739E47 (void);
-// 0x000001CE System.Void Photon.Pun.PhotonTransformViewPositionControl::OnPhotonSerializeView(UnityEngine.Vector3,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x000001CD System.Void Photon.Pun.PhotonTransformViewPositionControl::OnPhotonSerializeView(UnityEngine.Vector3,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonTransformViewPositionControl_OnPhotonSerializeView_m8599BB1A8AF46B2CE6CC8EE65C570AE2D657FE33 (void);
-// 0x000001CF System.Void Photon.Pun.PhotonTransformViewPositionControl::SerializeData(UnityEngine.Vector3,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x000001CE System.Void Photon.Pun.PhotonTransformViewPositionControl::SerializeData(UnityEngine.Vector3,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonTransformViewPositionControl_SerializeData_mEE9BDF26D9DFDBE71802012ABD5AD1E9FD588F12 (void);
-// 0x000001D0 System.Void Photon.Pun.PhotonTransformViewPositionControl::DeserializeData(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x000001CF System.Void Photon.Pun.PhotonTransformViewPositionControl::DeserializeData(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonTransformViewPositionControl_DeserializeData_m28E33E0912A50E6FE759D54E26BF4DCAA4005CA7 (void);
-// 0x000001D1 System.Void Photon.Pun.PhotonTransformViewRotationModel::.ctor()
+// 0x000001D0 System.Void Photon.Pun.PhotonTransformViewRotationModel::.ctor()
 extern void PhotonTransformViewRotationModel__ctor_m15B05D097E500D1ABD3366B0D79A4368D3BD9517 (void);
-// 0x000001D2 System.Void Photon.Pun.PhotonTransformViewRotationControl::.ctor(Photon.Pun.PhotonTransformViewRotationModel)
+// 0x000001D1 System.Void Photon.Pun.PhotonTransformViewRotationControl::.ctor(Photon.Pun.PhotonTransformViewRotationModel)
 extern void PhotonTransformViewRotationControl__ctor_mE9ADC7CE386F7FC939DF8D242D3F971E89087374 (void);
-// 0x000001D3 UnityEngine.Quaternion Photon.Pun.PhotonTransformViewRotationControl::GetNetworkRotation()
+// 0x000001D2 UnityEngine.Quaternion Photon.Pun.PhotonTransformViewRotationControl::GetNetworkRotation()
 extern void PhotonTransformViewRotationControl_GetNetworkRotation_m94B4F8BF1C0E94791CB69E46F053959EE05DA103 (void);
-// 0x000001D4 UnityEngine.Quaternion Photon.Pun.PhotonTransformViewRotationControl::GetRotation(UnityEngine.Quaternion)
+// 0x000001D3 UnityEngine.Quaternion Photon.Pun.PhotonTransformViewRotationControl::GetRotation(UnityEngine.Quaternion)
 extern void PhotonTransformViewRotationControl_GetRotation_mDBBEA8DE2BF7693D52AA3F20BEE3F830253EF163 (void);
-// 0x000001D5 System.Void Photon.Pun.PhotonTransformViewRotationControl::OnPhotonSerializeView(UnityEngine.Quaternion,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x000001D4 System.Void Photon.Pun.PhotonTransformViewRotationControl::OnPhotonSerializeView(UnityEngine.Quaternion,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonTransformViewRotationControl_OnPhotonSerializeView_mFE00787DCBC77C95F463A2D417178174CD5189A7 (void);
-// 0x000001D6 System.Void Photon.Pun.PhotonTransformViewScaleModel::.ctor()
+// 0x000001D5 System.Void Photon.Pun.PhotonTransformViewScaleModel::.ctor()
 extern void PhotonTransformViewScaleModel__ctor_m8EAB85EAD9E176692EFAC76AEB513BF0AEE517C6 (void);
-// 0x000001D7 System.Void Photon.Pun.PhotonTransformViewScaleControl::.ctor(Photon.Pun.PhotonTransformViewScaleModel)
+// 0x000001D6 System.Void Photon.Pun.PhotonTransformViewScaleControl::.ctor(Photon.Pun.PhotonTransformViewScaleModel)
 extern void PhotonTransformViewScaleControl__ctor_m47708A68C7B7D1F7EAF0CDD31E7F59C7AB0C3AB9 (void);
-// 0x000001D8 UnityEngine.Vector3 Photon.Pun.PhotonTransformViewScaleControl::GetNetworkScale()
+// 0x000001D7 UnityEngine.Vector3 Photon.Pun.PhotonTransformViewScaleControl::GetNetworkScale()
 extern void PhotonTransformViewScaleControl_GetNetworkScale_m15B44EFCF04FF30AFAF5B6B47552B9ACF169A642 (void);
-// 0x000001D9 UnityEngine.Vector3 Photon.Pun.PhotonTransformViewScaleControl::GetScale(UnityEngine.Vector3)
+// 0x000001D8 UnityEngine.Vector3 Photon.Pun.PhotonTransformViewScaleControl::GetScale(UnityEngine.Vector3)
 extern void PhotonTransformViewScaleControl_GetScale_m1CE60B11E827A1EE4B068F68778B3D0BB978F5F7 (void);
-// 0x000001DA System.Void Photon.Pun.PhotonTransformViewScaleControl::OnPhotonSerializeView(UnityEngine.Vector3,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x000001D9 System.Void Photon.Pun.PhotonTransformViewScaleControl::OnPhotonSerializeView(UnityEngine.Vector3,Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PhotonTransformViewScaleControl_OnPhotonSerializeView_m64C48CF498ACEB1A1A1A3C757B6CF0FB6302325D (void);
-static Il2CppMethodPointer s_methodPointers[474] = 
+static Il2CppMethodPointer s_methodPointers[473] = 
 {
 	CustomTypes_Register_mCDA6C1DC7B7A9E00BEB536C1D2C1A79F2D4F198F,
 	CustomTypes_SerializePhotonPlayer_m9222686F0773767BCB5A38BF142AD44E6F278931,
@@ -1179,7 +1177,6 @@ static Il2CppMethodPointer s_methodPointers[474] =
 	U3CU3Ec_U3Cget_PlayerListOthersU3Eb__49_0_m476164E024D0D919C9ABF1A235E2CF51000808BA,
 	U3CU3Ec_U3Cget_PlayerListOthersU3Eb__49_1_m7725B84F4FE19BA18DB2879239DC5D91869D01E3,
 	U3CU3Ec_U3CCallbacksToStringU3Eb__217_0_m373E5FF7EF6851EA784E2C1C3AA0421D0A3D269F,
-	U3CU3Ec_U3COnRegionsPingedU3Eb__316_0_mCC92C172190005A354C33A6CCDB929EA9875B1E5,
 	PhotonStreamQueue__ctor_mE0BB2C50F7909A2E50A52E2F68CA055E5FAEBB16,
 	PhotonStreamQueue_BeginWritePackage_mAB54947A606C8424B690FF19CA996A98DA6F8C81,
 	PhotonStreamQueue_Reset_mE68C674FD933433441F7B6761DD0295DB66D3F7F,
@@ -1427,404 +1424,401 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[9] =
 	{ 0x06000028, InstantiateParameters__ctor_mDDE3331C946DF91DDF72CB370A3C9AC7516C2B51_AdjustorThunk },
 	{ 0x060000E3, RaiseEventBatch_GetHashCode_mD442ED8DC9C18436C651A727D569E903D377992B_AdjustorThunk },
 	{ 0x060000E4, RaiseEventBatch_Equals_m81C942F2A346FC76DDA983539E44259C835BA450_AdjustorThunk },
-	{ 0x06000131, CallbackTargetChange__ctor_m6FDF2FE1107B8DBF00575D8E3D56007196074762_AdjustorThunk },
-	{ 0x06000150, PhotonMessageInfo__ctor_m460F5B71A501C3A4B65970CFB8FF3AEB3D589DB6_AdjustorThunk },
-	{ 0x06000151, PhotonMessageInfo_get_timestamp_m8085CA2B61099188C189B4C01293CC9458A52BBD_AdjustorThunk },
-	{ 0x06000152, PhotonMessageInfo_get_SentServerTime_mE8D94BF3C4ECBC3C71DAD1EF8E82CF408DDC9B90_AdjustorThunk },
-	{ 0x06000153, PhotonMessageInfo_get_SentServerTimestamp_m401BF1AF793A20B69BC6C1CCC3432B9DC1751B67_AdjustorThunk },
-	{ 0x06000154, PhotonMessageInfo_ToString_m7510C223D5C90664456950B6C5AEF39D7A77D87D_AdjustorThunk },
+	{ 0x06000130, CallbackTargetChange__ctor_m6FDF2FE1107B8DBF00575D8E3D56007196074762_AdjustorThunk },
+	{ 0x0600014F, PhotonMessageInfo__ctor_m460F5B71A501C3A4B65970CFB8FF3AEB3D589DB6_AdjustorThunk },
+	{ 0x06000150, PhotonMessageInfo_get_timestamp_m8085CA2B61099188C189B4C01293CC9458A52BBD_AdjustorThunk },
+	{ 0x06000151, PhotonMessageInfo_get_SentServerTime_mE8D94BF3C4ECBC3C71DAD1EF8E82CF408DDC9B90_AdjustorThunk },
+	{ 0x06000152, PhotonMessageInfo_get_SentServerTimestamp_m401BF1AF793A20B69BC6C1CCC3432B9DC1751B67_AdjustorThunk },
+	{ 0x06000153, PhotonMessageInfo_ToString_m7510C223D5C90664456950B6C5AEF39D7A77D87D_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[474] = 
+static const int32_t s_InvokerIndices[473] = 
 {
-	6620,
-	5674,
-	5775,
-	6620,
-	3537,
-	2012,
-	2012,
-	2013,
-	2012,
-	2012,
-	2012,
-	3539,
-	1036,
-	3537,
-	6600,
-	4332,
-	4332,
-	4332,
-	4332,
-	4332,
-	4332,
-	4332,
-	4332,
-	3537,
-	2012,
-	3537,
-	3537,
-	1710,
-	1710,
-	1710,
-	4332,
-	4332,
-	3537,
-	3537,
-	4332,
-	6620,
-	6620,
-	4332,
-	2041,
-	61,
-	6600,
-	6543,
-	6600,
-	6600,
-	6543,
-	6600,
-	6600,
-	6600,
-	6600,
-	6543,
-	6610,
-	6610,
-	6593,
-	6593,
-	6600,
-	6543,
-	6600,
-	6600,
-	6600,
-	6600,
-	6543,
-	6600,
-	6600,
-	6610,
-	6548,
-	6610,
-	6548,
-	6610,
-	6610,
-	6593,
-	6540,
-	6593,
-	6540,
-	6610,
-	6548,
-	6587,
-	6593,
-	6551,
-	6613,
-	6610,
-	6600,
-	6610,
-	6593,
-	6593,
-	6593,
-	6593,
-	6610,
-	6548,
-	6593,
-	6610,
-	6548,
-	6593,
-	6593,
-	6540,
-	6593,
-	6540,
-	6610,
-	6548,
-	6601,
-	6544,
-	6620,
-	6620,
-	6610,
-	5890,
-	5393,
-	6610,
-	6419,
-	6620,
-	6610,
-	6620,
-	6600,
-	6610,
-	6593,
-	6620,
-	6620,
-	6419,
-	6419,
-	6610,
-	5890,
-	4584,
-	4460,
-	5099,
-	5099,
-	5889,
-	6419,
-	6610,
-	6421,
-	5595,
-	6610,
-	6419,
-	6610,
-	6419,
-	5889,
-	6419,
-	6543,
-	5112,
-	5112,
-	6419,
-	6419,
-	6419,
-	6281,
-	6273,
-	4739,
-	4739,
-	4739,
-	5781,
-	5322,
-	5864,
-	6543,
-	6543,
-	6543,
-	6540,
-	6620,
-	6543,
-	6543,
-	4882,
-	4888,
-	6385,
-	6079,
-	6540,
-	6543,
-	5399,
-	6620,
-	6548,
-	6600,
-	6576,
-	6593,
-	6543,
-	6543,
-	6543,
-	6543,
-	6543,
-	6543,
-	6543,
-	6543,
-	6600,
-	6600,
-	6543,
-	6613,
-	6620,
-	6548,
-	6620,
-	6067,
-	5889,
-	6048,
-	6548,
-	6071,
-	6543,
-	6540,
-	6620,
-	6540,
-	6044,
-	6044,
-	6063,
-	6419,
-	6381,
-	6543,
-	6540,
-	6540,
-	6620,
-	6620,
-	6543,
-	6543,
-	6540,
-	5383,
-	6548,
-	4607,
-	6067,
-	6079,
-	6067,
-	6620,
-	6620,
-	6543,
-	6385,
+	6591,
+	5646,
+	5747,
+	6591,
+	3545,
+	2034,
+	2034,
+	2035,
+	2034,
+	2034,
+	2034,
+	3547,
+	1062,
+	3545,
+	6571,
+	4333,
+	4333,
+	4333,
+	4333,
+	4333,
+	4333,
+	4333,
+	4333,
+	3545,
+	2034,
+	3545,
+	3545,
+	1731,
+	1731,
+	1731,
+	4333,
+	4333,
+	3545,
+	3545,
+	4333,
+	6591,
+	6591,
+	4333,
+	2063,
+	69,
+	6571,
+	6514,
+	6571,
+	6571,
+	6514,
+	6571,
+	6571,
+	6571,
+	6571,
+	6514,
+	6581,
+	6581,
+	6564,
+	6564,
+	6571,
+	6514,
+	6571,
+	6571,
+	6571,
+	6571,
+	6514,
+	6571,
+	6571,
+	6581,
+	6519,
+	6581,
+	6519,
+	6581,
+	6581,
+	6564,
+	6511,
+	6564,
+	6511,
+	6581,
+	6519,
+	6558,
+	6564,
+	6522,
+	6584,
+	6581,
+	6571,
+	6581,
+	6564,
+	6564,
+	6564,
+	6564,
+	6581,
+	6519,
+	6564,
+	6581,
+	6519,
+	6564,
+	6564,
+	6511,
+	6564,
+	6511,
+	6581,
+	6519,
+	6572,
+	6515,
+	6591,
+	6591,
+	6581,
+	5862,
+	5398,
+	6581,
+	6390,
+	6591,
+	6581,
+	6591,
+	6571,
+	6581,
+	6564,
+	6591,
+	6591,
+	6390,
+	6390,
+	6581,
+	5862,
+	4606,
+	4467,
+	5097,
+	5097,
+	5861,
+	6390,
+	6581,
+	6392,
+	5566,
+	6581,
+	6390,
+	6581,
+	6390,
+	5861,
+	6390,
+	6514,
+	5111,
+	5111,
+	6390,
+	6390,
+	6390,
+	6251,
+	6243,
+	4769,
+	4769,
+	4769,
+	5753,
+	5325,
+	5836,
+	6514,
+	6514,
+	6514,
+	6511,
+	6591,
+	6514,
+	6514,
+	4879,
+	4886,
+	6356,
+	6053,
+	6511,
+	6514,
+	5404,
+	6591,
+	6519,
+	6571,
+	6547,
+	6564,
+	6514,
+	6514,
+	6514,
+	6514,
+	6514,
+	6514,
+	6514,
+	6514,
+	6571,
+	6571,
+	6514,
+	6584,
+	6591,
+	6519,
+	6591,
+	6041,
+	5861,
+	6022,
+	6519,
+	6045,
+	6514,
+	6511,
+	6591,
+	6511,
+	6018,
+	6018,
+	6037,
+	6390,
+	6352,
+	6514,
+	6511,
+	6511,
+	6591,
+	6591,
+	6514,
+	6514,
+	6511,
+	5387,
+	6519,
+	4630,
+	6041,
+	6053,
+	6041,
+	6591,
+	6591,
+	6514,
+	6356,
 	5177,
-	5781,
-	5781,
-	5889,
-	5889,
-	5396,
-	6620,
-	6543,
-	6543,
-	6543,
-	6044,
-	6543,
-	4240,
-	3149,
-	2064,
-	4240,
-	3019,
-	3149,
-	3019,
-	4332,
-	3537,
-	6620,
-	4332,
-	2477,
-	2477,
-	3019,
-	2655,
-	3019,
-	3517,
-	4332,
-	4332,
-	3537,
-	4288,
-	4262,
-	3537,
-	3537,
-	4240,
-	3517,
-	4262,
-	3537,
-	4288,
-	4288,
-	4288,
-	4288,
-	3562,
-	4288,
-	4262,
-	3537,
-	4240,
-	3517,
-	4288,
-	3562,
-	4262,
-	3537,
-	4240,
-	3517,
-	4240,
-	3517,
-	4240,
-	3517,
-	4332,
-	3562,
-	3562,
-	3537,
-	4332,
-	4332,
-	3537,
-	3517,
-	3562,
-	2013,
-	2013,
-	1240,
-	1240,
-	4332,
-	1227,
-	828,
-	1239,
-	852,
-	6385,
-	6385,
-	6381,
-	3537,
-	3537,
+	5753,
+	5753,
+	5861,
+	5861,
+	5401,
+	6591,
+	6514,
+	6514,
+	6514,
+	6018,
+	6514,
+	4241,
+	3171,
+	2087,
+	4241,
+	3041,
+	3171,
+	3041,
+	4333,
+	3545,
+	6591,
+	4333,
+	2498,
+	2498,
+	3041,
+	2677,
+	3525,
+	4333,
+	4333,
+	3545,
+	4289,
+	4263,
+	3545,
+	3545,
+	4241,
+	3525,
+	4263,
+	3545,
+	4289,
+	4289,
+	4289,
+	4289,
+	3570,
+	4289,
+	4263,
+	3545,
+	4241,
+	3525,
+	4289,
+	3570,
+	4263,
+	3545,
+	4241,
+	3525,
+	4241,
+	3525,
+	4241,
+	3525,
+	4333,
+	3570,
+	3570,
+	3545,
+	4333,
+	4333,
+	3545,
+	3525,
+	3570,
+	2035,
+	2035,
+	1267,
+	1267,
+	4333,
+	1254,
+	849,
+	1266,
+	873,
+	6356,
+	6356,
+	6352,
+	3545,
+	3545,
 	-1,
 	-1,
-	4332,
+	4333,
 	-1,
 	-1,
-	4262,
-	4332,
-	1241,
-	4332,
-	4262,
-	4332,
-	4332,
-	4332,
-	4332,
-	4332,
-	3537,
-	1710,
-	1710,
-	4332,
-	4332,
-	4332,
-	3517,
-	3537,
-	3537,
-	4332,
-	3537,
-	3537,
-	1710,
-	4332,
-	3537,
-	2012,
-	3537,
-	3537,
-	3537,
-	3537,
-	3537,
-	3537,
-	4332,
-	1227,
-	4214,
-	4214,
-	4240,
-	4262,
-	4332,
-	4288,
-	3562,
-	4288,
-	4240,
-	2039,
-	2008,
-	2008,
-	4262,
-	4332,
-	4262,
-	4262,
-	3537,
-	3019,
-	4262,
-	3437,
-	3437,
-	3437,
-	3437,
-	3437,
-	3437,
-	3437,
-	3437,
-	3437,
-	3437,
-	6600,
-	6593,
-	4332,
-	1036,
-	3537,
-	4332,
-	6385,
-	6385,
-	6385,
-	5417,
-	5415,
-	5403,
-	5411,
-	5889,
-	6419,
-	6620,
-	2012,
-	6419,
-	6600,
-	6620,
-	4262,
-	4332,
-	-1,
-	-1,
+	4263,
+	4333,
+	1268,
+	4333,
+	4263,
+	4333,
+	4333,
+	4333,
+	4333,
+	4333,
+	3545,
+	1731,
+	1731,
+	4333,
+	4333,
+	4333,
+	3525,
+	3545,
+	3545,
+	4333,
+	3545,
+	3545,
+	1731,
+	4333,
+	3545,
+	2034,
+	3545,
+	3545,
+	3545,
+	3545,
+	3545,
+	3545,
+	4333,
+	1254,
+	4215,
+	4215,
+	4241,
+	4263,
+	4333,
+	4289,
+	3570,
+	4289,
+	4241,
+	2061,
+	2030,
+	2030,
+	4263,
+	4333,
+	4263,
+	4263,
+	3545,
+	3041,
+	4263,
+	3446,
+	3446,
+	3446,
+	3446,
+	3446,
+	3446,
+	3446,
+	3446,
+	3446,
+	3446,
+	6571,
+	6564,
+	4333,
+	1062,
+	3545,
+	4333,
+	6356,
+	6356,
+	6356,
+	5422,
+	5420,
+	5408,
+	5416,
+	5861,
+	6390,
+	6591,
+	2034,
+	6390,
+	6571,
+	6591,
+	4263,
+	4333,
 	-1,
 	-1,
 	-1,
@@ -1833,176 +1827,178 @@ static const int32_t s_InvokerIndices[474] =
 	-1,
 	-1,
 	-1,
-	6620,
-	4332,
-	4332,
-	4332,
-	2992,
-	3019,
-	4262,
-	4262,
-	2459,
-	2477,
-	1844,
-	1225,
-	4332,
-	4332,
-	3537,
-	3537,
-	3537,
-	3537,
-	2013,
-	4332,
-	4332,
-	4332,
-	4332,
-	3019,
-	4332,
-	3019,
-	4332,
-	3019,
-	4332,
-	3019,
-	4332,
-	3019,
-	4332,
-	3019,
-	4332,
-	4332,
-	2013,
-	4332,
-	4332,
-	4332,
-	2013,
-	4332,
-	4332,
-	4332,
-	4332,
-	4332,
-	2013,
-	4332,
-	4332,
-	4332,
-	4332,
-	4332,
-	4332,
-	4332,
-	2057,
-	2013,
-	4332,
-	4332,
-	3537,
-	4328,
-	2057,
-	3250,
-	4328,
-	4328,
-	1283,
-	1283,
-	2013,
-	4332,
-	3537,
-	4270,
-	2687,
-	1263,
-	4332,
-	3537,
-	4328,
-	3250,
-	1283,
+	-1,
+	-1,
+	6591,
+	4333,
+	4333,
+	4333,
+	3014,
+	3041,
+	4263,
+	4263,
+	2480,
+	2498,
+	1864,
+	1252,
+	4333,
+	4333,
+	3545,
+	3545,
+	3545,
+	3545,
+	2035,
+	4333,
+	4333,
+	4333,
+	4333,
+	3041,
+	4333,
+	3041,
+	4333,
+	3041,
+	4333,
+	3041,
+	4333,
+	3041,
+	4333,
+	3041,
+	4333,
+	4333,
+	2035,
+	4333,
+	4333,
+	4333,
+	2035,
+	4333,
+	4333,
+	4333,
+	4333,
+	4333,
+	2035,
+	4333,
+	4333,
+	4333,
+	4333,
+	4333,
+	4333,
+	4333,
+	2080,
+	2035,
+	4333,
+	4333,
+	3545,
+	4329,
+	2080,
+	3271,
+	4329,
+	4329,
+	1311,
+	1311,
+	2035,
+	4333,
+	3545,
+	4271,
+	2709,
+	1290,
+	4333,
+	3545,
+	4329,
+	3271,
+	1311,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[14] = 
 {
-	{ 0x0600012A, { 0, 1 } },
-	{ 0x0600012B, { 1, 1 } },
-	{ 0x0600012D, { 2, 2 } },
-	{ 0x0600012E, { 4, 5 } },
-	{ 0x06000184, { 9, 5 } },
-	{ 0x06000185, { 14, 2 } },
-	{ 0x06000186, { 16, 4 } },
-	{ 0x06000187, { 20, 4 } },
-	{ 0x06000188, { 24, 4 } },
-	{ 0x06000189, { 28, 4 } },
-	{ 0x0600018A, { 32, 7 } },
-	{ 0x0600018B, { 39, 7 } },
-	{ 0x0600018C, { 46, 5 } },
-	{ 0x0600018D, { 51, 15 } },
+	{ 0x06000129, { 0, 1 } },
+	{ 0x0600012A, { 1, 1 } },
+	{ 0x0600012C, { 2, 2 } },
+	{ 0x0600012D, { 4, 5 } },
+	{ 0x06000183, { 9, 5 } },
+	{ 0x06000184, { 14, 2 } },
+	{ 0x06000185, { 16, 4 } },
+	{ 0x06000186, { 20, 4 } },
+	{ 0x06000187, { 24, 4 } },
+	{ 0x06000188, { 28, 4 } },
+	{ 0x06000189, { 32, 7 } },
+	{ 0x0600018A, { 39, 7 } },
+	{ 0x0600018B, { 46, 5 } },
+	{ 0x0600018C, { 51, 15 } },
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[66] = 
 {
-	{ (Il2CppRGCTXDataType)1, 306 },
-	{ (Il2CppRGCTXDataType)1, 308 },
-	{ (Il2CppRGCTXDataType)2, 309 },
-	{ (Il2CppRGCTXDataType)3, 31268 },
-	{ (Il2CppRGCTXDataType)2, 4268 },
-	{ (Il2CppRGCTXDataType)3, 15550 },
-	{ (Il2CppRGCTXDataType)3, 15552 },
-	{ (Il2CppRGCTXDataType)3, 15551 },
-	{ (Il2CppRGCTXDataType)3, 15553 },
-	{ (Il2CppRGCTXDataType)3, 31211 },
-	{ (Il2CppRGCTXDataType)2, 937 },
-	{ (Il2CppRGCTXDataType)3, 30221 },
-	{ (Il2CppRGCTXDataType)2, 443 },
-	{ (Il2CppRGCTXDataType)3, 30734 },
-	{ (Il2CppRGCTXDataType)3, 30220 },
-	{ (Il2CppRGCTXDataType)2, 292 },
-	{ (Il2CppRGCTXDataType)3, 15543 },
-	{ (Il2CppRGCTXDataType)3, 30219 },
-	{ (Il2CppRGCTXDataType)2, 291 },
-	{ (Il2CppRGCTXDataType)3, 15542 },
-	{ (Il2CppRGCTXDataType)3, 30222 },
-	{ (Il2CppRGCTXDataType)2, 444 },
-	{ (Il2CppRGCTXDataType)3, 30227 },
-	{ (Il2CppRGCTXDataType)2, 938 },
-	{ (Il2CppRGCTXDataType)3, 30223 },
-	{ (Il2CppRGCTXDataType)2, 445 },
-	{ (Il2CppRGCTXDataType)3, 30228 },
-	{ (Il2CppRGCTXDataType)2, 939 },
-	{ (Il2CppRGCTXDataType)3, 30224 },
+	{ (Il2CppRGCTXDataType)1, 309 },
+	{ (Il2CppRGCTXDataType)1, 311 },
+	{ (Il2CppRGCTXDataType)2, 312 },
+	{ (Il2CppRGCTXDataType)3, 31210 },
+	{ (Il2CppRGCTXDataType)2, 4298 },
+	{ (Il2CppRGCTXDataType)3, 15642 },
+	{ (Il2CppRGCTXDataType)3, 15644 },
+	{ (Il2CppRGCTXDataType)3, 15643 },
+	{ (Il2CppRGCTXDataType)3, 15645 },
+	{ (Il2CppRGCTXDataType)3, 31153 },
+	{ (Il2CppRGCTXDataType)2, 926 },
+	{ (Il2CppRGCTXDataType)3, 30132 },
 	{ (Il2CppRGCTXDataType)2, 446 },
-	{ (Il2CppRGCTXDataType)3, 30229 },
-	{ (Il2CppRGCTXDataType)2, 940 },
-	{ (Il2CppRGCTXDataType)3, 30319 },
-	{ (Il2CppRGCTXDataType)3, 30226 },
-	{ (Il2CppRGCTXDataType)2, 936 },
-	{ (Il2CppRGCTXDataType)1, 442 },
-	{ (Il2CppRGCTXDataType)2, 4276 },
-	{ (Il2CppRGCTXDataType)3, 15562 },
-	{ (Il2CppRGCTXDataType)3, 15563 },
-	{ (Il2CppRGCTXDataType)1, 441 },
-	{ (Il2CppRGCTXDataType)2, 4275 },
-	{ (Il2CppRGCTXDataType)3, 15560 },
-	{ (Il2CppRGCTXDataType)3, 30318 },
-	{ (Il2CppRGCTXDataType)3, 30225 },
-	{ (Il2CppRGCTXDataType)2, 935 },
-	{ (Il2CppRGCTXDataType)3, 15561 },
-	{ (Il2CppRGCTXDataType)1, 290 },
-	{ (Il2CppRGCTXDataType)2, 4263 },
-	{ (Il2CppRGCTXDataType)3, 15540 },
-	{ (Il2CppRGCTXDataType)3, 30317 },
-	{ (Il2CppRGCTXDataType)3, 15541 },
-	{ (Il2CppRGCTXDataType)3, 15568 },
-	{ (Il2CppRGCTXDataType)1, 960 },
-	{ (Il2CppRGCTXDataType)2, 4303 },
-	{ (Il2CppRGCTXDataType)3, 15625 },
-	{ (Il2CppRGCTXDataType)3, 15626 },
-	{ (Il2CppRGCTXDataType)3, 30320 },
-	{ (Il2CppRGCTXDataType)3, 15627 },
-	{ (Il2CppRGCTXDataType)3, 8362 },
-	{ (Il2CppRGCTXDataType)2, 960 },
-	{ (Il2CppRGCTXDataType)2, 466 },
-	{ (Il2CppRGCTXDataType)3, 15567 },
-	{ (Il2CppRGCTXDataType)3, 8361 },
-	{ (Il2CppRGCTXDataType)2, 2429 },
+	{ (Il2CppRGCTXDataType)3, 30659 },
+	{ (Il2CppRGCTXDataType)3, 30131 },
+	{ (Il2CppRGCTXDataType)2, 295 },
+	{ (Il2CppRGCTXDataType)3, 15635 },
+	{ (Il2CppRGCTXDataType)3, 30130 },
+	{ (Il2CppRGCTXDataType)2, 294 },
+	{ (Il2CppRGCTXDataType)3, 15634 },
+	{ (Il2CppRGCTXDataType)3, 30133 },
+	{ (Il2CppRGCTXDataType)2, 447 },
+	{ (Il2CppRGCTXDataType)3, 30138 },
+	{ (Il2CppRGCTXDataType)2, 927 },
+	{ (Il2CppRGCTXDataType)3, 30134 },
+	{ (Il2CppRGCTXDataType)2, 448 },
+	{ (Il2CppRGCTXDataType)3, 30139 },
+	{ (Il2CppRGCTXDataType)2, 928 },
+	{ (Il2CppRGCTXDataType)3, 30135 },
+	{ (Il2CppRGCTXDataType)2, 449 },
+	{ (Il2CppRGCTXDataType)3, 30140 },
+	{ (Il2CppRGCTXDataType)2, 929 },
 	{ (Il2CppRGCTXDataType)3, 30230 },
-	{ (Il2CppRGCTXDataType)2, 1125 },
+	{ (Il2CppRGCTXDataType)3, 30137 },
+	{ (Il2CppRGCTXDataType)2, 925 },
+	{ (Il2CppRGCTXDataType)1, 445 },
+	{ (Il2CppRGCTXDataType)2, 4306 },
+	{ (Il2CppRGCTXDataType)3, 15654 },
+	{ (Il2CppRGCTXDataType)3, 15655 },
+	{ (Il2CppRGCTXDataType)1, 444 },
+	{ (Il2CppRGCTXDataType)2, 4305 },
+	{ (Il2CppRGCTXDataType)3, 15652 },
+	{ (Il2CppRGCTXDataType)3, 30229 },
+	{ (Il2CppRGCTXDataType)3, 30136 },
+	{ (Il2CppRGCTXDataType)2, 924 },
+	{ (Il2CppRGCTXDataType)3, 15653 },
+	{ (Il2CppRGCTXDataType)1, 293 },
+	{ (Il2CppRGCTXDataType)2, 4293 },
+	{ (Il2CppRGCTXDataType)3, 15632 },
+	{ (Il2CppRGCTXDataType)3, 30228 },
+	{ (Il2CppRGCTXDataType)3, 15633 },
+	{ (Il2CppRGCTXDataType)3, 15660 },
+	{ (Il2CppRGCTXDataType)1, 950 },
+	{ (Il2CppRGCTXDataType)2, 4333 },
+	{ (Il2CppRGCTXDataType)3, 15717 },
+	{ (Il2CppRGCTXDataType)3, 15718 },
+	{ (Il2CppRGCTXDataType)3, 30231 },
+	{ (Il2CppRGCTXDataType)3, 15719 },
+	{ (Il2CppRGCTXDataType)3, 8544 },
+	{ (Il2CppRGCTXDataType)2, 950 },
+	{ (Il2CppRGCTXDataType)2, 470 },
+	{ (Il2CppRGCTXDataType)3, 15659 },
+	{ (Il2CppRGCTXDataType)3, 8543 },
+	{ (Il2CppRGCTXDataType)2, 2422 },
+	{ (Il2CppRGCTXDataType)3, 30141 },
+	{ (Il2CppRGCTXDataType)2, 1107 },
 };
 extern const CustomAttributesCacheGenerator g_PhotonUnityNetworking_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_PhotonUnityNetworking_CodeGenModule;
 const Il2CppCodeGenModule g_PhotonUnityNetworking_CodeGenModule = 
 {
 	"PhotonUnityNetworking.dll",
-	474,
+	473,
 	s_methodPointers,
 	9,
 	s_adjustorThunks,

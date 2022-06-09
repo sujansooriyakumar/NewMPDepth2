@@ -82,8 +82,6 @@ struct SubsystemWithProvider_3_t2E74C29CB9922972A66085C9DAD6E1542BCCE25B;
 struct TaskFactory_1_t069438A73348A2B1B34A2C68E0478EE107ECCFC7;
 // System.Threading.Tasks.Task`1<System.Boolean>
 struct Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7849;
-// UnityEngine.XR.ARSubsystems.ValidationUtility`1<UnityEngine.XR.ARSubsystems.XRFace>
-struct ValidationUtility_1_tE7E8E5823C4DD69D84993BF9963788CDF63079E7;
 // System.Collections.Generic.Dictionary`2/ValueCollection<UnityEngine.XR.ARKit.ARKitBlendShapeLocation,System.Int32>
 struct ValueCollection_tECEB040482F2E26972B43E7614E11B0B2A54877E;
 // System.Collections.Generic.Dictionary`2/Entry<UnityEngine.XR.ARKit.ARKitBlendShapeLocation,System.Int32>[]
@@ -256,8 +254,6 @@ struct CameraCallback_tD9E7B69E561CE2EFDEEDB0E7F1406AC52247160D;
 struct TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5;
 // OffAxisCamera.OffAxisCameraRig/UpdateCameraLocationEvent
 struct UpdateCameraLocationEvent_t05740E9A973F6BDF69E3665F20ACE5B2CD83312D;
-// RotatableCameraCalibrator/<RunCalibrationProcedure>d__7
-struct U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7;
 // RotatableDeviceScreen/SaveData
 struct SaveData_tA233E7BEFE8D2D4A6E6CD008C36AF44DE847EE10;
 // RotatableDeviceScreen/SavedRotatableScreenCalibration
@@ -266,8 +262,6 @@ struct SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087
 struct SaveData_t95A7DEA16DC163182E5E37BBBD72A44EF01236A9;
 // RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration
 struct SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D;
-// RotatableScreenCalibrator/<StartCalibration>d__8
-struct U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13;
 // MPDepthCore.Calibration.ScreenSizeDetector/ScreenInfo
 struct ScreenInfo_tE437720E6324BFF714FEF279E8FF0AD0A7A4A4FC;
 // System.Threading.Tasks.Task/ContingentProperties
@@ -300,8 +294,6 @@ IL2CPP_EXTERN_C RuntimeClass* String_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TrackerOffsetCalibration_tD2EC555FBB1EF1E2A33767B5EF260584742C3321_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral0278FD43FF658F79A56F7B28B871675E46269E14;
 IL2CPP_EXTERN_C String_t* _stringLiteral02EC0FD34739C2A844A6731C3854FA80A3DD1B28;
 IL2CPP_EXTERN_C String_t* _stringLiteral05337E40DB3362D9F002F828052BC00FD35ACF37;
@@ -432,6 +424,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompl
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m6B0A2CF93C75E64792C28D399180F0CD262E6EA1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m9600B92F79B1FE3AD3235FB6D62A64DAE8AA944D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78_RuntimeMethod_var;
@@ -3817,33 +3810,23 @@ public:
 struct XRFaceSubsystem_tBC42015E8BB4ED0A5428E01DBB7BE769A6B140FD  : public TrackingSubsystem_4_tFC4495C6B04D616F71158509026269F004F79333
 {
 public:
-	// UnityEngine.XR.ARSubsystems.ValidationUtility`1<UnityEngine.XR.ARSubsystems.XRFace> UnityEngine.XR.ARSubsystems.XRFaceSubsystem::m_ValidationUtility
-	ValidationUtility_1_tE7E8E5823C4DD69D84993BF9963788CDF63079E7 * ___m_ValidationUtility_4;
 
 public:
-	inline static int32_t get_offset_of_m_ValidationUtility_4() { return static_cast<int32_t>(offsetof(XRFaceSubsystem_tBC42015E8BB4ED0A5428E01DBB7BE769A6B140FD, ___m_ValidationUtility_4)); }
-	inline ValidationUtility_1_tE7E8E5823C4DD69D84993BF9963788CDF63079E7 * get_m_ValidationUtility_4() const { return ___m_ValidationUtility_4; }
-	inline ValidationUtility_1_tE7E8E5823C4DD69D84993BF9963788CDF63079E7 ** get_address_of_m_ValidationUtility_4() { return &___m_ValidationUtility_4; }
-	inline void set_m_ValidationUtility_4(ValidationUtility_1_tE7E8E5823C4DD69D84993BF9963788CDF63079E7 * value)
-	{
-		___m_ValidationUtility_4 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___m_ValidationUtility_4), (void*)value);
-	}
 };
 
 
 // RotatableCameraCalibrator/<RunCalibrationProcedure>d__7
-struct U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7  : public RuntimeObject
+struct U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 
 {
 public:
 	// System.Int32 RotatableCameraCalibrator/<RunCalibrationProcedure>d__7::<>1__state
 	int32_t ___U3CU3E1__state_0;
 	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean> RotatableCameraCalibrator/<RunCalibrationProcedure>d__7::<>t__builder
 	AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  ___U3CU3Et__builder_1;
-	// RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration RotatableCameraCalibrator/<RunCalibrationProcedure>d__7::newCalibration
-	SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * ___newCalibration_2;
 	// RotatableCameraCalibrator RotatableCameraCalibrator/<RunCalibrationProcedure>d__7::<>4__this
-	RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * ___U3CU3E4__this_3;
+	RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * ___U3CU3E4__this_2;
+	// RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration RotatableCameraCalibrator/<RunCalibrationProcedure>d__7::newCalibration
+	SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * ___newCalibration_3;
 	// System.Runtime.CompilerServices.TaskAwaiter RotatableCameraCalibrator/<RunCalibrationProcedure>d__7::<>u__1
 	TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  ___U3CU3Eu__1_4;
 
@@ -3871,22 +3854,22 @@ public:
 		#endif
 	}
 
-	inline static int32_t get_offset_of_newCalibration_2() { return static_cast<int32_t>(offsetof(U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7, ___newCalibration_2)); }
-	inline SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * get_newCalibration_2() const { return ___newCalibration_2; }
-	inline SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D ** get_address_of_newCalibration_2() { return &___newCalibration_2; }
-	inline void set_newCalibration_2(SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * value)
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7, ___U3CU3E4__this_2)); }
+	inline RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * value)
 	{
-		___newCalibration_2 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___newCalibration_2), (void*)value);
+		___U3CU3E4__this_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_3() { return static_cast<int32_t>(offsetof(U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7, ___U3CU3E4__this_3)); }
-	inline RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * get_U3CU3E4__this_3() const { return ___U3CU3E4__this_3; }
-	inline RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA ** get_address_of_U3CU3E4__this_3() { return &___U3CU3E4__this_3; }
-	inline void set_U3CU3E4__this_3(RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * value)
+	inline static int32_t get_offset_of_newCalibration_3() { return static_cast<int32_t>(offsetof(U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7, ___newCalibration_3)); }
+	inline SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * get_newCalibration_3() const { return ___newCalibration_3; }
+	inline SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D ** get_address_of_newCalibration_3() { return &___newCalibration_3; }
+	inline void set_newCalibration_3(SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * value)
 	{
-		___U3CU3E4__this_3 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_3), (void*)value);
+		___newCalibration_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___newCalibration_3), (void*)value);
 	}
 
 	inline static int32_t get_offset_of_U3CU3Eu__1_4() { return static_cast<int32_t>(offsetof(U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7, ___U3CU3Eu__1_4)); }
@@ -3901,21 +3884,19 @@ public:
 
 
 // RotatableScreenCalibrator/<StartCalibration>d__8
-struct U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13  : public RuntimeObject
+struct U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 
 {
 public:
 	// System.Int32 RotatableScreenCalibrator/<StartCalibration>d__8::<>1__state
 	int32_t ___U3CU3E1__state_0;
 	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean> RotatableScreenCalibrator/<StartCalibration>d__8::<>t__builder
 	AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  ___U3CU3Et__builder_1;
-	// RotatableDeviceScreen/SavedRotatableScreenCalibration RotatableScreenCalibrator/<StartCalibration>d__8::newCalibration
-	SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * ___newCalibration_2;
 	// RotatableScreenCalibrator RotatableScreenCalibrator/<StartCalibration>d__8::<>4__this
-	RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * ___U3CU3E4__this_3;
-	// UnityEngine.Transform RotatableScreenCalibrator/<StartCalibration>d__8::<offaxis>5__1
-	Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * ___U3CoffaxisU3E5__1_4;
+	RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * ___U3CU3E4__this_2;
+	// RotatableDeviceScreen/SavedRotatableScreenCalibration RotatableScreenCalibrator/<StartCalibration>d__8::newCalibration
+	SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * ___newCalibration_3;
 	// System.Runtime.CompilerServices.TaskAwaiter RotatableScreenCalibrator/<StartCalibration>d__8::<>u__1
-	TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  ___U3CU3Eu__1_5;
+	TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  ___U3CU3Eu__1_4;
 
 public:
 	inline static int32_t get_offset_of_U3CU3E1__state_0() { return static_cast<int32_t>(offsetof(U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13, ___U3CU3E1__state_0)); }
@@ -3941,40 +3922,31 @@ public:
 		#endif
 	}
 
-	inline static int32_t get_offset_of_newCalibration_2() { return static_cast<int32_t>(offsetof(U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13, ___newCalibration_2)); }
-	inline SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * get_newCalibration_2() const { return ___newCalibration_2; }
-	inline SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 ** get_address_of_newCalibration_2() { return &___newCalibration_2; }
-	inline void set_newCalibration_2(SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * value)
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13, ___U3CU3E4__this_2)); }
+	inline RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * value)
 	{
-		___newCalibration_2 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___newCalibration_2), (void*)value);
+		___U3CU3E4__this_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_3() { return static_cast<int32_t>(offsetof(U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13, ___U3CU3E4__this_3)); }
-	inline RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * get_U3CU3E4__this_3() const { return ___U3CU3E4__this_3; }
-	inline RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 ** get_address_of_U3CU3E4__this_3() { return &___U3CU3E4__this_3; }
-	inline void set_U3CU3E4__this_3(RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * value)
+	inline static int32_t get_offset_of_newCalibration_3() { return static_cast<int32_t>(offsetof(U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13, ___newCalibration_3)); }
+	inline SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * get_newCalibration_3() const { return ___newCalibration_3; }
+	inline SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 ** get_address_of_newCalibration_3() { return &___newCalibration_3; }
+	inline void set_newCalibration_3(SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * value)
 	{
-		___U3CU3E4__this_3 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_3), (void*)value);
+		___newCalibration_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___newCalibration_3), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CoffaxisU3E5__1_4() { return static_cast<int32_t>(offsetof(U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13, ___U3CoffaxisU3E5__1_4)); }
-	inline Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * get_U3CoffaxisU3E5__1_4() const { return ___U3CoffaxisU3E5__1_4; }
-	inline Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 ** get_address_of_U3CoffaxisU3E5__1_4() { return &___U3CoffaxisU3E5__1_4; }
-	inline void set_U3CoffaxisU3E5__1_4(Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * value)
+	inline static int32_t get_offset_of_U3CU3Eu__1_4() { return static_cast<int32_t>(offsetof(U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13, ___U3CU3Eu__1_4)); }
+	inline TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  get_U3CU3Eu__1_4() const { return ___U3CU3Eu__1_4; }
+	inline TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * get_address_of_U3CU3Eu__1_4() { return &___U3CU3Eu__1_4; }
+	inline void set_U3CU3Eu__1_4(TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  value)
 	{
-		___U3CoffaxisU3E5__1_4 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U3CoffaxisU3E5__1_4), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_U3CU3Eu__1_5() { return static_cast<int32_t>(offsetof(U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13, ___U3CU3Eu__1_5)); }
-	inline TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  get_U3CU3Eu__1_5() const { return ___U3CU3Eu__1_5; }
-	inline TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * get_address_of_U3CU3Eu__1_5() { return &___U3CU3Eu__1_5; }
-	inline void set_U3CU3Eu__1_5(TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  value)
-	{
-		___U3CU3Eu__1_5 = value;
-		Il2CppCodeGenWriteBarrier((void**)&(((&___U3CU3Eu__1_5))->___m_task_0), (void*)NULL);
+		___U3CU3Eu__1_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)&(((&___U3CU3Eu__1_4))->___m_task_0), (void*)NULL);
 	}
 };
 
@@ -5683,8 +5655,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeArray_1_Dispose_m383935C666B52E9F3
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponentInParent_TisRuntimeObject_mADA186D1675BEA6779C469918206294354385EC3_gshared (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method);
 // System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<!0> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::Create()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92_gshared (const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::Start<System.Object>(!!0&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_mB2A27FEDA9705FC04D29CFA72DC66730C954FC2A_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, RuntimeObject ** ___stateMachine0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::Start<RotatableCameraCalibrator/<RunCalibrationProcedure>d__7>(!!0&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m6B0A2CF93C75E64792C28D399180F0CD262E6EA1_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * ___stateMachine0, const RuntimeMethod* method);
 // System.Threading.Tasks.Task`1<!0> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::get_Task()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7849 * AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, const RuntimeMethod* method);
 // !0 System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
@@ -5699,12 +5671,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m1D864B65CCD0498EC4BFFBDA8F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m0F0E00088CF56FEACC9E32D8B7D91B93D91DAA3B_gshared (List_1_t3F94120C77410A62EAE48421CF166B83AB95A2F5 * __this, const RuntimeMethod* method);
 // !!0 UnityEngine.JsonUtility::FromJson<System.Object>(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * JsonUtility_FromJson_TisRuntimeObject_m7398DCFD1F6BF2A10AB1274ABED512F322F8F4B4_gshared (String_t* ___json0, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,System.Object>(!!0&,!!1&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisRuntimeObject_mA9C6EFFB0D47F2AE8623E890B305A6BF87C15FE4_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * ___awaiter0, RuntimeObject ** ___stateMachine1, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::Start<RotatableScreenCalibrator/<StartCalibration>d__8>(!!0&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m9600B92F79B1FE3AD3235FB6D62A64DAE8AA944D_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * ___stateMachine0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,RotatableCameraCalibrator/<RunCalibrationProcedure>d__7>(!!0&,!!1&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m8103752A4535F653C94C7E610DA7E01A676EAA7D_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * ___awaiter0, U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * ___stateMachine1, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::SetException(System.Exception)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, Exception_t * ___exception0, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::SetResult(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, bool ___result0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,RotatableScreenCalibrator/<StartCalibration>d__8>(!!0&,!!1&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m63FA8D65B1FF67B1F724FB57C80D44DB9CDC1892_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * ___awaiter0, U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * ___stateMachine1, const RuntimeMethod* method);
 
 // !!0 UnityEngine.Object::FindObjectOfType<UnityEngine.XR.ARFoundation.ARFaceManager>()
 inline ARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647 * Object_FindObjectOfType_TisARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647_m9C579D798239EFD45E22AD1A30E5C53146871399 (const RuntimeMethod* method)
@@ -5802,7 +5780,7 @@ inline ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * Component_GetComponent
 	return ((  ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * (*) (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 *, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m69D9C576D6DD024C709E29EEADBC8041299A3AA7_gshared)(__this, method);
 }
 // UnityEngine.SkinnedMeshRenderer ARKitBlendShapeVisualizer::get_skinnedMeshRenderer()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB (ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * __this, const RuntimeMethod* method);
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline (ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * __this, const RuntimeMethod* method);
 // UnityEngine.Mesh UnityEngine.SkinnedMeshRenderer::get_sharedMesh()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2 (SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * __this, const RuntimeMethod* method);
 // System.String UnityEngine.Object::get_name()
@@ -5878,7 +5856,7 @@ inline bool Dictionary_2_TryGetValue_m607450C11D776769E1143A266F0F0E124DF5DB01 (
 // System.Single UnityEngine.XR.ARKit.ARKitBlendShapeCoefficient::get_coefficient()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float ARKitBlendShapeCoefficient_get_coefficient_m314BED878AE51026667924FF236DCF8E6FF8B759_inline (ARKitBlendShapeCoefficient_t6B17AD958119715154498F9EB6A29ECF98BA0E9F * __this, const RuntimeMethod* method);
 // System.Single ARKitBlendShapeVisualizer::get_coefficientScale()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ARKitBlendShapeVisualizer_get_coefficientScale_m3CDD631E0CCD082B512ED45BB8492477DA85E614 (ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * __this, const RuntimeMethod* method);
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float ARKitBlendShapeVisualizer_get_coefficientScale_m3CDD631E0CCD082B512ED45BB8492477DA85E614_inline (ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.SkinnedMeshRenderer::SetBlendShapeWeight(System.Int32,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkinnedMeshRenderer_SetBlendShapeWeight_mF546F3567C5039C217AD1E32157B992B4124B5FD (SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * __this, int32_t ___index0, float ___value1, const RuntimeMethod* method);
 // System.Boolean Unity.Collections.NativeArray`1/Enumerator<UnityEngine.XR.ARKit.ARKitBlendShapeCoefficient>::MoveNext()
@@ -5976,17 +5954,15 @@ inline TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53 * Component_GetC
 {
 	return ((  TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53 * (*) (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 *, const RuntimeMethod*))Component_GetComponentInParent_TisRuntimeObject_mADA186D1675BEA6779C469918206294354385EC3_gshared)(__this, method);
 }
-// System.Void RotatableCameraCalibrator/<RunCalibrationProcedure>d__7::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunCalibrationProcedureU3Ed__7__ctor_mF2C9CF1763C1CD2B78674E981B5485BA6D76F248 (U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * __this, const RuntimeMethod* method);
 // System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<!0> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::Create()
 inline AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92 (const RuntimeMethod* method)
 {
 	return ((  AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  (*) (const RuntimeMethod*))AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92_gshared)(method);
 }
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::Start<RotatableCameraCalibrator/<RunCalibrationProcedure>d__7>(!!0&)
-inline void AsyncTaskMethodBuilder_1_Start_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m6B0A2CF93C75E64792C28D399180F0CD262E6EA1 (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 ** ___stateMachine0, const RuntimeMethod* method)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m6B0A2CF93C75E64792C28D399180F0CD262E6EA1 (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * ___stateMachine0, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 **, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_mB2A27FEDA9705FC04D29CFA72DC66730C954FC2A_gshared)(__this, ___stateMachine0, method);
+	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 *, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m6B0A2CF93C75E64792C28D399180F0CD262E6EA1_gshared)(__this, ___stateMachine0, method);
 }
 // System.Threading.Tasks.Task`1<!0> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::get_Task()
 inline Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7849 * AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78 (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, const RuntimeMethod* method)
@@ -6109,12 +6085,10 @@ inline void List_1__ctor_m47B3A3CEB8C94729DB2A9A3F5902B8E8AA116BC6 (List_1_tB92B
 }
 // System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackingCalibrationProvider__ctor_m953976A4C72671B39786A555D5DC2C28D2198387 (TrackingCalibrationProvider_t936458C67919392EE6B88C439729E2AECA9293AB * __this, const RuntimeMethod* method);
-// System.Void RotatableScreenCalibrator/<StartCalibration>d__8::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__8__ctor_mED6C7FDB679F0F4CAEB8AB53DF5D094CEF8F29FA (U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * __this, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::Start<RotatableScreenCalibrator/<StartCalibration>d__8>(!!0&)
-inline void AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m9600B92F79B1FE3AD3235FB6D62A64DAE8AA944D (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 ** ___stateMachine0, const RuntimeMethod* method)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m9600B92F79B1FE3AD3235FB6D62A64DAE8AA944D (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * ___stateMachine0, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 **, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_mB2A27FEDA9705FC04D29CFA72DC66730C954FC2A_gshared)(__this, ___stateMachine0, method);
+	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 *, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m9600B92F79B1FE3AD3235FB6D62A64DAE8AA944D_gshared)(__this, ___stateMachine0, method);
 }
 // System.String RotatableDeviceScreen/SavedRotatableScreenCalibration::get_Name()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* SavedRotatableScreenCalibration_get_Name_mD302118E140AA8458B3F474D5F6182D01BA9A6C0_inline (SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * __this, const RuntimeMethod* method);
@@ -6132,8 +6106,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Camera_get_aspect_mD0A1FC8F998473DA0886
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableScreenCalibrator_FinalizeSizeChange_mEE5CC9B09011FA7ADB24EF7DD767C2D4798DEBFC (RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * __this, const RuntimeMethod* method);
 // System.Void MPDepthCore.Calibration.Screen.ScreenCalibrator::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScreenCalibrator__ctor_m2C6A7E738C994EBD613F72FAB3A8273D8F14B995 (ScreenCalibrator_t611A4EFFF72D2856F28B5D524E5E3CC957C697E4 * __this, const RuntimeMethod* method);
-// System.Void System.Object::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405 (RuntimeObject * __this, const RuntimeMethod* method);
 // System.Void RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration::set_Name(System.String)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SavedRotatableDeviceCalibration_set_Name_mAA10C414545A6C8B4833253C704D82BD296B9DBB_inline (SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * __this, String_t* ___value0, const RuntimeMethod* method);
 // System.Threading.Tasks.Task System.Threading.Tasks.Task::Delay(System.Int32)
@@ -6143,9 +6115,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF9
 // System.Boolean System.Runtime.CompilerServices.TaskAwaiter::get_IsCompleted()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TaskAwaiter_get_IsCompleted_m6F97613C55E505B5664C3C0CFC4677D296EAA8BC (TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * __this, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,RotatableCameraCalibrator/<RunCalibrationProcedure>d__7>(!!0&,!!1&)
-inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m8103752A4535F653C94C7E610DA7E01A676EAA7D (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * ___awaiter0, U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 ** ___stateMachine1, const RuntimeMethod* method)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m8103752A4535F653C94C7E610DA7E01A676EAA7D (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * ___awaiter0, U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * ___stateMachine1, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *, U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 **, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisRuntimeObject_mA9C6EFFB0D47F2AE8623E890B305A6BF87C15FE4_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *, U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 *, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m8103752A4535F653C94C7E610DA7E01A676EAA7D_gshared)(__this, ___awaiter0, ___stateMachine1, method);
 }
 // System.Void System.Runtime.CompilerServices.TaskAwaiter::GetResult()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskAwaiter_GetResult_m578EEFEC4DD1AE5E77C899B8BAA3825EB79D1330 (TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * __this, const RuntimeMethod* method);
@@ -6159,6 +6131,17 @@ inline void AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271C
 {
 	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, bool, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B_gshared)(__this, ___result0, method);
 }
+// System.Void RotatableCameraCalibrator/<RunCalibrationProcedure>d__7::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunCalibrationProcedureU3Ed__7_MoveNext_m4D3B16C11FCED81F3520AAFEE2002FD0FB4D10B9 (U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * __this, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+inline void AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, RuntimeObject*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A_gshared)(__this, ___stateMachine0, method);
+}
+// System.Void RotatableCameraCalibrator/<RunCalibrationProcedure>d__7::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunCalibrationProcedureU3Ed__7_SetStateMachine_mC651DB8E7DB4CB85E452C04227A7FBC2172B7C8D (U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405 (RuntimeObject * __this, const RuntimeMethod* method);
 // System.Void RotatableDeviceScreen/SavedRotatableScreenCalibration::set_Name(System.String)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SavedRotatableScreenCalibration_set_Name_mD9663CDED41CE4158D42999AC00FD923AADBB845_inline (SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * __this, String_t* ___value0, const RuntimeMethod* method);
 // UnityEngine.GameObject MPDepthCore.Calibration.Screen.ScreenCalibrator::get_mainUI()
@@ -6170,12 +6153,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F5
 // System.Void OffAxisCamera.OffAxisCameraRig::DisableCameraTracking()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OffAxisCameraRig_DisableCameraTracking_mD81DD93EBEA480488F81B9A3E7C60A66DFF7534E (OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * __this, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,RotatableScreenCalibrator/<StartCalibration>d__8>(!!0&,!!1&)
-inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m63FA8D65B1FF67B1F724FB57C80D44DB9CDC1892 (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * ___awaiter0, U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 ** ___stateMachine1, const RuntimeMethod* method)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m63FA8D65B1FF67B1F724FB57C80D44DB9CDC1892 (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * ___awaiter0, U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * ___stateMachine1, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *, U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 **, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisRuntimeObject_mA9C6EFFB0D47F2AE8623E890B305A6BF87C15FE4_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *, U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 *, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m63FA8D65B1FF67B1F724FB57C80D44DB9CDC1892_gshared)(__this, ___awaiter0, ___stateMachine1, method);
 }
 // System.Void OffAxisCamera.OffAxisCameraRig::EnableCameraTracking()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OffAxisCameraRig_EnableCameraTracking_mC24B2E1754DA3E2B4B80C77D0DBB0F0CC1C6EE96 (OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * __this, const RuntimeMethod* method);
+// System.Void RotatableScreenCalibrator/<StartCalibration>d__8::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__8_MoveNext_mDB1F00D1D4543AB91A0E8053A7FBC66813BA3925 (U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * __this, const RuntimeMethod* method);
+// System.Void RotatableScreenCalibrator/<StartCalibration>d__8::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__8_SetStateMachine_m31C42AA58C3AF8C9F1C81F91A49D52CD47F36331 (U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
 // System.Void System.ThrowHelper::ThrowArgumentOutOfRangeException()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowHelper_ThrowArgumentOutOfRangeException_m4841366ABC2B2AFA37C10900551D7E07522C0929 (const RuntimeMethod* method);
 #ifdef __clang__
@@ -6206,8 +6193,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREyeManager_OnEnable_m7AD7BFC77FA86ED94
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SubsystemWithProvider_3_get_subsystemDescriptor_mCC699F434BAAEA06444E9C4CF4D8FFD58349DBD1_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
-	int32_t G_B4_0 = 0;
 	{
 		// arFaceManager = FindObjectOfType<ARFaceManager>();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
@@ -6222,7 +6207,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREyeManager_OnEnable_m7AD7BFC77FA86ED94
 		L_2 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_1, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
 		if (!L_2)
 		{
-			goto IL_003e;
+			goto IL_0054;
 		}
 	}
 	{
@@ -6232,7 +6217,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREyeManager_OnEnable_m7AD7BFC77FA86ED94
 		L_4 = SubsystemLifecycleManager_3_get_subsystem_m4391B33B0DF93408538702190F99FFBA89343CC6_inline(L_3, /*hidden argument*/SubsystemLifecycleManager_3_get_subsystem_m4391B33B0DF93408538702190F99FFBA89343CC6_RuntimeMethod_var);
 		if (!L_4)
 		{
-			goto IL_003e;
+			goto IL_0054;
 		}
 	}
 	{
@@ -6246,34 +6231,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREyeManager_OnEnable_m7AD7BFC77FA86ED94
 		NullCheck(L_7);
 		bool L_8;
 		L_8 = XRFaceSubsystemDescriptor_get_supportsEyeTracking_m509A2CDA04DA198E368A777CABF42B419D30017F_inline(L_7, /*hidden argument*/NULL);
-		G_B4_0 = ((int32_t)(L_8));
-		goto IL_003f;
-	}
-
-IL_003e:
-	{
-		G_B4_0 = 0;
-	}
-
-IL_003f:
-	{
-		V_0 = (bool)G_B4_0;
-		bool L_9 = V_0;
-		if (!L_9)
+		if (!L_8)
 		{
-			goto IL_005d;
+			goto IL_0054;
 		}
 	}
 	{
 		// arFaceManager.facesChanged += FacesChanged;
-		ARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647 * L_10 = __this->get_arFaceManager_8();
-		Action_1_t751B1FAC322BE3B28E8F31CAF84A77CDD1A42358 * L_11 = (Action_1_t751B1FAC322BE3B28E8F31CAF84A77CDD1A42358 *)il2cpp_codegen_object_new(Action_1_t751B1FAC322BE3B28E8F31CAF84A77CDD1A42358_il2cpp_TypeInfo_var);
-		Action_1__ctor_m2648571D370830A0174CFB56D9EF92202BBDB184(L_11, __this, (intptr_t)((intptr_t)AREyeManager_FacesChanged_m18178A48E85D286130A3B3CB3347E4FD7DF1D0E1_RuntimeMethod_var), /*hidden argument*/Action_1__ctor_m2648571D370830A0174CFB56D9EF92202BBDB184_RuntimeMethod_var);
-		NullCheck(L_10);
-		ARFaceManager_add_facesChanged_mC0F1ECFEC0FD0955005367336E675FFA890CAC80(L_10, L_11, /*hidden argument*/NULL);
+		ARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647 * L_9 = __this->get_arFaceManager_8();
+		Action_1_t751B1FAC322BE3B28E8F31CAF84A77CDD1A42358 * L_10 = (Action_1_t751B1FAC322BE3B28E8F31CAF84A77CDD1A42358 *)il2cpp_codegen_object_new(Action_1_t751B1FAC322BE3B28E8F31CAF84A77CDD1A42358_il2cpp_TypeInfo_var);
+		Action_1__ctor_m2648571D370830A0174CFB56D9EF92202BBDB184(L_10, __this, (intptr_t)((intptr_t)AREyeManager_FacesChanged_m18178A48E85D286130A3B3CB3347E4FD7DF1D0E1_RuntimeMethod_var), /*hidden argument*/Action_1__ctor_m2648571D370830A0174CFB56D9EF92202BBDB184_RuntimeMethod_var);
+		NullCheck(L_9);
+		ARFaceManager_add_facesChanged_mC0F1ECFEC0FD0955005367336E675FFA890CAC80(L_9, L_10, /*hidden argument*/NULL);
 	}
 
-IL_005d:
+IL_0054:
 	{
 		// }
 		return;
@@ -6295,7 +6267,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREyeManager_FacesChanged_m18178A48E85D2
 	Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A  V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * V_1 = NULL;
-	bool V_2 = false;
 	Exception_t * __last_unhandled_exception = 0;
 	il2cpp::utils::ExceptionSupportStack<int32_t, 1> __leave_targets;
 	{
@@ -6308,14 +6279,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREyeManager_FacesChanged_m18178A48E85D2
 		V_0 = L_1;
 	}
 
-IL_000f:
+IL_000d:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_0033;
+			goto IL_0027;
 		}
 
-IL_0011:
+IL_000f:
 		{
 			// foreach (ARFace face in eventArgs.updated)
 			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_2;
@@ -6326,59 +6297,53 @@ IL_0011:
 			NullCheck(L_3);
 			int32_t L_4;
 			L_4 = ARTrackable_2_get_trackingState_m82B5153FD82572CB261CA3429F2F7844592914EC(L_3, /*hidden argument*/ARTrackable_2_get_trackingState_m82B5153FD82572CB261CA3429F2F7844592914EC_RuntimeMethod_var);
-			V_2 = (bool)((((int32_t)L_4) == ((int32_t)2))? 1 : 0);
-			bool L_5 = V_2;
-			if (!L_5)
+			if ((!(((uint32_t)L_4) == ((uint32_t)2))))
 			{
-				goto IL_0031;
+				goto IL_0027;
 			}
+		}
+
+IL_0020:
+		{
+			// ARFaceUpdated(face);
+			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_5 = V_1;
+			AREyeManager_ARFaceUpdated_m3F51EC7607E2F8AAB81CC1F97B1D1F086F4F8F3F(__this, L_5, /*hidden argument*/NULL);
 		}
 
 IL_0027:
 		{
-			// ARFaceUpdated(face);
-			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_6 = V_1;
-			AREyeManager_ARFaceUpdated_m3F51EC7607E2F8AAB81CC1F97B1D1F086F4F8F3F(__this, L_6, /*hidden argument*/NULL);
-		}
-
-IL_0031:
-		{
-		}
-
-IL_0033:
-		{
 			// foreach (ARFace face in eventArgs.updated)
-			bool L_7;
-			L_7 = Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_0), /*hidden argument*/Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C_RuntimeMethod_var);
-			if (L_7)
+			bool L_6;
+			L_6 = Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_0), /*hidden argument*/Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C_RuntimeMethod_var);
+			if (L_6)
 			{
-				goto IL_0011;
+				goto IL_000f;
 			}
 		}
 
-IL_003c:
+IL_0030:
 		{
-			IL2CPP_LEAVE(0x4D, FINALLY_003e);
+			IL2CPP_LEAVE(0x40, FINALLY_0032);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_003e;
+		goto FINALLY_0032;
 	}
 
-FINALLY_003e:
+FINALLY_0032:
 	{ // begin finally (depth: 1)
 		Enumerator_Dispose_mF2EE06E16A6C6F477EAC6B510B6D512EE1F2FC8B((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_0), /*hidden argument*/Enumerator_Dispose_mF2EE06E16A6C6F477EAC6B510B6D512EE1F2FC8B_RuntimeMethod_var);
-		IL2CPP_END_FINALLY(62)
+		IL2CPP_END_FINALLY(50)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(62)
+	IL2CPP_CLEANUP(50)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0x4D, IL_004d)
+		IL2CPP_JUMP_TBL(0x40, IL_0040)
 	}
 
-IL_004d:
+IL_0040:
 	{
 		// }
 		return;
@@ -6397,14 +6362,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREyeManager_ARFaceUpdated_m3F51EC7607E2
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral154AC6698FB2F5206EC0F90DA76FCFA8E1660083);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
-	bool V_1 = false;
-	bool V_2 = false;
-	bool V_3 = false;
-	bool V_4 = false;
-	int32_t G_B3_0 = 0;
-	int32_t G_B8_0 = 0;
-	int32_t G_B13_0 = 0;
 	{
 		// if (arFace.leftEye != null && leftEye == null)
 		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_0 = ___arFace0;
@@ -6416,7 +6373,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREyeManager_ARFaceUpdated_m3F51EC7607E2
 		L_2 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_1, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
 		if (!L_2)
 		{
-			goto IL_001d;
+			goto IL_004f;
 		}
 	}
 	{
@@ -6424,241 +6381,194 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREyeManager_ARFaceUpdated_m3F51EC7607E2
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		bool L_4;
 		L_4 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_3, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		G_B3_0 = ((int32_t)(L_4));
-		goto IL_001e;
-	}
-
-IL_001d:
-	{
-		G_B3_0 = 0;
-	}
-
-IL_001e:
-	{
-		V_0 = (bool)G_B3_0;
-		bool L_5 = V_0;
-		if (!L_5)
+		if (!L_4)
 		{
-			goto IL_0059;
+			goto IL_004f;
 		}
 	}
 	{
 		// leftEye = Instantiate(leftEyePrefab, arFace.leftEye);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_6 = __this->get_leftEyePrefab_4();
-		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_7 = ___arFace0;
-		NullCheck(L_7);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_8;
-		L_8 = ARFace_get_leftEye_m36F77C7E6257BF964653438343DF5B9E4A35A507_inline(L_7, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_5 = __this->get_leftEyePrefab_4();
+		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_6 = ___arFace0;
+		NullCheck(L_6);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_7;
+		L_7 = ARFace_get_leftEye_m36F77C7E6257BF964653438343DF5B9E4A35A507_inline(L_6, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_9;
-		L_9 = Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_mF131D53AB04E75E849487A7ACF79A8B27527F4B8(L_6, L_8, /*hidden argument*/Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_mF131D53AB04E75E849487A7ACF79A8B27527F4B8_RuntimeMethod_var);
-		__this->set_leftEye_6(L_9);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_8;
+		L_8 = Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_mF131D53AB04E75E849487A7ACF79A8B27527F4B8(L_5, L_7, /*hidden argument*/Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_mF131D53AB04E75E849487A7ACF79A8B27527F4B8_RuntimeMethod_var);
+		__this->set_leftEye_6(L_8);
 		// leftEye.name = "LeftEye";
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_9 = __this->get_leftEye_6();
+		NullCheck(L_9);
+		Object_set_name_m87C4006618ADB325ABE5439DF159E10DD8DD0781(L_9, _stringLiteral1050614875F1AE62C56F91A71C193B7B4A9FAD6D, /*hidden argument*/NULL);
+		// leftEye.SetActive(false);
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_10 = __this->get_leftEye_6();
 		NullCheck(L_10);
-		Object_set_name_m87C4006618ADB325ABE5439DF159E10DD8DD0781(L_10, _stringLiteral1050614875F1AE62C56F91A71C193B7B4A9FAD6D, /*hidden argument*/NULL);
-		// leftEye.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_11 = __this->get_leftEye_6();
-		NullCheck(L_11);
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_11, (bool)0, /*hidden argument*/NULL);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_10, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_0059:
+IL_004f:
 	{
 		// if (arFace.rightEye != null && rightEye == null)
-		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_12 = ___arFace0;
-		NullCheck(L_12);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_13;
-		L_13 = ARFace_get_rightEye_mDA882A16AEC1D06AF4C0D05EFC88CA1F112D5D7C_inline(L_12, /*hidden argument*/NULL);
+		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_11 = ___arFace0;
+		NullCheck(L_11);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_12;
+		L_12 = ARFace_get_rightEye_mDA882A16AEC1D06AF4C0D05EFC88CA1F112D5D7C_inline(L_11, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		bool L_14;
-		L_14 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_13, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		if (!L_14)
+		bool L_13;
+		L_13 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_12, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		if (!L_13)
 		{
-			goto IL_0075;
+			goto IL_009e;
 		}
 	}
 	{
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_15 = __this->get_rightEye_7();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_14 = __this->get_rightEye_7();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		bool L_16;
-		L_16 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_15, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		G_B8_0 = ((int32_t)(L_16));
-		goto IL_0076;
-	}
-
-IL_0075:
-	{
-		G_B8_0 = 0;
-	}
-
-IL_0076:
-	{
-		V_1 = (bool)G_B8_0;
-		bool L_17 = V_1;
-		if (!L_17)
+		bool L_15;
+		L_15 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_14, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		if (!L_15)
 		{
-			goto IL_00b1;
+			goto IL_009e;
 		}
 	}
 	{
 		// rightEye = Instantiate(rightEyePrefab, arFace.rightEye);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_18 = __this->get_rightEyePrefab_5();
-		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_19 = ___arFace0;
-		NullCheck(L_19);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_20;
-		L_20 = ARFace_get_rightEye_mDA882A16AEC1D06AF4C0D05EFC88CA1F112D5D7C_inline(L_19, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_16 = __this->get_rightEyePrefab_5();
+		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_17 = ___arFace0;
+		NullCheck(L_17);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_18;
+		L_18 = ARFace_get_rightEye_mDA882A16AEC1D06AF4C0D05EFC88CA1F112D5D7C_inline(L_17, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_21;
-		L_21 = Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_mF131D53AB04E75E849487A7ACF79A8B27527F4B8(L_18, L_20, /*hidden argument*/Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_mF131D53AB04E75E849487A7ACF79A8B27527F4B8_RuntimeMethod_var);
-		__this->set_rightEye_7(L_21);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_19;
+		L_19 = Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_mF131D53AB04E75E849487A7ACF79A8B27527F4B8(L_16, L_18, /*hidden argument*/Object_Instantiate_TisGameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_mF131D53AB04E75E849487A7ACF79A8B27527F4B8_RuntimeMethod_var);
+		__this->set_rightEye_7(L_19);
 		// rightEye.name = "RightEye";
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_22 = __this->get_rightEye_7();
-		NullCheck(L_22);
-		Object_set_name_m87C4006618ADB325ABE5439DF159E10DD8DD0781(L_22, _stringLiteral154AC6698FB2F5206EC0F90DA76FCFA8E1660083, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_20 = __this->get_rightEye_7();
+		NullCheck(L_20);
+		Object_set_name_m87C4006618ADB325ABE5439DF159E10DD8DD0781(L_20, _stringLiteral154AC6698FB2F5206EC0F90DA76FCFA8E1660083, /*hidden argument*/NULL);
 		// rightEye.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_23 = __this->get_rightEye_7();
-		NullCheck(L_23);
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_23, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_21 = __this->get_rightEye_7();
+		NullCheck(L_21);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_21, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_00b1:
+IL_009e:
 	{
 		// if (arFace.trackingState == TrackingState.Tracking && ARSession.state > ARSessionState.Ready)
-		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_24 = ___arFace0;
-		NullCheck(L_24);
-		int32_t L_25;
-		L_25 = ARTrackable_2_get_trackingState_m82B5153FD82572CB261CA3429F2F7844592914EC(L_24, /*hidden argument*/ARTrackable_2_get_trackingState_m82B5153FD82572CB261CA3429F2F7844592914EC_RuntimeMethod_var);
-		if ((!(((uint32_t)L_25) == ((uint32_t)2))))
+		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_22 = ___arFace0;
+		NullCheck(L_22);
+		int32_t L_23;
+		L_23 = ARTrackable_2_get_trackingState_m82B5153FD82572CB261CA3429F2F7844592914EC(L_22, /*hidden argument*/ARTrackable_2_get_trackingState_m82B5153FD82572CB261CA3429F2F7844592914EC_RuntimeMethod_var);
+		if ((!(((uint32_t)L_23) == ((uint32_t)2))))
 		{
-			goto IL_00c4;
+			goto IL_0169;
 		}
 	}
 	{
-		int32_t L_26;
-		L_26 = ARSession_get_state_m623161F1E2E5BA2752C821DD409880E6647CA130_inline(/*hidden argument*/NULL);
-		G_B13_0 = ((((int32_t)L_26) > ((int32_t)5))? 1 : 0);
-		goto IL_00c5;
-	}
-
-IL_00c4:
-	{
-		G_B13_0 = 0;
-	}
-
-IL_00c5:
-	{
-		V_2 = (bool)G_B13_0;
-		bool L_27 = V_2;
-		if (!L_27)
+		int32_t L_24;
+		L_24 = ARSession_get_state_m623161F1E2E5BA2752C821DD409880E6647CA130_inline(/*hidden argument*/NULL);
+		if ((((int32_t)L_24) <= ((int32_t)5)))
 		{
-			goto IL_0194;
+			goto IL_0169;
 		}
 	}
 	{
 		// if (leftEye != null)
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_28 = __this->get_leftEye_6();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_25 = __this->get_leftEye_6();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		bool L_29;
-		L_29 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_28, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		V_3 = L_29;
-		bool L_30 = V_3;
-		if (!L_30)
+		bool L_26;
+		L_26 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_25, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		if (!L_26)
 		{
-			goto IL_012f;
+			goto IL_010f;
 		}
 	}
 	{
 		// leftEye.transform.SetParent(arFace.leftEye);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_27 = __this->get_leftEye_6();
+		NullCheck(L_27);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_28;
+		L_28 = GameObject_get_transform_m16A80BB92B6C8C5AB696E447014D45EDF1E4DE34(L_27, /*hidden argument*/NULL);
+		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_29 = ___arFace0;
+		NullCheck(L_29);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_30;
+		L_30 = ARFace_get_leftEye_m36F77C7E6257BF964653438343DF5B9E4A35A507_inline(L_29, /*hidden argument*/NULL);
+		NullCheck(L_28);
+		Transform_SetParent_m24E34EBEF76528C99AFA017F157EE8B3E3116B1E(L_28, L_30, /*hidden argument*/NULL);
+		// leftEye.transform.localPosition = Vector3.zero;
 		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_31 = __this->get_leftEye_6();
 		NullCheck(L_31);
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_32;
 		L_32 = GameObject_get_transform_m16A80BB92B6C8C5AB696E447014D45EDF1E4DE34(L_31, /*hidden argument*/NULL);
-		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_33 = ___arFace0;
-		NullCheck(L_33);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_34;
-		L_34 = ARFace_get_leftEye_m36F77C7E6257BF964653438343DF5B9E4A35A507_inline(L_33, /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_33;
+		L_33 = Vector3_get_zero_m1A8F7993167785F750B6B01762D22C2597C84EF6(/*hidden argument*/NULL);
 		NullCheck(L_32);
-		Transform_SetParent_m24E34EBEF76528C99AFA017F157EE8B3E3116B1E(L_32, L_34, /*hidden argument*/NULL);
-		// leftEye.transform.localPosition = Vector3.zero;
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_35 = __this->get_leftEye_6();
-		NullCheck(L_35);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_36;
-		L_36 = GameObject_get_transform_m16A80BB92B6C8C5AB696E447014D45EDF1E4DE34(L_35, /*hidden argument*/NULL);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_37;
-		L_37 = Vector3_get_zero_m1A8F7993167785F750B6B01762D22C2597C84EF6(/*hidden argument*/NULL);
-		NullCheck(L_36);
-		Transform_set_localPosition_m2A2B0033EF079077FAE7C65196078EAF5D041AFC(L_36, L_37, /*hidden argument*/NULL);
+		Transform_set_localPosition_m2A2B0033EF079077FAE7C65196078EAF5D041AFC(L_32, L_33, /*hidden argument*/NULL);
 		// leftEye.transform.localRotation = Quaternion.identity;
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_38 = __this->get_leftEye_6();
-		NullCheck(L_38);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_39;
-		L_39 = GameObject_get_transform_m16A80BB92B6C8C5AB696E447014D45EDF1E4DE34(L_38, /*hidden argument*/NULL);
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_40;
-		L_40 = Quaternion_get_identity_mF2E565DBCE793A1AE6208056D42CA7C59D83A702(/*hidden argument*/NULL);
-		NullCheck(L_39);
-		Transform_set_localRotation_m1A9101457EC4653AFC93FCC4065A29F2C78FA62C(L_39, L_40, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_34 = __this->get_leftEye_6();
+		NullCheck(L_34);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_35;
+		L_35 = GameObject_get_transform_m16A80BB92B6C8C5AB696E447014D45EDF1E4DE34(L_34, /*hidden argument*/NULL);
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_36;
+		L_36 = Quaternion_get_identity_mF2E565DBCE793A1AE6208056D42CA7C59D83A702(/*hidden argument*/NULL);
+		NullCheck(L_35);
+		Transform_set_localRotation_m1A9101457EC4653AFC93FCC4065A29F2C78FA62C(L_35, L_36, /*hidden argument*/NULL);
 		// leftEye.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_41 = __this->get_leftEye_6();
-		NullCheck(L_41);
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_41, (bool)1, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_37 = __this->get_leftEye_6();
+		NullCheck(L_37);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_37, (bool)1, /*hidden argument*/NULL);
 	}
 
-IL_012f:
+IL_010f:
 	{
 		// if (rightEye != null)
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_42 = __this->get_rightEye_7();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_38 = __this->get_rightEye_7();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		bool L_43;
-		L_43 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_42, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		V_4 = L_43;
-		bool L_44 = V_4;
-		if (!L_44)
+		bool L_39;
+		L_39 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_38, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		if (!L_39)
 		{
-			goto IL_0193;
+			goto IL_0169;
 		}
 	}
 	{
 		// rightEye.transform.SetParent(arFace.rightEye);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_45 = __this->get_rightEye_7();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_40 = __this->get_rightEye_7();
+		NullCheck(L_40);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_41;
+		L_41 = GameObject_get_transform_m16A80BB92B6C8C5AB696E447014D45EDF1E4DE34(L_40, /*hidden argument*/NULL);
+		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_42 = ___arFace0;
+		NullCheck(L_42);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_43;
+		L_43 = ARFace_get_rightEye_mDA882A16AEC1D06AF4C0D05EFC88CA1F112D5D7C_inline(L_42, /*hidden argument*/NULL);
+		NullCheck(L_41);
+		Transform_SetParent_m24E34EBEF76528C99AFA017F157EE8B3E3116B1E(L_41, L_43, /*hidden argument*/NULL);
+		// rightEye.transform.localPosition = Vector3.zero;
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_44 = __this->get_rightEye_7();
+		NullCheck(L_44);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_45;
+		L_45 = GameObject_get_transform_m16A80BB92B6C8C5AB696E447014D45EDF1E4DE34(L_44, /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_46;
+		L_46 = Vector3_get_zero_m1A8F7993167785F750B6B01762D22C2597C84EF6(/*hidden argument*/NULL);
 		NullCheck(L_45);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_46;
-		L_46 = GameObject_get_transform_m16A80BB92B6C8C5AB696E447014D45EDF1E4DE34(L_45, /*hidden argument*/NULL);
-		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_47 = ___arFace0;
+		Transform_set_localPosition_m2A2B0033EF079077FAE7C65196078EAF5D041AFC(L_45, L_46, /*hidden argument*/NULL);
+		// rightEye.transform.localRotation = Quaternion.identity;
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_47 = __this->get_rightEye_7();
 		NullCheck(L_47);
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_48;
-		L_48 = ARFace_get_rightEye_mDA882A16AEC1D06AF4C0D05EFC88CA1F112D5D7C_inline(L_47, /*hidden argument*/NULL);
-		NullCheck(L_46);
-		Transform_SetParent_m24E34EBEF76528C99AFA017F157EE8B3E3116B1E(L_46, L_48, /*hidden argument*/NULL);
-		// rightEye.transform.localPosition = Vector3.zero;
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_49 = __this->get_rightEye_7();
-		NullCheck(L_49);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_50;
-		L_50 = GameObject_get_transform_m16A80BB92B6C8C5AB696E447014D45EDF1E4DE34(L_49, /*hidden argument*/NULL);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_51;
-		L_51 = Vector3_get_zero_m1A8F7993167785F750B6B01762D22C2597C84EF6(/*hidden argument*/NULL);
-		NullCheck(L_50);
-		Transform_set_localPosition_m2A2B0033EF079077FAE7C65196078EAF5D041AFC(L_50, L_51, /*hidden argument*/NULL);
-		// rightEye.transform.localRotation = Quaternion.identity;
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_52 = __this->get_rightEye_7();
-		NullCheck(L_52);
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_53;
-		L_53 = GameObject_get_transform_m16A80BB92B6C8C5AB696E447014D45EDF1E4DE34(L_52, /*hidden argument*/NULL);
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_54;
-		L_54 = Quaternion_get_identity_mF2E565DBCE793A1AE6208056D42CA7C59D83A702(/*hidden argument*/NULL);
-		NullCheck(L_53);
-		Transform_set_localRotation_m1A9101457EC4653AFC93FCC4065A29F2C78FA62C(L_53, L_54, /*hidden argument*/NULL);
+		L_48 = GameObject_get_transform_m16A80BB92B6C8C5AB696E447014D45EDF1E4DE34(L_47, /*hidden argument*/NULL);
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_49;
+		L_49 = Quaternion_get_identity_mF2E565DBCE793A1AE6208056D42CA7C59D83A702(/*hidden argument*/NULL);
+		NullCheck(L_48);
+		Transform_set_localRotation_m1A9101457EC4653AFC93FCC4065A29F2C78FA62C(L_48, L_49, /*hidden argument*/NULL);
 		// rightEye.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_55 = __this->get_rightEye_7();
-		NullCheck(L_55);
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_55, (bool)1, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_50 = __this->get_rightEye_7();
+		NullCheck(L_50);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_50, (bool)1, /*hidden argument*/NULL);
 	}
 
-IL_0193:
-	{
-	}
-
-IL_0194:
+IL_0169:
 	{
 		// }
 		return;
@@ -6676,8 +6586,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREyeManager_OnDisable_m217C166508C04A3C
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
-	bool V_1 = false;
 	{
 		// arFaceManager.facesChanged -= FacesChanged;
 		ARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647 * L_0 = __this->get_arFaceManager_8();
@@ -6690,42 +6598,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREyeManager_OnDisable_m217C166508C04A3C
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		bool L_3;
 		L_3 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_2, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		V_0 = L_3;
-		bool L_4 = V_0;
-		if (!L_4)
+		if (!L_3)
 		{
-			goto IL_0038;
+			goto IL_0031;
 		}
 	}
 	{
 		// leftEye.SetActive(false);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_5 = __this->get_leftEye_6();
-		NullCheck(L_5);
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_5, (bool)0, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_4 = __this->get_leftEye_6();
+		NullCheck(L_4);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_4, (bool)0, /*hidden argument*/NULL);
 	}
 
-IL_0038:
+IL_0031:
 	{
 		// if (rightEye != null)
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_6 = __this->get_rightEye_7();
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_5 = __this->get_rightEye_7();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		bool L_7;
-		L_7 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_6, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		V_1 = L_7;
-		bool L_8 = V_1;
-		if (!L_8)
+		bool L_6;
+		L_6 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_5, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		if (!L_6)
 		{
-			goto IL_0057;
+			goto IL_004b;
 		}
 	}
 	{
 		// rightEye.SetActive(true);
-		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_9 = __this->get_rightEye_7();
-		NullCheck(L_9);
-		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_9, (bool)1, /*hidden argument*/NULL);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_7 = __this->get_rightEye_7();
+		NullCheck(L_7);
+		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_7, (bool)1, /*hidden argument*/NULL);
 	}
 
-IL_0057:
+IL_004b:
 	{
 		// }
 		return;
@@ -6750,19 +6654,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AREyeManager__ctor_mC9A0F894EBD16E7E3BAF
 // System.Single ARKitBlendShapeVisualizer::get_coefficientScale()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ARKitBlendShapeVisualizer_get_coefficientScale_m3CDD631E0CCD082B512ED45BB8492477DA85E614 (ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * __this, const RuntimeMethod* method)
 {
-	float V_0 = 0.0f;
 	{
 		// get { return m_CoefficientScale; }
 		float L_0 = __this->get_m_CoefficientScale_5();
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		// get { return m_CoefficientScale; }
-		float L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void ARKitBlendShapeVisualizer::set_coefficientScale(System.Single)
@@ -6779,19 +6674,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARKitBlendShapeVisualizer_set_coefficien
 // UnityEngine.SkinnedMeshRenderer ARKitBlendShapeVisualizer::get_skinnedMeshRenderer()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB (ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * __this, const RuntimeMethod* method)
 {
-	SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * V_0 = NULL;
 	{
 		// return m_SkinnedMeshRenderer;
 		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_0 = __this->get_m_SkinnedMeshRenderer_6();
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		// }
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void ARKitBlendShapeVisualizer::set_skinnedMeshRenderer(UnityEngine.SkinnedMeshRenderer)
@@ -6944,1344 +6830,1326 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARKitBlendShapeVisualizer_CreateFeatureB
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF9F22F40B97C88A34C105A834A68A961CCF32599);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
-	bool V_1 = false;
-	bool V_2 = false;
-	int32_t G_B3_0 = 0;
 	{
 		// if (skinnedMeshRenderer == null || skinnedMeshRenderer.sharedMesh == null)
 		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_0;
-		L_0 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
+		L_0 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_0, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
 		if (L_1)
 		{
-			goto IL_0022;
+			goto IL_0021;
 		}
 	}
 	{
 		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_2;
-		L_2 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
+		L_2 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
 		NullCheck(L_2);
 		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_3;
 		L_3 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_2, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		bool L_4;
 		L_4 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_3, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		G_B3_0 = ((int32_t)(L_4));
-		goto IL_0023;
+		if (!L_4)
+		{
+			goto IL_0022;
+		}
+	}
+
+IL_0021:
+	{
+		// return;
+		return;
 	}
 
 IL_0022:
 	{
-		G_B3_0 = 1;
-	}
-
-IL_0023:
-	{
-		V_0 = (bool)G_B3_0;
-		bool L_5 = V_0;
-		if (!L_5)
-		{
-			goto IL_002d;
-		}
-	}
-	{
-		// return;
-		goto IL_0e95;
-	}
-
-IL_002d:
-	{
 		// Debug.Log(skinnedMeshRenderer.name);
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_6;
-		L_6 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_6);
-		String_t* L_7;
-		L_7 = Object_get_name_m0C7BC870ED2F0DC5A2FB09628136CD7D1CB82CFB(L_6, /*hidden argument*/NULL);
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_5;
+		L_5 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_5);
+		String_t* L_6;
+		L_6 = Object_get_name_m0C7BC870ED2F0DC5A2FB09628136CD7D1CB82CFB(L_5, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_7, /*hidden argument*/NULL);
+		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_6, /*hidden argument*/NULL);
 		// m_FaceArkitBlendShapeIndexMap = new Dictionary<ARKitBlendShapeLocation, int>();
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_8 = (Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 *)il2cpp_codegen_object_new(Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52_il2cpp_TypeInfo_var);
-		Dictionary_2__ctor_m6723FD1353FC1B3917E0D02DC5FE5B242BA9BED9(L_8, /*hidden argument*/Dictionary_2__ctor_m6723FD1353FC1B3917E0D02DC5FE5B242BA9BED9_RuntimeMethod_var);
-		__this->set_m_FaceArkitBlendShapeIndexMap_8(L_8);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_7 = (Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 *)il2cpp_codegen_object_new(Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_m6723FD1353FC1B3917E0D02DC5FE5B242BA9BED9(L_7, /*hidden argument*/Dictionary_2__ctor_m6723FD1353FC1B3917E0D02DC5FE5B242BA9BED9_RuntimeMethod_var);
+		__this->set_m_FaceArkitBlendShapeIndexMap_8(L_7);
 		// if (isReadyPlayer)
-		bool L_9 = __this->get_isReadyPlayer_4();
-		V_1 = L_9;
-		bool L_10 = V_1;
-		if (!L_10)
+		bool L_8 = __this->get_isReadyPlayer_4();
+		if (!L_8)
 		{
-			goto IL_0770;
+			goto IL_0728;
 		}
 	}
 	{
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.BrowDownLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("browDownLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_11 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_12;
-		L_12 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_12);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_13;
-		L_13 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_12, /*hidden argument*/NULL);
-		NullCheck(L_13);
-		int32_t L_14;
-		L_14 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_13, _stringLiteralB6D0B667952FC2879EC266B2FD93E950C4BC40E5, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_9 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_10;
+		L_10 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_10);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_11;
+		L_11 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_10, /*hidden argument*/NULL);
 		NullCheck(L_11);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_11, 0, L_14, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_12;
+		L_12 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_11, _stringLiteralB6D0B667952FC2879EC266B2FD93E950C4BC40E5, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_9, 0, L_12, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.BrowDownRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("browDownRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_15 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_16;
-		L_16 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_16);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_17;
-		L_17 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_16, /*hidden argument*/NULL);
-		NullCheck(L_17);
-		int32_t L_18;
-		L_18 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_17, _stringLiteral61F85EBDF23F1B6A40B1FCF472C1BFC2BCE8A514, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_13 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_14;
+		L_14 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_14);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_15;
+		L_15 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_14, /*hidden argument*/NULL);
 		NullCheck(L_15);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_15, 1, L_18, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_16;
+		L_16 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_15, _stringLiteral61F85EBDF23F1B6A40B1FCF472C1BFC2BCE8A514, /*hidden argument*/NULL);
+		NullCheck(L_13);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_13, 1, L_16, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.BrowInnerUp] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("browInnerUp");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_19 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_20;
-		L_20 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_20);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_21;
-		L_21 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_20, /*hidden argument*/NULL);
-		NullCheck(L_21);
-		int32_t L_22;
-		L_22 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_21, _stringLiteral71CBAF743F0BEE8EC826232F4E5C0FB2FDF1CAB8, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_17 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_18;
+		L_18 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_18);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_19;
+		L_19 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_18, /*hidden argument*/NULL);
 		NullCheck(L_19);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_19, 2, L_22, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_20;
+		L_20 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_19, _stringLiteral71CBAF743F0BEE8EC826232F4E5C0FB2FDF1CAB8, /*hidden argument*/NULL);
+		NullCheck(L_17);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_17, 2, L_20, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.BrowOuterUpLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("browOuterUpLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_23 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_24;
-		L_24 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_24);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_25;
-		L_25 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_24, /*hidden argument*/NULL);
-		NullCheck(L_25);
-		int32_t L_26;
-		L_26 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_25, _stringLiteralB5A24B262D43B3BCE5AA7B76769FAA54EB2EC4BC, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_21 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_22;
+		L_22 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_22);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_23;
+		L_23 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_22, /*hidden argument*/NULL);
 		NullCheck(L_23);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_23, 3, L_26, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_24;
+		L_24 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_23, _stringLiteralB5A24B262D43B3BCE5AA7B76769FAA54EB2EC4BC, /*hidden argument*/NULL);
+		NullCheck(L_21);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_21, 3, L_24, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.BrowOuterUpRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("browOuterUpRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_27 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_28;
-		L_28 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_28);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_29;
-		L_29 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_28, /*hidden argument*/NULL);
-		NullCheck(L_29);
-		int32_t L_30;
-		L_30 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_29, _stringLiteral9357FB947E6E428E686EA30C90D58615AC2A50D3, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_25 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_26;
+		L_26 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_26);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_27;
+		L_27 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_26, /*hidden argument*/NULL);
 		NullCheck(L_27);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_27, 4, L_30, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_28;
+		L_28 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_27, _stringLiteral9357FB947E6E428E686EA30C90D58615AC2A50D3, /*hidden argument*/NULL);
+		NullCheck(L_25);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_25, 4, L_28, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.CheekPuff] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("cheekPuff");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_31 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_32;
-		L_32 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_32);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_33;
-		L_33 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_32, /*hidden argument*/NULL);
-		NullCheck(L_33);
-		int32_t L_34;
-		L_34 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_33, _stringLiteral897F28070FE991FACA2A898324CF2FA525FCD2E5, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_29 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_30;
+		L_30 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_30);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_31;
+		L_31 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_30, /*hidden argument*/NULL);
 		NullCheck(L_31);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_31, 5, L_34, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_32;
+		L_32 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_31, _stringLiteral897F28070FE991FACA2A898324CF2FA525FCD2E5, /*hidden argument*/NULL);
+		NullCheck(L_29);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_29, 5, L_32, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.CheekSquintLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("cheekSquintLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_35 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_36;
-		L_36 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_36);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_37;
-		L_37 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_36, /*hidden argument*/NULL);
-		NullCheck(L_37);
-		int32_t L_38;
-		L_38 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_37, _stringLiteral36E260EDE710F020314EC24F336C82E770BFDD17, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_33 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_34;
+		L_34 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_34);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_35;
+		L_35 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_34, /*hidden argument*/NULL);
 		NullCheck(L_35);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_35, 6, L_38, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_36;
+		L_36 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_35, _stringLiteral36E260EDE710F020314EC24F336C82E770BFDD17, /*hidden argument*/NULL);
+		NullCheck(L_33);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_33, 6, L_36, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.CheekSquintRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("cheekSquintRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_39 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_40;
-		L_40 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_40);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_41;
-		L_41 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_40, /*hidden argument*/NULL);
-		NullCheck(L_41);
-		int32_t L_42;
-		L_42 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_41, _stringLiteralF9F22F40B97C88A34C105A834A68A961CCF32599, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_37 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_38;
+		L_38 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_38);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_39;
+		L_39 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_38, /*hidden argument*/NULL);
 		NullCheck(L_39);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_39, 7, L_42, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_40;
+		L_40 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_39, _stringLiteralF9F22F40B97C88A34C105A834A68A961CCF32599, /*hidden argument*/NULL);
+		NullCheck(L_37);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_37, 7, L_40, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeBlinkLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeBlinkLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_43 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_44;
-		L_44 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_44);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_45;
-		L_45 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_44, /*hidden argument*/NULL);
-		NullCheck(L_45);
-		int32_t L_46;
-		L_46 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_45, _stringLiteralA7348320457C8ABF47F1FBA9F29B74C770F89497, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_41 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_42;
+		L_42 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_42);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_43;
+		L_43 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_42, /*hidden argument*/NULL);
 		NullCheck(L_43);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_43, 8, L_46, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_44;
+		L_44 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_43, _stringLiteralA7348320457C8ABF47F1FBA9F29B74C770F89497, /*hidden argument*/NULL);
+		NullCheck(L_41);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_41, 8, L_44, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeBlinkRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeBlinkRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_47 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_48;
-		L_48 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_48);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_49;
-		L_49 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_48, /*hidden argument*/NULL);
-		NullCheck(L_49);
-		int32_t L_50;
-		L_50 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_49, _stringLiteral3B3C5C41CAA2351E5F24D6E5A4F9A103E0FBD4A7, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_45 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_46;
+		L_46 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_46);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_47;
+		L_47 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_46, /*hidden argument*/NULL);
 		NullCheck(L_47);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_47, ((int32_t)9), L_50, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_48;
+		L_48 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_47, _stringLiteral3B3C5C41CAA2351E5F24D6E5A4F9A103E0FBD4A7, /*hidden argument*/NULL);
+		NullCheck(L_45);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_45, ((int32_t)9), L_48, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookDownLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeLookDownLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_51 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_52;
-		L_52 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_52);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_53;
-		L_53 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_52, /*hidden argument*/NULL);
-		NullCheck(L_53);
-		int32_t L_54;
-		L_54 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_53, _stringLiteralE8DEFB180BBD643B10E06E6A765D6BCAEDCD2271, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_49 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_50;
+		L_50 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_50);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_51;
+		L_51 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_50, /*hidden argument*/NULL);
 		NullCheck(L_51);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_51, ((int32_t)10), L_54, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_52;
+		L_52 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_51, _stringLiteralE8DEFB180BBD643B10E06E6A765D6BCAEDCD2271, /*hidden argument*/NULL);
+		NullCheck(L_49);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_49, ((int32_t)10), L_52, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookDownRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeLookDownRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_55 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_56;
-		L_56 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_56);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_57;
-		L_57 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_56, /*hidden argument*/NULL);
-		NullCheck(L_57);
-		int32_t L_58;
-		L_58 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_57, _stringLiteral45B845AA6B90B34523776EE49C40BA913A7C53F2, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_53 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_54;
+		L_54 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_54);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_55;
+		L_55 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_54, /*hidden argument*/NULL);
 		NullCheck(L_55);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_55, ((int32_t)11), L_58, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_56;
+		L_56 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_55, _stringLiteral45B845AA6B90B34523776EE49C40BA913A7C53F2, /*hidden argument*/NULL);
+		NullCheck(L_53);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_53, ((int32_t)11), L_56, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookInLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeLookInLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_59 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_60;
-		L_60 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_60);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_61;
-		L_61 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_60, /*hidden argument*/NULL);
-		NullCheck(L_61);
-		int32_t L_62;
-		L_62 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_61, _stringLiteral157AF39885A28D92490645F53383047672EA8A99, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_57 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_58;
+		L_58 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_58);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_59;
+		L_59 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_58, /*hidden argument*/NULL);
 		NullCheck(L_59);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_59, ((int32_t)12), L_62, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_60;
+		L_60 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_59, _stringLiteral157AF39885A28D92490645F53383047672EA8A99, /*hidden argument*/NULL);
+		NullCheck(L_57);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_57, ((int32_t)12), L_60, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookInRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeLookInRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_63 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_64;
-		L_64 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_64);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_65;
-		L_65 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_64, /*hidden argument*/NULL);
-		NullCheck(L_65);
-		int32_t L_66;
-		L_66 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_65, _stringLiteral39DB4C3BF92F45E0B29AC6BD1C121E0FB22B70DE, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_61 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_62;
+		L_62 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_62);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_63;
+		L_63 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_62, /*hidden argument*/NULL);
 		NullCheck(L_63);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_63, ((int32_t)13), L_66, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_64;
+		L_64 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_63, _stringLiteral39DB4C3BF92F45E0B29AC6BD1C121E0FB22B70DE, /*hidden argument*/NULL);
+		NullCheck(L_61);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_61, ((int32_t)13), L_64, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookOutLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeLookOutLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_67 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_68;
-		L_68 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_68);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_69;
-		L_69 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_68, /*hidden argument*/NULL);
-		NullCheck(L_69);
-		int32_t L_70;
-		L_70 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_69, _stringLiteral18BCAD0CF98684F53823AED655AA237B62590BA3, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_65 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_66;
+		L_66 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_66);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_67;
+		L_67 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_66, /*hidden argument*/NULL);
 		NullCheck(L_67);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_67, ((int32_t)14), L_70, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_68;
+		L_68 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_67, _stringLiteral18BCAD0CF98684F53823AED655AA237B62590BA3, /*hidden argument*/NULL);
+		NullCheck(L_65);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_65, ((int32_t)14), L_68, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookOutRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeLookOutRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_71 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_72;
-		L_72 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_72);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_73;
-		L_73 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_72, /*hidden argument*/NULL);
-		NullCheck(L_73);
-		int32_t L_74;
-		L_74 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_73, _stringLiteral3F28B3CC0403EF4AF02C2462081D2272C1FA48BA, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_69 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_70;
+		L_70 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_70);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_71;
+		L_71 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_70, /*hidden argument*/NULL);
 		NullCheck(L_71);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_71, ((int32_t)15), L_74, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_72;
+		L_72 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_71, _stringLiteral3F28B3CC0403EF4AF02C2462081D2272C1FA48BA, /*hidden argument*/NULL);
+		NullCheck(L_69);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_69, ((int32_t)15), L_72, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookUpLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeLookUpLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_75 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_76;
-		L_76 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_76);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_77;
-		L_77 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_76, /*hidden argument*/NULL);
-		NullCheck(L_77);
-		int32_t L_78;
-		L_78 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_77, _stringLiteral900D1DB83EC426436F127C763621BA0AD4E913D4, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_73 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_74;
+		L_74 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_74);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_75;
+		L_75 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_74, /*hidden argument*/NULL);
 		NullCheck(L_75);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_75, ((int32_t)16), L_78, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_76;
+		L_76 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_75, _stringLiteral900D1DB83EC426436F127C763621BA0AD4E913D4, /*hidden argument*/NULL);
+		NullCheck(L_73);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_73, ((int32_t)16), L_76, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookUpRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeLookUpRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_79 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_80;
-		L_80 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_80);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_81;
-		L_81 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_80, /*hidden argument*/NULL);
-		NullCheck(L_81);
-		int32_t L_82;
-		L_82 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_81, _stringLiteral5C1C7576776DE6220303053B5CAE0C9B7811DA9D, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_77 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_78;
+		L_78 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_78);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_79;
+		L_79 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_78, /*hidden argument*/NULL);
 		NullCheck(L_79);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_79, ((int32_t)17), L_82, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_80;
+		L_80 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_79, _stringLiteral5C1C7576776DE6220303053B5CAE0C9B7811DA9D, /*hidden argument*/NULL);
+		NullCheck(L_77);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_77, ((int32_t)17), L_80, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeSquintLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeSquintLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_83 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_84;
-		L_84 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_84);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_85;
-		L_85 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_84, /*hidden argument*/NULL);
-		NullCheck(L_85);
-		int32_t L_86;
-		L_86 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_85, _stringLiteralC3B09D97B4A57D64C1E83F099A7DB260E960B7AE, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_81 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_82;
+		L_82 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_82);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_83;
+		L_83 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_82, /*hidden argument*/NULL);
 		NullCheck(L_83);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_83, ((int32_t)18), L_86, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_84;
+		L_84 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_83, _stringLiteralC3B09D97B4A57D64C1E83F099A7DB260E960B7AE, /*hidden argument*/NULL);
+		NullCheck(L_81);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_81, ((int32_t)18), L_84, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeSquintRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeSquintRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_87 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_88;
-		L_88 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_88);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_89;
-		L_89 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_88, /*hidden argument*/NULL);
-		NullCheck(L_89);
-		int32_t L_90;
-		L_90 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_89, _stringLiteral97242EAB5E445B2CEDEF6BF2F9D450240CA0BF88, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_85 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_86;
+		L_86 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_86);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_87;
+		L_87 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_86, /*hidden argument*/NULL);
 		NullCheck(L_87);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_87, ((int32_t)19), L_90, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_88;
+		L_88 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_87, _stringLiteral97242EAB5E445B2CEDEF6BF2F9D450240CA0BF88, /*hidden argument*/NULL);
+		NullCheck(L_85);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_85, ((int32_t)19), L_88, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeWideLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeWideLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_91 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_92;
-		L_92 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_92);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_93;
-		L_93 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_92, /*hidden argument*/NULL);
-		NullCheck(L_93);
-		int32_t L_94;
-		L_94 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_93, _stringLiteralAA00ED78D18AE695C05C8BBE3AA7B60090999E54, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_89 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_90;
+		L_90 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_90);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_91;
+		L_91 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_90, /*hidden argument*/NULL);
 		NullCheck(L_91);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_91, ((int32_t)20), L_94, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_92;
+		L_92 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_91, _stringLiteralAA00ED78D18AE695C05C8BBE3AA7B60090999E54, /*hidden argument*/NULL);
+		NullCheck(L_89);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_89, ((int32_t)20), L_92, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeWideRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("eyeWideRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_95 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_96;
-		L_96 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_96);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_97;
-		L_97 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_96, /*hidden argument*/NULL);
-		NullCheck(L_97);
-		int32_t L_98;
-		L_98 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_97, _stringLiteral094D29373AE8152FAAE3BCC0987191D8B37B0074, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_93 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_94;
+		L_94 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_94);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_95;
+		L_95 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_94, /*hidden argument*/NULL);
 		NullCheck(L_95);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_95, ((int32_t)21), L_98, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_96;
+		L_96 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_95, _stringLiteral094D29373AE8152FAAE3BCC0987191D8B37B0074, /*hidden argument*/NULL);
+		NullCheck(L_93);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_93, ((int32_t)21), L_96, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.JawForward] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("jawForward");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_99 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_100;
-		L_100 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_100);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_101;
-		L_101 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_100, /*hidden argument*/NULL);
-		NullCheck(L_101);
-		int32_t L_102;
-		L_102 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_101, _stringLiteralE59EC9113D1726679094B2B9E6E2972ED1462B90, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_97 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_98;
+		L_98 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_98);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_99;
+		L_99 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_98, /*hidden argument*/NULL);
 		NullCheck(L_99);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_99, ((int32_t)22), L_102, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_100;
+		L_100 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_99, _stringLiteralE59EC9113D1726679094B2B9E6E2972ED1462B90, /*hidden argument*/NULL);
+		NullCheck(L_97);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_97, ((int32_t)22), L_100, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.JawLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("jawLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_103 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_104;
-		L_104 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_104);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_105;
-		L_105 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_104, /*hidden argument*/NULL);
-		NullCheck(L_105);
-		int32_t L_106;
-		L_106 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_105, _stringLiteral4DD1CD3D92CBF33D1B007D579A8E0ABE593044BB, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_101 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_102;
+		L_102 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_102);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_103;
+		L_103 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_102, /*hidden argument*/NULL);
 		NullCheck(L_103);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_103, ((int32_t)23), L_106, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_104;
+		L_104 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_103, _stringLiteral4DD1CD3D92CBF33D1B007D579A8E0ABE593044BB, /*hidden argument*/NULL);
+		NullCheck(L_101);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_101, ((int32_t)23), L_104, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.JawOpen] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("jawOpen");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_107 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_108;
-		L_108 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_108);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_109;
-		L_109 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_108, /*hidden argument*/NULL);
-		NullCheck(L_109);
-		int32_t L_110;
-		L_110 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_109, _stringLiteral0278FD43FF658F79A56F7B28B871675E46269E14, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_105 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_106;
+		L_106 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_106);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_107;
+		L_107 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_106, /*hidden argument*/NULL);
 		NullCheck(L_107);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_107, ((int32_t)24), L_110, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_108;
+		L_108 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_107, _stringLiteral0278FD43FF658F79A56F7B28B871675E46269E14, /*hidden argument*/NULL);
+		NullCheck(L_105);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_105, ((int32_t)24), L_108, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.JawRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("jawRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_111 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_112;
-		L_112 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_112);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_113;
-		L_113 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_112, /*hidden argument*/NULL);
-		NullCheck(L_113);
-		int32_t L_114;
-		L_114 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_113, _stringLiteral8889AE9F5EA5CCB781608FB7652FAAC21DFBB482, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_109 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_110;
+		L_110 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_110);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_111;
+		L_111 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_110, /*hidden argument*/NULL);
 		NullCheck(L_111);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_111, ((int32_t)25), L_114, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_112;
+		L_112 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_111, _stringLiteral8889AE9F5EA5CCB781608FB7652FAAC21DFBB482, /*hidden argument*/NULL);
+		NullCheck(L_109);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_109, ((int32_t)25), L_112, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthClose] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthClose");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_115 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_116;
-		L_116 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_116);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_117;
-		L_117 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_116, /*hidden argument*/NULL);
-		NullCheck(L_117);
-		int32_t L_118;
-		L_118 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_117, _stringLiteralCFA593F38939B7FD33093F628DC5A47163F21687, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_113 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_114;
+		L_114 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_114);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_115;
+		L_115 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_114, /*hidden argument*/NULL);
 		NullCheck(L_115);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_115, ((int32_t)26), L_118, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_116;
+		L_116 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_115, _stringLiteralCFA593F38939B7FD33093F628DC5A47163F21687, /*hidden argument*/NULL);
+		NullCheck(L_113);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_113, ((int32_t)26), L_116, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthDimpleLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthDimpleLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_119 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_120;
-		L_120 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_120);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_121;
-		L_121 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_120, /*hidden argument*/NULL);
-		NullCheck(L_121);
-		int32_t L_122;
-		L_122 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_121, _stringLiteralA641807DB4EF2B5D60AE13FDFA4E2AD18846CF57, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_117 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_118;
+		L_118 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_118);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_119;
+		L_119 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_118, /*hidden argument*/NULL);
 		NullCheck(L_119);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_119, ((int32_t)27), L_122, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_120;
+		L_120 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_119, _stringLiteralA641807DB4EF2B5D60AE13FDFA4E2AD18846CF57, /*hidden argument*/NULL);
+		NullCheck(L_117);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_117, ((int32_t)27), L_120, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthDimpleRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthDimpleRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_123 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_124;
-		L_124 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_124);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_125;
-		L_125 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_124, /*hidden argument*/NULL);
-		NullCheck(L_125);
-		int32_t L_126;
-		L_126 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_125, _stringLiteral84E016FA9B7D881AE319B9B1037033F918266813, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_121 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_122;
+		L_122 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_122);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_123;
+		L_123 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_122, /*hidden argument*/NULL);
 		NullCheck(L_123);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_123, ((int32_t)28), L_126, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_124;
+		L_124 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_123, _stringLiteral84E016FA9B7D881AE319B9B1037033F918266813, /*hidden argument*/NULL);
+		NullCheck(L_121);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_121, ((int32_t)28), L_124, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthFrownLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthFrownLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_127 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_128;
-		L_128 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_128);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_129;
-		L_129 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_128, /*hidden argument*/NULL);
-		NullCheck(L_129);
-		int32_t L_130;
-		L_130 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_129, _stringLiteral8422C2D528A62186B910CE26B648AFCAA739A2D6, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_125 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_126;
+		L_126 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_126);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_127;
+		L_127 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_126, /*hidden argument*/NULL);
 		NullCheck(L_127);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_127, ((int32_t)29), L_130, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_128;
+		L_128 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_127, _stringLiteral8422C2D528A62186B910CE26B648AFCAA739A2D6, /*hidden argument*/NULL);
+		NullCheck(L_125);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_125, ((int32_t)29), L_128, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthFrownRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthFrownRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_131 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_132;
-		L_132 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_132);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_133;
-		L_133 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_132, /*hidden argument*/NULL);
-		NullCheck(L_133);
-		int32_t L_134;
-		L_134 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_133, _stringLiteral83A0C0D119124D521A057749E23B79B4772F6323, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_129 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_130;
+		L_130 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_130);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_131;
+		L_131 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_130, /*hidden argument*/NULL);
 		NullCheck(L_131);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_131, ((int32_t)30), L_134, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_132;
+		L_132 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_131, _stringLiteral83A0C0D119124D521A057749E23B79B4772F6323, /*hidden argument*/NULL);
+		NullCheck(L_129);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_129, ((int32_t)30), L_132, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthFunnel] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthFunnel");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_135 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_136;
-		L_136 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_136);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_137;
-		L_137 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_136, /*hidden argument*/NULL);
-		NullCheck(L_137);
-		int32_t L_138;
-		L_138 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_137, _stringLiteral88E4C8AEB4B4F7E4AA670EDF4AB5E6EA40A37E97, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_133 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_134;
+		L_134 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_134);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_135;
+		L_135 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_134, /*hidden argument*/NULL);
 		NullCheck(L_135);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_135, ((int32_t)31), L_138, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_136;
+		L_136 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_135, _stringLiteral88E4C8AEB4B4F7E4AA670EDF4AB5E6EA40A37E97, /*hidden argument*/NULL);
+		NullCheck(L_133);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_133, ((int32_t)31), L_136, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_139 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_140;
-		L_140 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_140);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_141;
-		L_141 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_140, /*hidden argument*/NULL);
-		NullCheck(L_141);
-		int32_t L_142;
-		L_142 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_141, _stringLiteral8CD1C92CA5E5AA27BFAB7F3CF4809C93B1CAC9D0, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_137 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_138;
+		L_138 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_138);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_139;
+		L_139 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_138, /*hidden argument*/NULL);
 		NullCheck(L_139);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_139, ((int32_t)32), L_142, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_140;
+		L_140 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_139, _stringLiteral8CD1C92CA5E5AA27BFAB7F3CF4809C93B1CAC9D0, /*hidden argument*/NULL);
+		NullCheck(L_137);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_137, ((int32_t)32), L_140, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_143 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_144;
-		L_144 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_144);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_145;
-		L_145 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_144, /*hidden argument*/NULL);
-		NullCheck(L_145);
-		int32_t L_146;
-		L_146 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_145, _stringLiteralF9038B8BEA6C06EAF4CFCE8FC6E46B7EE762FE44, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_141 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_142;
+		L_142 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_142);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_143;
+		L_143 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_142, /*hidden argument*/NULL);
 		NullCheck(L_143);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_143, ((int32_t)38), L_146, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_144;
+		L_144 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_143, _stringLiteralF9038B8BEA6C06EAF4CFCE8FC6E46B7EE762FE44, /*hidden argument*/NULL);
+		NullCheck(L_141);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_141, ((int32_t)38), L_144, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthLowerDownLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthLowerDownLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_147 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_148;
-		L_148 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_148);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_149;
-		L_149 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_148, /*hidden argument*/NULL);
-		NullCheck(L_149);
-		int32_t L_150;
-		L_150 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_149, _stringLiteral914BDB823E2C18030AEA487DDDC28C6159F2F7F4, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_145 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_146;
+		L_146 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_146);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_147;
+		L_147 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_146, /*hidden argument*/NULL);
 		NullCheck(L_147);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_147, ((int32_t)33), L_150, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_148;
+		L_148 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_147, _stringLiteral914BDB823E2C18030AEA487DDDC28C6159F2F7F4, /*hidden argument*/NULL);
+		NullCheck(L_145);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_145, ((int32_t)33), L_148, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthLowerDownRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthLowerDownRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_151 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_152;
-		L_152 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_152);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_153;
-		L_153 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_152, /*hidden argument*/NULL);
-		NullCheck(L_153);
-		int32_t L_154;
-		L_154 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_153, _stringLiteralEE9C785304BD1841EFF120C4E24F2E20F9AC1AEE, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_149 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_150;
+		L_150 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_150);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_151;
+		L_151 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_150, /*hidden argument*/NULL);
 		NullCheck(L_151);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_151, ((int32_t)34), L_154, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_152;
+		L_152 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_151, _stringLiteralEE9C785304BD1841EFF120C4E24F2E20F9AC1AEE, /*hidden argument*/NULL);
+		NullCheck(L_149);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_149, ((int32_t)34), L_152, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthPressLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthPressLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_155 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_156;
-		L_156 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_156);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_157;
-		L_157 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_156, /*hidden argument*/NULL);
-		NullCheck(L_157);
-		int32_t L_158;
-		L_158 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_157, _stringLiteral520E8DD829AF109004639F30D50F306BC6E1E5A4, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_153 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_154;
+		L_154 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_154);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_155;
+		L_155 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_154, /*hidden argument*/NULL);
 		NullCheck(L_155);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_155, ((int32_t)35), L_158, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_156;
+		L_156 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_155, _stringLiteral520E8DD829AF109004639F30D50F306BC6E1E5A4, /*hidden argument*/NULL);
+		NullCheck(L_153);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_153, ((int32_t)35), L_156, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthPressRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthPressRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_159 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_160;
-		L_160 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_160);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_161;
-		L_161 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_160, /*hidden argument*/NULL);
-		NullCheck(L_161);
-		int32_t L_162;
-		L_162 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_161, _stringLiteral43795357AC48940C8F8F8760FFFE9B20E76E98E8, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_157 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_158;
+		L_158 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_158);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_159;
+		L_159 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_158, /*hidden argument*/NULL);
 		NullCheck(L_159);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_159, ((int32_t)36), L_162, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_160;
+		L_160 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_159, _stringLiteral43795357AC48940C8F8F8760FFFE9B20E76E98E8, /*hidden argument*/NULL);
+		NullCheck(L_157);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_157, ((int32_t)36), L_160, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthPucker] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthPucker");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_163 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_164;
-		L_164 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_164);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_165;
-		L_165 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_164, /*hidden argument*/NULL);
-		NullCheck(L_165);
-		int32_t L_166;
-		L_166 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_165, _stringLiteralF3DDA482A60E58600B20C066E81A0BC09019B7B7, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_161 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_162;
+		L_162 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_162);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_163;
+		L_163 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_162, /*hidden argument*/NULL);
 		NullCheck(L_163);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_163, ((int32_t)37), L_166, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_164;
+		L_164 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_163, _stringLiteralF3DDA482A60E58600B20C066E81A0BC09019B7B7, /*hidden argument*/NULL);
+		NullCheck(L_161);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_161, ((int32_t)37), L_164, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthRollLower] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthRollLower");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_167 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_168;
-		L_168 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_168);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_169;
-		L_169 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_168, /*hidden argument*/NULL);
-		NullCheck(L_169);
-		int32_t L_170;
-		L_170 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_169, _stringLiteral28E809022A2E2EDC0C14875C7529F5C90C6C828C, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_165 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_166;
+		L_166 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_166);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_167;
+		L_167 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_166, /*hidden argument*/NULL);
 		NullCheck(L_167);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_167, ((int32_t)39), L_170, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_168;
+		L_168 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_167, _stringLiteral28E809022A2E2EDC0C14875C7529F5C90C6C828C, /*hidden argument*/NULL);
+		NullCheck(L_165);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_165, ((int32_t)39), L_168, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthRollUpper] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthRollUpper");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_171 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_172;
-		L_172 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_172);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_173;
-		L_173 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_172, /*hidden argument*/NULL);
-		NullCheck(L_173);
-		int32_t L_174;
-		L_174 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_173, _stringLiteral459006F089F9F8A5501297C702D001329727407D, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_169 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_170;
+		L_170 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_170);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_171;
+		L_171 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_170, /*hidden argument*/NULL);
 		NullCheck(L_171);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_171, ((int32_t)40), L_174, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_172;
+		L_172 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_171, _stringLiteral459006F089F9F8A5501297C702D001329727407D, /*hidden argument*/NULL);
+		NullCheck(L_169);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_169, ((int32_t)40), L_172, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthShrugLower] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthShrugLower");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_175 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_176;
-		L_176 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_176);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_177;
-		L_177 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_176, /*hidden argument*/NULL);
-		NullCheck(L_177);
-		int32_t L_178;
-		L_178 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_177, _stringLiteralB70350A1CA4B22D402E2F9CC640DD6EA40BCBBCE, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_173 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_174;
+		L_174 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_174);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_175;
+		L_175 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_174, /*hidden argument*/NULL);
 		NullCheck(L_175);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_175, ((int32_t)41), L_178, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_176;
+		L_176 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_175, _stringLiteralB70350A1CA4B22D402E2F9CC640DD6EA40BCBBCE, /*hidden argument*/NULL);
+		NullCheck(L_173);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_173, ((int32_t)41), L_176, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthShrugUpper] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthShrugUpper");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_179 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_180;
-		L_180 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_180);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_181;
-		L_181 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_180, /*hidden argument*/NULL);
-		NullCheck(L_181);
-		int32_t L_182;
-		L_182 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_181, _stringLiteral220E277E5C8FE04A7158E0EDB962D45086DE2C8B, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_177 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_178;
+		L_178 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_178);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_179;
+		L_179 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_178, /*hidden argument*/NULL);
 		NullCheck(L_179);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_179, ((int32_t)42), L_182, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_180;
+		L_180 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_179, _stringLiteral220E277E5C8FE04A7158E0EDB962D45086DE2C8B, /*hidden argument*/NULL);
+		NullCheck(L_177);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_177, ((int32_t)42), L_180, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthSmileLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthSmileLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_183 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_184;
-		L_184 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_184);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_185;
-		L_185 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_184, /*hidden argument*/NULL);
-		NullCheck(L_185);
-		int32_t L_186;
-		L_186 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_185, _stringLiteralD1C80C772D8FE20B20386C9CD825DD154E852071, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_181 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_182;
+		L_182 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_182);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_183;
+		L_183 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_182, /*hidden argument*/NULL);
 		NullCheck(L_183);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_183, ((int32_t)43), L_186, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_184;
+		L_184 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_183, _stringLiteralD1C80C772D8FE20B20386C9CD825DD154E852071, /*hidden argument*/NULL);
+		NullCheck(L_181);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_181, ((int32_t)43), L_184, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthSmileRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthSmileRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_187 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_188;
-		L_188 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_188);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_189;
-		L_189 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_188, /*hidden argument*/NULL);
-		NullCheck(L_189);
-		int32_t L_190;
-		L_190 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_189, _stringLiteral654D4674445EFC6E5CE27109077A3F9E71C9A608, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_185 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_186;
+		L_186 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_186);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_187;
+		L_187 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_186, /*hidden argument*/NULL);
 		NullCheck(L_187);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_187, ((int32_t)44), L_190, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_188;
+		L_188 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_187, _stringLiteral654D4674445EFC6E5CE27109077A3F9E71C9A608, /*hidden argument*/NULL);
+		NullCheck(L_185);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_185, ((int32_t)44), L_188, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthStretchLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthStretchLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_191 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_192;
-		L_192 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_192);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_193;
-		L_193 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_192, /*hidden argument*/NULL);
-		NullCheck(L_193);
-		int32_t L_194;
-		L_194 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_193, _stringLiteral057CB64F5B7ACC594BF480D5C3619E125A3D75B9, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_189 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_190;
+		L_190 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_190);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_191;
+		L_191 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_190, /*hidden argument*/NULL);
 		NullCheck(L_191);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_191, ((int32_t)45), L_194, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_192;
+		L_192 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_191, _stringLiteral057CB64F5B7ACC594BF480D5C3619E125A3D75B9, /*hidden argument*/NULL);
+		NullCheck(L_189);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_189, ((int32_t)45), L_192, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthStretchRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthStretchRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_195 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_196;
-		L_196 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_196);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_197;
-		L_197 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_196, /*hidden argument*/NULL);
-		NullCheck(L_197);
-		int32_t L_198;
-		L_198 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_197, _stringLiteral847AECE72CB5ADB24ED3AFA03528148B27F578F1, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_193 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_194;
+		L_194 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_194);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_195;
+		L_195 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_194, /*hidden argument*/NULL);
 		NullCheck(L_195);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_195, ((int32_t)46), L_198, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_196;
+		L_196 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_195, _stringLiteral847AECE72CB5ADB24ED3AFA03528148B27F578F1, /*hidden argument*/NULL);
+		NullCheck(L_193);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_193, ((int32_t)46), L_196, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthUpperUpLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthUpperUpLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_199 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_200;
-		L_200 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_200);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_201;
-		L_201 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_200, /*hidden argument*/NULL);
-		NullCheck(L_201);
-		int32_t L_202;
-		L_202 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_201, _stringLiteralC561D9816B95E094BDE83622F705435D73DD0A18, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_197 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_198;
+		L_198 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_198);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_199;
+		L_199 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_198, /*hidden argument*/NULL);
 		NullCheck(L_199);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_199, ((int32_t)47), L_202, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_200;
+		L_200 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_199, _stringLiteralC561D9816B95E094BDE83622F705435D73DD0A18, /*hidden argument*/NULL);
+		NullCheck(L_197);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_197, ((int32_t)47), L_200, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthUpperUpRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("mouthUpperUpRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_203 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_204;
-		L_204 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_204);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_205;
-		L_205 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_204, /*hidden argument*/NULL);
-		NullCheck(L_205);
-		int32_t L_206;
-		L_206 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_205, _stringLiteral50B24F2F49DF2068D6CFCA4EB8D7680077EC2B5E, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_201 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_202;
+		L_202 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_202);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_203;
+		L_203 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_202, /*hidden argument*/NULL);
 		NullCheck(L_203);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_203, ((int32_t)48), L_206, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_204;
+		L_204 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_203, _stringLiteral50B24F2F49DF2068D6CFCA4EB8D7680077EC2B5E, /*hidden argument*/NULL);
+		NullCheck(L_201);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_201, ((int32_t)48), L_204, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.NoseSneerLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("noseSneerLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_207 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_208;
-		L_208 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_208);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_209;
-		L_209 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_208, /*hidden argument*/NULL);
-		NullCheck(L_209);
-		int32_t L_210;
-		L_210 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_209, _stringLiteral380602D83EBCE5BA7D6084DAC7270923F9D6D851, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_205 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_206;
+		L_206 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_206);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_207;
+		L_207 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_206, /*hidden argument*/NULL);
 		NullCheck(L_207);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_207, ((int32_t)49), L_210, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_208;
+		L_208 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_207, _stringLiteral380602D83EBCE5BA7D6084DAC7270923F9D6D851, /*hidden argument*/NULL);
+		NullCheck(L_205);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_205, ((int32_t)49), L_208, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.NoseSneerRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("noseSneerRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_211 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_212;
-		L_212 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_212);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_213;
-		L_213 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_212, /*hidden argument*/NULL);
-		NullCheck(L_213);
-		int32_t L_214;
-		L_214 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_213, _stringLiteral0B7CB9BE1F93718F1D9ED337F9C835F4AAD6EE6A, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_209 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_210;
+		L_210 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_210);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_211;
+		L_211 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_210, /*hidden argument*/NULL);
 		NullCheck(L_211);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_211, ((int32_t)50), L_214, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		int32_t L_212;
+		L_212 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_211, _stringLiteral0B7CB9BE1F93718F1D9ED337F9C835F4AAD6EE6A, /*hidden argument*/NULL);
+		NullCheck(L_209);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_209, ((int32_t)50), L_212, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.TongueOut] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex("tongueOut");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_215 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_216;
-		L_216 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_216);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_217;
-		L_217 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_216, /*hidden argument*/NULL);
-		NullCheck(L_217);
-		int32_t L_218;
-		L_218 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_217, _stringLiteralD8A80A9F4A176020C172E3ABE48BBF28BD7782A2, /*hidden argument*/NULL);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_213 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_214;
+		L_214 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_214);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_215;
+		L_215 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_214, /*hidden argument*/NULL);
 		NullCheck(L_215);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_215, ((int32_t)51), L_218, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
-		goto IL_0e95;
+		int32_t L_216;
+		L_216 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_215, _stringLiteralD8A80A9F4A176020C172E3ABE48BBF28BD7782A2, /*hidden argument*/NULL);
+		NullCheck(L_213);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_213, ((int32_t)51), L_216, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		// }
+		return;
 	}
 
-IL_0770:
+IL_0728:
 	{
 		// else if (!isReadyPlayer)
-		bool L_219 = __this->get_isReadyPlayer_4();
-		V_2 = (bool)((((int32_t)L_219) == ((int32_t)0))? 1 : 0);
-		bool L_220 = V_2;
-		if (!L_220)
+		bool L_217 = __this->get_isReadyPlayer_4();
+		if (L_217)
 		{
-			goto IL_0e95;
+			goto IL_0e12;
 		}
 	}
 	{
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.BrowDownLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "browDown_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_221 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_222;
-		L_222 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_222);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_223;
-		L_223 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_222, /*hidden argument*/NULL);
-		NullCheck(L_223);
-		int32_t L_224;
-		L_224 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_223, _stringLiteral2ADF92A72F8B0FF635A7EA41183846A98A0BB11C, /*hidden argument*/NULL);
-		NullCheck(L_221);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_221, 0, L_224, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_218 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_219;
+		L_219 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_219);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_220;
+		L_220 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_219, /*hidden argument*/NULL);
+		NullCheck(L_220);
+		int32_t L_221;
+		L_221 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_220, _stringLiteral2ADF92A72F8B0FF635A7EA41183846A98A0BB11C, /*hidden argument*/NULL);
+		NullCheck(L_218);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_218, 0, L_221, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.BrowDownRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "browDown_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_225 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_226;
-		L_226 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_226);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_227;
-		L_227 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_226, /*hidden argument*/NULL);
-		NullCheck(L_227);
-		int32_t L_228;
-		L_228 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_227, _stringLiteral05337E40DB3362D9F002F828052BC00FD35ACF37, /*hidden argument*/NULL);
-		NullCheck(L_225);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_225, 1, L_228, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_222 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_223;
+		L_223 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_223);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_224;
+		L_224 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_223, /*hidden argument*/NULL);
+		NullCheck(L_224);
+		int32_t L_225;
+		L_225 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_224, _stringLiteral05337E40DB3362D9F002F828052BC00FD35ACF37, /*hidden argument*/NULL);
+		NullCheck(L_222);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_222, 1, L_225, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.BrowInnerUp] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "browInnerUp");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_229 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_230;
-		L_230 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_230);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_231;
-		L_231 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_230, /*hidden argument*/NULL);
-		NullCheck(L_231);
-		int32_t L_232;
-		L_232 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_231, _stringLiteral898159F805597B0B201677EEBAE17783ED8BD2A0, /*hidden argument*/NULL);
-		NullCheck(L_229);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_229, 2, L_232, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_226 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_227;
+		L_227 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_227);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_228;
+		L_228 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_227, /*hidden argument*/NULL);
+		NullCheck(L_228);
+		int32_t L_229;
+		L_229 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_228, _stringLiteral898159F805597B0B201677EEBAE17783ED8BD2A0, /*hidden argument*/NULL);
+		NullCheck(L_226);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_226, 2, L_229, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.BrowOuterUpLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "browOuterUp_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_233 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_234;
-		L_234 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_234);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_235;
-		L_235 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_234, /*hidden argument*/NULL);
-		NullCheck(L_235);
-		int32_t L_236;
-		L_236 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_235, _stringLiteral9B21D07AAB2F7CDB55925D895F31BC3E60AD73F7, /*hidden argument*/NULL);
-		NullCheck(L_233);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_233, 3, L_236, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_230 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_231;
+		L_231 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_231);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_232;
+		L_232 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_231, /*hidden argument*/NULL);
+		NullCheck(L_232);
+		int32_t L_233;
+		L_233 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_232, _stringLiteral9B21D07AAB2F7CDB55925D895F31BC3E60AD73F7, /*hidden argument*/NULL);
+		NullCheck(L_230);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_230, 3, L_233, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.BrowOuterUpRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "browOuterUp_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_237 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_238;
-		L_238 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_238);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_239;
-		L_239 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_238, /*hidden argument*/NULL);
-		NullCheck(L_239);
-		int32_t L_240;
-		L_240 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_239, _stringLiteral8A871431401209CF53ADA3D1006C1104E06063B5, /*hidden argument*/NULL);
-		NullCheck(L_237);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_237, 4, L_240, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_234 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_235;
+		L_235 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_235);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_236;
+		L_236 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_235, /*hidden argument*/NULL);
+		NullCheck(L_236);
+		int32_t L_237;
+		L_237 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_236, _stringLiteral8A871431401209CF53ADA3D1006C1104E06063B5, /*hidden argument*/NULL);
+		NullCheck(L_234);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_234, 4, L_237, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.CheekPuff] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "cheekPuff");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_241 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_242;
-		L_242 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_242);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_243;
-		L_243 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_242, /*hidden argument*/NULL);
-		NullCheck(L_243);
-		int32_t L_244;
-		L_244 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_243, _stringLiteral38004CF82905412B2A02DD1CBBE7CF8B3BD3901C, /*hidden argument*/NULL);
-		NullCheck(L_241);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_241, 5, L_244, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_238 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_239;
+		L_239 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_239);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_240;
+		L_240 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_239, /*hidden argument*/NULL);
+		NullCheck(L_240);
+		int32_t L_241;
+		L_241 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_240, _stringLiteral38004CF82905412B2A02DD1CBBE7CF8B3BD3901C, /*hidden argument*/NULL);
+		NullCheck(L_238);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_238, 5, L_241, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.CheekSquintLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "cheekSquint_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_245 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_246;
-		L_246 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_246);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_247;
-		L_247 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_246, /*hidden argument*/NULL);
-		NullCheck(L_247);
-		int32_t L_248;
-		L_248 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_247, _stringLiteral3C841F6F27F4181F69BE5A70F396F164DD709E02, /*hidden argument*/NULL);
-		NullCheck(L_245);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_245, 6, L_248, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_242 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_243;
+		L_243 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_243);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_244;
+		L_244 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_243, /*hidden argument*/NULL);
+		NullCheck(L_244);
+		int32_t L_245;
+		L_245 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_244, _stringLiteral3C841F6F27F4181F69BE5A70F396F164DD709E02, /*hidden argument*/NULL);
+		NullCheck(L_242);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_242, 6, L_245, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.CheekSquintRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "cheekSquint_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_249 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_250;
-		L_250 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_250);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_251;
-		L_251 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_250, /*hidden argument*/NULL);
-		NullCheck(L_251);
-		int32_t L_252;
-		L_252 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_251, _stringLiteralBACB6D1FE7D5FAE913AED9E0700DC0CBBEABD641, /*hidden argument*/NULL);
-		NullCheck(L_249);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_249, 7, L_252, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_246 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_247;
+		L_247 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_247);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_248;
+		L_248 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_247, /*hidden argument*/NULL);
+		NullCheck(L_248);
+		int32_t L_249;
+		L_249 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_248, _stringLiteralBACB6D1FE7D5FAE913AED9E0700DC0CBBEABD641, /*hidden argument*/NULL);
+		NullCheck(L_246);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_246, 7, L_249, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeBlinkLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeBlink_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_253 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_254;
-		L_254 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_254);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_255;
-		L_255 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_254, /*hidden argument*/NULL);
-		NullCheck(L_255);
-		int32_t L_256;
-		L_256 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_255, _stringLiteral1BC3EF14AD0D6F5EC09B5293FABE2DD6A3D2E208, /*hidden argument*/NULL);
-		NullCheck(L_253);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_253, 8, L_256, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_250 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_251;
+		L_251 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_251);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_252;
+		L_252 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_251, /*hidden argument*/NULL);
+		NullCheck(L_252);
+		int32_t L_253;
+		L_253 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_252, _stringLiteral1BC3EF14AD0D6F5EC09B5293FABE2DD6A3D2E208, /*hidden argument*/NULL);
+		NullCheck(L_250);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_250, 8, L_253, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeBlinkRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeBlink_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_257 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_258;
-		L_258 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_258);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_259;
-		L_259 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_258, /*hidden argument*/NULL);
-		NullCheck(L_259);
-		int32_t L_260;
-		L_260 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_259, _stringLiteralADA6865E150BD01B7CD963F0B78B110AE9190A38, /*hidden argument*/NULL);
-		NullCheck(L_257);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_257, ((int32_t)9), L_260, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_254 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_255;
+		L_255 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_255);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_256;
+		L_256 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_255, /*hidden argument*/NULL);
+		NullCheck(L_256);
+		int32_t L_257;
+		L_257 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_256, _stringLiteralADA6865E150BD01B7CD963F0B78B110AE9190A38, /*hidden argument*/NULL);
+		NullCheck(L_254);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_254, ((int32_t)9), L_257, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookDownLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeLookDown_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_261 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_262;
-		L_262 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_262);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_263;
-		L_263 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_262, /*hidden argument*/NULL);
-		NullCheck(L_263);
-		int32_t L_264;
-		L_264 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_263, _stringLiteralCDF37121127CF42414F8DFEB0F994557C7FCB36E, /*hidden argument*/NULL);
-		NullCheck(L_261);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_261, ((int32_t)10), L_264, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_258 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_259;
+		L_259 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_259);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_260;
+		L_260 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_259, /*hidden argument*/NULL);
+		NullCheck(L_260);
+		int32_t L_261;
+		L_261 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_260, _stringLiteralCDF37121127CF42414F8DFEB0F994557C7FCB36E, /*hidden argument*/NULL);
+		NullCheck(L_258);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_258, ((int32_t)10), L_261, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookDownRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeLookDown_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_265 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_266;
-		L_266 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_266);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_267;
-		L_267 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_266, /*hidden argument*/NULL);
-		NullCheck(L_267);
-		int32_t L_268;
-		L_268 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_267, _stringLiteral45BBA85F87037BA8A8E13D21FFC2454696F3021E, /*hidden argument*/NULL);
-		NullCheck(L_265);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_265, ((int32_t)11), L_268, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_262 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_263;
+		L_263 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_263);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_264;
+		L_264 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_263, /*hidden argument*/NULL);
+		NullCheck(L_264);
+		int32_t L_265;
+		L_265 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_264, _stringLiteral45BBA85F87037BA8A8E13D21FFC2454696F3021E, /*hidden argument*/NULL);
+		NullCheck(L_262);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_262, ((int32_t)11), L_265, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookInLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeLookIn_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_269 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_270;
-		L_270 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_270);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_271;
-		L_271 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_270, /*hidden argument*/NULL);
-		NullCheck(L_271);
-		int32_t L_272;
-		L_272 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_271, _stringLiteralC5DD049CCCA8D953E8AB8090EA7F5C8412480A83, /*hidden argument*/NULL);
-		NullCheck(L_269);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_269, ((int32_t)12), L_272, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_266 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_267;
+		L_267 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_267);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_268;
+		L_268 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_267, /*hidden argument*/NULL);
+		NullCheck(L_268);
+		int32_t L_269;
+		L_269 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_268, _stringLiteralC5DD049CCCA8D953E8AB8090EA7F5C8412480A83, /*hidden argument*/NULL);
+		NullCheck(L_266);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_266, ((int32_t)12), L_269, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookInRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeLookIn_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_273 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_274;
-		L_274 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_274);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_275;
-		L_275 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_274, /*hidden argument*/NULL);
-		NullCheck(L_275);
-		int32_t L_276;
-		L_276 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_275, _stringLiteral2896336EDDBD77EB4C52AC08AA5B0528264F00CE, /*hidden argument*/NULL);
-		NullCheck(L_273);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_273, ((int32_t)13), L_276, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_270 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_271;
+		L_271 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_271);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_272;
+		L_272 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_271, /*hidden argument*/NULL);
+		NullCheck(L_272);
+		int32_t L_273;
+		L_273 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_272, _stringLiteral2896336EDDBD77EB4C52AC08AA5B0528264F00CE, /*hidden argument*/NULL);
+		NullCheck(L_270);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_270, ((int32_t)13), L_273, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookOutLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeLookOut_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_277 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_278;
-		L_278 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_278);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_279;
-		L_279 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_278, /*hidden argument*/NULL);
-		NullCheck(L_279);
-		int32_t L_280;
-		L_280 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_279, _stringLiteral43DE4F6C88F500CE626AFE896748E78A934E8D66, /*hidden argument*/NULL);
-		NullCheck(L_277);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_277, ((int32_t)14), L_280, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_274 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_275;
+		L_275 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_275);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_276;
+		L_276 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_275, /*hidden argument*/NULL);
+		NullCheck(L_276);
+		int32_t L_277;
+		L_277 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_276, _stringLiteral43DE4F6C88F500CE626AFE896748E78A934E8D66, /*hidden argument*/NULL);
+		NullCheck(L_274);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_274, ((int32_t)14), L_277, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookOutRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeLookOut_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_281 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_282;
-		L_282 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_282);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_283;
-		L_283 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_282, /*hidden argument*/NULL);
-		NullCheck(L_283);
-		int32_t L_284;
-		L_284 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_283, _stringLiteral64E470F34C11F222AABD38D7D3A3658308B0ADF5, /*hidden argument*/NULL);
-		NullCheck(L_281);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_281, ((int32_t)15), L_284, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_278 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_279;
+		L_279 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_279);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_280;
+		L_280 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_279, /*hidden argument*/NULL);
+		NullCheck(L_280);
+		int32_t L_281;
+		L_281 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_280, _stringLiteral64E470F34C11F222AABD38D7D3A3658308B0ADF5, /*hidden argument*/NULL);
+		NullCheck(L_278);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_278, ((int32_t)15), L_281, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookUpLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeLookUp_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_285 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_286;
-		L_286 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_286);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_287;
-		L_287 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_286, /*hidden argument*/NULL);
-		NullCheck(L_287);
-		int32_t L_288;
-		L_288 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_287, _stringLiteral079A1BB64F8952B10E637B9A280D891EA5A8F227, /*hidden argument*/NULL);
-		NullCheck(L_285);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_285, ((int32_t)16), L_288, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_282 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_283;
+		L_283 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_283);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_284;
+		L_284 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_283, /*hidden argument*/NULL);
+		NullCheck(L_284);
+		int32_t L_285;
+		L_285 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_284, _stringLiteral079A1BB64F8952B10E637B9A280D891EA5A8F227, /*hidden argument*/NULL);
+		NullCheck(L_282);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_282, ((int32_t)16), L_285, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeLookUpRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeLookUp_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_289 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_290;
-		L_290 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_290);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_291;
-		L_291 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_290, /*hidden argument*/NULL);
-		NullCheck(L_291);
-		int32_t L_292;
-		L_292 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_291, _stringLiteral8A9BEDFE84F9F24DFD70F3F6F880648FDC05AAB7, /*hidden argument*/NULL);
-		NullCheck(L_289);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_289, ((int32_t)17), L_292, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_286 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_287;
+		L_287 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_287);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_288;
+		L_288 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_287, /*hidden argument*/NULL);
+		NullCheck(L_288);
+		int32_t L_289;
+		L_289 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_288, _stringLiteral8A9BEDFE84F9F24DFD70F3F6F880648FDC05AAB7, /*hidden argument*/NULL);
+		NullCheck(L_286);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_286, ((int32_t)17), L_289, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeSquintLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeSquint_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_293 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_294;
-		L_294 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_294);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_295;
-		L_295 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_294, /*hidden argument*/NULL);
-		NullCheck(L_295);
-		int32_t L_296;
-		L_296 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_295, _stringLiteral80459269E8A2AA7A3C05C7DF0BFF7B42ED954D79, /*hidden argument*/NULL);
-		NullCheck(L_293);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_293, ((int32_t)18), L_296, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_290 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_291;
+		L_291 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_291);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_292;
+		L_292 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_291, /*hidden argument*/NULL);
+		NullCheck(L_292);
+		int32_t L_293;
+		L_293 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_292, _stringLiteral80459269E8A2AA7A3C05C7DF0BFF7B42ED954D79, /*hidden argument*/NULL);
+		NullCheck(L_290);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_290, ((int32_t)18), L_293, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeSquintRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeSquint_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_297 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_298;
-		L_298 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_298);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_299;
-		L_299 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_298, /*hidden argument*/NULL);
-		NullCheck(L_299);
-		int32_t L_300;
-		L_300 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_299, _stringLiteralD610F49A5D6E7744F8E6BB2F625C1BF133273768, /*hidden argument*/NULL);
-		NullCheck(L_297);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_297, ((int32_t)19), L_300, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_294 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_295;
+		L_295 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_295);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_296;
+		L_296 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_295, /*hidden argument*/NULL);
+		NullCheck(L_296);
+		int32_t L_297;
+		L_297 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_296, _stringLiteralD610F49A5D6E7744F8E6BB2F625C1BF133273768, /*hidden argument*/NULL);
+		NullCheck(L_294);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_294, ((int32_t)19), L_297, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeWideLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeWide_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_301 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_302;
-		L_302 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_302);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_303;
-		L_303 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_302, /*hidden argument*/NULL);
-		NullCheck(L_303);
-		int32_t L_304;
-		L_304 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_303, _stringLiteralC94506B0E2BE8042761F8A6A99D85D0078E7DDB7, /*hidden argument*/NULL);
-		NullCheck(L_301);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_301, ((int32_t)20), L_304, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_298 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_299;
+		L_299 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_299);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_300;
+		L_300 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_299, /*hidden argument*/NULL);
+		NullCheck(L_300);
+		int32_t L_301;
+		L_301 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_300, _stringLiteralC94506B0E2BE8042761F8A6A99D85D0078E7DDB7, /*hidden argument*/NULL);
+		NullCheck(L_298);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_298, ((int32_t)20), L_301, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.EyeWideRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "eyeWide_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_305 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_306;
-		L_306 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_306);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_307;
-		L_307 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_306, /*hidden argument*/NULL);
-		NullCheck(L_307);
-		int32_t L_308;
-		L_308 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_307, _stringLiteral728C6F4891E79ED07E95A12E71807E8A88116F97, /*hidden argument*/NULL);
-		NullCheck(L_305);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_305, ((int32_t)21), L_308, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_302 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_303;
+		L_303 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_303);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_304;
+		L_304 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_303, /*hidden argument*/NULL);
+		NullCheck(L_304);
+		int32_t L_305;
+		L_305 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_304, _stringLiteral728C6F4891E79ED07E95A12E71807E8A88116F97, /*hidden argument*/NULL);
+		NullCheck(L_302);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_302, ((int32_t)21), L_305, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.JawForward] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "jawForward");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_309 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_310;
-		L_310 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_310);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_311;
-		L_311 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_310, /*hidden argument*/NULL);
-		NullCheck(L_311);
-		int32_t L_312;
-		L_312 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_311, _stringLiteralD7A178BAA800FE6D37C64A108826E7ED14E25047, /*hidden argument*/NULL);
-		NullCheck(L_309);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_309, ((int32_t)22), L_312, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_306 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_307;
+		L_307 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_307);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_308;
+		L_308 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_307, /*hidden argument*/NULL);
+		NullCheck(L_308);
+		int32_t L_309;
+		L_309 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_308, _stringLiteralD7A178BAA800FE6D37C64A108826E7ED14E25047, /*hidden argument*/NULL);
+		NullCheck(L_306);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_306, ((int32_t)22), L_309, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.JawLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "jawLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_313 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_314;
-		L_314 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_314);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_315;
-		L_315 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_314, /*hidden argument*/NULL);
-		NullCheck(L_315);
-		int32_t L_316;
-		L_316 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_315, _stringLiteral1A392F8809C44FFB8A592058AC785FE8A98881B0, /*hidden argument*/NULL);
-		NullCheck(L_313);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_313, ((int32_t)23), L_316, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_310 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_311;
+		L_311 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_311);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_312;
+		L_312 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_311, /*hidden argument*/NULL);
+		NullCheck(L_312);
+		int32_t L_313;
+		L_313 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_312, _stringLiteral1A392F8809C44FFB8A592058AC785FE8A98881B0, /*hidden argument*/NULL);
+		NullCheck(L_310);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_310, ((int32_t)23), L_313, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.JawOpen] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "jawOpen");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_317 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_318;
-		L_318 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_318);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_319;
-		L_319 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_318, /*hidden argument*/NULL);
-		NullCheck(L_319);
-		int32_t L_320;
-		L_320 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_319, _stringLiteral540944A107F571D4B7A4E60A205D5538D82D13E1, /*hidden argument*/NULL);
-		NullCheck(L_317);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_317, ((int32_t)24), L_320, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_314 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_315;
+		L_315 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_315);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_316;
+		L_316 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_315, /*hidden argument*/NULL);
+		NullCheck(L_316);
+		int32_t L_317;
+		L_317 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_316, _stringLiteral540944A107F571D4B7A4E60A205D5538D82D13E1, /*hidden argument*/NULL);
+		NullCheck(L_314);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_314, ((int32_t)24), L_317, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.JawRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "jawRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_321 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_322;
-		L_322 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_322);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_323;
-		L_323 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_322, /*hidden argument*/NULL);
-		NullCheck(L_323);
-		int32_t L_324;
-		L_324 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_323, _stringLiteral19467F8A6D9C6DD19E71AFA7788B460A13BDFCB6, /*hidden argument*/NULL);
-		NullCheck(L_321);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_321, ((int32_t)25), L_324, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_318 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_319;
+		L_319 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_319);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_320;
+		L_320 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_319, /*hidden argument*/NULL);
+		NullCheck(L_320);
+		int32_t L_321;
+		L_321 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_320, _stringLiteral19467F8A6D9C6DD19E71AFA7788B460A13BDFCB6, /*hidden argument*/NULL);
+		NullCheck(L_318);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_318, ((int32_t)25), L_321, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthClose] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthClose");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_325 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_326;
-		L_326 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_326);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_327;
-		L_327 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_326, /*hidden argument*/NULL);
-		NullCheck(L_327);
-		int32_t L_328;
-		L_328 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_327, _stringLiteral3923C3E0DB2E47F255FE3E10EC18C3CB37FB1F48, /*hidden argument*/NULL);
-		NullCheck(L_325);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_325, ((int32_t)26), L_328, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_322 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_323;
+		L_323 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_323);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_324;
+		L_324 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_323, /*hidden argument*/NULL);
+		NullCheck(L_324);
+		int32_t L_325;
+		L_325 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_324, _stringLiteral3923C3E0DB2E47F255FE3E10EC18C3CB37FB1F48, /*hidden argument*/NULL);
+		NullCheck(L_322);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_322, ((int32_t)26), L_325, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthDimpleLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthDimple_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_329 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_330;
-		L_330 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_330);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_331;
-		L_331 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_330, /*hidden argument*/NULL);
-		NullCheck(L_331);
-		int32_t L_332;
-		L_332 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_331, _stringLiteral2B7184CCAEC2A46C5B266A13556327404CC11BF6, /*hidden argument*/NULL);
-		NullCheck(L_329);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_329, ((int32_t)27), L_332, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_326 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_327;
+		L_327 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_327);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_328;
+		L_328 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_327, /*hidden argument*/NULL);
+		NullCheck(L_328);
+		int32_t L_329;
+		L_329 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_328, _stringLiteral2B7184CCAEC2A46C5B266A13556327404CC11BF6, /*hidden argument*/NULL);
+		NullCheck(L_326);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_326, ((int32_t)27), L_329, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthDimpleRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthDimple_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_333 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_334;
-		L_334 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_334);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_335;
-		L_335 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_334, /*hidden argument*/NULL);
-		NullCheck(L_335);
-		int32_t L_336;
-		L_336 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_335, _stringLiteralD4A908C1394E885B355AA1676B0203AD7C994DF1, /*hidden argument*/NULL);
-		NullCheck(L_333);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_333, ((int32_t)28), L_336, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_330 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_331;
+		L_331 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_331);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_332;
+		L_332 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_331, /*hidden argument*/NULL);
+		NullCheck(L_332);
+		int32_t L_333;
+		L_333 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_332, _stringLiteralD4A908C1394E885B355AA1676B0203AD7C994DF1, /*hidden argument*/NULL);
+		NullCheck(L_330);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_330, ((int32_t)28), L_333, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthFrownLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthFrown_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_337 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_338;
-		L_338 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_338);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_339;
-		L_339 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_338, /*hidden argument*/NULL);
-		NullCheck(L_339);
-		int32_t L_340;
-		L_340 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_339, _stringLiteral1195C158ADE4A07C4796C891B53A1D5CB04CC55C, /*hidden argument*/NULL);
-		NullCheck(L_337);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_337, ((int32_t)29), L_340, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_334 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_335;
+		L_335 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_335);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_336;
+		L_336 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_335, /*hidden argument*/NULL);
+		NullCheck(L_336);
+		int32_t L_337;
+		L_337 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_336, _stringLiteral1195C158ADE4A07C4796C891B53A1D5CB04CC55C, /*hidden argument*/NULL);
+		NullCheck(L_334);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_334, ((int32_t)29), L_337, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthFrownRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthFrown_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_341 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_342;
-		L_342 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_342);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_343;
-		L_343 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_342, /*hidden argument*/NULL);
-		NullCheck(L_343);
-		int32_t L_344;
-		L_344 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_343, _stringLiteralD3B979035F822D0071E4CF643E48C7A312C9C6B0, /*hidden argument*/NULL);
-		NullCheck(L_341);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_341, ((int32_t)30), L_344, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_338 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_339;
+		L_339 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_339);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_340;
+		L_340 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_339, /*hidden argument*/NULL);
+		NullCheck(L_340);
+		int32_t L_341;
+		L_341 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_340, _stringLiteralD3B979035F822D0071E4CF643E48C7A312C9C6B0, /*hidden argument*/NULL);
+		NullCheck(L_338);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_338, ((int32_t)30), L_341, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthFunnel] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthFunnel");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_345 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_346;
-		L_346 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_346);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_347;
-		L_347 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_346, /*hidden argument*/NULL);
-		NullCheck(L_347);
-		int32_t L_348;
-		L_348 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_347, _stringLiteralF24D06E4E0E7B2EF5CAB8A879B739542C61CE948, /*hidden argument*/NULL);
-		NullCheck(L_345);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_345, ((int32_t)31), L_348, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_342 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_343;
+		L_343 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_343);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_344;
+		L_344 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_343, /*hidden argument*/NULL);
+		NullCheck(L_344);
+		int32_t L_345;
+		L_345 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_344, _stringLiteralF24D06E4E0E7B2EF5CAB8A879B739542C61CE948, /*hidden argument*/NULL);
+		NullCheck(L_342);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_342, ((int32_t)31), L_345, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthLeft");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_349 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_350;
-		L_350 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_350);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_351;
-		L_351 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_350, /*hidden argument*/NULL);
-		NullCheck(L_351);
-		int32_t L_352;
-		L_352 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_351, _stringLiteral0F1CCA9F600D2ECB5F192CCB9C3DEB5BED9DE037, /*hidden argument*/NULL);
-		NullCheck(L_349);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_349, ((int32_t)32), L_352, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_346 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_347;
+		L_347 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_347);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_348;
+		L_348 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_347, /*hidden argument*/NULL);
+		NullCheck(L_348);
+		int32_t L_349;
+		L_349 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_348, _stringLiteral0F1CCA9F600D2ECB5F192CCB9C3DEB5BED9DE037, /*hidden argument*/NULL);
+		NullCheck(L_346);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_346, ((int32_t)32), L_349, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthLowerDownLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthLowerDown_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_353 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_354;
-		L_354 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_354);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_355;
-		L_355 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_354, /*hidden argument*/NULL);
-		NullCheck(L_355);
-		int32_t L_356;
-		L_356 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_355, _stringLiteral08610EBF5548DAD01954AE3208A8680C685E8A14, /*hidden argument*/NULL);
-		NullCheck(L_353);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_353, ((int32_t)33), L_356, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_350 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_351;
+		L_351 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_351);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_352;
+		L_352 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_351, /*hidden argument*/NULL);
+		NullCheck(L_352);
+		int32_t L_353;
+		L_353 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_352, _stringLiteral08610EBF5548DAD01954AE3208A8680C685E8A14, /*hidden argument*/NULL);
+		NullCheck(L_350);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_350, ((int32_t)33), L_353, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthLowerDownRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthLowerDown_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_357 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_358;
-		L_358 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_358);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_359;
-		L_359 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_358, /*hidden argument*/NULL);
-		NullCheck(L_359);
-		int32_t L_360;
-		L_360 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_359, _stringLiteral0D9EA04CBC31EBEC2C6A910C8D8627A2C2F7664B, /*hidden argument*/NULL);
-		NullCheck(L_357);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_357, ((int32_t)34), L_360, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_354 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_355;
+		L_355 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_355);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_356;
+		L_356 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_355, /*hidden argument*/NULL);
+		NullCheck(L_356);
+		int32_t L_357;
+		L_357 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_356, _stringLiteral0D9EA04CBC31EBEC2C6A910C8D8627A2C2F7664B, /*hidden argument*/NULL);
+		NullCheck(L_354);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_354, ((int32_t)34), L_357, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthPressLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthPress_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_361 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_362;
-		L_362 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_362);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_363;
-		L_363 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_362, /*hidden argument*/NULL);
-		NullCheck(L_363);
-		int32_t L_364;
-		L_364 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_363, _stringLiteralD8DF4891F42BC168C8918290CC96BD06C3763766, /*hidden argument*/NULL);
-		NullCheck(L_361);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_361, ((int32_t)35), L_364, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_358 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_359;
+		L_359 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_359);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_360;
+		L_360 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_359, /*hidden argument*/NULL);
+		NullCheck(L_360);
+		int32_t L_361;
+		L_361 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_360, _stringLiteralD8DF4891F42BC168C8918290CC96BD06C3763766, /*hidden argument*/NULL);
+		NullCheck(L_358);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_358, ((int32_t)35), L_361, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthPressRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthPress_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_365 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_366;
-		L_366 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_366);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_367;
-		L_367 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_366, /*hidden argument*/NULL);
-		NullCheck(L_367);
-		int32_t L_368;
-		L_368 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_367, _stringLiteral2F2B66502FEC9032CAD67110554575BBC7B9E125, /*hidden argument*/NULL);
-		NullCheck(L_365);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_365, ((int32_t)36), L_368, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_362 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_363;
+		L_363 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_363);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_364;
+		L_364 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_363, /*hidden argument*/NULL);
+		NullCheck(L_364);
+		int32_t L_365;
+		L_365 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_364, _stringLiteral2F2B66502FEC9032CAD67110554575BBC7B9E125, /*hidden argument*/NULL);
+		NullCheck(L_362);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_362, ((int32_t)36), L_365, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthPucker] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthPucker");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_369 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_370;
-		L_370 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_370);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_371;
-		L_371 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_370, /*hidden argument*/NULL);
-		NullCheck(L_371);
-		int32_t L_372;
-		L_372 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_371, _stringLiteral67D7D801550EB71D51D509688D79E867690E2D4E, /*hidden argument*/NULL);
-		NullCheck(L_369);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_369, ((int32_t)37), L_372, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_366 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_367;
+		L_367 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_367);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_368;
+		L_368 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_367, /*hidden argument*/NULL);
+		NullCheck(L_368);
+		int32_t L_369;
+		L_369 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_368, _stringLiteral67D7D801550EB71D51D509688D79E867690E2D4E, /*hidden argument*/NULL);
+		NullCheck(L_366);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_366, ((int32_t)37), L_369, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthRight");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_373 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_374;
-		L_374 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_374);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_375;
-		L_375 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_374, /*hidden argument*/NULL);
-		NullCheck(L_375);
-		int32_t L_376;
-		L_376 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_375, _stringLiteral7C06C16512F11EF61F9959F452F308268D9959F5, /*hidden argument*/NULL);
-		NullCheck(L_373);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_373, ((int32_t)38), L_376, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_370 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_371;
+		L_371 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_371);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_372;
+		L_372 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_371, /*hidden argument*/NULL);
+		NullCheck(L_372);
+		int32_t L_373;
+		L_373 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_372, _stringLiteral7C06C16512F11EF61F9959F452F308268D9959F5, /*hidden argument*/NULL);
+		NullCheck(L_370);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_370, ((int32_t)38), L_373, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthRollLower] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthRollLower");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_377 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_378;
-		L_378 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_378);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_379;
-		L_379 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_378, /*hidden argument*/NULL);
-		NullCheck(L_379);
-		int32_t L_380;
-		L_380 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_379, _stringLiteral1CBB199A9B50F4988A76CED700983D91B26906C8, /*hidden argument*/NULL);
-		NullCheck(L_377);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_377, ((int32_t)39), L_380, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_374 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_375;
+		L_375 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_375);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_376;
+		L_376 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_375, /*hidden argument*/NULL);
+		NullCheck(L_376);
+		int32_t L_377;
+		L_377 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_376, _stringLiteral1CBB199A9B50F4988A76CED700983D91B26906C8, /*hidden argument*/NULL);
+		NullCheck(L_374);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_374, ((int32_t)39), L_377, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthRollUpper] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthRollUpper");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_381 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_382;
-		L_382 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_382);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_383;
-		L_383 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_382, /*hidden argument*/NULL);
-		NullCheck(L_383);
-		int32_t L_384;
-		L_384 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_383, _stringLiteral24579EFBC156EB9CE445447A09E4665D1E9C3B2D, /*hidden argument*/NULL);
-		NullCheck(L_381);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_381, ((int32_t)40), L_384, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_378 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_379;
+		L_379 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_379);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_380;
+		L_380 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_379, /*hidden argument*/NULL);
+		NullCheck(L_380);
+		int32_t L_381;
+		L_381 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_380, _stringLiteral24579EFBC156EB9CE445447A09E4665D1E9C3B2D, /*hidden argument*/NULL);
+		NullCheck(L_378);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_378, ((int32_t)40), L_381, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthShrugLower] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthShrugLower");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_385 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_386;
-		L_386 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_386);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_387;
-		L_387 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_386, /*hidden argument*/NULL);
-		NullCheck(L_387);
-		int32_t L_388;
-		L_388 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_387, _stringLiteral2AF43D604400198B0E8A333975EF65164A5DF8E6, /*hidden argument*/NULL);
-		NullCheck(L_385);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_385, ((int32_t)41), L_388, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_382 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_383;
+		L_383 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_383);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_384;
+		L_384 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_383, /*hidden argument*/NULL);
+		NullCheck(L_384);
+		int32_t L_385;
+		L_385 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_384, _stringLiteral2AF43D604400198B0E8A333975EF65164A5DF8E6, /*hidden argument*/NULL);
+		NullCheck(L_382);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_382, ((int32_t)41), L_385, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthShrugUpper] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthShrugUpper");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_389 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_390;
-		L_390 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_390);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_391;
-		L_391 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_390, /*hidden argument*/NULL);
-		NullCheck(L_391);
-		int32_t L_392;
-		L_392 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_391, _stringLiteral8E4E41FD0F90C2183295EB76B5302FBA8599B22B, /*hidden argument*/NULL);
-		NullCheck(L_389);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_389, ((int32_t)42), L_392, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_386 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_387;
+		L_387 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_387);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_388;
+		L_388 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_387, /*hidden argument*/NULL);
+		NullCheck(L_388);
+		int32_t L_389;
+		L_389 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_388, _stringLiteral8E4E41FD0F90C2183295EB76B5302FBA8599B22B, /*hidden argument*/NULL);
+		NullCheck(L_386);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_386, ((int32_t)42), L_389, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthSmileLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthSmile_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_393 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_394;
-		L_394 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_394);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_395;
-		L_395 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_394, /*hidden argument*/NULL);
-		NullCheck(L_395);
-		int32_t L_396;
-		L_396 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_395, _stringLiteral0629A310767F5FC008E0D9C507CBA53F32E4E6AE, /*hidden argument*/NULL);
-		NullCheck(L_393);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_393, ((int32_t)43), L_396, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_390 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_391;
+		L_391 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_391);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_392;
+		L_392 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_391, /*hidden argument*/NULL);
+		NullCheck(L_392);
+		int32_t L_393;
+		L_393 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_392, _stringLiteral0629A310767F5FC008E0D9C507CBA53F32E4E6AE, /*hidden argument*/NULL);
+		NullCheck(L_390);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_390, ((int32_t)43), L_393, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthSmileRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthSmile_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_397 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_398;
-		L_398 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_398);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_399;
-		L_399 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_398, /*hidden argument*/NULL);
-		NullCheck(L_399);
-		int32_t L_400;
-		L_400 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_399, _stringLiteral6CFF9A5F499E1F78581EFF4C25B4BA96133BE2F4, /*hidden argument*/NULL);
-		NullCheck(L_397);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_397, ((int32_t)44), L_400, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_394 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_395;
+		L_395 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_395);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_396;
+		L_396 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_395, /*hidden argument*/NULL);
+		NullCheck(L_396);
+		int32_t L_397;
+		L_397 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_396, _stringLiteral6CFF9A5F499E1F78581EFF4C25B4BA96133BE2F4, /*hidden argument*/NULL);
+		NullCheck(L_394);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_394, ((int32_t)44), L_397, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthStretchLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthStretch_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_401 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_402;
-		L_402 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_402);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_403;
-		L_403 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_402, /*hidden argument*/NULL);
-		NullCheck(L_403);
-		int32_t L_404;
-		L_404 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_403, _stringLiteral2389FC3D082846A1581CD89850A2CB1A37FFBAB2, /*hidden argument*/NULL);
-		NullCheck(L_401);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_401, ((int32_t)45), L_404, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_398 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_399;
+		L_399 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_399);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_400;
+		L_400 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_399, /*hidden argument*/NULL);
+		NullCheck(L_400);
+		int32_t L_401;
+		L_401 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_400, _stringLiteral2389FC3D082846A1581CD89850A2CB1A37FFBAB2, /*hidden argument*/NULL);
+		NullCheck(L_398);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_398, ((int32_t)45), L_401, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthStretchRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthStretch_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_405 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_406;
-		L_406 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_406);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_407;
-		L_407 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_406, /*hidden argument*/NULL);
-		NullCheck(L_407);
-		int32_t L_408;
-		L_408 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_407, _stringLiteral469AAD8B7CCE0366AE2CF0D2A8FE4E4022060753, /*hidden argument*/NULL);
-		NullCheck(L_405);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_405, ((int32_t)46), L_408, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_402 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_403;
+		L_403 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_403);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_404;
+		L_404 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_403, /*hidden argument*/NULL);
+		NullCheck(L_404);
+		int32_t L_405;
+		L_405 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_404, _stringLiteral469AAD8B7CCE0366AE2CF0D2A8FE4E4022060753, /*hidden argument*/NULL);
+		NullCheck(L_402);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_402, ((int32_t)46), L_405, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthUpperUpLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthUpperUp_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_409 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_410;
-		L_410 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_410);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_411;
-		L_411 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_410, /*hidden argument*/NULL);
-		NullCheck(L_411);
-		int32_t L_412;
-		L_412 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_411, _stringLiteral8AD7E23FADAA09473B2891A15427226F2F8705F4, /*hidden argument*/NULL);
-		NullCheck(L_409);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_409, ((int32_t)47), L_412, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_406 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_407;
+		L_407 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_407);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_408;
+		L_408 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_407, /*hidden argument*/NULL);
+		NullCheck(L_408);
+		int32_t L_409;
+		L_409 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_408, _stringLiteral8AD7E23FADAA09473B2891A15427226F2F8705F4, /*hidden argument*/NULL);
+		NullCheck(L_406);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_406, ((int32_t)47), L_409, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.MouthUpperUpRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "mouthUpperUp_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_413 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_414;
-		L_414 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_414);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_415;
-		L_415 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_414, /*hidden argument*/NULL);
-		NullCheck(L_415);
-		int32_t L_416;
-		L_416 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_415, _stringLiteral358D08E678BEC6ECBB4BA9F673F911EF27EF8DC0, /*hidden argument*/NULL);
-		NullCheck(L_413);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_413, ((int32_t)48), L_416, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_410 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_411;
+		L_411 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_411);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_412;
+		L_412 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_411, /*hidden argument*/NULL);
+		NullCheck(L_412);
+		int32_t L_413;
+		L_413 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_412, _stringLiteral358D08E678BEC6ECBB4BA9F673F911EF27EF8DC0, /*hidden argument*/NULL);
+		NullCheck(L_410);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_410, ((int32_t)48), L_413, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.NoseSneerLeft] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "noseSneer_L");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_417 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_418;
-		L_418 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_418);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_419;
-		L_419 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_418, /*hidden argument*/NULL);
-		NullCheck(L_419);
-		int32_t L_420;
-		L_420 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_419, _stringLiteralBBD4E88CE93DC855A065B77A7CA6EB1736912D65, /*hidden argument*/NULL);
-		NullCheck(L_417);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_417, ((int32_t)49), L_420, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_414 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_415;
+		L_415 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_415);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_416;
+		L_416 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_415, /*hidden argument*/NULL);
+		NullCheck(L_416);
+		int32_t L_417;
+		L_417 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_416, _stringLiteralBBD4E88CE93DC855A065B77A7CA6EB1736912D65, /*hidden argument*/NULL);
+		NullCheck(L_414);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_414, ((int32_t)49), L_417, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.NoseSneerRight] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "noseSneer_R");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_421 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_422;
-		L_422 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_422);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_423;
-		L_423 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_422, /*hidden argument*/NULL);
-		NullCheck(L_423);
-		int32_t L_424;
-		L_424 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_423, _stringLiteralCEF4AE47C5F37D801B2B039AF1A613BC44277893, /*hidden argument*/NULL);
-		NullCheck(L_421);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_421, ((int32_t)50), L_424, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_418 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_419;
+		L_419 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_419);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_420;
+		L_420 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_419, /*hidden argument*/NULL);
+		NullCheck(L_420);
+		int32_t L_421;
+		L_421 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_420, _stringLiteralCEF4AE47C5F37D801B2B039AF1A613BC44277893, /*hidden argument*/NULL);
+		NullCheck(L_418);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_418, ((int32_t)50), L_421, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 		// m_FaceArkitBlendShapeIndexMap[ARKitBlendShapeLocation.TongueOut] = skinnedMeshRenderer.sharedMesh.GetBlendShapeIndex(strPrefix + "tongueOut");
-		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_425 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_426;
-		L_426 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		NullCheck(L_426);
-		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_427;
-		L_427 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_426, /*hidden argument*/NULL);
-		NullCheck(L_427);
-		int32_t L_428;
-		L_428 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_427, _stringLiteralE6C99819BF8E8F96F7CA2244A490B088B17B3CC0, /*hidden argument*/NULL);
-		NullCheck(L_425);
-		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_425, ((int32_t)51), L_428, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
+		Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_422 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_423;
+		L_423 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		NullCheck(L_423);
+		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_424;
+		L_424 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_423, /*hidden argument*/NULL);
+		NullCheck(L_424);
+		int32_t L_425;
+		L_425 = Mesh_GetBlendShapeIndex_m70CEEB97F2B0146D37DF02D66640928276365BDE(L_424, _stringLiteralE6C99819BF8E8F96F7CA2244A490B088B17B3CC0, /*hidden argument*/NULL);
+		NullCheck(L_422);
+		Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC(L_422, ((int32_t)51), L_425, /*hidden argument*/Dictionary_2_set_Item_m17AC0BA8D2DEF824B483B50808C3257089FAC1FC_RuntimeMethod_var);
 	}
 
-IL_0e95:
+IL_0e12:
 	{
 		// }
 		return;
@@ -8296,38 +8164,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARKitBlendShapeVisualizer_SetVisible_m80
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
 	{
 		// if (skinnedMeshRenderer == null) return;
 		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_0;
-		L_0 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
+		L_0 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_0, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		V_0 = L_1;
-		bool L_2 = V_0;
-		if (!L_2)
+		if (!L_1)
 		{
-			goto IL_0013;
+			goto IL_000f;
 		}
 	}
 	{
 		// if (skinnedMeshRenderer == null) return;
-		goto IL_0020;
+		return;
 	}
 
-IL_0013:
+IL_000f:
 	{
 		// skinnedMeshRenderer.enabled = visible;
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_3;
-		L_3 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-		bool L_4 = ___visible0;
-		NullCheck(L_3);
-		Renderer_set_enabled_mFFBA418C428C1B2B151C77B879DD10C393D9D95B(L_3, L_4, /*hidden argument*/NULL);
-	}
-
-IL_0020:
-	{
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_2;
+		L_2 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+		bool L_3 = ___visible0;
+		NullCheck(L_2);
+		Renderer_set_enabled_mFFBA418C428C1B2B151C77B879DD10C393D9D95B(L_2, L_3, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -8352,7 +8213,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARKitBlendShapeVisualizer_UpdateVisibili
 		L_0 = Behaviour_get_enabled_m08077AB79934634E1EAE909C2B482BEF4C15A800(__this, /*hidden argument*/NULL);
 		if (!L_0)
 		{
-			goto IL_0021;
+			goto IL_0020;
 		}
 	}
 	{
@@ -8362,22 +8223,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARKitBlendShapeVisualizer_UpdateVisibili
 		L_2 = ARTrackable_2_get_trackingState_m82B5153FD82572CB261CA3429F2F7844592914EC(L_1, /*hidden argument*/ARTrackable_2_get_trackingState_m82B5153FD82572CB261CA3429F2F7844592914EC_RuntimeMethod_var);
 		if ((!(((uint32_t)L_2) == ((uint32_t)2))))
 		{
-			goto IL_0021;
+			goto IL_0020;
 		}
 	}
 	{
 		int32_t L_3;
 		L_3 = ARSession_get_state_m623161F1E2E5BA2752C821DD409880E6647CA130_inline(/*hidden argument*/NULL);
 		G_B4_0 = ((((int32_t)L_3) > ((int32_t)5))? 1 : 0);
-		goto IL_0022;
+		goto IL_0021;
 	}
 
-IL_0021:
+IL_0020:
 	{
 		G_B4_0 = 0;
 	}
 
-IL_0022:
+IL_0021:
 	{
 		V_0 = (bool)G_B4_0;
 		// SetVisible(visible);
@@ -8406,7 +8267,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARKitBlendShapeVisualizer_OnEnable_m2E9B
 		s_Il2CppMethodInitialized = true;
 	}
 	ARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647 * V_0 = NULL;
-	bool V_1 = false;
 	{
 		// var faceManager = FindObjectOfType<ARFaceManager>();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
@@ -8417,36 +8277,34 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARKitBlendShapeVisualizer_OnEnable_m2E9B
 		ARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647 * L_1 = V_0;
 		bool L_2;
 		L_2 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_1, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		V_1 = L_2;
-		bool L_3 = V_1;
-		if (!L_3)
+		if (!L_2)
 		{
-			goto IL_0025;
+			goto IL_0020;
 		}
 	}
 	{
 		// m_ARKitFaceSubsystem = (ARKitFaceSubsystem)faceManager.subsystem;
-		ARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647 * L_4 = V_0;
-		NullCheck(L_4);
-		XRFaceSubsystem_tBC42015E8BB4ED0A5428E01DBB7BE769A6B140FD * L_5;
-		L_5 = SubsystemLifecycleManager_3_get_subsystem_m4391B33B0DF93408538702190F99FFBA89343CC6_inline(L_4, /*hidden argument*/SubsystemLifecycleManager_3_get_subsystem_m4391B33B0DF93408538702190F99FFBA89343CC6_RuntimeMethod_var);
-		__this->set_m_ARKitFaceSubsystem_7(((ARKitFaceSubsystem_t369BE5809CFFB915E7D7C380EA989BD9E2B7FEB1 *)CastclassClass((RuntimeObject*)L_5, ARKitFaceSubsystem_t369BE5809CFFB915E7D7C380EA989BD9E2B7FEB1_il2cpp_TypeInfo_var)));
+		ARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647 * L_3 = V_0;
+		NullCheck(L_3);
+		XRFaceSubsystem_tBC42015E8BB4ED0A5428E01DBB7BE769A6B140FD * L_4;
+		L_4 = SubsystemLifecycleManager_3_get_subsystem_m4391B33B0DF93408538702190F99FFBA89343CC6_inline(L_3, /*hidden argument*/SubsystemLifecycleManager_3_get_subsystem_m4391B33B0DF93408538702190F99FFBA89343CC6_RuntimeMethod_var);
+		__this->set_m_ARKitFaceSubsystem_7(((ARKitFaceSubsystem_t369BE5809CFFB915E7D7C380EA989BD9E2B7FEB1 *)CastclassClass((RuntimeObject*)L_4, ARKitFaceSubsystem_t369BE5809CFFB915E7D7C380EA989BD9E2B7FEB1_il2cpp_TypeInfo_var)));
 	}
 
-IL_0025:
+IL_0020:
 	{
 		// UpdateVisibility();
 		ARKitBlendShapeVisualizer_UpdateVisibility_mCBEA27A29849A5A166AA56E5E83155BBFC4EE95A(__this, /*hidden argument*/NULL);
 		// m_Face.updated += OnUpdated;
-		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_6 = __this->get_m_Face_9();
-		Action_1_tE4B11DC242A81D29CAB72548F670C1D43FACE7D7 * L_7 = (Action_1_tE4B11DC242A81D29CAB72548F670C1D43FACE7D7 *)il2cpp_codegen_object_new(Action_1_tE4B11DC242A81D29CAB72548F670C1D43FACE7D7_il2cpp_TypeInfo_var);
-		Action_1__ctor_m3296083B3EC78BEA59336CB7AF499339C8954948(L_7, __this, (intptr_t)((intptr_t)ARKitBlendShapeVisualizer_OnUpdated_m41BE726BB4E9C92FB9B7713F2DA2688DDCA6A5D6_RuntimeMethod_var), /*hidden argument*/Action_1__ctor_m3296083B3EC78BEA59336CB7AF499339C8954948_RuntimeMethod_var);
-		NullCheck(L_6);
-		ARFace_add_updated_m76FF0DB65CE6F8FB82702021B386EB7AC1A39A02(L_6, L_7, /*hidden argument*/NULL);
+		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_5 = __this->get_m_Face_9();
+		Action_1_tE4B11DC242A81D29CAB72548F670C1D43FACE7D7 * L_6 = (Action_1_tE4B11DC242A81D29CAB72548F670C1D43FACE7D7 *)il2cpp_codegen_object_new(Action_1_tE4B11DC242A81D29CAB72548F670C1D43FACE7D7_il2cpp_TypeInfo_var);
+		Action_1__ctor_m3296083B3EC78BEA59336CB7AF499339C8954948(L_6, __this, (intptr_t)((intptr_t)ARKitBlendShapeVisualizer_OnUpdated_m41BE726BB4E9C92FB9B7713F2DA2688DDCA6A5D6_RuntimeMethod_var), /*hidden argument*/Action_1__ctor_m3296083B3EC78BEA59336CB7AF499339C8954948_RuntimeMethod_var);
+		NullCheck(L_5);
+		ARFace_add_updated_m76FF0DB65CE6F8FB82702021B386EB7AC1A39A02(L_5, L_6, /*hidden argument*/NULL);
 		// ARSession.stateChanged += OnSystemStateChanged;
-		Action_1_t5DF84322FFE12A24465E48164961CD724D109521 * L_8 = (Action_1_t5DF84322FFE12A24465E48164961CD724D109521 *)il2cpp_codegen_object_new(Action_1_t5DF84322FFE12A24465E48164961CD724D109521_il2cpp_TypeInfo_var);
-		Action_1__ctor_m01533F209934FB7AA229CAF420A923C1C4F4FBC4(L_8, __this, (intptr_t)((intptr_t)ARKitBlendShapeVisualizer_OnSystemStateChanged_m7CD616BADD3A5D4E58E082931D2E0505CA0CBD13_RuntimeMethod_var), /*hidden argument*/Action_1__ctor_m01533F209934FB7AA229CAF420A923C1C4F4FBC4_RuntimeMethod_var);
-		ARSession_add_stateChanged_m0B11F34533799F3DB6B188D44AB356574954D3DF(L_8, /*hidden argument*/NULL);
+		Action_1_t5DF84322FFE12A24465E48164961CD724D109521 * L_7 = (Action_1_t5DF84322FFE12A24465E48164961CD724D109521 *)il2cpp_codegen_object_new(Action_1_t5DF84322FFE12A24465E48164961CD724D109521_il2cpp_TypeInfo_var);
+		Action_1__ctor_m01533F209934FB7AA229CAF420A923C1C4F4FBC4(L_7, __this, (intptr_t)((intptr_t)ARKitBlendShapeVisualizer_OnSystemStateChanged_m7CD616BADD3A5D4E58E082931D2E0505CA0CBD13_RuntimeMethod_var), /*hidden argument*/Action_1__ctor_m01533F209934FB7AA229CAF420A923C1C4F4FBC4_RuntimeMethod_var);
+		ARSession_add_stateChanged_m0B11F34533799F3DB6B188D44AB356574954D3DF(L_7, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -8518,216 +8376,184 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARKitBlendShapeVisualizer_UpdateFaceFeat
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
-	NativeArray_1_t789EF72B9F35EFEE803ED394D2CAEA69F554E419  V_1;
+	NativeArray_1_t789EF72B9F35EFEE803ED394D2CAEA69F554E419  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Enumerator_tDEE7EE0417E98ACD6CFA762C98BC173B6942C9DD  V_1;
 	memset((&V_1), 0, sizeof(V_1));
-	Enumerator_tDEE7EE0417E98ACD6CFA762C98BC173B6942C9DD  V_2;
+	ARKitBlendShapeCoefficient_t6B17AD958119715154498F9EB6A29ECF98BA0E9F  V_2;
 	memset((&V_2), 0, sizeof(V_2));
-	ARKitBlendShapeCoefficient_t6B17AD958119715154498F9EB6A29ECF98BA0E9F  V_3;
-	memset((&V_3), 0, sizeof(V_3));
-	int32_t V_4 = 0;
-	bool V_5 = false;
-	bool V_6 = false;
+	int32_t V_3 = 0;
 	Exception_t * __last_unhandled_exception = 0;
-	il2cpp::utils::ExceptionSupportStack<int32_t, 2> __leave_targets;
-	int32_t G_B4_0 = 0;
+	il2cpp::utils::ExceptionSupportStack<int32_t, 1> __leave_targets;
 	{
 		// if (skinnedMeshRenderer == null || !skinnedMeshRenderer.enabled || skinnedMeshRenderer.sharedMesh == null)
 		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_0;
-		L_0 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
+		L_0 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_0, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
 		if (L_1)
 		{
-			goto IL_002f;
+			goto IL_002e;
 		}
 	}
 	{
 		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_2;
-		L_2 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
+		L_2 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
 		NullCheck(L_2);
 		bool L_3;
 		L_3 = Renderer_get_enabled_mEFB6D3FD1D9D251EBB6E6286491592C4A6ABD6DE(L_2, /*hidden argument*/NULL);
 		if (!L_3)
 		{
-			goto IL_002f;
+			goto IL_002e;
 		}
 	}
 	{
 		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_4;
-		L_4 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
+		L_4 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
 		NullCheck(L_4);
 		Mesh_t2F5992DBA650D5862B43D3823ACD997132A57DA6 * L_5;
 		L_5 = SkinnedMeshRenderer_get_sharedMesh_mFD55E307943C1C4B2E2E8632F15B41CCBD8D91F2(L_4, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		bool L_6;
 		L_6 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_5, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		G_B4_0 = ((int32_t)(L_6));
-		goto IL_0030;
+		if (!L_6)
+		{
+			goto IL_002f;
+		}
+	}
+
+IL_002e:
+	{
+		// return;
+		return;
 	}
 
 IL_002f:
 	{
-		G_B4_0 = 1;
-	}
-
-IL_0030:
-	{
-		V_0 = (bool)G_B4_0;
-		bool L_7 = V_0;
-		if (!L_7)
-		{
-			goto IL_003a;
-		}
-	}
-	{
-		// return;
-		goto IL_00dc;
-	}
-
-IL_003a:
-	{
 		// using (var blendShapes = m_ARKitFaceSubsystem.GetBlendShapeCoefficients(m_Face.trackableId, Allocator.Temp))
-		ARKitFaceSubsystem_t369BE5809CFFB915E7D7C380EA989BD9E2B7FEB1 * L_8 = __this->get_m_ARKitFaceSubsystem_7();
-		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_9 = __this->get_m_Face_9();
-		NullCheck(L_9);
-		TrackableId_t17A59B04292038BB1B77BEACD41221D2700BE90B  L_10;
-		L_10 = ARTrackable_2_get_trackableId_m91A28A9D2EAD610E602DFCBC83DAFD34E0FEB10B(L_9, /*hidden argument*/ARTrackable_2_get_trackableId_m91A28A9D2EAD610E602DFCBC83DAFD34E0FEB10B_RuntimeMethod_var);
+		ARKitFaceSubsystem_t369BE5809CFFB915E7D7C380EA989BD9E2B7FEB1 * L_7 = __this->get_m_ARKitFaceSubsystem_7();
+		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_8 = __this->get_m_Face_9();
 		NullCheck(L_8);
-		NativeArray_1_t789EF72B9F35EFEE803ED394D2CAEA69F554E419  L_11;
-		L_11 = ARKitFaceSubsystem_GetBlendShapeCoefficients_mE983A3A34A04F8C6340EF79A06138BEA025F9721(L_8, L_10, 2, /*hidden argument*/NULL);
-		V_1 = L_11;
+		TrackableId_t17A59B04292038BB1B77BEACD41221D2700BE90B  L_9;
+		L_9 = ARTrackable_2_get_trackableId_m91A28A9D2EAD610E602DFCBC83DAFD34E0FEB10B(L_8, /*hidden argument*/ARTrackable_2_get_trackableId_m91A28A9D2EAD610E602DFCBC83DAFD34E0FEB10B_RuntimeMethod_var);
+		NullCheck(L_7);
+		NativeArray_1_t789EF72B9F35EFEE803ED394D2CAEA69F554E419  L_10;
+		L_10 = ARKitFaceSubsystem_GetBlendShapeCoefficients_mE983A3A34A04F8C6340EF79A06138BEA025F9721(L_7, L_9, 2, /*hidden argument*/NULL);
+		V_0 = L_10;
 	}
 
-IL_0052:
+IL_0047:
 	try
 	{ // begin try (depth: 1)
 		{
 			// foreach (var featureCoefficient in blendShapes)
-			Enumerator_tDEE7EE0417E98ACD6CFA762C98BC173B6942C9DD  L_12;
-			L_12 = NativeArray_1_GetEnumerator_mD989135403C8D2F333ECDC69D66CF3E3443273AA((NativeArray_1_t789EF72B9F35EFEE803ED394D2CAEA69F554E419 *)(&V_1), /*hidden argument*/NativeArray_1_GetEnumerator_mD989135403C8D2F333ECDC69D66CF3E3443273AA_RuntimeMethod_var);
-			V_2 = L_12;
+			Enumerator_tDEE7EE0417E98ACD6CFA762C98BC173B6942C9DD  L_11;
+			L_11 = NativeArray_1_GetEnumerator_mD989135403C8D2F333ECDC69D66CF3E3443273AA((NativeArray_1_t789EF72B9F35EFEE803ED394D2CAEA69F554E419 *)(&V_0), /*hidden argument*/NativeArray_1_GetEnumerator_mD989135403C8D2F333ECDC69D66CF3E3443273AA_RuntimeMethod_var);
+			V_1 = L_11;
 		}
 
-IL_005c:
+IL_004f:
 		try
 		{ // begin try (depth: 2)
 			{
-				goto IL_00b0;
+				goto IL_008d;
 			}
 
-IL_005e:
+IL_0051:
 			{
 				// foreach (var featureCoefficient in blendShapes)
-				ARKitBlendShapeCoefficient_t6B17AD958119715154498F9EB6A29ECF98BA0E9F  L_13;
-				L_13 = Enumerator_get_Current_m2E29783CCFF83F9CFCCEECE96D95EEC2D7C3A46A((Enumerator_tDEE7EE0417E98ACD6CFA762C98BC173B6942C9DD *)(&V_2), /*hidden argument*/Enumerator_get_Current_m2E29783CCFF83F9CFCCEECE96D95EEC2D7C3A46A_RuntimeMethod_var);
-				V_3 = L_13;
+				ARKitBlendShapeCoefficient_t6B17AD958119715154498F9EB6A29ECF98BA0E9F  L_12;
+				L_12 = Enumerator_get_Current_m2E29783CCFF83F9CFCCEECE96D95EEC2D7C3A46A((Enumerator_tDEE7EE0417E98ACD6CFA762C98BC173B6942C9DD *)(&V_1), /*hidden argument*/Enumerator_get_Current_m2E29783CCFF83F9CFCCEECE96D95EEC2D7C3A46A_RuntimeMethod_var);
+				V_2 = L_12;
 				// if (m_FaceArkitBlendShapeIndexMap.TryGetValue(featureCoefficient.blendShapeLocation, out mappedBlendShapeIndex))
-				Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_14 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
-				int32_t L_15;
-				L_15 = ARKitBlendShapeCoefficient_get_blendShapeLocation_m14A5487CA35FF18CD8EDA49BD9E70900B444B512_inline((ARKitBlendShapeCoefficient_t6B17AD958119715154498F9EB6A29ECF98BA0E9F *)(&V_3), /*hidden argument*/NULL);
-				NullCheck(L_14);
-				bool L_16;
-				L_16 = Dictionary_2_TryGetValue_m607450C11D776769E1143A266F0F0E124DF5DB01(L_14, L_15, (int32_t*)(&V_4), /*hidden argument*/Dictionary_2_TryGetValue_m607450C11D776769E1143A266F0F0E124DF5DB01_RuntimeMethod_var);
-				V_5 = L_16;
-				bool L_17 = V_5;
-				if (!L_17)
+				Dictionary_2_t26B0732E5630568AA53AC4E1FBC956F35D66AC52 * L_13 = __this->get_m_FaceArkitBlendShapeIndexMap_8();
+				int32_t L_14;
+				L_14 = ARKitBlendShapeCoefficient_get_blendShapeLocation_m14A5487CA35FF18CD8EDA49BD9E70900B444B512_inline((ARKitBlendShapeCoefficient_t6B17AD958119715154498F9EB6A29ECF98BA0E9F *)(&V_2), /*hidden argument*/NULL);
+				NullCheck(L_13);
+				bool L_15;
+				L_15 = Dictionary_2_TryGetValue_m607450C11D776769E1143A266F0F0E124DF5DB01(L_13, L_14, (int32_t*)(&V_3), /*hidden argument*/Dictionary_2_TryGetValue_m607450C11D776769E1143A266F0F0E124DF5DB01_RuntimeMethod_var);
+				if (!L_15)
 				{
-					goto IL_00af;
+					goto IL_008d;
 				}
 			}
 
-IL_0081:
+IL_006f:
 			{
 				// if (mappedBlendShapeIndex >= 0)
-				int32_t L_18 = V_4;
-				V_6 = (bool)((((int32_t)((((int32_t)L_18) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-				bool L_19 = V_6;
-				if (!L_19)
+				int32_t L_16 = V_3;
+				if ((((int32_t)L_16) < ((int32_t)0)))
 				{
-					goto IL_00ae;
+					goto IL_008d;
 				}
 			}
 
-IL_0090:
+IL_0073:
 			{
 				// skinnedMeshRenderer.SetBlendShapeWeight(mappedBlendShapeIndex, featureCoefficient.coefficient * coefficientScale);
-				SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_20;
-				L_20 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(__this, /*hidden argument*/NULL);
-				int32_t L_21 = V_4;
-				float L_22;
-				L_22 = ARKitBlendShapeCoefficient_get_coefficient_m314BED878AE51026667924FF236DCF8E6FF8B759_inline((ARKitBlendShapeCoefficient_t6B17AD958119715154498F9EB6A29ECF98BA0E9F *)(&V_3), /*hidden argument*/NULL);
-				float L_23;
-				L_23 = ARKitBlendShapeVisualizer_get_coefficientScale_m3CDD631E0CCD082B512ED45BB8492477DA85E614(__this, /*hidden argument*/NULL);
-				NullCheck(L_20);
-				SkinnedMeshRenderer_SetBlendShapeWeight_mF546F3567C5039C217AD1E32157B992B4124B5FD(L_20, L_21, ((float)il2cpp_codegen_multiply((float)L_22, (float)L_23)), /*hidden argument*/NULL);
+				SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_17;
+				L_17 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(__this, /*hidden argument*/NULL);
+				int32_t L_18 = V_3;
+				float L_19;
+				L_19 = ARKitBlendShapeCoefficient_get_coefficient_m314BED878AE51026667924FF236DCF8E6FF8B759_inline((ARKitBlendShapeCoefficient_t6B17AD958119715154498F9EB6A29ECF98BA0E9F *)(&V_2), /*hidden argument*/NULL);
+				float L_20;
+				L_20 = ARKitBlendShapeVisualizer_get_coefficientScale_m3CDD631E0CCD082B512ED45BB8492477DA85E614_inline(__this, /*hidden argument*/NULL);
+				NullCheck(L_17);
+				SkinnedMeshRenderer_SetBlendShapeWeight_mF546F3567C5039C217AD1E32157B992B4124B5FD(L_17, L_18, ((float)il2cpp_codegen_multiply((float)L_19, (float)L_20)), /*hidden argument*/NULL);
 			}
 
-IL_00ae:
-			{
-			}
-
-IL_00af:
-			{
-			}
-
-IL_00b0:
+IL_008d:
 			{
 				// foreach (var featureCoefficient in blendShapes)
-				bool L_24;
-				L_24 = Enumerator_MoveNext_m86FEA601D9A453957DA0E61642BAD12FF2CA0E5F((Enumerator_tDEE7EE0417E98ACD6CFA762C98BC173B6942C9DD *)(&V_2), /*hidden argument*/Enumerator_MoveNext_m86FEA601D9A453957DA0E61642BAD12FF2CA0E5F_RuntimeMethod_var);
-				if (L_24)
+				bool L_21;
+				L_21 = Enumerator_MoveNext_m86FEA601D9A453957DA0E61642BAD12FF2CA0E5F((Enumerator_tDEE7EE0417E98ACD6CFA762C98BC173B6942C9DD *)(&V_1), /*hidden argument*/Enumerator_MoveNext_m86FEA601D9A453957DA0E61642BAD12FF2CA0E5F_RuntimeMethod_var);
+				if (L_21)
 				{
-					goto IL_005e;
+					goto IL_0051;
 				}
 			}
 
-IL_00b9:
+IL_0096:
 			{
-				IL2CPP_LEAVE(0xCA, FINALLY_00bb);
+				IL2CPP_LEAVE(0xB4, FINALLY_0098);
 			}
 		} // end try (depth: 2)
 		catch(Il2CppExceptionWrapper& e)
 		{
 			__last_unhandled_exception = (Exception_t *)e.ex;
-			goto FINALLY_00bb;
+			goto FINALLY_0098;
 		}
 
-FINALLY_00bb:
+FINALLY_0098:
 		{ // begin finally (depth: 2)
-			Enumerator_Dispose_m670FC38AFF50325569FE539B94E663C97A79FC55((Enumerator_tDEE7EE0417E98ACD6CFA762C98BC173B6942C9DD *)(&V_2), /*hidden argument*/Enumerator_Dispose_m670FC38AFF50325569FE539B94E663C97A79FC55_RuntimeMethod_var);
-			IL2CPP_END_FINALLY(187)
+			Enumerator_Dispose_m670FC38AFF50325569FE539B94E663C97A79FC55((Enumerator_tDEE7EE0417E98ACD6CFA762C98BC173B6942C9DD *)(&V_1), /*hidden argument*/Enumerator_Dispose_m670FC38AFF50325569FE539B94E663C97A79FC55_RuntimeMethod_var);
+			IL2CPP_END_FINALLY(152)
 		} // end finally (depth: 2)
-		IL2CPP_CLEANUP(187)
+		IL2CPP_CLEANUP(152)
 		{
 			IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-			IL2CPP_JUMP_TBL(0xCA, IL_00ca)
-		}
-
-IL_00ca:
-		{
-			IL2CPP_LEAVE(0xDC, FINALLY_00cd);
+			IL2CPP_END_CLEANUP(0xB4, FINALLY_00a6);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_00cd;
+		goto FINALLY_00a6;
 	}
 
-FINALLY_00cd:
+FINALLY_00a6:
 	{ // begin finally (depth: 1)
-		NativeArray_1_Dispose_m383935C666B52E9F3F6904C08B320CAF4B28213C((NativeArray_1_t789EF72B9F35EFEE803ED394D2CAEA69F554E419 *)(&V_1), /*hidden argument*/NativeArray_1_Dispose_m383935C666B52E9F3F6904C08B320CAF4B28213C_RuntimeMethod_var);
-		IL2CPP_END_FINALLY(205)
+		NativeArray_1_Dispose_m383935C666B52E9F3F6904C08B320CAF4B28213C((NativeArray_1_t789EF72B9F35EFEE803ED394D2CAEA69F554E419 *)(&V_0), /*hidden argument*/NativeArray_1_Dispose_m383935C666B52E9F3F6904C08B320CAF4B28213C_RuntimeMethod_var);
+		IL2CPP_END_FINALLY(166)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(205)
+	IL2CPP_CLEANUP(166)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0xDC, IL_00dc)
+		IL2CPP_JUMP_TBL(0xB4, IL_00b4)
 	}
 
-IL_00dc:
+IL_00b4:
 	{
 		// }
 		return;
@@ -8931,22 +8757,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTracking_TrackingDataWasUpdated_m052F5
 		if (L_2)
 		{
 			G_B2_0 = L_2;
-			goto IL_0019;
+			goto IL_0017;
 		}
 	}
 	{
-		goto IL_0020;
+		return;
 	}
 
-IL_0019:
+IL_0017:
 	{
 		MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * L_3 = ___updatedData0;
 		NullCheck(G_B2_0);
 		TrackingDataUpdatedEvent_Invoke_mA382D743DC3D1D6CCC6B5EEF5FEAE07DE1384E23(G_B2_0, L_3, /*hidden argument*/NULL);
-	}
-
-IL_0020:
-	{
 		// }
 		return;
 	}
@@ -8955,8 +8777,6 @@ IL_0020:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ARTracking__ctor_m57654611B156C2D2EA0B1C41852578A5ADF2FC0B (ARTracking_t67CE33D6463E515DE3EC928F303D14FBB8682D09 * __this, const RuntimeMethod* method)
 {
 	{
-		// [SerializeField] FaceTracker faceTracker = default;
-		__this->set_faceTracker_6((FaceTracker_t6C9AE1AB52054FFFDBC1F21D1CD885E9A00EA5E1 *)NULL);
 		MPDepthTrackingSource__ctor_mB96D8CA4D5C343431C96F1FC1FC10208E3399D31(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -9135,12 +8955,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_FacesChanged_m19E76338BBC138
 	Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A  V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * V_1 = NULL;
-	Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A  V_2;
-	memset((&V_2), 0, sizeof(V_2));
+	ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * V_2 = NULL;
 	ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * V_3 = NULL;
-	Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A  V_4;
-	memset((&V_4), 0, sizeof(V_4));
-	ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * V_5 = NULL;
 	Exception_t * __last_unhandled_exception = 0;
 	il2cpp::utils::ExceptionSupportStack<int32_t, 3> __leave_targets;
 	TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * G_B10_0 = NULL;
@@ -9155,14 +8971,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_FacesChanged_m19E76338BBC138
 		V_0 = L_1;
 	}
 
-IL_000f:
+IL_000d:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_002c;
+			goto IL_0027;
 		}
 
-IL_0011:
+IL_000f:
 		{
 			// foreach(ARFace face in eventArgs.added)
 			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_2;
@@ -9176,40 +8992,40 @@ IL_0011:
 			Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_4, /*hidden argument*/NULL);
 		}
 
-IL_002c:
+IL_0027:
 		{
 			// foreach(ARFace face in eventArgs.added)
 			bool L_5;
 			L_5 = Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_0), /*hidden argument*/Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C_RuntimeMethod_var);
 			if (L_5)
 			{
-				goto IL_0011;
+				goto IL_000f;
 			}
 		}
 
-IL_0035:
+IL_0030:
 		{
-			IL2CPP_LEAVE(0x46, FINALLY_0037);
+			IL2CPP_LEAVE(0x40, FINALLY_0032);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_0037;
+		goto FINALLY_0032;
 	}
 
-FINALLY_0037:
+FINALLY_0032:
 	{ // begin finally (depth: 1)
 		Enumerator_Dispose_mF2EE06E16A6C6F477EAC6B510B6D512EE1F2FC8B((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_0), /*hidden argument*/Enumerator_Dispose_mF2EE06E16A6C6F477EAC6B510B6D512EE1F2FC8B_RuntimeMethod_var);
-		IL2CPP_END_FINALLY(55)
+		IL2CPP_END_FINALLY(50)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(55)
+	IL2CPP_CLEANUP(50)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0x46, IL_0046)
+		IL2CPP_JUMP_TBL(0x40, IL_0040)
 	}
 
-IL_0046:
+IL_0040:
 	{
 		// foreach(ARFace face in eventArgs.updated)
 		List_1_t7981E5CB7CEFE6DC59F88165EEE60A2FCA0B2E21 * L_6;
@@ -9217,38 +9033,38 @@ IL_0046:
 		NullCheck(L_6);
 		Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A  L_7;
 		L_7 = List_1_GetEnumerator_mD0C595871FAFF647B8B0AE4D054F181A1422EDDC(L_6, /*hidden argument*/List_1_GetEnumerator_mD0C595871FAFF647B8B0AE4D054F181A1422EDDC_RuntimeMethod_var);
-		V_2 = L_7;
+		V_0 = L_7;
 	}
 
-IL_0054:
+IL_004d:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_00a4;
+			goto IL_0097;
 		}
 
-IL_0056:
+IL_004f:
 		{
 			// foreach(ARFace face in eventArgs.updated)
 			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_8;
-			L_8 = Enumerator_get_Current_m1B05AD3A8437FADFBC0D04EF8251D0B7694BD50A_inline((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_2), /*hidden argument*/Enumerator_get_Current_m1B05AD3A8437FADFBC0D04EF8251D0B7694BD50A_RuntimeMethod_var);
-			V_3 = L_8;
+			L_8 = Enumerator_get_Current_m1B05AD3A8437FADFBC0D04EF8251D0B7694BD50A_inline((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_0), /*hidden argument*/Enumerator_get_Current_m1B05AD3A8437FADFBC0D04EF8251D0B7694BD50A_RuntimeMethod_var);
+			V_2 = L_8;
 			// trackingData.IsTracking = face.trackingState == TrackingState.Tracking;
 			RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD * L_9 = __this->get_trackingData_5();
-			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_10 = V_3;
+			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_10 = V_2;
 			NullCheck(L_10);
 			int32_t L_11;
 			L_11 = ARTrackable_2_get_trackingState_m82B5153FD82572CB261CA3429F2F7844592914EC(L_10, /*hidden argument*/ARTrackable_2_get_trackingState_m82B5153FD82572CB261CA3429F2F7844592914EC_RuntimeMethod_var);
 			NullCheck(L_9);
 			((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_9)->set_IsTracking_0((bool)((((int32_t)L_11) == ((int32_t)2))? 1 : 0));
 			// TrackFace(face);
-			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_12 = V_3;
+			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_12 = V_2;
 			FaceTracker_TrackFace_m8C8D5F2BA47C330191E0B0B19ADB70CE5A9561F8(__this, L_12, /*hidden argument*/NULL);
 			// TrackEyes(face);
-			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_13 = V_3;
+			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_13 = V_2;
 			FaceTracker_TrackEyes_m4E9AD44319BB545BCD9BF32EC9A3CA3E367ABB7D(__this, L_13, /*hidden argument*/NULL);
 			// UpdateBlendshapes(face);
-			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_14 = V_3;
+			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_14 = V_2;
 			FaceTracker_UpdateBlendshapes_mFFD519D1C13C3E040BC25A6B7D69002E88CA5795(__this, L_14, /*hidden argument*/NULL);
 			// TrackingDataUpdated?.Invoke(trackingData);
 			TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_15 = __this->get_TrackingDataUpdated_4();
@@ -9257,60 +9073,56 @@ IL_0056:
 			if (L_16)
 			{
 				G_B10_0 = L_16;
-				goto IL_0097;
+				goto IL_008c;
 			}
 		}
 
-IL_0094:
+IL_0089:
 		{
-			goto IL_00a3;
+			goto IL_0097;
 		}
 
-IL_0097:
+IL_008c:
 		{
 			RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD * L_17 = __this->get_trackingData_5();
 			NullCheck(G_B10_0);
 			TrackingDataUpdatedEvent_Invoke_mA382D743DC3D1D6CCC6B5EEF5FEAE07DE1384E23(G_B10_0, L_17, /*hidden argument*/NULL);
 		}
 
-IL_00a3:
-		{
-		}
-
-IL_00a4:
+IL_0097:
 		{
 			// foreach(ARFace face in eventArgs.updated)
 			bool L_18;
-			L_18 = Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_2), /*hidden argument*/Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C_RuntimeMethod_var);
+			L_18 = Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_0), /*hidden argument*/Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C_RuntimeMethod_var);
 			if (L_18)
 			{
-				goto IL_0056;
+				goto IL_004f;
 			}
 		}
 
-IL_00ad:
+IL_00a0:
 		{
-			IL2CPP_LEAVE(0xBE, FINALLY_00af);
+			IL2CPP_LEAVE(0xB0, FINALLY_00a2);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_00af;
+		goto FINALLY_00a2;
 	}
 
-FINALLY_00af:
+FINALLY_00a2:
 	{ // begin finally (depth: 1)
-		Enumerator_Dispose_mF2EE06E16A6C6F477EAC6B510B6D512EE1F2FC8B((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_2), /*hidden argument*/Enumerator_Dispose_mF2EE06E16A6C6F477EAC6B510B6D512EE1F2FC8B_RuntimeMethod_var);
-		IL2CPP_END_FINALLY(175)
+		Enumerator_Dispose_mF2EE06E16A6C6F477EAC6B510B6D512EE1F2FC8B((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_0), /*hidden argument*/Enumerator_Dispose_mF2EE06E16A6C6F477EAC6B510B6D512EE1F2FC8B_RuntimeMethod_var);
+		IL2CPP_END_FINALLY(162)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(175)
+	IL2CPP_CLEANUP(162)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0xBE, IL_00be)
+		IL2CPP_JUMP_TBL(0xB0, IL_00b0)
 	}
 
-IL_00be:
+IL_00b0:
 	{
 		// foreach (ARFace face in eventArgs.removed)
 		List_1_t7981E5CB7CEFE6DC59F88165EEE60A2FCA0B2E21 * L_19;
@@ -9318,64 +9130,64 @@ IL_00be:
 		NullCheck(L_19);
 		Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A  L_20;
 		L_20 = List_1_GetEnumerator_mD0C595871FAFF647B8B0AE4D054F181A1422EDDC(L_19, /*hidden argument*/List_1_GetEnumerator_mD0C595871FAFF647B8B0AE4D054F181A1422EDDC_RuntimeMethod_var);
-		V_4 = L_20;
+		V_0 = L_20;
 	}
 
-IL_00cd:
+IL_00bd:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_00ec;
+			goto IL_00d7;
 		}
 
-IL_00cf:
+IL_00bf:
 		{
 			// foreach (ARFace face in eventArgs.removed)
 			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_21;
-			L_21 = Enumerator_get_Current_m1B05AD3A8437FADFBC0D04EF8251D0B7694BD50A_inline((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_4), /*hidden argument*/Enumerator_get_Current_m1B05AD3A8437FADFBC0D04EF8251D0B7694BD50A_RuntimeMethod_var);
-			V_5 = L_21;
+			L_21 = Enumerator_get_Current_m1B05AD3A8437FADFBC0D04EF8251D0B7694BD50A_inline((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_0), /*hidden argument*/Enumerator_get_Current_m1B05AD3A8437FADFBC0D04EF8251D0B7694BD50A_RuntimeMethod_var);
+			V_3 = L_21;
 			// Debug.Log($"face {face} removed");
-			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_22 = V_5;
+			ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_22 = V_3;
 			String_t* L_23;
 			L_23 = String_Format_mB3D38E5238C3164DB4D7D29339D9E225A4496D17(_stringLiteralB4641BC108D2DE5428590D7DD1792E341BB65785, L_22, /*hidden argument*/NULL);
 			IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 			Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_23, /*hidden argument*/NULL);
 		}
 
-IL_00ec:
+IL_00d7:
 		{
 			// foreach (ARFace face in eventArgs.removed)
 			bool L_24;
-			L_24 = Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_4), /*hidden argument*/Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C_RuntimeMethod_var);
+			L_24 = Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_0), /*hidden argument*/Enumerator_MoveNext_mB433F5544C7A54F9802D20633A06B85EFB1DC33C_RuntimeMethod_var);
 			if (L_24)
 			{
-				goto IL_00cf;
+				goto IL_00bf;
 			}
 		}
 
-IL_00f5:
+IL_00e0:
 		{
-			IL2CPP_LEAVE(0x106, FINALLY_00f7);
+			IL2CPP_LEAVE(0xF0, FINALLY_00e2);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_00f7;
+		goto FINALLY_00e2;
 	}
 
-FINALLY_00f7:
+FINALLY_00e2:
 	{ // begin finally (depth: 1)
-		Enumerator_Dispose_mF2EE06E16A6C6F477EAC6B510B6D512EE1F2FC8B((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_4), /*hidden argument*/Enumerator_Dispose_mF2EE06E16A6C6F477EAC6B510B6D512EE1F2FC8B_RuntimeMethod_var);
-		IL2CPP_END_FINALLY(247)
+		Enumerator_Dispose_mF2EE06E16A6C6F477EAC6B510B6D512EE1F2FC8B((Enumerator_tDD665F93A9EB6DE1202BEE7C236EADBD4B462B9A *)(&V_0), /*hidden argument*/Enumerator_Dispose_mF2EE06E16A6C6F477EAC6B510B6D512EE1F2FC8B_RuntimeMethod_var);
+		IL2CPP_END_FINALLY(226)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(247)
+	IL2CPP_CLEANUP(226)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0x106, IL_0106)
+		IL2CPP_JUMP_TBL(0xF0, IL_00f0)
 	}
 
-IL_0106:
+IL_00f0:
 	{
 		// }
 		return;
@@ -9394,109 +9206,92 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_UpdateBlendshapes_mFFD519D1C
 	}
 	SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * V_0 = NULL;
 	SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* V_1 = NULL;
-	bool V_2 = false;
-	bool V_3 = false;
-	int32_t V_4 = 0;
-	bool V_5 = false;
+	int32_t V_2 = 0;
 	{
 		// if(artKitBlendShapeVisualizer == null)
 		ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * L_0 = __this->get_artKitBlendShapeVisualizer_11();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_0, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		V_2 = L_1;
-		bool L_2 = V_2;
-		if (!L_2)
+		if (!L_1)
 		{
-			goto IL_0031;
+			goto IL_0029;
 		}
 	}
 	{
 		// artKitBlendShapeVisualizer = face.GetComponent<ARKitBlendShapeVisualizer>();
-		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_3 = ___face0;
-		NullCheck(L_3);
-		ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * L_4;
-		L_4 = Component_GetComponent_TisARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526_mC3F7D0A0843A00D27D6C297C87A3799B3E215DBD(L_3, /*hidden argument*/Component_GetComponent_TisARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526_mC3F7D0A0843A00D27D6C297C87A3799B3E215DBD_RuntimeMethod_var);
-		__this->set_artKitBlendShapeVisualizer_11(L_4);
+		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_2 = ___face0;
+		NullCheck(L_2);
+		ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * L_3;
+		L_3 = Component_GetComponent_TisARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526_mC3F7D0A0843A00D27D6C297C87A3799B3E215DBD(L_2, /*hidden argument*/Component_GetComponent_TisARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526_mC3F7D0A0843A00D27D6C297C87A3799B3E215DBD_RuntimeMethod_var);
+		__this->set_artKitBlendShapeVisualizer_11(L_3);
 		// if (artKitBlendShapeVisualizer == null) return;
-		ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * L_5 = __this->get_artKitBlendShapeVisualizer_11();
+		ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * L_4 = __this->get_artKitBlendShapeVisualizer_11();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
-		bool L_6;
-		L_6 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_5, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
-		V_3 = L_6;
-		bool L_7 = V_3;
-		if (!L_7)
+		bool L_5;
+		L_5 = Object_op_Equality_mEE9EC7EB5C7DC3E95B94AB904E1986FC4D566D54(L_4, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		if (!L_5)
 		{
-			goto IL_0030;
+			goto IL_0029;
 		}
 	}
 	{
 		// if (artKitBlendShapeVisualizer == null) return;
-		goto IL_007c;
+		return;
 	}
 
-IL_0030:
-	{
-	}
-
-IL_0031:
+IL_0029:
 	{
 		// SkinnedMeshRenderer skinnedMeshRenderer = artKitBlendShapeVisualizer.skinnedMeshRenderer;
-		ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * L_8 = __this->get_artKitBlendShapeVisualizer_11();
-		NullCheck(L_8);
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_9;
-		L_9 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB(L_8, /*hidden argument*/NULL);
-		V_0 = L_9;
+		ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * L_6 = __this->get_artKitBlendShapeVisualizer_11();
+		NullCheck(L_6);
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_7;
+		L_7 = ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline(L_6, /*hidden argument*/NULL);
+		V_0 = L_7;
 		// float[] blendshapes = new float[50];
-		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_10 = (SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA*)(SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA*)SZArrayNew(SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA_il2cpp_TypeInfo_var, (uint32_t)((int32_t)50));
-		V_1 = L_10;
+		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_8 = (SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA*)(SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA*)SZArrayNew(SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA_il2cpp_TypeInfo_var, (uint32_t)((int32_t)50));
+		V_1 = L_8;
 		// for(int i = 0; i < blendshapes.Length; i++)
-		V_4 = 0;
-		goto IL_005e;
+		V_2 = 0;
+		goto IL_004f;
 	}
 
-IL_004a:
+IL_0041:
 	{
 		// blendshapes[i] = skinnedMeshRenderer.GetBlendShapeWeight(i);
-		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_11 = V_1;
-		int32_t L_12 = V_4;
-		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_13 = V_0;
-		int32_t L_14 = V_4;
-		NullCheck(L_13);
-		float L_15;
-		L_15 = SkinnedMeshRenderer_GetBlendShapeWeight_m3F662DD48CC110C8429E53FD2A2E33DE601AA792(L_13, L_14, /*hidden argument*/NULL);
+		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_9 = V_1;
+		int32_t L_10 = V_2;
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_11 = V_0;
+		int32_t L_12 = V_2;
 		NullCheck(L_11);
-		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(L_12), (float)L_15);
+		float L_13;
+		L_13 = SkinnedMeshRenderer_GetBlendShapeWeight_m3F662DD48CC110C8429E53FD2A2E33DE601AA792(L_11, L_12, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(L_10), (float)L_13);
 		// for(int i = 0; i < blendshapes.Length; i++)
-		int32_t L_16 = V_4;
-		V_4 = ((int32_t)il2cpp_codegen_add((int32_t)L_16, (int32_t)1));
+		int32_t L_14 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add((int32_t)L_14, (int32_t)1));
 	}
 
-IL_005e:
+IL_004f:
 	{
 		// for(int i = 0; i < blendshapes.Length; i++)
-		int32_t L_17 = V_4;
-		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_18 = V_1;
-		NullCheck(L_18);
-		V_5 = (bool)((((int32_t)L_17) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_18)->max_length)))))? 1 : 0);
-		bool L_19 = V_5;
-		if (L_19)
+		int32_t L_15 = V_2;
+		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_16 = V_1;
+		NullCheck(L_16);
+		if ((((int32_t)L_15) < ((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_16)->max_length))))))
 		{
-			goto IL_004a;
+			goto IL_0041;
 		}
 	}
 	{
 		// trackingData.BlendshapeTrackingData.Blendshapes = blendshapes;
-		RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD * L_20 = __this->get_trackingData_5();
-		NullCheck(L_20);
-		BlendshapeTrackingData_t989894D483314D943170C8D7E807572809AF9529 * L_21 = ((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_20)->get_BlendshapeTrackingData_3();
-		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_22 = V_1;
-		NullCheck(L_21);
-		L_21->set_Blendshapes_0(L_22);
-	}
-
-IL_007c:
-	{
+		RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD * L_17 = __this->get_trackingData_5();
+		NullCheck(L_17);
+		BlendshapeTrackingData_t989894D483314D943170C8D7E807572809AF9529 * L_18 = ((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_17)->get_BlendshapeTrackingData_3();
+		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_19 = V_1;
+		NullCheck(L_18);
+		L_18->set_Blendshapes_0(L_19);
 		// }
 		return;
 	}
@@ -9504,7 +9299,8 @@ IL_007c:
 // System.Void FaceTracker::TrackEyes(UnityEngine.XR.ARFoundation.ARFace)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_TrackEyes_m4E9AD44319BB545BCD9BF32EC9A3CA3E367ABB7D (FaceTracker_t6C9AE1AB52054FFFDBC1F21D1CD885E9A00EA5E1 * __this, ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * ___face0, const RuntimeMethod* method)
 {
-	EyeTrackingData_tCEFBEC72106BDE88D157D2A3ECE2B59C185551CC * V_0 = NULL;
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_2;
@@ -9513,14 +9309,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_TrackEyes_m4E9AD44319BB545BC
 	memset((&V_3), 0, sizeof(V_3));
 	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_4;
 	memset((&V_4), 0, sizeof(V_4));
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_5;
-	memset((&V_5), 0, sizeof(V_5));
 	{
 		// EyeTrackingData eyeTrackingData = trackingData.EyeTrackingData;
 		RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD * L_0 = __this->get_trackingData_5();
 		NullCheck(L_0);
 		EyeTrackingData_tCEFBEC72106BDE88D157D2A3ECE2B59C185551CC * L_1 = ((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_0)->get_EyeTrackingData_2();
-		V_0 = L_1;
 		// Vector3 trackedLeftEyePosition = RelativeToCamPosition(face.leftEye);
 		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_2 = ___face0;
 		NullCheck(L_2);
@@ -9528,17 +9321,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_TrackEyes_m4E9AD44319BB545BC
 		L_3 = ARFace_get_leftEye_m36F77C7E6257BF964653438343DF5B9E4A35A507_inline(L_2, /*hidden argument*/NULL);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4;
 		L_4 = FaceTracker_RelativeToCamPosition_mA086144965CA124CBFCFC6154EF72EDF0C625572(__this, L_3, /*hidden argument*/NULL);
-		V_1 = L_4;
+		V_0 = L_4;
 		// leftEye.position = trackedLeftEyePosition;
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_5 = __this->get_leftEye_8();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6 = V_1;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6 = V_0;
 		NullCheck(L_5);
 		Transform_set_position_mB169E52D57EEAC1E3F22C5395968714E4F00AC91(L_5, L_6, /*hidden argument*/NULL);
 		// eyeTrackingData.LeftEyeTrackingData.Position = trackedLeftEyePosition;
-		EyeTrackingData_tCEFBEC72106BDE88D157D2A3ECE2B59C185551CC * L_7 = V_0;
+		EyeTrackingData_tCEFBEC72106BDE88D157D2A3ECE2B59C185551CC * L_7 = L_1;
 		NullCheck(L_7);
 		LeftEyeTrackingData_t98405D9A33C67242FEB162A1252D20D0A9BBB323 * L_8 = L_7->get_LeftEyeTrackingData_0();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_9 = V_1;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_9 = V_0;
 		NullCheck(L_8);
 		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_8)->set_Position_0(L_9);
 		// Vector3 trackedLeftEyeEulers = RelativeToCamRotation(face.leftEye);
@@ -9548,17 +9341,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_TrackEyes_m4E9AD44319BB545BC
 		L_11 = ARFace_get_leftEye_m36F77C7E6257BF964653438343DF5B9E4A35A507_inline(L_10, /*hidden argument*/NULL);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_12;
 		L_12 = FaceTracker_RelativeToCamRotation_mBE202937F1E910C82E98DC119B0280340DCE8475(__this, L_11, /*hidden argument*/NULL);
-		V_2 = L_12;
+		V_1 = L_12;
 		// leftEye.eulerAngles = trackedLeftEyeEulers;
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_13 = __this->get_leftEye_8();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_14 = V_2;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_14 = V_1;
 		NullCheck(L_13);
 		Transform_set_eulerAngles_mFDCBC6282E4B1196AA26BF01008B2AAA2DD2969E(L_13, L_14, /*hidden argument*/NULL);
 		// eyeTrackingData.LeftEyeTrackingData.Eulers = trackedLeftEyeEulers;
-		EyeTrackingData_tCEFBEC72106BDE88D157D2A3ECE2B59C185551CC * L_15 = V_0;
+		EyeTrackingData_tCEFBEC72106BDE88D157D2A3ECE2B59C185551CC * L_15 = L_7;
 		NullCheck(L_15);
 		LeftEyeTrackingData_t98405D9A33C67242FEB162A1252D20D0A9BBB323 * L_16 = L_15->get_LeftEyeTrackingData_0();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_17 = V_2;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_17 = V_1;
 		NullCheck(L_16);
 		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_16)->set_Eulers_1(L_17);
 		// Vector3 trackedRightEyePosition = RelativeToCamPosition(face.rightEye);
@@ -9568,17 +9361,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_TrackEyes_m4E9AD44319BB545BC
 		L_19 = ARFace_get_rightEye_mDA882A16AEC1D06AF4C0D05EFC88CA1F112D5D7C_inline(L_18, /*hidden argument*/NULL);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_20;
 		L_20 = FaceTracker_RelativeToCamPosition_mA086144965CA124CBFCFC6154EF72EDF0C625572(__this, L_19, /*hidden argument*/NULL);
-		V_3 = L_20;
+		V_2 = L_20;
 		// rightEye.position = trackedRightEyePosition;
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_21 = __this->get_rightEye_9();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_22 = V_3;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_22 = V_2;
 		NullCheck(L_21);
 		Transform_set_position_mB169E52D57EEAC1E3F22C5395968714E4F00AC91(L_21, L_22, /*hidden argument*/NULL);
 		// eyeTrackingData.RightEyeTrackingData.Position = trackedRightEyePosition;
-		EyeTrackingData_tCEFBEC72106BDE88D157D2A3ECE2B59C185551CC * L_23 = V_0;
+		EyeTrackingData_tCEFBEC72106BDE88D157D2A3ECE2B59C185551CC * L_23 = L_15;
 		NullCheck(L_23);
 		RightEyeTrackingData_t2332FE35A7650F09F438C4F35AF22ADA835BA9DA * L_24 = L_23->get_RightEyeTrackingData_1();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_25 = V_3;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_25 = V_2;
 		NullCheck(L_24);
 		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_24)->set_Position_0(L_25);
 		// Vector3 trackedRightEyeEulers = RelativeToCamRotation(face.rightEye);
@@ -9588,17 +9381,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_TrackEyes_m4E9AD44319BB545BC
 		L_27 = ARFace_get_rightEye_mDA882A16AEC1D06AF4C0D05EFC88CA1F112D5D7C_inline(L_26, /*hidden argument*/NULL);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_28;
 		L_28 = FaceTracker_RelativeToCamRotation_mBE202937F1E910C82E98DC119B0280340DCE8475(__this, L_27, /*hidden argument*/NULL);
-		V_4 = L_28;
+		V_3 = L_28;
 		// rightEye.eulerAngles = trackedRightEyeEulers;
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_29 = __this->get_rightEye_9();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_30 = V_4;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_30 = V_3;
 		NullCheck(L_29);
 		Transform_set_eulerAngles_mFDCBC6282E4B1196AA26BF01008B2AAA2DD2969E(L_29, L_30, /*hidden argument*/NULL);
 		// eyeTrackingData.RightEyeTrackingData.Eulers = trackedRightEyeEulers;
-		EyeTrackingData_tCEFBEC72106BDE88D157D2A3ECE2B59C185551CC * L_31 = V_0;
+		EyeTrackingData_tCEFBEC72106BDE88D157D2A3ECE2B59C185551CC * L_31 = L_23;
 		NullCheck(L_31);
 		RightEyeTrackingData_t2332FE35A7650F09F438C4F35AF22ADA835BA9DA * L_32 = L_31->get_RightEyeTrackingData_1();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_33 = V_4;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_33 = V_3;
 		NullCheck(L_32);
 		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_32)->set_Eulers_1(L_33);
 		// Vector3 trackedFixationPoint = RelativeToCamPosition(face.fixationPoint);
@@ -9608,19 +9401,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_TrackEyes_m4E9AD44319BB545BC
 		L_35 = ARFace_get_fixationPoint_m773B90EFD9FC89DEBA28F7371FE3BA2BCE2C21B2_inline(L_34, /*hidden argument*/NULL);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_36;
 		L_36 = FaceTracker_RelativeToCamPosition_mA086144965CA124CBFCFC6154EF72EDF0C625572(__this, L_35, /*hidden argument*/NULL);
-		V_5 = L_36;
+		V_4 = L_36;
 		// fixationPoint.position = trackedFixationPoint;
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_37 = __this->get_fixationPoint_10();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_38 = V_5;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_38 = V_4;
 		NullCheck(L_37);
 		Transform_set_position_mB169E52D57EEAC1E3F22C5395968714E4F00AC91(L_37, L_38, /*hidden argument*/NULL);
 		// eyeTrackingData.FixationPointTrackingData.Position = trackedFixationPoint;
-		EyeTrackingData_tCEFBEC72106BDE88D157D2A3ECE2B59C185551CC * L_39 = V_0;
+		NullCheck(L_31);
+		FixationPointTrackingData_t0DDEE4AA9341B265A381EB1C3D1D0E4C1784DAF9 * L_39 = L_31->get_FixationPointTrackingData_2();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_40 = V_4;
 		NullCheck(L_39);
-		FixationPointTrackingData_t0DDEE4AA9341B265A381EB1C3D1D0E4C1784DAF9 * L_40 = L_39->get_FixationPointTrackingData_2();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_41 = V_5;
-		NullCheck(L_40);
-		L_40->set_Position_0(L_41);
+		L_39->set_Position_0(L_40);
 		// }
 		return;
 	}
@@ -9628,16 +9420,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_TrackEyes_m4E9AD44319BB545BC
 // System.Void FaceTracker::TrackFace(UnityEngine.XR.ARFoundation.ARFace)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_TrackFace_m8C8D5F2BA47C330191E0B0B19ADB70CE5A9561F8 (FaceTracker_t6C9AE1AB52054FFFDBC1F21D1CD885E9A00EA5E1 * __this, ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * ___face0, const RuntimeMethod* method)
 {
-	Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * V_0 = NULL;
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_1;
 	memset((&V_1), 0, sizeof(V_1));
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_2;
-	memset((&V_2), 0, sizeof(V_2));
 	{
 		// Transform thisTransform = this.transform;
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_0;
 		L_0 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(__this, /*hidden argument*/NULL);
-		V_0 = L_0;
 		// Vector3 relativeToCamPosition = RelativeToCamPosition(face.transform);
 		ARFace_t7EC7B3979551DCD92E4C51D35BD9664F44CE86E1 * L_1 = ___face0;
 		NullCheck(L_1);
@@ -9645,17 +9435,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_TrackFace_m8C8D5F2BA47C33019
 		L_2 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(L_1, /*hidden argument*/NULL);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_3;
 		L_3 = FaceTracker_RelativeToCamPosition_mA086144965CA124CBFCFC6154EF72EDF0C625572(__this, L_2, /*hidden argument*/NULL);
-		V_1 = L_3;
+		V_0 = L_3;
 		// thisTransform.position = relativeToCamPosition;
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_4 = V_0;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_5 = V_1;
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_4 = L_0;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_5 = V_0;
 		NullCheck(L_4);
 		Transform_set_position_mB169E52D57EEAC1E3F22C5395968714E4F00AC91(L_4, L_5, /*hidden argument*/NULL);
 		// trackingData.CameraTrackingData.Position = relativeToCamPosition;
 		RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD * L_6 = __this->get_trackingData_5();
 		NullCheck(L_6);
 		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_7 = ((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_6)->get_CameraTrackingData_1();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_8 = V_1;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_8 = V_0;
 		NullCheck(L_7);
 		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_7)->set_Position_0(L_8);
 		// Vector3 normalizedEulers = RelativeToCamRotation(face.transform);
@@ -9665,19 +9455,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker_TrackFace_m8C8D5F2BA47C33019
 		L_10 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(L_9, /*hidden argument*/NULL);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_11;
 		L_11 = FaceTracker_RelativeToCamRotation_mBE202937F1E910C82E98DC119B0280340DCE8475(__this, L_10, /*hidden argument*/NULL);
-		V_2 = L_11;
+		V_1 = L_11;
 		// thisTransform.eulerAngles = normalizedEulers;
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_12 = V_0;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_13 = V_2;
-		NullCheck(L_12);
-		Transform_set_eulerAngles_mFDCBC6282E4B1196AA26BF01008B2AAA2DD2969E(L_12, L_13, /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_12 = V_1;
+		NullCheck(L_4);
+		Transform_set_eulerAngles_mFDCBC6282E4B1196AA26BF01008B2AAA2DD2969E(L_4, L_12, /*hidden argument*/NULL);
 		// trackingData.CameraTrackingData.Eulers = normalizedEulers;
-		RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD * L_14 = __this->get_trackingData_5();
+		RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD * L_13 = __this->get_trackingData_5();
+		NullCheck(L_13);
+		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_14 = ((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_13)->get_CameraTrackingData_1();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_15 = V_1;
 		NullCheck(L_14);
-		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_15 = ((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_14)->get_CameraTrackingData_1();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_16 = V_2;
-		NullCheck(L_15);
-		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_15)->set_Eulers_1(L_16);
+		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_14)->set_Eulers_1(L_15);
 		// }
 		return;
 	}
@@ -9687,10 +9476,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 {
 	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_0;
 	memset((&V_0), 0, sizeof(V_0));
-	bool V_1 = false;
-	bool V_2 = false;
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_3;
-	memset((&V_3), 0, sizeof(V_3));
 	{
 		// Vector3 normalizedEulers = relativeToCamRotation.eulerAngles;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0;
@@ -9699,61 +9484,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 		// if (normalizedEulers.x > 180) normalizedEulers.x -= 360;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = V_0;
 		float L_2 = L_1.get_x_2();
-		V_1 = (bool)((((float)L_2) > ((float)(180.0f)))? 1 : 0);
-		bool L_3 = V_1;
-		if (!L_3)
+		if ((!(((float)L_2) > ((float)(180.0f)))))
 		{
-			goto IL_002a;
+			goto IL_0025;
 		}
 	}
 	{
 		// if (normalizedEulers.x > 180) normalizedEulers.x -= 360;
-		float* L_4 = (&V_0)->get_address_of_x_2();
-		float* L_5 = L_4;
-		float L_6 = *((float*)L_5);
-		*((float*)L_5) = (float)((float)il2cpp_codegen_subtract((float)L_6, (float)(360.0f)));
+		float* L_3 = (&V_0)->get_address_of_x_2();
+		float* L_4 = L_3;
+		float L_5 = *((float*)L_4);
+		*((float*)L_4) = (float)((float)il2cpp_codegen_subtract((float)L_5, (float)(360.0f)));
 	}
 
-IL_002a:
+IL_0025:
 	{
 		// if (normalizedEulers.z > 180) normalizedEulers.z -= 360;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_7 = V_0;
-		float L_8 = L_7.get_z_4();
-		V_2 = (bool)((((float)L_8) > ((float)(180.0f)))? 1 : 0);
-		bool L_9 = V_2;
-		if (!L_9)
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6 = V_0;
+		float L_7 = L_6.get_z_4();
+		if ((!(((float)L_7) > ((float)(180.0f)))))
 		{
-			goto IL_004b;
+			goto IL_0042;
 		}
 	}
 	{
 		// if (normalizedEulers.z > 180) normalizedEulers.z -= 360;
-		float* L_10 = (&V_0)->get_address_of_z_4();
-		float* L_11 = L_10;
-		float L_12 = *((float*)L_11);
-		*((float*)L_11) = (float)((float)il2cpp_codegen_subtract((float)L_12, (float)(360.0f)));
+		float* L_8 = (&V_0)->get_address_of_z_4();
+		float* L_9 = L_8;
+		float L_10 = *((float*)L_9);
+		*((float*)L_9) = (float)((float)il2cpp_codegen_subtract((float)L_10, (float)(360.0f)));
 	}
 
-IL_004b:
+IL_0042:
 	{
 		// return normalizedEulers;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_13 = V_0;
-		V_3 = L_13;
-		goto IL_004f;
-	}
-
-IL_004f:
-	{
-		// }
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_14 = V_3;
-		return L_14;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_11 = V_0;
+		return L_11;
 	}
 }
 // UnityEngine.Quaternion FaceTracker::AccountForARKitNegativeZAxis(UnityEngine.Quaternion)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  FaceTracker_AccountForARKitNegativeZAxis_m0E6673F17CB4B35CEF28DCB0FB16102960A9D586 (Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  ___newrot0, const RuntimeMethod* method)
 {
-	Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  V_0;
-	memset((&V_0), 0, sizeof(V_0));
 	{
 		// return Quaternion.Euler(0, 180, 0) * newrot;
 		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_0;
@@ -9761,22 +9532,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t6D28618CF65156D4A0AD747370DDFD0C5
 		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_1 = ___newrot0;
 		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_2;
 		L_2 = Quaternion_op_Multiply_m5C7A60AC0CDCA2C5E2F23E45FBD1B15CA152D7B0(L_0, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
-		goto IL_001e;
-	}
-
-IL_001e:
-	{
-		// }
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_3 = V_0;
-		return L_3;
+		return L_2;
 	}
 }
 // UnityEngine.Quaternion FaceTracker::AccountForSelfieCamMirroringInFaceRotation(UnityEngine.Quaternion)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  FaceTracker_AccountForSelfieCamMirroringInFaceRotation_mAC4257B058FB8354A05F7C1A6C3EFB24926693EF (Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  ___newrot0, const RuntimeMethod* method)
 {
-	Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  V_0;
-	memset((&V_0), 0, sizeof(V_0));
 	{
 		// newrot = new Quaternion(newrot.x, newrot.y, -newrot.z, -newrot.w);
 		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_0 = ___newrot0;
@@ -9790,22 +9551,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t6D28618CF65156D4A0AD747370DDFD0C5
 		Quaternion__ctor_m564FA9302F5B9DA8BAB97B0A2D86FFE83ACAA421((Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4 *)(&___newrot0), L_1, L_3, ((-L_5)), ((-L_7)), /*hidden argument*/NULL);
 		// return newrot;
 		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_8 = ___newrot0;
-		V_0 = L_8;
-		goto IL_0026;
-	}
-
-IL_0026:
-	{
-		// }
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_9 = V_0;
-		return L_9;
+		return L_8;
 	}
 }
 // UnityEngine.Quaternion FaceTracker::GetRawFaceLocalRotation(UnityEngine.Transform)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  FaceTracker_GetRawFaceLocalRotation_m5BE14454D2DD84F908CD49D2791B241573B67E11 (FaceTracker_t6C9AE1AB52054FFFDBC1F21D1CD885E9A00EA5E1 * __this, Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * ___faceTransform0, const RuntimeMethod* method)
 {
-	Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  V_0;
-	memset((&V_0), 0, sizeof(V_0));
 	{
 		// return Quaternion.Inverse(arCamera.transform.rotation) * faceTransform.rotation;
 		Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * L_0 = __this->get_arCamera_7();
@@ -9823,15 +9574,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t6D28618CF65156D4A0AD747370DDFD0C5
 		L_5 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_4, /*hidden argument*/NULL);
 		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_6;
 		L_6 = Quaternion_op_Multiply_m5C7A60AC0CDCA2C5E2F23E45FBD1B15CA152D7B0(L_3, L_5, /*hidden argument*/NULL);
-		V_0 = L_6;
-		goto IL_0024;
-	}
-
-IL_0024:
-	{
-		// }
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_7 = V_0;
-		return L_7;
+		return L_6;
 	}
 }
 // UnityEngine.Vector3 FaceTracker::RelativeToCamPosition(UnityEngine.Transform)
@@ -9839,10 +9582,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 {
 	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_0;
 	memset((&V_0), 0, sizeof(V_0));
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_1;
-	memset((&V_1), 0, sizeof(V_1));
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_2;
-	memset((&V_2), 0, sizeof(V_2));
 	{
 		// Vector3 localPosition = arCamera.transform.InverseTransformPoint(faceTransform.position);
 		Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * L_0 = __this->get_arCamera_7();
@@ -9856,33 +9595,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 		NullCheck(L_1);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4;
 		L_4 = Transform_InverseTransformPoint_m476ABC8F3F14824D7D82FE2C54CEE5A151A669B8(L_1, L_3, /*hidden argument*/NULL);
-		V_0 = L_4;
 		// Vector3 newPosition = localPosition;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_5 = V_0;
-		V_1 = L_5;
+		V_0 = L_4;
 		// newPosition = AccountForSelfieCamMirroringForPosition(newPosition);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6 = V_1;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_7;
-		L_7 = FaceTracker_AccountForSelfieCamMirroringForPosition_mC81EE397FA6DC15C2175A34629EB14A818746FDD(__this, L_6, /*hidden argument*/NULL);
-		V_1 = L_7;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_5 = V_0;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6;
+		L_6 = FaceTracker_AccountForSelfieCamMirroringForPosition_mC81EE397FA6DC15C2175A34629EB14A818746FDD(__this, L_5, /*hidden argument*/NULL);
+		V_0 = L_6;
 		// return newPosition;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_8 = V_1;
-		V_2 = L_8;
-		goto IL_0026;
-	}
-
-IL_0026:
-	{
-		// }
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_9 = V_2;
-		return L_9;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_7 = V_0;
+		return L_7;
 	}
 }
 // UnityEngine.Vector3 FaceTracker::AccountForSelfieCamMirroringForPosition(UnityEngine.Vector3)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  FaceTracker_AccountForSelfieCamMirroringForPosition_mC81EE397FA6DC15C2175A34629EB14A818746FDD (FaceTracker_t6C9AE1AB52054FFFDBC1F21D1CD885E9A00EA5E1 * __this, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___newPosition0, const RuntimeMethod* method)
 {
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_0;
-	memset((&V_0), 0, sizeof(V_0));
 	{
 		// newPosition.x = -newPosition.x;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = ___newPosition0;
@@ -9890,58 +9617,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 		(&___newPosition0)->set_x_2(((-L_1)));
 		// return newPosition;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___newPosition0;
-		V_0 = L_2;
-		goto IL_0013;
-	}
-
-IL_0013:
-	{
-		// }
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_3 = V_0;
-		return L_3;
+		return L_2;
 	}
 }
 // UnityEngine.Vector3 FaceTracker::RelativeToCamRotation(UnityEngine.Transform)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  FaceTracker_RelativeToCamRotation_mBE202937F1E910C82E98DC119B0280340DCE8475 (FaceTracker_t6C9AE1AB52054FFFDBC1F21D1CD885E9A00EA5E1 * __this, Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * ___faceTransform0, const RuntimeMethod* method)
 {
-	Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_1;
-	memset((&V_1), 0, sizeof(V_1));
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_2;
-	memset((&V_2), 0, sizeof(V_2));
 	{
 		// Quaternion newrot = GetRawFaceLocalRotation(faceTransform);
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_0 = ___faceTransform0;
 		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_1;
 		L_1 = FaceTracker_GetRawFaceLocalRotation_m5BE14454D2DD84F908CD49D2791B241573B67E11(__this, L_0, /*hidden argument*/NULL);
-		V_0 = L_1;
 		// newrot = AccountForSelfieCamMirroringInFaceRotation(newrot);
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_2 = V_0;
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_3;
-		L_3 = FaceTracker_AccountForSelfieCamMirroringInFaceRotation_mAC4257B058FB8354A05F7C1A6C3EFB24926693EF(L_2, /*hidden argument*/NULL);
-		V_0 = L_3;
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_2;
+		L_2 = FaceTracker_AccountForSelfieCamMirroringInFaceRotation_mAC4257B058FB8354A05F7C1A6C3EFB24926693EF(L_1, /*hidden argument*/NULL);
 		// newrot = AccountForARKitNegativeZAxis(newrot);
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_4 = V_0;
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_5;
-		L_5 = FaceTracker_AccountForARKitNegativeZAxis_m0E6673F17CB4B35CEF28DCB0FB16102960A9D586(L_4, /*hidden argument*/NULL);
-		V_0 = L_5;
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_3;
+		L_3 = FaceTracker_AccountForARKitNegativeZAxis_m0E6673F17CB4B35CEF28DCB0FB16102960A9D586(L_2, /*hidden argument*/NULL);
 		// Vector3 normalizedEulers = NormalizeEulersToPreventSingularity(newrot);
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_6 = V_0;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_7;
-		L_7 = FaceTracker_NormalizeEulersToPreventSingularity_m05088DF0F946FC53AA83C6AA38675A1C733B756B(L_6, /*hidden argument*/NULL);
-		V_1 = L_7;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4;
+		L_4 = FaceTracker_NormalizeEulersToPreventSingularity_m05088DF0F946FC53AA83C6AA38675A1C733B756B(L_3, /*hidden argument*/NULL);
 		// return normalizedEulers;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_8 = V_1;
-		V_2 = L_8;
-		goto IL_0022;
-	}
-
-IL_0022:
-	{
-		// }
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_9 = V_2;
-		return L_9;
+		return L_4;
 	}
 }
 // System.Void FaceTracker::.ctor()
@@ -9958,10 +9655,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FaceTracker__ctor_m383D5C6FD0F57F78A7AE9
 		RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD * L_0 = (RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD *)il2cpp_codegen_object_new(RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD_il2cpp_TypeInfo_var);
 		RawTrackingData__ctor_m8093224C329264DBAA5FE53BEC99F2BB94DA2535(L_0, /*hidden argument*/NULL);
 		__this->set_trackingData_5(L_0);
-		// [SerializeField] ARFaceManager faceManager = default;
-		__this->set_faceManager_6((ARFaceManager_t587CD3EE57FE343549CEF05B14CA6258A9E11647 *)NULL);
-		// [SerializeField] Camera arCamera = default;
-		__this->set_arCamera_7((Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C *)NULL);
 		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -10004,43 +9697,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m6B0A2CF93C75E64792C28D399180F0CD262E6EA1_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * V_0 = NULL;
+	U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7  V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * L_0 = (U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 *)il2cpp_codegen_object_new(U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_il2cpp_TypeInfo_var);
-		U3CRunCalibrationProcedureU3Ed__7__ctor_mF2C9CF1763C1CD2B78674E981B5485BA6D76F248(L_0, /*hidden argument*/NULL);
-		V_0 = L_0;
-		U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * L_1 = V_0;
-		NullCheck(L_1);
-		L_1->set_U3CU3E4__this_3(__this);
-		U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * L_2 = V_0;
-		SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * L_3 = ___newCalibration0;
-		NullCheck(L_2);
-		L_2->set_newCalibration_2(L_3);
-		U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * L_4 = V_0;
+		(&V_0)->set_U3CU3E4__this_2(__this);
+		SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * L_0 = ___newCalibration0;
+		(&V_0)->set_newCalibration_3(L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5_il2cpp_TypeInfo_var);
-		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  L_5;
-		L_5 = AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92(/*hidden argument*/AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92_RuntimeMethod_var);
-		NullCheck(L_4);
-		L_4->set_U3CU3Et__builder_1(L_5);
-		U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * L_6 = V_0;
-		NullCheck(L_6);
-		L_6->set_U3CU3E1__state_0((-1));
-		U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * L_7 = V_0;
-		NullCheck(L_7);
-		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  L_8 = L_7->get_U3CU3Et__builder_1();
-		V_1 = L_8;
-		AsyncTaskMethodBuilder_1_Start_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m6B0A2CF93C75E64792C28D399180F0CD262E6EA1((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)(&V_1), (U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 **)(&V_0), /*hidden argument*/AsyncTaskMethodBuilder_1_Start_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m6B0A2CF93C75E64792C28D399180F0CD262E6EA1_RuntimeMethod_var);
-		U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * L_9 = V_0;
-		NullCheck(L_9);
-		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_10 = L_9->get_address_of_U3CU3Et__builder_1();
-		Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7849 * L_11;
-		L_11 = AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_10, /*hidden argument*/AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78_RuntimeMethod_var);
-		return L_11;
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  L_1;
+		L_1 = AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92(/*hidden argument*/AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92_RuntimeMethod_var);
+		(&V_0)->set_U3CU3Et__builder_1(L_1);
+		(&V_0)->set_U3CU3E1__state_0((-1));
+		U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7  L_2 = V_0;
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  L_3 = L_2.get_U3CU3Et__builder_1();
+		V_1 = L_3;
+		AsyncTaskMethodBuilder_1_Start_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m6B0A2CF93C75E64792C28D399180F0CD262E6EA1((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)(&V_1), (U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 *)(&V_0), /*hidden argument*/AsyncTaskMethodBuilder_1_Start_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m6B0A2CF93C75E64792C28D399180F0CD262E6EA1_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_4 = (&V_0)->get_address_of_U3CU3Et__builder_1();
+		Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7849 * L_5;
+		L_5 = AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_4, /*hidden argument*/AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78_RuntimeMethod_var);
+		return L_5;
 	}
 }
 // System.Void RotatableCameraCalibrator::Complete()
@@ -10052,7 +9731,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableCameraCalibrator_Complete_mBE55
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
 	{
 		// if (calibration.Name == string.Empty) return;
 		SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * L_0 = __this->get_calibration_9();
@@ -10062,26 +9740,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableCameraCalibrator_Complete_mBE55
 		String_t* L_2 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
 		bool L_3;
 		L_3 = String_op_Equality_m2B91EE68355F142F67095973D32EB5828B7B73CB(L_1, L_2, /*hidden argument*/NULL);
-		V_0 = L_3;
-		bool L_4 = V_0;
-		if (!L_4)
+		if (!L_3)
 		{
-			goto IL_001c;
+			goto IL_0018;
 		}
 	}
 	{
 		// if (calibration.Name == string.Empty) return;
-		goto IL_0023;
+		return;
 	}
 
-IL_001c:
+IL_0018:
 	{
 		// calibrating = false;
 		__this->set_calibrating_7((bool)0);
-	}
-
-IL_0023:
-	{
 		// }
 		return;
 	}
@@ -10102,10 +9774,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableCameraCalibrator_SetCameraOffse
 	float V_0 = 0.0f;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	il2cpp::utils::ExceptionSupportStack<int32_t, 2> __leave_targets;
-	{
-	}
 
-IL_0001:
+IL_0000:
 	try
 	{ // begin try (depth: 1)
 		// float offset = float.Parse(offsetString);
@@ -10121,26 +9791,28 @@ IL_0001:
 		Vector3__ctor_m57495F692C6CE1CEF278CAD9A98221165D37E636_inline((&L_4), (0.0f), L_3, (0.0f), /*hidden argument*/NULL);
 		NullCheck(L_2);
 		L_2->set_portraitOffset_1(L_4);
-		goto IL_002c;
+		// }
+		goto IL_0027;
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&FormatException_t119BB207B54B4B1BC28D9B1783C4625AE23D4759_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_0027;
+			goto CATCH_0024;
 		}
 		throw e;
 	}
 
-CATCH_0027:
+CATCH_0024:
 	{ // begin catch(System.FormatException)
 		// catch (FormatException)
+		// }
 		IL2CPP_POP_ACTIVE_EXCEPTION();
-		goto IL_002c;
+		goto IL_0027;
 	} // end catch (depth: 1)
 
-IL_002c:
+IL_0027:
 	{
 		// }
 		return;
@@ -10236,142 +9908,104 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RotatableDeviceScreen_get_DefaultHeight
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RotatableDeviceScreen_get_Width_mE0F594460AF9FEE83EFEE84EEAA3EB32304CFF4B (RotatableDeviceScreen_t98148ABE0E3229E9573DF044ECEF1232A8FD2C49 * __this, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
-	int32_t V_1 = 0;
-	float V_2 = 0.0f;
 	{
 		// switch (DeviceOrientation)
 		int32_t L_0;
 		L_0 = RotatableDeviceScreen_get_DeviceOrientation_m57CDB5B87CAEB7AE1EC7DB06C5E7FC9279D424A3(__this, /*hidden argument*/NULL);
-		V_1 = L_0;
-		int32_t L_1 = V_1;
-		V_0 = L_1;
+		V_0 = L_0;
+		int32_t L_1 = V_0;
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_1, (int32_t)1))) > ((uint32_t)1))))
+		{
+			goto IL_0015;
+		}
+	}
+	{
 		int32_t L_2 = V_0;
-		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_2, (int32_t)1))) > ((uint32_t)1))))
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_2, (int32_t)3))) > ((uint32_t)1))))
 		{
-			goto IL_001a;
+			goto IL_0021;
 		}
 	}
 	{
-		goto IL_0012;
+		goto IL_002d;
 	}
 
-IL_0012:
-	{
-		int32_t L_3 = V_0;
-		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_3, (int32_t)3))) > ((uint32_t)1))))
-		{
-			goto IL_0028;
-		}
-	}
-	{
-		goto IL_0036;
-	}
-
-IL_001a:
+IL_0015:
 	{
 		// return currentCalibration.PortraitModeWidth;
-		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_4 = __this->get_currentCalibration_6();
-		NullCheck(L_4);
-		float L_5 = L_4->get_PortraitModeWidth_2();
-		V_2 = L_5;
-		goto IL_003f;
+		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_3 = __this->get_currentCalibration_6();
+		NullCheck(L_3);
+		float L_4 = L_3->get_PortraitModeWidth_2();
+		return L_4;
 	}
 
-IL_0028:
+IL_0021:
 	{
 		// return currentCalibration.PortraitModeHeight;
-		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_6 = __this->get_currentCalibration_6();
-		NullCheck(L_6);
-		float L_7 = L_6->get_PortraitModeHeight_1();
-		V_2 = L_7;
-		goto IL_003f;
+		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_5 = __this->get_currentCalibration_6();
+		NullCheck(L_5);
+		float L_6 = L_5->get_PortraitModeHeight_1();
+		return L_6;
 	}
 
-IL_0036:
+IL_002d:
 	{
 		// return DefaultWidth;
-		float L_8;
-		L_8 = RotatableDeviceScreen_get_DefaultWidth_m80096DE3B649D446B6377C26BC5C4FD833D3B910(__this, /*hidden argument*/NULL);
-		V_2 = L_8;
-		goto IL_003f;
-	}
-
-IL_003f:
-	{
-		// }
-		float L_9 = V_2;
-		return L_9;
+		float L_7;
+		L_7 = RotatableDeviceScreen_get_DefaultWidth_m80096DE3B649D446B6377C26BC5C4FD833D3B910(__this, /*hidden argument*/NULL);
+		return L_7;
 	}
 }
 // System.Single RotatableDeviceScreen::get_Height()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RotatableDeviceScreen_get_Height_mFBEA59E8AEBE923FC9808BE044B4F476E7A2CEF1 (RotatableDeviceScreen_t98148ABE0E3229E9573DF044ECEF1232A8FD2C49 * __this, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
-	int32_t V_1 = 0;
-	float V_2 = 0.0f;
 	{
 		// switch (DeviceOrientation)
 		int32_t L_0;
 		L_0 = RotatableDeviceScreen_get_DeviceOrientation_m57CDB5B87CAEB7AE1EC7DB06C5E7FC9279D424A3(__this, /*hidden argument*/NULL);
-		V_1 = L_0;
-		int32_t L_1 = V_1;
-		V_0 = L_1;
+		V_0 = L_0;
+		int32_t L_1 = V_0;
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_1, (int32_t)1))) > ((uint32_t)1))))
+		{
+			goto IL_0015;
+		}
+	}
+	{
 		int32_t L_2 = V_0;
-		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_2, (int32_t)1))) > ((uint32_t)1))))
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_2, (int32_t)3))) > ((uint32_t)1))))
 		{
-			goto IL_001a;
+			goto IL_0021;
 		}
 	}
 	{
-		goto IL_0012;
+		goto IL_002d;
 	}
 
-IL_0012:
-	{
-		int32_t L_3 = V_0;
-		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_3, (int32_t)3))) > ((uint32_t)1))))
-		{
-			goto IL_0028;
-		}
-	}
-	{
-		goto IL_0036;
-	}
-
-IL_001a:
+IL_0015:
 	{
 		// return currentCalibration.PortraitModeHeight;
-		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_4 = __this->get_currentCalibration_6();
-		NullCheck(L_4);
-		float L_5 = L_4->get_PortraitModeHeight_1();
-		V_2 = L_5;
-		goto IL_003f;
+		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_3 = __this->get_currentCalibration_6();
+		NullCheck(L_3);
+		float L_4 = L_3->get_PortraitModeHeight_1();
+		return L_4;
 	}
 
-IL_0028:
+IL_0021:
 	{
 		// return currentCalibration.PortraitModeWidth;
-		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_6 = __this->get_currentCalibration_6();
-		NullCheck(L_6);
-		float L_7 = L_6->get_PortraitModeWidth_2();
-		V_2 = L_7;
-		goto IL_003f;
+		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_5 = __this->get_currentCalibration_6();
+		NullCheck(L_5);
+		float L_6 = L_5->get_PortraitModeWidth_2();
+		return L_6;
 	}
 
-IL_0036:
+IL_002d:
 	{
 		// return DefaultHeight;
-		float L_8;
-		L_8 = RotatableDeviceScreen_get_DefaultHeight_mC211CB3D43E62ED1D7E2C421CBB5BBEDB91BD0EE(__this, /*hidden argument*/NULL);
-		V_2 = L_8;
-		goto IL_003f;
-	}
-
-IL_003f:
-	{
-		// }
-		float L_9 = V_2;
-		return L_9;
+		float L_7;
+		L_7 = RotatableDeviceScreen_get_DefaultHeight_mC211CB3D43E62ED1D7E2C421CBB5BBEDB91BD0EE(__this, /*hidden argument*/NULL);
+		return L_7;
 	}
 }
 // System.Void RotatableDeviceScreen::Calibrate()
@@ -10394,14 +10028,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableDeviceScreen_Start_m90ADE7ACC17
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	bool V_1 = false;
 	{
 		// for(int i = 0; i < defaultCalibrations.Count; i++)
 		V_0 = 0;
-		goto IL_0028;
+		goto IL_0024;
 	}
 
-IL_0005:
+IL_0004:
 	{
 		// allCalibrations.Add(defaultCalibrations[i].screenCalibration);
 		List_1_t8BD8ACEBF3EE2B89D1E33D1F0B73F411A8C3A24D * L_0 = __this->get_allCalibrations_9();
@@ -10419,7 +10052,7 @@ IL_0005:
 		V_0 = ((int32_t)il2cpp_codegen_add((int32_t)L_5, (int32_t)1));
 	}
 
-IL_0028:
+IL_0024:
 	{
 		// for(int i = 0; i < defaultCalibrations.Count; i++)
 		int32_t L_6 = V_0;
@@ -10427,11 +10060,9 @@ IL_0028:
 		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = List_1_get_Count_mAE9A9696F2F4E63DEAFDB791445C2E407A608CB9_inline(L_7, /*hidden argument*/List_1_get_Count_mAE9A9696F2F4E63DEAFDB791445C2E407A608CB9_RuntimeMethod_var);
-		V_1 = (bool)((((int32_t)L_6) < ((int32_t)L_8))? 1 : 0);
-		bool L_9 = V_1;
-		if (L_9)
+		if ((((int32_t)L_6) < ((int32_t)L_8)))
 		{
-			goto IL_0005;
+			goto IL_0004;
 		}
 	}
 	{
@@ -10546,10 +10177,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableDeviceScreen__ctor_mE5936E06B36
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// [SerializeField] RotatableScreenCalibrator screenCalibrator = default;
-		__this->set_screenCalibrator_4((RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 *)NULL);
-		// [SerializeField] public SavedRotatableScreenCalibration currentCalibration = default;
-		__this->set_currentCalibration_6((SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 *)NULL);
 		// [SerializeField] List<SavedRotatableScreenCalibration> savedCalibrations = new List<SavedRotatableScreenCalibration>();
 		List_1_t8BD8ACEBF3EE2B89D1E33D1F0B73F411A8C3A24D * L_0 = (List_1_t8BD8ACEBF3EE2B89D1E33D1F0B73F411A8C3A24D *)il2cpp_codegen_object_new(List_1_t8BD8ACEBF3EE2B89D1E33D1F0B73F411A8C3A24D_il2cpp_TypeInfo_var);
 		List_1__ctor_mA40C581371256DF2AA467B9ED2869E3A0EB6951F(L_0, /*hidden argument*/List_1__ctor_mA40C581371256DF2AA467B9ED2869E3A0EB6951F_RuntimeMethod_var);
@@ -10598,7 +10225,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t84076098512FE39ABDDD8D93DB8CF61479176
 	Enumerator_tD1ABBE761AD6E03A50C066BB80DBBA88D529A408  V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	RotatableDeviceConfig_tF81ED7E38BC41F1D2650D7A0B55F934C6689A0FB * V_2 = NULL;
-	List_1_t84076098512FE39ABDDD8D93DB8CF61479176DBC * V_3 = NULL;
 	Exception_t * __last_unhandled_exception = 0;
 	il2cpp::utils::ExceptionSupportStack<int32_t, 1> __leave_targets;
 	{
@@ -10614,14 +10240,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t84076098512FE39ABDDD8D93DB8CF61479176
 		V_1 = L_2;
 	}
 
-IL_0014:
+IL_0012:
 	try
 	{ // begin try (depth: 1)
 		{
-			goto IL_002d;
+			goto IL_0028;
 		}
 
-IL_0016:
+IL_0014:
 		{
 			// foreach (RotatableDeviceConfig deviceConfig in defaultCalibrations)
 			RotatableDeviceConfig_tF81ED7E38BC41F1D2650D7A0B55F934C6689A0FB * L_3;
@@ -10636,52 +10262,44 @@ IL_0016:
 			List_1_Add_mE212116F386BEF66B275F66FCB61352CFB5D884A(L_4, L_6, /*hidden argument*/List_1_Add_mE212116F386BEF66B275F66FCB61352CFB5D884A_RuntimeMethod_var);
 		}
 
-IL_002d:
+IL_0028:
 		{
 			// foreach (RotatableDeviceConfig deviceConfig in defaultCalibrations)
 			bool L_7;
 			L_7 = Enumerator_MoveNext_m3B16AEE31DD819DD1159DA6B7A26B90EC0B83BBE((Enumerator_tD1ABBE761AD6E03A50C066BB80DBBA88D529A408 *)(&V_1), /*hidden argument*/Enumerator_MoveNext_m3B16AEE31DD819DD1159DA6B7A26B90EC0B83BBE_RuntimeMethod_var);
 			if (L_7)
 			{
-				goto IL_0016;
+				goto IL_0014;
 			}
 		}
 
-IL_0036:
+IL_0031:
 		{
-			IL2CPP_LEAVE(0x47, FINALLY_0038);
+			IL2CPP_LEAVE(0x41, FINALLY_0033);
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		__last_unhandled_exception = (Exception_t *)e.ex;
-		goto FINALLY_0038;
+		goto FINALLY_0033;
 	}
 
-FINALLY_0038:
+FINALLY_0033:
 	{ // begin finally (depth: 1)
 		Enumerator_Dispose_m1F708350847A68204851B4B70DC17743E90B747D((Enumerator_tD1ABBE761AD6E03A50C066BB80DBBA88D529A408 *)(&V_1), /*hidden argument*/Enumerator_Dispose_m1F708350847A68204851B4B70DC17743E90B747D_RuntimeMethod_var);
-		IL2CPP_END_FINALLY(56)
+		IL2CPP_END_FINALLY(51)
 	} // end finally (depth: 1)
-	IL2CPP_CLEANUP(56)
+	IL2CPP_CLEANUP(51)
 	{
 		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
-		IL2CPP_JUMP_TBL(0x47, IL_0047)
+		IL2CPP_JUMP_TBL(0x41, IL_0041)
 	}
 
-IL_0047:
+IL_0041:
 	{
 		// return all;
 		List_1_t84076098512FE39ABDDD8D93DB8CF61479176DBC * L_8 = V_0;
-		V_3 = L_8;
-		goto IL_004b;
-	}
-
-IL_004b:
-	{
-		// }
-		List_1_t84076098512FE39ABDDD8D93DB8CF61479176DBC * L_9 = V_3;
-		return L_9;
+		return L_8;
 	}
 }
 // UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider::get_PortraitOffset()
@@ -10751,9 +10369,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RotatableDeviceTrackingCalibrationProvider_get_CurrentOrientation_m9A10DC295BCF680428900EFED9B327BB9C2B7F10 (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
-	bool V_1 = false;
-	int32_t V_2 = 0;
-	int32_t G_B4_0 = 0;
 	{
 		// DeviceOrientation orientation = Input.deviceOrientation; ;
 		int32_t L_0;
@@ -10763,158 +10378,118 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RotatableDeviceTrackingCalibrationPro
 		int32_t L_1 = V_0;
 		if (!L_1)
 		{
-			goto IL_0015;
+			goto IL_0011;
 		}
 	}
 	{
 		int32_t L_2 = V_0;
 		if ((((int32_t)L_2) == ((int32_t)5)))
 		{
-			goto IL_0015;
+			goto IL_0011;
 		}
 	}
 	{
 		int32_t L_3 = V_0;
-		G_B4_0 = ((((int32_t)L_3) == ((int32_t)6))? 1 : 0);
-		goto IL_0016;
-	}
-
-IL_0015:
-	{
-		G_B4_0 = 1;
-	}
-
-IL_0016:
-	{
-		V_1 = (bool)G_B4_0;
-		bool L_4 = V_1;
-		if (!L_4)
+		if ((!(((uint32_t)L_3) == ((uint32_t)6))))
 		{
-			goto IL_0024;
+			goto IL_0018;
 		}
 	}
+
+IL_0011:
 	{
 		// return lastOrientation;
-		int32_t L_5 = __this->get_lastOrientation_5();
-		V_2 = L_5;
-		goto IL_0030;
+		int32_t L_4 = __this->get_lastOrientation_5();
+		return L_4;
 	}
 
-IL_0024:
+IL_0018:
 	{
 		// lastOrientation = orientation;
-		int32_t L_6 = V_0;
-		__this->set_lastOrientation_5(L_6);
+		int32_t L_5 = V_0;
+		__this->set_lastOrientation_5(L_5);
 		// return orientation;
-		int32_t L_7 = V_0;
-		V_2 = L_7;
-		goto IL_0030;
-	}
-
-IL_0030:
-	{
-		// }
-		int32_t L_8 = V_2;
-		return L_8;
+		int32_t L_6 = V_0;
+		return L_6;
 	}
 }
 // UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider::get_OffsetPosition()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  RotatableDeviceTrackingCalibrationProvider_get_OffsetPosition_m580FAC909D7543FFBBDAD07591F97FC608203BAF (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
-	int32_t V_1 = 0;
-	int32_t V_2 = 0;
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_3;
-	memset((&V_3), 0, sizeof(V_3));
 	{
 		// DeviceOrientation orientation = CurrentOrientation;
 		int32_t L_0;
 		L_0 = RotatableDeviceTrackingCalibrationProvider_get_CurrentOrientation_m9A10DC295BCF680428900EFED9B327BB9C2B7F10(__this, /*hidden argument*/NULL);
 		V_0 = L_0;
-		// switch (orientation)
 		int32_t L_1 = V_0;
-		V_2 = L_1;
-		int32_t L_2 = V_2;
-		V_1 = L_2;
-		int32_t L_3 = V_1;
-		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_3, (int32_t)1)))
+		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_1, (int32_t)1)))
 		{
 			case 0:
 			{
-				goto IL_0026;
+				goto IL_0021;
 			}
 			case 1:
 			{
-				goto IL_002f;
+				goto IL_0028;
 			}
 			case 2:
 			{
-				goto IL_0038;
+				goto IL_002f;
 			}
 			case 3:
 			{
-				goto IL_0041;
+				goto IL_0036;
 			}
 		}
 	}
 	{
-		goto IL_004a;
+		goto IL_003d;
 	}
 
-IL_0026:
+IL_0021:
 	{
 		// return PortraitOffset;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4;
-		L_4 = RotatableDeviceTrackingCalibrationProvider_get_PortraitOffset_m7810C4A456B8FDD3CFB5A0D42ABAEC226F0BD482(__this, /*hidden argument*/NULL);
-		V_3 = L_4;
-		goto IL_0060;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
+		L_2 = RotatableDeviceTrackingCalibrationProvider_get_PortraitOffset_m7810C4A456B8FDD3CFB5A0D42ABAEC226F0BD482(__this, /*hidden argument*/NULL);
+		return L_2;
+	}
+
+IL_0028:
+	{
+		// return PortraitUpsideDownOffset;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_3;
+		L_3 = RotatableDeviceTrackingCalibrationProvider_get_PortraitUpsideDownOffset_m57556000C76B19A98093B05FA409139D23D9F526(__this, /*hidden argument*/NULL);
+		return L_3;
 	}
 
 IL_002f:
 	{
-		// return PortraitUpsideDownOffset;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_5;
-		L_5 = RotatableDeviceTrackingCalibrationProvider_get_PortraitUpsideDownOffset_m57556000C76B19A98093B05FA409139D23D9F526(__this, /*hidden argument*/NULL);
-		V_3 = L_5;
-		goto IL_0060;
-	}
-
-IL_0038:
-	{
 		// return LandscapeLeftOffset;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6;
-		L_6 = RotatableDeviceTrackingCalibrationProvider_get_LandscapeLeftOffset_m4A4BB1F868807C746FB8B9C4210A045ABEF06D64(__this, /*hidden argument*/NULL);
-		V_3 = L_6;
-		goto IL_0060;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4;
+		L_4 = RotatableDeviceTrackingCalibrationProvider_get_LandscapeLeftOffset_m4A4BB1F868807C746FB8B9C4210A045ABEF06D64(__this, /*hidden argument*/NULL);
+		return L_4;
 	}
 
-IL_0041:
+IL_0036:
 	{
 		// return LandscapeRightOffset;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_7;
-		L_7 = RotatableDeviceTrackingCalibrationProvider_get_LandscapeRightOffset_mD8C2A9D349DB176813820FDA10826B95AB93C444(__this, /*hidden argument*/NULL);
-		V_3 = L_7;
-		goto IL_0060;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_5;
+		L_5 = RotatableDeviceTrackingCalibrationProvider_get_LandscapeRightOffset_mD8C2A9D349DB176813820FDA10826B95AB93C444(__this, /*hidden argument*/NULL);
+		return L_5;
 	}
 
-IL_004a:
+IL_003d:
 	{
 		// throw new ArgumentException($"unspported orientation {orientation}");
-		int32_t L_8 = V_0;
-		int32_t L_9 = L_8;
-		RuntimeObject * L_10 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DeviceOrientation_t73A4A44136AE4C97E4139F7805534F9CBCB9782C_il2cpp_TypeInfo_var)), &L_9);
-		String_t* L_11;
-		L_11 = String_Format_mB3D38E5238C3164DB4D7D29339D9E225A4496D17(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral3753D8D8169336EEBE5EC01F13CB2DFEBF3AD326)), L_10, /*hidden argument*/NULL);
-		ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00 * L_12 = (ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00 *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00_il2cpp_TypeInfo_var)));
-		ArgumentException__ctor_m2D35EAD113C2ADC99EB17B940A2097A93FD23EFC(L_12, L_11, /*hidden argument*/NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_12, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&RotatableDeviceTrackingCalibrationProvider_get_OffsetPosition_m580FAC909D7543FFBBDAD07591F97FC608203BAF_RuntimeMethod_var)));
-	}
-
-IL_0060:
-	{
-		// }
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_13 = V_3;
-		return L_13;
+		int32_t L_6 = V_0;
+		int32_t L_7 = L_6;
+		RuntimeObject * L_8 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DeviceOrientation_t73A4A44136AE4C97E4139F7805534F9CBCB9782C_il2cpp_TypeInfo_var)), &L_7);
+		String_t* L_9;
+		L_9 = String_Format_mB3D38E5238C3164DB4D7D29339D9E225A4496D17(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral3753D8D8169336EEBE5EC01F13CB2DFEBF3AD326)), L_8, /*hidden argument*/NULL);
+		ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00 * L_10 = (ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00 *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00_il2cpp_TypeInfo_var)));
+		ArgumentException__ctor_m2D35EAD113C2ADC99EB17B940A2097A93FD23EFC(L_10, L_9, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_10, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&RotatableDeviceTrackingCalibrationProvider_get_OffsetPosition_m580FAC909D7543FFBBDAD07591F97FC608203BAF_RuntimeMethod_var)));
 	}
 }
 // System.String RotatableDeviceTrackingCalibrationProvider::get_Filename()
@@ -10940,7 +10515,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableDeviceTrackingCalibrationProvid
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m2FAD862EC69D4E93F659F8B41936EFAE9824782E_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	int32_t V_0 = 0;
 	{
 		// currentCalibration = defaultCalibrations[selectedIndex].trackingCalibration;
 		List_1_tFC85CE05FD98BF50C706FD735971CC76D7107A40 * L_0 = __this->get_defaultCalibrations_8();
@@ -10968,7 +10542,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableDeviceTrackingCalibrationProvid
 		// DeviceOrientation orientation = CurrentOrientation;
 		int32_t L_9;
 		L_9 = RotatableDeviceTrackingCalibrationProvider_get_CurrentOrientation_m9A10DC295BCF680428900EFED9B327BB9C2B7F10(__this, /*hidden argument*/NULL);
-		V_0 = L_9;
 		// calibrationTransform.position = OffsetPosition;
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_10 = ((TrackingCalibrationProvider_t936458C67919392EE6B88C439729E2AECA9293AB *)__this)->get_calibrationTransform_4();
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_11;
@@ -10988,8 +10561,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TrackerOffsetCalibration_tD2EC555FBB1EF1E2A33
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TrackerOffsetCalibration_tD2EC555FBB1EF1E2A33767B5EF260584742C3321_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	TrackerOffsetCalibration_tD2EC555FBB1EF1E2A33767B5EF260584742C3321 * V_0 = NULL;
-	TrackerOffsetCalibration_tD2EC555FBB1EF1E2A33767B5EF260584742C3321 * V_1 = NULL;
 	{
 		// TrackerOffsetCalibration calibration = new TrackerOffsetCalibration
 		// {
@@ -11008,18 +10579,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TrackerOffsetCalibration_tD2EC555FBB1EF1E2A33
 		L_4 = Vector3_get_zero_m1A8F7993167785F750B6B01762D22C2597C84EF6(/*hidden argument*/NULL);
 		NullCheck(L_3);
 		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_3)->set_Eulers_1(L_4);
-		V_0 = L_3;
 		// return calibration;
-		TrackerOffsetCalibration_tD2EC555FBB1EF1E2A33767B5EF260584742C3321 * L_5 = V_0;
-		V_1 = L_5;
-		goto IL_0022;
-	}
-
-IL_0022:
-	{
-		// }
-		TrackerOffsetCalibration_tD2EC555FBB1EF1E2A33767B5EF260584742C3321 * L_6 = V_1;
-		return L_6;
+		return L_3;
 	}
 }
 // System.Void RotatableDeviceTrackingCalibrationProvider::Calibrate()
@@ -11110,18 +10671,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RotatableDeviceTrackingCalibrationP
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
 		s_Il2CppMethodInitialized = true;
 	}
-	String_t* V_0 = NULL;
 	{
 		// return "";
-		V_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-		goto IL_0009;
-	}
-
-IL_0009:
-	{
-		// }
-		String_t* L_0 = V_0;
-		return L_0;
+		return _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 	}
 }
 // System.Void RotatableDeviceTrackingCalibrationProvider::.ctor()
@@ -11169,43 +10721,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m9600B92F79B1FE3AD3235FB6D62A64DAE8AA944D_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * V_0 = NULL;
+	U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13  V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * L_0 = (U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 *)il2cpp_codegen_object_new(U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_il2cpp_TypeInfo_var);
-		U3CStartCalibrationU3Ed__8__ctor_mED6C7FDB679F0F4CAEB8AB53DF5D094CEF8F29FA(L_0, /*hidden argument*/NULL);
-		V_0 = L_0;
-		U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * L_1 = V_0;
-		NullCheck(L_1);
-		L_1->set_U3CU3E4__this_3(__this);
-		U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * L_2 = V_0;
-		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_3 = ___newCalibration0;
-		NullCheck(L_2);
-		L_2->set_newCalibration_2(L_3);
-		U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * L_4 = V_0;
+		(&V_0)->set_U3CU3E4__this_2(__this);
+		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_0 = ___newCalibration0;
+		(&V_0)->set_newCalibration_3(L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5_il2cpp_TypeInfo_var);
-		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  L_5;
-		L_5 = AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92(/*hidden argument*/AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92_RuntimeMethod_var);
-		NullCheck(L_4);
-		L_4->set_U3CU3Et__builder_1(L_5);
-		U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * L_6 = V_0;
-		NullCheck(L_6);
-		L_6->set_U3CU3E1__state_0((-1));
-		U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * L_7 = V_0;
-		NullCheck(L_7);
-		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  L_8 = L_7->get_U3CU3Et__builder_1();
-		V_1 = L_8;
-		AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m9600B92F79B1FE3AD3235FB6D62A64DAE8AA944D((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)(&V_1), (U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 **)(&V_0), /*hidden argument*/AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m9600B92F79B1FE3AD3235FB6D62A64DAE8AA944D_RuntimeMethod_var);
-		U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * L_9 = V_0;
-		NullCheck(L_9);
-		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_10 = L_9->get_address_of_U3CU3Et__builder_1();
-		Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7849 * L_11;
-		L_11 = AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_10, /*hidden argument*/AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78_RuntimeMethod_var);
-		return L_11;
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  L_1;
+		L_1 = AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92(/*hidden argument*/AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92_RuntimeMethod_var);
+		(&V_0)->set_U3CU3Et__builder_1(L_1);
+		(&V_0)->set_U3CU3E1__state_0((-1));
+		U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13  L_2 = V_0;
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  L_3 = L_2.get_U3CU3Et__builder_1();
+		V_1 = L_3;
+		AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m9600B92F79B1FE3AD3235FB6D62A64DAE8AA944D((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)(&V_1), (U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 *)(&V_0), /*hidden argument*/AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m9600B92F79B1FE3AD3235FB6D62A64DAE8AA944D_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_4 = (&V_0)->get_address_of_U3CU3Et__builder_1();
+		Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7849 * L_5;
+		L_5 = AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_4, /*hidden argument*/AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78_RuntimeMethod_var);
+		return L_5;
 	}
 }
 // System.Void RotatableScreenCalibrator::Complete()
@@ -11217,7 +10755,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableScreenCalibrator_Complete_m48CD
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_t_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	bool V_0 = false;
 	{
 		// if (this.calibration.Name != string.Empty)
 		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_0 = __this->get_calibration_11();
@@ -11227,11 +10764,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableScreenCalibrator_Complete_m48CD
 		String_t* L_2 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
 		bool L_3;
 		L_3 = String_op_Inequality_mDDA2DDED3E7EF042987EB7180EE3E88105F0AAE2(L_1, L_2, /*hidden argument*/NULL);
-		V_0 = L_3;
-		bool L_4 = V_0;
-		if (!L_4)
+		if (!L_3)
 		{
-			goto IL_0023;
+			goto IL_001e;
 		}
 	}
 	{
@@ -11239,7 +10774,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableScreenCalibrator_Complete_m48CD
 		__this->set_calibrating_10((bool)0);
 	}
 
-IL_0023:
+IL_001e:
 	{
 		// }
 		return;
@@ -11267,7 +10802,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableScreenCalibrator_TryAutoDetect_
 	}
 	ScreenInfo_tE437720E6324BFF714FEF279E8FF0AD0A7A4A4FC * V_0 = NULL;
 	int32_t V_1 = 0;
-	int32_t V_2 = 0;
 	{
 		// ScreenSizeDetector.ScreenInfo screenInfo = ScreenSizeDetector.GetDeviceScreenSize();
 		ScreenInfo_tE437720E6324BFF714FEF279E8FF0AD0A7A4A4FC * L_0;
@@ -11283,79 +10817,70 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableScreenCalibrator_TryAutoDetect_
 		// switch (Input.deviceOrientation)
 		int32_t L_4;
 		L_4 = Input_get_deviceOrientation_m2620E06825B2772FF5FFCF7FE4D814FAB9365224(/*hidden argument*/NULL);
-		V_2 = L_4;
-		int32_t L_5 = V_2;
-		V_1 = L_5;
+		V_1 = L_4;
+		int32_t L_5 = V_1;
+		if ((!(((uint32_t)L_5) > ((uint32_t)2))))
+		{
+			goto IL_0029;
+		}
+	}
+	{
 		int32_t L_6 = V_1;
-		if ((!(((uint32_t)L_6) > ((uint32_t)2))))
+		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_6, (int32_t)3))) > ((uint32_t)1))))
 		{
-			goto IL_002e;
+			goto IL_004d;
 		}
 	}
 	{
-		goto IL_0026;
+		goto IL_006f;
 	}
 
-IL_0026:
-	{
-		int32_t L_7 = V_1;
-		if ((!(((uint32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_7, (int32_t)3))) > ((uint32_t)1))))
-		{
-			goto IL_0052;
-		}
-	}
-	{
-		goto IL_0076;
-	}
-
-IL_002e:
+IL_0029:
 	{
 		// calibration.PortraitModeHeight = screenInfo.ScreenHeight;
-		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_8 = __this->get_calibration_11();
-		ScreenInfo_tE437720E6324BFF714FEF279E8FF0AD0A7A4A4FC * L_9 = V_0;
-		NullCheck(L_9);
-		float L_10 = L_9->get_ScreenHeight_2();
+		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_7 = __this->get_calibration_11();
+		ScreenInfo_tE437720E6324BFF714FEF279E8FF0AD0A7A4A4FC * L_8 = V_0;
 		NullCheck(L_8);
-		L_8->set_PortraitModeHeight_1(L_10);
+		float L_9 = L_8->get_ScreenHeight_2();
+		NullCheck(L_7);
+		L_7->set_PortraitModeHeight_1(L_9);
 		// calibration.PortraitModeWidth = screenInfo.ScreenWidth;
-		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_11 = __this->get_calibration_11();
-		ScreenInfo_tE437720E6324BFF714FEF279E8FF0AD0A7A4A4FC * L_12 = V_0;
-		NullCheck(L_12);
-		float L_13 = L_12->get_ScreenWidth_1();
+		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_10 = __this->get_calibration_11();
+		ScreenInfo_tE437720E6324BFF714FEF279E8FF0AD0A7A4A4FC * L_11 = V_0;
 		NullCheck(L_11);
-		L_11->set_PortraitModeWidth_2(L_13);
+		float L_12 = L_11->get_ScreenWidth_1();
+		NullCheck(L_10);
+		L_10->set_PortraitModeWidth_2(L_12);
 		// break;
-		goto IL_0076;
+		goto IL_006f;
 	}
 
-IL_0052:
+IL_004d:
 	{
 		// calibration.PortraitModeHeight = screenInfo.ScreenWidth;
-		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_14 = __this->get_calibration_11();
-		ScreenInfo_tE437720E6324BFF714FEF279E8FF0AD0A7A4A4FC * L_15 = V_0;
-		NullCheck(L_15);
-		float L_16 = L_15->get_ScreenWidth_1();
+		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_13 = __this->get_calibration_11();
+		ScreenInfo_tE437720E6324BFF714FEF279E8FF0AD0A7A4A4FC * L_14 = V_0;
 		NullCheck(L_14);
-		L_14->set_PortraitModeHeight_1(L_16);
+		float L_15 = L_14->get_ScreenWidth_1();
+		NullCheck(L_13);
+		L_13->set_PortraitModeHeight_1(L_15);
 		// calibration.PortraitModeWidth = screenInfo.ScreenHeight;
-		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_17 = __this->get_calibration_11();
-		ScreenInfo_tE437720E6324BFF714FEF279E8FF0AD0A7A4A4FC * L_18 = V_0;
-		NullCheck(L_18);
-		float L_19 = L_18->get_ScreenHeight_2();
+		SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_16 = __this->get_calibration_11();
+		ScreenInfo_tE437720E6324BFF714FEF279E8FF0AD0A7A4A4FC * L_17 = V_0;
 		NullCheck(L_17);
-		L_17->set_PortraitModeWidth_2(L_19);
-		// break;
-		goto IL_0076;
+		float L_18 = L_17->get_ScreenHeight_2();
+		NullCheck(L_16);
+		L_16->set_PortraitModeWidth_2(L_18);
 	}
 
-IL_0076:
+IL_006f:
 	{
 		// Debug.Log($"Trying auto screen detect: {screenInfo}");
-		ScreenInfo_tE437720E6324BFF714FEF279E8FF0AD0A7A4A4FC * L_20 = V_0;
-		String_t* L_21;
-		L_21 = String_Format_mB3D38E5238C3164DB4D7D29339D9E225A4496D17(_stringLiteral9635B3FD7E308444CD0D186407C311151D3F590D, L_20, /*hidden argument*/NULL);
+		ScreenInfo_tE437720E6324BFF714FEF279E8FF0AD0A7A4A4FC * L_19 = V_0;
+		String_t* L_20;
+		L_20 = String_Format_mB3D38E5238C3164DB4D7D29339D9E225A4496D17(_stringLiteral9635B3FD7E308444CD0D186407C311151D3F590D, L_19, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
-		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_21, /*hidden argument*/NULL);
+		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_20, /*hidden argument*/NULL);
 		// calibrating = false;
 		__this->set_calibrating_10((bool)0);
 		// }
@@ -11517,8 +11042,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableScreenCalibrator__ctor_m34F7BB7
 		__this->set_amount_8((0.000500000024f));
 		// float altAmt = 0.025f;
 		__this->set_altAmt_9((0.0250000004f));
-		// bool calibrating = false;
-		__this->set_calibrating_10((bool)0);
 		ScreenCalibrator__ctor_m2C6A7E738C994EBD613F72FAB3A8273D8F14B995(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -11572,14 +11095,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotatableTrackingConfigurationAsset__cto
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void RotatableCameraCalibrator/<RunCalibrationProcedure>d__7::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunCalibrationProcedureU3Ed__7__ctor_mF2C9CF1763C1CD2B78674E981B5485BA6D76F248 (U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * __this, const RuntimeMethod* method)
-{
-	{
-		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Void RotatableCameraCalibrator/<RunCalibrationProcedure>d__7::MoveNext()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunCalibrationProcedureU3Ed__7_MoveNext_m4D3B16C11FCED81F3520AAFEE2002FD0FB4D10B9 (U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * __this, const RuntimeMethod* method)
 {
@@ -11593,200 +11108,173 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunCalibrationProcedureU3Ed__7_MoveNe
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	bool V_1 = false;
-	TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  V_2;
-	memset((&V_2), 0, sizeof(V_2));
-	U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * V_3 = NULL;
-	bool V_4 = false;
-	bool V_5 = false;
-	Exception_t * V_6 = NULL;
+	RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * V_1 = NULL;
+	bool V_2 = false;
+	TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	Exception_t * V_4 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	il2cpp::utils::ExceptionSupportStack<int32_t, 4> __leave_targets;
-	int32_t G_B12_0 = 0;
 	{
 		int32_t L_0 = __this->get_U3CU3E1__state_0();
 		V_0 = L_0;
+		RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_1 = __this->get_U3CU3E4__this_2();
+		V_1 = L_1;
 	}
 
-IL_0007:
+IL_000e:
 	try
 	{ // begin try (depth: 1)
 		{
-			int32_t L_1 = V_0;
-			if (!L_1)
+			int32_t L_2 = V_0;
+			if (!L_2)
 			{
-				goto IL_000c;
+				goto IL_008d;
 			}
-		}
-
-IL_000a:
-		{
-			goto IL_0011;
-		}
-
-IL_000c:
-		{
-			goto IL_00b4;
 		}
 
 IL_0011:
 		{
 			// calibration = newCalibration;
-			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_2 = __this->get_U3CU3E4__this_3();
-			SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * L_3 = __this->get_newCalibration_2();
-			NullCheck(L_2);
-			L_2->set_calibration_9(L_3);
+			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_3 = V_1;
+			SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * L_4 = __this->get_newCalibration_3();
+			NullCheck(L_3);
+			L_3->set_calibration_9(L_4);
 			// calibration.Name = string.Empty;
-			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_4 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_4);
-			SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * L_5 = L_4->get_calibration_9();
-			String_t* L_6 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_5 = V_1;
 			NullCheck(L_5);
-			SavedRotatableDeviceCalibration_set_Name_mAA10C414545A6C8B4833253C704D82BD296B9DBB_inline(L_5, L_6, /*hidden argument*/NULL);
+			SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * L_6 = L_5->get_calibration_9();
+			String_t* L_7 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+			NullCheck(L_6);
+			SavedRotatableDeviceCalibration_set_Name_mAA10C414545A6C8B4833253C704D82BD296B9DBB_inline(L_6, L_7, /*hidden argument*/NULL);
 			// calibrating = true;
-			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_7 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_7);
-			L_7->set_calibrating_7((bool)1);
-			// cancelled = false;
-			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_8 = __this->get_U3CU3E4__this_3();
+			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_8 = V_1;
 			NullCheck(L_8);
-			L_8->set_cancelled_8((bool)0);
-			// this.calibrationUI.SetActive(true);
-			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_9 = __this->get_U3CU3E4__this_3();
+			L_8->set_calibrating_7((bool)1);
+			// cancelled = false;
+			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_9 = V_1;
 			NullCheck(L_9);
-			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_10 = L_9->get_calibrationUI_5();
+			L_9->set_cancelled_8((bool)0);
+			// this.calibrationUI.SetActive(true);
+			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_10 = V_1;
 			NullCheck(L_10);
-			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_10, (bool)1, /*hidden argument*/NULL);
-			// this.mainUI.SetActive(false);
-			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_11 = __this->get_U3CU3E4__this_3();
+			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_11 = L_10->get_calibrationUI_5();
 			NullCheck(L_11);
-			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_12 = L_11->get_mainUI_4();
+			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_11, (bool)1, /*hidden argument*/NULL);
+			// this.mainUI.SetActive(false);
+			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_12 = V_1;
 			NullCheck(L_12);
-			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_12, (bool)0, /*hidden argument*/NULL);
-			goto IL_00d9;
+			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_13 = L_12->get_mainUI_4();
+			NullCheck(L_13);
+			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_13, (bool)0, /*hidden argument*/NULL);
+			goto IL_00b0;
 		}
 
-IL_0077:
+IL_0055:
 		{
 			// await Task.Delay(5);
 			IL2CPP_RUNTIME_CLASS_INIT(Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60_il2cpp_TypeInfo_var);
-			Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 * L_13;
-			L_13 = Task_Delay_mD54722DBAF22507493263E9B1167A7F77EDDF80E(5, /*hidden argument*/NULL);
-			NullCheck(L_13);
-			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_14;
-			L_14 = Task_GetAwaiter_m1FF7528A8FE13F79207DFE970F642078EF6B1260(L_13, /*hidden argument*/NULL);
-			V_2 = L_14;
-			bool L_15;
-			L_15 = TaskAwaiter_get_IsCompleted_m6F97613C55E505B5664C3C0CFC4677D296EAA8BC((TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_2), /*hidden argument*/NULL);
-			if (L_15)
+			Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 * L_14;
+			L_14 = Task_Delay_mD54722DBAF22507493263E9B1167A7F77EDDF80E(5, /*hidden argument*/NULL);
+			NullCheck(L_14);
+			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_15;
+			L_15 = Task_GetAwaiter_m1FF7528A8FE13F79207DFE970F642078EF6B1260(L_14, /*hidden argument*/NULL);
+			V_3 = L_15;
+			bool L_16;
+			L_16 = TaskAwaiter_get_IsCompleted_m6F97613C55E505B5664C3C0CFC4677D296EAA8BC((TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_3), /*hidden argument*/NULL);
+			if (L_16)
 			{
-				goto IL_00d0;
+				goto IL_00a9;
 			}
+		}
+
+IL_006a:
+		{
+			int32_t L_17 = 0;
+			V_0 = L_17;
+			__this->set_U3CU3E1__state_0(L_17);
+			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_18 = V_3;
+			__this->set_U3CU3Eu__1_4(L_18);
+			AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_19 = __this->get_address_of_U3CU3Et__builder_1();
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m8103752A4535F653C94C7E610DA7E01A676EAA7D((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_19, (TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_3), (U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 *)__this, /*hidden argument*/AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m8103752A4535F653C94C7E610DA7E01A676EAA7D_RuntimeMethod_var);
+			goto IL_0115;
 		}
 
 IL_008d:
 		{
-			int32_t L_16 = 0;
-			V_0 = L_16;
-			__this->set_U3CU3E1__state_0(L_16);
-			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_17 = V_2;
-			__this->set_U3CU3Eu__1_4(L_17);
-			V_3 = __this;
-			AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_18 = __this->get_address_of_U3CU3Et__builder_1();
-			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m8103752A4535F653C94C7E610DA7E01A676EAA7D((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_18, (TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_2), (U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 **)(&V_3), /*hidden argument*/AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7_m8103752A4535F653C94C7E610DA7E01A676EAA7D_RuntimeMethod_var);
-			goto IL_016c;
+			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_20 = __this->get_U3CU3Eu__1_4();
+			V_3 = L_20;
+			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * L_21 = __this->get_address_of_U3CU3Eu__1_4();
+			il2cpp_codegen_initobj(L_21, sizeof(TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C ));
+			int32_t L_22 = (-1);
+			V_0 = L_22;
+			__this->set_U3CU3E1__state_0(L_22);
 		}
 
-IL_00b4:
+IL_00a9:
 		{
-			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_19 = __this->get_U3CU3Eu__1_4();
-			V_2 = L_19;
-			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * L_20 = __this->get_address_of_U3CU3Eu__1_4();
-			il2cpp_codegen_initobj(L_20, sizeof(TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C ));
-			int32_t L_21 = (-1);
-			V_0 = L_21;
-			__this->set_U3CU3E1__state_0(L_21);
+			TaskAwaiter_GetResult_m578EEFEC4DD1AE5E77C899B8BAA3825EB79D1330((TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_3), /*hidden argument*/NULL);
 		}
 
-IL_00d0:
-		{
-			TaskAwaiter_GetResult_m578EEFEC4DD1AE5E77C899B8BAA3825EB79D1330((TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_2), /*hidden argument*/NULL);
-		}
-
-IL_00d9:
+IL_00b0:
 		{
 			// while (calibrating && !cancelled)
-			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_22 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_22);
-			bool L_23 = L_22->get_calibrating_7();
-			if (!L_23)
+			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_23 = V_1;
+			NullCheck(L_23);
+			bool L_24 = L_23->get_calibrating_7();
+			if (!L_24)
 			{
-				goto IL_00f6;
+				goto IL_00c0;
 			}
 		}
 
-IL_00e6:
+IL_00b8:
 		{
-			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_24 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_24);
-			bool L_25 = L_24->get_cancelled_8();
-			G_B12_0 = ((((int32_t)L_25) == ((int32_t)0))? 1 : 0);
-			goto IL_00f7;
-		}
-
-IL_00f6:
-		{
-			G_B12_0 = 0;
-		}
-
-IL_00f7:
-		{
-			V_4 = (bool)G_B12_0;
-			bool L_26 = V_4;
-			if (L_26)
+			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_25 = V_1;
+			NullCheck(L_25);
+			bool L_26 = L_25->get_cancelled_8();
+			if (!L_26)
 			{
-				goto IL_0077;
+				goto IL_0055;
 			}
 		}
 
-IL_0100:
+IL_00c0:
 		{
 			// this.calibrationUI.SetActive(false);
-			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_27 = __this->get_U3CU3E4__this_3();
+			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_27 = V_1;
 			NullCheck(L_27);
 			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_28 = L_27->get_calibrationUI_5();
 			NullCheck(L_28);
 			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_28, (bool)0, /*hidden argument*/NULL);
 			// this.mainUI.SetActive(true);
-			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_29 = __this->get_U3CU3E4__this_3();
+			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_29 = V_1;
 			NullCheck(L_29);
 			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_30 = L_29->get_mainUI_4();
 			NullCheck(L_30);
 			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_30, (bool)1, /*hidden argument*/NULL);
 			// if (cancelled) return false;
-			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_31 = __this->get_U3CU3E4__this_3();
+			RotatableCameraCalibrator_tC890E56D718727D919CDDDA9E5666BCD1CECBFFA * L_31 = V_1;
 			NullCheck(L_31);
 			bool L_32 = L_31->get_cancelled_8();
-			V_5 = L_32;
-			bool L_33 = V_5;
-			if (!L_33)
+			if (!L_32)
 			{
-				goto IL_0139;
+				goto IL_00e4;
 			}
 		}
 
-IL_0135:
+IL_00e0:
 		{
 			// if (cancelled) return false;
-			V_1 = (bool)0;
-			goto IL_0157;
+			V_2 = (bool)0;
+			goto IL_0101;
 		}
 
-IL_0139:
+IL_00e4:
 		{
 			// return true;
-			V_1 = (bool)1;
-			goto IL_0157;
+			V_2 = (bool)1;
+			goto IL_0101;
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -11794,42 +11282,63 @@ IL_0139:
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_013d;
+			goto CATCH_00e8;
 		}
 		throw e;
 	}
 
-CATCH_013d:
+CATCH_00e8:
 	{ // begin catch(System.Exception)
-		V_6 = ((Exception_t *)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t *));
+		V_4 = ((Exception_t *)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t *));
 		__this->set_U3CU3E1__state_0(((int32_t)-2));
-		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_34 = __this->get_address_of_U3CU3Et__builder_1();
-		Exception_t * L_35 = V_6;
-		AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_34, L_35, /*hidden argument*/((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC_RuntimeMethod_var)));
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_33 = __this->get_address_of_U3CU3Et__builder_1();
+		Exception_t * L_34 = V_4;
+		AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_33, L_34, /*hidden argument*/((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC_RuntimeMethod_var)));
 		IL2CPP_POP_ACTIVE_EXCEPTION();
-		goto IL_016c;
+		goto IL_0115;
 	} // end catch (depth: 1)
 
-IL_0157:
+IL_0101:
 	{
 		// }
 		__this->set_U3CU3E1__state_0(((int32_t)-2));
-		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_36 = __this->get_address_of_U3CU3Et__builder_1();
-		bool L_37 = V_1;
-		AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_36, L_37, /*hidden argument*/AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_35 = __this->get_address_of_U3CU3Et__builder_1();
+		bool L_36 = V_2;
+		AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_35, L_36, /*hidden argument*/AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B_RuntimeMethod_var);
 	}
 
-IL_016c:
+IL_0115:
 	{
 		return;
 	}
 }
+IL2CPP_EXTERN_C  void U3CRunCalibrationProcedureU3Ed__7_MoveNext_m4D3B16C11FCED81F3520AAFEE2002FD0FB4D10B9_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * _thisAdjusted = reinterpret_cast<U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 *>(__this + _offset);
+	U3CRunCalibrationProcedureU3Ed__7_MoveNext_m4D3B16C11FCED81F3520AAFEE2002FD0FB4D10B9(_thisAdjusted, method);
+}
 // System.Void RotatableCameraCalibrator/<RunCalibrationProcedure>d__7::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CRunCalibrationProcedureU3Ed__7_SetStateMachine_mC651DB8E7DB4CB85E452C04227A7FBC2172B7C8D (U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_0 = __this->get_address_of_U3CU3Et__builder_1();
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_0, L_1, /*hidden argument*/AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A_RuntimeMethod_var);
 		return;
 	}
+}
+IL2CPP_EXTERN_C  void U3CRunCalibrationProcedureU3Ed__7_SetStateMachine_mC651DB8E7DB4CB85E452C04227A7FBC2172B7C8D_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 * _thisAdjusted = reinterpret_cast<U3CRunCalibrationProcedureU3Ed__7_tFB84C2968DB4F550337BE19084AB082E423DC8C7 *>(__this + _offset);
+	U3CRunCalibrationProcedureU3Ed__7_SetStateMachine_mC651DB8E7DB4CB85E452C04227A7FBC2172B7C8D(_thisAdjusted, ___stateMachine0, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -11894,10 +11403,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SavedRotatableScreenCalibration__ctor_m2
 	{
 		// [SerializeField] public string name = "Default Name";
 		__this->set_name_0(_stringLiteral02EC0FD34739C2A844A6731C3854FA80A3DD1B28);
-		// [SerializeField] public float PortraitModeHeight = default;
-		__this->set_PortraitModeHeight_1((0.0f));
-		// [SerializeField] public float PortraitModeWidth = default;
-		__this->set_PortraitModeWidth_2((0.0f));
 		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -11965,9 +11470,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SavedRotatableDeviceCalibration__ctor_m1
 	{
 		// public string name = "Default Configuration";
 		__this->set_name_0(_stringLiteral67C0F63FB06AA0E0909804E3ACE8EC0B3B9AFC0E);
-		// public Vector3 portraitOffset = default;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * L_0 = __this->get_address_of_portraitOffset_1();
-		il2cpp_codegen_initobj(L_0, sizeof(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E ));
 		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -11980,14 +11482,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SavedRotatableDeviceCalibration__ctor_m1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void RotatableScreenCalibrator/<StartCalibration>d__8::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__8__ctor_mED6C7FDB679F0F4CAEB8AB53DF5D094CEF8F29FA (U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * __this, const RuntimeMethod* method)
-{
-	{
-		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Void RotatableScreenCalibrator/<StartCalibration>d__8::MoveNext()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__8_MoveNext_mDB1F00D1D4543AB91A0E8053A7FBC66813BA3925 (U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * __this, const RuntimeMethod* method)
 {
@@ -12001,257 +11495,234 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__8_MoveNext_mDB1
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	bool V_1 = false;
-	TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  V_2;
-	memset((&V_2), 0, sizeof(V_2));
-	U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * V_3 = NULL;
-	bool V_4 = false;
+	RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * V_1 = NULL;
+	bool V_2 = false;
+	Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * V_3 = NULL;
+	TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  V_4;
+	memset((&V_4), 0, sizeof(V_4));
 	Exception_t * V_5 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	il2cpp::utils::ExceptionSupportStack<int32_t, 3> __leave_targets;
-	int32_t G_B12_0 = 0;
 	{
 		int32_t L_0 = __this->get_U3CU3E1__state_0();
 		V_0 = L_0;
+		RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_1 = __this->get_U3CU3E4__this_2();
+		V_1 = L_1;
 	}
 
-IL_0007:
+IL_000e:
 	try
 	{ // begin try (depth: 1)
 		{
-			int32_t L_1 = V_0;
-			if (!L_1)
+			int32_t L_2 = V_0;
+			if (!L_2)
 			{
-				goto IL_000c;
+				goto IL_0115;
 			}
 		}
 
-IL_000a:
-		{
-			goto IL_0011;
-		}
-
-IL_000c:
-		{
-			goto IL_0185;
-		}
-
-IL_0011:
+IL_0014:
 		{
 			// calibration = newCalibration;
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_2 = __this->get_U3CU3E4__this_3();
-			SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_3 = __this->get_newCalibration_2();
-			NullCheck(L_2);
-			L_2->set_calibration_11(L_3);
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_3 = V_1;
+			SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_4 = __this->get_newCalibration_3();
+			NullCheck(L_3);
+			L_3->set_calibration_11(L_4);
 			// cancelled = false;
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_4 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_4);
-			L_4->set_cancelled_12((bool)0);
-			// calibrating = true;
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_5 = __this->get_U3CU3E4__this_3();
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_5 = V_1;
 			NullCheck(L_5);
-			L_5->set_calibrating_10((bool)1);
-			// calibration.Name = string.Empty;
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_6 = __this->get_U3CU3E4__this_3();
+			L_5->set_cancelled_12((bool)0);
+			// calibrating = true;
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_6 = V_1;
 			NullCheck(L_6);
-			SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_7 = L_6->get_calibration_11();
-			String_t* L_8 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+			L_6->set_calibrating_10((bool)1);
+			// calibration.Name = string.Empty;
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_7 = V_1;
 			NullCheck(L_7);
-			SavedRotatableScreenCalibration_set_Name_mD9663CDED41CE4158D42999AC00FD923AADBB845_inline(L_7, L_8, /*hidden argument*/NULL);
+			SavedRotatableScreenCalibration_t2C80CDFE1269E35FE406D30F47F0D47A0360F087 * L_8 = L_7->get_calibration_11();
+			String_t* L_9 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
+			NullCheck(L_8);
+			SavedRotatableScreenCalibration_set_Name_mD9663CDED41CE4158D42999AC00FD923AADBB845_inline(L_8, L_9, /*hidden argument*/NULL);
 			// this.insideScreen.gameObject.SetActive(true);
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_9 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_9);
-			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_10 = L_9->get_insideScreen_5();
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_10 = V_1;
 			NullCheck(L_10);
-			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_11;
-			L_11 = Component_get_gameObject_m55DC35B149AFB9157582755383BA954655FE0C5B(L_10, /*hidden argument*/NULL);
+			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_11 = L_10->get_insideScreen_5();
 			NullCheck(L_11);
-			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_11, (bool)1, /*hidden argument*/NULL);
-			// this.outsideScreen.gameObject.SetActive(true);
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_12 = __this->get_U3CU3E4__this_3();
+			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_12;
+			L_12 = Component_get_gameObject_m55DC35B149AFB9157582755383BA954655FE0C5B(L_11, /*hidden argument*/NULL);
 			NullCheck(L_12);
-			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_13 = L_12->get_outsideScreen_6();
+			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_12, (bool)1, /*hidden argument*/NULL);
+			// this.outsideScreen.gameObject.SetActive(true);
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_13 = V_1;
 			NullCheck(L_13);
-			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_14;
-			L_14 = Component_get_gameObject_m55DC35B149AFB9157582755383BA954655FE0C5B(L_13, /*hidden argument*/NULL);
+			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_14 = L_13->get_outsideScreen_6();
 			NullCheck(L_14);
-			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_14, (bool)1, /*hidden argument*/NULL);
-			// calibrationUI.SetActive(true);
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_15 = __this->get_U3CU3E4__this_3();
+			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_15;
+			L_15 = Component_get_gameObject_m55DC35B149AFB9157582755383BA954655FE0C5B(L_14, /*hidden argument*/NULL);
 			NullCheck(L_15);
-			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_16 = L_15->get_calibrationUI_7();
+			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_15, (bool)1, /*hidden argument*/NULL);
+			// calibrationUI.SetActive(true);
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_16 = V_1;
 			NullCheck(L_16);
-			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_16, (bool)1, /*hidden argument*/NULL);
-			// mainUI.SetActive(false);
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_17 = __this->get_U3CU3E4__this_3();
+			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_17 = L_16->get_calibrationUI_7();
 			NullCheck(L_17);
-			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_18;
-			L_18 = ScreenCalibrator_get_mainUI_mB8BC3BEB0AD09CE91A5AB0A97117C37EF614C44F(L_17, /*hidden argument*/NULL);
+			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_17, (bool)1, /*hidden argument*/NULL);
+			// mainUI.SetActive(false);
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_18 = V_1;
 			NullCheck(L_18);
-			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_18, (bool)0, /*hidden argument*/NULL);
-			// this.ResetToMaxSize();
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_19 = __this->get_U3CU3E4__this_3();
+			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_19;
+			L_19 = ScreenCalibrator_get_mainUI_mB8BC3BEB0AD09CE91A5AB0A97117C37EF614C44F(L_18, /*hidden argument*/NULL);
 			NullCheck(L_19);
-			RotatableScreenCalibrator_ResetToMaxSize_mD63675C1C4CA7EF4E072561525EF30C61AFA88E6(L_19, /*hidden argument*/NULL);
-			// Transform offaxis = this.offAxisCameraRig.transform;
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_20 = __this->get_U3CU3E4__this_3();
+			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_19, (bool)0, /*hidden argument*/NULL);
+			// this.ResetToMaxSize();
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_20 = V_1;
 			NullCheck(L_20);
-			OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * L_21;
-			L_21 = ScreenCalibrator_get_offAxisCameraRig_mB9AA4462ADB6941D9570403E4D0C0B437DB2A204(L_20, /*hidden argument*/NULL);
+			RotatableScreenCalibrator_ResetToMaxSize_mD63675C1C4CA7EF4E072561525EF30C61AFA88E6(L_20, /*hidden argument*/NULL);
+			// Transform offaxis = this.offAxisCameraRig.transform;
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_21 = V_1;
 			NullCheck(L_21);
-			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_22;
-			L_22 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(L_21, /*hidden argument*/NULL);
-			__this->set_U3CoffaxisU3E5__1_4(L_22);
+			OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * L_22;
+			L_22 = ScreenCalibrator_get_offAxisCameraRig_mB9AA4462ADB6941D9570403E4D0C0B437DB2A204(L_21, /*hidden argument*/NULL);
+			NullCheck(L_22);
+			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_23;
+			L_23 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(L_22, /*hidden argument*/NULL);
+			V_3 = L_23;
 			// this.offAxisCameraRig.DisableCameraTracking();
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_23 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_23);
-			OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * L_24;
-			L_24 = ScreenCalibrator_get_offAxisCameraRig_mB9AA4462ADB6941D9570403E4D0C0B437DB2A204(L_23, /*hidden argument*/NULL);
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_24 = V_1;
 			NullCheck(L_24);
-			OffAxisCameraRig_DisableCameraTracking_mD81DD93EBEA480488F81B9A3E7C60A66DFF7534E(L_24, /*hidden argument*/NULL);
-			// this.insideScreen.position = offaxis.position;
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_25 = __this->get_U3CU3E4__this_3();
+			OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * L_25;
+			L_25 = ScreenCalibrator_get_offAxisCameraRig_mB9AA4462ADB6941D9570403E4D0C0B437DB2A204(L_24, /*hidden argument*/NULL);
 			NullCheck(L_25);
-			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_26 = L_25->get_insideScreen_5();
-			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_27 = __this->get_U3CoffaxisU3E5__1_4();
-			NullCheck(L_27);
-			Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_28;
-			L_28 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_27, /*hidden argument*/NULL);
+			OffAxisCameraRig_DisableCameraTracking_mD81DD93EBEA480488F81B9A3E7C60A66DFF7534E(L_25, /*hidden argument*/NULL);
+			// this.insideScreen.position = offaxis.position;
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_26 = V_1;
 			NullCheck(L_26);
-			Transform_set_position_mB169E52D57EEAC1E3F22C5395968714E4F00AC91(L_26, L_28, /*hidden argument*/NULL);
+			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_27 = L_26->get_insideScreen_5();
+			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_28 = V_3;
+			NullCheck(L_28);
+			Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_29;
+			L_29 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_28, /*hidden argument*/NULL);
+			NullCheck(L_27);
+			Transform_set_position_mB169E52D57EEAC1E3F22C5395968714E4F00AC91(L_27, L_29, /*hidden argument*/NULL);
 			// this.insideScreen.rotation = offaxis.rotation;
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_29 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_29);
-			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_30 = L_29->get_insideScreen_5();
-			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_31 = __this->get_U3CoffaxisU3E5__1_4();
-			NullCheck(L_31);
-			Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_32;
-			L_32 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_31, /*hidden argument*/NULL);
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_30 = V_1;
 			NullCheck(L_30);
-			Transform_set_rotation_m1B5F3D4CE984AB31254615C9C71B0E54978583B4(L_30, L_32, /*hidden argument*/NULL);
+			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_31 = L_30->get_insideScreen_5();
+			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_32 = V_3;
+			NullCheck(L_32);
+			Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_33;
+			L_33 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_32, /*hidden argument*/NULL);
+			NullCheck(L_31);
+			Transform_set_rotation_m1B5F3D4CE984AB31254615C9C71B0E54978583B4(L_31, L_33, /*hidden argument*/NULL);
 			// this.outsideScreen.position = offaxis.position;
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_33 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_33);
-			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_34 = L_33->get_outsideScreen_6();
-			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_35 = __this->get_U3CoffaxisU3E5__1_4();
-			NullCheck(L_35);
-			Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_36;
-			L_36 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_35, /*hidden argument*/NULL);
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_34 = V_1;
 			NullCheck(L_34);
-			Transform_set_position_mB169E52D57EEAC1E3F22C5395968714E4F00AC91(L_34, L_36, /*hidden argument*/NULL);
+			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_35 = L_34->get_outsideScreen_6();
+			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_36 = V_3;
+			NullCheck(L_36);
+			Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_37;
+			L_37 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_36, /*hidden argument*/NULL);
+			NullCheck(L_35);
+			Transform_set_position_mB169E52D57EEAC1E3F22C5395968714E4F00AC91(L_35, L_37, /*hidden argument*/NULL);
 			// this.outsideScreen.rotation = offaxis.rotation;
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_37 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_37);
-			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_38 = L_37->get_outsideScreen_6();
-			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_39 = __this->get_U3CoffaxisU3E5__1_4();
-			NullCheck(L_39);
-			Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_40;
-			L_40 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_39, /*hidden argument*/NULL);
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_38 = V_1;
 			NullCheck(L_38);
-			Transform_set_rotation_m1B5F3D4CE984AB31254615C9C71B0E54978583B4(L_38, L_40, /*hidden argument*/NULL);
-			goto IL_01aa;
+			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_39 = L_38->get_outsideScreen_6();
+			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_40 = V_3;
+			NullCheck(L_40);
+			Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_41;
+			L_41 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_40, /*hidden argument*/NULL);
+			NullCheck(L_39);
+			Transform_set_rotation_m1B5F3D4CE984AB31254615C9C71B0E54978583B4(L_39, L_41, /*hidden argument*/NULL);
+			goto IL_0139;
 		}
 
-IL_0148:
+IL_00db:
 		{
 			// await Task.Delay(5);
 			IL2CPP_RUNTIME_CLASS_INIT(Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60_il2cpp_TypeInfo_var);
-			Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 * L_41;
-			L_41 = Task_Delay_mD54722DBAF22507493263E9B1167A7F77EDDF80E(5, /*hidden argument*/NULL);
-			NullCheck(L_41);
-			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_42;
-			L_42 = Task_GetAwaiter_m1FF7528A8FE13F79207DFE970F642078EF6B1260(L_41, /*hidden argument*/NULL);
-			V_2 = L_42;
-			bool L_43;
-			L_43 = TaskAwaiter_get_IsCompleted_m6F97613C55E505B5664C3C0CFC4677D296EAA8BC((TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_2), /*hidden argument*/NULL);
-			if (L_43)
+			Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 * L_42;
+			L_42 = Task_Delay_mD54722DBAF22507493263E9B1167A7F77EDDF80E(5, /*hidden argument*/NULL);
+			NullCheck(L_42);
+			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_43;
+			L_43 = Task_GetAwaiter_m1FF7528A8FE13F79207DFE970F642078EF6B1260(L_42, /*hidden argument*/NULL);
+			V_4 = L_43;
+			bool L_44;
+			L_44 = TaskAwaiter_get_IsCompleted_m6F97613C55E505B5664C3C0CFC4677D296EAA8BC((TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_4), /*hidden argument*/NULL);
+			if (L_44)
 			{
-				goto IL_01a1;
+				goto IL_0132;
 			}
 		}
 
-IL_015e:
+IL_00f1:
 		{
-			int32_t L_44 = 0;
-			V_0 = L_44;
-			__this->set_U3CU3E1__state_0(L_44);
-			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_45 = V_2;
-			__this->set_U3CU3Eu__1_5(L_45);
-			V_3 = __this;
-			AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_46 = __this->get_address_of_U3CU3Et__builder_1();
-			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m63FA8D65B1FF67B1F724FB57C80D44DB9CDC1892((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_46, (TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_2), (U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 **)(&V_3), /*hidden argument*/AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m63FA8D65B1FF67B1F724FB57C80D44DB9CDC1892_RuntimeMethod_var);
-			goto IL_0282;
+			int32_t L_45 = 0;
+			V_0 = L_45;
+			__this->set_U3CU3E1__state_0(L_45);
+			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_46 = V_4;
+			__this->set_U3CU3Eu__1_4(L_46);
+			AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_47 = __this->get_address_of_U3CU3Et__builder_1();
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m63FA8D65B1FF67B1F724FB57C80D44DB9CDC1892((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_47, (TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_4), (U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 *)__this, /*hidden argument*/AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13_m63FA8D65B1FF67B1F724FB57C80D44DB9CDC1892_RuntimeMethod_var);
+			goto IL_01c7;
 		}
 
-IL_0185:
+IL_0115:
 		{
-			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_47 = __this->get_U3CU3Eu__1_5();
-			V_2 = L_47;
-			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * L_48 = __this->get_address_of_U3CU3Eu__1_5();
-			il2cpp_codegen_initobj(L_48, sizeof(TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C ));
-			int32_t L_49 = (-1);
-			V_0 = L_49;
-			__this->set_U3CU3E1__state_0(L_49);
+			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_48 = __this->get_U3CU3Eu__1_4();
+			V_4 = L_48;
+			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * L_49 = __this->get_address_of_U3CU3Eu__1_4();
+			il2cpp_codegen_initobj(L_49, sizeof(TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C ));
+			int32_t L_50 = (-1);
+			V_0 = L_50;
+			__this->set_U3CU3E1__state_0(L_50);
 		}
 
-IL_01a1:
+IL_0132:
 		{
-			TaskAwaiter_GetResult_m578EEFEC4DD1AE5E77C899B8BAA3825EB79D1330((TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_2), /*hidden argument*/NULL);
+			TaskAwaiter_GetResult_m578EEFEC4DD1AE5E77C899B8BAA3825EB79D1330((TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_4), /*hidden argument*/NULL);
 		}
 
-IL_01aa:
+IL_0139:
 		{
 			// while (calibrating && !cancelled)
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_50 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_50);
-			bool L_51 = L_50->get_calibrating_10();
-			if (!L_51)
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_51 = V_1;
+			NullCheck(L_51);
+			bool L_52 = L_51->get_calibrating_10();
+			if (!L_52)
 			{
-				goto IL_01c7;
+				goto IL_0149;
 			}
 		}
 
-IL_01b7:
+IL_0141:
 		{
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_52 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_52);
-			bool L_53 = L_52->get_cancelled_12();
-			G_B12_0 = ((((int32_t)L_53) == ((int32_t)0))? 1 : 0);
-			goto IL_01c8;
-		}
-
-IL_01c7:
-		{
-			G_B12_0 = 0;
-		}
-
-IL_01c8:
-		{
-			V_4 = (bool)G_B12_0;
-			bool L_54 = V_4;
-			if (L_54)
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_53 = V_1;
+			NullCheck(L_53);
+			bool L_54 = L_53->get_cancelled_12();
+			if (!L_54)
 			{
-				goto IL_0148;
+				goto IL_00db;
 			}
 		}
 
-IL_01d1:
+IL_0149:
 		{
 			// calibrationUI.SetActive(false);
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_55 = __this->get_U3CU3E4__this_3();
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_55 = V_1;
 			NullCheck(L_55);
 			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_56 = L_55->get_calibrationUI_7();
 			NullCheck(L_56);
 			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_56, (bool)0, /*hidden argument*/NULL);
 			// mainUI.SetActive(true);
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_57 = __this->get_U3CU3E4__this_3();
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_57 = V_1;
 			NullCheck(L_57);
 			GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_58;
 			L_58 = ScreenCalibrator_get_mainUI_mB8BC3BEB0AD09CE91A5AB0A97117C37EF614C44F(L_57, /*hidden argument*/NULL);
 			NullCheck(L_58);
 			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_58, (bool)1, /*hidden argument*/NULL);
 			// this.insideScreen.gameObject.SetActive(false);
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_59 = __this->get_U3CU3E4__this_3();
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_59 = V_1;
 			NullCheck(L_59);
 			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_60 = L_59->get_insideScreen_5();
 			NullCheck(L_60);
@@ -12260,7 +11731,7 @@ IL_01d1:
 			NullCheck(L_61);
 			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_61, (bool)0, /*hidden argument*/NULL);
 			// this.outsideScreen.gameObject.SetActive(false);
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_62 = __this->get_U3CU3E4__this_3();
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_62 = V_1;
 			NullCheck(L_62);
 			Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_63 = L_62->get_outsideScreen_6();
 			NullCheck(L_63);
@@ -12269,18 +11740,18 @@ IL_01d1:
 			NullCheck(L_64);
 			GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_64, (bool)0, /*hidden argument*/NULL);
 			// this.offAxisCameraRig.EnableCameraTracking();
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_65 = __this->get_U3CU3E4__this_3();
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_65 = V_1;
 			NullCheck(L_65);
 			OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * L_66;
 			L_66 = ScreenCalibrator_get_offAxisCameraRig_mB9AA4462ADB6941D9570403E4D0C0B437DB2A204(L_65, /*hidden argument*/NULL);
 			NullCheck(L_66);
 			OffAxisCameraRig_EnableCameraTracking_mC24B2E1754DA3E2B4B80C77D0DBB0F0CC1C6EE96(L_66, /*hidden argument*/NULL);
 			// return !cancelled;
-			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_67 = __this->get_U3CU3E4__this_3();
+			RotatableScreenCalibrator_tB2B27E3B7362CD54199A51C510943D4B6F431CE7 * L_67 = V_1;
 			NullCheck(L_67);
 			bool L_68 = L_67->get_cancelled_12();
-			V_1 = (bool)((((int32_t)L_68) == ((int32_t)0))? 1 : 0);
-			goto IL_0266;
+			V_2 = (bool)((((int32_t)L_68) == ((int32_t)0))? 1 : 0);
+			goto IL_01b3;
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -12288,44 +11759,63 @@ IL_01d1:
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_0245;
+			goto CATCH_019a;
 		}
 		throw e;
 	}
 
-CATCH_0245:
+CATCH_019a:
 	{ // begin catch(System.Exception)
 		V_5 = ((Exception_t *)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t *));
 		__this->set_U3CU3E1__state_0(((int32_t)-2));
-		__this->set_U3CoffaxisU3E5__1_4((Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 *)NULL);
 		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_69 = __this->get_address_of_U3CU3Et__builder_1();
 		Exception_t * L_70 = V_5;
 		AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_69, L_70, /*hidden argument*/((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC_RuntimeMethod_var)));
 		IL2CPP_POP_ACTIVE_EXCEPTION();
-		goto IL_0282;
+		goto IL_01c7;
 	} // end catch (depth: 1)
 
-IL_0266:
+IL_01b3:
 	{
 		// }
 		__this->set_U3CU3E1__state_0(((int32_t)-2));
-		__this->set_U3CoffaxisU3E5__1_4((Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 *)NULL);
 		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_71 = __this->get_address_of_U3CU3Et__builder_1();
-		bool L_72 = V_1;
+		bool L_72 = V_2;
 		AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_71, L_72, /*hidden argument*/AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B_RuntimeMethod_var);
 	}
 
-IL_0282:
+IL_01c7:
 	{
 		return;
 	}
 }
+IL2CPP_EXTERN_C  void U3CStartCalibrationU3Ed__8_MoveNext_mDB1F00D1D4543AB91A0E8053A7FBC66813BA3925_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * _thisAdjusted = reinterpret_cast<U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 *>(__this + _offset);
+	U3CStartCalibrationU3Ed__8_MoveNext_mDB1F00D1D4543AB91A0E8053A7FBC66813BA3925(_thisAdjusted, method);
+}
 // System.Void RotatableScreenCalibrator/<StartCalibration>d__8::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__8_SetStateMachine_m31C42AA58C3AF8C9F1C81F91A49D52CD47F36331 (U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_0 = __this->get_address_of_U3CU3Et__builder_1();
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_0, L_1, /*hidden argument*/AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A_RuntimeMethod_var);
 		return;
 	}
+}
+IL2CPP_EXTERN_C  void U3CStartCalibrationU3Ed__8_SetStateMachine_m31C42AA58C3AF8C9F1C81F91A49D52CD47F36331_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 * _thisAdjusted = reinterpret_cast<U3CStartCalibrationU3Ed__8_t7A2D134FAAF6D9F6551689329620E8712AEA7D13 *>(__this + _offset);
+	U3CStartCalibrationU3Ed__8_SetStateMachine_m31C42AA58C3AF8C9F1C81F91A49D52CD47F36331(_thisAdjusted, ___stateMachine0, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -12376,6 +11866,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ARSession_get_state_m6231
 		return L_0;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * ARKitBlendShapeVisualizer_get_skinnedMeshRenderer_mA96C6B1F9BCD74AE7A18458B7DEA61EA91AAB7DB_inline (ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * __this, const RuntimeMethod* method)
+{
+	{
+		// return m_SkinnedMeshRenderer;
+		SkinnedMeshRenderer_t126F4D6010E0F4B2685A7817B0A9171805D8F496 * L_0 = __this->get_m_SkinnedMeshRenderer_6();
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ARKitBlendShapeCoefficient_get_blendShapeLocation_m14A5487CA35FF18CD8EDA49BD9E70900B444B512_inline (ARKitBlendShapeCoefficient_t6B17AD958119715154498F9EB6A29ECF98BA0E9F * __this, const RuntimeMethod* method)
 {
 	{
@@ -12389,6 +11887,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float ARKitBlendShapeCoefficient_
 	{
 		// public float coefficient => m_Coefficient;
 		float L_0 = __this->get_m_Coefficient_1();
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float ARKitBlendShapeVisualizer_get_coefficientScale_m3CDD631E0CCD082B512ED45BB8492477DA85E614_inline (ARKitBlendShapeVisualizer_tCE7DF55E6783561676EDD5C6064F3C4011AD0526 * __this, const RuntimeMethod* method)
+{
+	{
+		// get { return m_CoefficientScale; }
+		float L_0 = __this->get_m_CoefficientScale_5();
 		return L_0;
 	}
 }

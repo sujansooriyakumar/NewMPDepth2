@@ -22,6 +22,8 @@ ScriptsOnlyBuild:
     - PointersController
     - ProximityVoiceTrigger
     - uiController
+    Facebook.Unity.Settings.dll:
+    - Facebook.Unity.Settings.FacebookSettings
     MPDepthCore.dll:
     - MPDepthCore.Calibration.Camera.TrackingCalibrationManager
     - MPDepthCore.Calibration.Screen.BasicScreenCalibrationProvider
@@ -40,6 +42,7 @@ ScriptsOnlyBuild:
     - Character
     - CharacterSelector
     - DebugDisplay
+    - FacebookAuthenticator
     - FixSpeakerDelay
     - HideUI
     - MirrorModeController
@@ -181,207 +184,211 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1568}
+      Script: {instanceID: 1648}
     - Class: 114
-      Script: {instanceID: 1570}
-    - Class: 114
-      Script: {instanceID: 1572}
-    - Class: 114
-      Script: {instanceID: 1574}
-    - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 1650}
     - Class: 114
       Script: {instanceID: 1652}
     - Class: 114
-      Script: {instanceID: 1698}
+      Script: {instanceID: 1654}
     - Class: 114
-      Script: {instanceID: 1716}
+      Script: {instanceID: 1656}
     - Class: 114
-      Script: {instanceID: 1726}
+      Script: {instanceID: 1734}
     - Class: 114
-      Script: {instanceID: 1800}
+      Script: {instanceID: 1780}
     - Class: 114
-      Script: {instanceID: 1804}
+      Script: {instanceID: 1798}
     - Class: 114
-      Script: {instanceID: 1848}
+      Script: {instanceID: 1808}
     - Class: 114
-      Script: {instanceID: 1922}
+      Script: {instanceID: 1882}
     - Class: 114
-      Script: {instanceID: 1944}
+      Script: {instanceID: 1886}
     - Class: 114
-      Script: {instanceID: 1954}
+      Script: {instanceID: 1930}
     - Class: 114
-      Script: {instanceID: 1958}
+      Script: {instanceID: 2004}
     - Class: 114
-      Script: {instanceID: 1962}
+      Script: {instanceID: 2028}
     - Class: 114
-      Script: {instanceID: 1980}
+      Script: {instanceID: 2038}
+    - Class: 114
+      Script: {instanceID: 2044}
+    - Class: 114
+      Script: {instanceID: 2048}
     - Class: 114
       Script: {instanceID: 2060}
     - Class: 114
-      Script: {instanceID: 2106}
+      Script: {instanceID: 2070}
     - Class: 114
-      Script: {instanceID: 2188}
+      Script: {instanceID: 2150}
     - Class: 114
-      Script: {instanceID: 2190}
+      Script: {instanceID: 2196}
     - Class: 114
-      Script: {instanceID: 2260}
+      Script: {instanceID: 2280}
     - Class: 114
-      Script: {instanceID: 2314}
+      Script: {instanceID: 2282}
     - Class: 114
-      Script: {instanceID: 2332}
+      Script: {instanceID: 2358}
     - Class: 114
-      Script: {instanceID: 2378}
+      Script: {instanceID: 2412}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2430}
     - Class: 114
-      Script: {instanceID: 2670}
+      Script: {instanceID: 2478}
     - Class: 114
-      Script: {instanceID: 2880}
+      Script: {instanceID: 2680}
     - Class: 114
-      Script: {instanceID: 2932}
+      Script: {instanceID: 2708}
     - Class: 114
-      Script: {instanceID: 2940}
+      Script: {instanceID: 2780}
     - Class: 114
-      Script: {instanceID: 2974}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 2990}
+      Script: {instanceID: 3048}
     - Class: 114
-      Script: {instanceID: 2992}
+      Script: {instanceID: 3056}
     - Class: 114
-      Script: {instanceID: 3000}
+      Script: {instanceID: 3092}
     - Class: 114
-      Script: {instanceID: 3030}
+      Script: {instanceID: 3108}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3110}
     - Class: 114
-      Script: {instanceID: 3102}
+      Script: {instanceID: 3118}
     - Class: 114
-      Script: {instanceID: 3362}
+      Script: {instanceID: 3150}
     - Class: 114
-      Script: {instanceID: 3392}
+      Script: {instanceID: 3216}
     - Class: 114
-      Script: {instanceID: 3418}
+      Script: {instanceID: 3222}
     - Class: 114
-      Script: {instanceID: 3428}
+      Script: {instanceID: 3410}
     - Class: 114
-      Script: {instanceID: 3458}
+      Script: {instanceID: 3490}
     - Class: 114
-      Script: {instanceID: 3460}
+      Script: {instanceID: 3520}
     - Class: 114
-      Script: {instanceID: 3648}
+      Script: {instanceID: 3594}
     - Class: 114
-      Script: {instanceID: 3664}
+      Script: {instanceID: 3604}
     - Class: 114
-      Script: {instanceID: 3680}
+      Script: {instanceID: 3638}
     - Class: 114
-      Script: {instanceID: 3682}
+      Script: {instanceID: 3640}
     - Class: 114
-      Script: {instanceID: 3812}
+      Script: {instanceID: 3658}
     - Class: 114
-      Script: {instanceID: 3842}
+      Script: {instanceID: 3830}
     - Class: 114
-      Script: {instanceID: 4032}
+      Script: {instanceID: 3846}
     - Class: 114
-      Script: {instanceID: 4048}
+      Script: {instanceID: 3862}
     - Class: 114
-      Script: {instanceID: 4050}
+      Script: {instanceID: 3864}
     - Class: 114
-      Script: {instanceID: 4054}
+      Script: {instanceID: 3940}
     - Class: 114
-      Script: {instanceID: 4058}
+      Script: {instanceID: 4008}
     - Class: 114
-      Script: {instanceID: 4082}
+      Script: {instanceID: 4040}
     - Class: 114
-      Script: {instanceID: 4208}
+      Script: {instanceID: 4230}
     - Class: 114
-      Script: {instanceID: 4214}
+      Script: {instanceID: 4248}
     - Class: 114
-      Script: {instanceID: 4222}
+      Script: {instanceID: 4250}
     - Class: 114
-      Script: {instanceID: 4368}
+      Script: {instanceID: 4254}
     - Class: 114
-      Script: {instanceID: 4380}
+      Script: {instanceID: 4258}
     - Class: 114
-      Script: {instanceID: 4460}
+      Script: {instanceID: 4284}
     - Class: 114
-      Script: {instanceID: 4466}
+      Script: {instanceID: 4412}
     - Class: 114
-      Script: {instanceID: 4506}
+      Script: {instanceID: 4418}
     - Class: 114
-      Script: {instanceID: 4728}
+      Script: {instanceID: 4426}
     - Class: 114
-      Script: {instanceID: 4732}
+      Script: {instanceID: 4574}
     - Class: 114
-      Script: {instanceID: 4756}
+      Script: {instanceID: 4586}
     - Class: 114
-      Script: {instanceID: 4852}
+      Script: {instanceID: 4666}
     - Class: 114
-      Script: {instanceID: 4880}
+      Script: {instanceID: 4672}
     - Class: 114
-      Script: {instanceID: 4922}
+      Script: {instanceID: 4712}
     - Class: 114
-      Script: {instanceID: 4928}
+      Script: {instanceID: 4938}
     - Class: 114
-      Script: {instanceID: 4972}
+      Script: {instanceID: 4942}
     - Class: 114
-      Script: {instanceID: 4996}
+      Script: {instanceID: 4966}
     - Class: 114
-      Script: {instanceID: 5110}
+      Script: {instanceID: 5066}
     - Class: 114
-      Script: {instanceID: 5122}
+      Script: {instanceID: 5094}
     - Class: 114
-      Script: {instanceID: 5146}
+      Script: {instanceID: 5136}
     - Class: 114
-      Script: {instanceID: 5164}
+      Script: {instanceID: 5142}
     - Class: 114
-      Script: {instanceID: 5180}
+      Script: {instanceID: 5190}
     - Class: 114
-      Script: {instanceID: 5232}
+      Script: {instanceID: 5214}
     - Class: 114
-      Script: {instanceID: 5236}
+      Script: {instanceID: 5336}
     - Class: 114
-      Script: {instanceID: 5244}
+      Script: {instanceID: 5348}
     - Class: 114
-      Script: {instanceID: 5390}
+      Script: {instanceID: 5374}
     - Class: 114
-      Script: {instanceID: 5420}
+      Script: {instanceID: 5392}
     - Class: 114
-      Script: {instanceID: 5426}
+      Script: {instanceID: 5408}
     - Class: 114
-      Script: {instanceID: 5440}
+      Script: {instanceID: 5460}
     - Class: 114
-      Script: {instanceID: 5702}
+      Script: {instanceID: 5464}
     - Class: 114
-      Script: {instanceID: 5768}
+      Script: {instanceID: 5472}
     - Class: 114
-      Script: {instanceID: 5792}
+      Script: {instanceID: 5620}
     - Class: 114
-      Script: {instanceID: 5800}
+      Script: {instanceID: 5656}
     - Class: 114
-      Script: {instanceID: 5910}
+      Script: {instanceID: 5662}
     - Class: 114
-      Script: {instanceID: 5974}
+      Script: {instanceID: 5676}
     - Class: 114
-      Script: {instanceID: 5980}
+      Script: {instanceID: 5942}
     - Class: 114
-      Script: {instanceID: 6042}
+      Script: {instanceID: 6008}
+    - Class: 114
+      Script: {instanceID: 6032}
+    - Class: 114
+      Script: {instanceID: 6040}
     - Class: 114
       Script: {instanceID: 6154}
     - Class: 114
-      Script: {instanceID: 6298}
+      Script: {instanceID: 6224}
     - Class: 114
-      Script: {instanceID: 6318}
+      Script: {instanceID: 6230}
     - Class: 114
-      Script: {instanceID: 6324}
+      Script: {instanceID: 6294}
     - Class: 114
-      Script: {instanceID: 6420}
+      Script: {instanceID: 6410}
     - Class: 114
-      Script: {instanceID: 122478}
+      Script: {instanceID: 6558}
     - Class: 114
-      Script: {instanceID: 192772}
+      Script: {instanceID: 6578}
     - Class: 114
-      Script: {instanceID: 306102}
+      Script: {instanceID: 6584}
+    - Class: 114
+      Script: {instanceID: 6684}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -479,6 +486,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARPlane
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Facebook.Unity.Example
+    className: TournamentsMenu
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -643,6 +656,12 @@ ScriptsOnlyBuild:
     className: TextButtonTransition
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Facebook.Unity.Example
+    className: LogView
+  - hash:
+      serializedVersion: 2
       Hash: f3e4aecd8e186a22cf961cec97b6da7c
     assemblyName: Motive.dll
     namespaceName: 
@@ -683,6 +702,12 @@ ScriptsOnlyBuild:
     assemblyName: Networking.dll
     namespaceName: 
     className: Spawner
+  - hash:
+      serializedVersion: 2
+      Hash: 09d7b745d3eada97464eaa6778c32470
+    assemblyName: NewMPDepth2.dll
+    namespaceName: 
+    className: CalibrationMatrixSliderDisplay
   - hash:
       serializedVersion: 2
       Hash: c2a435d94f56ab15b20fed8f446ce58a
@@ -841,6 +866,18 @@ ScriptsOnlyBuild:
     className: RotatableDeviceConfig
   - hash:
       serializedVersion: 2
+      Hash: 834480119d54d9f1f64d5f7503eb2dbd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FBWindowsLogsManager
+  - hash:
+      serializedVersion: 2
+      Hash: 98c77254a7d0852027dc4c896629b93f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FBWindowsA2UNotificationsManager
+  - hash:
+      serializedVersion: 2
       Hash: aa365703f785456ea177179d646ca742
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -857,6 +894,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: ExitGames.Demos.DemoPunVoice
     className: ChangePOV
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Facebook.Unity.Example
+    className: DialogShare
   - hash:
       serializedVersion: 2
       Hash: 524a8f7c9b60f50a1c6bbe7185c0207e
@@ -899,6 +942,12 @@ ScriptsOnlyBuild:
     assemblyName: MPDepthCore.dll
     namespaceName: 
     className: RuntimeVector3PropertyDrawer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: NewMPDepth2.dll
+    namespaceName: 
+    className: FacebookAuthenticator
   - hash:
       serializedVersion: 2
       Hash: 7221ab9307aaa6b66a416e2e4561f420
@@ -965,6 +1014,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.PunBasics
     className: Launcher
+  - hash:
+      serializedVersion: 2
+      Hash: f8cc143f705be6a84fee9fe15a727455
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FBWindowsVirtualGamepadManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1043,6 +1098,12 @@ ScriptsOnlyBuild:
     assemblyName: StreamTracking.dll
     namespaceName: StreamTrackingSystem
     className: StreamTrackingProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Facebook.Unity.Example
+    className: AppRequests
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1177,6 +1238,12 @@ ScriptsOnlyBuild:
     className: CountOfPlayersProperty
   - hash:
       serializedVersion: 2
+      Hash: 3ac52b151de3d81be6664179182eb84d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FBWindowsGraphAPIManager
+  - hash:
+      serializedVersion: 2
       Hash: a8e4bc52348c9279d138a27b5a850d5b
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -1193,6 +1260,12 @@ ScriptsOnlyBuild:
     assemblyName: ARKit.dll
     namespaceName: 
     className: RotatableScreenDimensionAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 1028c39545bcfa841aaab54121e69a47
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DebugSlider
   - hash:
       serializedVersion: 2
       Hash: 8cdd0e69b7b5d14655dc13eb7b98642c
@@ -1273,6 +1346,126 @@ ScriptsOnlyBuild:
     className: SimpleUserEvent
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Mobile.Android
+    className: AndroidFacebookGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Mobile.Android
+    className: AndroidFacebookLoader
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity
+    className: AsyncRequestString
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Canvas
+    className: CanvasFacebookGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Canvas
+    className: CanvasFacebookLoader
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity
+    className: CodelessCrawler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity
+    className: CodelessUIInteractEvent
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Editor
+    className: EditorFacebookGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Editor
+    className: EditorFacebookLoader
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Editor.Dialogs
+    className: EmptyMockDialog
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity
+    className: FacebookScheduler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity
+    className: FB
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity
+    className: FBGamingServices
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Mobile.IOS
+    className: IOSFacebookGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Mobile.IOS
+    className: IOSFacebookLoader
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Canvas
+    className: JsBridge
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Editor.Dialogs
+    className: MockLoginDialog
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Editor.Dialogs
+    className: MockShareDialog
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Windows
+    className: WindowsFacebookGameObject
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Facebook.Unity.dll
+    namespaceName: Facebook.Unity.Windows
+    className: WindowsFacebookLoader
+  - hash:
+      serializedVersion: 2
       Hash: 72e22a56f8e304864e8a21efa43c791b
     assemblyName: PhotonVoice.PUN.dll
     namespaceName: Photon.Voice.PUN
@@ -1289,6 +1482,12 @@ ScriptsOnlyBuild:
     assemblyName: StreamTracking.dll
     namespaceName: StreamTrackingSystem
     className: StreamReceiverToTrackingSource
+  - hash:
+      serializedVersion: 2
+      Hash: 02bac6fa199f46f8244706aec79a2ad5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FBWindowsFriendsManager
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -1313,6 +1512,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 3a4935645a61f31d632d2755dcbf4899
+    assemblyName: NewMPDepth2.dll
+    namespaceName: 
+    className: CalibrationBreaker
   - hash:
       serializedVersion: 2
       Hash: c5fd97cc10b89deaf7c60af66a6b0d5a
@@ -1411,6 +1616,12 @@ ScriptsOnlyBuild:
     className: CurrentRoomIsOfflineProperty
   - hash:
       serializedVersion: 2
+      Hash: f718748586239e6cd5bf0e7ff2c254bd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FBWindowsADSManager
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1421,6 +1632,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: CurrentRoomNameProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 1cc31c864646ce2d3b11ce76e200c165
+    assemblyName: Facebook.Unity.Settings.dll
+    namespaceName: Facebook.Unity.Settings
+    className: FacebookSettings
   - hash:
       serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
@@ -1445,6 +1662,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.PunBasics
     className: PlayerNameInputField
+  - hash:
+      serializedVersion: 2
+      Hash: 6144a63c1e01c0a982c17de894d74a19
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FBWindowsPurchaseManager
   - hash:
       serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
@@ -1951,6 +2174,12 @@ ScriptsOnlyBuild:
     className: ARBackgroundRendererFeature
   - hash:
       serializedVersion: 2
+      Hash: a75b143ea97a315c14c7cbd2e2726383
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FBWindowsExampleTabsManager
+  - hash:
+      serializedVersion: 2
       Hash: cba6cca6bb3290c4c00d709cf63843db
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -2029,6 +2258,12 @@ ScriptsOnlyBuild:
     className: CullArea
   - hash:
       serializedVersion: 2
+      Hash: f6a3d82f7dc8521b10177adac1ccf07f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FBWindowsLoginManager
+  - hash:
+      serializedVersion: 2
       Hash: 92b8fbb1b8e53469d7549c58a3fe58fe
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Asteroids
@@ -2051,6 +2286,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Facebook.Unity.Example
+    className: ConsoleBase
   - hash:
       serializedVersion: 2
       Hash: ac1e49249c7034b7330cd0827116d70f
@@ -2209,6 +2450,12 @@ ScriptsOnlyBuild:
     className: TrackingCalibrationManager
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Facebook.Unity.Example
+    className: GraphRequest
+  - hash:
+      serializedVersion: 2
       Hash: 290afc8da8e459e0b8dc7444bfaf5e35
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -2275,6 +2522,18 @@ ScriptsOnlyBuild:
     className: BasicScreenCalibrationProvider
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Facebook.Unity.Example
+    className: AppLinks
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Facebook.Unity.Example
+    className: AccessTokenMenu
+  - hash:
+      serializedVersion: 2
       Hash: 873e479f5c7b5ad6540b82bb2817a20a
     assemblyName: WebView.dll
     namespaceName: 
@@ -2327,6 +2586,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEngine.XR.LegacyInputHelpers
     className: SwingArmModel
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Facebook.Unity.Example
+    className: MainMenu
   - hash:
       serializedVersion: 2
       Hash: 74494c459d8da1b3c2f0349d1d8534aa
@@ -2461,6 +2726,12 @@ ScriptsOnlyBuild:
     className: ToggleExpand
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Facebook.Unity.Example
+    className: Pay
+  - hash:
+      serializedVersion: 2
       Hash: 290afc8da8e459e0b8dc7444bfaf5e35
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -2471,6 +2742,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARFaceManager
+  - hash:
+      serializedVersion: 2
+      Hash: 7bf324f0300e7064c235a434ec0f1b53
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FBWindowsShareManager
+  - hash:
+      serializedVersion: 2
+      Hash: a6fe20b3fbf2cb64986a74bbfad22f36
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FBWindowsTournamentsManager
   - hash:
       serializedVersion: 2
       Hash: d2a2698b314a20912af1eb2b1758dc90
@@ -2707,6 +2990,12 @@ ScriptsOnlyBuild:
     className: ProceduralController
   - hash:
       serializedVersion: 2
+      Hash: 20aaee874230fcda3c637e5a046e92be
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FBWindowsInitManager
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: WebView.dll
     namespaceName: 
@@ -2725,29 +3014,17 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Facebook.Unity.Example
+    className: AppEvents
+  - hash:
+      serializedVersion: 2
       Hash: d52a7c2704d69c3deaadc3cb30b409d3
     assemblyName: ReadyPlayerMe.dll
     namespaceName: ReadyPlayerMe
     className: EyeAnimationHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 1028c39545bcfa841aaab54121e69a47
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DebugSlider
-  - hash:
-      serializedVersion: 2
-      Hash: 3a4935645a61f31d632d2755dcbf4899
-    assemblyName: NewMPDepth2.dll
-    namespaceName: 
-    className: CalibrationBreaker
-  - hash:
-      serializedVersion: 2
-      Hash: 09d7b745d3eada97464eaa6778c32470
-    assemblyName: NewMPDepth2.dll
-    namespaceName: 
-    className: CalibrationMatrixSliderDisplay
   platform: 9
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/sujansooriyakumar/Documents/iOS Builds
+  playerPath: /Users/sujansooriyakumar/Documents/t

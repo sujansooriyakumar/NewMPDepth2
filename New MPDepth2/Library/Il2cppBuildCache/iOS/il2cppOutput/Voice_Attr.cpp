@@ -270,7 +270,7 @@ static void Voice_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 	}
 	{
 		DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * tmp = (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B *)cache->attributes[2];
-		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 263LL, NULL);
+		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 2LL, NULL);
 	}
 }
 static void VoiceManagement_t5774A41EB5B77A8C13798AE797B18035A38A8C0F_CustomAttributesCacheGenerator_connection(CustomAttributesCache* cache)

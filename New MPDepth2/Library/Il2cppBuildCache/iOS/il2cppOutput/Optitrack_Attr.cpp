@@ -505,7 +505,7 @@ static void Optitrack_CustomAttributesCacheGenerator(CustomAttributesCache* cach
 	}
 	{
 		DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * tmp = (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B *)cache->attributes[2];
-		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 263LL, NULL);
+		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 2LL, NULL);
 	}
 }
 static void OptitrackStreamingClient_t21A16FD9CDEF8613F7AB4FC7B72E428376587ABB_CustomAttributesCacheGenerator_OptitrackStreamingClient_CheckConnectionHealth_mFF8B0131C4F6A697F21E3B79313DE95750F485BA(CustomAttributesCache* cache)

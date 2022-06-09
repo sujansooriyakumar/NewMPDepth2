@@ -270,7 +270,7 @@ static void Networking_CustomAttributesCacheGenerator(CustomAttributesCache* cac
 	}
 	{
 		DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * tmp = (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B *)cache->attributes[2];
-		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 263LL, NULL);
+		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 2LL, NULL);
 	}
 }
 static void ConnectToServer_t259ED4A9DCB5B7665673331355AA055516A8AFBF_CustomAttributesCacheGenerator_roomCreator(CustomAttributesCache* cache)

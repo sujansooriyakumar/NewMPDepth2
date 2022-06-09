@@ -210,160 +210,158 @@ extern void DetachedScreenCalibrator_Calibrate_m404A450F6D23E8531802480BD44F78CC
 extern void DetachedScreenCalibrator_Update_m7E50B606BF347C942BAFDC43FC15C8C5A7DF9842 (void);
 // 0x00000065 System.Void MPDepthCore.Calibration.Screen.DetachedScreenCalibrator::.ctor()
 extern void DetachedScreenCalibrator__ctor_mA49D7BAA413362C9FF25A8333FD1BAD117725AA6 (void);
-// 0x00000066 System.Void MPDepthCore.Calibration.Screen.DetachedScreenCalibrator/<RunCalibrationProcedure>d__8::.ctor()
-extern void U3CRunCalibrationProcedureU3Ed__8__ctor_mEE10B7E175BBF704075507064FE7F80D11F036DE (void);
-// 0x00000067 System.Void MPDepthCore.Calibration.Screen.DetachedScreenCalibrator/<RunCalibrationProcedure>d__8::MoveNext()
+// 0x00000066 System.Void MPDepthCore.Calibration.Screen.DetachedScreenCalibrator/<RunCalibrationProcedure>d__8::MoveNext()
 extern void U3CRunCalibrationProcedureU3Ed__8_MoveNext_m59CDFE964E1BFC147078CECEE65BED2FD3D5BA36 (void);
-// 0x00000068 System.Void MPDepthCore.Calibration.Screen.DetachedScreenCalibrator/<RunCalibrationProcedure>d__8::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+// 0x00000067 System.Void MPDepthCore.Calibration.Screen.DetachedScreenCalibrator/<RunCalibrationProcedure>d__8::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 extern void U3CRunCalibrationProcedureU3Ed__8_SetStateMachine_m2F58954A43A6DB363D04BAB90A3090342E260B13 (void);
-// 0x00000069 MPDepthCore.Calibration.Screen.SavedScreenCalibration MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::get_CurrentCalibration()
-// 0x0000006A System.Collections.Generic.List`1<MPDepthCore.Calibration.Screen.SavedScreenCalibration> MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::get_AllCalibrations()
-// 0x0000006B UnityEngine.Vector2 MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::get_Dimensions()
+// 0x00000068 MPDepthCore.Calibration.Screen.SavedScreenCalibration MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::get_CurrentCalibration()
+// 0x00000069 System.Collections.Generic.List`1<MPDepthCore.Calibration.Screen.SavedScreenCalibration> MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::get_AllCalibrations()
+// 0x0000006A UnityEngine.Vector2 MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::get_Dimensions()
 extern void ScreenCalibrationProvider_get_Dimensions_m4BA816B77A9EA4A7C2CF482DE9A6BC468B15DB6E (void);
-// 0x0000006C System.Void MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::OnEnable()
+// 0x0000006B System.Void MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::OnEnable()
 extern void ScreenCalibrationProvider_OnEnable_m1CE0A2F6BF17D61C7E26E67BD01F4E71AAC29429 (void);
-// 0x0000006D System.Void MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::Calibrate()
-// 0x0000006E System.Void MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::OnDisable()
+// 0x0000006C System.Void MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::Calibrate()
+// 0x0000006D System.Void MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::OnDisable()
 extern void ScreenCalibrationProvider_OnDisable_mD335C88121B12B68F73ECBF6BFD990E4C3A0247E (void);
-// 0x0000006F System.String MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::get_FilePath()
+// 0x0000006E System.String MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::get_FilePath()
 extern void ScreenCalibrationProvider_get_FilePath_mC8E88E87BC37FDBF0DD7F29A4EBB32E818B7FA33 (void);
-// 0x00000070 System.String MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::get_Filename()
-// 0x00000071 System.String MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::get_BaseFolder()
+// 0x0000006F System.String MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::get_Filename()
+// 0x00000070 System.String MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::get_BaseFolder()
 extern void ScreenCalibrationProvider_get_BaseFolder_m84A7D463A105A2BA5F1337EF2F172CA19CEC7DE2 (void);
-// 0x00000072 System.Void MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::SelectCalibration(System.Int32)
-// 0x00000073 System.Void MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::.ctor()
+// 0x00000071 System.Void MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::SelectCalibration(System.Int32)
+// 0x00000072 System.Void MPDepthCore.Calibration.Screen.ScreenCalibrationProvider::.ctor()
 extern void ScreenCalibrationProvider__ctor_m5338E3E7F62CD96173A565A1288A541B222CCDE0 (void);
-// 0x00000074 UnityEngine.GameObject MPDepthCore.Calibration.Screen.ScreenCalibrator::get_mainUI()
+// 0x00000073 UnityEngine.GameObject MPDepthCore.Calibration.Screen.ScreenCalibrator::get_mainUI()
 extern void ScreenCalibrator_get_mainUI_mB8BC3BEB0AD09CE91A5AB0A97117C37EF614C44F (void);
-// 0x00000075 OffAxisCamera.OffAxisCameraRig MPDepthCore.Calibration.Screen.ScreenCalibrator::get_offAxisCameraRig()
+// 0x00000074 OffAxisCamera.OffAxisCameraRig MPDepthCore.Calibration.Screen.ScreenCalibrator::get_offAxisCameraRig()
 extern void ScreenCalibrator_get_offAxisCameraRig_mB9AA4462ADB6941D9570403E4D0C0B437DB2A204 (void);
-// 0x00000076 UnityEngine.Camera MPDepthCore.Calibration.Screen.ScreenCalibrator::get_offAxisCamera()
+// 0x00000075 UnityEngine.Camera MPDepthCore.Calibration.Screen.ScreenCalibrator::get_offAxisCamera()
 extern void ScreenCalibrator_get_offAxisCamera_m2ACFFFC3B4E67097D1DF3440256ED7AD85F0C3E0 (void);
-// 0x00000077 System.Void MPDepthCore.Calibration.Screen.ScreenCalibrator::.ctor()
+// 0x00000076 System.Void MPDepthCore.Calibration.Screen.ScreenCalibrator::.ctor()
 extern void ScreenCalibrator__ctor_m2C6A7E738C994EBD613F72FAB3A8273D8F14B995 (void);
-// 0x00000078 MPDepthCore.Calibration.Camera.SavedTrackerCalibration MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::get_CurrentTrackerCalibration()
+// 0x00000077 MPDepthCore.Calibration.Camera.SavedTrackerCalibration MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::get_CurrentTrackerCalibration()
 extern void BasicTrackingCalibrationProvider_get_CurrentTrackerCalibration_mE8BAFB75E54668DCDDEA3B424C78D458649D3174 (void);
-// 0x00000079 System.Collections.Generic.List`1<MPDepthCore.Calibration.Camera.SavedTrackerCalibration> MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::get_AllCalibrations()
+// 0x00000078 System.Collections.Generic.List`1<MPDepthCore.Calibration.Camera.SavedTrackerCalibration> MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::get_AllCalibrations()
 extern void BasicTrackingCalibrationProvider_get_AllCalibrations_m139AF1B726E180784261F8C0E471AD29CD9E3197 (void);
-// 0x0000007A MPDepthCore.Calibration.Camera.TrackerOffsetCalibration MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::get_GetTrackerOffsetCalibration()
+// 0x00000079 MPDepthCore.Calibration.Camera.TrackerOffsetCalibration MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::get_GetTrackerOffsetCalibration()
 extern void BasicTrackingCalibrationProvider_get_GetTrackerOffsetCalibration_mEB84FB53C602DE75BE110F11754A34BCA44DABAE (void);
-// 0x0000007B System.String MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::get_Filename()
+// 0x0000007A System.String MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::get_Filename()
 extern void BasicTrackingCalibrationProvider_get_Filename_m406C31C78792F22968784EB22C32750844CE871A (void);
-// 0x0000007C System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::SelectCalibration(System.Int32)
+// 0x0000007B System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::SelectCalibration(System.Int32)
 extern void BasicTrackingCalibrationProvider_SelectCalibration_m89ACC05735D1AA36F194DC8A9C3947FB82C54EA1 (void);
-// 0x0000007D System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::TestSave()
+// 0x0000007C System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::TestSave()
 extern void BasicTrackingCalibrationProvider_TestSave_m3E426BD3DF41D1776A290A1876EDD816DA69E713 (void);
-// 0x0000007E System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::Calibrate()
+// 0x0000007D System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::Calibrate()
 extern void BasicTrackingCalibrationProvider_Calibrate_m33EF050E7C2B00A2389EA2CC1EB8EA0D39C9B050 (void);
-// 0x0000007F System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::FinishSetupAfterLoad()
+// 0x0000007E System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::FinishSetupAfterLoad()
 extern void BasicTrackingCalibrationProvider_FinishSetupAfterLoad_m404EA7309665E4DE84A5241F637FAD7EAC997329 (void);
-// 0x00000080 System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::SetCurrentToDefaultCalibration()
+// 0x0000007F System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::SetCurrentToDefaultCalibration()
 extern void BasicTrackingCalibrationProvider_SetCurrentToDefaultCalibration_m646F3E5AC2E7663A7DCA4AC0A054BD16C51CF6B3 (void);
-// 0x00000081 System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::LoadSelfFromJson(System.String)
+// 0x00000080 System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::LoadSelfFromJson(System.String)
 extern void BasicTrackingCalibrationProvider_LoadSelfFromJson_m2F2D12267EF91BF44D3C2C24E9DE54F3214BAC09 (void);
-// 0x00000082 System.String MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::GetSelfAsJson()
+// 0x00000081 System.String MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::GetSelfAsJson()
 extern void BasicTrackingCalibrationProvider_GetSelfAsJson_m91B75488729145DF61F98E8ADFC46F7D3D2A91B6 (void);
-// 0x00000083 System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::.ctor()
+// 0x00000082 System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider::.ctor()
 extern void BasicTrackingCalibrationProvider__ctor_mC24F12AC4FE718F481E70C18BACF9106286049DD (void);
-// 0x00000084 System.String MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider/SavedTrackerBasicCalibration::get_Name()
+// 0x00000083 System.String MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider/SavedTrackerBasicCalibration::get_Name()
 extern void SavedTrackerBasicCalibration_get_Name_m1FDCA528A806C0DFD1BBF484A88BEB345861B853 (void);
-// 0x00000085 System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider/SavedTrackerBasicCalibration::set_Name(System.String)
+// 0x00000084 System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider/SavedTrackerBasicCalibration::set_Name(System.String)
 extern void SavedTrackerBasicCalibration_set_Name_m91286FA604F8615ECD6F0EBEB4829D309F0C8B06 (void);
-// 0x00000086 System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider/SavedTrackerBasicCalibration::.ctor()
+// 0x00000085 System.Void MPDepthCore.Calibration.Camera.BasicTrackingCalibrationProvider/SavedTrackerBasicCalibration::.ctor()
 extern void SavedTrackerBasicCalibration__ctor_mFF3D85EF1CF534FFF6E0AFF86995E530C1DE1818 (void);
-// 0x00000087 System.Void MPDepthCore.Calibration.Camera.CalibratedPosition::.ctor()
+// 0x00000086 System.Void MPDepthCore.Calibration.Camera.CalibratedPosition::.ctor()
 extern void CalibratedPosition__ctor_mF7D459B7979DE4859E3002756DB7910761C5934C (void);
-// 0x00000088 System.Void MPDepthCore.Calibration.Camera.CalibratedRotation::.ctor()
+// 0x00000087 System.Void MPDepthCore.Calibration.Camera.CalibratedRotation::.ctor()
 extern void CalibratedRotation__ctor_m8FA0B1C7DF42D4A173E5CB6DE2E13C8438C33017 (void);
-// 0x00000089 System.Threading.Tasks.Task MPDepthCore.Calibration.Camera.CameraCalibrator::RunCalibrationProcedure()
-// 0x0000008A System.Void MPDepthCore.Calibration.Camera.CameraCalibrator::.ctor()
+// 0x00000088 System.Threading.Tasks.Task MPDepthCore.Calibration.Camera.CameraCalibrator::RunCalibrationProcedure()
+// 0x00000089 System.Void MPDepthCore.Calibration.Camera.CameraCalibrator::.ctor()
 extern void CameraCalibrator__ctor_m3AC83F5BAD1C44B2AC67039CC6E80625170BF2CD (void);
-// 0x0000008B System.Void MPDepthCore.Calibration.Camera.CameraDebugGizmo::OnDrawGizmos()
+// 0x0000008A System.Void MPDepthCore.Calibration.Camera.CameraDebugGizmo::OnDrawGizmos()
 extern void CameraDebugGizmo_OnDrawGizmos_mEE0E6B2B4F3997069AD63DCB8D3FF55A6E538D1A (void);
-// 0x0000008C System.Void MPDepthCore.Calibration.Camera.CameraDebugGizmo::.ctor()
+// 0x0000008B System.Void MPDepthCore.Calibration.Camera.CameraDebugGizmo::.ctor()
 extern void CameraDebugGizmo__ctor_mC4F42B2770615425F7AC47722E7374A4CA76656D (void);
-// 0x0000008D System.Void MPDepthCore.Calibration.Camera.MPDepthTrackingData::.ctor()
+// 0x0000008C System.Void MPDepthCore.Calibration.Camera.MPDepthTrackingData::.ctor()
 extern void MPDepthTrackingData__ctor_m090F058701433875FB8DD7CEBC28207F0EF271D2 (void);
-// 0x0000008E System.Void MPDepthCore.Calibration.Camera.RawTrackingData::.ctor()
+// 0x0000008D System.Void MPDepthCore.Calibration.Camera.RawTrackingData::.ctor()
 extern void RawTrackingData__ctor_m8093224C329264DBAA5FE53BEC99F2BB94DA2535 (void);
-// 0x0000008F System.Void MPDepthCore.Calibration.Camera.CalibratedTrackingData::.ctor(MPDepthCore.Calibration.Camera.RawTrackingData,UnityEngine.Transform)
+// 0x0000008E System.Void MPDepthCore.Calibration.Camera.CalibratedTrackingData::.ctor(MPDepthCore.Calibration.Camera.RawTrackingData,UnityEngine.Transform)
 extern void CalibratedTrackingData__ctor_m3E7E3983D738E254D960A374CBA8CCEF0756F2CC (void);
-// 0x00000090 System.Void MPDepthCore.Calibration.Camera.CalibratedTrackingData::.ctor()
+// 0x0000008F System.Void MPDepthCore.Calibration.Camera.CalibratedTrackingData::.ctor()
 extern void CalibratedTrackingData__ctor_mF53A064718C20E0A144B3F1F6CB32DEC960C9CD3 (void);
-// 0x00000091 MPDepthCore.Calibration.Camera.CalibratedTrackingData MPDepthCore.Calibration.Camera.CalibratedTrackingData::From(MPDepthCore.Calibration.Camera.RawTrackingData,UnityEngine.Transform)
+// 0x00000090 MPDepthCore.Calibration.Camera.CalibratedTrackingData MPDepthCore.Calibration.Camera.CalibratedTrackingData::From(MPDepthCore.Calibration.Camera.RawTrackingData,UnityEngine.Transform)
 extern void CalibratedTrackingData_From_m79DE373330EF46C6F6F6713B13A4310657A36FEC (void);
-// 0x00000092 MPDepthCore.Calibration.Camera.CalibratedTrackingData MPDepthCore.Calibration.Camera.CalibratedTrackingData::Empty()
+// 0x00000091 MPDepthCore.Calibration.Camera.CalibratedTrackingData MPDepthCore.Calibration.Camera.CalibratedTrackingData::Empty()
 extern void CalibratedTrackingData_Empty_m0311017CA1B3A776252BCC9B2C5DDF11B9B48220 (void);
-// 0x00000093 T MPDepthCore.Calibration.Camera.TrackingPose::Calibrate(UnityEngine.Transform)
-// 0x00000094 UnityEngine.Vector3 MPDepthCore.Calibration.Camera.TrackingPose::FixEulersToAvoidSingularityInPredictiveLagCompensation(UnityEngine.Quaternion)
+// 0x00000092 T MPDepthCore.Calibration.Camera.TrackingPose::Calibrate(UnityEngine.Transform)
+// 0x00000093 UnityEngine.Vector3 MPDepthCore.Calibration.Camera.TrackingPose::FixEulersToAvoidSingularityInPredictiveLagCompensation(UnityEngine.Quaternion)
 extern void TrackingPose_FixEulersToAvoidSingularityInPredictiveLagCompensation_m36DEF81BD98D6ADC8CE896CC8350BD8D89071E73 (void);
-// 0x00000095 System.Void MPDepthCore.Calibration.Camera.TrackingPose::.ctor()
+// 0x00000094 System.Void MPDepthCore.Calibration.Camera.TrackingPose::.ctor()
 extern void TrackingPose__ctor_mF819FCD059AEDED19B959DA560A45CA5058805B9 (void);
-// 0x00000096 MPDepthCore.Calibration.Camera.CameraTrackingData MPDepthCore.Calibration.Camera.CameraTrackingData::Calibrate(UnityEngine.Transform)
+// 0x00000095 MPDepthCore.Calibration.Camera.CameraTrackingData MPDepthCore.Calibration.Camera.CameraTrackingData::Calibrate(UnityEngine.Transform)
 extern void CameraTrackingData_Calibrate_m0DD200DE84D0B6AC0C882AE3331DE426E27D2937 (void);
-// 0x00000097 System.Void MPDepthCore.Calibration.Camera.CameraTrackingData::.ctor()
+// 0x00000096 System.Void MPDepthCore.Calibration.Camera.CameraTrackingData::.ctor()
 extern void CameraTrackingData__ctor_m9FA5E6359346DDCDE3F333153BE5FDC078901277 (void);
-// 0x00000098 System.Void MPDepthCore.Calibration.Camera.LeftEyeTrackingData::.ctor()
+// 0x00000097 System.Void MPDepthCore.Calibration.Camera.LeftEyeTrackingData::.ctor()
 extern void LeftEyeTrackingData__ctor_mF1D0B766837D3A42BB621896237171EBC9850288 (void);
-// 0x00000099 System.Void MPDepthCore.Calibration.Camera.RightEyeTrackingData::.ctor()
+// 0x00000098 System.Void MPDepthCore.Calibration.Camera.RightEyeTrackingData::.ctor()
 extern void RightEyeTrackingData__ctor_m9A1D4569ED6D335B66EBD14D99F5390D58412838 (void);
-// 0x0000009A MPDepthCore.Calibration.Camera.EyeTrackingData MPDepthCore.Calibration.Camera.EyeTrackingData::Calibrate(UnityEngine.Transform)
+// 0x00000099 MPDepthCore.Calibration.Camera.EyeTrackingData MPDepthCore.Calibration.Camera.EyeTrackingData::Calibrate(UnityEngine.Transform)
 extern void EyeTrackingData_Calibrate_m54D49F46118764FAD645DB32F790FB6D45453673 (void);
-// 0x0000009B System.Void MPDepthCore.Calibration.Camera.EyeTrackingData::.ctor()
+// 0x0000009A System.Void MPDepthCore.Calibration.Camera.EyeTrackingData::.ctor()
 extern void EyeTrackingData__ctor_mFA366AF93A96AE834CE65E823C7B68EF9803B74B (void);
-// 0x0000009C MPDepthCore.Calibration.Camera.FixationPointTrackingData MPDepthCore.Calibration.Camera.FixationPointTrackingData::Calibrate(UnityEngine.Transform)
+// 0x0000009B MPDepthCore.Calibration.Camera.FixationPointTrackingData MPDepthCore.Calibration.Camera.FixationPointTrackingData::Calibrate(UnityEngine.Transform)
 extern void FixationPointTrackingData_Calibrate_m5D5F80C9DDB84CF1CCD98F7BEF7EFB2A0E1C392E (void);
-// 0x0000009D System.Void MPDepthCore.Calibration.Camera.FixationPointTrackingData::.ctor()
+// 0x0000009C System.Void MPDepthCore.Calibration.Camera.FixationPointTrackingData::.ctor()
 extern void FixationPointTrackingData__ctor_mE0854DC7FD48BDE82DBB1A5620104B23536993A7 (void);
-// 0x0000009E System.Void MPDepthCore.Calibration.Camera.BlendshapeTrackingData::.ctor()
+// 0x0000009D System.Void MPDepthCore.Calibration.Camera.BlendshapeTrackingData::.ctor()
 extern void BlendshapeTrackingData__ctor_m5CD4A250B213A640DFE25BD177F5DC3103994C05 (void);
-// 0x0000009F System.Void MPDepthCore.Calibration.Camera.TrackerOffsetCalibration::.ctor()
+// 0x0000009E System.Void MPDepthCore.Calibration.Camera.TrackerOffsetCalibration::.ctor()
 extern void TrackerOffsetCalibration__ctor_m03477A4C301073620A958E842F726237BDCEE442 (void);
-// 0x000000A0 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::add_TrackingDataUpdated(MPDepthCore.TrackingSources.MPDepthTrackingSource/TrackingDataUpdatedEvent)
+// 0x0000009F System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::add_TrackingDataUpdated(MPDepthCore.TrackingSources.MPDepthTrackingSource/TrackingDataUpdatedEvent)
 extern void TrackingCalibrationManager_add_TrackingDataUpdated_mCD93CA2715C07CDEE02148A2F1EEA20A3E3B4D23 (void);
-// 0x000000A1 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::remove_TrackingDataUpdated(MPDepthCore.TrackingSources.MPDepthTrackingSource/TrackingDataUpdatedEvent)
+// 0x000000A0 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::remove_TrackingDataUpdated(MPDepthCore.TrackingSources.MPDepthTrackingSource/TrackingDataUpdatedEvent)
 extern void TrackingCalibrationManager_remove_TrackingDataUpdated_m3C1A1E7C7E6D2523D4AA01CF08345AE1D0CEEE6F (void);
-// 0x000000A2 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::TurnOff()
+// 0x000000A1 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::TurnOff()
 extern void TrackingCalibrationManager_TurnOff_m9D06B912A3A29CA64182B204E9E289BF8A73AC2C (void);
-// 0x000000A3 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::TurnOn()
+// 0x000000A2 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::TurnOn()
 extern void TrackingCalibrationManager_TurnOn_mBA820866D9E6C926E78C4140709491B2C6D8F754 (void);
-// 0x000000A4 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::OnEnable()
+// 0x000000A3 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::OnEnable()
 extern void TrackingCalibrationManager_OnEnable_m1C087A2EF1019457E0996BB3725AD065CCD8A87A (void);
-// 0x000000A5 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::OnDisable()
+// 0x000000A4 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::OnDisable()
 extern void TrackingCalibrationManager_OnDisable_m0A29E8FC743BB781B5BD4A048BA4C967A45741C4 (void);
-// 0x000000A6 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::RawDataUpdated(MPDepthCore.Calibration.Camera.MPDepthTrackingData)
+// 0x000000A5 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::RawDataUpdated(MPDepthCore.Calibration.Camera.MPDepthTrackingData)
 extern void TrackingCalibrationManager_RawDataUpdated_m53EC8F690D7951B5506FACB2ACC91C4E5176F676 (void);
-// 0x000000A7 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::Update()
+// 0x000000A6 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::Update()
 extern void TrackingCalibrationManager_Update_mA2FB8F93F5872291ECA96E16A3923A8AF644CD04 (void);
-// 0x000000A8 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::EnsureThisTransformIsNotEdited()
+// 0x000000A7 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::EnsureThisTransformIsNotEdited()
 extern void TrackingCalibrationManager_EnsureThisTransformIsNotEdited_mC80A90096C3EC6F314EE152F040CE13B4F8477D1 (void);
-// 0x000000A9 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::.ctor()
+// 0x000000A8 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::.ctor()
 extern void TrackingCalibrationManager__ctor_m6D9493FF096C12F0877C002C4C77B4E1AE80C782 (void);
-// 0x000000AA MPDepthCore.Calibration.Camera.TrackerOffsetCalibration MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::get_GetTrackerOffsetCalibration()
-// 0x000000AB MPDepthCore.Calibration.Camera.SavedTrackerCalibration MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::get_CurrentTrackerCalibration()
-// 0x000000AC System.Collections.Generic.List`1<MPDepthCore.Calibration.Camera.SavedTrackerCalibration> MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::get_AllCalibrations()
-// 0x000000AD System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::Calibrate()
-// 0x000000AE System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::OnEnable()
+// 0x000000A9 MPDepthCore.Calibration.Camera.TrackerOffsetCalibration MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::get_GetTrackerOffsetCalibration()
+// 0x000000AA MPDepthCore.Calibration.Camera.SavedTrackerCalibration MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::get_CurrentTrackerCalibration()
+// 0x000000AB System.Collections.Generic.List`1<MPDepthCore.Calibration.Camera.SavedTrackerCalibration> MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::get_AllCalibrations()
+// 0x000000AC System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::Calibrate()
+// 0x000000AD System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::OnEnable()
 extern void TrackingCalibrationProvider_OnEnable_m292CD783EF013BE686EF2661D757E2A54F2DEA96 (void);
-// 0x000000AF System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::FinishSetupAfterLoad()
-// 0x000000B0 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::SetCurrentToDefaultCalibration()
-// 0x000000B1 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::LoadSelfFromJson(System.String)
-// 0x000000B2 System.String MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::GetSelfAsJson()
-// 0x000000B3 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::OnDisable()
+// 0x000000AE System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::FinishSetupAfterLoad()
+// 0x000000AF System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::SetCurrentToDefaultCalibration()
+// 0x000000B0 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::LoadSelfFromJson(System.String)
+// 0x000000B1 System.String MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::GetSelfAsJson()
+// 0x000000B2 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::OnDisable()
 extern void TrackingCalibrationProvider_OnDisable_m9A15E1B24347C499946A30D8EF75F2CB5507E297 (void);
-// 0x000000B4 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::SetCalibrationTransform(UnityEngine.Transform)
+// 0x000000B3 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::SetCalibrationTransform(UnityEngine.Transform)
 extern void TrackingCalibrationProvider_SetCalibrationTransform_m328245E581F92EEACC3570ECF42AEFB28DF9DA8B (void);
-// 0x000000B5 System.String MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::get_FilePath()
+// 0x000000B4 System.String MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::get_FilePath()
 extern void TrackingCalibrationProvider_get_FilePath_m303B79793AC22CC3B02E2641DF079987B507F32B (void);
-// 0x000000B6 System.String MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::get_Filename()
-// 0x000000B7 System.String MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::get_BaseFolder()
+// 0x000000B5 System.String MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::get_Filename()
+// 0x000000B6 System.String MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::get_BaseFolder()
 extern void TrackingCalibrationProvider_get_BaseFolder_m143D7BA46D3858F827EAC4C83640B26607318B4A (void);
-// 0x000000B8 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::SelectCalibration(System.Int32)
-// 0x000000B9 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::.ctor()
+// 0x000000B7 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::SelectCalibration(System.Int32)
+// 0x000000B8 System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::.ctor()
 extern void TrackingCalibrationProvider__ctor_m953976A4C72671B39786A555D5DC2C28D2198387 (void);
-// 0x000000BA System.String MPDepthCore.Calibration.Camera.ICalibration::get_Name()
-// 0x000000BB System.Void MPDepthCore.Calibration.Camera.ICalibration::set_Name(System.String)
-static Il2CppMethodPointer s_methodPointers[187] = 
+// 0x000000B9 System.String MPDepthCore.Calibration.Camera.ICalibration::get_Name()
+// 0x000000BA System.Void MPDepthCore.Calibration.Camera.ICalibration::set_Name(System.String)
+static Il2CppMethodPointer s_methodPointers[186] = 
 {
 	CalibrationAdjustmentSlider_ValueChanged_mD922CEC2A427CDF2F8F4B186797DF931F6A4C7E3,
 	CalibrationAdjustmentSlider__ctor_m63005380292912E2D8BBE2AC8D5D0365D9DBB58D,
@@ -466,7 +464,6 @@ static Il2CppMethodPointer s_methodPointers[187] =
 	DetachedScreenCalibrator_Calibrate_m404A450F6D23E8531802480BD44F78CCEDEB7F50,
 	DetachedScreenCalibrator_Update_m7E50B606BF347C942BAFDC43FC15C8C5A7DF9842,
 	DetachedScreenCalibrator__ctor_mA49D7BAA413362C9FF25A8333FD1BAD117725AA6,
-	U3CRunCalibrationProcedureU3Ed__8__ctor_mEE10B7E175BBF704075507064FE7F80D11F036DE,
 	U3CRunCalibrationProcedureU3Ed__8_MoveNext_m59CDFE964E1BFC147078CECEE65BED2FD3D5BA36,
 	U3CRunCalibrationProcedureU3Ed__8_SetStateMachine_m2F58954A43A6DB363D04BAB90A3090342E260B13,
 	NULL,
@@ -553,214 +550,220 @@ static Il2CppMethodPointer s_methodPointers[187] =
 	NULL,
 	NULL,
 };
-static const int32_t s_InvokerIndices[187] = 
+extern void U3CRunCalibrationProcedureU3Ed__8_MoveNext_m59CDFE964E1BFC147078CECEE65BED2FD3D5BA36_AdjustorThunk (void);
+extern void U3CRunCalibrationProcedureU3Ed__8_SetStateMachine_m2F58954A43A6DB363D04BAB90A3090342E260B13_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] = 
 {
-	4332,
-	4332,
-	4328,
-	4332,
+	{ 0x06000066, U3CRunCalibrationProcedureU3Ed__8_MoveNext_m59CDFE964E1BFC147078CECEE65BED2FD3D5BA36_AdjustorThunk },
+	{ 0x06000067, U3CRunCalibrationProcedureU3Ed__8_SetStateMachine_m2F58954A43A6DB363D04BAB90A3090342E260B13_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[186] = 
+{
+	4333,
+	4333,
+	4329,
+	4333,
 	5163,
-	3600,
-	4332,
-	6543,
-	6543,
-	5586,
-	4332,
-	2010,
-	1229,
-	320,
-	3537,
-	3537,
-	3537,
-	4332,
-	4332,
-	2010,
-	4332,
-	1482,
-	3537,
-	3537,
-	3537,
-	4288,
-	3562,
-	3562,
-	3562,
-	4332,
-	2010,
-	3562,
-	1045,
-	3537,
-	3537,
-	3537,
-	4262,
-	4262,
-	4332,
-	3537,
-	4262,
-	4332,
-	4332,
-	4332,
-	4262,
-	3537,
-	3537,
-	4262,
-	4332,
-	3562,
-	3537,
-	4332,
-	3537,
-	3517,
-	4332,
-	3517,
-	3537,
-	4332,
-	4332,
-	4262,
-	4332,
-	3537,
-	3537,
-	4332,
-	4332,
-	4332,
-	2010,
-	3537,
-	1028,
-	3537,
-	3537,
-	3537,
-	4332,
-	4332,
-	4332,
-	4332,
-	4332,
-	6600,
-	4262,
-	4332,
-	4262,
-	4262,
-	4332,
-	4291,
-	4291,
-	4262,
-	3517,
-	4332,
-	4262,
-	3537,
-	4332,
-	2012,
-	2655,
-	4332,
-	4332,
-	3537,
-	3537,
-	4332,
-	3537,
-	4332,
-	4332,
-	4332,
-	4332,
-	3537,
-	4262,
-	4262,
-	4326,
-	4332,
-	4332,
-	4332,
-	4262,
-	4262,
-	4262,
-	3517,
-	4332,
-	4262,
-	4262,
-	4262,
-	4332,
-	4262,
-	4262,
-	4262,
-	4262,
-	3517,
-	4332,
-	4332,
-	4332,
-	4332,
-	3537,
-	4262,
-	4332,
-	4262,
-	3537,
-	4332,
-	4332,
-	4332,
-	4262,
-	4332,
-	4332,
-	4332,
-	4332,
-	4332,
-	2012,
-	4332,
-	5781,
-	6600,
+	3607,
+	4333,
+	6514,
+	6514,
+	5557,
+	4333,
+	2032,
+	1256,
+	338,
+	3545,
+	3545,
+	3545,
+	4333,
+	4333,
+	2032,
+	4333,
+	1509,
+	3545,
+	3545,
+	3545,
+	4289,
+	3570,
+	3570,
+	3570,
+	4333,
+	2032,
+	3570,
+	1071,
+	3545,
+	3545,
+	3545,
+	4263,
+	4263,
+	4333,
+	3545,
+	4263,
+	4333,
+	4333,
+	4333,
+	4263,
+	3545,
+	3545,
+	4263,
+	4333,
+	3570,
+	3545,
+	4333,
+	3545,
+	3525,
+	4333,
+	3525,
+	3545,
+	4333,
+	4333,
+	4263,
+	4333,
+	3545,
+	3545,
+	4333,
+	4333,
+	4333,
+	2032,
+	3545,
+	1054,
+	3545,
+	3545,
+	3545,
+	4333,
+	4333,
+	4333,
+	4333,
+	4333,
+	6571,
+	4263,
+	4333,
+	4263,
+	4263,
+	4333,
+	4292,
+	4292,
+	4263,
+	3525,
+	4333,
+	4263,
+	3545,
+	4333,
+	2034,
+	2677,
+	4333,
+	4333,
+	3545,
+	3545,
+	4333,
+	3545,
+	4333,
+	4333,
+	4333,
+	3545,
+	4263,
+	4263,
+	4327,
+	4333,
+	4333,
+	4333,
+	4263,
+	4263,
+	4263,
+	3525,
+	4333,
+	4263,
+	4263,
+	4263,
+	4333,
+	4263,
+	4263,
+	4263,
+	4263,
+	3525,
+	4333,
+	4333,
+	4333,
+	4333,
+	3545,
+	4263,
+	4333,
+	4263,
+	3545,
+	4333,
+	4333,
+	4333,
+	4263,
+	4333,
+	4333,
+	4333,
+	4333,
+	4333,
+	2034,
+	4333,
+	5753,
+	6571,
 	-1,
-	6526,
-	4332,
-	2655,
-	4332,
-	4332,
-	4332,
-	2655,
-	4332,
-	2655,
-	4332,
-	4332,
-	4332,
-	3537,
-	3537,
-	4332,
-	4332,
-	4332,
-	4332,
-	3537,
-	4332,
-	4332,
-	4332,
-	4262,
-	4262,
-	4262,
-	4332,
-	4332,
-	4332,
-	4332,
-	3537,
-	4262,
-	4332,
-	3537,
-	4262,
-	4262,
-	4262,
-	3517,
-	4332,
-	4262,
-	3537,
+	6497,
+	4333,
+	2677,
+	4333,
+	4333,
+	4333,
+	2677,
+	4333,
+	2677,
+	4333,
+	4333,
+	4333,
+	3545,
+	3545,
+	4333,
+	4333,
+	4333,
+	4333,
+	3545,
+	4333,
+	4333,
+	4333,
+	4263,
+	4263,
+	4263,
+	4333,
+	4333,
+	4333,
+	4333,
+	3545,
+	4263,
+	4333,
+	3545,
+	4263,
+	4263,
+	4263,
+	3525,
+	4333,
+	4263,
+	3545,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {
-	{ 0x06000093, { 0, 2 } },
+	{ 0x06000092, { 0, 2 } },
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[2] = 
 {
-	{ (Il2CppRGCTXDataType)3, 26630 },
-	{ (Il2CppRGCTXDataType)2, 365 },
+	{ (Il2CppRGCTXDataType)3, 26493 },
+	{ (Il2CppRGCTXDataType)2, 368 },
 };
 extern const CustomAttributesCacheGenerator g_MPDepthCore_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_MPDepthCore_CodeGenModule;
 const Il2CppCodeGenModule g_MPDepthCore_CodeGenModule = 
 {
 	"MPDepthCore.dll",
-	187,
+	186,
 	s_methodPointers,
-	0,
-	NULL,
+	2,
+	s_adjustorThunks,
 	s_InvokerIndices,
 	0,
 	NULL,

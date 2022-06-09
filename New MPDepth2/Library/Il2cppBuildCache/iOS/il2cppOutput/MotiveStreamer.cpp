@@ -551,52 +551,6 @@ public:
 };
 
 
-// System.Boolean
-struct Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37 
-{
-public:
-	// System.Boolean System.Boolean::m_value
-	bool ___m_value_0;
-
-public:
-	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37, ___m_value_0)); }
-	inline bool get_m_value_0() const { return ___m_value_0; }
-	inline bool* get_address_of_m_value_0() { return &___m_value_0; }
-	inline void set_m_value_0(bool value)
-	{
-		___m_value_0 = value;
-	}
-};
-
-struct Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_StaticFields
-{
-public:
-	// System.String System.Boolean::TrueString
-	String_t* ___TrueString_5;
-	// System.String System.Boolean::FalseString
-	String_t* ___FalseString_6;
-
-public:
-	inline static int32_t get_offset_of_TrueString_5() { return static_cast<int32_t>(offsetof(Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_StaticFields, ___TrueString_5)); }
-	inline String_t* get_TrueString_5() const { return ___TrueString_5; }
-	inline String_t** get_address_of_TrueString_5() { return &___TrueString_5; }
-	inline void set_TrueString_5(String_t* value)
-	{
-		___TrueString_5 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___TrueString_5), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_FalseString_6() { return static_cast<int32_t>(offsetof(Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_StaticFields, ___FalseString_6)); }
-	inline String_t* get_FalseString_6() const { return ___FalseString_6; }
-	inline String_t** get_address_of_FalseString_6() { return &___FalseString_6; }
-	inline void set_FalseString_6(String_t* value)
-	{
-		___FalseString_6 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___FalseString_6), (void*)value);
-	}
-};
-
-
 // System.Enum
 struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA  : public ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52
 {
@@ -2358,12 +2312,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotiveStreamTrackingCalibrator_Calculate
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotiveStreamTrackingCalibrator__ctor_m5171BAEA8FC7C27E66A66F78D728811E002AD06B (MotiveStreamTrackingCalibrator_tBECF77D527CEB961377F21709037A14E8022C311 * __this, const RuntimeMethod* method)
 {
 	{
-		// [SerializeField] MPDepthTrackingSource trackingSource = default;
-		__this->set_trackingSource_4((MPDepthTrackingSource_tA6C90370587E280BDD2EB3D24CE9E0CC7A9B8BE7 *)NULL);
-		// [SerializeField] GameObject calibrationObjects = default;
-		__this->set_calibrationObjects_5((GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 *)NULL);
-		// bool calibrating = false;
-		__this->set_calibrating_7((bool)0);
 		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -2513,32 +2461,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MotiveStreamTrackingProvider_GetSel
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SaveData_t3AFFF516FB57E3D04C452A330FB8073214DB01E3_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	SaveData_t3AFFF516FB57E3D04C452A330FB8073214DB01E3 * V_0 = NULL;
-	String_t* V_1 = NULL;
-	String_t* V_2 = NULL;
 	{
 		// SaveData saveData = new SaveData(savedCalibrations, currentCalibration);
 		List_1_t725621D5B6D0C1CEC7ED935F6729797D89B2E309 * L_0 = __this->get_savedCalibrations_6();
 		SavedMotiveStreamTrackingConfiguration_t53109C5C3333FB8003C47CCF0F435C263AF87F8C * L_1 = __this->get_currentCalibration_5();
 		SaveData_t3AFFF516FB57E3D04C452A330FB8073214DB01E3 * L_2 = (SaveData_t3AFFF516FB57E3D04C452A330FB8073214DB01E3 *)il2cpp_codegen_object_new(SaveData_t3AFFF516FB57E3D04C452A330FB8073214DB01E3_il2cpp_TypeInfo_var);
 		SaveData__ctor_mE5D7239ABFE3FCC9E211FF5C7BA6E1F23D4B50E0(L_2, L_0, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
 		// string json = JsonUtility.ToJson(saveData);
-		SaveData_t3AFFF516FB57E3D04C452A330FB8073214DB01E3 * L_3 = V_0;
-		String_t* L_4;
-		L_4 = JsonUtility_ToJson_mF4F097C9AEC7699970E3E7E99EF8FF2F44DA1B5C(L_3, /*hidden argument*/NULL);
-		V_1 = L_4;
+		String_t* L_3;
+		L_3 = JsonUtility_ToJson_mF4F097C9AEC7699970E3E7E99EF8FF2F44DA1B5C(L_2, /*hidden argument*/NULL);
 		// return json;
-		String_t* L_5 = V_1;
-		V_2 = L_5;
-		goto IL_001e;
-	}
-
-IL_001e:
-	{
-		// }
-		String_t* L_6 = V_2;
-		return L_6;
+		return L_3;
 	}
 }
 // MPDepthCore.Calibration.Camera.TrackerOffsetCalibration MotiveTrackingStreamer.MotiveStreamTrackingProvider::get_GetTrackerOffsetCalibration()
@@ -2687,19 +2620,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotiveTrackingDataReceiver_SetData_m0BE3
 // MotiveRigidBodyData MotiveTrackingDataReceiver::GetData()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MotiveRigidBodyData_t38A0173363ADA22554E261852583DB920982DD37 * MotiveTrackingDataReceiver_GetData_mFB515C51134C4A061929540866276D1C0451C8B0 (MotiveTrackingDataReceiver_tDFDFB254132DD7F9559DCFF24C72E3DA8BEB3821 * __this, const RuntimeMethod* method)
 {
-	MotiveRigidBodyData_t38A0173363ADA22554E261852583DB920982DD37 * V_0 = NULL;
 	{
 		// return ReceivedData;
 		MotiveRigidBodyData_t38A0173363ADA22554E261852583DB920982DD37 * L_0 = __this->get_ReceivedData_16();
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		// }
-		MotiveRigidBodyData_t38A0173363ADA22554E261852583DB920982DD37 * L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 // System.Void MotiveTrackingDataReceiver::.ctor()

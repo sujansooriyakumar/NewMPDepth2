@@ -9234,7 +9234,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * XmlNodeIdHashtable_get_Item_m
 		L_3->set_NamespaceURI_1(L_5);
 		XmlNodeIdentety_tDB2D0FFBEC368B86282BBEC679577C3E70B70454 * L_6 = __this->get__id_21();
 		RuntimeObject * L_7;
-		L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
+		L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
 		return L_7;
 	}
 }
@@ -9258,7 +9258,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * XmlNodeIdHashtable_get_Item_m
 		L_3->set_NamespaceURI_1(L_5);
 		XmlNodeIdentety_tDB2D0FFBEC368B86282BBEC679577C3E70B70454 * L_6 = __this->get__id_21();
 		RuntimeObject * L_7;
-		L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
+		L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
 		return L_7;
 	}
 }
@@ -9282,7 +9282,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * XmlNodeIdHashtable_get_Item_m
 		L_3->set_NamespaceURI_1(L_5);
 		XmlNodeIdentety_tDB2D0FFBEC368B86282BBEC679577C3E70B70454 * L_6 = __this->get__id_21();
 		RuntimeObject * L_7;
-		L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
+		L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_6);
 		return L_7;
 	}
 }
@@ -9306,7 +9306,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * XmlNodeIdHashtable_get_Item_m
 		L_2->set_NamespaceURI_1(L_3);
 		XmlNodeIdentety_tDB2D0FFBEC368B86282BBEC679577C3E70B70454 * L_4 = __this->get__id_21();
 		RuntimeObject * L_5;
-		L_5 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_4);
+		L_5 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, __this, L_4);
 		return L_5;
 	}
 }

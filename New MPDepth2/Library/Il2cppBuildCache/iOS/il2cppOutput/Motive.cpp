@@ -2353,22 +2353,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotiveRawTrackingSource_Update_mED1050C1
 		if (L_8)
 		{
 			G_B2_0 = L_8;
-			goto IL_0033;
+			goto IL_0031;
 		}
 	}
 	{
-		goto IL_003a;
+		return;
 	}
 
-IL_0033:
+IL_0031:
 	{
 		MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * L_9 = V_1;
 		NullCheck(G_B2_0);
 		TrackingDataUpdatedEvent_Invoke_mA382D743DC3D1D6CCC6B5EEF5FEAE07DE1384E23(G_B2_0, L_9, /*hidden argument*/NULL);
-	}
-
-IL_003a:
-	{
 		// }
 		return;
 	}
@@ -2463,10 +2459,6 @@ IL_0007:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotiveRawTrackingSource__ctor_m243767C047B62BE58D5B7E037F8D55C36C0F4C6B (MotiveRawTrackingSource_t3F297BC6EE2275AC336EF9BEDC30BB4FA27F572C * __this, const RuntimeMethod* method)
 {
 	{
-		// [SerializeField] GameObject cameraObject = default;
-		__this->set_cameraObject_5((GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 *)NULL);
-		// [SerializeField] GameObject screenObject = default;
-		__this->set_screenObject_6((GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 *)NULL);
 		MPDepthTrackingSource__ctor_mB96D8CA4D5C343431C96F1FC1FC10208E3399D31(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -2947,12 +2939,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotiveTrackingCalibration_TrackingUpdate
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotiveTrackingCalibration__ctor_m22CFA8DB283717BEEBC9DC929F7BFB803973263C (MotiveTrackingCalibration_tF34845DAD9A0418B57F4A9A52301BAFF2B8C636A * __this, const RuntimeMethod* method)
 {
 	{
-		// [SerializeField] MPDepthTrackingSource trackingSource = default;
-		__this->set_trackingSource_4((MPDepthTrackingSource_tA6C90370587E280BDD2EB3D24CE9E0CC7A9B8BE7 *)NULL);
-		// [SerializeField] GameObject calibrationObjects = default;
-		__this->set_calibrationObjects_5((GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 *)NULL);
-		// bool calibrating = false;
-		__this->set_calibrating_8((bool)0);
 		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -3105,32 +3091,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MotiveTrackingProvider_GetSelfAsJso
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SaveMotiveData_t050B4C7FBF43A41FE0EE3EB844A33843B3E50F11_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	SaveMotiveData_t050B4C7FBF43A41FE0EE3EB844A33843B3E50F11 * V_0 = NULL;
-	String_t* V_1 = NULL;
-	String_t* V_2 = NULL;
 	{
 		// SaveMotiveData saveData = new SaveMotiveData(savedCalibrations, currentCalibration);
 		List_1_t6F2FF11C2B55AC0C4A229D14971E9E7779B74AFD * L_0 = __this->get_savedCalibrations_6();
 		SavedMotiveTrackingConfiguration_t288ACCE38A039621ECBD31D5035F1803491A8691 * L_1 = __this->get_currentCalibration_5();
 		SaveMotiveData_t050B4C7FBF43A41FE0EE3EB844A33843B3E50F11 * L_2 = (SaveMotiveData_t050B4C7FBF43A41FE0EE3EB844A33843B3E50F11 *)il2cpp_codegen_object_new(SaveMotiveData_t050B4C7FBF43A41FE0EE3EB844A33843B3E50F11_il2cpp_TypeInfo_var);
 		SaveMotiveData__ctor_m43065D076A3B153AAFF0DA379776837BF959C1B5(L_2, L_0, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
 		// string json = JsonUtility.ToJson(saveData);
-		SaveMotiveData_t050B4C7FBF43A41FE0EE3EB844A33843B3E50F11 * L_3 = V_0;
-		String_t* L_4;
-		L_4 = JsonUtility_ToJson_mF4F097C9AEC7699970E3E7E99EF8FF2F44DA1B5C(L_3, /*hidden argument*/NULL);
-		V_1 = L_4;
+		String_t* L_3;
+		L_3 = JsonUtility_ToJson_mF4F097C9AEC7699970E3E7E99EF8FF2F44DA1B5C(L_2, /*hidden argument*/NULL);
 		// return json;
-		String_t* L_5 = V_1;
-		V_2 = L_5;
-		goto IL_001e;
-	}
-
-IL_001e:
-	{
-		// }
-		String_t* L_6 = V_2;
-		return L_6;
+		return L_3;
 	}
 }
 // MPDepthCore.Calibration.Camera.TrackerOffsetCalibration MotiveTrackingProvider::get_GetTrackerOffsetCalibration()

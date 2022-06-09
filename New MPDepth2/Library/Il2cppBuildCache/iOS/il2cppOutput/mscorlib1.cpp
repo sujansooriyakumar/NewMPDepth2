@@ -26618,17 +26618,17 @@ IL_003a:
 		Encoding_tE901442411E2E70039D2A4AE77FB81C3D6064827 * L_9 = ___encoding1;
 		NullCheck(L_9);
 		Decoder_t91B2ED8AEC25AA24D23A00265203BE992B12C370 * L_10;
-		L_10 = VirtFuncInvoker0< Decoder_t91B2ED8AEC25AA24D23A00265203BE992B12C370 * >::Invoke(29 /* System.Text.Decoder System.Text.Encoding::GetDecoder() */, L_9);
+		L_10 = VirtFuncInvoker0< Decoder_t91B2ED8AEC25AA24D23A00265203BE992B12C370 * >::Invoke(30 /* System.Text.Decoder System.Text.Encoding::GetDecoder() */, L_9);
 		__this->set_m_decoder_2(L_10);
 		Encoding_tE901442411E2E70039D2A4AE77FB81C3D6064827 * L_11 = ___encoding1;
 		NullCheck(L_11);
 		int32_t L_12;
-		L_12 = VirtFuncInvoker1< int32_t, int32_t >::Invoke(32 /* System.Int32 System.Text.Encoding::GetMaxCharCount(System.Int32) */, L_11, ((int32_t)128));
+		L_12 = VirtFuncInvoker1< int32_t, int32_t >::Invoke(33 /* System.Int32 System.Text.Encoding::GetMaxCharCount(System.Int32) */, L_11, ((int32_t)128));
 		__this->set_m_maxCharsSize_6(L_12);
 		Encoding_tE901442411E2E70039D2A4AE77FB81C3D6064827 * L_13 = ___encoding1;
 		NullCheck(L_13);
 		int32_t L_14;
-		L_14 = VirtFuncInvoker1< int32_t, int32_t >::Invoke(31 /* System.Int32 System.Text.Encoding::GetMaxByteCount(System.Int32) */, L_13, 1);
+		L_14 = VirtFuncInvoker1< int32_t, int32_t >::Invoke(32 /* System.Int32 System.Text.Encoding::GetMaxByteCount(System.Int32) */, L_13, 1);
 		V_0 = L_14;
 		int32_t L_15 = V_0;
 		if ((((int32_t)L_15) >= ((int32_t)((int32_t)16))))
@@ -28415,7 +28415,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BinaryWriter__ctor_m4C679C96D984329B90F9
 		Encoding_tE901442411E2E70039D2A4AE77FB81C3D6064827 * L_3 = __this->get__encoding_3();
 		NullCheck(L_3);
 		Encoder_t5095F24D3B1D0F70D08762B980731B9F1ADEE56A * L_4;
-		L_4 = VirtFuncInvoker0< Encoder_t5095F24D3B1D0F70D08762B980731B9F1ADEE56A * >::Invoke(30 /* System.Text.Encoder System.Text.Encoding::GetEncoder() */, L_3);
+		L_4 = VirtFuncInvoker0< Encoder_t5095F24D3B1D0F70D08762B980731B9F1ADEE56A * >::Invoke(31 /* System.Text.Encoder System.Text.Encoding::GetEncoder() */, L_3);
 		__this->set__encoder_4(L_4);
 		return;
 	}
@@ -28514,7 +28514,7 @@ IL_003a:
 		Encoding_tE901442411E2E70039D2A4AE77FB81C3D6064827 * L_11 = __this->get__encoding_3();
 		NullCheck(L_11);
 		Encoder_t5095F24D3B1D0F70D08762B980731B9F1ADEE56A * L_12;
-		L_12 = VirtFuncInvoker0< Encoder_t5095F24D3B1D0F70D08762B980731B9F1ADEE56A * >::Invoke(30 /* System.Text.Encoder System.Text.Encoding::GetEncoder() */, L_11);
+		L_12 = VirtFuncInvoker0< Encoder_t5095F24D3B1D0F70D08762B980731B9F1ADEE56A * >::Invoke(31 /* System.Text.Encoder System.Text.Encoding::GetEncoder() */, L_11);
 		__this->set__encoder_4(L_12);
 		bool L_13 = ___leaveOpen2;
 		__this->set__leaveOpen_5(L_13);
@@ -28788,7 +28788,7 @@ IL_000e:
 		NullCheck(L_4);
 		NullCheck(L_2);
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_5;
-		L_5 = VirtFuncInvoker3< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34*, int32_t, int32_t >::Invoke(15 /* System.Byte[] System.Text.Encoding::GetBytes(System.Char[],System.Int32,System.Int32) */, L_2, L_3, 0, ((int32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))));
+		L_5 = VirtFuncInvoker3< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34*, int32_t, int32_t >::Invoke(16 /* System.Byte[] System.Text.Encoding::GetBytes(System.Char[],System.Int32,System.Int32) */, L_2, L_3, 0, ((int32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))));
 		V_0 = L_5;
 		Stream_t5DC87DD578C2C5298D98E7802E92DEABB66E2ECB * L_6 = __this->get_OutStream_1();
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_7 = V_0;
@@ -29042,7 +29042,7 @@ IL_000e:
 		String_t* L_3 = ___value0;
 		NullCheck(L_2);
 		int32_t L_4;
-		L_4 = VirtFuncInvoker1< int32_t, String_t* >::Invoke(10 /* System.Int32 System.Text.Encoding::GetByteCount(System.String) */, L_2, L_3);
+		L_4 = VirtFuncInvoker1< int32_t, String_t* >::Invoke(11 /* System.Int32 System.Text.Encoding::GetByteCount(System.String) */, L_2, L_3);
 		V_0 = L_4;
 		int32_t L_5 = V_0;
 		BinaryWriter_Write7BitEncodedInt_mED0C8BE214D7B1843F2C061263939F42DFAF7B33(__this, L_5, /*hidden argument*/NULL);
@@ -29060,7 +29060,7 @@ IL_000e:
 		Encoding_tE901442411E2E70039D2A4AE77FB81C3D6064827 * L_9 = __this->get__encoding_3();
 		NullCheck(L_9);
 		int32_t L_10;
-		L_10 = VirtFuncInvoker1< int32_t, int32_t >::Invoke(31 /* System.Int32 System.Text.Encoding::GetMaxByteCount(System.Int32) */, L_9, 1);
+		L_10 = VirtFuncInvoker1< int32_t, int32_t >::Invoke(32 /* System.Int32 System.Text.Encoding::GetMaxByteCount(System.Int32) */, L_9, 1);
 		__this->set__maxChars_8(((int32_t)((int32_t)((int32_t)((int32_t)(((RuntimeArray*)L_8)->max_length)))/(int32_t)L_10)));
 	}
 
@@ -29084,7 +29084,7 @@ IL_0055:
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_17 = __this->get__largeByteBuffer_7();
 		NullCheck(L_13);
 		int32_t L_18;
-		L_18 = VirtFuncInvoker5< int32_t, String_t*, int32_t, int32_t, ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, int32_t >::Invoke(18 /* System.Int32 System.Text.Encoding::GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32) */, L_13, L_14, 0, L_16, L_17, 0);
+		L_18 = VirtFuncInvoker5< int32_t, String_t*, int32_t, int32_t, ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, int32_t >::Invoke(19 /* System.Int32 System.Text.Encoding::GetBytes(System.String,System.Int32,System.Int32,System.Byte[],System.Int32) */, L_13, L_14, 0, L_16, L_17, 0);
 		Stream_t5DC87DD578C2C5298D98E7802E92DEABB66E2ECB * L_19 = __this->get_OutStream_1();
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_20 = __this->get__largeByteBuffer_7();
 		int32_t L_21 = V_0;
@@ -35633,7 +35633,7 @@ IL_0005:
 		int32_t L_4 = L_3;
 		RuntimeObject * L_5 = Box(TermInfoStrings_tC2CD768002EED548C9D83DCA65B040248D9BD7B5_il2cpp_TypeInfo_var, &L_4);
 		NullCheck(L_1);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_1, (RuntimeObject *)(RuntimeObject *)L_2, L_5);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_1, (RuntimeObject *)(RuntimeObject *)L_2, L_5);
 		Hashtable_t7565AB92A12227AD5BADD6911F10D87EE52509AC * L_6 = __this->get_starts_1();
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_7 = ___val1;
 		NullCheck(L_7);
@@ -35644,7 +35644,7 @@ IL_0005:
 		bool L_12 = ((bool)1);
 		RuntimeObject * L_13 = Box(Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_il2cpp_TypeInfo_var, &L_12);
 		NullCheck(L_6);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_6, L_11, L_13);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_6, L_11, L_13);
 		return;
 	}
 }
@@ -35671,7 +35671,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ByteMatcher_StartsWith_m3FD18279359D5E47
 		RuntimeObject * L_3 = Box(Int32_tFDE5F8CD43D10453F6A2E0C77FE48C6CC7009046_il2cpp_TypeInfo_var, &L_2);
 		NullCheck(L_0);
 		RuntimeObject * L_4;
-		L_4 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_0, L_3);
+		L_4 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_0, L_3);
 		return (bool)((!(((RuntimeObject*)(RuntimeObject *)L_4) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
 	}
 }
@@ -35699,7 +35699,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ByteMatcher_Match_m73533801AD0EA64526
 		Hashtable_t7565AB92A12227AD5BADD6911F10D87EE52509AC * L_0 = __this->get_map_0();
 		NullCheck(L_0);
 		RuntimeObject* L_1;
-		L_1 = VirtFuncInvoker0< RuntimeObject* >::Invoke(38 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_0);
+		L_1 = VirtFuncInvoker0< RuntimeObject* >::Invoke(37 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_0);
 		NullCheck(L_1);
 		RuntimeObject* L_2;
 		L_2 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.IEnumerator System.Collections.IEnumerable::GetEnumerator() */, IEnumerable_t47A618747A1BB2A868710316F7372094849163A2_il2cpp_TypeInfo_var, L_1);
@@ -35764,7 +35764,7 @@ IL_0035:
 			ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_19 = V_1;
 			NullCheck(L_18);
 			RuntimeObject * L_20;
-			L_20 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_18, (RuntimeObject *)(RuntimeObject *)L_19);
+			L_20 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_18, (RuntimeObject *)(RuntimeObject *)L_19);
 			V_3 = ((*(int32_t*)((int32_t*)UnBox(L_20, TermInfoStrings_tC2CD768002EED548C9D83DCA65B040248D9BD7B5_il2cpp_TypeInfo_var))));
 			IL2CPP_LEAVE(0x81, FINALLY_0067);
 		}

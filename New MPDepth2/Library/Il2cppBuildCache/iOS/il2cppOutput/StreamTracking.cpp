@@ -178,8 +178,6 @@ struct CameraCallback_tD9E7B69E561CE2EFDEEDB0E7F1406AC52247160D;
 struct TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5;
 // OffAxisCamera.OffAxisCameraRig/UpdateCameraLocationEvent
 struct UpdateCameraLocationEvent_t05740E9A973F6BDF69E3665F20ACE5B2CD83312D;
-// StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14
-struct U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A;
 // StreamTrackingSystem.StreamTrackingProvider/SaveData
 struct SaveData_t2D9CC0249F1B127F8D324F24D1F03657D61B0A3F;
 // StreamTrackingSystem.StreamTrackingProvider/SavedStreamTrackingConfiguration
@@ -201,7 +199,6 @@ IL2CPP_EXTERN_C RuntimeClass* SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A06
 IL2CPP_EXTERN_C RuntimeClass* Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TrackerOffsetCalibration_tD2EC555FBB1EF1E2A33767B5EF260584742C3321_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral02EC0FD34739C2A844A6731C3854FA80A3DD1B28;
 IL2CPP_EXTERN_C String_t* _stringLiteral486B66E7C5A80B862FB8B09AD92A68207CDDA2AD;
 IL2CPP_EXTERN_C String_t* _stringLiteral4DCEDEA5F93BCB51A628179CF43BC654CFEBC3F6;
@@ -211,6 +208,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompl
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_m48595B278124B55087BED8FEA29F50D01DFAB959_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisTrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53_mDC6238E62F605314461360820EB92746B45D71E4_RuntimeMethod_var;
@@ -2210,17 +2208,17 @@ public:
 
 
 // StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14
-struct U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A  : public RuntimeObject
+struct U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A 
 {
 public:
 	// System.Int32 StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14::<>1__state
 	int32_t ___U3CU3E1__state_0;
 	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean> StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14::<>t__builder
 	AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  ___U3CU3Et__builder_1;
-	// StreamTrackingSystem.StreamTrackingProvider/SavedStreamTrackingConfiguration StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14::newCalibration
-	SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * ___newCalibration_2;
 	// StreamTrackingSystem.StreamTrackingCalibrator StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14::<>4__this
-	StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * ___U3CU3E4__this_3;
+	StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * ___U3CU3E4__this_2;
+	// StreamTrackingSystem.StreamTrackingProvider/SavedStreamTrackingConfiguration StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14::newCalibration
+	SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * ___newCalibration_3;
 	// System.Runtime.CompilerServices.TaskAwaiter StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14::<>u__1
 	TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  ___U3CU3Eu__1_4;
 
@@ -2248,22 +2246,22 @@ public:
 		#endif
 	}
 
-	inline static int32_t get_offset_of_newCalibration_2() { return static_cast<int32_t>(offsetof(U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A, ___newCalibration_2)); }
-	inline SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * get_newCalibration_2() const { return ___newCalibration_2; }
-	inline SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF ** get_address_of_newCalibration_2() { return &___newCalibration_2; }
-	inline void set_newCalibration_2(SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * value)
+	inline static int32_t get_offset_of_U3CU3E4__this_2() { return static_cast<int32_t>(offsetof(U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A, ___U3CU3E4__this_2)); }
+	inline StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * get_U3CU3E4__this_2() const { return ___U3CU3E4__this_2; }
+	inline StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C ** get_address_of_U3CU3E4__this_2() { return &___U3CU3E4__this_2; }
+	inline void set_U3CU3E4__this_2(StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * value)
 	{
-		___newCalibration_2 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___newCalibration_2), (void*)value);
+		___U3CU3E4__this_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_2), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E4__this_3() { return static_cast<int32_t>(offsetof(U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A, ___U3CU3E4__this_3)); }
-	inline StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * get_U3CU3E4__this_3() const { return ___U3CU3E4__this_3; }
-	inline StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C ** get_address_of_U3CU3E4__this_3() { return &___U3CU3E4__this_3; }
-	inline void set_U3CU3E4__this_3(StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * value)
+	inline static int32_t get_offset_of_newCalibration_3() { return static_cast<int32_t>(offsetof(U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A, ___newCalibration_3)); }
+	inline SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * get_newCalibration_3() const { return ___newCalibration_3; }
+	inline SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF ** get_address_of_newCalibration_3() { return &___newCalibration_3; }
+	inline void set_newCalibration_3(SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * value)
 	{
-		___U3CU3E4__this_3 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E4__this_3), (void*)value);
+		___newCalibration_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___newCalibration_3), (void*)value);
 	}
 
 	inline static int32_t get_offset_of_U3CU3Eu__1_4() { return static_cast<int32_t>(offsetof(U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A, ___U3CU3Eu__1_4)); }
@@ -3014,8 +3012,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponent_TisRun
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Component_GetComponentInParent_TisRuntimeObject_mADA186D1675BEA6779C469918206294354385EC3_gshared (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method);
 // System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<!0> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::Create()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92_gshared (const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::Start<System.Object>(!!0&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_mB2A27FEDA9705FC04D29CFA72DC66730C954FC2A_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, RuntimeObject ** ___stateMachine0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::Start<StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14>(!!0&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_m48595B278124B55087BED8FEA29F50D01DFAB959_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * ___stateMachine0, const RuntimeMethod* method);
 // System.Threading.Tasks.Task`1<!0> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::get_Task()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7849 * AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, const RuntimeMethod* method);
 // System.Void Client.TrackingStreamConsumer`1<System.Object>::.ctor()
@@ -3028,12 +3026,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Add_mE5B3CBB3A625606D9BC4337FEAAF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * JsonUtility_FromJson_TisRuntimeObject_m7398DCFD1F6BF2A10AB1274ABED512F322F8F4B4_gshared (String_t* ___json0, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<!0>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m1D864B65CCD0498EC4BFFBDA8F8D04AE5333195A_gshared (List_1_t3F94120C77410A62EAE48421CF166B83AB95A2F5 * __this, RuntimeObject* ___collection0, const RuntimeMethod* method);
-// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,System.Object>(!!0&,!!1&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisRuntimeObject_mA9C6EFFB0D47F2AE8623E890B305A6BF87C15FE4_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * ___awaiter0, RuntimeObject ** ___stateMachine1, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14>(!!0&,!!1&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_mACA03DF2FBC65FC4B2416D635969D3F8207E18FE_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * ___awaiter0, U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * ___stateMachine1, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::SetException(System.Exception)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, Exception_t * ___exception0, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::SetResult(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, bool ___result0, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A_gshared (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
 
 // !!0 UnityEngine.Component::GetComponent<StreamTrackingSystem.StreamTrackingDataReceiver>()
 inline StreamTrackingDataReceiver_t6A04B9CE0EDA64F9EEA319D25EDFC6153651FED0 * Component_GetComponent_TisStreamTrackingDataReceiver_t6A04B9CE0EDA64F9EEA319D25EDFC6153651FED0_m750A71A715EE2260E844B266F278F01299463431 (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method)
@@ -3061,17 +3061,15 @@ inline TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53 * Component_GetC
 }
 // System.Void MPDepthCore.TrackingSources.MPDepthTrackingSource/TrackingDataUpdatedEvent::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackingDataUpdatedEvent__ctor_mE191FC4729F2FBFA6D809DD6C46DBFA7841B6C75 (TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method);
-// System.Void StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__14__ctor_mD4EB61C0CB92268C56B7403ED8F06AD28DA6F60D (U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * __this, const RuntimeMethod* method);
 // System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<!0> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::Create()
 inline AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92 (const RuntimeMethod* method)
 {
 	return ((  AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  (*) (const RuntimeMethod*))AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92_gshared)(method);
 }
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::Start<StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14>(!!0&)
-inline void AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_m48595B278124B55087BED8FEA29F50D01DFAB959 (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A ** ___stateMachine0, const RuntimeMethod* method)
+inline void AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_m48595B278124B55087BED8FEA29F50D01DFAB959 (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * ___stateMachine0, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A **, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisRuntimeObject_mB2A27FEDA9705FC04D29CFA72DC66730C954FC2A_gshared)(__this, ___stateMachine0, method);
+	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A *, const RuntimeMethod*))AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_m48595B278124B55087BED8FEA29F50D01DFAB959_gshared)(__this, ___stateMachine0, method);
 }
 // System.Threading.Tasks.Task`1<!0> System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::get_Task()
 inline Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7849 * AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78 (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, const RuntimeMethod* method)
@@ -3171,8 +3169,6 @@ inline void List_1__ctor_m7F199C5D42B799C186A8C0DCFB7E43E94D3E8393 (List_1_t8407
 }
 // System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationProvider::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackingCalibrationProvider__ctor_m953976A4C72671B39786A555D5DC2C28D2198387 (TrackingCalibrationProvider_t936458C67919392EE6B88C439729E2AECA9293AB * __this, const RuntimeMethod* method);
-// System.Void System.Object::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405 (RuntimeObject * __this, const RuntimeMethod* method);
 // System.Void OffAxisCamera.OffAxisCameraRig::DisableCameraTracking()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OffAxisCameraRig_DisableCameraTracking_mD81DD93EBEA480488F81B9A3E7C60A66DFF7534E (OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * __this, const RuntimeMethod* method);
 // System.Threading.Tasks.Task System.Threading.Tasks.Task::Delay(System.Int32)
@@ -3182,9 +3178,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF9
 // System.Boolean System.Runtime.CompilerServices.TaskAwaiter::get_IsCompleted()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TaskAwaiter_get_IsCompleted_m6F97613C55E505B5664C3C0CFC4677D296EAA8BC (TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * __this, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14>(!!0&,!!1&)
-inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_mACA03DF2FBC65FC4B2416D635969D3F8207E18FE (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * ___awaiter0, U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A ** ___stateMachine1, const RuntimeMethod* method)
+inline void AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_mACA03DF2FBC65FC4B2416D635969D3F8207E18FE (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * ___awaiter0, U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * ___stateMachine1, const RuntimeMethod* method)
 {
-	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *, U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A **, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisRuntimeObject_mA9C6EFFB0D47F2AE8623E890B305A6BF87C15FE4_gshared)(__this, ___awaiter0, ___stateMachine1, method);
+	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *, U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A *, const RuntimeMethod*))AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_mACA03DF2FBC65FC4B2416D635969D3F8207E18FE_gshared)(__this, ___awaiter0, ___stateMachine1, method);
 }
 // System.Void System.Runtime.CompilerServices.TaskAwaiter::GetResult()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskAwaiter_GetResult_m578EEFEC4DD1AE5E77C899B8BAA3825EB79D1330 (TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * __this, const RuntimeMethod* method);
@@ -3202,6 +3198,17 @@ inline void AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271C
 {
 	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, bool, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B_gshared)(__this, ___result0, method);
 }
+// System.Void StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__14_MoveNext_m262A6236F9C537A058819F65A6992AA9F49FD42F (U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * __this, const RuntimeMethod* method);
+// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Boolean>::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+inline void AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	((  void (*) (AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *, RuntimeObject*, const RuntimeMethod*))AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A_gshared)(__this, ___stateMachine0, method);
+}
+// System.Void StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__14_SetStateMachine_mDFC942F7AB91A3C59F2C8B3A8A9CF173AFDB8829 (U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method);
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405 (RuntimeObject * __this, const RuntimeMethod* method);
 // System.Void MPDepthCore.Calibration.Camera.TrackerOffsetCalibration::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackerOffsetCalibration__ctor_m03477A4C301073620A958E842F726237BDCEE442 (TrackerOffsetCalibration_tD2EC555FBB1EF1E2A33767B5EF260584742C3321 * __this, const RuntimeMethod* method);
 // System.Void System.ThrowHelper::ThrowArgumentOutOfRangeException()
@@ -3263,22 +3270,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamReceiverToTrackingSource_Update_m6
 		if (L_3)
 		{
 			G_B2_0 = L_3;
-			goto IL_001e;
+			goto IL_001c;
 		}
 	}
 	{
-		goto IL_002a;
+		return;
 	}
 
-IL_001e:
+IL_001c:
 	{
 		RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD * L_4 = __this->get_rawTrackingData_6();
 		NullCheck(G_B2_0);
 		TrackingDataUpdatedEvent_Invoke_mA382D743DC3D1D6CCC6B5EEF5FEAE07DE1384E23(G_B2_0, L_4, /*hidden argument*/NULL);
-	}
-
-IL_002a:
-	{
 		// }
 		return;
 	}
@@ -3473,43 +3476,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_m48595B278124B55087BED8FEA29F50D01DFAB959_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * V_0 = NULL;
+	U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A  V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
-		U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * L_0 = (U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A *)il2cpp_codegen_object_new(U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_il2cpp_TypeInfo_var);
-		U3CStartCalibrationU3Ed__14__ctor_mD4EB61C0CB92268C56B7403ED8F06AD28DA6F60D(L_0, /*hidden argument*/NULL);
-		V_0 = L_0;
-		U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * L_1 = V_0;
-		NullCheck(L_1);
-		L_1->set_U3CU3E4__this_3(__this);
-		U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * L_2 = V_0;
-		SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_3 = ___newCalibration0;
-		NullCheck(L_2);
-		L_2->set_newCalibration_2(L_3);
-		U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * L_4 = V_0;
+		(&V_0)->set_U3CU3E4__this_2(__this);
+		SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_0 = ___newCalibration0;
+		(&V_0)->set_newCalibration_3(L_0);
 		IL2CPP_RUNTIME_CLASS_INIT(AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5_il2cpp_TypeInfo_var);
-		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  L_5;
-		L_5 = AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92(/*hidden argument*/AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92_RuntimeMethod_var);
-		NullCheck(L_4);
-		L_4->set_U3CU3Et__builder_1(L_5);
-		U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * L_6 = V_0;
-		NullCheck(L_6);
-		L_6->set_U3CU3E1__state_0((-1));
-		U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * L_7 = V_0;
-		NullCheck(L_7);
-		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  L_8 = L_7->get_U3CU3Et__builder_1();
-		V_1 = L_8;
-		AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_m48595B278124B55087BED8FEA29F50D01DFAB959((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)(&V_1), (U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A **)(&V_0), /*hidden argument*/AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_m48595B278124B55087BED8FEA29F50D01DFAB959_RuntimeMethod_var);
-		U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * L_9 = V_0;
-		NullCheck(L_9);
-		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_10 = L_9->get_address_of_U3CU3Et__builder_1();
-		Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7849 * L_11;
-		L_11 = AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_10, /*hidden argument*/AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78_RuntimeMethod_var);
-		return L_11;
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  L_1;
+		L_1 = AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92(/*hidden argument*/AsyncTaskMethodBuilder_1_Create_m3A614068CD14EBFEE8DE1D5255D362391F135C92_RuntimeMethod_var);
+		(&V_0)->set_U3CU3Et__builder_1(L_1);
+		(&V_0)->set_U3CU3E1__state_0((-1));
+		U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A  L_2 = V_0;
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5  L_3 = L_2.get_U3CU3Et__builder_1();
+		V_1 = L_3;
+		AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_m48595B278124B55087BED8FEA29F50D01DFAB959((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)(&V_1), (U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A *)(&V_0), /*hidden argument*/AsyncTaskMethodBuilder_1_Start_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_m48595B278124B55087BED8FEA29F50D01DFAB959_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_4 = (&V_0)->get_address_of_U3CU3Et__builder_1();
+		Task_1_t9C1FE9F18F52F3409B9E970FA38801A443AE7849 * L_5;
+		L_5 = AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_4, /*hidden argument*/AsyncTaskMethodBuilder_1_get_Task_m6F8035FA0DEBE32D20BAD45867B41491F5D55F78_RuntimeMethod_var);
+		return L_5;
 	}
 }
 // System.Void StreamTrackingSystem.StreamTrackingCalibrator::TrackingUpdated(MPDepthCore.Calibration.Camera.MPDepthTrackingData)
@@ -3758,12 +3747,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamTrackingCalibrator_CalculateCalibr
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamTrackingCalibrator__ctor_mC1CD172B65A51B42DBF6AE730E0864208F9463A8 (StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * __this, const RuntimeMethod* method)
 {
 	{
-		// [SerializeField] MPDepthTrackingSource trackingSource = default;
-		__this->set_trackingSource_4((MPDepthTrackingSource_tA6C90370587E280BDD2EB3D24CE9E0CC7A9B8BE7 *)NULL);
-		// [SerializeField] GameObject calibrationObjects = default;
-		__this->set_calibrationObjects_5((GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 *)NULL);
-		// bool calibrating = false;
-		__this->set_calibrating_7((bool)0);
 		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -4000,32 +3983,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* StreamTrackingProvider_GetSelfAsJso
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SaveData_t2D9CC0249F1B127F8D324F24D1F03657D61B0A3F_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	SaveData_t2D9CC0249F1B127F8D324F24D1F03657D61B0A3F * V_0 = NULL;
-	String_t* V_1 = NULL;
-	String_t* V_2 = NULL;
 	{
 		// SaveData saveData = new SaveData(savedCalibrations, currentCalibration);
 		List_1_t8B1A77FECF2D1AE399217C7DBED9CE531B1E795C * L_0 = __this->get_savedCalibrations_6();
 		SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_1 = __this->get_currentCalibration_5();
 		SaveData_t2D9CC0249F1B127F8D324F24D1F03657D61B0A3F * L_2 = (SaveData_t2D9CC0249F1B127F8D324F24D1F03657D61B0A3F *)il2cpp_codegen_object_new(SaveData_t2D9CC0249F1B127F8D324F24D1F03657D61B0A3F_il2cpp_TypeInfo_var);
 		SaveData__ctor_mACCBDC9AF1DAE59C29BC2D6EF608435DCA135702(L_2, L_0, L_1, /*hidden argument*/NULL);
-		V_0 = L_2;
 		// string json = JsonUtility.ToJson(saveData);
-		SaveData_t2D9CC0249F1B127F8D324F24D1F03657D61B0A3F * L_3 = V_0;
-		String_t* L_4;
-		L_4 = JsonUtility_ToJson_mF4F097C9AEC7699970E3E7E99EF8FF2F44DA1B5C(L_3, /*hidden argument*/NULL);
-		V_1 = L_4;
+		String_t* L_3;
+		L_3 = JsonUtility_ToJson_mF4F097C9AEC7699970E3E7E99EF8FF2F44DA1B5C(L_2, /*hidden argument*/NULL);
 		// return json;
-		String_t* L_5 = V_1;
-		V_2 = L_5;
-		goto IL_001e;
-	}
-
-IL_001e:
-	{
-		// }
-		String_t* L_6 = V_2;
-		return L_6;
+		return L_3;
 	}
 }
 // MPDepthCore.Calibration.Camera.TrackerOffsetCalibration StreamTrackingSystem.StreamTrackingProvider::get_GetTrackerOffsetCalibration()
@@ -4096,14 +4064,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamTrackingProvider__ctor_mEA23AAA8CC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__14__ctor_mD4EB61C0CB92268C56B7403ED8F06AD28DA6F60D (U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * __this, const RuntimeMethod* method)
-{
-	{
-		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Void StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14::MoveNext()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__14_MoveNext_m262A6236F9C537A058819F65A6992AA9F49FD42F (U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * __this, const RuntimeMethod* method)
 {
@@ -4120,202 +4080,175 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__14_MoveNext_m26
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	bool V_1 = false;
-	TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  V_2;
-	memset((&V_2), 0, sizeof(V_2));
-	U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * V_3 = NULL;
-	bool V_4 = false;
-	bool V_5 = false;
-	Exception_t * V_6 = NULL;
+	StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * V_1 = NULL;
+	bool V_2 = false;
+	TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	Exception_t * V_4 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	il2cpp::utils::ExceptionSupportStack<int32_t, 4> __leave_targets;
-	int32_t G_B12_0 = 0;
 	{
 		int32_t L_0 = __this->get_U3CU3E1__state_0();
 		V_0 = L_0;
+		StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_1 = __this->get_U3CU3E4__this_2();
+		V_1 = L_1;
 	}
 
-IL_0007:
+IL_000e:
 	try
 	{ // begin try (depth: 1)
 		{
-			int32_t L_1 = V_0;
-			if (!L_1)
+			int32_t L_2 = V_0;
+			if (!L_2)
 			{
-				goto IL_000c;
+				goto IL_0087;
 			}
-		}
-
-IL_000a:
-		{
-			goto IL_0011;
-		}
-
-IL_000c:
-		{
-			goto IL_00ad;
 		}
 
 IL_0011:
 		{
 			// offAxisCameraRig.DisableCameraTracking();
-			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_2 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_2);
-			OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * L_3 = L_2->get_offAxisCameraRig_15();
+			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_3 = V_1;
 			NullCheck(L_3);
-			OffAxisCameraRig_DisableCameraTracking_mD81DD93EBEA480488F81B9A3E7C60A66DFF7534E(L_3, /*hidden argument*/NULL);
-			// trackingSource.TrackingDataUpdated += TrackingUpdated;
-			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_4 = __this->get_U3CU3E4__this_3();
+			OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * L_4 = L_3->get_offAxisCameraRig_15();
 			NullCheck(L_4);
-			MPDepthTrackingSource_tA6C90370587E280BDD2EB3D24CE9E0CC7A9B8BE7 * L_5 = L_4->get_trackingSource_4();
-			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_6 = __this->get_U3CU3E4__this_3();
-			TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_7 = (TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 *)il2cpp_codegen_object_new(TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5_il2cpp_TypeInfo_var);
-			TrackingDataUpdatedEvent__ctor_mE191FC4729F2FBFA6D809DD6C46DBFA7841B6C75(L_7, L_6, (intptr_t)((intptr_t)StreamTrackingCalibrator_TrackingUpdated_mF41CF3400AD8F83C043AB04EE7F78F03A1B73C05_RuntimeMethod_var), /*hidden argument*/NULL);
+			OffAxisCameraRig_DisableCameraTracking_mD81DD93EBEA480488F81B9A3E7C60A66DFF7534E(L_4, /*hidden argument*/NULL);
+			// trackingSource.TrackingDataUpdated += TrackingUpdated;
+			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_5 = V_1;
 			NullCheck(L_5);
-			VirtActionInvoker1< TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * >::Invoke(4 /* System.Void MPDepthCore.TrackingSources.MPDepthTrackingSource::add_TrackingDataUpdated(MPDepthCore.TrackingSources.MPDepthTrackingSource/TrackingDataUpdatedEvent) */, L_5, L_7);
+			MPDepthTrackingSource_tA6C90370587E280BDD2EB3D24CE9E0CC7A9B8BE7 * L_6 = L_5->get_trackingSource_4();
+			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_7 = V_1;
+			TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_8 = (TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 *)il2cpp_codegen_object_new(TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5_il2cpp_TypeInfo_var);
+			TrackingDataUpdatedEvent__ctor_mE191FC4729F2FBFA6D809DD6C46DBFA7841B6C75(L_8, L_7, (intptr_t)((intptr_t)StreamTrackingCalibrator_TrackingUpdated_mF41CF3400AD8F83C043AB04EE7F78F03A1B73C05_RuntimeMethod_var), /*hidden argument*/NULL);
+			NullCheck(L_6);
+			VirtActionInvoker1< TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * >::Invoke(4 /* System.Void MPDepthCore.TrackingSources.MPDepthTrackingSource::add_TrackingDataUpdated(MPDepthCore.TrackingSources.MPDepthTrackingSource/TrackingDataUpdatedEvent) */, L_6, L_8);
 			// calibration = newCalibration;
-			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_8 = __this->get_U3CU3E4__this_3();
-			SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_9 = __this->get_newCalibration_2();
-			NullCheck(L_8);
-			L_8->set_calibration_11(L_9);
+			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_9 = V_1;
+			SavedStreamTrackingConfiguration_t882125EB1ACDF69F4BA69766647717A440F267AF * L_10 = __this->get_newCalibration_3();
+			NullCheck(L_9);
+			L_9->set_calibration_11(L_10);
 			// calibrating = true;
-			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_10 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_10);
-			L_10->set_calibrating_7((bool)1);
-			// cancelled = false;
-			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_11 = __this->get_U3CU3E4__this_3();
+			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_11 = V_1;
 			NullCheck(L_11);
-			L_11->set_cancelled_10((bool)0);
-			goto IL_00d2;
+			L_11->set_calibrating_7((bool)1);
+			// cancelled = false;
+			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_12 = V_1;
+			NullCheck(L_12);
+			L_12->set_cancelled_10((bool)0);
+			goto IL_00aa;
 		}
 
-IL_0070:
+IL_004f:
 		{
 			// await Task.Delay(5);
 			IL2CPP_RUNTIME_CLASS_INIT(Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60_il2cpp_TypeInfo_var);
-			Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 * L_12;
-			L_12 = Task_Delay_mD54722DBAF22507493263E9B1167A7F77EDDF80E(5, /*hidden argument*/NULL);
-			NullCheck(L_12);
-			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_13;
-			L_13 = Task_GetAwaiter_m1FF7528A8FE13F79207DFE970F642078EF6B1260(L_12, /*hidden argument*/NULL);
-			V_2 = L_13;
-			bool L_14;
-			L_14 = TaskAwaiter_get_IsCompleted_m6F97613C55E505B5664C3C0CFC4677D296EAA8BC((TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_2), /*hidden argument*/NULL);
-			if (L_14)
+			Task_t804B25CFE3FC13AAEE16C8FA3BF52513F2A8DB60 * L_13;
+			L_13 = Task_Delay_mD54722DBAF22507493263E9B1167A7F77EDDF80E(5, /*hidden argument*/NULL);
+			NullCheck(L_13);
+			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_14;
+			L_14 = Task_GetAwaiter_m1FF7528A8FE13F79207DFE970F642078EF6B1260(L_13, /*hidden argument*/NULL);
+			V_3 = L_14;
+			bool L_15;
+			L_15 = TaskAwaiter_get_IsCompleted_m6F97613C55E505B5664C3C0CFC4677D296EAA8BC((TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_3), /*hidden argument*/NULL);
+			if (L_15)
 			{
-				goto IL_00c9;
+				goto IL_00a3;
 			}
 		}
 
-IL_0086:
+IL_0064:
 		{
-			int32_t L_15 = 0;
-			V_0 = L_15;
-			__this->set_U3CU3E1__state_0(L_15);
-			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_16 = V_2;
-			__this->set_U3CU3Eu__1_4(L_16);
-			V_3 = __this;
-			AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_17 = __this->get_address_of_U3CU3Et__builder_1();
-			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_mACA03DF2FBC65FC4B2416D635969D3F8207E18FE((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_17, (TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_2), (U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A **)(&V_3), /*hidden argument*/AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_mACA03DF2FBC65FC4B2416D635969D3F8207E18FE_RuntimeMethod_var);
-			goto IL_017f;
+			int32_t L_16 = 0;
+			V_0 = L_16;
+			__this->set_U3CU3E1__state_0(L_16);
+			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_17 = V_3;
+			__this->set_U3CU3Eu__1_4(L_17);
+			AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_18 = __this->get_address_of_U3CU3Et__builder_1();
+			AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_mACA03DF2FBC65FC4B2416D635969D3F8207E18FE((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_18, (TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_3), (U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A *)__this, /*hidden argument*/AsyncTaskMethodBuilder_1_AwaitUnsafeOnCompleted_TisTaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C_TisU3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A_mACA03DF2FBC65FC4B2416D635969D3F8207E18FE_RuntimeMethod_var);
+			goto IL_0123;
 		}
 
-IL_00ad:
+IL_0087:
 		{
-			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_18 = __this->get_U3CU3Eu__1_4();
-			V_2 = L_18;
-			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * L_19 = __this->get_address_of_U3CU3Eu__1_4();
-			il2cpp_codegen_initobj(L_19, sizeof(TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C ));
-			int32_t L_20 = (-1);
-			V_0 = L_20;
-			__this->set_U3CU3E1__state_0(L_20);
+			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C  L_19 = __this->get_U3CU3Eu__1_4();
+			V_3 = L_19;
+			TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C * L_20 = __this->get_address_of_U3CU3Eu__1_4();
+			il2cpp_codegen_initobj(L_20, sizeof(TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C ));
+			int32_t L_21 = (-1);
+			V_0 = L_21;
+			__this->set_U3CU3E1__state_0(L_21);
 		}
 
-IL_00c9:
+IL_00a3:
 		{
-			TaskAwaiter_GetResult_m578EEFEC4DD1AE5E77C899B8BAA3825EB79D1330((TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_2), /*hidden argument*/NULL);
+			TaskAwaiter_GetResult_m578EEFEC4DD1AE5E77C899B8BAA3825EB79D1330((TaskAwaiter_t3780D365E9D10C2D6C4E76C78AA0CDF92B8F181C *)(&V_3), /*hidden argument*/NULL);
 		}
 
-IL_00d2:
+IL_00aa:
 		{
 			// while(calibrating && !cancelled)
-			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_21 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_21);
-			bool L_22 = L_21->get_calibrating_7();
-			if (!L_22)
+			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_22 = V_1;
+			NullCheck(L_22);
+			bool L_23 = L_22->get_calibrating_7();
+			if (!L_23)
 			{
-				goto IL_00ef;
+				goto IL_00ba;
 			}
 		}
 
-IL_00df:
+IL_00b2:
 		{
-			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_23 = __this->get_U3CU3E4__this_3();
-			NullCheck(L_23);
-			bool L_24 = L_23->get_cancelled_10();
-			G_B12_0 = ((((int32_t)L_24) == ((int32_t)0))? 1 : 0);
-			goto IL_00f0;
-		}
-
-IL_00ef:
-		{
-			G_B12_0 = 0;
-		}
-
-IL_00f0:
-		{
-			V_4 = (bool)G_B12_0;
-			bool L_25 = V_4;
-			if (L_25)
+			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_24 = V_1;
+			NullCheck(L_24);
+			bool L_25 = L_24->get_cancelled_10();
+			if (!L_25)
 			{
-				goto IL_0070;
+				goto IL_004f;
 			}
 		}
 
-IL_00f9:
+IL_00ba:
 		{
 			// Debug.Log("Finished calibration");
 			IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 			Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(_stringLiteral5FA8FD27D5ED3C6D58DCA0B4BF97E817548A4BE2, /*hidden argument*/NULL);
 			// offAxisCameraRig.EnableCameraTracking();
-			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_26 = __this->get_U3CU3E4__this_3();
+			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_26 = V_1;
 			NullCheck(L_26);
 			OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * L_27 = L_26->get_offAxisCameraRig_15();
 			NullCheck(L_27);
 			OffAxisCameraRig_EnableCameraTracking_mC24B2E1754DA3E2B4B80C77D0DBB0F0CC1C6EE96(L_27, /*hidden argument*/NULL);
 			// trackingSource.TrackingDataUpdated -= TrackingUpdated;
-			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_28 = __this->get_U3CU3E4__this_3();
+			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_28 = V_1;
 			NullCheck(L_28);
 			MPDepthTrackingSource_tA6C90370587E280BDD2EB3D24CE9E0CC7A9B8BE7 * L_29 = L_28->get_trackingSource_4();
-			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_30 = __this->get_U3CU3E4__this_3();
+			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_30 = V_1;
 			TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_31 = (TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 *)il2cpp_codegen_object_new(TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5_il2cpp_TypeInfo_var);
 			TrackingDataUpdatedEvent__ctor_mE191FC4729F2FBFA6D809DD6C46DBFA7841B6C75(L_31, L_30, (intptr_t)((intptr_t)StreamTrackingCalibrator_TrackingUpdated_mF41CF3400AD8F83C043AB04EE7F78F03A1B73C05_RuntimeMethod_var), /*hidden argument*/NULL);
 			NullCheck(L_29);
 			VirtActionInvoker1< TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * >::Invoke(5 /* System.Void MPDepthCore.TrackingSources.MPDepthTrackingSource::remove_TrackingDataUpdated(MPDepthCore.TrackingSources.MPDepthTrackingSource/TrackingDataUpdatedEvent) */, L_29, L_31);
 			// if (cancelled) return false;
-			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_32 = __this->get_U3CU3E4__this_3();
+			StreamTrackingCalibrator_tD383986F1D0BC99C954A4DAE69E3A7A98642812C * L_32 = V_1;
 			NullCheck(L_32);
 			bool L_33 = L_32->get_cancelled_10();
-			V_5 = L_33;
-			bool L_34 = V_5;
-			if (!L_34)
+			if (!L_33)
 			{
-				goto IL_014c;
+				goto IL_00f2;
 			}
 		}
 
-IL_0148:
+IL_00ee:
 		{
 			// if (cancelled) return false;
-			V_1 = (bool)0;
-			goto IL_016a;
+			V_2 = (bool)0;
+			goto IL_010f;
 		}
 
-IL_014c:
+IL_00f2:
 		{
 			// else return true;
-			V_1 = (bool)1;
-			goto IL_016a;
+			V_2 = (bool)1;
+			goto IL_010f;
 		}
 	} // end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -4323,42 +4256,63 @@ IL_014c:
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_0150;
+			goto CATCH_00f6;
 		}
 		throw e;
 	}
 
-CATCH_0150:
+CATCH_00f6:
 	{ // begin catch(System.Exception)
-		V_6 = ((Exception_t *)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t *));
+		V_4 = ((Exception_t *)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t *));
 		__this->set_U3CU3E1__state_0(((int32_t)-2));
-		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_35 = __this->get_address_of_U3CU3Et__builder_1();
-		Exception_t * L_36 = V_6;
-		AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_35, L_36, /*hidden argument*/((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC_RuntimeMethod_var)));
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_34 = __this->get_address_of_U3CU3Et__builder_1();
+		Exception_t * L_35 = V_4;
+		AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_34, L_35, /*hidden argument*/((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&AsyncTaskMethodBuilder_1_SetException_mE785C63DF4EC8A98FA17358A140BE482EED60AFC_RuntimeMethod_var)));
 		IL2CPP_POP_ACTIVE_EXCEPTION();
-		goto IL_017f;
+		goto IL_0123;
 	} // end catch (depth: 1)
 
-IL_016a:
+IL_010f:
 	{
 		// }
 		__this->set_U3CU3E1__state_0(((int32_t)-2));
-		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_37 = __this->get_address_of_U3CU3Et__builder_1();
-		bool L_38 = V_1;
-		AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_37, L_38, /*hidden argument*/AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B_RuntimeMethod_var);
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_36 = __this->get_address_of_U3CU3Et__builder_1();
+		bool L_37 = V_2;
+		AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_36, L_37, /*hidden argument*/AsyncTaskMethodBuilder_1_SetResult_mB50942CCDE672DB7194F876364EE271CE9FEF27B_RuntimeMethod_var);
 	}
 
-IL_017f:
+IL_0123:
 	{
 		return;
 	}
 }
+IL2CPP_EXTERN_C  void U3CStartCalibrationU3Ed__14_MoveNext_m262A6236F9C537A058819F65A6992AA9F49FD42F_AdjustorThunk (RuntimeObject * __this, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * _thisAdjusted = reinterpret_cast<U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A *>(__this + _offset);
+	U3CStartCalibrationU3Ed__14_MoveNext_m262A6236F9C537A058819F65A6992AA9F49FD42F(_thisAdjusted, method);
+}
 // System.Void StreamTrackingSystem.StreamTrackingCalibrator/<StartCalibration>d__14::SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartCalibrationU3Ed__14_SetStateMachine_mDFC942F7AB91A3C59F2C8B3A8A9CF173AFDB8829 (U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 * L_0 = __this->get_address_of_U3CU3Et__builder_1();
+		RuntimeObject* L_1 = ___stateMachine0;
+		AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A((AsyncTaskMethodBuilder_1_tABE1DEF12F121D6FC8ABF04869ED964FF83EA9B5 *)L_0, L_1, /*hidden argument*/AsyncTaskMethodBuilder_1_SetStateMachine_mCDAB8238204B89C30E35AED2CCBFB57DBC70108A_RuntimeMethod_var);
 		return;
 	}
+}
+IL2CPP_EXTERN_C  void U3CStartCalibrationU3Ed__14_SetStateMachine_mDFC942F7AB91A3C59F2C8B3A8A9CF173AFDB8829_AdjustorThunk (RuntimeObject * __this, RuntimeObject* ___stateMachine0, const RuntimeMethod* method)
+{
+	int32_t _offset = 1;
+	U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A * _thisAdjusted = reinterpret_cast<U3CStartCalibrationU3Ed__14_t2A308812815C7DC9CA1BA75B9B9BAE267B61437A *>(__this + _offset);
+	U3CStartCalibrationU3Ed__14_SetStateMachine_mDFC942F7AB91A3C59F2C8B3A8A9CF173AFDB8829(_thisAdjusted, ___stateMachine0, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

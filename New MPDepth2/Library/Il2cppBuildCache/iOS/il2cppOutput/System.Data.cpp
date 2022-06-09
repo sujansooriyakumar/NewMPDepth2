@@ -38216,7 +38216,7 @@ IL_00b1:
 		PropertyCollection_tB3B42BDE84A831DD057EAB1C19F69AB0625F5012 * L_40 = __this->get__extendedProperties_27();
 		NullCheck(L_40);
 		RuntimeObject* L_41;
-		L_41 = VirtFuncInvoker0< RuntimeObject* >::Invoke(38 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_40);
+		L_41 = VirtFuncInvoker0< RuntimeObject* >::Invoke(37 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, L_40);
 		NullCheck(L_41);
 		RuntimeObject* L_42;
 		L_42 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.IEnumerator System.Collections.IEnumerable::GetEnumerator() */, IEnumerable_t47A618747A1BB2A868710316F7372094849163A2_il2cpp_TypeInfo_var, L_41);
@@ -38246,9 +38246,9 @@ IL_010d:
 			RuntimeObject * L_49 = V_2;
 			NullCheck(L_48);
 			RuntimeObject * L_50;
-			L_50 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_48, L_49);
+			L_50 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_48, L_49);
 			NullCheck(L_46);
-			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_46, L_47, L_50);
+			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_46, L_47, L_50);
 		}
 
 IL_012c:

@@ -31598,14 +31598,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SqlString_CompareBinary_m358026D49DE0
 		String_t* L_2 = L_1.get_m_value_0();
 		NullCheck(L_0);
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_3;
-		L_3 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_0, L_2);
+		L_3 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(18 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_0, L_2);
 		V_0 = L_3;
 		UnicodeEncoding_tBB60B97AFC49D6246F28BF16D3E09822FCCACC68 * L_4 = ((SqlString_t2CFD797DC19AC10EFAE0277F867ABCFCD7F7AA6E_StaticFields*)il2cpp_codegen_static_fields_for(SqlString_t2CFD797DC19AC10EFAE0277F867ABCFCD7F7AA6E_il2cpp_TypeInfo_var))->get_s_unicodeEncoding_6();
 		SqlString_t2CFD797DC19AC10EFAE0277F867ABCFCD7F7AA6E  L_5 = ___y1;
 		String_t* L_6 = L_5.get_m_value_0();
 		NullCheck(L_4);
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_7;
-		L_7 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_4, L_6);
+		L_7 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(18 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_4, L_6);
 		V_1 = L_7;
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_8 = V_0;
 		NullCheck(L_8);
@@ -32341,7 +32341,7 @@ IL_000a:
 		L_5 = String_TrimEnd_mA98B5B9C45CCAB016F32F1C8BBE29A215B9D277E(L_3, L_4, /*hidden argument*/NULL);
 		NullCheck(L_2);
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_6;
-		L_6 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_2, L_5);
+		L_6 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(18 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_2, L_5);
 		V_0 = L_6;
 		goto IL_0078;
 	}

@@ -327,7 +327,7 @@ static void NewMPDepth2_CustomAttributesCacheGenerator(CustomAttributesCache* ca
 	}
 	{
 		DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * tmp = (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B *)cache->attributes[2];
-		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 263LL, NULL);
+		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 2LL, NULL);
 	}
 }
 static void CalibrationBreaker_t9989360A36C81975733EB5A02E8FEF916E21D38E_CustomAttributesCacheGenerator_position(CustomAttributesCache* cache)
