@@ -17,7 +17,7 @@ public class ReceiveBlendshapes : MonoBehaviour
     private Vector3 position;
     private Vector3 rotation;
     private float[] blendshapes;
-    private float rotationOffset;
+    [SerializeField]private float rotationOffset;
     private MirrorModeController mirrorModeController;
     private void Start()
     {
@@ -38,7 +38,7 @@ public class ReceiveBlendshapes : MonoBehaviour
             }
         }
         if(neckBone) neckBone.localScale = new Vector3(1.1f, 1.1f, 1.1f);
-        rotationOffset = headBone.rotation.eulerAngles.x;
+        //rotationOffset = headBone.rotation.eulerAngles.x * 2;
         mirrorModeController = MirrorModeController.instance;
         //headBone.rotation = Quaternion.Euler(Vector3.zero);
     }
@@ -64,13 +64,13 @@ public class ReceiveBlendshapes : MonoBehaviour
         {
             if (isMirrorAvatar)
             {
-                headBone.rotation = Quaternion.Euler((rotation.x-rotationOffset), (180 - rotation.y), -rotation.z);
+                headBone.rotation = Quaternion.Euler((rotation.x+rotationOffset), (180 - rotation.y), -rotation.z);
                 transform.localPosition = new Vector3(position.x, position.y, -position.z);
             }
 
             else if (!isMirrorAvatar)
             {
-                headBone.rotation = Quaternion.Euler((rotation.x-rotationOffset), -(180 - rotation.y), rotation.z);
+                headBone.rotation = Quaternion.Euler((rotation.x+rotationOffset), -(180 - rotation.y), rotation.z);
                 if (position.magnitude > 0) transform.localPosition = new Vector3(position.x, -position.y, -position.z);
 
 
@@ -147,5 +147,10 @@ public class ReceiveBlendshapes : MonoBehaviour
     public void SetIsMirrorAvatar(bool val)
     {
         isMirrorAvatar = val;
+    }
+
+    public void SetRotationOffset(float val)
+    {
+        rotationOffset = val;
     }
 }

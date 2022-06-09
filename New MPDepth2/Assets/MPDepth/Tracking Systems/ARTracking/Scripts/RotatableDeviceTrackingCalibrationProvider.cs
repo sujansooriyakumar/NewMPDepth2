@@ -40,7 +40,7 @@ public class RotatableDeviceTrackingCalibrationProvider : TrackingCalibrationPro
     Vector3 PortraitOffset => currentCalibration.portraitOffset;
 
     Vector3 LandscapeLeftOffset => new Vector3(PortraitOffset.y, -PortraitOffset.x, PortraitOffset.z);
-    Vector3 LandscapeRightOffset => new Vector3(PortraitOffset.y, PortraitOffset.x, PortraitOffset.z);
+    Vector3 LandscapeRightOffset => new Vector3(-PortraitOffset.y, PortraitOffset.x, PortraitOffset.z);
     Vector3 PortraitUpsideDownOffset => -PortraitOffset;
 
     DeviceOrientation CurrentOrientation
@@ -123,24 +123,24 @@ public class RotatableDeviceTrackingCalibrationProvider : TrackingCalibrationPro
 
     private void Update()
     {
-        DeviceOrientation orientation = CurrentOrientation;
-        switch (orientation)
-        {
-            case DeviceOrientation.Portrait:
-                calibrationTransform.position = PortraitOffset;
-                break;
-            case DeviceOrientation.PortraitUpsideDown:
-                calibrationTransform.position = PortraitUpsideDownOffset;
-                break;
-            case DeviceOrientation.LandscapeLeft:
-                calibrationTransform.position = LandscapeLeftOffset;
-                break;
-            case DeviceOrientation.LandscapeRight:
-                calibrationTransform.position = LandscapeRightOffset;
-                break;
-            default:
-                throw new ArgumentException($"unspported orientation {orientation}");
-        }
+        //DeviceOrientation orientation = CurrentOrientation;
+        //switch (orientation)
+        //{
+        //    case DeviceOrientation.Portrait:
+        //        calibrationTransform.position = PortraitOffset;
+        //        break;
+        //    case DeviceOrientation.PortraitUpsideDown:
+        //        calibrationTransform.position = PortraitUpsideDownOffset;
+        //        break;
+        //    case DeviceOrientation.LandscapeLeft:
+        //        calibrationTransform.position = LandscapeLeftOffset;
+        //        break;
+        //    case DeviceOrientation.LandscapeRight:
+        //        calibrationTransform.position = LandscapeRightOffset;
+        //        break;
+        //    default:
+        //        throw new ArgumentException($"unspported orientation {orientation}");
+        //}
     }
 
     protected override void SetCurrentToDefaultCalibration()

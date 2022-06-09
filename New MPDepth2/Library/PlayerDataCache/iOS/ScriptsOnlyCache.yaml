@@ -14,6 +14,7 @@ ScriptsOnlyBuild:
     - ARCalibrationDropdown
     - ChangeColor
     - ChangeName
+    - DebugSlider
     - ExitGames.Demos.DemoPunVoice.FirstPersonController
     - ExitGames.Demos.DemoPunVoice.Highlighter
     - ExitGames.Demos.DemoPunVoice.OrthographicController
@@ -34,6 +35,8 @@ ScriptsOnlyBuild:
     - CreateAndJoinRoom
     - Spawner
     NewMPDepth2.dll:
+    - CalibrationBreaker
+    - CalibrationMatrixSliderDisplay
     - Character
     - CharacterSelector
     - DebugDisplay
@@ -373,6 +376,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6324}
     - Class: 114
       Script: {instanceID: 6420}
+    - Class: 114
+      Script: {instanceID: 122478}
+    - Class: 114
+      Script: {instanceID: 192772}
+    - Class: 114
+      Script: {instanceID: 306102}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -1636,7 +1645,7 @@ ScriptsOnlyBuild:
     className: SidebarToggle
   - hash:
       serializedVersion: 2
-      Hash: e8fd92d077df9178d111e6f6ecaf746c
+      Hash: 76d6186dba3e61b307b37645197499cf
     assemblyName: NewMPDepth2.dll
     namespaceName: 
     className: ReceiveBlendshapes
@@ -2720,6 +2729,24 @@ ScriptsOnlyBuild:
     assemblyName: ReadyPlayerMe.dll
     namespaceName: ReadyPlayerMe
     className: EyeAnimationHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 1028c39545bcfa841aaab54121e69a47
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DebugSlider
+  - hash:
+      serializedVersion: 2
+      Hash: 3a4935645a61f31d632d2755dcbf4899
+    assemblyName: NewMPDepth2.dll
+    namespaceName: 
+    className: CalibrationBreaker
+  - hash:
+      serializedVersion: 2
+      Hash: 09d7b745d3eada97464eaa6778c32470
+    assemblyName: NewMPDepth2.dll
+    namespaceName: 
+    className: CalibrationMatrixSliderDisplay
   platform: 9
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
