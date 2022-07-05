@@ -14,12 +14,12 @@ public class ParallaxControl : MonoBehaviour
         if (offAxisCamera.GetTrackingDisabled())
         {
             offAxisCamera.EnableCameraTracking();
-            GetComponentInChildren<Text>().text = "MPDepth On";
+            GetComponentInChildren<Text>().text = "MPDepth\nOn";
         }
         else
         {
             offAxisCamera.DisableCameraTracking();
-            GetComponentInChildren<Text>().text = "MPDepth Off";
+            GetComponentInChildren<Text>().text = "MPDepth\nOff";
         }
     }
 }

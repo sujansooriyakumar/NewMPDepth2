@@ -21,6 +21,7 @@ public class uiController : MonoBehaviour
     [SerializeField] GameObject connectionUI;
     [SerializeField] GameObject urlCanvas;
     [SerializeField] GameObject customCalibrationCanvas;
+    [SerializeField] GameObject mirrorCalibrationCanvas;
 
     public void SubmitDeviceStreamIP()
     {
@@ -81,5 +82,14 @@ public class uiController : MonoBehaviour
     public void ShowCustomCalibrationUI()
     {
         customCalibrationCanvas.SetActive(true);
+    }
+
+    public void MirrorCalibration()
+    {
+        if (mirrorCalibrationCanvas.activeInHierarchy) mirrorCalibrationCanvas.SetActive(false);
+        else
+        {
+            mirrorCalibrationCanvas.SetActive(true);
+        }
     }
 }

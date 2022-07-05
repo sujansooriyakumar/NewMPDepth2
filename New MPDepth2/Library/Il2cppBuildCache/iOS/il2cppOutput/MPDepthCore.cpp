@@ -693,6 +693,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m276A839E05BF1FA32EE373C025
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m44B5FB77FB3CA1EB2EC5710C797477A731ABCF29_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m4F5B508A5B918CAD46ED6A3FF34D074837790E37_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m6211C49C679C365A119F14C284E2ED8549437D5D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ManualDebugSource_GetRawTrackingData_mC54B0F5310A995DA211432225F9146B9F96FCE68_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TrackingCalibrationManager_RawDataUpdated_m53EC8F690D7951B5506FACB2ACC91C4E5176F676_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TrackingPose_Calibrate_TisCameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE_m54788D615690BD2A3191C02E3F3840A256B70A00_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TrackingPose_Calibrate_TisLeftEyeTrackingData_t98405D9A33C67242FEB162A1252D20D0A9BBB323_mEA2BF55B600D053022FF5609952A41A3AC345CC0_RuntimeMethod_var;
@@ -8095,8 +8096,10 @@ public:
 	Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * ___calibrationDropdown_12;
 	// UnityEngine.UI.Dropdown MPDepthCore.TrackingSystemsManager::trackingSystemsDropdown
 	Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * ___trackingSystemsDropdown_13;
+	// UnityEngine.Transform MPDepthCore.TrackingSystemsManager::offAxisCam
+	Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * ___offAxisCam_14;
 	// MPDepthCore.TrackingSources.MPDepthTrackingSource/TrackingDataUpdatedEvent MPDepthCore.TrackingSystemsManager::TrackingDataUpdated
-	TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * ___TrackingDataUpdated_14;
+	TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * ___TrackingDataUpdated_15;
 
 public:
 	inline static int32_t get_offset_of_currentTrackingSystemIndex_4() { return static_cast<int32_t>(offsetof(TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40, ___currentTrackingSystemIndex_4)); }
@@ -8179,13 +8182,22 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___trackingSystemsDropdown_13), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_TrackingDataUpdated_14() { return static_cast<int32_t>(offsetof(TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40, ___TrackingDataUpdated_14)); }
-	inline TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * get_TrackingDataUpdated_14() const { return ___TrackingDataUpdated_14; }
-	inline TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 ** get_address_of_TrackingDataUpdated_14() { return &___TrackingDataUpdated_14; }
-	inline void set_TrackingDataUpdated_14(TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * value)
+	inline static int32_t get_offset_of_offAxisCam_14() { return static_cast<int32_t>(offsetof(TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40, ___offAxisCam_14)); }
+	inline Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * get_offAxisCam_14() const { return ___offAxisCam_14; }
+	inline Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 ** get_address_of_offAxisCam_14() { return &___offAxisCam_14; }
+	inline void set_offAxisCam_14(Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * value)
 	{
-		___TrackingDataUpdated_14 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___TrackingDataUpdated_14), (void*)value);
+		___offAxisCam_14 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___offAxisCam_14), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_TrackingDataUpdated_15() { return static_cast<int32_t>(offsetof(TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40, ___TrackingDataUpdated_15)); }
+	inline TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * get_TrackingDataUpdated_15() const { return ___TrackingDataUpdated_15; }
+	inline TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 ** get_address_of_TrackingDataUpdated_15() { return &___TrackingDataUpdated_15; }
+	inline void set_TrackingDataUpdated_15(TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * value)
+	{
+		___TrackingDataUpdated_15 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___TrackingDataUpdated_15), (void*)value);
 	}
 };
 
@@ -13684,6 +13696,10 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackingCalibrationProvider_t9364
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ScreenCalibrationProvider_tD648C36DFC6279FB60A284A5824D0FA012CD9F80 * TrackingSystem_get_ScreenCalibrationProvider_mE5DB4C897ABA0A9FF82BCD985148185C7E969472_inline (TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53 * __this, const RuntimeMethod* method);
 // System.Void MPDepthCore.TrackingSystemsManager::UpdateCalibrationDropdown()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackingSystemsManager_UpdateCalibrationDropdown_mC924E6F85359FE96F04924AE8A5B209B8CA8629A (TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40 * __this, const RuntimeMethod* method);
+// UnityEngine.Vector3 UnityEngine.Vector3::op_Multiply(UnityEngine.Vector3,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  Vector3_op_Multiply_m9EA3D18290418D7B410C7D11C4788C13BFD2C30A_inline (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___a0, float ___d1, const RuntimeMethod* method);
+// UnityEngine.Vector3 UnityEngine.Vector3::op_Addition(UnityEngine.Vector3,UnityEngine.Vector3)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  Vector3_op_Addition_mEE4F672B923CCB184C39AABCA33443DB218E50E0_inline (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___a0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___b1, const RuntimeMethod* method);
 // UnityEngine.Quaternion UnityEngine.Transform::get_rotation()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200 (Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * __this, const RuntimeMethod* method);
 // UnityEngine.Quaternion UnityEngine.Quaternion::op_Multiply(UnityEngine.Quaternion,UnityEngine.Quaternion)
@@ -15140,6 +15156,16 @@ IL_0052:
 		return;
 	}
 }
+// MPDepthCore.Calibration.Camera.MPDepthTrackingData MPDepthCore.TrackingSources.ManualDebugSource::GetRawTrackingData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * ManualDebugSource_GetRawTrackingData_mC54B0F5310A995DA211432225F9146B9F96FCE68 (ManualDebugSource_t7260C125A028CA38DAB5C37788FE9D3C57C30AC7 * __this, const RuntimeMethod* method)
+{
+	{
+		// throw new System.NotImplementedException();
+		NotImplementedException_t26260C4EE0444C5FA022994203060B3A42A3ADE6 * L_0 = (NotImplementedException_t26260C4EE0444C5FA022994203060B3A42A3ADE6 *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t26260C4EE0444C5FA022994203060B3A42A3ADE6_il2cpp_TypeInfo_var)));
+		NotImplementedException__ctor_mA2E9CE7F00CB335581A296D2596082D57E45BA83(L_0, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ManualDebugSource_GetRawTrackingData_mC54B0F5310A995DA211432225F9146B9F96FCE68_RuntimeMethod_var)));
+	}
+}
 // System.Void MPDepthCore.TrackingSources.ManualDebugSource::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualDebugSource__ctor_m2C7FE36B514410F39213E38FFDE8F9BFD65EEEDB (ManualDebugSource_t7260C125A028CA38DAB5C37788FE9D3C57C30AC7 * __this, const RuntimeMethod* method)
 {
@@ -16592,6 +16618,15 @@ IL_0050:
 		return;
 	}
 }
+// MPDepthCore.Calibration.Camera.MPDepthTrackingData MPDepthCore.Calibration.Camera.TrackingCalibrationManager::GetRawTrackingData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * TrackingCalibrationManager_GetRawTrackingData_mAE2F6BA2162314F924DEDEA1441192DBF2650A19 (TrackingCalibrationManager_t9B796F67A9D50200FC5443D75EA34A3F86035CF5 * __this, const RuntimeMethod* method)
+{
+	{
+		// return rawTrackingData;
+		RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD * L_0 = __this->get_rawTrackingData_8();
+		return L_0;
+	}
+}
 // System.Void MPDepthCore.Calibration.Camera.TrackingCalibrationManager::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackingCalibrationManager__ctor_m6D9493FF096C12F0877C002C4C77B4E1AE80C782 (TrackingCalibrationManager_t9B796F67A9D50200FC5443D75EA34A3F86035CF5 * __this, const RuntimeMethod* method)
 {
@@ -17102,7 +17137,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackingSystemsManager_add_TrackingDataU
 	TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * V_1 = NULL;
 	TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * V_2 = NULL;
 	{
-		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_0 = __this->get_TrackingDataUpdated_14();
+		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_0 = __this->get_TrackingDataUpdated_15();
 		V_0 = L_0;
 	}
 
@@ -17115,7 +17150,7 @@ IL_0007:
 		Delegate_t * L_4;
 		L_4 = Delegate_Combine_m631D10D6CFF81AB4F237B9D549B235A54F45FA55(L_2, L_3, /*hidden argument*/NULL);
 		V_2 = ((TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 *)CastclassSealed((RuntimeObject*)L_4, TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5_il2cpp_TypeInfo_var));
-		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 ** L_5 = __this->get_address_of_TrackingDataUpdated_14();
+		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 ** L_5 = __this->get_address_of_TrackingDataUpdated_15();
 		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_6 = V_2;
 		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_7 = V_1;
 		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_8;
@@ -17145,7 +17180,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackingSystemsManager_remove_TrackingDa
 	TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * V_1 = NULL;
 	TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * V_2 = NULL;
 	{
-		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_0 = __this->get_TrackingDataUpdated_14();
+		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_0 = __this->get_TrackingDataUpdated_15();
 		V_0 = L_0;
 	}
 
@@ -17158,7 +17193,7 @@ IL_0007:
 		Delegate_t * L_4;
 		L_4 = Delegate_Remove_m8B4AD17254118B2904720D55C9B34FB3DCCBD7D4(L_2, L_3, /*hidden argument*/NULL);
 		V_2 = ((TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 *)CastclassSealed((RuntimeObject*)L_4, TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5_il2cpp_TypeInfo_var));
-		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 ** L_5 = __this->get_address_of_TrackingDataUpdated_14();
+		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 ** L_5 = __this->get_address_of_TrackingDataUpdated_15();
 		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_6 = V_2;
 		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_7 = V_1;
 		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_8;
@@ -17349,7 +17384,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackingSystemsManager_TrackingDataWasUp
 	TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * G_B1_0 = NULL;
 	{
 		// TrackingDataUpdated?.Invoke(data);
-		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_0 = __this->get_TrackingDataUpdated_14();
+		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_0 = __this->get_TrackingDataUpdated_15();
 		TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * L_1 = L_0;
 		G_B1_0 = L_1;
 		if (L_1)
@@ -17374,11 +17409,11 @@ IL_0012:
 		// ApplyCalibration(data);
 		MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * L_3 = ___data0;
 		TrackingSystemsManager_ApplyCalibration_m14C8774EF47F0A3A5085852031C7F462F32FA6FC(__this, L_3, /*hidden argument*/NULL);
-		// offAxisCameraRig.UpdateCameraLocation(CurrentCalibratedTrackingData.CameraTrackingData.Position);
+		// offAxisCameraRig.UpdateCameraLocation(data.CameraTrackingData.Position);
 		OffAxisCameraRig_t4D75ABB703326AECD6E9264E7F58BAA1176788FF * L_4 = __this->get_offAxisCameraRig_6();
-		CalibratedTrackingData_t21AC53CB881D7BFEE6790DA2C0FA9D6ED512EC57 * L_5 = __this->get_CurrentCalibratedTrackingData_10();
+		MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * L_5 = ___data0;
 		NullCheck(L_5);
-		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_6 = ((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_5)->get_CameraTrackingData_1();
+		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_6 = L_5->get_CameraTrackingData_1();
 		NullCheck(L_6);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_7 = ((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_6)->get_Position_0();
 		NullCheck(L_4);
@@ -17416,65 +17451,87 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackingSystemsManager_ApplyCalibration_
 {
 	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_0;
 	memset((&V_0), 0, sizeof(V_0));
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_1;
+	Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  V_1;
 	memset((&V_1), 0, sizeof(V_1));
-	Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  V_2;
-	memset((&V_2), 0, sizeof(V_2));
 	{
-		// Vector3 pos = calibrationTransform.TransformPoint(data.CameraTrackingData.Position);
+		// Transform t = calibrationTransform;
 		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_0 = __this->get_calibrationTransform_11();
-		MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * L_1 = ___data0;
+		// t.position *= -1;
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_1 = L_0;
 		NullCheck(L_1);
-		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_2 = L_1->get_CameraTrackingData_1();
-		NullCheck(L_2);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_3 = ((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_2)->get_Position_0();
-		NullCheck(L_0);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4;
-		L_4 = Transform_TransformPoint_m68AF95765A9279192E601208A9C5170027A5F0D2(L_0, L_3, /*hidden argument*/NULL);
-		V_0 = L_4;
-		// Vector3 rot = (calibrationTransform.rotation * Quaternion.Euler(data.CameraTrackingData.Eulers)).eulerAngles;
-		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_5 = __this->get_calibrationTransform_11();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
+		L_2 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_1, /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_3;
+		L_3 = Vector3_op_Multiply_m9EA3D18290418D7B410C7D11C4788C13BFD2C30A_inline(L_2, (-1.0f), /*hidden argument*/NULL);
+		NullCheck(L_1);
+		Transform_set_position_mB169E52D57EEAC1E3F22C5395968714E4F00AC91(L_1, L_3, /*hidden argument*/NULL);
+		// Vector3 pos = data.CameraTrackingData.Position + calibrationTransform.position;
+		MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * L_4 = ___data0;
+		NullCheck(L_4);
+		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_5 = L_4->get_CameraTrackingData_1();
 		NullCheck(L_5);
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_6;
-		L_6 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_5, /*hidden argument*/NULL);
-		MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * L_7 = ___data0;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6 = ((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_5)->get_Position_0();
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_7 = __this->get_calibrationTransform_11();
 		NullCheck(L_7);
-		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_8 = L_7->get_CameraTrackingData_1();
-		NullCheck(L_8);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_9 = ((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_8)->get_Eulers_1();
-		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_10;
-		L_10 = Quaternion_Euler_m887ABE4F4DD563351E9874D63922C2F53969BBAB(L_9, /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_8;
+		L_8 = Transform_get_position_m40A8A9895568D56FFC687B57F30E8D53CB5EA341(L_7, /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_9;
+		L_9 = Vector3_op_Addition_mEE4F672B923CCB184C39AABCA33443DB218E50E0_inline(L_6, L_8, /*hidden argument*/NULL);
+		V_0 = L_9;
+		// Vector3 flippedCalibrationRot = calibrationTransform.rotation.eulerAngles * -1;
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_10 = __this->get_calibrationTransform_11();
+		NullCheck(L_10);
 		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_11;
-		L_11 = Quaternion_op_Multiply_m5C7A60AC0CDCA2C5E2F23E45FBD1B15CA152D7B0(L_6, L_10, /*hidden argument*/NULL);
-		V_2 = L_11;
+		L_11 = Transform_get_rotation_m4AA3858C00DF4C9614B80352558C4C37D08D2200(L_10, /*hidden argument*/NULL);
+		V_1 = L_11;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_12;
-		L_12 = Quaternion_get_eulerAngles_m3DA616CAD670235A407E8A7A75925AA8E22338C3((Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4 *)(&V_2), /*hidden argument*/NULL);
-		V_1 = L_12;
-		// CurrentCalibratedTrackingData.CameraTrackingData.Position = pos;
-		CalibratedTrackingData_t21AC53CB881D7BFEE6790DA2C0FA9D6ED512EC57 * L_13 = __this->get_CurrentCalibratedTrackingData_10();
-		NullCheck(L_13);
-		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_14 = ((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_13)->get_CameraTrackingData_1();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_15 = V_0;
-		NullCheck(L_14);
-		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_14)->set_Position_0(L_15);
-		// CurrentCalibratedTrackingData.CameraTrackingData.Eulers = rot;
-		CalibratedTrackingData_t21AC53CB881D7BFEE6790DA2C0FA9D6ED512EC57 * L_16 = __this->get_CurrentCalibratedTrackingData_10();
+		L_12 = Quaternion_get_eulerAngles_m3DA616CAD670235A407E8A7A75925AA8E22338C3((Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4 *)(&V_1), /*hidden argument*/NULL);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_13;
+		L_13 = Vector3_op_Multiply_m9EA3D18290418D7B410C7D11C4788C13BFD2C30A_inline(L_12, (-1.0f), /*hidden argument*/NULL);
+		// Vector3 rot = (Quaternion.Euler(flippedCalibrationRot) * Quaternion.Euler(data.CameraTrackingData.Eulers)).eulerAngles;
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_14;
+		L_14 = Quaternion_Euler_m887ABE4F4DD563351E9874D63922C2F53969BBAB(L_13, /*hidden argument*/NULL);
+		MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * L_15 = ___data0;
+		NullCheck(L_15);
+		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_16 = L_15->get_CameraTrackingData_1();
 		NullCheck(L_16);
-		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_17 = ((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_16)->get_CameraTrackingData_1();
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_18 = V_1;
-		NullCheck(L_17);
-		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_17)->set_Eulers_1(L_18);
-		// CurrentCalibratedTrackingData.BlendshapeTrackingData.Blendshapes = data.BlendshapeTrackingData.Blendshapes;
-		CalibratedTrackingData_t21AC53CB881D7BFEE6790DA2C0FA9D6ED512EC57 * L_19 = __this->get_CurrentCalibratedTrackingData_10();
-		NullCheck(L_19);
-		BlendshapeTrackingData_t989894D483314D943170C8D7E807572809AF9529 * L_20 = ((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_19)->get_BlendshapeTrackingData_3();
-		MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * L_21 = ___data0;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_17 = ((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_16)->get_Eulers_1();
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_18;
+		L_18 = Quaternion_Euler_m887ABE4F4DD563351E9874D63922C2F53969BBAB(L_17, /*hidden argument*/NULL);
+		Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4  L_19;
+		L_19 = Quaternion_op_Multiply_m5C7A60AC0CDCA2C5E2F23E45FBD1B15CA152D7B0(L_14, L_18, /*hidden argument*/NULL);
+		V_1 = L_19;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_20;
+		L_20 = Quaternion_get_eulerAngles_m3DA616CAD670235A407E8A7A75925AA8E22338C3((Quaternion_t6D28618CF65156D4A0AD747370DDFD0C514A31B4 *)(&V_1), /*hidden argument*/NULL);
+		// CurrentCalibratedTrackingData.CameraTrackingData.Position = pos;
+		CalibratedTrackingData_t21AC53CB881D7BFEE6790DA2C0FA9D6ED512EC57 * L_21 = __this->get_CurrentCalibratedTrackingData_10();
 		NullCheck(L_21);
-		BlendshapeTrackingData_t989894D483314D943170C8D7E807572809AF9529 * L_22 = L_21->get_BlendshapeTrackingData_3();
+		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_22 = ((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_21)->get_CameraTrackingData_1();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_23 = V_0;
 		NullCheck(L_22);
-		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_23 = L_22->get_Blendshapes_0();
-		NullCheck(L_20);
-		L_20->set_Blendshapes_0(L_23);
+		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_22)->set_Position_0(L_23);
+		// CurrentCalibratedTrackingData.CameraTrackingData.Eulers = data.CameraTrackingData.Eulers;
+		CalibratedTrackingData_t21AC53CB881D7BFEE6790DA2C0FA9D6ED512EC57 * L_24 = __this->get_CurrentCalibratedTrackingData_10();
+		NullCheck(L_24);
+		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_25 = ((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_24)->get_CameraTrackingData_1();
+		MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * L_26 = ___data0;
+		NullCheck(L_26);
+		CameraTrackingData_tAAE8DCC63B02088F63C7D759E4FCF8A268374FCE * L_27 = L_26->get_CameraTrackingData_1();
+		NullCheck(L_27);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_28 = ((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_27)->get_Eulers_1();
+		NullCheck(L_25);
+		((TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265 *)L_25)->set_Eulers_1(L_28);
+		// CurrentCalibratedTrackingData.BlendshapeTrackingData.Blendshapes = data.BlendshapeTrackingData.Blendshapes;
+		CalibratedTrackingData_t21AC53CB881D7BFEE6790DA2C0FA9D6ED512EC57 * L_29 = __this->get_CurrentCalibratedTrackingData_10();
+		NullCheck(L_29);
+		BlendshapeTrackingData_t989894D483314D943170C8D7E807572809AF9529 * L_30 = ((MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 *)L_29)->get_BlendshapeTrackingData_3();
+		MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * L_31 = ___data0;
+		NullCheck(L_31);
+		BlendshapeTrackingData_t989894D483314D943170C8D7E807572809AF9529 * L_32 = L_31->get_BlendshapeTrackingData_3();
+		NullCheck(L_32);
+		SingleU5BU5D_t47E8DBF5B597C122478D1FFBD9DD57399A0650FA* L_33 = L_32->get_Blendshapes_0();
+		NullCheck(L_30);
+		L_30->set_Blendshapes_0(L_33);
 		// }
 		return;
 	}
@@ -19310,6 +19367,63 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ScreenCalibrationProvider_tD648C3
 		// public ScreenCalibrationProvider ScreenCalibrationProvider => screenCalibrationProvider;
 		ScreenCalibrationProvider_tD648C36DFC6279FB60A284A5824D0FA012CD9F80 * L_0 = __this->get_screenCalibrationProvider_6();
 		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  Vector3_op_Multiply_m9EA3D18290418D7B410C7D11C4788C13BFD2C30A_inline (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___a0, float ___d1, const RuntimeMethod* method)
+{
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = ___a0;
+		float L_1 = L_0.get_x_2();
+		float L_2 = ___d1;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_3 = ___a0;
+		float L_4 = L_3.get_y_3();
+		float L_5 = ___d1;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6 = ___a0;
+		float L_7 = L_6.get_z_4();
+		float L_8 = ___d1;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_9;
+		memset((&L_9), 0, sizeof(L_9));
+		Vector3__ctor_m57495F692C6CE1CEF278CAD9A98221165D37E636_inline((&L_9), ((float)il2cpp_codegen_multiply((float)L_1, (float)L_2)), ((float)il2cpp_codegen_multiply((float)L_4, (float)L_5)), ((float)il2cpp_codegen_multiply((float)L_7, (float)L_8)), /*hidden argument*/NULL);
+		V_0 = L_9;
+		goto IL_0021;
+	}
+
+IL_0021:
+	{
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_10 = V_0;
+		return L_10;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  Vector3_op_Addition_mEE4F672B923CCB184C39AABCA33443DB218E50E0_inline (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___a0, Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___b1, const RuntimeMethod* method)
+{
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = ___a0;
+		float L_1 = L_0.get_x_2();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___b1;
+		float L_3 = L_2.get_x_2();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4 = ___a0;
+		float L_5 = L_4.get_y_3();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6 = ___b1;
+		float L_7 = L_6.get_y_3();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_8 = ___a0;
+		float L_9 = L_8.get_z_4();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_10 = ___b1;
+		float L_11 = L_10.get_z_4();
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_12;
+		memset((&L_12), 0, sizeof(L_12));
+		Vector3__ctor_m57495F692C6CE1CEF278CAD9A98221165D37E636_inline((&L_12), ((float)il2cpp_codegen_add((float)L_1, (float)L_3)), ((float)il2cpp_codegen_add((float)L_5, (float)L_7)), ((float)il2cpp_codegen_add((float)L_9, (float)L_11)), /*hidden argument*/NULL);
+		V_0 = L_12;
+		goto IL_0030;
+	}
+
+IL_0030:
+	{
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_13 = V_0;
+		return L_13;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tCA32F60E5D373503E782165058D7A7D1F2C7C13E * TrackingSystemsManager_get_TrackingSystems_mA02A31469D95D78F25168B415F4D53B1D782263E_inline (TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40 * __this, const RuntimeMethod* method)

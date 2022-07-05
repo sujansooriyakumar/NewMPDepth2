@@ -102,6 +102,9 @@ public class RotatableScreenCalibrator : ScreenCalibrator
         calibrating = false;
     }
 
+    public void Update()
+    {
+    }
 
     void FinalizeSizeChange()
     {

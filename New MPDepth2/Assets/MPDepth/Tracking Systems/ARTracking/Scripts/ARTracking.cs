@@ -40,4 +40,9 @@ public class ARTracking : MPDepthTrackingSource
         trackingData = updatedData as RawTrackingData;
         TrackingDataUpdated?.Invoke(updatedData);
     }
+
+    public override MPDepthTrackingData GetRawTrackingData()
+    {
+        return trackingData;
+    }
 }

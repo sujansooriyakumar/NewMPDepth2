@@ -12,24 +12,28 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
 
     public void CreateRoom()
     {
-        if(PhotonNetwork.CountOfRooms == 0)
+        if (PhotonNetwork.CountOfPlayersInRooms == 0)
         {
-            PhotonNetwork.CreateRoom("Test");
+            PhotonNetwork.CreateRoom("Test1");
         }
 
-        else if(PhotonNetwork.CountOfPlayersInRooms < 2)
+        else
         {
+            Debug.Log("T");
             JoinRoom();
         }
+
     }
 
     public void JoinRoom()
     {
-        PhotonNetwork.JoinRoom("Test");
+
+        PhotonNetwork.JoinRoom("Test1");
     }
 
     public override void OnJoinedRoom()
     {
+
         Debug.Log("Joined room: " + PhotonNetwork.CurrentRoom.Name);
         Debug.Log("Player count: " + PhotonNetwork.CurrentRoom.PlayerCount);
         networkManager.GetView().RPC("SetIsConnected", RpcTarget.OthersBuffered, true);
@@ -42,10 +46,22 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
         {
             networkManager.GetView().RPC("LoadAvatar", RpcTarget.OthersBuffered, networkManager.GetURL());
         }
-
+        Debug.Log(PhotonNetwork.CountOfRooms);
 
 
     }
+
+    public override void OnJoinRoomFailed(short returnCode, string message)
+    {
+        Debug.Log(message);
+    }
+
+    public override void OnCreateRoomFailed(short returnCode, string message)
+    {
+        Debug.Log(message);
+    }
+
+ 
 
     public bool GetIsConnected()
     {

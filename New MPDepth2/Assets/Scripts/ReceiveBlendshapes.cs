@@ -38,23 +38,24 @@ public class ReceiveBlendshapes : MonoBehaviour
             }
         }
         if(neckBone) neckBone.localScale = new Vector3(1.1f, 1.1f, 1.1f);
-        //rotationOffset = headBone.rotation.eulerAngles.x * 2;
+        rotationOffset = 5.0f;
         mirrorModeController = MirrorModeController.instance;
-        //headBone.rotation = Quaternion.Euler(Vector3.zero);
     }
     private void Update()
     {
         if (isMirrorAvatar)
         {
-            position = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Position;
-            rotation = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Eulers;
+            //position = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Position;
+            //rotation = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Eulers;
+            position = trackingSystemsManager.CurrentTrackingSystem.trackingSource.GetRawTrackingData().CameraTrackingData.Position;
+            rotation = trackingSystemsManager.CurrentTrackingSystem.trackingSource.GetRawTrackingData().CameraTrackingData.Eulers;
             blendshapes = trackingSystemsManager.CurrentCalibratedTrackingData.BlendshapeTrackingData.Blendshapes;
 
     
         }
         else if(!isMirrorAvatar)
         {
-            position = networkManager.GetPosition();
+            position = new Vector3(networkManager.GetPosition().x, networkManager.GetPosition().y, networkManager.GetPosition().z);
             rotation = networkManager.GetEulers();
             blendshapes = networkManager.GetBlendshapes();
             //if(networkManager.GetIsOtherPlayerTracking()) transform.localPosition = position;
@@ -64,7 +65,7 @@ public class ReceiveBlendshapes : MonoBehaviour
         {
             if (isMirrorAvatar)
             {
-                headBone.rotation = Quaternion.Euler((rotation.x+rotationOffset), (180 - rotation.y), -rotation.z);
+                headBone.rotation = Quaternion.Euler((rotation.x+rotationOffset), (180-rotation.y), -rotation.z);
                 transform.localPosition = new Vector3(position.x, position.y, -position.z);
             }
 

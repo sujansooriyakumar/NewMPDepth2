@@ -14,5 +14,7 @@ namespace MPDepthCore.TrackingSources {
         public abstract void TurnOff();
 
         public abstract void TurnOn();
+
+        public abstract MPDepthTrackingData GetRawTrackingData();  
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine;
 using Photon.Pun;
 using System;
 using ReadyPlayerMe;
+using OffAxisCamera;
 
 public class NetworkManager : MonoBehaviour
 {
@@ -16,12 +17,15 @@ public class NetworkManager : MonoBehaviour
     [SerializeField] Vector3 eulers;
     [SerializeField] float[] blendshapes;
     [SerializeField] bool isOtherPlayerTracking;
+    [SerializeField] ProjectionPlaneCamera dyadicCamera;
+    
     public bool isConnected;
     PhotonView view;
     [SerializeField] public Int32 otherPlayerAvatarID;
     public string currentAvatarURL;
     public string otherAvatarURL;
     public bool OtherPlayerMirrorMode;
+    Vector3 otherPlayerCalibrationTranslation, otherPlayerCalibrationRotation;
 
 
     private void Awake()
@@ -39,13 +43,18 @@ public class NetworkManager : MonoBehaviour
     private void Update()
     {
 
-        trackingData = trackingSystemsManager.CurrentCalibratedTrackingData;
+        //trackingData = trackingSystemsManager.CurrentCalibratedTrackingData;
+        trackingData = trackingSystemsManager.CurrentTrackingSystem.trackingSource.GetRawTrackingData();
         if (isConnected)
         {
             //view.RPC("SetIsOtherPlayerTracking", RpcTarget.OthersBuffered, TrackingSystemsManager.instance.CurrentCalibratedTrackingData.IsTracking);
             view.RPC("SetOtherPlayerData", RpcTarget.Others, trackingData.CameraTrackingData.Position, trackingData.CameraTrackingData.Eulers, trackingData.BlendshapeTrackingData.Blendshapes);
-
+            view.RPC("SetOtherPlayerCalibration", RpcTarget.Others, trackingSystemsManager.GetCalibrationTransform().position, trackingSystemsManager.GetCalibrationTransform().rotation);
         }
+
+        dyadicCamera.SetOtherPlayerCalibration(otherPlayerCalibrationTranslation, otherPlayerCalibrationRotation);
+        dyadicCamera.SetOtherPlayerPosition(position);
+
     }
 
     [PunRPC]
@@ -54,6 +63,13 @@ public class NetworkManager : MonoBehaviour
         position = new Vector3(position_.x, -position_.y, position_.z);
         eulers = rotation_;
         blendshapes = blendshapes_;
+    }
+
+    [PunRPC]
+    private void SetOtherPlayerCalibration(Vector3 position, Quaternion rotation)
+    {
+        otherPlayerCalibrationTranslation = position;
+        otherPlayerCalibrationRotation = rotation.eulerAngles;
     }
 
     [PunRPC]

@@ -48,6 +48,8 @@ namespace OffAxisCamera
             }
         }
 
+       
+
         internal delegate void UpdateCameraLocationEvent(Vector3 position);
         internal event UpdateCameraLocationEvent CameraLocationUpdated;
     }

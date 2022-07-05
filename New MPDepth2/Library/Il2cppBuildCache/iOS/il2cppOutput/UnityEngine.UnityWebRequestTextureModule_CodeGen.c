@@ -52,7 +52,7 @@ static const int32_t s_InvokerIndices[9] =
 	4263,
 	4263,
 	4263,
-	6356,
+	6355,
 };
 extern const CustomAttributesCacheGenerator g_UnityEngine_UnityWebRequestTextureModule_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_UnityWebRequestTextureModule_CodeGenModule;

@@ -6,8 +6,10 @@ using Photon.Pun;
 using Photon.Realtime;
 using System;
 
-public class FacebookAuthenticator : MonoBehaviour
+public class FacebookAuthenticator : MonoBehaviourPunCallbacks
 {
+    [SerializeField] CreateAndJoinRoom roomCreator;
+
     private void Awake()
     {
         if(FB.IsInitialized == false)
@@ -69,8 +71,25 @@ public class FacebookAuthenticator : MonoBehaviour
         PhotonNetwork.AuthValues.AuthType = CustomAuthenticationType.Facebook;
         PhotonNetwork.AuthValues.UserId = facebookID;
         PhotonNetwork.AuthValues.AddAuthParameter("token", aToken);
-        PhotonNetwork.ConnectUsingSettings();
+        FindObjectOfType<ConnectToServer>().Connect();
+        //PhotonNetwork.ConnectUsingSettings();
 
 
+    }
+
+    public override void OnConnectedToMaster()
+    {
+        PhotonNetwork.JoinLobby();
+        Debug.Log("Joining Lobby");
+    }
+
+    public override void OnJoinedLobby()
+    {
+        roomCreator.CreateRoom();
+        Debug.Log("Joined Lobby");
+    }
+    public void OnApplicationQuit()
+    {
+        FB.LogOut();
     }
 }

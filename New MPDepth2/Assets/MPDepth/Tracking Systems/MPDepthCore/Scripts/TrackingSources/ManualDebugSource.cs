@@ -1,3 +1,4 @@
+using MPDepthCore.Calibration.Camera;
 using UnityEngine;
 
 namespace MPDepthCore.TrackingSources {
@@ -27,6 +28,11 @@ namespace MPDepthCore.TrackingSources {
             TrackingData.IsTracking = isTracking;
             
             TrackingDataUpdated?.Invoke(TrackingData);
+        }
+
+        public override MPDepthTrackingData GetRawTrackingData()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

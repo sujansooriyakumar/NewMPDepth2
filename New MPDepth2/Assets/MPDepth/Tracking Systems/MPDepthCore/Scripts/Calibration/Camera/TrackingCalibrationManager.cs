@@ -70,6 +70,9 @@ namespace MPDepthCore.Calibration.Camera {
             }
         }
 
-        
+        public override MPDepthTrackingData GetRawTrackingData()
+        {
+            return rawTrackingData;
+        }
     }
 }

@@ -9211,6 +9211,8 @@ public:
 	String_t* ___name_0;
 	// UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration::portraitOffset
 	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___portraitOffset_1;
+	// UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider/SavedRotatableDeviceCalibration::cameraOrientationOffset
+	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___cameraOrientationOffset_2;
 
 public:
 	inline static int32_t get_offset_of_name_0() { return static_cast<int32_t>(offsetof(SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D, ___name_0)); }
@@ -9228,6 +9230,14 @@ public:
 	inline void set_portraitOffset_1(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
 	{
 		___portraitOffset_1 = value;
+	}
+
+	inline static int32_t get_offset_of_cameraOrientationOffset_2() { return static_cast<int32_t>(offsetof(SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D, ___cameraOrientationOffset_2)); }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  get_cameraOrientationOffset_2() const { return ___cameraOrientationOffset_2; }
+	inline Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * get_address_of_cameraOrientationOffset_2() { return &___cameraOrientationOffset_2; }
+	inline void set_cameraOrientationOffset_2(Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  value)
+	{
+		___cameraOrientationOffset_2 = value;
 	}
 };
 

@@ -959,12 +959,12 @@ static void ToggleUserEvent_tE32E5B4618A68FDF0249AA5B94B0A953EFB2C3DA_CustomAttr
 static void TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53_CustomAttributesCacheGenerator_trackingSource(CustomAttributesCache* cache)
 {
 	{
-		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
-		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+		HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB * tmp = (HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB *)cache->attributes[0];
+		HeaderAttribute__ctor_m601319E0BCE8C44A9E79B2C0ABAAD0FEF46A9F1E(tmp, il2cpp_codegen_string_new_wrapper("\x49\x6E\x74\x65\x72\x6E\x61\x6C\x20\x52\x65\x66\x65\x72\x65\x6E\x63\x65\x73"), NULL);
 	}
 	{
-		HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB * tmp = (HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB *)cache->attributes[1];
-		HeaderAttribute__ctor_m601319E0BCE8C44A9E79B2C0ABAAD0FEF46A9F1E(tmp, il2cpp_codegen_string_new_wrapper("\x49\x6E\x74\x65\x72\x6E\x61\x6C\x20\x52\x65\x66\x65\x72\x65\x6E\x63\x65\x73"), NULL);
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[1];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
 	}
 }
 static void TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53_CustomAttributesCacheGenerator_trackingCalibrationProvider(CustomAttributesCache* cache)
@@ -984,12 +984,12 @@ static void TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53_CustomAttri
 static void TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53_CustomAttributesCacheGenerator_mainUI(CustomAttributesCache* cache)
 {
 	{
-		HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB * tmp = (HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB *)cache->attributes[0];
-		HeaderAttribute__ctor_m601319E0BCE8C44A9E79B2C0ABAAD0FEF46A9F1E(tmp, il2cpp_codegen_string_new_wrapper("\x53\x63\x65\x6E\x65\x20\x52\x65\x66\x65\x72\x65\x6E\x63\x65\x73"), NULL);
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
 	}
 	{
-		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[1];
-		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+		HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB * tmp = (HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB *)cache->attributes[1];
+		HeaderAttribute__ctor_m601319E0BCE8C44A9E79B2C0ABAAD0FEF46A9F1E(tmp, il2cpp_codegen_string_new_wrapper("\x53\x63\x65\x6E\x65\x20\x52\x65\x66\x65\x72\x65\x6E\x63\x65\x73"), NULL);
 	}
 }
 static void TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53_CustomAttributesCacheGenerator_offAxisCameraRig(CustomAttributesCache* cache)
@@ -1077,6 +1077,13 @@ static void TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_Cus
 	}
 }
 static void TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_trackingSystemsDropdown(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_offAxisCam(CustomAttributesCache* cache)
 {
 	{
 		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
@@ -1351,7 +1358,7 @@ static void TrackingCalibrationProvider_t936458C67919392EE6B88C439729E2AECA9293A
 	}
 }
 IL2CPP_EXTERN_C const CustomAttributesCacheGenerator g_MPDepthCore_AttributeGenerators[];
-const CustomAttributesCacheGenerator g_MPDepthCore_AttributeGenerators[81] = 
+const CustomAttributesCacheGenerator g_MPDepthCore_AttributeGenerators[82] = 
 {
 	RuntimeVector3PropertyDrawer_t549B66AAD8D28612AFAEBEAE8FFA46B046BA4A35_CustomAttributesCacheGenerator,
 	SimpleUserEvent_tEB703481056F870D3D324A63602CED34D82C5D39_CustomAttributesCacheGenerator,
@@ -1390,6 +1397,7 @@ const CustomAttributesCacheGenerator g_MPDepthCore_AttributeGenerators[81] =
 	TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_calibrationTransform,
 	TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_calibrationDropdown,
 	TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_trackingSystemsDropdown,
+	TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_offAxisCam,
 	TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_TrackingDataUpdated,
 	ManualDebugSource_t7260C125A028CA38DAB5C37788FE9D3C57C30AC7_CustomAttributesCacheGenerator_TrackingDataUpdated,
 	ManualDebugSource_t7260C125A028CA38DAB5C37788FE9D3C57C30AC7_CustomAttributesCacheGenerator_isTracking,

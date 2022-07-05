@@ -27,6 +27,7 @@ namespace MPDepthCore
         [SerializeField] Transform calibrationTransform;
         [SerializeField] Dropdown calibrationDropdown;
         [SerializeField] Dropdown trackingSystemsDropdown;
+        [SerializeField] Transform offAxisCam;
         public TrackingSystem CurrentTrackingSystem => currentTrackingSystem;
 
         public event MPDepthTrackingSource.TrackingDataUpdatedEvent TrackingDataUpdated;
@@ -66,7 +67,8 @@ namespace MPDepthCore
         {
             TrackingDataUpdated?.Invoke(data);
             ApplyCalibration(data);
-            offAxisCameraRig.UpdateCameraLocation(CurrentCalibratedTrackingData.CameraTrackingData.Position);
+            //offAxisCameraRig.UpdateCameraLocation(CurrentCalibratedTrackingData.CameraTrackingData.Position);
+            offAxisCameraRig.UpdateCameraLocation(data.CameraTrackingData.Position);
         }
         public void StartCalibration()
         {
@@ -79,10 +81,14 @@ namespace MPDepthCore
         
         void ApplyCalibration(MPDepthTrackingData data)
         {
-            Vector3 pos = calibrationTransform.TransformPoint(data.CameraTrackingData.Position);
-            Vector3 rot = (calibrationTransform.rotation * Quaternion.Euler(data.CameraTrackingData.Eulers)).eulerAngles;
+            Transform t = calibrationTransform;
+            t.position *= -1;
+            Vector3 pos = data.CameraTrackingData.Position + calibrationTransform.position;
+            Vector3 flippedCalibrationRot = calibrationTransform.rotation.eulerAngles * -1;
+            Vector3 rot = (Quaternion.Euler(flippedCalibrationRot) * Quaternion.Euler(data.CameraTrackingData.Eulers)).eulerAngles;
+
             CurrentCalibratedTrackingData.CameraTrackingData.Position = pos;
-            CurrentCalibratedTrackingData.CameraTrackingData.Eulers = rot;
+            CurrentCalibratedTrackingData.CameraTrackingData.Eulers = data.CameraTrackingData.Eulers;
             CurrentCalibratedTrackingData.BlendshapeTrackingData.Blendshapes = data.BlendshapeTrackingData.Blendshapes;
             //FindObjectOfType<ProjectionPlane>().UpdateOrientation();
         }

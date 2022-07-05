@@ -14,7 +14,10 @@ namespace OffAxisCamera
         [SerializeField] bool drawGizmos = true;
         [SerializeField] Transform calibrationTransform;
         [SerializeField] Transform OtherPlayerTracker;
-   
+        [SerializeField] bool isDyadic;
+        [SerializeField] Vector3 otherPlayerPosition;
+       
+        bool flipped;
         const float MinZThreshold = 0.001f;
         Vector3 eyePos; // the vector from the eyes to projection screen corners
 
@@ -23,13 +26,33 @@ namespace OffAxisCamera
         float l, r, b, t; // left right back top?
 
         Vector3 va, vb, vc, vd; // holds distances from eye to corners of proj plane
-
         Vector3 viewDir;
         Camera cam;
+        int scalar;
+        [SerializeField] Transform otherPlayerCalibration;
 
         private void Awake()
         {
             cam = GetComponent<Camera>();
+            if (!isDyadic)
+            {
+                scalar = -1;
+            }
+            else
+            {
+                scalar = 1;
+            }
+        }
+        public void SetOtherPlayerPosition(Vector3 pos)
+        {
+            otherPlayerPosition = pos;
+            otherPlayerPosition.x *= -1;
+        }
+
+        public void SetOtherPlayerCalibration(Vector3 position, Vector3 rotation)
+        {
+            otherPlayerCalibration.position = position;
+            otherPlayerCalibration.rotation = Quaternion.Euler(rotation);
         }
 
         private void LateUpdate()
@@ -43,7 +66,7 @@ namespace OffAxisCamera
                 Vector3 pd = projectionScreen.TopRight;
 
                 Vector3 vr = projectionScreen.DirRight;
-                Vector3 vu = projectionScreen.DirUp;
+                Vector3 vu = projectionScreen.DirUp * -1;
                 Vector3 vn = projectionScreen.DirNormal;
 
                 Matrix4x4 M = projectionScreen.M;
@@ -55,7 +78,6 @@ namespace OffAxisCamera
                 vc = pc - eyePos;
                 vd = pd - eyePos;
 
-                viewDir = eyePos + va + vb + vc + vd;
 
                 float d = -Vector3.Dot(va, vn);
                 if (clampNearPlane)
@@ -67,15 +89,52 @@ namespace OffAxisCamera
                 float nearOverDist = n / d;
                 l = Vector3.Dot(vr, va) * nearOverDist;
                 r = Vector3.Dot(vr, vb) * nearOverDist;
-                b = Vector3.Dot(vu, va) * nearOverDist;
-                t = Vector3.Dot(vu, vc) * nearOverDist;
+                b = Vector3.Dot(vu, vc) * nearOverDist;
+                t = Vector3.Dot(vu, va) * nearOverDist;
                 Matrix4x4 P = Matrix4x4.Frustum(l, r, b, t, n, f); // create the projection matrix
-                // setup projection camera matrices 
-                Matrix4x4 T = Matrix4x4.Translate(-eyePos);
-                Matrix4x4 R = Matrix4x4.Rotate(Quaternion.Inverse(transform.rotation) * projectionScreen.transform.rotation);
-                cam.worldToCameraMatrix = M * R  * T;
-                cam.projectionMatrix = P;
-                
+
+
+                Transform TCSATransform = calibrationTransform;
+
+
+                Matrix4x4 TCSA = TCSATransform.localToWorldMatrix;
+                Transform GCATransform = transform;
+                // calibrationTransform.TransformPoint(Vector3 position);
+                // this is how the calibration was applied in the previous version
+                Matrix4x4 TAB;
+                if (isDyadic)
+                {
+                    TAB = new Matrix4x4(new Vector4(-1, 0, 0, 0), new Vector4(0, 1, 0, 0), new Vector4(0, 0, -1, 0), new Vector4(0, 0, 0, 1));
+
+                }
+                else
+                {
+                    TAB = new Matrix4x4(new Vector4(-1, 0, 0, 0), new Vector4(0, 1, 0, 0), new Vector4(0, 0, -1, 0), new Vector4(0, 0, 0, 1));
+
+                }
+                Matrix4x4 GCA = GCATransform.localToWorldMatrix;
+                if (isDyadic)
+                {
+                    Matrix4x4 TCSB = otherPlayerCalibration.localToWorldMatrix;
+                    Matrix4x4 BC = Matrix4x4.Translate(otherPlayerPosition);
+                    Matrix4x4 BS = TCSB * BC;
+                    Matrix4x4 TSVB = Matrix4x4.identity;
+                    TSVB.m03 = -(BS.m03);
+                    TSVB.m13 = -(BS.m13);
+                    TSVB.m23 = -(BS.m23);
+                    cam.worldToCameraMatrix = M * TSVB * TAB * GCA * TCSA;
+                    
+                    cam.projectionMatrix = P;
+                }
+                else
+                {
+                    //Matrix4x4 scale = Matrix4x4.Scale(new Vector3(-1, 1, 1));
+                    cam.worldToCameraMatrix = M * TAB    * GCA * TCSA;
+                    cam.projectionMatrix = P;
+
+
+                }
+
             }
         }
 

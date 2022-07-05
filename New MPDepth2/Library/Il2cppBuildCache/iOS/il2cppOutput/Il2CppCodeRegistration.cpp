@@ -20,6 +20,7 @@ IL2CPP_EXTERN_C const Il2CppMethodPointer g_UnresolvedVirtualMethodPointers[];
 IL2CPP_EXTERN_C Il2CppInteropData g_Il2CppInteropData[];
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_ARKit_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Authentication_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Facebook_Unity_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Facebook_Unity_IOS_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Facebook_Unity_Settings_CodeGenModule;
@@ -95,10 +96,11 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Voice_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_WebView_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[76] = 
+const Il2CppCodeGenModule* g_CodeGenModules[77] = 
 {
 	(&g_ARKit_CodeGenModule),
 	(&g_AssemblyU2DCSharp_CodeGenModule),
+	(&g_Authentication_CodeGenModule),
 	(&g_Facebook_Unity_CodeGenModule),
 	(&g_Facebook_Unity_IOS_CodeGenModule),
 	(&g_Facebook_Unity_Settings_CodeGenModule),
@@ -182,7 +184,7 @@ const Il2CppCodeRegistration g_CodeRegistration =
 	25186,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	6608,
+	6607,
 	g_Il2CppInvokerPointers,
 	932,
 	g_UnresolvedVirtualMethodPointers,
@@ -190,7 +192,7 @@ const Il2CppCodeRegistration g_CodeRegistration =
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	76,
+	77,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

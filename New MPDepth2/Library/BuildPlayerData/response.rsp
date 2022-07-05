@@ -24,6 +24,7 @@
 -a="/Users/sujansooriyakumar/Documents/GitHub/NewMPDepth2/New MPDepth2/Library/PlayerScriptAssemblies/Networking.dll"
 -a="/Users/sujansooriyakumar/Documents/GitHub/NewMPDepth2/New MPDepth2/Library/PlayerScriptAssemblies/Unity.Timeline.dll"
 -a="/Users/sujansooriyakumar/Documents/GitHub/NewMPDepth2/New MPDepth2/Library/PlayerScriptAssemblies/Unity.TextMeshPro.dll"
+-a="/Users/sujansooriyakumar/Documents/GitHub/NewMPDepth2/New MPDepth2/Library/PlayerScriptAssemblies/Authentication.dll"
 -a="/Users/sujansooriyakumar/Documents/GitHub/NewMPDepth2/New MPDepth2/Library/PlayerScriptAssemblies/PhotonVoice.API.dll"
 -a="/Users/sujansooriyakumar/Documents/GitHub/NewMPDepth2/New MPDepth2/Library/PlayerScriptAssemblies/Unity.Subsystem.Registration.dll"
 -a="/Users/sujansooriyakumar/Documents/GitHub/NewMPDepth2/New MPDepth2/Library/PlayerScriptAssemblies/PhotonRealtime.dll"

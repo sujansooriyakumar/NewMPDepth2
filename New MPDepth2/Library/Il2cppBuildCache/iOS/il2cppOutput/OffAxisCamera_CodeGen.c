@@ -90,47 +90,51 @@ extern void ProjectionPlane_OnApplicationQuit_m73E114573941685ADED26B55B9D63E3AF
 extern void ProjectionPlane__ctor_m87CD98437DF15635AA4C79F2E61218F687818787 (void);
 // 0x00000027 System.Void OffAxisCamera.ProjectionPlaneCamera::Awake()
 extern void ProjectionPlaneCamera_Awake_m68032C5C42E6B92E18419078FE6E64034CA33B6C (void);
-// 0x00000028 System.Void OffAxisCamera.ProjectionPlaneCamera::LateUpdate()
+// 0x00000028 System.Void OffAxisCamera.ProjectionPlaneCamera::SetOtherPlayerPosition(UnityEngine.Vector3)
+extern void ProjectionPlaneCamera_SetOtherPlayerPosition_mA545FAC82CC5EBD717DD6DAE192E016780546542 (void);
+// 0x00000029 System.Void OffAxisCamera.ProjectionPlaneCamera::SetOtherPlayerCalibration(UnityEngine.Vector3,UnityEngine.Vector3)
+extern void ProjectionPlaneCamera_SetOtherPlayerCalibration_mE0B2B205E7C81215FEFCCD0DFAA2D493D11FDB51 (void);
+// 0x0000002A System.Void OffAxisCamera.ProjectionPlaneCamera::LateUpdate()
 extern void ProjectionPlaneCamera_LateUpdate_m16AD2FAC82278D448B56F8F81B99D20029FA655B (void);
-// 0x00000029 System.Void OffAxisCamera.ProjectionPlaneCamera::PreventIllegalFrustrums()
+// 0x0000002B System.Void OffAxisCamera.ProjectionPlaneCamera::PreventIllegalFrustrums()
 extern void ProjectionPlaneCamera_PreventIllegalFrustrums_m9FFAE84B290F7E3EB5ADBF026D5B5DD38973FBBC (void);
-// 0x0000002A System.Void OffAxisCamera.ProjectionPlaneCamera::OnDrawGizmos()
+// 0x0000002C System.Void OffAxisCamera.ProjectionPlaneCamera::OnDrawGizmos()
 extern void ProjectionPlaneCamera_OnDrawGizmos_m6438A2AF6866B891C3CCA61683664C69A1416485 (void);
-// 0x0000002B System.Void OffAxisCamera.ProjectionPlaneCamera::.ctor()
+// 0x0000002D System.Void OffAxisCamera.ProjectionPlaneCamera::.ctor()
 extern void ProjectionPlaneCamera__ctor_mF33FD7AB7A5602AB6CE5FB435B4950CB8D4FABDB (void);
-// 0x0000002C System.Void OffAxisCamera.SetAsMainCamera::Start()
+// 0x0000002E System.Void OffAxisCamera.SetAsMainCamera::Start()
 extern void SetAsMainCamera_Start_m1DD85D53134731C74DD4B7965CC800C1652DB14F (void);
-// 0x0000002D System.Void OffAxisCamera.SetAsMainCamera::.ctor()
+// 0x0000002F System.Void OffAxisCamera.SetAsMainCamera::.ctor()
 extern void SetAsMainCamera__ctor_m7CC455E9BE7BBF2ECAC4C73C76313F7FDB0D135E (void);
-// 0x0000002E System.Void OffAxisCamera.TrackingReceiver::OnEnable()
+// 0x00000030 System.Void OffAxisCamera.TrackingReceiver::OnEnable()
 extern void TrackingReceiver_OnEnable_m04404734FC6B44CAE2CCCB93CA6530EDD765658E (void);
-// 0x0000002F System.Void OffAxisCamera.TrackingReceiver::UpdateCameraPosition(UnityEngine.Vector3)
+// 0x00000031 System.Void OffAxisCamera.TrackingReceiver::UpdateCameraPosition(UnityEngine.Vector3)
 extern void TrackingReceiver_UpdateCameraPosition_m351E3D984C48963B2D2D140FFE17863D59BD99A3 (void);
-// 0x00000030 System.Void OffAxisCamera.TrackingReceiver::OnDisable()
+// 0x00000032 System.Void OffAxisCamera.TrackingReceiver::OnDisable()
 extern void TrackingReceiver_OnDisable_m2CAE58588117ED22EB9805AE4F0631C97BA36238 (void);
-// 0x00000031 System.Void OffAxisCamera.TrackingReceiver::Start()
+// 0x00000033 System.Void OffAxisCamera.TrackingReceiver::Start()
 extern void TrackingReceiver_Start_m7758F558AF8F37376E1019D495615F7620844F16 (void);
-// 0x00000032 System.Void OffAxisCamera.TrackingReceiver::.ctor()
+// 0x00000034 System.Void OffAxisCamera.TrackingReceiver::.ctor()
 extern void TrackingReceiver__ctor_mEAB084479ED3C0A87EF5C3BAFEACB3E9E5171887 (void);
-// 0x00000033 UnityEngine.Vector2 OffAxisCamera.ScreenConfiguration.OffAxisScreen::get_Dimensions()
-// 0x00000034 System.Single OffAxisCamera.ScreenConfiguration.OffAxisScreen::get_Width()
-// 0x00000035 System.Single OffAxisCamera.ScreenConfiguration.OffAxisScreen::get_Height()
-// 0x00000036 System.Void OffAxisCamera.ScreenConfiguration.OffAxisScreen::.ctor()
+// 0x00000035 UnityEngine.Vector2 OffAxisCamera.ScreenConfiguration.OffAxisScreen::get_Dimensions()
+// 0x00000036 System.Single OffAxisCamera.ScreenConfiguration.OffAxisScreen::get_Width()
+// 0x00000037 System.Single OffAxisCamera.ScreenConfiguration.OffAxisScreen::get_Height()
+// 0x00000038 System.Void OffAxisCamera.ScreenConfiguration.OffAxisScreen::.ctor()
 extern void OffAxisScreen__ctor_mA41AEB03D971ED3EF8A77BA35E7D1B22DB4FF54E (void);
-// 0x00000037 UnityEngine.Vector2 OffAxisCamera.ScreenConfiguration.OffAxisScreenProvider::get_Dimensions()
-// 0x00000038 System.Single OffAxisCamera.ScreenConfiguration.OffAxisScreenProvider::get_Width()
-// 0x00000039 System.Single OffAxisCamera.ScreenConfiguration.OffAxisScreenProvider::get_Height()
-// 0x0000003A System.Void OffAxisCamera.ScreenConfiguration.OffAxisScreenProvider::.ctor()
+// 0x00000039 UnityEngine.Vector2 OffAxisCamera.ScreenConfiguration.OffAxisScreenProvider::get_Dimensions()
+// 0x0000003A System.Single OffAxisCamera.ScreenConfiguration.OffAxisScreenProvider::get_Width()
+// 0x0000003B System.Single OffAxisCamera.ScreenConfiguration.OffAxisScreenProvider::get_Height()
+// 0x0000003C System.Void OffAxisCamera.ScreenConfiguration.OffAxisScreenProvider::.ctor()
 extern void OffAxisScreenProvider__ctor_mDF9537202D0D64A824B68C061127BC38303036B3 (void);
-// 0x0000003B UnityEngine.Vector2 OffAxisCamera.ScreenConfiguration.ManualScreenProvider::get_Dimensions()
+// 0x0000003D UnityEngine.Vector2 OffAxisCamera.ScreenConfiguration.ManualScreenProvider::get_Dimensions()
 extern void ManualScreenProvider_get_Dimensions_m043D6BDEEC8DFDFF178E27A26021B67DAD51CE06 (void);
-// 0x0000003C System.Single OffAxisCamera.ScreenConfiguration.ManualScreenProvider::get_Width()
+// 0x0000003E System.Single OffAxisCamera.ScreenConfiguration.ManualScreenProvider::get_Width()
 extern void ManualScreenProvider_get_Width_m25DA66075CC921B2D27E5702CD1C151DA6462EFE (void);
-// 0x0000003D System.Single OffAxisCamera.ScreenConfiguration.ManualScreenProvider::get_Height()
+// 0x0000003F System.Single OffAxisCamera.ScreenConfiguration.ManualScreenProvider::get_Height()
 extern void ManualScreenProvider_get_Height_m220A026B640D850F3DBBFCA12CAAA80611CDD5AC (void);
-// 0x0000003E System.Void OffAxisCamera.ScreenConfiguration.ManualScreenProvider::.ctor()
+// 0x00000040 System.Void OffAxisCamera.ScreenConfiguration.ManualScreenProvider::.ctor()
 extern void ManualScreenProvider__ctor_mC429094CB833F6FCFFB875E3721B6E40EE7B6A30 (void);
-static Il2CppMethodPointer s_methodPointers[62] = 
+static Il2CppMethodPointer s_methodPointers[64] = 
 {
 	OffAxisCameraRig_get_Screen_m9061550EBDE66B1EDBA9ACFE7FA87B9A6E146BEF,
 	OffAxisCameraRig_set_Screen_m1E9F6BE32A51E58D2E104569568D9933CD4B88F8,
@@ -171,6 +175,8 @@ static Il2CppMethodPointer s_methodPointers[62] =
 	ProjectionPlane_OnApplicationQuit_m73E114573941685ADED26B55B9D63E3AF9FAA19C,
 	ProjectionPlane__ctor_m87CD98437DF15635AA4C79F2E61218F687818787,
 	ProjectionPlaneCamera_Awake_m68032C5C42E6B92E18419078FE6E64034CA33B6C,
+	ProjectionPlaneCamera_SetOtherPlayerPosition_mA545FAC82CC5EBD717DD6DAE192E016780546542,
+	ProjectionPlaneCamera_SetOtherPlayerCalibration_mE0B2B205E7C81215FEFCCD0DFAA2D493D11FDB51,
 	ProjectionPlaneCamera_LateUpdate_m16AD2FAC82278D448B56F8F81B99D20029FA655B,
 	ProjectionPlaneCamera_PreventIllegalFrustrums_m9FFAE84B290F7E3EB5ADBF026D5B5DD38973FBBC,
 	ProjectionPlaneCamera_OnDrawGizmos_m6438A2AF6866B891C3CCA61683664C69A1416485,
@@ -195,7 +201,7 @@ static Il2CppMethodPointer s_methodPointers[62] =
 	ManualScreenProvider_get_Height_m220A026B640D850F3DBBFCA12CAAA80611CDD5AC,
 	ManualScreenProvider__ctor_mC429094CB833F6FCFFB875E3721B6E40EE7B6A30,
 };
-static const int32_t s_InvokerIndices[62] = 
+static const int32_t s_InvokerIndices[64] = 
 {
 	4263,
 	3545,
@@ -236,6 +242,8 @@ static const int32_t s_InvokerIndices[62] =
 	4333,
 	4333,
 	4333,
+	3607,
+	2081,
 	4333,
 	4333,
 	4333,
@@ -265,7 +273,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_OffAxisCamera_CodeGenModule;
 const Il2CppCodeGenModule g_OffAxisCamera_CodeGenModule = 
 {
 	"OffAxisCamera.dll",
-	62,
+	64,
 	s_methodPointers,
 	0,
 	NULL,

@@ -21,7 +21,7 @@ namespace OffAxisCamera
             if (debugOverride) return;
             if (offAxisCameraRig.TrackingDisabled) return;
             // clamp z pos
-            trackedPosition.z = Mathf.Max(trackedPosition.z, 0.00001f);
+            //trackedPosition.z = Mathf.Max(trackedPosition.z, 0.00001f);
             // set pos to the tracked position
             this.transform.localPosition = trackedPosition;
 

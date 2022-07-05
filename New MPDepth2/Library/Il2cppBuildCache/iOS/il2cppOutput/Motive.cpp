@@ -2369,6 +2369,22 @@ IL_0031:
 		return;
 	}
 }
+// MPDepthCore.Calibration.Camera.MPDepthTrackingData MotiveRawTrackingSource::GetRawTrackingData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * MotiveRawTrackingSource_GetRawTrackingData_mB22791C929018712B18BBBA22A12486F00C598E1 (MotiveRawTrackingSource_t3F297BC6EE2275AC336EF9BEDC30BB4FA27F572C * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return new RawTrackingData();
+		RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD * L_0 = (RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD *)il2cpp_codegen_object_new(RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD_il2cpp_TypeInfo_var);
+		RawTrackingData__ctor_m8093224C329264DBAA5FE53BEC99F2BB94DA2535(L_0, /*hidden argument*/NULL);
+		return L_0;
+	}
+}
 // System.Void MotiveRawTrackingSource::add_TrackingDataUpdated(MPDepthCore.TrackingSources.MPDepthTrackingSource/TrackingDataUpdatedEvent)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MotiveRawTrackingSource_add_TrackingDataUpdated_m52509D71D706FEE281A375F9D041095B1D67A5F1 (MotiveRawTrackingSource_t3F297BC6EE2275AC336EF9BEDC30BB4FA27F572C * __this, TrackingDataUpdatedEvent_t8B836DA8854CC4DABC27FFA284579B56A91F18B5 * ___value0, const RuntimeMethod* method)
 {

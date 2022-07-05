@@ -38,10 +38,16 @@ public class RotatableDeviceTrackingCalibrationProvider : TrackingCalibrationPro
     [SerializeField] RotatableCameraCalibrator rotatableCameraCalibrator;
 
     Vector3 PortraitOffset => currentCalibration.portraitOffset;
+    Vector3 PortraitCameraOrientationOffset => currentCalibration.cameraOrientationOffset;
 
     Vector3 LandscapeLeftOffset => new Vector3(PortraitOffset.y, -PortraitOffset.x, PortraitOffset.z);
+    Vector3 LandscapeLeftCameraOrientation => new Vector3(-PortraitCameraOrientationOffset.y, -PortraitCameraOrientationOffset.x, PortraitCameraOrientationOffset.z);
+
     Vector3 LandscapeRightOffset => new Vector3(-PortraitOffset.y, PortraitOffset.x, PortraitOffset.z);
+    Vector3 LandscapeRightCameraOrientation => new Vector3(PortraitCameraOrientationOffset.y, PortraitCameraOrientationOffset.x, PortraitCameraOrientationOffset.z);
+
     Vector3 PortraitUpsideDownOffset => -PortraitOffset;
+    Vector3 PortraitUpsideDownCameraOrientation => -PortraitCameraOrientationOffset; 
 
     DeviceOrientation CurrentOrientation
     {
@@ -82,7 +88,26 @@ public class RotatableDeviceTrackingCalibrationProvider : TrackingCalibrationPro
         }
     }
 
-    
+    Vector3 OffsetOrientation
+    {
+        get
+        {
+            DeviceOrientation orientation = CurrentOrientation;
+            switch (orientation)
+            {
+                case DeviceOrientation.Portrait:
+                    return PortraitCameraOrientationOffset;
+                case DeviceOrientation.PortraitUpsideDown:
+                    return PortraitUpsideDownCameraOrientation;
+                case DeviceOrientation.LandscapeLeft:
+                    return LandscapeLeftCameraOrientation;
+                case DeviceOrientation.LandscapeRight:
+                    return LandscapeRightCameraOrientation;
+                default:
+                    throw new ArgumentException($"unspported orientation {orientation}");
+            }
+        }
+    }
 
     protected override string Filename => "RotatableDeviceTrackingCalibrationProviderSave.json";
 
@@ -93,6 +118,7 @@ public class RotatableDeviceTrackingCalibrationProvider : TrackingCalibrationPro
         calibrationTransform.rotation = Quaternion.Euler(Vector3.zero);
         DeviceOrientation orientation = CurrentOrientation;
         calibrationTransform.position = OffsetPosition;
+        calibrationTransform.rotation = Quaternion.Euler(OffsetOrientation);
         
         //calibrationTransform.position = currentCalibration.portraitOffset;
 
@@ -123,24 +149,34 @@ public class RotatableDeviceTrackingCalibrationProvider : TrackingCalibrationPro
 
     private void Update()
     {
-        //DeviceOrientation orientation = CurrentOrientation;
-        //switch (orientation)
-        //{
-        //    case DeviceOrientation.Portrait:
-        //        calibrationTransform.position = PortraitOffset;
-        //        break;
-        //    case DeviceOrientation.PortraitUpsideDown:
-        //        calibrationTransform.position = PortraitUpsideDownOffset;
-        //        break;
-        //    case DeviceOrientation.LandscapeLeft:
-        //        calibrationTransform.position = LandscapeLeftOffset;
-        //        break;
-        //    case DeviceOrientation.LandscapeRight:
-        //        calibrationTransform.position = LandscapeRightOffset;
-        //        break;
-        //    default:
-        //        throw new ArgumentException($"unspported orientation {orientation}");
-        //}
+        if (lastOrientation != CurrentOrientation)
+        {
+            DeviceOrientation orientation = CurrentOrientation;
+            switch (orientation)
+            {
+                case DeviceOrientation.Portrait:
+                    calibrationTransform.position = PortraitOffset;
+                    calibrationTransform.rotation = Quaternion.Euler(PortraitCameraOrientationOffset);
+                    break;
+                case DeviceOrientation.PortraitUpsideDown:
+                    calibrationTransform.position = PortraitUpsideDownOffset;
+                    calibrationTransform.rotation = Quaternion.Euler(PortraitUpsideDownCameraOrientation);
+
+                    break;
+                case DeviceOrientation.LandscapeLeft:
+                    calibrationTransform.position = LandscapeLeftOffset;
+                    calibrationTransform.rotation = Quaternion.Euler(LandscapeLeftCameraOrientation);
+
+                    break;
+                case DeviceOrientation.LandscapeRight:
+                    calibrationTransform.position = LandscapeRightOffset;
+                    calibrationTransform.rotation = Quaternion.Euler(LandscapeRightCameraOrientation);
+
+                    break;
+                default:
+                    throw new ArgumentException($"unspported orientation {orientation}");
+            }
+        }
     }
 
     protected override void SetCurrentToDefaultCalibration()
@@ -168,6 +204,7 @@ public class RotatableDeviceTrackingCalibrationProvider : TrackingCalibrationPro
 
         public string name = "Default Configuration";
         public Vector3 portraitOffset = default;
+        public Vector3 cameraOrientationOffset = default;
         public string Name
         {
             get => name;

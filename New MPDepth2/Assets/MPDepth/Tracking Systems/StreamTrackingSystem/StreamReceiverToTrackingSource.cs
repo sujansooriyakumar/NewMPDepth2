@@ -34,6 +34,11 @@ namespace StreamTrackingSystem
             this.gameObject.SetActive(true);
         }
 
+        public override MPDepthTrackingData GetRawTrackingData()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public override event TrackingDataUpdatedEvent TrackingDataUpdated;
 
     }

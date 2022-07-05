@@ -128,6 +128,8 @@ struct MPDepthTrackingSource_tA6C90370587E280BDD2EB3D24CE9E0CC7A9B8BE7;
 struct MethodInfo_t;
 // UnityEngine.MonoBehaviour
 struct MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A;
+// System.NotImplementedException
+struct NotImplementedException_t26260C4EE0444C5FA022994203060B3A42A3ADE6;
 // UnityEngine.Object
 struct Object_tF2F3778131EFF286AF62B7B013A170F95A91571A;
 // OffAxisCamera.OffAxisCameraRig
@@ -191,6 +193,7 @@ IL2CPP_EXTERN_C RuntimeClass* Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il
 IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t84076098512FE39ABDDD8D93DB8CF61479176DBC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NotImplementedException_t26260C4EE0444C5FA022994203060B3A42A3ADE6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RawTrackingData_t0CDED7B3428D64EEDC41E653AA5C1FFD2792FCFD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SaveData_t2D9CC0249F1B127F8D324F24D1F03657D61B0A3F_il2cpp_TypeInfo_var;
@@ -219,6 +222,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m5CABB97D67665D79EB0785BED3945F0
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mE212116F386BEF66B275F66FCB61352CFB5D884A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m7F199C5D42B799C186A8C0DCFB7E43E94D3E8393_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m038A4AE32D7F9403FB8C624BD25C38A9F7D4F348_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* StreamReceiverToTrackingSource_GetRawTrackingData_mB746CB66867998F23104EC4B7D742703A2FA1FD3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StreamTrackingCalibrator_TrackingUpdated_mF41CF3400AD8F83C043AB04EE7F78F03A1B73C05_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TrackingStreamConsumer_1__ctor_m496362C9C9FDEF0579C7BD121FB530B2CA5FEEA2_RuntimeMethod_var;
 struct Delegate_t_marshaled_com;
@@ -2198,6 +2202,15 @@ struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
 	Delegate_t_marshaled_com** ___delegates_11;
 };
 
+// System.SystemException
+struct SystemException_tC551B4D6EE3772B5F32C71EE8C719F4B43ECCC62  : public Exception_t
+{
+public:
+
+public:
+};
+
+
 // MPDepthCore.Calibration.Camera.TrackerOffsetCalibration
 struct TrackerOffsetCalibration_tD2EC555FBB1EF1E2A33767B5EF260584742C3321  : public TrackingPose_t9D6C81FDF981E08EBF7CDBBB363CA99CAB3EC265
 {
@@ -2277,6 +2290,15 @@ public:
 
 // UnityEngine.Behaviour
 struct Behaviour_t1A3DDDCF73B4627928FBFE02ED52B7251777DBD9  : public Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684
+{
+public:
+
+public:
+};
+
+
+// System.NotImplementedException
+struct NotImplementedException_t26260C4EE0444C5FA022994203060B3A42A3ADE6  : public SystemException_tC551B4D6EE3772B5F32C71EE8C719F4B43ECCC62
 {
 public:
 
@@ -3046,6 +3068,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackingDataUpdatedEvent_Invoke_mA382D74
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * Component_get_gameObject_m55DC35B149AFB9157582755383BA954655FE0C5B (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.GameObject::SetActive(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86 (GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * __this, bool ___value0, const RuntimeMethod* method);
+// System.Void System.NotImplementedException::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotImplementedException__ctor_mA2E9CE7F00CB335581A296D2596082D57E45BA83 (NotImplementedException_t26260C4EE0444C5FA022994203060B3A42A3ADE6 * __this, const RuntimeMethod* method);
 // System.Delegate System.Delegate::Combine(System.Delegate,System.Delegate)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t * Delegate_Combine_m631D10D6CFF81AB4F237B9D549B235A54F45FA55 (Delegate_t * ___a0, Delegate_t * ___b1, const RuntimeMethod* method);
 // System.Delegate System.Delegate::Remove(System.Delegate,System.Delegate)
@@ -3310,6 +3334,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamReceiverToTrackingSource_TurnOn_m2
 		GameObject_SetActive_mCF1EEF2A314F3AE85DA581FF52EB06ACEF2FFF86(L_0, (bool)1, /*hidden argument*/NULL);
 		// }
 		return;
+	}
+}
+// MPDepthCore.Calibration.Camera.MPDepthTrackingData StreamTrackingSystem.StreamReceiverToTrackingSource::GetRawTrackingData()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MPDepthTrackingData_t1C4585927FA6400A61AC93F18B144C0BE8C3F1F7 * StreamReceiverToTrackingSource_GetRawTrackingData_mB746CB66867998F23104EC4B7D742703A2FA1FD3 (StreamReceiverToTrackingSource_t60922E4944E79E7772DE443ED1F71D67D28A805C * __this, const RuntimeMethod* method)
+{
+	{
+		// throw new System.NotImplementedException();
+		NotImplementedException_t26260C4EE0444C5FA022994203060B3A42A3ADE6 * L_0 = (NotImplementedException_t26260C4EE0444C5FA022994203060B3A42A3ADE6 *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t26260C4EE0444C5FA022994203060B3A42A3ADE6_il2cpp_TypeInfo_var)));
+		NotImplementedException__ctor_mA2E9CE7F00CB335581A296D2596082D57E45BA83(L_0, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&StreamReceiverToTrackingSource_GetRawTrackingData_mB746CB66867998F23104EC4B7D742703A2FA1FD3_RuntimeMethod_var)));
 	}
 }
 // System.Void StreamTrackingSystem.StreamReceiverToTrackingSource::add_TrackingDataUpdated(MPDepthCore.TrackingSources.MPDepthTrackingSource/TrackingDataUpdatedEvent)

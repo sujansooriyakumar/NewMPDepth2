@@ -41,5 +41,11 @@ public class MotiveRawTrackingSource : MPDepthTrackingSource
         TrackingDataUpdated?.Invoke(data);
     }
 
+    public override MPDepthTrackingData GetRawTrackingData()
+    {
+        return new RawTrackingData();
+        //return cam;
+    }
+
     public override event TrackingDataUpdatedEvent TrackingDataUpdated;
 }
