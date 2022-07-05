@@ -18,6 +18,8 @@ public class ReceiveBlendshapes : MonoBehaviour
     private Vector3 rotation;
     private float[] blendshapes;
     [SerializeField]private float rotationOffset;
+    Transform calibration;
+    
     private MirrorModeController mirrorModeController;
     private void Start()
     {
@@ -40,6 +42,12 @@ public class ReceiveBlendshapes : MonoBehaviour
         if(neckBone) neckBone.localScale = new Vector3(1.1f, 1.1f, 1.1f);
         rotationOffset = 5.0f;
         mirrorModeController = MirrorModeController.instance;
+        if (!isMirrorAvatar) transform.localScale = new Vector3(-1, 1, 1);
+        calibration = trackingSystemsManager.GetCalibrationTransform();
+    }
+
+    private void OnEnable()
+    {
     }
     private void Update()
     {
@@ -48,6 +56,7 @@ public class ReceiveBlendshapes : MonoBehaviour
             //position = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Position;
             //rotation = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Eulers;
             position = trackingSystemsManager.CurrentTrackingSystem.trackingSource.GetRawTrackingData().CameraTrackingData.Position;
+            
             rotation = trackingSystemsManager.CurrentTrackingSystem.trackingSource.GetRawTrackingData().CameraTrackingData.Eulers;
             blendshapes = trackingSystemsManager.CurrentCalibratedTrackingData.BlendshapeTrackingData.Blendshapes;
 
@@ -61,18 +70,26 @@ public class ReceiveBlendshapes : MonoBehaviour
             //if(networkManager.GetIsOtherPlayerTracking()) transform.localPosition = position;
 
         }
+        Matrix4x4 calibrationMatrix = Matrix4x4.Rotate(calibration.rotation);
+        
+        // temporary variable to hold the translation
+        Matrix4x4 tmp2 = (calibrationMatrix) * Matrix4x4.Translate(-calibration.position);
+        Matrix4x4 pos = Matrix4x4.Translate(position);
+        Matrix4x4 calibratedPos = tmp2 * pos;
+        // assign the translation to matrix TCSB
+        transform.localPosition = new Vector3(-calibratedPos.m03, calibratedPos.m13, -calibratedPos.m23);
         if (rotation.magnitude > 0)
         {
             if (isMirrorAvatar)
             {
-                headBone.rotation = Quaternion.Euler((rotation.x+rotationOffset), (180-rotation.y), -rotation.z);
-                transform.localPosition = new Vector3(position.x, position.y, -position.z);
+                headBone.rotation = Quaternion.Euler((rotation.x+rotationOffset), (-rotation.y), -rotation.z);
+                
             }
 
             else if (!isMirrorAvatar)
             {
-                headBone.rotation = Quaternion.Euler((rotation.x+rotationOffset), -(180 - rotation.y), rotation.z);
-                if (position.magnitude > 0) transform.localPosition = new Vector3(position.x, -position.y, -position.z);
+                headBone.rotation = Quaternion.Euler((rotation.x+rotationOffset), -(rotation.y), rotation.z);
+                if (position.magnitude > 0) transform.localPosition = new Vector3(-position.x, -position.y, -position.z);
 
 
             }

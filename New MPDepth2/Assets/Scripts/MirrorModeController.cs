@@ -11,6 +11,7 @@ public class MirrorModeController : MonoBehaviour
     [SerializeField] Text text;
     [SerializeField] Camera dyadicCamera;
     [SerializeField] Camera mirrorCamera;
+    [SerializeField] OffAxisCameraRig currentCamera;
 
     [SerializeField] Vector2 insetPosition;
     [SerializeField] Vector3 insetSize;
@@ -36,7 +37,7 @@ public class MirrorModeController : MonoBehaviour
             dyadicCamera.depth = 0;
             mirrorCamera.gameObject.GetComponent<TrackingReceiver>().enabled = false;
             dyadicCamera.gameObject.GetComponent<TrackingReceiver>().enabled = true;
-
+            currentCamera = dyadicCamera.GetComponentInParent<OffAxisCameraRig>();
             text.text = "Window Mode";
             mirrorMode = false;
         }
@@ -49,6 +50,7 @@ public class MirrorModeController : MonoBehaviour
             mirrorCamera.depth = 0;
             dyadicCamera.gameObject.GetComponent<TrackingReceiver>().enabled = false;
             mirrorCamera.gameObject.GetComponent<TrackingReceiver>().enabled = true;
+            currentCamera = mirrorCamera.GetComponentInParent<OffAxisCameraRig>();
 
             text.text = "Mirror Mode";
             mirrorMode = true;
@@ -90,4 +92,10 @@ public class MirrorModeController : MonoBehaviour
     {
         return mirrorMode;
     }
+
+    public OffAxisCameraRig GetCurrentCamera()
+    {
+        return currentCamera;
+    }
+   
 }

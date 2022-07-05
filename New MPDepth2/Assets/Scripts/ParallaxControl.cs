@@ -11,14 +11,15 @@ public class ParallaxControl : MonoBehaviour
 
     public void ToggleParallax()
     {
-        if (offAxisCamera.GetTrackingDisabled())
+        MirrorModeController mirrorModeController = MirrorModeController.instance;
+        if (mirrorModeController.GetCurrentCamera().GetTrackingDisabled())
         {
-            offAxisCamera.EnableCameraTracking();
+            mirrorModeController.GetCurrentCamera().EnableCameraTracking();
             GetComponentInChildren<Text>().text = "MPDepth\nOn";
         }
         else
         {
-            offAxisCamera.DisableCameraTracking();
+            mirrorModeController.GetCurrentCamera().DisableCameraTracking();
             GetComponentInChildren<Text>().text = "MPDepth\nOff";
         }
     }

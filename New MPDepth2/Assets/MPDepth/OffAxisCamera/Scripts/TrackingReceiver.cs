@@ -23,7 +23,7 @@ namespace OffAxisCamera
             // clamp z pos
             //trackedPosition.z = Mathf.Max(trackedPosition.z, 0.00001f);
             // set pos to the tracked position
-            this.transform.localPosition = trackedPosition;
+            this.transform.localPosition = new Vector3(-trackedPosition.x, trackedPosition.y, -trackedPosition.z);
 
         }
         void OnDisable()

@@ -38,16 +38,16 @@ public class RotatableDeviceTrackingCalibrationProvider : TrackingCalibrationPro
     [SerializeField] RotatableCameraCalibrator rotatableCameraCalibrator;
 
     Vector3 PortraitOffset => currentCalibration.portraitOffset;
-    Vector3 PortraitCameraOrientationOffset => currentCalibration.cameraOrientationOffset;
+    Vector3 PortraitCameraOrientationOffset => -currentCalibration.cameraOrientationOffset;
 
     Vector3 LandscapeLeftOffset => new Vector3(PortraitOffset.y, -PortraitOffset.x, PortraitOffset.z);
-    Vector3 LandscapeLeftCameraOrientation => new Vector3(-PortraitCameraOrientationOffset.y, -PortraitCameraOrientationOffset.x, PortraitCameraOrientationOffset.z);
+    Vector3 LandscapeLeftCameraOrientation => new Vector3(-PortraitUpsideDownCameraOrientation.y, -PortraitUpsideDownCameraOrientation.x, PortraitUpsideDownCameraOrientation.z);
 
     Vector3 LandscapeRightOffset => new Vector3(-PortraitOffset.y, PortraitOffset.x, PortraitOffset.z);
-    Vector3 LandscapeRightCameraOrientation => new Vector3(PortraitCameraOrientationOffset.y, PortraitCameraOrientationOffset.x, PortraitCameraOrientationOffset.z);
+    Vector3 LandscapeRightCameraOrientation => new Vector3(PortraitUpsideDownCameraOrientation.y, PortraitUpsideDownCameraOrientation.x, PortraitUpsideDownCameraOrientation.z);
 
     Vector3 PortraitUpsideDownOffset => -PortraitOffset;
-    Vector3 PortraitUpsideDownCameraOrientation => -PortraitCameraOrientationOffset; 
+    Vector3 PortraitUpsideDownCameraOrientation => currentCalibration.cameraOrientationOffset; 
 
     DeviceOrientation CurrentOrientation
     {
