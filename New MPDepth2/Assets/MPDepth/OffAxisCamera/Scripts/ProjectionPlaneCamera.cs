@@ -83,7 +83,12 @@ namespace OffAxisCamera
             //    new Vector4(0, 1, 0, 0),
             //    new Vector4(-Mathf.Sin(windowRotationInRadians), 0, Mathf.Cos(windowRotationInRadians), 0),
             //    new Vector4(0, 0, 0, 0));
+            Matrix4x4 screenOrientationAx = Matrix4x4.Rotate(Quaternion.Euler(new Vector3(projectionScreen.transform.rotation.eulerAngles.x, 0, 0)));
+            Matrix4x4 screenOrientationAy = Matrix4x4.Rotate(Quaternion.Euler(new Vector3(0, projectionScreen.transform.rotation.eulerAngles.y, 0)));
+            Matrix4x4 screenOrientationAz = Matrix4x4.Rotate(Quaternion.Euler(new Vector3(0, 0, projectionScreen.transform.rotation.eulerAngles.z)));
+
             ScreenOrientationA = Matrix4x4.Rotate(projectionScreen.transform.rotation);
+            //ScreenOrientationA = screenOrientationAx * screenOrientationAz * screenOrientationAy;
             // temporary variable to hold the translation
             Matrix4x4 tmp = (ScreenOrientationA) * Matrix4x4.Translate(projectionScreen.transform.position);
 
@@ -113,9 +118,11 @@ namespace OffAxisCamera
             //    new Vector4(0, 1, 0, 0),
             //    new Vector4(-Mathf.Sin(sbRad), 0, Mathf.Cos(sbRad), 0),
             //    new Vector4(0, 0, 0, 0));
-
-            ScreenOrientationB = Matrix4x4.Rotate(calibrationTransform.rotation);
-
+            Matrix4x4 screenOrientationBx = Matrix4x4.Rotate(Quaternion.Euler(new Vector3(calibrationTransform.rotation.eulerAngles.x, 0, 0)));
+            Matrix4x4 screenOrientationBy = Matrix4x4.Rotate(Quaternion.Euler(new Vector3(0, calibrationTransform.rotation.eulerAngles.y, 0)));
+            Matrix4x4 screenOrientationBz = Matrix4x4.Rotate(Quaternion.Euler(new Vector3(0, 0, calibrationTransform.rotation.eulerAngles.z)));
+            ScreenOrientationB = Matrix4x4.Rotate(calibrationTransform.localRotation);
+            //ScreenOrientationB = screenOrientationBx * screenOrientationBz * screenOrientationBy;
             // temporary variable to hold the translation
             Matrix4x4 tmp2 = (ScreenOrientationB) * Matrix4x4.Translate(calibrationTransform.position);
 

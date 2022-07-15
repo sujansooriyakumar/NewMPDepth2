@@ -86,6 +86,7 @@ public class CharacterSelector : MonoBehaviour
                 mirrorAvatar.transform.parent = slothParent;
             }
             mirrorAvatar.transform.localPosition = Vector3.zero;
+            mirrorAvatar.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
 
             Transform[] children = mirrorAvatar.GetComponentsInChildren<Transform>();
             foreach(Transform child in children)
@@ -106,6 +107,7 @@ public class CharacterSelector : MonoBehaviour
             dyadicAvatar.transform.parent = avatarParent;
             dyadicAvatar.layer = layer;
             dyadicAvatar.transform.localPosition = Vector3.zero;
+            dyadicAvatar.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
             dyadicAvatar.GetComponent<ReceiveBlendshapes>().SetIsMirrorAvatar(false);
             if (characters[index].GetIsReadyPlayer())
             {

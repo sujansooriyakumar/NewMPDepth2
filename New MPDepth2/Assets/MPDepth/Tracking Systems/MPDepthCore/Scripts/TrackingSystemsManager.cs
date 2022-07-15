@@ -28,6 +28,7 @@ namespace MPDepthCore
         [SerializeField] Dropdown calibrationDropdown;
         [SerializeField] Dropdown trackingSystemsDropdown;
         [SerializeField] Transform offAxisCam;
+        [SerializeField] public Transform otherPlayerCalibration;
         public TrackingSystem CurrentTrackingSystem => currentTrackingSystem;
 
         public event MPDepthTrackingSource.TrackingDataUpdatedEvent TrackingDataUpdated;
@@ -66,7 +67,7 @@ namespace MPDepthCore
         void TrackingDataWasUpdated(MPDepthTrackingData data)
         {
             TrackingDataUpdated?.Invoke(data);
-            ApplyCalibration(data);
+            //ApplyCalibration(data);
             //offAxisCameraRig.UpdateCameraLocation(CurrentCalibratedTrackingData.CameraTrackingData.Position);
             offAxisCameraRig.UpdateCameraLocation(data.CameraTrackingData.Position);
         }
@@ -112,25 +113,28 @@ namespace MPDepthCore
 
         public void SelectSystem(int selectedIndex)
         {
-            TrackingSystem newTrackingSystem;
-            try
+            if (selectedIndex > 0)
             {
-                newTrackingSystem = trackingSystems[selectedIndex];
-            }
-            catch (IndexOutOfRangeException)
-            {
-                if (TrackingSystems.Count == 0)
+                TrackingSystem newTrackingSystem;
+                try
                 {
-                    Debug.LogError("No Tracking Systems defined!");
-                    throw;
+                    newTrackingSystem = trackingSystems[selectedIndex - 1];
                 }
+                catch (IndexOutOfRangeException)
+                {
+                    if (TrackingSystems.Count == 0)
+                    {
+                        Debug.LogError("No Tracking Systems defined!");
+                        throw;
+                    }
 
-                Debug.LogWarning($"Saved Tracking System index out of range {selectedIndex}, reverting to default.");
-                newTrackingSystem = trackingSystems[0];
+                    Debug.LogWarning($"Saved Tracking System index out of range {selectedIndex}, reverting to default.");
+                    newTrackingSystem = trackingSystems[0];
 
+                }
+                ChangeSystemTo(newTrackingSystem);
+                SelectCalibration(0);
             }
-            ChangeSystemTo(newTrackingSystem);
-            SelectCalibration(0);
         }
 
         public void ChangeSystemTo(TrackingSystem newTrackingSystem)

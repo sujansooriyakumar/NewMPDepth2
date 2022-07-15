@@ -7,20 +7,25 @@ using UnityEngine.UI;
 public class ParallaxControl : MonoBehaviour
 {
     [SerializeField] OffAxisCameraRig offAxisCamera;
+    [SerializeField] Sprite playSprite;
+    [SerializeField] Sprite stopSprite;
     
 
     public void ToggleParallax()
     {
         MirrorModeController mirrorModeController = MirrorModeController.instance;
+        Image i = GetComponent<Image>();
         if (mirrorModeController.GetCurrentCamera().GetTrackingDisabled())
         {
             mirrorModeController.GetCurrentCamera().EnableCameraTracking();
-            GetComponentInChildren<Text>().text = "MPDepth\nOn";
+            i.sprite = playSprite;
+            GetComponentInChildren<Text>().text = "MPDepth On";
         }
         else
         {
             mirrorModeController.GetCurrentCamera().DisableCameraTracking();
-            GetComponentInChildren<Text>().text = "MPDepth\nOff";
+            i.sprite = stopSprite;
+            GetComponentInChildren<Text>().text = "MPDepth Off";
         }
     }
 }

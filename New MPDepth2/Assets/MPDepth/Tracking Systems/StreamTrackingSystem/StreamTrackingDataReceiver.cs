@@ -21,6 +21,7 @@ namespace StreamTrackingSystem
         protected override void SetData(RawTrackingData receivedData)
         {
             ReceivedData = receivedData;
+         
         }
 
      

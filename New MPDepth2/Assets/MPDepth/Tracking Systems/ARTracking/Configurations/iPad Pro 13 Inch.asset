@@ -15,7 +15,7 @@ MonoBehaviour:
   screenCalibration:
     name: iPad Pro 13 Inch (1st Gen)
     PortraitModeHeight: 0.26
-    PortraitModeWidth: 0.195
+    PortraitModeWidth: 0.19
   trackingCalibration:
     name: iPad Pro 13 Inch (1st Gen)
     portraitOffset: {x: 0, y: -0.13, z: 0}

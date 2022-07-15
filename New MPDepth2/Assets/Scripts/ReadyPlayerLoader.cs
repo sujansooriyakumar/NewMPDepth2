@@ -52,7 +52,7 @@ namespace ReadyPlayerMe
                 avatar.AddComponent<ReceiveBlendshapes>();
                 avatar.GetComponent<ReceiveBlendshapes>().SetIsMirrorAvatar(true);
                 avatar.transform.localPosition = Vector3.zero;
-
+                avatar.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 
 
             }
@@ -66,8 +66,10 @@ namespace ReadyPlayerMe
                 avatar.AddComponent<ReceiveBlendshapes>();
                 avatar.GetComponent<ReceiveBlendshapes>().SetIsMirrorAvatar(false);
                 avatar.transform.localPosition = Vector3.zero;
+                avatar.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 0));
+
             }
-       
+
             Transform[] children = avatar.transform.GetComponentsInChildren<Transform>();
             foreach(Transform child in children)
             {

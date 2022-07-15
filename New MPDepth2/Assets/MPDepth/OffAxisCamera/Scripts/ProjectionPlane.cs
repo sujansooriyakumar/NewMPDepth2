@@ -169,7 +169,6 @@ namespace OffAxisCamera
 
         void Update()
         {
-            Debug.Log(size.x + ", " + size.y);
       
             bottomLeft = BottomLeft;
             bottomRight = BottomRight;

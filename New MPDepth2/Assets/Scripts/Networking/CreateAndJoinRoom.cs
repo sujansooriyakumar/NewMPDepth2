@@ -14,21 +14,19 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.CountOfPlayersInRooms == 0)
         {
-            PhotonNetwork.CreateRoom("Test2");
+            PhotonNetwork.CreateRoom("room");
         }
 
         else
         {
-            Debug.Log("T");
             JoinRoom();
         }
-
     }
 
     public void JoinRoom()
     {
 
-        PhotonNetwork.JoinRoom("Test2");
+        PhotonNetwork.JoinRoom("room");
     }
 
     public override void OnJoinedRoom()
