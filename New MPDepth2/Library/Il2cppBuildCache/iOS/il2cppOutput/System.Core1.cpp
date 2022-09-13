@@ -7298,53 +7298,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ExpandoObject_System_Collections_Generic
 		return;
 	}
 }
-// System.Boolean System.Dynamic.ExpandoObject::System.Collections.Generic.IDictionary<System.String,System.Object>.ContainsKey(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ExpandoObject_System_Collections_Generic_IDictionaryU3CSystem_StringU2CSystem_ObjectU3E_ContainsKey_m1824AB765387238865240DA581BFD43274D55DAA (ExpandoObject_t12886EDF3CA8DD10C970226F277CD291FC912315 * __this, String_t* ___key0, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ExpandoObject_t12886EDF3CA8DD10C970226F277CD291FC912315_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE7D028CCE3B6E7B61AE2C752D7AE970DA04AB7C6);
-		s_Il2CppMethodInitialized = true;
-	}
-	ExpandoData_t676C12D0D3BA87574240F2ECBC36B790F3CF6EE7 * V_0 = NULL;
-	int32_t V_1 = 0;
-	{
-		String_t* L_0 = ___key0;
-		ContractUtils_RequiresNotNull_mD6FE9CE9443D542AFCE34C007C94516AC93130E3(L_0, _stringLiteralE7D028CCE3B6E7B61AE2C752D7AE970DA04AB7C6, /*hidden argument*/NULL);
-		ExpandoData_t676C12D0D3BA87574240F2ECBC36B790F3CF6EE7 * L_1 = __this->get__data_6();
-		V_0 = L_1;
-		ExpandoData_t676C12D0D3BA87574240F2ECBC36B790F3CF6EE7 * L_2 = V_0;
-		NullCheck(L_2);
-		ExpandoClass_t75F880AA893C9E1A55EC551C7CC2FF037425047D * L_3 = L_2->get_Class_1();
-		String_t* L_4 = ___key0;
-		NullCheck(L_3);
-		int32_t L_5;
-		L_5 = ExpandoClass_GetValueIndexCaseSensitive_mE5F1A2678E6F654DF124622AC7550D340495784C(L_3, L_4, /*hidden argument*/NULL);
-		V_1 = L_5;
-		int32_t L_6 = V_1;
-		if ((((int32_t)L_6) < ((int32_t)0)))
-		{
-			goto IL_0035;
-		}
-	}
-	{
-		ExpandoData_t676C12D0D3BA87574240F2ECBC36B790F3CF6EE7 * L_7 = V_0;
-		int32_t L_8 = V_1;
-		NullCheck(L_7);
-		RuntimeObject * L_9;
-		L_9 = ExpandoData_get_Item_mFD0F9424CDDB9EDDCF181AD3CBF1593D027239A1(L_7, L_8, /*hidden argument*/NULL);
-		IL2CPP_RUNTIME_CLASS_INIT(ExpandoObject_t12886EDF3CA8DD10C970226F277CD291FC912315_il2cpp_TypeInfo_var);
-		RuntimeObject * L_10 = ((ExpandoObject_t12886EDF3CA8DD10C970226F277CD291FC912315_StaticFields*)il2cpp_codegen_static_fields_for(ExpandoObject_t12886EDF3CA8DD10C970226F277CD291FC912315_il2cpp_TypeInfo_var))->get_Uninitialized_8();
-		return (bool)((((int32_t)((((RuntimeObject*)(RuntimeObject *)L_9) == ((RuntimeObject*)(RuntimeObject *)L_10))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-	}
-
-IL_0035:
-	{
-		return (bool)0;
-	}
-}
 // System.Boolean System.Dynamic.ExpandoObject::System.Collections.Generic.IDictionary<System.String,System.Object>.Remove(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ExpandoObject_System_Collections_Generic_IDictionaryU3CSystem_StringU2CSystem_ObjectU3E_Remove_mF75B7DB65726951BADBC9EE15E55AF6E59E7E68D (ExpandoObject_t12886EDF3CA8DD10C970226F277CD291FC912315 * __this, String_t* ___key0, const RuntimeMethod* method)
 {

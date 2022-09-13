@@ -21,9 +21,6 @@ IL2CPP_EXTERN_C Il2CppInteropData g_Il2CppInteropData[];
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_ARKit_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Authentication_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Facebook_Unity_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Facebook_Unity_IOS_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Facebook_Unity_Settings_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_MPDepthCore_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Mono_Security_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_MotiveStreamer_CodeGenModule;
@@ -84,7 +81,6 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UI_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestTextureModule_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestWWWModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_XRModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_TextMeshPro_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_XR_ARFoundation_CodeGenModule;
@@ -96,14 +92,11 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Voice_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_WebView_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[77] = 
+const Il2CppCodeGenModule* g_CodeGenModules[73] = 
 {
 	(&g_ARKit_CodeGenModule),
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_Authentication_CodeGenModule),
-	(&g_Facebook_Unity_CodeGenModule),
-	(&g_Facebook_Unity_IOS_CodeGenModule),
-	(&g_Facebook_Unity_Settings_CodeGenModule),
 	(&g_MPDepthCore_CodeGenModule),
 	(&g_Mono_Security_CodeGenModule),
 	(&g_MotiveStreamer_CodeGenModule),
@@ -164,7 +157,6 @@ const Il2CppCodeGenModule* g_CodeGenModules[77] =
 	(&g_UnityEngine_UI_CodeGenModule),
 	(&g_UnityEngine_UnityWebRequestModule_CodeGenModule),
 	(&g_UnityEngine_UnityWebRequestTextureModule_CodeGenModule),
-	(&g_UnityEngine_UnityWebRequestWWWModule_CodeGenModule),
 	(&g_UnityEngine_XRModule_CodeGenModule),
 	(&g_Unity_TextMeshPro_CodeGenModule),
 	(&g_Unity_XR_ARFoundation_CodeGenModule),
@@ -181,18 +173,18 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	16,
 	g_ReversePInvokeWrapperPointers,
-	25186,
+	25117,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	6607,
+	6556,
 	g_Il2CppInvokerPointers,
-	932,
+	883,
 	g_UnresolvedVirtualMethodPointers,
-	429,
+	430,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	77,
+	73,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

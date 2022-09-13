@@ -6061,12 +6061,12 @@ inline void Enumerator_Dispose_m1F708350847A68204851B4B70DC17743E90B747D (Enumer
 {
 	((  void (*) (Enumerator_tD1ABBE761AD6E03A50C066BB80DBBA88D529A408 *, const RuntimeMethod*))Enumerator_Dispose_mCFB225D9E5E597A1CC8F958E53BEA1367D8AC7B8_gshared)(__this, method);
 }
-// UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider::get_PortraitOffset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  RotatableDeviceTrackingCalibrationProvider_get_PortraitOffset_m7810C4A456B8FDD3CFB5A0D42ABAEC226F0BD482 (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method);
-// UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider::get_PortraitCameraOrientationOffset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  RotatableDeviceTrackingCalibrationProvider_get_PortraitCameraOrientationOffset_m95CE0F9D62EB7C289F541AD5F47D0A50A4226230 (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method);
 // UnityEngine.Vector3 UnityEngine.Vector3::op_UnaryNegation(UnityEngine.Vector3)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  Vector3_op_UnaryNegation_m362EA356F4CADEDB39F965A0DBDED6EA890925F7_inline (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  ___a0, const RuntimeMethod* method);
+// UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider::get_PortraitOffset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  RotatableDeviceTrackingCalibrationProvider_get_PortraitOffset_m7810C4A456B8FDD3CFB5A0D42ABAEC226F0BD482 (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method);
+// UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider::get_PortraitUpsideDownCameraOrientation()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  RotatableDeviceTrackingCalibrationProvider_get_PortraitUpsideDownCameraOrientation_mFE6D34C6313EDF4FD0ADDF2B8EFB75579AE8258C (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method);
 // UnityEngine.DeviceOrientation RotatableDeviceTrackingCalibrationProvider::get_CurrentOrientation()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RotatableDeviceTrackingCalibrationProvider_get_CurrentOrientation_m9A10DC295BCF680428900EFED9B327BB9C2B7F10 (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method);
 // UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider::get_PortraitUpsideDownOffset()
@@ -6077,8 +6077,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  RotatableDeviceTrackingCalibrationProvider_get_LandscapeRightOffset_mD8C2A9D349DB176813820FDA10826B95AB93C444 (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method);
 // System.Void System.ArgumentException::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m2D35EAD113C2ADC99EB17B940A2097A93FD23EFC (ArgumentException_t505FA8C11E883F2D96C797AD9D396490794DEE00 * __this, String_t* ___message0, const RuntimeMethod* method);
-// UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider::get_PortraitUpsideDownCameraOrientation()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  RotatableDeviceTrackingCalibrationProvider_get_PortraitUpsideDownCameraOrientation_mFE6D34C6313EDF4FD0ADDF2B8EFB75579AE8258C (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method);
+// UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider::get_PortraitCameraOrientationOffset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  RotatableDeviceTrackingCalibrationProvider_get_PortraitCameraOrientationOffset_m95CE0F9D62EB7C289F541AD5F47D0A50A4226230 (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method);
 // UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider::get_LandscapeLeftCameraOrientation()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  RotatableDeviceTrackingCalibrationProvider_get_LandscapeLeftCameraOrientation_m7A6CA97BA5EFF05FB28BBD777E6024EEC36C38AC (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method);
 // UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider::get_LandscapeRightCameraOrientation()
@@ -10348,11 +10348,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  RotatableDeviceTrackingCalibrationProvider_get_PortraitCameraOrientationOffset_m95CE0F9D62EB7C289F541AD5F47D0A50A4226230 (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method)
 {
 	{
-		// Vector3 PortraitCameraOrientationOffset => currentCalibration.cameraOrientationOffset;
+		// Vector3 PortraitCameraOrientationOffset => -currentCalibration.cameraOrientationOffset;
 		SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * L_0 = __this->get_currentCalibration_6();
 		NullCheck(L_0);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = L_0->get_cameraOrientationOffset_2();
-		return L_1;
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
+		L_2 = Vector3_op_UnaryNegation_m362EA356F4CADEDB39F965A0DBDED6EA890925F7_inline(L_1, /*hidden argument*/NULL);
+		return L_2;
 	}
 }
 // UnityEngine.Vector3 RotatableDeviceTrackingCalibrationProvider::get_LandscapeLeftOffset()
@@ -10379,15 +10381,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  RotatableDeviceTrackingCalibrationProvider_get_LandscapeLeftCameraOrientation_m7A6CA97BA5EFF05FB28BBD777E6024EEC36C38AC (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method)
 {
 	{
-		// Vector3 LandscapeLeftCameraOrientation => new Vector3(-PortraitCameraOrientationOffset.y, -PortraitCameraOrientationOffset.x, PortraitCameraOrientationOffset.z);
+		// Vector3 LandscapeLeftCameraOrientation => new Vector3(-PortraitUpsideDownCameraOrientation.y, -PortraitUpsideDownCameraOrientation.x, PortraitUpsideDownCameraOrientation.z);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0;
-		L_0 = RotatableDeviceTrackingCalibrationProvider_get_PortraitCameraOrientationOffset_m95CE0F9D62EB7C289F541AD5F47D0A50A4226230(__this, /*hidden argument*/NULL);
+		L_0 = RotatableDeviceTrackingCalibrationProvider_get_PortraitUpsideDownCameraOrientation_mFE6D34C6313EDF4FD0ADDF2B8EFB75579AE8258C(__this, /*hidden argument*/NULL);
 		float L_1 = L_0.get_y_3();
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
-		L_2 = RotatableDeviceTrackingCalibrationProvider_get_PortraitCameraOrientationOffset_m95CE0F9D62EB7C289F541AD5F47D0A50A4226230(__this, /*hidden argument*/NULL);
+		L_2 = RotatableDeviceTrackingCalibrationProvider_get_PortraitUpsideDownCameraOrientation_mFE6D34C6313EDF4FD0ADDF2B8EFB75579AE8258C(__this, /*hidden argument*/NULL);
 		float L_3 = L_2.get_x_2();
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4;
-		L_4 = RotatableDeviceTrackingCalibrationProvider_get_PortraitCameraOrientationOffset_m95CE0F9D62EB7C289F541AD5F47D0A50A4226230(__this, /*hidden argument*/NULL);
+		L_4 = RotatableDeviceTrackingCalibrationProvider_get_PortraitUpsideDownCameraOrientation_mFE6D34C6313EDF4FD0ADDF2B8EFB75579AE8258C(__this, /*hidden argument*/NULL);
 		float L_5 = L_4.get_z_4();
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6;
 		memset((&L_6), 0, sizeof(L_6));
@@ -10419,15 +10421,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  RotatableDeviceTrackingCalibrationProvider_get_LandscapeRightCameraOrientation_m23ACABDAC89CB9B001E888C5AE401E0E1D8780B5 (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method)
 {
 	{
-		// Vector3 LandscapeRightCameraOrientation => new Vector3(PortraitCameraOrientationOffset.y, PortraitCameraOrientationOffset.x, PortraitCameraOrientationOffset.z);
+		// Vector3 LandscapeRightCameraOrientation => new Vector3(PortraitUpsideDownCameraOrientation.y, PortraitUpsideDownCameraOrientation.x, PortraitUpsideDownCameraOrientation.z);
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0;
-		L_0 = RotatableDeviceTrackingCalibrationProvider_get_PortraitCameraOrientationOffset_m95CE0F9D62EB7C289F541AD5F47D0A50A4226230(__this, /*hidden argument*/NULL);
+		L_0 = RotatableDeviceTrackingCalibrationProvider_get_PortraitUpsideDownCameraOrientation_mFE6D34C6313EDF4FD0ADDF2B8EFB75579AE8258C(__this, /*hidden argument*/NULL);
 		float L_1 = L_0.get_y_3();
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
-		L_2 = RotatableDeviceTrackingCalibrationProvider_get_PortraitCameraOrientationOffset_m95CE0F9D62EB7C289F541AD5F47D0A50A4226230(__this, /*hidden argument*/NULL);
+		L_2 = RotatableDeviceTrackingCalibrationProvider_get_PortraitUpsideDownCameraOrientation_mFE6D34C6313EDF4FD0ADDF2B8EFB75579AE8258C(__this, /*hidden argument*/NULL);
 		float L_3 = L_2.get_x_2();
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4;
-		L_4 = RotatableDeviceTrackingCalibrationProvider_get_PortraitCameraOrientationOffset_m95CE0F9D62EB7C289F541AD5F47D0A50A4226230(__this, /*hidden argument*/NULL);
+		L_4 = RotatableDeviceTrackingCalibrationProvider_get_PortraitUpsideDownCameraOrientation_mFE6D34C6313EDF4FD0ADDF2B8EFB75579AE8258C(__this, /*hidden argument*/NULL);
 		float L_5 = L_4.get_z_4();
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6;
 		memset((&L_6), 0, sizeof(L_6));
@@ -10451,11 +10453,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  RotatableDeviceTrackingCalibrationProvider_get_PortraitUpsideDownCameraOrientation_mFE6D34C6313EDF4FD0ADDF2B8EFB75579AE8258C (RotatableDeviceTrackingCalibrationProvider_tE27A3F41EA89417D49AB4FF50B05BDD0CCBA6356 * __this, const RuntimeMethod* method)
 {
 	{
-		// Vector3 PortraitUpsideDownCameraOrientation => -PortraitCameraOrientationOffset;
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0;
-		L_0 = RotatableDeviceTrackingCalibrationProvider_get_PortraitCameraOrientationOffset_m95CE0F9D62EB7C289F541AD5F47D0A50A4226230(__this, /*hidden argument*/NULL);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
-		L_1 = Vector3_op_UnaryNegation_m362EA356F4CADEDB39F965A0DBDED6EA890925F7_inline(L_0, /*hidden argument*/NULL);
+		// Vector3 PortraitUpsideDownCameraOrientation => currentCalibration.cameraOrientationOffset;
+		SavedRotatableDeviceCalibration_tEB87F741A34369FD5F81F73D4C9D8F040B14126D * L_0 = __this->get_currentCalibration_6();
+		NullCheck(L_0);
+		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = L_0->get_cameraOrientationOffset_2();
 		return L_1;
 	}
 }

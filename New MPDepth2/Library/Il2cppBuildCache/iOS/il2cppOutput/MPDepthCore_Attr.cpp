@@ -710,14 +710,14 @@ public:
 
 
 
+// System.Void System.Diagnostics.DebuggableAttribute::.ctor(System.Diagnostics.DebuggableAttribute/DebuggingModes)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550 (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * __this, int32_t ___modes0, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.CompilationRelaxationsAttribute::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CompilationRelaxationsAttribute__ctor_mAC3079EBC4EEAB474EED8208EF95DB39C922333B (CompilationRelaxationsAttribute_t661FDDC06629BDA607A42BD660944F039FE03AFF * __this, int32_t ___relaxations0, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeCompatibilityAttribute__ctor_m551DDF1438CE97A984571949723F30F44CF7317C (RuntimeCompatibilityAttribute_tFF99AB2963098F9CBCD47A20D9FD3D51C17C1C80 * __this, const RuntimeMethod* method);
 // System.Void System.Runtime.CompilerServices.RuntimeCompatibilityAttribute::set_WrapNonExceptionThrows(System.Boolean)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RuntimeCompatibilityAttribute_set_WrapNonExceptionThrows_m8562196F90F3EBCEC23B5708EE0332842883C490_inline (RuntimeCompatibilityAttribute_tFF99AB2963098F9CBCD47A20D9FD3D51C17C1C80 * __this, bool ___value0, const RuntimeMethod* method);
-// System.Void System.Diagnostics.DebuggableAttribute::.ctor(System.Diagnostics.DebuggableAttribute/DebuggingModes)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550 (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * __this, int32_t ___modes0, const RuntimeMethod* method);
 // System.Void UnityEngine.SerializeField::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3 (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.ExecuteInEditMode::.ctor()
@@ -743,17 +743,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContextMenu__ctor_m8A50A6FFBB330E0DB6F65
 static void MPDepthCore_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	{
-		CompilationRelaxationsAttribute_t661FDDC06629BDA607A42BD660944F039FE03AFF * tmp = (CompilationRelaxationsAttribute_t661FDDC06629BDA607A42BD660944F039FE03AFF *)cache->attributes[0];
+		DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * tmp = (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B *)cache->attributes[0];
+		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 2LL, NULL);
+	}
+	{
+		CompilationRelaxationsAttribute_t661FDDC06629BDA607A42BD660944F039FE03AFF * tmp = (CompilationRelaxationsAttribute_t661FDDC06629BDA607A42BD660944F039FE03AFF *)cache->attributes[1];
 		CompilationRelaxationsAttribute__ctor_mAC3079EBC4EEAB474EED8208EF95DB39C922333B(tmp, 8LL, NULL);
 	}
 	{
-		RuntimeCompatibilityAttribute_tFF99AB2963098F9CBCD47A20D9FD3D51C17C1C80 * tmp = (RuntimeCompatibilityAttribute_tFF99AB2963098F9CBCD47A20D9FD3D51C17C1C80 *)cache->attributes[1];
+		RuntimeCompatibilityAttribute_tFF99AB2963098F9CBCD47A20D9FD3D51C17C1C80 * tmp = (RuntimeCompatibilityAttribute_tFF99AB2963098F9CBCD47A20D9FD3D51C17C1C80 *)cache->attributes[2];
 		RuntimeCompatibilityAttribute__ctor_m551DDF1438CE97A984571949723F30F44CF7317C(tmp, NULL);
 		RuntimeCompatibilityAttribute_set_WrapNonExceptionThrows_m8562196F90F3EBCEC23B5708EE0332842883C490_inline(tmp, true, NULL);
 	}
+}
+static void CalibrateTrackingData_tF4922FFA6CF45C92397200F870064C7012EBE1CB_CustomAttributesCacheGenerator_projectionScreen(CustomAttributesCache* cache)
+{
 	{
-		DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * tmp = (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B *)cache->attributes[2];
-		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 2LL, NULL);
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void CalibrateTrackingData_tF4922FFA6CF45C92397200F870064C7012EBE1CB_CustomAttributesCacheGenerator_calibratedPosition(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
 	}
 }
 static void CalibrationAdjustmentSlider_t9772FB28B756465E8EF56DD50E302EA9794DC41C_CustomAttributesCacheGenerator_slider(CustomAttributesCache* cache)
@@ -984,12 +998,12 @@ static void TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53_CustomAttri
 static void TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53_CustomAttributesCacheGenerator_mainUI(CustomAttributesCache* cache)
 {
 	{
-		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
-		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+		HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB * tmp = (HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB *)cache->attributes[0];
+		HeaderAttribute__ctor_m601319E0BCE8C44A9E79B2C0ABAAD0FEF46A9F1E(tmp, il2cpp_codegen_string_new_wrapper("\x53\x63\x65\x6E\x65\x20\x52\x65\x66\x65\x72\x65\x6E\x63\x65\x73"), NULL);
 	}
 	{
-		HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB * tmp = (HeaderAttribute_t9B431E6BA0524D46406D9C413D6A71CB5F2DD1AB *)cache->attributes[1];
-		HeaderAttribute__ctor_m601319E0BCE8C44A9E79B2C0ABAAD0FEF46A9F1E(tmp, il2cpp_codegen_string_new_wrapper("\x53\x63\x65\x6E\x65\x20\x52\x65\x66\x65\x72\x65\x6E\x63\x65\x73"), NULL);
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[1];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
 	}
 }
 static void TrackingSystem_tA59049373A618D97402669E350B279EBA1CDAC53_CustomAttributesCacheGenerator_offAxisCameraRig(CustomAttributesCache* cache)
@@ -1084,6 +1098,13 @@ static void TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_Cus
 	}
 }
 static void TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_offAxisCam(CustomAttributesCache* cache)
+{
+	{
+		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
+		SerializeField__ctor_mDE6A7673BA2C1FAD03CFEC65C6D473CC37889DD3(tmp, NULL);
+	}
+}
+static void TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_otherPlayerCalibration(CustomAttributesCache* cache)
 {
 	{
 		SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 * tmp = (SerializeField_t6B23EE6CC99B21C3EBD946352112832A70E67E25 *)cache->attributes[0];
@@ -1358,12 +1379,14 @@ static void TrackingCalibrationProvider_t936458C67919392EE6B88C439729E2AECA9293A
 	}
 }
 IL2CPP_EXTERN_C const CustomAttributesCacheGenerator g_MPDepthCore_AttributeGenerators[];
-const CustomAttributesCacheGenerator g_MPDepthCore_AttributeGenerators[82] = 
+const CustomAttributesCacheGenerator g_MPDepthCore_AttributeGenerators[85] = 
 {
 	RuntimeVector3PropertyDrawer_t549B66AAD8D28612AFAEBEAE8FFA46B046BA4A35_CustomAttributesCacheGenerator,
 	SimpleUserEvent_tEB703481056F870D3D324A63602CED34D82C5D39_CustomAttributesCacheGenerator,
 	ToggleUserEvent_tE32E5B4618A68FDF0249AA5B94B0A953EFB2C3DA_CustomAttributesCacheGenerator,
 	U3CRunCalibrationProcedureU3Ed__8_t3390335E7C5FEF3070B603F3A17544E1694B1E17_CustomAttributesCacheGenerator,
+	CalibrateTrackingData_tF4922FFA6CF45C92397200F870064C7012EBE1CB_CustomAttributesCacheGenerator_projectionScreen,
+	CalibrateTrackingData_tF4922FFA6CF45C92397200F870064C7012EBE1CB_CustomAttributesCacheGenerator_calibratedPosition,
 	CalibrationAdjustmentSlider_t9772FB28B756465E8EF56DD50E302EA9794DC41C_CustomAttributesCacheGenerator_slider,
 	CalibrationAdjustmentSlider_t9772FB28B756465E8EF56DD50E302EA9794DC41C_CustomAttributesCacheGenerator_inputField,
 	CalibrationAdjustmentSlider_t9772FB28B756465E8EF56DD50E302EA9794DC41C_CustomAttributesCacheGenerator_adjustmentFactor,
@@ -1398,6 +1421,7 @@ const CustomAttributesCacheGenerator g_MPDepthCore_AttributeGenerators[82] =
 	TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_calibrationDropdown,
 	TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_trackingSystemsDropdown,
 	TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_offAxisCam,
+	TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_otherPlayerCalibration,
 	TrackingSystemsManager_t4C5B37B169806CE41B8F44055E18F3596F29AE40_CustomAttributesCacheGenerator_TrackingDataUpdated,
 	ManualDebugSource_t7260C125A028CA38DAB5C37788FE9D3C57C30AC7_CustomAttributesCacheGenerator_TrackingDataUpdated,
 	ManualDebugSource_t7260C125A028CA38DAB5C37788FE9D3C57C30AC7_CustomAttributesCacheGenerator_isTracking,

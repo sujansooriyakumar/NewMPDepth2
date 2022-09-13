@@ -365,113 +365,109 @@ extern void AndroidJavaObject__ctor_m6146DBD19BCFFDB3D4F42C8D38491F354B58B001 (v
 extern void AndroidJavaObject_Dispose_mFF9FA58B47A7FC0C083E034B364EAAE2E7282C45 (void);
 // 0x000000B2 System.Void UnityEngine.AndroidJavaObject::Call(System.String,System.Object[])
 extern void AndroidJavaObject_Call_mBB226DA52CE5A2FCD9A2D42BC7FB4272E094B76D (void);
-// 0x000000B3 System.Void UnityEngine.AndroidJavaObject::CallStatic(System.String,System.Object[])
-extern void AndroidJavaObject_CallStatic_m5A97968767E1603C021023809276443ED24577FB (void);
-// 0x000000B4 FieldType UnityEngine.AndroidJavaObject::GetStatic(System.String)
-// 0x000000B5 System.IntPtr UnityEngine.AndroidJavaObject::GetRawObject()
+// 0x000000B3 FieldType UnityEngine.AndroidJavaObject::GetStatic(System.String)
+// 0x000000B4 System.IntPtr UnityEngine.AndroidJavaObject::GetRawObject()
 extern void AndroidJavaObject_GetRawObject_m09E30F9AF9DD2AE07D34CE3915BDA557E206271D (void);
-// 0x000000B6 System.IntPtr UnityEngine.AndroidJavaObject::GetRawClass()
+// 0x000000B5 System.IntPtr UnityEngine.AndroidJavaObject::GetRawClass()
 extern void AndroidJavaObject_GetRawClass_m051337FD2D7C0E765641B192D86FF4A06257836B (void);
-// 0x000000B7 ReturnType UnityEngine.AndroidJavaObject::Call(System.String,System.Object[])
-// 0x000000B8 ReturnType UnityEngine.AndroidJavaObject::CallStatic(System.String,System.Object[])
-// 0x000000B9 System.Void UnityEngine.AndroidJavaObject::DebugPrint(System.String)
+// 0x000000B6 ReturnType UnityEngine.AndroidJavaObject::Call(System.String,System.Object[])
+// 0x000000B7 ReturnType UnityEngine.AndroidJavaObject::CallStatic(System.String,System.Object[])
+// 0x000000B8 System.Void UnityEngine.AndroidJavaObject::DebugPrint(System.String)
 extern void AndroidJavaObject_DebugPrint_m4F2A8B6447F29A548C6AE6F74CBD3AF51B587F7D (void);
-// 0x000000BA System.Void UnityEngine.AndroidJavaObject::_AndroidJavaObject(System.String,System.Object[])
+// 0x000000B9 System.Void UnityEngine.AndroidJavaObject::_AndroidJavaObject(System.String,System.Object[])
 extern void AndroidJavaObject__AndroidJavaObject_m54584F0F147ECA1A0B7DEB875742B3331CC1666A (void);
-// 0x000000BB System.Void UnityEngine.AndroidJavaObject::.ctor(System.IntPtr)
+// 0x000000BA System.Void UnityEngine.AndroidJavaObject::.ctor(System.IntPtr)
 extern void AndroidJavaObject__ctor_m880F6533139DF0BD36C6EF428E45E9F44B6534A3 (void);
-// 0x000000BC System.Void UnityEngine.AndroidJavaObject::.ctor()
+// 0x000000BB System.Void UnityEngine.AndroidJavaObject::.ctor()
 extern void AndroidJavaObject__ctor_m76D62BEE18E830EBCDE4B6860AC3C8A5979C9F18 (void);
-// 0x000000BD System.Void UnityEngine.AndroidJavaObject::Finalize()
+// 0x000000BC System.Void UnityEngine.AndroidJavaObject::Finalize()
 extern void AndroidJavaObject_Finalize_mE74A8B42EE112C9889752419D2AA209CD08704A2 (void);
-// 0x000000BE System.Void UnityEngine.AndroidJavaObject::Dispose(System.Boolean)
+// 0x000000BD System.Void UnityEngine.AndroidJavaObject::Dispose(System.Boolean)
 extern void AndroidJavaObject_Dispose_m881D1EC65C5FE625E9F84D81308E966CAC607AFC (void);
-// 0x000000BF System.Void UnityEngine.AndroidJavaObject::_Call(System.String,System.Object[])
+// 0x000000BE System.Void UnityEngine.AndroidJavaObject::_Call(System.String,System.Object[])
 extern void AndroidJavaObject__Call_m5F23B0D456587BD5B01C41EB4C472AF59FF40946 (void);
-// 0x000000C0 ReturnType UnityEngine.AndroidJavaObject::_Call(System.String,System.Object[])
-// 0x000000C1 System.Void UnityEngine.AndroidJavaObject::_CallStatic(System.String,System.Object[])
-extern void AndroidJavaObject__CallStatic_m69A43F99817AE27CF1EEAF0C7F5FCF56A11AD23F (void);
-// 0x000000C2 ReturnType UnityEngine.AndroidJavaObject::_CallStatic(System.String,System.Object[])
-// 0x000000C3 FieldType UnityEngine.AndroidJavaObject::_GetStatic(System.String)
-// 0x000000C4 UnityEngine.AndroidJavaObject UnityEngine.AndroidJavaObject::AndroidJavaObjectDeleteLocalRef(System.IntPtr)
+// 0x000000BF ReturnType UnityEngine.AndroidJavaObject::_Call(System.String,System.Object[])
+// 0x000000C0 ReturnType UnityEngine.AndroidJavaObject::_CallStatic(System.String,System.Object[])
+// 0x000000C1 FieldType UnityEngine.AndroidJavaObject::_GetStatic(System.String)
+// 0x000000C2 UnityEngine.AndroidJavaObject UnityEngine.AndroidJavaObject::AndroidJavaObjectDeleteLocalRef(System.IntPtr)
 extern void AndroidJavaObject_AndroidJavaObjectDeleteLocalRef_mB977696EA6F6BB6369A8F783EFB5D99C445C11FD (void);
-// 0x000000C5 UnityEngine.AndroidJavaClass UnityEngine.AndroidJavaObject::AndroidJavaClassDeleteLocalRef(System.IntPtr)
+// 0x000000C3 UnityEngine.AndroidJavaClass UnityEngine.AndroidJavaObject::AndroidJavaClassDeleteLocalRef(System.IntPtr)
 extern void AndroidJavaObject_AndroidJavaClassDeleteLocalRef_mE5C858ECFE81960EA260B3F112FD8A30C4097842 (void);
-// 0x000000C6 System.IntPtr UnityEngine.AndroidJavaObject::_GetRawObject()
+// 0x000000C4 System.IntPtr UnityEngine.AndroidJavaObject::_GetRawObject()
 extern void AndroidJavaObject__GetRawObject_mD52629909E16A092896CD884BB710F876BE14975 (void);
-// 0x000000C7 System.IntPtr UnityEngine.AndroidJavaObject::_GetRawClass()
+// 0x000000C5 System.IntPtr UnityEngine.AndroidJavaObject::_GetRawClass()
 extern void AndroidJavaObject__GetRawClass_mCEFEDEA158099706B9B2F1CB40C843D2E899932C (void);
-// 0x000000C8 System.Void UnityEngine.AndroidJavaObject::.cctor()
+// 0x000000C6 System.Void UnityEngine.AndroidJavaObject::.cctor()
 extern void AndroidJavaObject__cctor_mF33A7478608B7668DB4EF3D610695E2828A492CE (void);
-// 0x000000C9 System.Void UnityEngine.AndroidJavaClass::.ctor(System.String)
+// 0x000000C7 System.Void UnityEngine.AndroidJavaClass::.ctor(System.String)
 extern void AndroidJavaClass__ctor_mEFF9F51871F231955D97DABDE9AB4A6B4EDA5541 (void);
-// 0x000000CA System.Void UnityEngine.AndroidJavaClass::_AndroidJavaClass(System.String)
+// 0x000000C8 System.Void UnityEngine.AndroidJavaClass::_AndroidJavaClass(System.String)
 extern void AndroidJavaClass__AndroidJavaClass_mD69A3836B7DD13F6514499FFE167BCB136A5BBAB (void);
-// 0x000000CB System.Void UnityEngine.AndroidJavaClass::.ctor(System.IntPtr)
+// 0x000000C9 System.Void UnityEngine.AndroidJavaClass::.ctor(System.IntPtr)
 extern void AndroidJavaClass__ctor_m61AE95F9D20CA648AEFC18AE922FE70F0B90786F (void);
-// 0x000000CC System.Boolean UnityEngine.AndroidReflection::IsPrimitive(System.Type)
+// 0x000000CA System.Boolean UnityEngine.AndroidReflection::IsPrimitive(System.Type)
 extern void AndroidReflection_IsPrimitive_mDD6A4050793DF2FA1EDF58010982C64A3F17376D (void);
-// 0x000000CD System.Boolean UnityEngine.AndroidReflection::IsAssignableFrom(System.Type,System.Type)
+// 0x000000CB System.Boolean UnityEngine.AndroidReflection::IsAssignableFrom(System.Type,System.Type)
 extern void AndroidReflection_IsAssignableFrom_m7B46715954FFFBDFA63B681FAF87AEB2ECF0E47C (void);
-// 0x000000CE System.IntPtr UnityEngine.AndroidReflection::GetStaticMethodID(System.String,System.String,System.String)
+// 0x000000CC System.IntPtr UnityEngine.AndroidReflection::GetStaticMethodID(System.String,System.String,System.String)
 extern void AndroidReflection_GetStaticMethodID_m36025A22F483A7C1D53BFAA0505DC59A7B503EA1 (void);
-// 0x000000CF System.IntPtr UnityEngine.AndroidReflection::GetMethodID(System.String,System.String,System.String)
+// 0x000000CD System.IntPtr UnityEngine.AndroidReflection::GetMethodID(System.String,System.String,System.String)
 extern void AndroidReflection_GetMethodID_m99B37E6A752683D8F77DA7319D9956E03BAC322E (void);
-// 0x000000D0 System.IntPtr UnityEngine.AndroidReflection::GetConstructorMember(System.IntPtr,System.String)
+// 0x000000CE System.IntPtr UnityEngine.AndroidReflection::GetConstructorMember(System.IntPtr,System.String)
 extern void AndroidReflection_GetConstructorMember_m4E88C8F6F83DB80D3313835CE760D8E7DC533C02 (void);
-// 0x000000D1 System.IntPtr UnityEngine.AndroidReflection::GetMethodMember(System.IntPtr,System.String,System.String,System.Boolean)
+// 0x000000CF System.IntPtr UnityEngine.AndroidReflection::GetMethodMember(System.IntPtr,System.String,System.String,System.Boolean)
 extern void AndroidReflection_GetMethodMember_m2959FEB7888CE8740DE1CF88C0CCB8A72F9F017B (void);
-// 0x000000D2 System.IntPtr UnityEngine.AndroidReflection::GetFieldMember(System.IntPtr,System.String,System.String,System.Boolean)
+// 0x000000D0 System.IntPtr UnityEngine.AndroidReflection::GetFieldMember(System.IntPtr,System.String,System.String,System.Boolean)
 extern void AndroidReflection_GetFieldMember_m1318EF8ED43B70C70C6A054207ED57C88B846D73 (void);
-// 0x000000D3 System.IntPtr UnityEngine.AndroidReflection::GetFieldClass(System.IntPtr)
+// 0x000000D1 System.IntPtr UnityEngine.AndroidReflection::GetFieldClass(System.IntPtr)
 extern void AndroidReflection_GetFieldClass_m9406AFE957E7C743F7F1695EF0ED834597AEB782 (void);
-// 0x000000D4 System.String UnityEngine.AndroidReflection::GetFieldSignature(System.IntPtr)
+// 0x000000D2 System.String UnityEngine.AndroidReflection::GetFieldSignature(System.IntPtr)
 extern void AndroidReflection_GetFieldSignature_m3827226FD015DF4C0D4FC370C4589BC7FA8EA2CD (void);
-// 0x000000D5 System.IntPtr UnityEngine.AndroidReflection::NewProxyInstance(System.IntPtr,System.IntPtr)
+// 0x000000D3 System.IntPtr UnityEngine.AndroidReflection::NewProxyInstance(System.IntPtr,System.IntPtr)
 extern void AndroidReflection_NewProxyInstance_m53695E04979F0C45768004C5CC36A95A684C847C (void);
-// 0x000000D6 System.Void UnityEngine.AndroidReflection::SetNativeExceptionOnProxy(System.IntPtr,System.Exception,System.Boolean)
+// 0x000000D4 System.Void UnityEngine.AndroidReflection::SetNativeExceptionOnProxy(System.IntPtr,System.Exception,System.Boolean)
 extern void AndroidReflection_SetNativeExceptionOnProxy_m3156C711782C12CDE0E994C37630F762C0FE0808 (void);
-// 0x000000D7 System.Void UnityEngine.AndroidReflection::.cctor()
+// 0x000000D5 System.Void UnityEngine.AndroidReflection::.cctor()
 extern void AndroidReflection__cctor_m2B0369515D9A19D15703B34BD174D7CA683F1546 (void);
-// 0x000000D8 System.IntPtr UnityEngine._AndroidJNIHelper::CreateJavaProxy(System.IntPtr,UnityEngine.AndroidJavaProxy)
+// 0x000000D6 System.IntPtr UnityEngine._AndroidJNIHelper::CreateJavaProxy(System.IntPtr,UnityEngine.AndroidJavaProxy)
 extern void _AndroidJNIHelper_CreateJavaProxy_mCE38F0AE360145E8ECD9B15364CF570EE1D57D5D (void);
-// 0x000000D9 System.IntPtr UnityEngine._AndroidJNIHelper::CreateJavaRunnable(UnityEngine.AndroidJavaRunnable)
+// 0x000000D7 System.IntPtr UnityEngine._AndroidJNIHelper::CreateJavaRunnable(UnityEngine.AndroidJavaRunnable)
 extern void _AndroidJNIHelper_CreateJavaRunnable_m9FEEC38F8F25D8A5E6DBD8329094C3C24D73EC52 (void);
-// 0x000000DA System.IntPtr UnityEngine._AndroidJNIHelper::InvokeJavaProxyMethod(UnityEngine.AndroidJavaProxy,System.IntPtr,System.IntPtr)
+// 0x000000D8 System.IntPtr UnityEngine._AndroidJNIHelper::InvokeJavaProxyMethod(UnityEngine.AndroidJavaProxy,System.IntPtr,System.IntPtr)
 extern void _AndroidJNIHelper_InvokeJavaProxyMethod_mEDA5EBF45CEDDBB775BD601270633625DE31CC25 (void);
-// 0x000000DB UnityEngine.jvalue[] UnityEngine._AndroidJNIHelper::CreateJNIArgArray(System.Object[])
+// 0x000000D9 UnityEngine.jvalue[] UnityEngine._AndroidJNIHelper::CreateJNIArgArray(System.Object[])
 extern void _AndroidJNIHelper_CreateJNIArgArray_m6CAC58535CA8F9F1A7A4458BA1BC855CB46609E2 (void);
-// 0x000000DC System.Object UnityEngine._AndroidJNIHelper::UnboxArray(UnityEngine.AndroidJavaObject)
+// 0x000000DA System.Object UnityEngine._AndroidJNIHelper::UnboxArray(UnityEngine.AndroidJavaObject)
 extern void _AndroidJNIHelper_UnboxArray_m6287C810F0A8190BA7A7D2B104437F28B785FE7F (void);
-// 0x000000DD System.Object UnityEngine._AndroidJNIHelper::Unbox(UnityEngine.AndroidJavaObject)
+// 0x000000DB System.Object UnityEngine._AndroidJNIHelper::Unbox(UnityEngine.AndroidJavaObject)
 extern void _AndroidJNIHelper_Unbox_mE00F4AED2AAAACF5C617820A41A4F28F1D501708 (void);
-// 0x000000DE UnityEngine.AndroidJavaObject UnityEngine._AndroidJNIHelper::Box(System.Object)
+// 0x000000DC UnityEngine.AndroidJavaObject UnityEngine._AndroidJNIHelper::Box(System.Object)
 extern void _AndroidJNIHelper_Box_m36D8F62AEE89925F24BEB84DD91A5FF771255E28 (void);
-// 0x000000DF System.Void UnityEngine._AndroidJNIHelper::DeleteJNIArgArray(System.Object[],UnityEngine.jvalue[])
+// 0x000000DD System.Void UnityEngine._AndroidJNIHelper::DeleteJNIArgArray(System.Object[],UnityEngine.jvalue[])
 extern void _AndroidJNIHelper_DeleteJNIArgArray_m1ECC70D98768BD3E5C6C6EABC1162F43B297AD85 (void);
-// 0x000000E0 System.IntPtr UnityEngine._AndroidJNIHelper::ConvertToJNIArray(System.Array)
+// 0x000000DE System.IntPtr UnityEngine._AndroidJNIHelper::ConvertToJNIArray(System.Array)
 extern void _AndroidJNIHelper_ConvertToJNIArray_m8254063CFA125088D840280AEF8C2ACF1B1ED4D9 (void);
-// 0x000000E1 ArrayType UnityEngine._AndroidJNIHelper::ConvertFromJNIArray(System.IntPtr)
-// 0x000000E2 System.IntPtr UnityEngine._AndroidJNIHelper::GetConstructorID(System.IntPtr,System.Object[])
+// 0x000000DF ArrayType UnityEngine._AndroidJNIHelper::ConvertFromJNIArray(System.IntPtr)
+// 0x000000E0 System.IntPtr UnityEngine._AndroidJNIHelper::GetConstructorID(System.IntPtr,System.Object[])
 extern void _AndroidJNIHelper_GetConstructorID_m59BD3F866A86FC0FFDB26FFB820124E830CDB3E7 (void);
-// 0x000000E3 System.IntPtr UnityEngine._AndroidJNIHelper::GetMethodID(System.IntPtr,System.String,System.Object[],System.Boolean)
+// 0x000000E1 System.IntPtr UnityEngine._AndroidJNIHelper::GetMethodID(System.IntPtr,System.String,System.Object[],System.Boolean)
 extern void _AndroidJNIHelper_GetMethodID_m11CB4DA78BA3971AE2D5A1005B77C484C2BC4BA4 (void);
-// 0x000000E4 System.IntPtr UnityEngine._AndroidJNIHelper::GetMethodID(System.IntPtr,System.String,System.Object[],System.Boolean)
-// 0x000000E5 System.IntPtr UnityEngine._AndroidJNIHelper::GetFieldID(System.IntPtr,System.String,System.Boolean)
-// 0x000000E6 System.IntPtr UnityEngine._AndroidJNIHelper::GetConstructorID(System.IntPtr,System.String)
+// 0x000000E2 System.IntPtr UnityEngine._AndroidJNIHelper::GetMethodID(System.IntPtr,System.String,System.Object[],System.Boolean)
+// 0x000000E3 System.IntPtr UnityEngine._AndroidJNIHelper::GetFieldID(System.IntPtr,System.String,System.Boolean)
+// 0x000000E4 System.IntPtr UnityEngine._AndroidJNIHelper::GetConstructorID(System.IntPtr,System.String)
 extern void _AndroidJNIHelper_GetConstructorID_m0802B71B149170217E6FE75A7864A4BE7315215F (void);
-// 0x000000E7 System.IntPtr UnityEngine._AndroidJNIHelper::GetMethodID(System.IntPtr,System.String,System.String,System.Boolean)
+// 0x000000E5 System.IntPtr UnityEngine._AndroidJNIHelper::GetMethodID(System.IntPtr,System.String,System.String,System.Boolean)
 extern void _AndroidJNIHelper_GetMethodID_m74B615C2438AF4A05F5FDA31F871AA641799CC9C (void);
-// 0x000000E8 System.IntPtr UnityEngine._AndroidJNIHelper::GetMethodIDFallback(System.IntPtr,System.String,System.String,System.Boolean)
+// 0x000000E6 System.IntPtr UnityEngine._AndroidJNIHelper::GetMethodIDFallback(System.IntPtr,System.String,System.String,System.Boolean)
 extern void _AndroidJNIHelper_GetMethodIDFallback_mCAB1BB814895547718E10BA70AEA126CE98AD48C (void);
-// 0x000000E9 System.IntPtr UnityEngine._AndroidJNIHelper::GetFieldID(System.IntPtr,System.String,System.String,System.Boolean)
+// 0x000000E7 System.IntPtr UnityEngine._AndroidJNIHelper::GetFieldID(System.IntPtr,System.String,System.String,System.Boolean)
 extern void _AndroidJNIHelper_GetFieldID_mEF3E4C58E7B9F40F7E0BBAE76D82AD2C9FA66D30 (void);
-// 0x000000EA System.String UnityEngine._AndroidJNIHelper::GetSignature(System.Object)
+// 0x000000E8 System.String UnityEngine._AndroidJNIHelper::GetSignature(System.Object)
 extern void _AndroidJNIHelper_GetSignature_m4A272D66518BF9A4C746B02B91AAB1361293232C (void);
-// 0x000000EB System.String UnityEngine._AndroidJNIHelper::GetSignature(System.Object[])
+// 0x000000E9 System.String UnityEngine._AndroidJNIHelper::GetSignature(System.Object[])
 extern void _AndroidJNIHelper_GetSignature_m7621549E54EFD6362170628549B996BF5C52FBB7 (void);
-// 0x000000EC System.String UnityEngine._AndroidJNIHelper::GetSignature(System.Object[])
-static Il2CppMethodPointer s_methodPointers[236] = 
+// 0x000000EA System.String UnityEngine._AndroidJNIHelper::GetSignature(System.Object[])
+static Il2CppMethodPointer s_methodPointers[234] = 
 {
 	AndroidJNIHelper_GetConstructorID_m22710C39375F8A965C70F995413D4B3C62E85E30,
 	AndroidJNIHelper_GetMethodID_m2B5E7C9B05905F6C6B60A735B8A6E97BBA468535,
@@ -651,7 +647,6 @@ static Il2CppMethodPointer s_methodPointers[236] =
 	AndroidJavaObject__ctor_m6146DBD19BCFFDB3D4F42C8D38491F354B58B001,
 	AndroidJavaObject_Dispose_mFF9FA58B47A7FC0C083E034B364EAAE2E7282C45,
 	AndroidJavaObject_Call_mBB226DA52CE5A2FCD9A2D42BC7FB4272E094B76D,
-	AndroidJavaObject_CallStatic_m5A97968767E1603C021023809276443ED24577FB,
 	NULL,
 	AndroidJavaObject_GetRawObject_m09E30F9AF9DD2AE07D34CE3915BDA557E206271D,
 	AndroidJavaObject_GetRawClass_m051337FD2D7C0E765641B192D86FF4A06257836B,
@@ -665,7 +660,6 @@ static Il2CppMethodPointer s_methodPointers[236] =
 	AndroidJavaObject_Dispose_m881D1EC65C5FE625E9F84D81308E966CAC607AFC,
 	AndroidJavaObject__Call_m5F23B0D456587BD5B01C41EB4C472AF59FF40946,
 	NULL,
-	AndroidJavaObject__CallStatic_m69A43F99817AE27CF1EEAF0C7F5FCF56A11AD23F,
 	NULL,
 	NULL,
 	AndroidJavaObject_AndroidJavaObjectDeleteLocalRef_mB977696EA6F6BB6369A8F783EFB5D99C445C11FD,
@@ -710,243 +704,241 @@ static Il2CppMethodPointer s_methodPointers[236] =
 	_AndroidJNIHelper_GetSignature_m7621549E54EFD6362170628549B996BF5C52FBB7,
 	NULL,
 };
-static const int32_t s_InvokerIndices[236] = 
+static const int32_t s_InvokerIndices[234] = 
 {
-	5699,
-	4991,
-	4991,
-	6277,
-	6277,
-	6355,
-	6041,
-	5699,
-	4991,
+	5647,
+	4944,
+	4944,
+	6222,
+	6222,
+	6302,
+	5987,
+	5647,
+	4944,
 	-1,
 	-1,
 	-1,
-	6277,
-	6274,
-	6565,
-	6590,
-	6243,
-	6274,
-	6274,
-	6511,
-	6274,
-	6511,
-	6274,
-	6511,
-	5306,
-	6274,
-	5307,
-	5307,
-	5307,
-	5307,
-	6277,
-	6277,
-	6353,
-	5337,
-	5306,
-	5267,
-	5392,
-	5249,
-	5392,
-	5249,
-	5427,
-	5247,
-	5293,
-	5541,
-	5337,
-	5306,
-	5267,
-	5392,
-	5249,
-	5392,
-	5249,
-	5427,
-	5247,
-	5293,
-	5541,
-	5740,
-	5698,
-	5849,
-	5849,
-	5643,
-	5643,
-	5666,
+	6222,
+	6219,
+	6513,
+	6539,
+	6189,
+	6219,
+	6219,
+	6459,
+	6219,
+	6459,
+	6219,
+	6459,
+	5254,
+	6219,
+	5255,
+	5255,
+	5255,
+	5255,
+	6222,
+	6222,
+	6300,
+	5285,
+	5254,
+	5216,
+	5338,
+	5198,
+	5338,
+	5198,
+	5376,
+	5196,
+	5242,
+	5489,
+	5285,
+	5254,
+	5216,
+	5338,
+	5198,
+	5338,
+	5198,
+	5376,
+	5196,
+	5242,
+	5489,
 	5688,
-	5893,
-	5630,
-	6277,
-	6277,
-	6277,
-	6277,
-	6277,
-	6277,
-	6277,
-	6277,
-	6277,
-	5701,
-	6353,
-	6353,
-	6353,
-	6353,
-	6353,
-	6353,
-	6353,
-	6353,
-	6353,
-	6245,
-	6272,
-	5301,
-	5697,
-	5538,
-	6590,
-	6511,
-	6511,
-	6511,
-	6277,
-	6353,
-	6274,
-	5307,
-	5307,
-	5307,
-	5307,
-	6274,
-	6277,
-	5306,
-	5698,
-	5740,
-	5643,
-	5630,
-	5893,
+	5646,
+	5797,
+	5797,
+	5591,
+	5591,
+	5614,
+	5636,
+	5841,
+	5577,
+	6222,
+	6222,
+	6222,
+	6222,
+	6222,
+	6222,
+	6222,
+	6222,
+	6222,
+	5649,
+	6300,
+	6300,
+	6300,
+	6300,
+	6300,
+	6300,
+	6300,
+	6300,
+	6300,
+	6191,
+	6217,
+	5249,
+	5645,
+	5486,
+	6539,
+	6459,
+	6459,
+	6459,
+	6222,
+	6300,
+	6219,
+	5255,
+	5255,
+	5255,
+	5255,
+	6219,
+	6222,
+	5254,
+	5646,
 	5688,
-	5643,
-	5849,
-	5849,
-	5666,
-	5541,
-	5306,
-	5337,
-	5249,
-	5247,
-	5427,
-	5293,
-	5249,
-	5392,
-	5392,
-	5267,
-	5541,
-	5306,
-	5337,
-	5249,
-	5247,
-	5427,
-	5293,
-	5249,
-	5392,
-	5392,
-	5267,
-	6353,
-	6353,
-	6353,
-	6353,
-	6353,
-	6353,
-	6353,
-	6353,
-	6353,
-	5701,
-	6277,
-	6277,
-	6277,
-	6277,
-	6277,
-	6277,
-	6277,
-	6277,
-	6277,
-	5697,
-	6245,
-	2032,
-	4333,
-	1509,
-	3545,
-	2034,
-	4263,
-	3527,
-	4333,
-	6277,
-	4333,
-	3545,
-	3545,
-	3545,
-	4333,
-	1509,
-	1509,
-	4263,
-	4243,
-	6590,
-	2034,
-	4333,
-	2034,
-	2034,
+	5591,
+	5577,
+	5841,
+	5636,
+	5591,
+	5797,
+	5797,
+	5614,
+	5489,
+	5254,
+	5285,
+	5198,
+	5196,
+	5376,
+	5242,
+	5198,
+	5338,
+	5338,
+	5216,
+	5489,
+	5254,
+	5285,
+	5198,
+	5196,
+	5376,
+	5242,
+	5198,
+	5338,
+	5338,
+	5216,
+	6300,
+	6300,
+	6300,
+	6300,
+	6300,
+	6300,
+	6300,
+	6300,
+	6300,
+	5649,
+	6222,
+	6222,
+	6222,
+	6222,
+	6222,
+	6222,
+	6222,
+	6222,
+	6222,
+	5645,
+	6191,
+	2005,
+	4318,
+	1482,
+	3522,
+	2008,
+	4247,
+	3504,
+	4318,
+	6222,
+	4318,
+	3522,
+	3522,
+	3522,
+	4318,
+	1482,
+	1482,
+	4247,
+	4227,
+	6539,
+	2008,
+	4318,
+	2008,
 	-1,
-	4243,
-	4243,
-	-1,
-	-1,
-	3545,
-	2034,
-	3527,
-	4333,
-	4333,
-	3570,
-	2034,
-	-1,
-	2034,
+	4227,
+	4227,
 	-1,
 	-1,
-	6353,
-	6353,
-	4243,
-	4243,
-	6590,
-	3545,
-	3545,
-	3527,
-	6389,
-	5861,
-	5311,
-	5311,
-	5699,
-	4991,
-	4991,
-	6274,
-	6353,
-	5698,
-	5544,
-	6590,
-	5699,
-	6277,
-	5310,
-	6355,
-	6355,
-	6355,
-	6355,
-	6041,
-	6277,
-	-1,
-	5699,
-	4991,
+	3522,
+	2008,
+	3504,
+	4318,
+	4318,
+	3547,
+	2008,
 	-1,
 	-1,
-	5699,
-	4991,
-	4991,
-	4991,
-	6355,
-	6355,
+	-1,
+	6300,
+	6300,
+	4227,
+	4227,
+	6539,
+	3522,
+	3522,
+	3504,
+	6337,
+	5809,
+	5259,
+	5259,
+	5647,
+	4944,
+	4944,
+	6219,
+	6300,
+	5646,
+	5492,
+	6539,
+	5647,
+	6222,
+	5258,
+	6302,
+	6302,
+	6302,
+	6302,
+	5987,
+	6222,
+	-1,
+	5647,
+	4944,
+	-1,
+	-1,
+	5647,
+	4944,
+	4944,
+	4944,
+	6302,
+	6302,
 	-1,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[13] = 
@@ -954,49 +946,49 @@ static const Il2CppTokenRangePair s_rgctxIndices[13] =
 	{ 0x0600000A, { 0, 1 } },
 	{ 0x0600000B, { 1, 1 } },
 	{ 0x0600000C, { 2, 1 } },
-	{ 0x060000B4, { 3, 1 } },
-	{ 0x060000B7, { 4, 1 } },
-	{ 0x060000B8, { 5, 1 } },
-	{ 0x060000C0, { 6, 4 } },
-	{ 0x060000C2, { 10, 4 } },
-	{ 0x060000C3, { 14, 4 } },
-	{ 0x060000E1, { 18, 2 } },
-	{ 0x060000E4, { 20, 1 } },
-	{ 0x060000E5, { 21, 1 } },
-	{ 0x060000EC, { 22, 1 } },
+	{ 0x060000B3, { 3, 1 } },
+	{ 0x060000B6, { 4, 1 } },
+	{ 0x060000B7, { 5, 1 } },
+	{ 0x060000BF, { 6, 4 } },
+	{ 0x060000C0, { 10, 4 } },
+	{ 0x060000C1, { 14, 4 } },
+	{ 0x060000DF, { 18, 2 } },
+	{ 0x060000E2, { 20, 1 } },
+	{ 0x060000E3, { 21, 1 } },
+	{ 0x060000EA, { 22, 1 } },
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[23] = 
 {
-	{ (Il2CppRGCTXDataType)3, 31919 },
-	{ (Il2CppRGCTXDataType)3, 31931 },
-	{ (Il2CppRGCTXDataType)3, 31929 },
-	{ (Il2CppRGCTXDataType)3, 26552 },
-	{ (Il2CppRGCTXDataType)3, 26539 },
-	{ (Il2CppRGCTXDataType)3, 26549 },
-	{ (Il2CppRGCTXDataType)3, 26512 },
+	{ (Il2CppRGCTXDataType)3, 31727 },
+	{ (Il2CppRGCTXDataType)3, 31739 },
+	{ (Il2CppRGCTXDataType)3, 31737 },
+	{ (Il2CppRGCTXDataType)3, 26436 },
+	{ (Il2CppRGCTXDataType)3, 26423 },
+	{ (Il2CppRGCTXDataType)3, 26433 },
+	{ (Il2CppRGCTXDataType)3, 26396 },
 	{ (Il2CppRGCTXDataType)1, 11 },
 	{ (Il2CppRGCTXDataType)2, 11 },
-	{ (Il2CppRGCTXDataType)3, 26499 },
-	{ (Il2CppRGCTXDataType)3, 26513 },
+	{ (Il2CppRGCTXDataType)3, 26383 },
+	{ (Il2CppRGCTXDataType)3, 26397 },
 	{ (Il2CppRGCTXDataType)1, 12 },
 	{ (Il2CppRGCTXDataType)2, 12 },
-	{ (Il2CppRGCTXDataType)3, 26500 },
-	{ (Il2CppRGCTXDataType)3, 26510 },
+	{ (Il2CppRGCTXDataType)3, 26384 },
+	{ (Il2CppRGCTXDataType)3, 26394 },
 	{ (Il2CppRGCTXDataType)1, 8 },
 	{ (Il2CppRGCTXDataType)2, 8 },
-	{ (Il2CppRGCTXDataType)3, 26498 },
-	{ (Il2CppRGCTXDataType)1, 399 },
-	{ (Il2CppRGCTXDataType)2, 399 },
-	{ (Il2CppRGCTXDataType)3, 31941 },
-	{ (Il2CppRGCTXDataType)1, 400 },
-	{ (Il2CppRGCTXDataType)1, 402 },
+	{ (Il2CppRGCTXDataType)3, 26382 },
+	{ (Il2CppRGCTXDataType)1, 389 },
+	{ (Il2CppRGCTXDataType)2, 389 },
+	{ (Il2CppRGCTXDataType)3, 31749 },
+	{ (Il2CppRGCTXDataType)1, 390 },
+	{ (Il2CppRGCTXDataType)1, 392 },
 };
 extern const CustomAttributesCacheGenerator g_UnityEngine_AndroidJNIModule_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_AndroidJNIModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_AndroidJNIModule_CodeGenModule = 
 {
 	"UnityEngine.AndroidJNIModule.dll",
-	236,
+	234,
 	s_methodPointers,
 	0,
 	NULL,

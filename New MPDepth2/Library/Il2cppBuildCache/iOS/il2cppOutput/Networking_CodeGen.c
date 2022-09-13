@@ -12,44 +12,53 @@
 
 
 
-// 0x00000001 System.Void ConnectToServer::Start()
-extern void ConnectToServer_Start_mD26C0A1551F9E1D4DF4C7AE76FA993983E484C15 (void);
-// 0x00000002 System.Void ConnectToServer::Connect()
+// 0x00000001 System.Void ConnectToServer::Connect()
 extern void ConnectToServer_Connect_m912D83FAED22C2A1024B0EC46CB700A20BEDDB28 (void);
-// 0x00000003 System.Void ConnectToServer::OnConnectedToMaster()
+// 0x00000002 System.Void ConnectToServer::OnConnectedToMaster()
 extern void ConnectToServer_OnConnectedToMaster_m543CC805F09BB7DD2E3437ECC54BB7AD8A4D5293 (void);
-// 0x00000004 System.Void ConnectToServer::OnJoinedLobby()
+// 0x00000003 System.Void ConnectToServer::OnJoinedLobby()
 extern void ConnectToServer_OnJoinedLobby_m3D62D37A68EC5578C22AE1545AB7D4F70DB66164 (void);
-// 0x00000005 System.Void ConnectToServer::.ctor()
+// 0x00000004 System.Void ConnectToServer::DisconnectFromServer()
+extern void ConnectToServer_DisconnectFromServer_mB51D83E2CAB8E8481BBA797EFA356A8DC60FD48B (void);
+// 0x00000005 System.Void ConnectToServer::OnDisconnected(Photon.Realtime.DisconnectCause)
+extern void ConnectToServer_OnDisconnected_mC0584D07A3AB0B0348F62E82CCB51E50C6031AEF (void);
+// 0x00000006 System.Void ConnectToServer::.ctor()
 extern void ConnectToServer__ctor_m3D6C2AE5BED0EAF420DD5C7A61A1330E093FA736 (void);
-// 0x00000006 System.Void CreateAndJoinRoom::CreateRoom()
+// 0x00000007 System.Void CreateAndJoinRoom::UpdateName(System.String)
+extern void CreateAndJoinRoom_UpdateName_m69E2914B5E7908876C814D23B17CE41537C2E3E3 (void);
+// 0x00000008 System.Void CreateAndJoinRoom::CreateRoom()
 extern void CreateAndJoinRoom_CreateRoom_m6E6026CA66A55EE3E3D8DD499A432B805825EB3F (void);
-// 0x00000007 System.Void CreateAndJoinRoom::JoinRoom()
+// 0x00000009 System.Void CreateAndJoinRoom::JoinRoom()
 extern void CreateAndJoinRoom_JoinRoom_m843CB3EDB6133E35E69DE0F714EDC79E5C7F3458 (void);
-// 0x00000008 System.Void CreateAndJoinRoom::OnJoinedRoom()
+// 0x0000000A System.Void CreateAndJoinRoom::OnJoinedRoom()
 extern void CreateAndJoinRoom_OnJoinedRoom_mEB100ED41B23E7495F4F62FE42A6BD63D3B82224 (void);
-// 0x00000009 System.Void CreateAndJoinRoom::OnJoinRoomFailed(System.Int16,System.String)
+// 0x0000000B System.Void CreateAndJoinRoom::OnCreatedRoom()
+extern void CreateAndJoinRoom_OnCreatedRoom_m8CA2407246C69AE521FAFD54F7F2C00304C9C2B3 (void);
+// 0x0000000C System.Void CreateAndJoinRoom::OnJoinRoomFailed(System.Int16,System.String)
 extern void CreateAndJoinRoom_OnJoinRoomFailed_mCEBE31CD3C63D3228AAEA68805C0AB58EDB80687 (void);
-// 0x0000000A System.Void CreateAndJoinRoom::OnCreateRoomFailed(System.Int16,System.String)
+// 0x0000000D System.Void CreateAndJoinRoom::OnCreateRoomFailed(System.Int16,System.String)
 extern void CreateAndJoinRoom_OnCreateRoomFailed_mF88129ECCACE7E54A618FDBBDC08F4D9EB3AFF25 (void);
-// 0x0000000B System.Boolean CreateAndJoinRoom::GetIsConnected()
+// 0x0000000E System.Boolean CreateAndJoinRoom::GetIsConnected()
 extern void CreateAndJoinRoom_GetIsConnected_m51B3F05A3375AA88CE8496F0FA2CFF8C4FC8D99D (void);
-// 0x0000000C System.Void CreateAndJoinRoom::.ctor()
+// 0x0000000F System.Void CreateAndJoinRoom::.ctor()
 extern void CreateAndJoinRoom__ctor_m27DC577F9A8661556446CC8B97DBB70E52D52A0C (void);
-// 0x0000000D System.Void Spawner::Spawn()
+// 0x00000010 System.Void Spawner::Spawn()
 extern void Spawner_Spawn_m83B605E43A9779413B11CCBF7BE1192DEA1335EC (void);
-// 0x0000000E System.Void Spawner::.ctor()
+// 0x00000011 System.Void Spawner::.ctor()
 extern void Spawner__ctor_m66FDC30F60E89A8BA9C94129CB6E31DC018A5CC4 (void);
-static Il2CppMethodPointer s_methodPointers[14] = 
+static Il2CppMethodPointer s_methodPointers[17] = 
 {
-	ConnectToServer_Start_mD26C0A1551F9E1D4DF4C7AE76FA993983E484C15,
 	ConnectToServer_Connect_m912D83FAED22C2A1024B0EC46CB700A20BEDDB28,
 	ConnectToServer_OnConnectedToMaster_m543CC805F09BB7DD2E3437ECC54BB7AD8A4D5293,
 	ConnectToServer_OnJoinedLobby_m3D62D37A68EC5578C22AE1545AB7D4F70DB66164,
+	ConnectToServer_DisconnectFromServer_mB51D83E2CAB8E8481BBA797EFA356A8DC60FD48B,
+	ConnectToServer_OnDisconnected_mC0584D07A3AB0B0348F62E82CCB51E50C6031AEF,
 	ConnectToServer__ctor_m3D6C2AE5BED0EAF420DD5C7A61A1330E093FA736,
+	CreateAndJoinRoom_UpdateName_m69E2914B5E7908876C814D23B17CE41537C2E3E3,
 	CreateAndJoinRoom_CreateRoom_m6E6026CA66A55EE3E3D8DD499A432B805825EB3F,
 	CreateAndJoinRoom_JoinRoom_m843CB3EDB6133E35E69DE0F714EDC79E5C7F3458,
 	CreateAndJoinRoom_OnJoinedRoom_mEB100ED41B23E7495F4F62FE42A6BD63D3B82224,
+	CreateAndJoinRoom_OnCreatedRoom_m8CA2407246C69AE521FAFD54F7F2C00304C9C2B3,
 	CreateAndJoinRoom_OnJoinRoomFailed_mCEBE31CD3C63D3228AAEA68805C0AB58EDB80687,
 	CreateAndJoinRoom_OnCreateRoomFailed_mF88129ECCACE7E54A618FDBBDC08F4D9EB3AFF25,
 	CreateAndJoinRoom_GetIsConnected_m51B3F05A3375AA88CE8496F0FA2CFF8C4FC8D99D,
@@ -57,29 +66,32 @@ static Il2CppMethodPointer s_methodPointers[14] =
 	Spawner_Spawn_m83B605E43A9779413B11CCBF7BE1192DEA1335EC,
 	Spawner__ctor_m66FDC30F60E89A8BA9C94129CB6E31DC018A5CC4,
 };
-static const int32_t s_InvokerIndices[14] = 
+static const int32_t s_InvokerIndices[17] = 
 {
-	4333,
-	4333,
-	4333,
-	4333,
-	4333,
-	4333,
-	4333,
-	4333,
-	1731,
-	1731,
-	4289,
-	4333,
-	4333,
-	4333,
+	4318,
+	4318,
+	4318,
+	4318,
+	3502,
+	4318,
+	3522,
+	4318,
+	4318,
+	4318,
+	4318,
+	1705,
+	1705,
+	4273,
+	4318,
+	4318,
+	4318,
 };
 extern const CustomAttributesCacheGenerator g_Networking_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Networking_CodeGenModule;
 const Il2CppCodeGenModule g_Networking_CodeGenModule = 
 {
 	"Networking.dll",
-	14,
+	17,
 	s_methodPointers,
 	0,
 	NULL,

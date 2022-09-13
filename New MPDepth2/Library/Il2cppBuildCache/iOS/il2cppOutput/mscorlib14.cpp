@@ -14595,7 +14595,7 @@ IL_001f:
 		String_t* L_10 = ___password0;
 		NullCheck(L_9);
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_11;
-		L_11 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(18 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_9, L_10);
+		L_11 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_9, L_10);
 		__this->set_m_password_3(L_11);
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_12 = __this->get_m_password_3();
 		HMACSHA1_t870BB0E0399BEBC0A2BF30596CCB096A6D1F1B9E * L_13 = (HMACSHA1_t870BB0E0399BEBC0A2BF30596CCB096A6D1F1B9E *)il2cpp_codegen_object_new(HMACSHA1_t870BB0E0399BEBC0A2BF30596CCB096A6D1F1B9E_il2cpp_TypeInfo_var);
@@ -14630,7 +14630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rfc2898DeriveBytes__ctor_m40BD10D476376A
 		String_t* L_1 = ___password0;
 		NullCheck(L_0);
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_2;
-		L_2 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(18 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_0, L_1);
+		L_2 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_0, L_1);
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_3 = ___salt1;
 		int32_t L_4 = ___iterations2;
 		Rfc2898DeriveBytes__ctor_m36E0A9FB7BE61E56D7F79BD5E3E5743A070D5E76(__this, L_2, L_3, L_4, /*hidden argument*/NULL);

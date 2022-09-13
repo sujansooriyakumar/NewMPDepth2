@@ -2973,7 +2973,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UdpClient_Send_m9C4F5C2385CBA4D29E07A389
 		String_t* L_1 = ___message0;
 		NullCheck(L_0);
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_2;
-		L_2 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(18 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_0, L_1);
+		L_2 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_0, L_1);
 		V_0 = L_2;
 		// Client.Send(datagram, datagram.Length);
 		UdpClient_tB1B7578C96A20B6A0B58AC3FD3E1CB469375B920 * L_3 = ((UdpBase_t9705B2D3B8992AB5F1693080281682DC2A5CCF4F *)__this)->get_Client_0();
@@ -3064,7 +3064,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UdpServer_Reply_mDC2AF8A562737B02DCD9D5C
 		String_t* L_1 = ___message0;
 		NullCheck(L_0);
 		ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726* L_2;
-		L_2 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(18 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_0, L_1);
+		L_2 = VirtFuncInvoker1< ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, String_t* >::Invoke(17 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_0, L_1);
 		V_0 = L_2;
 		// Client.Send(datagram, datagram.Length, endpoint);
 		UdpClient_tB1B7578C96A20B6A0B58AC3FD3E1CB469375B920 * L_3 = ((UdpBase_t9705B2D3B8992AB5F1693080281682DC2A5CCF4F *)__this)->get_Client_0();
@@ -3195,7 +3195,7 @@ IL_006d:
 			NullCheck(L_17);
 			NullCheck(L_15);
 			String_t* L_18;
-			L_18 = VirtFuncInvoker3< String_t*, ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, int32_t, int32_t >::Invoke(35 /* System.String System.Text.Encoding::GetString(System.Byte[],System.Int32,System.Int32) */, L_15, L_16, 0, ((int32_t)((int32_t)(((RuntimeArray*)L_17)->max_length))));
+			L_18 = VirtFuncInvoker3< String_t*, ByteU5BU5D_tDBBEB0E8362242FA7223000D978B0DD19D4B0726*, int32_t, int32_t >::Invoke(34 /* System.String System.Text.Encoding::GetString(System.Byte[],System.Int32,System.Int32) */, L_15, L_16, 0, ((int32_t)((int32_t)(((RuntimeArray*)L_17)->max_length))));
 			(&V_5)->set_Message_1(L_18);
 			IPEndPoint_t41C675C79A8B4EA6D5211D9B907137A2C015EA3E * L_19;
 			L_19 = UdpReceiveResult_get_RemoteEndPoint_m1B1D91EE27642255EECDB548799E9A7C4AD7E7F5_inline((UdpReceiveResult_tA557B9BC44BB1F51402111C0FB40D0169D504C6E *)(&V_3), /*hidden argument*/NULL);

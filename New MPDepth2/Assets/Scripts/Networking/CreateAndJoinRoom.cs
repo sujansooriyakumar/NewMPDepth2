@@ -4,34 +4,38 @@ using UnityEngine;
 using Photon.Pun;
 using UnityEngine.UI;
 
+
 public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
 {
     [SerializeField] InputField lobbyName;
     [SerializeField] NetworkManager networkManager;
+    [SerializeField] Text status;
+    [SerializeField] GameObject connect;
+    [SerializeField] GameObject disconnect;
     bool isConnected;
+    string lobbyID;
+    public void UpdateName(string s)
+    {
+        lobbyID = s;
+    }
 
     public void CreateRoom()
     {
-        if (PhotonNetwork.CountOfPlayersInRooms == 0)
-        {
-            PhotonNetwork.CreateRoom("room");
-        }
-
-        else
-        {
-            JoinRoom();
-        }
+        PhotonNetwork.CreateRoom(lobbyID);
     }
 
     public void JoinRoom()
     {
 
-        PhotonNetwork.JoinRoom("room");
+        PhotonNetwork.JoinRoom(lobbyID);
     }
 
     public override void OnJoinedRoom()
     {
-
+        status.gameObject.SetActive(true);
+        status.text = "Joined room " + lobbyID;
+        connect.SetActive(false);
+        disconnect.SetActive(true);
         Debug.Log("Joined room: " + PhotonNetwork.CurrentRoom.Name);
         Debug.Log("Player count: " + PhotonNetwork.CurrentRoom.PlayerCount);
         networkManager.GetView().RPC("SetIsConnected", RpcTarget.OthersBuffered, true);
@@ -47,6 +51,12 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
         Debug.Log(PhotonNetwork.CountOfRooms);
 
 
+    }
+
+    public override void OnCreatedRoom()
+    {
+        status.gameObject.SetActive(true);
+        status.text = "Created room " + lobbyID;
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)

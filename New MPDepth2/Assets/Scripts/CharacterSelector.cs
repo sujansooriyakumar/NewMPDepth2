@@ -61,7 +61,6 @@ public class CharacterSelector : MonoBehaviour
 
     public void UpdateAvatar(Int32 index, bool self)
     {
-        GameObject tmp = null;
         currentAvatar = null;
         Transform avatarParent = null;
         Transform slothParent = null;
