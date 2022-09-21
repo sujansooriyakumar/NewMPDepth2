@@ -71,7 +71,7 @@ namespace StreamTrackingSystem {
             GameObject tempFace = new GameObject();
             tempFace.transform.position = offAxisCamera.transform.localPosition;
             Vector3 flippedEulers = -trackingData.CameraTrackingData.Eulers;
-            tempFace.transform.eulerAngles = -1*(new Vector3(0, 180, 0) - new Vector3(flippedEulers.x, -flippedEulers.y, flippedEulers.z));
+            tempFace.transform.eulerAngles = -1*(new Vector3(0, 180, 0) - new Vector3(flippedEulers.x, flippedEulers.y, flippedEulers.z));
             tempFace.name = "tempFace";
 
             GameObject tempOffset = new GameObject();
@@ -95,6 +95,10 @@ namespace StreamTrackingSystem {
             // Destroy(tempFace);
         }
 
+        public void SetManualCalibrationDistance(string s)
+        {
+            manualCalibrationDistance = float.Parse(s);
+        }
 
 
     }

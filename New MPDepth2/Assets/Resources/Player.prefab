@@ -317,9 +317,9 @@ MonoBehaviour:
   playbackOnlyWhenEnabled: 0
   playDelayMs: -1
   playbackDelaySettings:
-    MinDelaySoft: 0
-    MaxDelaySoft: 1
-    MaxDelayHard: 1
+    MinDelaySoft: 50
+    MaxDelaySoft: 100
+    MaxDelayHard: 100
 --- !u!114 &7173911096075080085
 MonoBehaviour:
   m_ObjectHideFlags: 0

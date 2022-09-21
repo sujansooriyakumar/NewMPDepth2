@@ -15,6 +15,7 @@ public class ReceiveBlendshapes : MonoBehaviour
     [SerializeField] Transform headBone;
     [SerializeField] bool isMirrorAvatar;
     [SerializeField] Transform otherPlayerCalibration;
+    [SerializeField] TrackingSystem stream;
     private Vector3 position;
     private Vector3 rotation;
     private float[] blendshapes;
@@ -57,26 +58,18 @@ public class ReceiveBlendshapes : MonoBehaviour
         {
             //position = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Position;
             //rotation = trackingSystemsManager.CurrentCalibratedTrackingData.CameraTrackingData.Eulers;
-            position = trackingSystemsManager.CurrentTrackingSystem.trackingSource.GetRawTrackingData().CameraTrackingData.Position;
-            
-            rotation = trackingSystemsManager.CurrentTrackingSystem.trackingSource.GetRawTrackingData().CameraTrackingData.Eulers;
+            position = trackingSystemsManager.calibratedPosition;
+            rotation = trackingSystemsManager.calibratedRotation;
+
+            //rotation = trackingSystemsManager.CurrentTrackingSystem.trackingSource.GetRawTrackingData().CameraTrackingData.Eulers;
             blendshapes = trackingSystemsManager.CurrentTrackingSystem.trackingSource.GetRawTrackingData().BlendshapeTrackingData.Blendshapes;
 
-            Matrix4x4 calibrationMatrix = Matrix4x4.Rotate(calibration.rotation);
 
-            // temporary variable to hold the translation
-            Matrix4x4 tmp2 = (calibrationMatrix) * Matrix4x4.Translate(-calibration.position);
-            Matrix4x4 pos = Matrix4x4.Translate(position);
-            Matrix4x4 calibratedPos = tmp2 * pos;
-            Matrix4x4 rot = Matrix4x4.Rotate(Quaternion.Euler(rotation));
-            rot = tmp2 * rot;
-            rotation = rot.rotation.eulerAngles;
-            // assign the translation to matrix TCSB
-            transform.localPosition = new Vector3(calibratedPos.m03, calibratedPos.m13, -calibratedPos.m23);
+            transform.localPosition = new Vector3(-position.x, -position.y, -position.z);
 
 
         }
-        else if(!isMirrorAvatar)
+        else if (!isMirrorAvatar)
         {
             position = new Vector3(networkManager.GetPosition().x, networkManager.GetPosition().y, networkManager.GetPosition().z);
             rotation = networkManager.GetEulers();
@@ -93,23 +86,23 @@ public class ReceiveBlendshapes : MonoBehaviour
             transform.localPosition = new Vector3(-calibratedPos.m03, -calibratedPos.m13, -calibratedPos.m23);
 
         }
-        
+
         if (rotation.magnitude > 0)
         {
             if (isMirrorAvatar)
             {
-                headBone.rotation = Quaternion.Euler((rotation.x+rotationOffset), (-rotation.y), -rotation.z);
-                
+                headBone.rotation = Quaternion.Euler((rotation.x + rotationOffset), (-rotation.y), -rotation.z);
+
             }
 
             else if (!isMirrorAvatar)
             {
-                headBone.rotation = Quaternion.Euler((rotation.x+rotationOffset), (rotation.y), rotation.z);
+                headBone.rotation = Quaternion.Euler((rotation.x + rotationOffset), (rotation.y), rotation.z);
 
 
             }
-            
-            
+
+
         }
         if (isSloth)
         {

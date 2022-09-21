@@ -45,7 +45,8 @@ public class CalibrateTrackingData : MonoBehaviour
         Matrix4x4 VSB = TCSB * screenDisplacement * VCB;
         calibratedPosition = new Vector3(VSB.m03, VSB.m13, VSB.m23);
         calibratedData[0] = calibratedPosition;
-        calibratedData[1] = rawTrackingData.CameraTrackingData.Eulers;
+        calibratedData[1] = rawTrackingData.CameraTrackingData.Eulers + calibrationTransform.eulerAngles;
+        //calibratedData[1] = new Vector3(calibratedData[1].x, -calibratedData[1].y, calibratedData[1].z);
         return calibratedData;
     }
 }
